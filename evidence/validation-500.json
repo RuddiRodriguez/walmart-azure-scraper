@@ -1,0 +1,49 @@
+{
+  "records": 500,
+  "proof_count": 500,
+  "duplicate_ids": 0,
+  "duplicate_urls": 0,
+  "errors": [],
+  "category_counts": {
+    "Food": 36,
+    "Personal Care": 49,
+    "Beauty": 55,
+    "Diapering": 34,
+    "Feeding": 46,
+    "Health & Wellness": 52,
+    "Pets": 54,
+    "Balloons": 28,
+    "Office Supplies": 52,
+    "Household Essentials": 54,
+    "Art Supplies": 40
+  },
+  "field_nonempty_counts": {
+    "zipcode": 500,
+    "store_name": 500,
+    "store_location": 500,
+    "store_logo": 500,
+    "store_brand": 500,
+    "category": 500,
+    "sub_category": 500,
+    "product_title": 500,
+    "weight": 244,
+    "regular_price": 500,
+    "sale_price": 28,
+    "volume_deals_description": 0,
+    "volume_deals_price": 0,
+    "digital_deals_description": 0,
+    "digital_deals_price": 0,
+    "image_url": 500,
+    "url": 500,
+    "upc": 468,
+    "gupc": 0,
+    "ppm": 381,
+    "unit_price": 0,
+    "crawl_date": 500
+  },
+  "detail_rejections": {
+    "promotion_needs_review": 15,
+    "category_recommendation_outside_scope": 142
+  },
+  "passed": true
+}

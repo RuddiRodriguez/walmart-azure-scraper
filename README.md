@@ -1,0 +1,69 @@
+# Walmart location-aware catalog scraper
+
+Python scraper with local Chrome, configurable stores/categories, transactional checkpoints,
+source evidence, validation and atomic publication. No paid proxies or scraping APIs.
+
+## Current status
+
+The included **500-product evidence dataset** came from the preceding live feasibility scripts,
+not from a completed full-catalog run of this new runner. All 11 requested parent categories
+are represented; Store 100 pickup, seller and prices were checked on product pages.
+The full-catalog runner and Azure installation/scheduling files are included. End-to-end catalog
+coverage, live volume/digital offers and Azure execution still require acceptance testing.
+Do not describe this version as already accepted or production-proven.
+
+## Local setup
+
+Install Chrome and Python 3.11+. macOS or Linux supported; Windows requires adapting the file lock.
+
+```bash
+python3 -m venv .venv
+.venv/bin/pip install -r requirements.txt
+.venv/bin/python scrape.py --store 100 --sample 2
+```
+
+Sample mode takes at least the requested number of listing candidates per category, not an exact
+product limit. It runs product checks and writes evidence, but **never publishes production output**.
+A category page can contribute more than the requested minimum.
+
+Full crawl:
+
+```bash
+.venv/bin/python scrape.py --store 100
+```
+
+Resume the same mode and configuration after interruption:
+
+```bash
+.venv/bin/python scrape.py --store 100 --resume
+# For an interrupted sample:
+.venv/bin/python scrape.py --store 100 --sample 2 --resume
+```
+
+## Files and flow
+
+1. `config/categories.csv` supplies every requested parent category.
+2. `config/stores.json` supplies store number, ZIP, expected name/address, canary URLs and thresholds.
+3. `browser.py` selects pickup, checks the location, loads pages and detects blocking.
+4. `extract.py` discovers child category links, reads offers and preserves displayed values.
+5. `storage.py` stores page/product checkpoints in SQLite transactions.
+6. `validate.py` checks schema, categories, yield decline and unresolved work.
+7. `scrape.py` coordinates the run. Only a complete passing full run changes `latest.json`.
+
+The downstream consumer reads `data/<store>/latest.json`, then loads its referenced immutable
+products file. Failed runs stay in their own run directory. Never read a run's partial data as latest.
+
+## Important limits
+
+- Category discovery follows retailer category IDs within each configured category. Changes to
+  site structure or missing child links need inspection; discovery cannot prove links Walmart hides.
+- Pagination loops, missing next-page controls and zero-product listing responses stop the run.
+- Unknown promotion shapes are preserved in evidence and prevent full publication.
+- No CAPTCHA solving, proxy rotation, credentials, remote disabling or telemetry added by this project.
+  Chrome/SeleniumBase retain their own vendor behavior; no claim is made about those dependencies.
+- PPM is copied from visible listing text. Package weight comes from title or explicit package specs;
+  assembled/shipping weights are not substituted for product quantity.
+- A 48-hour-old checkpoint is rejected to avoid combining stale and current prices.
+- Linux VM installation is supplied; Azure IP reputation and live retailer access are not guaranteed.
+
+See `docs/OPERATIONS.md`, `docs/ACCEPTANCE.md` and `evidence/FINAL_REPORT.md`.

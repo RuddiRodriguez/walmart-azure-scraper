@@ -1,0 +1,11 @@
+[Unit]
+Description=Collect Walmart store %i twice weekly
+
+[Timer]
+OnCalendar=Mon,Thu *-*-* 02:00:00 UTC
+Persistent=true
+RandomizedDelaySec=15m
+Unit=walmart-scraper@%i.service
+
+[Install]
+WantedBy=timers.target

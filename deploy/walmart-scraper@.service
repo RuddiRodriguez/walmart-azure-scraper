@@ -1,0 +1,24 @@
+[Unit]
+Description=Walmart catalog collection for store %i
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=walmart
+Group=walmart
+WorkingDirectory=/opt/walmart-scraper
+Environment=HOME=/var/lib/walmart-scraper
+Environment=PYTHONUNBUFFERED=1
+ExecStart=/usr/bin/xvfb-run -a /opt/walmart-scraper/.venv/bin/python scrape.py --store %i --output /var/lib/walmart-scraper/data
+TimeoutStartSec=48h
+KillSignal=SIGINT
+TimeoutStopSec=60
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ReadWritePaths=/var/lib/walmart-scraper
+
+[Install]
+WantedBy=multi-user.target
