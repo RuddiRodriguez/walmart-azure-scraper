@@ -240,3 +240,7 @@ Trial flag refresh_store_each_page reselects and verifies the configured store t
 Transport comparison completed: browser-fetch 21/21 correct across three fresh sessions; Playwright 0/3 and curl 0/3, each challenged on first request per session. These targeted requests omit category traversal and therefore do not establish full-flow reliability.
 
 Store-reselection trial A passed sample validation: 33 records across all 11 parents in 1108.35 seconds. Source audit passed. Full-run validation remains incomplete, as expected for a sample. Repeats B/C pending; no reliability claim yet.
+
+Reselection trial final result: A/B each passed 33 with source audit; C failed after 25 on Pets product 20877373221, with location mismatch. Third accepted subset replay passed. Reselection remains opt-in, not a reliability fix. Next isolated trial requests the same product path with only fulfillmentIntent=Pickup, removing tracking/classType/filter query parameters from requests while preserving original exported URLs. All identity/store checks remain required.
+
+Chrome-profile transport comparison completed: browser fetch 21/21; Playwright and curl Chrome-profile each 0/3 (challenge responses). This does not justify replacing the production transport. Reference: https://curl-cffi.readthedocs.io/en/stable/quick_start.html . Pickup-only request-query trial started separately with store-reselection disabled, preserving original export URLs. Browser and runner offline checks passed, including original/requested URL tracing.

@@ -136,3 +136,16 @@ unattended use. Headless mode alone is not a memory guarantee.
 explicit descendant cleanup. It does not measure Chrome or prove long-run resource stability.
 Product fetches now have browser-side cancellation timers as well as Python timeouts,
 and store canaries check ZIP in addition to store ID and pickup context.
+
+### Store-session reselection trial
+
+Set `"refresh_store_each_page": true` in a separate store configuration to reselect pickup through
+the retailer UI after category navigation and before pending product batches. This adds UI time
+and does not bypass validation: a mismatched response still invalidates the run.
+Trial evidence is under `evidence/store-refresh-*`; consult the latest review status before use.
+
+`compare_transports.py` is an optional live diagnostic requiring `requirements-transport-review.txt`.
+It compares browser fetch, Playwright shared-cookie requests and curl sessions in three fresh
+guests. `--chrome-profile` enables curl's documented Chrome compatibility profile; use `--output`
+with a new evidence directory. Cookies remain in memory and are never written to the report.
+This diagnostic does not traverse categories or publish product data.

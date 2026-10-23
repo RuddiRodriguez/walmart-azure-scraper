@@ -3,6 +3,7 @@ import asyncio
 import json
 import re
 import time
+from urllib.parse import urlsplit, urlunsplit
 
 from bs4 import BeautifulSoup
 from seleniumbase import sb_cdp
@@ -113,6 +114,12 @@ def verify_banner(soup, store):
 
 
 def fetch_product(sb, url, settings, log=None):
+    if settings.get('pickup_product_url'):
+        parts = urlsplit(url)
+        request_url = urlunsplit((parts.scheme, parts.netloc, parts.path, 'fulfillmentIntent=Pickup', ''))
+        if log:
+            log('product_request_url', original_url=url, request_url=request_url)
+        url = request_url
     # Abort the browser request too; cancelling Python's wait alone leaves fetch running.
     timeout_ms = max(1, int(settings['max_page_seconds'] * 1000))
     expression = '(async () => { const controller = new AbortController(); const timer = setTimeout(() => controller.abort(), ' + str(timeout_ms) + '); try { const r = await fetch(' + json.dumps(url) + ', {signal: controller.signal, cache: "no-store"}); return {status:r.status, html:await r.text()}; } finally { clearTimeout(timer); } })()'

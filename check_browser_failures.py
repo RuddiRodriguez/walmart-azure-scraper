@@ -31,6 +31,20 @@ def check():
             raise AssertionError('HTTP failure accepted')
         finally:
             loop.close()
+    events = []
+    async def success(*args, **kwargs):
+        return {'status': 200, 'html': '<title>Product fixture</title>'}
+    loop = asyncio.new_event_loop()
+    try:
+        soup = fetch_product(SimpleNamespace(loop=loop, page=SimpleNamespace(evaluate=success)),
+            'https://www.walmart.com/ip/Example/123?classType=VARIANT',
+            {**settings, 'pickup_product_url': True}, lambda event, **values: events.append((event, values)))
+        soup.clear(decompose=True); soup.decompose()
+        assert events == [('product_request_url', {'original_url': 'https://www.walmart.com/ip/Example/123?classType=VARIANT',
+                                                   'request_url': 'https://www.walmart.com/ip/Example/123?fulfillmentIntent=Pickup'})]
+        checks.append('Pickup request query preserves product path and logs original URL')
+    finally:
+        loop.close()
     async def slow(*args, **kwargs):
         await asyncio.sleep(1)
     loop = asyncio.new_event_loop()
