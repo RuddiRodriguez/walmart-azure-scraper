@@ -82,3 +82,28 @@ those prerequisites.
 - Code now marks active runtime as incomplete after an abrupt unclean stop; elapsed wall time
   remains available. Missing runtime from a killed process is not silently called complete.
 - Started a fresh revised full-mode crawl at 06:26 UTC. Product-stage SIGKILL test is queued.
+
+### Recovery and parser review — 06:33 UTC
+
+- First product-stage SIGKILL fired between requests after three commits; it is logged as such.
+  Fixed the test watcher to require the latest event to be a newly started product request.
+- Second SIGKILL happened after request start for product 15154970737, before its record committed.
+  Six prior records survived. Resume retried that product once, completed it once, preserved all
+  prior pages/products without repeats, and passed SQLite integrity checks. Exact network-packet
+  timing was not measured. Evidence: `evidence/hard-product-recovery/hard-recovery.json`.
+- An overlap-test attempt raced with the first kill and started a new run after the lock had been
+  released. Stopped that test run during store selection, restored the known checkpoint pointer,
+  and repeated the overlap check while the resumed process actually held the lock: correctly
+  rejected. Both the failed test setup and passing result are retained, not hidden.
+- Offline transaction SIGKILL test passed: prior data retained, uncommitted writes discarded,
+  and a subsequent transaction succeeded. `evidence/storage-crash-check.json`.
+- Inspected 2,129 genuine historical listing observations. All 28 unavailable observations lacked
+  explicit Store 100 pickup evidence. These cannot establish live local unavailable-item retention.
+- Found and fixed combined-category-ID handling introduced by the first ancestry restriction.
+  Added its regression test. Total requirement checks now 49, all passing offline.
+- Revised page selection to take one pending page per category per round and prioritize next-page
+  URLs. This avoids processing an entire large child queue before continuing pagination.
+- Store name/address are now read from retailer DOM strings and checked against configuration;
+  ZIP comes from each product's retailer response. Saved store metadata documents this source.
+- Deliberately ended the intermediate v2 run after 26 valid records to use these fixes. Offline
+  replay matched all 26 exported records. Started the fresh v3 full run at 06:33:26 UTC.

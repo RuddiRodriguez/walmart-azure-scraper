@@ -80,6 +80,14 @@ def select_store(sb, store, settings, log, output):
     sb.sleep(3)
     soup = check_html(sb.get_page_source())
     verify_banner(soup, store)
+    observed = {}
+    for field in ['name', 'address']:
+        node = soup.find(string=lambda text: text and text.strip() == store[field])
+        if node is None:
+            raise ValueError('Store ' + field + ' not present in retailer response')
+        observed[field] = node.strip()
+    store.update(observed)
+    (output / 'selected-store.json').write_text(json.dumps({'id': str(store['id']), **observed, 'banner': soup.select_one('[data-automation-id="fulfillment-banner"]').get_text(' ', strip=True), 'source': 'visible retailer DOM strings verified against configured location'}, indent=2) + '\n')
     sb.save_screenshot(str(output / 'selected-store.png'))
     logo = soup.select_one('a[aria-label="Walmart Homepage"] img')
     log('store_selected', store=store['id'], name=store['name'], zip=store['zip'], fulfillment='PICKUP')

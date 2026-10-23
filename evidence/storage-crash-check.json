@@ -1,0 +1,10 @@
+{
+  "mode": "offline subprocess SIGKILL inside uncommitted SQLite transaction",
+  "passed": true,
+  "checks": [
+    "Prior committed record retained",
+    "Uncommitted record rolled back",
+    "Database integrity OK",
+    "Subsequent transaction committed"
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "mode": "live concurrent start while full-v2 run owns lock",
+  "passed": false,
+  "exit_code": -2,
+  "stderr": "Traceback (most recent call last):\n  File \"/Users/ruddigarcia/Documents/ChatGPT/Free_l/walmart-scraper/scrape.py\", line 240, in <module>\n    run(parser.parse_args())\n    ~~~^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/ruddigarcia/Documents/ChatGPT/Free_l/walmart-scraper/scrape.py\", line 90, in run\n    logo = select_store(sb, store, settings, log, output)\n  File \"/Users/ruddigarcia/Documents/ChatGPT/Free_l/walmart-scraper/browser.py\", line 80, in select_store\n    sb.sleep(3)\n    ~~~~~~~~^^^\n  File \"/Users/ruddigarcia/Documents/ChatGPT/Free_l/walmart-feasibility/.venv/lib/python3.14/site-packages/seleniumbase/core/sb_cdp.py\", line 910, in sleep\n    time.sleep(seconds)\n    ~~~~~~~~~~^^^^^^^^^\nKeyboardInterrupt\n"
+}

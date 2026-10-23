@@ -1,0 +1,6 @@
+{
+  "mode": "live concurrent start during resumed full-v2 process",
+  "passed": true,
+  "exit_code": 1,
+  "stderr": "Traceback (most recent call last):\n  File \"/Users/ruddigarcia/Documents/ChatGPT/Free_l/walmart-scraper/scrape.py\", line 240, in <module>\n    run(parser.parse_args())\n    ~~~^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/ruddigarcia/Documents/ChatGPT/Free_l/walmart-scraper/scrape.py\", line 29, in run\n    fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)\n    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nBlockingIOError: [Errno 35] Resource temporarily unavailable\n"
+}

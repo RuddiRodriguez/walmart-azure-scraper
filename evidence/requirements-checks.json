@@ -1,8 +1,8 @@
 {
   "mode": "offline checks of captured evidence and explicitly synthetic mutations; no live acceptance claim",
-  "time_utc": "2026-10-23T06:27:00.544701+00:00",
+  "time_utc": "2026-10-23T06:33:12.668837+00:00",
   "passed": true,
-  "count": 48,
+  "count": 49,
   "checks": [
     "Captured historical record passes schema checks",
     "Rejects null field",
@@ -51,6 +51,7 @@
     "Challenge rejected: Access Denied",
     "Challenge rejected: CAPTCHA",
     "Wrong banner rejected",
-    "Unrelated browse ancestry and recipes skipped with reasons"
+    "Unrelated browse ancestry and recipes skipped with reasons",
+    "Composite root ID retains its child category"
   ]
 }

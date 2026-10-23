@@ -1,0 +1,45 @@
+{
+  "mode": "offline replay of this run source evidence; not a new live collection",
+  "records": 26,
+  "passed": true,
+  "validation": {
+    "passed": true,
+    "records": 26,
+    "errors": [],
+    "category_counts": {
+      "Diapering": 26
+    },
+    "duplicate_urls": 0,
+    "duplicate_product_ids": 0,
+    "field_nonempty_counts": {
+      "zipcode": 26,
+      "store_name": 26,
+      "store_location": 26,
+      "store_logo": 26,
+      "store_brand": 26,
+      "category": 26,
+      "sub_category": 26,
+      "product_title": 26,
+      "weight": 13,
+      "regular_price": 26,
+      "sale_price": 2,
+      "volume_deals_description": 0,
+      "volume_deals_price": 0,
+      "digital_deals_description": 0,
+      "digital_deals_price": 0,
+      "image_url": 26,
+      "url": 26,
+      "upc": 26,
+      "gupc": 0,
+      "ppm": 26,
+      "unit_price": 0,
+      "crawl_date": 26
+    },
+    "pending_pages": 0,
+    "pending_products": 0,
+    "products_needing_review": 0,
+    "retained_unavailable_records": 0
+  },
+  "source_mismatches": [],
+  "scope": "Record correctness only; does not imply full category coverage or production acceptance."
+}

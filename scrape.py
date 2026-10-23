@@ -86,6 +86,7 @@ def run(args):
         current_work = {}
 
     try:
+        current_work = {'kind': 'store_selection'}
         sb = open_browser()
         logo = select_store(sb, store, settings, log, output)
         canary_check(sb, store, settings)
@@ -93,8 +94,8 @@ def run(args):
         page_count = db.execute("SELECT count(*) FROM pages WHERE status='done'").fetchone()[0]
         # Breadth-first across categories. Sample obtains a minimum from each category.
         while True:
-            order = "CASE WHEN url LIKE '%/browse/%' THEN 0 ELSE 1 END,rowid" if args.sample else 'rowid'
-            pending = db.execute("SELECT category,url FROM pages WHERE status='pending' ORDER BY row_number() OVER (PARTITION BY category ORDER BY " + order + "),rowid").fetchall()
+            order = "CASE WHEN url LIKE '%page=%' THEN 0 ELSE 1 END," + ("CASE WHEN url LIKE '%/browse/%' THEN 0 ELSE 1 END," if args.sample else '') + 'rowid'
+            pending = db.execute("SELECT category,url FROM (SELECT category,url,rowid, row_number() OVER (PARTITION BY category ORDER BY " + order + ") AS position FROM pages WHERE status='pending') WHERE position=1 ORDER BY rowid").fetchall()
             if not pending:
                 break
             progressed = False

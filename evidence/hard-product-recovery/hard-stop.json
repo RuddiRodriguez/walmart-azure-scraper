@@ -1,0 +1,45 @@
+{
+  "time_utc": "2026-10-23T06:29:46.639354+00:00",
+  "signal": "SIGKILL",
+  "last_event": {
+    "time": "2026-10-23T06:29:46.437736+00:00",
+    "event": "product_started",
+    "store": "100",
+    "kind": "product",
+    "id": "15154970737",
+    "url": "https://www.walmart.com/ip/Rascals-Premium-Absorbent-Baby-Diapers-Size-4-72-Count/15154970737?fulfillmentIntent=Pickup&filters=%5B%7B%22intent%22%3A%22fulfillmentIntent%22%2C%22values%22%3A%5B%22Pickup%22%5D%7D%5D&classType=VARIANT&athbdg=L1600",
+    "category": "Diapering"
+  },
+  "completed_pages": [
+    [
+      "Food",
+      "https://www.walmart.com/cp/food/976759?povid=GlobalNav_rWeb_Grocery_GroceryShopAll"
+    ],
+    [
+      "Household Essentials",
+      "https://www.walmart.com/cp/household-essentials/1115193?povid=GlobalNav_rWeb_HouseholdEssentials_AllPaperCleaning"
+    ],
+    [
+      "Personal Care",
+      "https://www.walmart.com/cp/personal-care/1005862?povid=GlobalNav_rWeb_PersonalCare_3.19"
+    ],
+    [
+      "Beauty",
+      "https://www.walmart.com/cp/beauty/1085666?povid=GlobalNav_rWeb_Beauty_Beauty_ShopAll_051123"
+    ],
+    [
+      "Diapering",
+      "https://www.walmart.com/browse/diapering/5427_486190?povid=GlobalNav_mWeb_BabyKids_diaperswipes"
+    ]
+  ],
+  "committed_ids": [
+    "14893467629",
+    "2790112831",
+    "378937848",
+    "5445606208",
+    "697226189",
+    "885509773"
+  ],
+  "sqlite_integrity": "ok",
+  "scope": "live process killed after product_started; browser children also terminated; committed state recorded below"
+}

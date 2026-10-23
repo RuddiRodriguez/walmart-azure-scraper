@@ -29,7 +29,7 @@ if __name__ == '__main__':
         events = [json.loads(line) for line in events_path.read_text().splitlines()]
         new_pages = [e for e in events[before_lines:] if e['event'] == args.event]
         completed_products = sum(e['event'] == 'product' and e.get('accepted') for e in events)
-        if new_pages and completed_products >= args.minimum_products:
+        if new_pages and events[-1]['event'] == args.event and completed_products >= args.minimum_products:
             children = process.children(recursive=True)
             os.kill(args.pid, signal.SIGKILL)
             for child in children:

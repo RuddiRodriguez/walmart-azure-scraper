@@ -1,0 +1,16 @@
+{
+  "mode": "live SIGKILL after product request start, followed by identical-code resume",
+  "passed": true,
+  "checks": {
+    "sqlite_integrity": true,
+    "prior_pages_completed_once": true,
+    "prior_records_retained": true,
+    "prior_products_completed_once": true,
+    "interrupted_product_was_uncommitted": true,
+    "interrupted_product_attempted_twice": true,
+    "interrupted_product_completed_once": true
+  },
+  "committed_records_before_kill": 6,
+  "interrupted_product": "15154970737",
+  "limit": "Recovery proof only, not full catalog completion; precise network packet timing is not measured."
+}

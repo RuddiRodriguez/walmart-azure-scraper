@@ -111,6 +111,8 @@ def run():
     soup = BeautifulSoup('<main><a href="/browse/batteries/1115193_1076905?povid=976759_Crossmerch">Batteries</a><a href="/browse/food/bread/976759_976779">Bread</a><a href="/cp/recipes/123?povid=976759_Categories">Recipes</a></main>', 'html.parser')
     links = discover(soup, 'https://www.walmart.com/cp/food/976759', ['recipes'], decisions=decisions)
     check('Unrelated browse ancestry and recipes skipped with reasons', len(links) == 1 and len([d for d in decisions if d['action'] == 'skipped']) == 2)
+    composite = BeautifulSoup('<main><a href="/browse/baby/5427_486190_123">Child</a></main>', 'html.parser')
+    check('Composite root ID retains its child category', bool(discover(composite, 'https://www.walmart.com/browse/diapering/5427_486190', [])))
     report = {'mode': 'offline checks of captured evidence and explicitly synthetic mutations; no live acceptance claim',
               'time_utc': datetime.now(timezone.utc).isoformat(), 'passed': True, 'count': len(checks), 'checks': checks}
     Path('evidence/requirements-checks.json').write_text(json.dumps(report, indent=2) + '\n')

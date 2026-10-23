@@ -12,7 +12,7 @@ PRODUCT_FIELDS = 'usItemId name upc brand sellerName sellerDisplayName availabil
 
 def export(run, destination):
     destination.mkdir(parents=True, exist_ok=True)
-    for name in ['products.json', 'report.json', 'products.partial.json', 'failure.json', 'events.jsonl', 'selected-store.png', 'hard-stop.json', 'hard-recovery.json']:
+    for name in ['products.json', 'report.json', 'products.partial.json', 'failure.json', 'events.jsonl', 'selected-store.png', 'hard-stop.json', 'hard-recovery.json', 'hard-stop-between-products.json', 'selected-store.json']:
         if (run / name).exists():
             shutil.copy2(run / name, destination / name)
     sources = []
@@ -28,6 +28,9 @@ def export(run, destination):
     db = sqlite3.connect(f'file:{run / "checkpoint.sqlite"}?mode=ro', uri=True)
     coverage = [{'category': c, 'url': u, 'status': s, 'raw_count': r, 'local_count': n}
                 for c, u, s, r, n in db.execute('SELECT category,url,status,raw_count,local_count FROM pages ORDER BY category,url')]
+    candidates = [{'id': key, 'category': json.loads(data)['category'], 'url': json.loads(data)['url'], 'status': status, 'reason': reason}
+                  for key, data, status, reason in db.execute('SELECT id,data,status,reason FROM candidates ORDER BY id')]
+    (destination / 'candidate-status.json').write_text(json.dumps(candidates, indent=2) + '\n')
     db.close()
     events = [json.loads(line) for line in (run / 'events.jsonl').read_text().splitlines()]
     for page in coverage:

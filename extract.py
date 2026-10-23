@@ -198,7 +198,8 @@ def discover(soup, root_url, exclusions, current_url=None, decisions=None):
         name = a.get_text(' ', strip=True)
         canonical = parts.scheme + '://' + parts.netloc + parts.path
         reason = ''
-        if parts.path.startswith('/browse/') and '_' in child_id and root_id not in child_id.split('_') and current_id not in child_id.split('_'):
+        ancestry_matches = any(re.search(r'(?:^|_)' + re.escape(parent) + r'(?:_|$)', child_id) for parent in [root_id, current_id])
+        if parts.path.startswith('/browse/') and '_' in child_id and not ancestry_matches:
             reason = 'different_category_ancestry'
         if any((re.search(pattern, name, re.I) or re.search(pattern, parts.path, re.I)) for pattern in exclusions):
             reason = 'brief_exclusion'
