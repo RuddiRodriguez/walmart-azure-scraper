@@ -1,0 +1,10 @@
+{
+  "mode": "offline reparse of eight new live captures; no further network requests",
+  "passed": true,
+  "checks": [
+    "Three configured category visits completed in requested order",
+    "Eight planned responses captured for the same two product IDs",
+    "All response context fields agree with saved HTML and SHA256",
+    "All product identities and Store 100/PICKUP/72712 checks match"
+  ]
+}

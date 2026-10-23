@@ -44,6 +44,22 @@ not five new catalog records. Evidence and sanitized source contexts:
 The bounded diagnostic is reusable as `trace_store_context.py`; it stops at 180 seconds or failure.
 No full crawl, Azure execution or client communication occurred.
 
+## Short category-switch follow-up
+
+A separate fresh guest session visited Diapering → Beauty → Personal Care, with two scrolls per
+parent. The same control pumpkin and previously failed toothpaste were checked before the sequence
+and after each visit. All eight responses matched identity and Store 100/PICKUP/72712; all 26
+banner snapshots matched. Observed assortmentStoreId was unchanged; locDataV3/locGuestData were
+absent. Runtime: 112.99 seconds, within the 180-second cap.
+
+Switching these three parents did not reproduce the mismatch for these two products. This does
+not rule out different sequences, other products or longer-session effects. No child traversal,
+category-specific inventory validation, full run or new production publication occurred. No
+production fix was justified. The diagnostic now accepts an explicit category sequence; collector
+safeguards remain unchanged. Sanitized events, results, source contexts, hashes and offline source
+checks are in `evidence/store-context-switches-short/`. Raw HTML remains private under data/.
+No client communication or Azure work occurred.
+
 ## Final demonstration decision
 
 User requested ending further experiments and finalizing the reviewable portion. No client submission or message performed.

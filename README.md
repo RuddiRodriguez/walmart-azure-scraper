@@ -147,9 +147,11 @@ and store canaries check ZIP in addition to store ID and pickup context.
 
 ### Short store-context diagnostic (live)
 
-`trace_store_context.py` opens one fresh guest browser, checks a control and the previously failed
-product, visits only that product's parent category, scrolls twice and repeats the product checks.
-It makes at most five explicit product fetches and stops after 180 seconds or the first failure.
+`trace_store_context.py` opens one fresh guest browser and checks a control and the previously
+failed product before and after each explicitly named parent category. It scrolls twice per visit.
+Default: one category, five product fetches including one immediate repeat. With three categories:
+eight fetches, checking the same two products to isolate category changes. Both modes stop after
+180 seconds or the first failure.
 It does not crawl children, publish products, reset cookies or relax store checks.
 Use a new private output folder for each run:
 
@@ -161,3 +163,12 @@ The JSON log compares visible store banners, product-response store/ZIP/intent a
 named location cookies. Cookie values remain in memory only. Raw HTML stays in the private output
 folder. A matching response verifies location context only, not seller, availability or price.
 See `evidence/store-context-trace-short/` for the bounded result and its limitations.
+
+To check a short category-switch sequence without child traversal:
+
+```bash
+python trace_store_context.py --categories Diapering Beauty "Personal Care" --output data/context-switches-new
+```
+
+`evidence/store-context-switches-short/` records a 112.99-second, three-category diagnostic.
+Eight responses matched Store 100 pickup; this does not establish complete or repeated reliability.

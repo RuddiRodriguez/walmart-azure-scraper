@@ -293,3 +293,14 @@ User authorized one short targeted investigation, simple code, logs and push; no
 - Private data/store-context-trace-20261023-short contains HTML and selector screenshots; stdout at data/store-context-trace-20261023-short.log. Published only sanitized context fields, hashes, cookie names/change flags and event/result logs in evidence/store-context-trace-short. Cookie values/session identifiers were not logged or exported.
 - Offline checks: captured matching context accepted; empty, SHIPPING, wrong-ZIP and wrong-store synthetic contexts rejected. Reparsed all five new HTML captures and verified source SHA256/context agreement. Diagnostic compiles. No additional broad suites or long tests.
 - Updated README, review status and unsent client draft. Historical 500 audit/checksum manifest regenerated before commit; Azure/full coverage/reliability limits remain. Nothing sent or submitted.
+
+### Bounded category-switch diagnostic — 2026-10-23T14:26:52.147875+00:00
+
+User authorized a short multi-category test, simple code, logging and push; no full crawl or client communication.
+
+- Extended trace_store_context.py with an explicit --categories sequence. Reuses one guest browser and the same two control/target URLs. Baseline plus after each named parent; two scrolls each. No recursive discovery, listings/products collection, cookie resets or relaxed acceptance checks. Default one-category behavior retains its five-request plan; three-category plan requests eight responses. Both stop on first failure or 180-second alarm.
+- Live sequence Diapering → Beauty → Personal Care completed in 112.99 seconds. Eight responses across the same two IDs (47428850 control pumpkin, 391706535 previously failed toothpaste); every identity/store/ZIP/intent matched. All 26 banner snapshots matched. Observed assortmentStoreId remained byte-identical; watched locDataV3 and locGuestData absent.
+- These three switches did not reproduce the fault. This is not proof that category switching never causes it, or that full/repeated runs work. Other products, sequences and longer-session effects remain untested. No production fix supported; collector/store safeguards unchanged.
+- Offline reparse checked all eight private HTML captures, their SHA256 and published context projections. Expected visit order, response count and identity/store consistency passed; diagnostic compiled. No new broad/long offline suites.
+- Private raw HTML/screenshots/stdout: data/store-context-switches-20261023-short/ and matching .log. Public sanitized events/results, source contexts, hashes, summary and offline-checks: evidence/store-context-switches-short/. No cookie values/session IDs exported. Eight responses are two distinct IDs, not eight new catalog products.
+- Updated README, review status and unsent client draft. Regenerated historical 500 audit and tracked-file checksum manifest. No full crawl, Azure work, client message or submission.

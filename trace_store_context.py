@@ -1,4 +1,4 @@
-"""Bounded live store-context diagnostic: one category, no crawl or publication."""
+"""Bounded live store-context diagnostic: explicit category visits, no crawl or publication."""
 import argparse
 import csv
 import hashlib
@@ -23,18 +23,21 @@ def product_context(product, store):
     return {'product_id': str(product.get('usItemId') or ''), **actual, 'store_matches': actual == expected}
 
 
-def trace(failure, output):
+def trace(failure, output, categories=None):
     settings = json.loads(Path('config/stores.json').read_text())
     settings.update(retries=1, max_page_seconds=25)
     store = settings['stores'][0]
     target = json.loads(failure.read_text())['current_work']
-    category = next(row['URL'] for row in csv.DictReader(Path('config/categories.csv').open())
-                    if row['Category (Auto)'] == target['category'])
+    category_urls = {row['Category (Auto)']: page_url(row['URL'])
+                     for row in csv.DictReader(Path('config/categories.csv').open())}
+    plan = [{'category': name, 'url': category_urls[name]} for name in categories or [target['category']]]
     urls = [store['canary_urls'][0], target['url']]
     output.mkdir(parents=True, exist_ok=False)
     result = {'mode': 'live targeted diagnostic; no crawl or product publication',
               'started_utc': datetime.now(timezone.utc).isoformat(), 'category': target['category'],
-              'category_url': page_url(category), 'expected_store': {'id': store['id'], 'zip': store['zip']},
+              'category_sequence': plan, 'visited_categories': [],
+              'planned_product_requests': 2 + 2 * len(plan) + (len(plan) == 1),
+              'max_seconds': 180, 'expected_store': {'id': store['id'], 'zip': store['zip']},
               'snapshots': [], 'products': [], 'completed_plan': False,
               'privacy': 'Only location-cookie names and change flags logged; no cookie values or session identifiers.',
               'limit': 'One short session cannot establish repeated/full-run reliability or causation.'}
@@ -101,18 +104,23 @@ def trace(failure, output):
         snapshot('selected_store')
         for index, url in enumerate(urls):
             fetch('before_category_' + str(index), url)
-        soup = navigate(sb, page_url(category), settings, log)
-        (output / 'category.html').write_text(str(soup))
-        soup.clear(decompose=True)
-        soup.decompose()
-        snapshot('category_loaded')
-        for index in range(2):
-            sb.scroll_down(900)
-            sb.sleep(1)
-            snapshot('category_scroll_' + str(index + 1))
-        for index, url in enumerate(urls):
-            fetch('after_category_' + str(index), url)
-        fetch('after_category_target_repeat', target['url'])
+        for category_index, category in enumerate(plan, 1):
+            stage = 'category_' + str(category_index)
+            log('category_switch_started', **category)
+            soup = navigate(sb, category['url'], settings, log)
+            (output / (stage + '.html')).write_text(str(soup))
+            soup.clear(decompose=True)
+            soup.decompose()
+            result['visited_categories'].append(category['category'])
+            snapshot(stage + '_loaded')
+            for index in range(2):
+                sb.scroll_down(900)
+                sb.sleep(1)
+                snapshot(stage + '_scroll_' + str(index + 1))
+            for index, url in enumerate(urls):
+                fetch('after_' + stage + '_' + str(index), url)
+        if len(plan) == 1:
+            fetch('after_category_target_repeat', target['url'])
         result['completed_plan'] = True
     except Exception as error:
         result['error'] = str(error)
@@ -132,5 +140,6 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--failure', type=Path, default=Path('evidence/profile-b/failure.json'))
     parser.add_argument('--output', type=Path, required=True, help='New directory under private data/')
+    parser.add_argument('--categories', nargs='+', help='Configured category names, in visit order; no child traversal')
     args = parser.parse_args()
-    trace(args.failure, args.output)
+    trace(args.failure, args.output, args.categories)

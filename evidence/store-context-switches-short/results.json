@@ -1,0 +1,386 @@
+{
+  "mode": "live targeted diagnostic; no crawl or product publication",
+  "started_utc": "2026-10-23T14:23:40.396569+00:00",
+  "category": "Personal Care",
+  "category_sequence": [
+    {
+      "category": "Diapering",
+      "url": "https://www.walmart.com/browse/diapering/5427_486190"
+    },
+    {
+      "category": "Beauty",
+      "url": "https://www.walmart.com/cp/beauty/1085666"
+    },
+    {
+      "category": "Personal Care",
+      "url": "https://www.walmart.com/cp/personal-care/1005862"
+    }
+  ],
+  "visited_categories": [
+    "Diapering",
+    "Beauty",
+    "Personal Care"
+  ],
+  "planned_product_requests": 8,
+  "max_seconds": 180,
+  "expected_store": {
+    "id": "100",
+    "zip": "72712"
+  },
+  "snapshots": [
+    {
+      "stage": "selected_store",
+      "page_url": "https://www.walmart.com/",
+      "banner": "Pickup or delivery? Pickup Bentonville S Walton Blvd Supercenter",
+      "banner_matches": true,
+      "location_cookie_names": [
+        "assortmentStoreId"
+      ],
+      "location_cookies_changed_since_prior_snapshot": []
+    },
+    {
+      "stage": "before_category_0_before_request",
+      "page_url": "https://www.walmart.com/",
+      "banner": "Pickup or delivery? Pickup Bentonville S Walton Blvd Supercenter",
+      "banner_matches": true,
+      "location_cookie_names": [
+        "assortmentStoreId"
+      ],
+      "location_cookies_changed_since_prior_snapshot": []
+    },
+    {
+      "stage": "before_category_0_after_request",
+      "page_url": "https://www.walmart.com/",
+      "banner": "Pickup or delivery? Pickup Bentonville S Walton Blvd Supercenter",
+      "banner_matches": true,
+      "location_cookie_names": [
+        "assortmentStoreId"
+      ],
+      "location_cookies_changed_since_prior_snapshot": []
+    },
+    {
+      "stage": "before_category_1_before_request",
+      "page_url": "https://www.walmart.com/",
+      "banner": "Pickup or delivery? Pickup Bentonville S Walton Blvd Supercenter",
+      "banner_matches": true,
+      "location_cookie_names": [
+        "assortmentStoreId"
+      ],
+      "location_cookies_changed_since_prior_snapshot": []
+    },
+    {
+      "stage": "before_category_1_after_request",
+      "page_url": "https://www.walmart.com/",
+      "banner": "Pickup or delivery? Pickup Bentonville S Walton Blvd Supercenter",
+      "banner_matches": true,
+      "location_cookie_names": [
+        "assortmentStoreId"
+      ],
+      "location_cookies_changed_since_prior_snapshot": []
+    },
+    {
+      "stage": "category_1_loaded",
+      "page_url": "https://www.walmart.com/browse/diapering/5427_486190",
+      "banner": "Pickup or delivery? Pickup Bentonville S Walton Blvd Supercenter",
+      "banner_matches": true,
+      "location_cookie_names": [
+        "assortmentStoreId"
+      ],
+      "location_cookies_changed_since_prior_snapshot": []
+    },
+    {
+      "stage": "category_1_scroll_1",
+      "page_url": "https://www.walmart.com/browse/diapering/5427_486190",
+      "banner": "Pickup or delivery? Pickup Bentonville S Walton Blvd Supercenter",
+      "banner_matches": true,
+      "location_cookie_names": [
+        "assortmentStoreId"
+      ],
+      "location_cookies_changed_since_prior_snapshot": []
+    },
+    {
+      "stage": "category_1_scroll_2",
+      "page_url": "https://www.walmart.com/browse/diapering/5427_486190",
+      "banner": "Pickup or delivery? Pickup Bentonville S Walton Blvd Supercenter",
+      "banner_matches": true,
+      "location_cookie_names": [
+        "assortmentStoreId"
+      ],
+      "location_cookies_changed_since_prior_snapshot": []
+    },
+    {
+      "stage": "after_category_1_0_before_request",
+      "page_url": "https://www.walmart.com/browse/diapering/5427_486190",
+      "banner": "Pickup or delivery? Pickup Bentonville S Walton Blvd Supercenter",
+      "banner_matches": true,
+      "location_cookie_names": [
+        "assortmentStoreId"
+      ],
+      "location_cookies_changed_since_prior_snapshot": []
+    },
+    {
+      "stage": "after_category_1_0_after_request",
+      "page_url": "https://www.walmart.com/browse/diapering/5427_486190",
+      "banner": "Pickup or delivery? Pickup Bentonville S Walton Blvd Supercenter",
+      "banner_matches": true,
+      "location_cookie_names": [
+        "assortmentStoreId"
+      ],
+      "location_cookies_changed_since_prior_snapshot": []
+    },
+    {
+      "stage": "after_category_1_1_before_request",
+      "page_url": "https://www.walmart.com/browse/diapering/5427_486190",
+      "banner": "Pickup or delivery? Pickup Bentonville S Walton Blvd Supercenter",
+      "banner_matches": true,
+      "location_cookie_names": [
+        "assortmentStoreId"
+      ],
+      "location_cookies_changed_since_prior_snapshot": []
+    },
+    {
+      "stage": "after_category_1_1_after_request",
+      "page_url": "https://www.walmart.com/browse/diapering/5427_486190",
+      "banner": "Pickup or delivery? Pickup Bentonville S Walton Blvd Supercenter",
+      "banner_matches": true,
+      "location_cookie_names": [
+        "assortmentStoreId"
+      ],
+      "location_cookies_changed_since_prior_snapshot": []
+    },
+    {
+      "stage": "category_2_loaded",
+      "page_url": "https://www.walmart.com/cp/beauty/1085666?facet=fulfillment_method%3APickup",
+      "banner": "Pickup or delivery? Pickup Bentonville S Walton Blvd Supercenter",
+      "banner_matches": true,
+      "location_cookie_names": [
+        "assortmentStoreId"
+      ],
+      "location_cookies_changed_since_prior_snapshot": []
+    },
+    {
+      "stage": "category_2_scroll_1",
+      "page_url": "https://www.walmart.com/cp/beauty/1085666?facet=fulfillment_method%3APickup",
+      "banner": "Pickup or delivery? Pickup Bentonville S Walton Blvd Supercenter",
+      "banner_matches": true,
+      "location_cookie_names": [
+        "assortmentStoreId"
+      ],
+      "location_cookies_changed_since_prior_snapshot": []
+    },
+    {
+      "stage": "category_2_scroll_2",
+      "page_url": "https://www.walmart.com/cp/beauty/1085666?facet=fulfillment_method%3APickup",
+      "banner": "Pickup or delivery? Pickup Bentonville S Walton Blvd Supercenter",
+      "banner_matches": true,
+      "location_cookie_names": [
+        "assortmentStoreId"
+      ],
+      "location_cookies_changed_since_prior_snapshot": []
+    },
+    {
+      "stage": "after_category_2_0_before_request",
+      "page_url": "https://www.walmart.com/cp/beauty/1085666?facet=fulfillment_method%3APickup",
+      "banner": "Pickup or delivery? Pickup Bentonville S Walton Blvd Supercenter",
+      "banner_matches": true,
+      "location_cookie_names": [
+        "assortmentStoreId"
+      ],
+      "location_cookies_changed_since_prior_snapshot": []
+    },
+    {
+      "stage": "after_category_2_0_after_request",
+      "page_url": "https://www.walmart.com/cp/beauty/1085666?facet=fulfillment_method%3APickup",
+      "banner": "Pickup or delivery? Pickup Bentonville S Walton Blvd Supercenter",
+      "banner_matches": true,
+      "location_cookie_names": [
+        "assortmentStoreId"
+      ],
+      "location_cookies_changed_since_prior_snapshot": []
+    },
+    {
+      "stage": "after_category_2_1_before_request",
+      "page_url": "https://www.walmart.com/cp/beauty/1085666?facet=fulfillment_method%3APickup",
+      "banner": "Pickup or delivery? Pickup Bentonville S Walton Blvd Supercenter",
+      "banner_matches": true,
+      "location_cookie_names": [
+        "assortmentStoreId"
+      ],
+      "location_cookies_changed_since_prior_snapshot": []
+    },
+    {
+      "stage": "after_category_2_1_after_request",
+      "page_url": "https://www.walmart.com/cp/beauty/1085666?facet=fulfillment_method%3APickup",
+      "banner": "Pickup or delivery? Pickup Bentonville S Walton Blvd Supercenter",
+      "banner_matches": true,
+      "location_cookie_names": [
+        "assortmentStoreId"
+      ],
+      "location_cookies_changed_since_prior_snapshot": []
+    },
+    {
+      "stage": "category_3_loaded",
+      "page_url": "https://www.walmart.com/cp/personal-care/1005862",
+      "banner": "Pickup or delivery? Pickup Bentonville S Walton Blvd Supercenter",
+      "banner_matches": true,
+      "location_cookie_names": [
+        "assortmentStoreId"
+      ],
+      "location_cookies_changed_since_prior_snapshot": []
+    },
+    {
+      "stage": "category_3_scroll_1",
+      "page_url": "https://www.walmart.com/cp/personal-care/1005862",
+      "banner": "Pickup or delivery? Pickup Bentonville S Walton Blvd Supercenter",
+      "banner_matches": true,
+      "location_cookie_names": [
+        "assortmentStoreId"
+      ],
+      "location_cookies_changed_since_prior_snapshot": []
+    },
+    {
+      "stage": "category_3_scroll_2",
+      "page_url": "https://www.walmart.com/cp/personal-care/1005862",
+      "banner": "Pickup or delivery? Pickup Bentonville S Walton Blvd Supercenter",
+      "banner_matches": true,
+      "location_cookie_names": [
+        "assortmentStoreId"
+      ],
+      "location_cookies_changed_since_prior_snapshot": []
+    },
+    {
+      "stage": "after_category_3_0_before_request",
+      "page_url": "https://www.walmart.com/cp/personal-care/1005862",
+      "banner": "Pickup or delivery? Pickup Bentonville S Walton Blvd Supercenter",
+      "banner_matches": true,
+      "location_cookie_names": [
+        "assortmentStoreId"
+      ],
+      "location_cookies_changed_since_prior_snapshot": []
+    },
+    {
+      "stage": "after_category_3_0_after_request",
+      "page_url": "https://www.walmart.com/cp/personal-care/1005862",
+      "banner": "Pickup or delivery? Pickup Bentonville S Walton Blvd Supercenter",
+      "banner_matches": true,
+      "location_cookie_names": [
+        "assortmentStoreId"
+      ],
+      "location_cookies_changed_since_prior_snapshot": []
+    },
+    {
+      "stage": "after_category_3_1_before_request",
+      "page_url": "https://www.walmart.com/cp/personal-care/1005862",
+      "banner": "Pickup or delivery? Pickup Bentonville S Walton Blvd Supercenter",
+      "banner_matches": true,
+      "location_cookie_names": [
+        "assortmentStoreId"
+      ],
+      "location_cookies_changed_since_prior_snapshot": []
+    },
+    {
+      "stage": "after_category_3_1_after_request",
+      "page_url": "https://www.walmart.com/cp/personal-care/1005862",
+      "banner": "Pickup or delivery? Pickup Bentonville S Walton Blvd Supercenter",
+      "banner_matches": true,
+      "location_cookie_names": [
+        "assortmentStoreId"
+      ],
+      "location_cookies_changed_since_prior_snapshot": []
+    }
+  ],
+  "products": [
+    {
+      "stage": "before_category_0",
+      "url": "https://www.walmart.com/ip/Carving-Pumpkin-Each/47428850?fulfillmentIntent=Pickup&filters=%5B%7B%22intent%22%3A%22fulfillmentIntent%22%2C%22values%22%3A%5B%22Pickup%22%5D%7D%5D&classType=REGULAR&athbdg=L1200",
+      "source_sha256": "59458bb43686ea869d4534574cff5241ba1e4beb2d136ea300eda95a23653879",
+      "product_id": "47428850",
+      "store_id": "100",
+      "zip": "72712",
+      "intent": "PICKUP",
+      "store_matches": true,
+      "identity_matches": true
+    },
+    {
+      "stage": "before_category_1",
+      "url": "https://www.walmart.com/ip/Crest-Toothpaste-Premium-Plus-Scope-Outlast-Fluoride-Toothpaste-Mint-5-2-oz-3-pack/391706535?classType=VARIANT&athbdg=L1200",
+      "source_sha256": "9ea424fe78570accdebbcd4c521f15b08a3590ce93e3722ec7ea09b67b2370dd",
+      "product_id": "391706535",
+      "store_id": "100",
+      "zip": "72712",
+      "intent": "PICKUP",
+      "store_matches": true,
+      "identity_matches": true
+    },
+    {
+      "stage": "after_category_1_0",
+      "url": "https://www.walmart.com/ip/Carving-Pumpkin-Each/47428850?fulfillmentIntent=Pickup&filters=%5B%7B%22intent%22%3A%22fulfillmentIntent%22%2C%22values%22%3A%5B%22Pickup%22%5D%7D%5D&classType=REGULAR&athbdg=L1200",
+      "source_sha256": "fcfc6cadd21263d65775dc6fc4e7a08c547830bf8e562d24f39c071e9953d7fc",
+      "product_id": "47428850",
+      "store_id": "100",
+      "zip": "72712",
+      "intent": "PICKUP",
+      "store_matches": true,
+      "identity_matches": true
+    },
+    {
+      "stage": "after_category_1_1",
+      "url": "https://www.walmart.com/ip/Crest-Toothpaste-Premium-Plus-Scope-Outlast-Fluoride-Toothpaste-Mint-5-2-oz-3-pack/391706535?classType=VARIANT&athbdg=L1200",
+      "source_sha256": "4f3bf4568f0c96047cfb9da68207b8c1c2749d4922cf6ae1a540955c579f4c1e",
+      "product_id": "391706535",
+      "store_id": "100",
+      "zip": "72712",
+      "intent": "PICKUP",
+      "store_matches": true,
+      "identity_matches": true
+    },
+    {
+      "stage": "after_category_2_0",
+      "url": "https://www.walmart.com/ip/Carving-Pumpkin-Each/47428850?fulfillmentIntent=Pickup&filters=%5B%7B%22intent%22%3A%22fulfillmentIntent%22%2C%22values%22%3A%5B%22Pickup%22%5D%7D%5D&classType=REGULAR&athbdg=L1200",
+      "source_sha256": "eca3f319d482b74da450d27bd319e99d430433ebfc2953661592a6066d09c432",
+      "product_id": "47428850",
+      "store_id": "100",
+      "zip": "72712",
+      "intent": "PICKUP",
+      "store_matches": true,
+      "identity_matches": true
+    },
+    {
+      "stage": "after_category_2_1",
+      "url": "https://www.walmart.com/ip/Crest-Toothpaste-Premium-Plus-Scope-Outlast-Fluoride-Toothpaste-Mint-5-2-oz-3-pack/391706535?classType=VARIANT&athbdg=L1200",
+      "source_sha256": "93c89c7f970d438c4785bcd553eaefe42618fa5933bbd2d21cef89573da20cd5",
+      "product_id": "391706535",
+      "store_id": "100",
+      "zip": "72712",
+      "intent": "PICKUP",
+      "store_matches": true,
+      "identity_matches": true
+    },
+    {
+      "stage": "after_category_3_0",
+      "url": "https://www.walmart.com/ip/Carving-Pumpkin-Each/47428850?fulfillmentIntent=Pickup&filters=%5B%7B%22intent%22%3A%22fulfillmentIntent%22%2C%22values%22%3A%5B%22Pickup%22%5D%7D%5D&classType=REGULAR&athbdg=L1200",
+      "source_sha256": "99a02ee9072bc7c576640d503260ac85c24b9b1a2d091e8ad0881ee148485aa1",
+      "product_id": "47428850",
+      "store_id": "100",
+      "zip": "72712",
+      "intent": "PICKUP",
+      "store_matches": true,
+      "identity_matches": true
+    },
+    {
+      "stage": "after_category_3_1",
+      "url": "https://www.walmart.com/ip/Crest-Toothpaste-Premium-Plus-Scope-Outlast-Fluoride-Toothpaste-Mint-5-2-oz-3-pack/391706535?classType=VARIANT&athbdg=L1200",
+      "source_sha256": "f2fa7d7f3c84b14a6b174ec5968147f1ad01e26d8eada029a662e5858cbada51",
+      "product_id": "391706535",
+      "store_id": "100",
+      "zip": "72712",
+      "intent": "PICKUP",
+      "store_matches": true,
+      "identity_matches": true
+    }
+  ],
+  "completed_plan": true,
+  "privacy": "Only location-cookie names and change flags logged; no cookie values or session identifiers.",
+  "limit": "One short session cannot establish repeated/full-run reliability or causation.",
+  "seconds": 112.99
+}

@@ -1,0 +1,30 @@
+{
+  "mode": "one bounded live category-switch diagnostic; no crawl, catalog publication or submission",
+  "time_utc": "2026-10-23T14:26:10.041379+00:00",
+  "seconds": 112.99,
+  "completed_plan": true,
+  "category_sequence": [
+    "Diapering",
+    "Beauty",
+    "Personal Care"
+  ],
+  "product_responses": 8,
+  "distinct_product_ids": 2,
+  "matching_store_responses": 8,
+  "matching_banner_snapshots": 26,
+  "snapshots": 26,
+  "location_cookie_names_observed": [
+    "assortmentStoreId"
+  ],
+  "location_cookie_change_events": 0,
+  "diagnostic_source_sha256": "aed1c316a0fd0682a9dd5c3f5de04bb74df3ad2c87542b0db4bd816fd64716dc",
+  "base_commit": "043fe8113b9a74b9aacf9333a4d8830fdbf77f17",
+  "finding": "Switching Diapering, Beauty and Personal Care did not reproduce a mismatch for the two monitored products.",
+  "production_fix": "None justified; collection and strict store safeguards unchanged.",
+  "limits": [
+    "One fresh guest session, three parent visits, same two products; no child traversal or exhaustive category/product checks.",
+    "No passing full/repeated-run claim; other sequences, products or longer sessions may behave differently.",
+    "Only assortmentStoreId was present among three watched location cookies; other client/server state not fully observed.",
+    "Raw HTML and selector screenshots remain private under data/; public records omit cookie values and session identifiers."
+  ]
+}
