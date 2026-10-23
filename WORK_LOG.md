@@ -137,3 +137,21 @@ those prerequisites.
   offline replay. Repeat B began with the same code/configuration/sample size at 06:52:37 UTC.
 - The first extra unavailable-item probe failed before store selection (pickup banner not found).
   No product was collected in that attempt. A later isolated retry will preserve diagnostic images.
+
+### Repeat failure and stricter publication protection — 07:05 UTC
+
+- Repeat B failed after seven accepted records, on product 47376050, with another location mismatch.
+  Repeat A passed (33 records, 552.93 seconds); B's event span was about 340 seconds before failure.
+  Seven common records had unchanged prices, but the incomplete second run is not a successful
+  reliability test. `evidence/repeat-comparison.json` preserves this distinction.
+- Stopped the resumed v3 full attempt deliberately to improve failure capture and publication
+  guarantees. It had 259 valid records and 1,259 discovered/completed URLs. All 259 passed offline
+  source replay. It is a partial, interrupted run and cannot establish full catalog coverage.
+- Added pre-validation product source capture and separate immutable rejected-response files.
+  A later retry cannot overwrite the rejected response evidence.
+- A location mismatch now permanently bars that run from publication, including after resume.
+  A fresh clean run is required. Offline integration verifies this and saved rejected-response data.
+- Full traversal now prioritizes actual listing pages and pagination across categories, while
+  retaining landing pages in the queue, to reach useful category breadth sooner.
+- Added 13 passing offline HTTP/timeout/malformed-response/canary checks. They are not live block
+  demonstrations. Retrying the unavailable-item investigation with no other scraper browser active.

@@ -24,6 +24,11 @@ def export(run, destination):
         sources.append({'candidate': source['candidate'],
                         'product': {key: product.get(key) for key in PRODUCT_FIELDS},
                         'specifications': source.get('specifications'), 'reason': source.get('reason')})
+    rejected = []
+    for path in sorted((run / 'sources' / 'rejected').glob('*.json')):
+        source = json.loads(path.read_text()); product = source.get('product') or {}
+        rejected.append({'source': path.name, 'candidate': source['candidate'], 'product': {key: product.get(key) for key in PRODUCT_FIELDS}, 'error': source.get('error'), 'reason': source.get('reason')})
+    (destination / 'rejected-responses.json').write_text(json.dumps(rejected, indent=2) + '\n')
     (destination / 'source-records.json').write_text(json.dumps(sources, indent=2) + '\n')
     db = sqlite3.connect(f'file:{run / "checkpoint.sqlite"}?mode=ro', uri=True)
     coverage = [{'category': c, 'url': u, 'status': s, 'raw_count': r, 'local_count': n}

@@ -1,0 +1,98 @@
+{
+  "mode": "comparison of separately collected live runs; calculation itself is offline",
+  "runs": [
+    {
+      "folder": "evidence/repeat-a",
+      "records": 33,
+      "mode": "sample",
+      "active_seconds": 552.93,
+      "elapsed_seconds": 552.93,
+      "active_time_complete": true,
+      "elapsed_event_span_seconds": null,
+      "failure": null,
+      "category_counts": {
+        "Office Supplies": 3,
+        "Pets": 3,
+        "Feeding": 3,
+        "Diapering": 3,
+        "Art Supplies": 3,
+        "Household Essentials": 3,
+        "Personal Care": 3,
+        "Health & Wellness": 3,
+        "Beauty": 3,
+        "Food": 3,
+        "Balloons": 3
+      },
+      "sample_passed": true,
+      "full_passed": false,
+      "signature": "3f74d0bd881dbd6f1c28349dd1ff392890c50698db420e83f0eb940d2abc4bce"
+    },
+    {
+      "folder": "evidence/repeat-b",
+      "records": 7,
+      "mode": "sample",
+      "active_seconds": null,
+      "elapsed_seconds": null,
+      "active_time_complete": null,
+      "elapsed_event_span_seconds": 340.13625,
+      "failure": {
+        "run_id": "20261023T065237943455Z",
+        "mode": "sample",
+        "current_work": {
+          "kind": "product",
+          "id": "47376050",
+          "url": "https://www.walmart.com/ip/Fresh-Pie-Pumpkin-Each-Approx-1-7-2-8-lb/47376050?fulfillmentIntent=Pickup&filters=%5B%7B%22intent%22%3A%22fulfillmentIntent%22%2C%22values%22%3A%5B%22Pickup%22%5D%7D%5D&classType=REGULAR&athbdg=L1102",
+          "category": "Food"
+        },
+        "error": "Location mismatch: publication prohibited",
+        "error_type": "ValueError",
+        "records": 7,
+        "pending_pages": 1045,
+        "pending_products": 53,
+        "published": false
+      },
+      "category_counts": {
+        "Diapering": 3,
+        "Balloons": 3,
+        "Food": 1
+      },
+      "sample_passed": false,
+      "full_passed": false,
+      "signature": "3f74d0bd881dbd6f1c28349dd1ff392890c50698db420e83f0eb940d2abc4bce"
+    }
+  ],
+  "common_ids": 7,
+  "only_first": [
+    "1036514650",
+    "10849576",
+    "11469112192",
+    "1333229637",
+    "15164262674",
+    "15543972",
+    "15662806819",
+    "18009722795",
+    "1832142965",
+    "18332152411",
+    "189806568",
+    "20736762290",
+    "20877373221",
+    "22123817",
+    "232119780",
+    "285037596",
+    "356027245",
+    "391706535",
+    "394522932",
+    "47376050",
+    "484659680",
+    "579385346",
+    "608189346",
+    "851227148",
+    "883632494",
+    "914173307"
+  ],
+  "only_second": [],
+  "price_changes": [],
+  "same_category_counts": false,
+  "same_code_and_configuration": true,
+  "limit": "Short samples do not prove complete catalog reliability. Real assortment, ordering and prices may change."
+}

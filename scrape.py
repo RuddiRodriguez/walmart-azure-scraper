@@ -76,8 +76,19 @@ def run(args):
             current_work = {'kind': 'product', 'id': key, 'url': candidate['url'], 'category': candidate['category']}
             log('product_started', **current_work)
             soup = fetch_product(sb, candidate['url'], settings, log)
-            row, reason, product = product_record(candidate, soup, store, settings['private_labels'], logo)
-            atomic_json(output / 'sources' / (key + '.json'), {'candidate': candidate, 'product': product, 'specifications': (next_data(soup).get('data', {}).get('idml') or {}).get('specifications'), 'reason': reason})
+            data = next_data(soup).get('data') or {}
+            source_data = {'candidate': candidate, 'product': data.get('product'),
+                           'specifications': (data.get('idml') or {}).get('specifications'), 'reason': 'not_validated'}
+            atomic_json(output / 'sources' / (key + '.json'), source_data)
+            try:
+                row, reason, product = product_record(candidate, soup, store, settings['private_labels'], logo)
+            except Exception as error:
+                source_data.update(reason='validation_error', error=str(error))
+                stamp = datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%S%fZ')
+                atomic_json(output / 'sources' / 'rejected' / (key + '-' + stamp + '.json'), source_data)
+                raise
+            source_data['reason'] = reason
+            atomic_json(output / 'sources' / (key + '.json'), source_data)
             save_product(db, candidate, row, reason)
             if row:
                 sample_counts[candidate['category']] += 1
@@ -94,7 +105,7 @@ def run(args):
         page_count = db.execute("SELECT count(*) FROM pages WHERE status='done'").fetchone()[0]
         # Breadth-first across categories. Sample obtains a minimum from each category.
         while True:
-            order = "CASE WHEN url LIKE '%page=%' THEN 0 ELSE 1 END," + ("CASE WHEN url LIKE '%/browse/%' THEN 0 ELSE 1 END," if args.sample else '') + 'rowid'
+            order = "CASE WHEN url LIKE '%page=%' THEN 0 ELSE 1 END,CASE WHEN url LIKE '%/browse/%' THEN 0 ELSE 1 END,rowid"
             pending = db.execute("SELECT category,url FROM (SELECT category,url,rowid, row_number() OVER (PARTITION BY category ORDER BY " + order + ") AS position FROM pages WHERE status='pending') WHERE position=1 ORDER BY rowid").fetchall()
             if not pending:
                 break
@@ -181,7 +192,11 @@ def run(args):
         if args.sample:
             sample_settings = {**settings, 'minimum_records': args.sample * len(categories), 'minimum_category_records': args.sample}
             report['sample_validation'] = validate(rows, list(categories), store, sample_settings, 0, 0, review, unavailable_urls=unavailable_urls)
-        report.update(mode='sample' if args.sample else 'full', store=store,
+        if metadata(db, 'location_mismatch_seen'):
+            for validation in [report] + ([report['sample_validation']] if args.sample else []):
+                validation['passed'] = False
+                validation['errors'].append('Location mismatch occurred in this run; fresh run required for publication')
+        report.update(location_mismatch_seen=bool(metadata(db, 'location_mismatch_seen')), mode='sample' if args.sample else 'full', store=store,
                       active_seconds=round(metadata(db, 'active_seconds') + time.monotonic() - started, 2),
                       elapsed_seconds=round(time.time() - metadata(db, 'started'), 2),
                       active_time_complete=not bool(metadata(db, 'active_time_incomplete')),
@@ -202,10 +217,16 @@ def run(args):
         if not args.sample and not report['passed']:
             raise RuntimeError('Full run failed publication checks; see report.json')
     except BaseException as error:
+        if any(text in str(error) for text in ['Location mismatch', 'Location ZIP mismatch', 'Canary missing or incorrect store context']):
+            metadata(db, 'location_mismatch_seen', True)
         # Keep reviewable partial output without changing the last successful publication.
         atomic_json(output / 'products.partial.json', records(db))
         atomic_json(output / 'failure.json', {
             'run_id': run_id, 'mode': 'sample' if args.sample else 'full',
+            'active_seconds': round(metadata(db, 'active_seconds') + time.monotonic() - started, 2),
+            'elapsed_seconds': round(time.time() - metadata(db, 'started'), 2),
+            'active_time_complete': not bool(metadata(db, 'active_time_incomplete')),
+            'signature': signature, 'location_mismatch_seen': bool(metadata(db, 'location_mismatch_seen')),
             'current_work': current_work, 'error': str(error), 'error_type': type(error).__name__,
             'records': len(records(db)),
             'pending_pages': db.execute("SELECT count(*) FROM pages WHERE status!='done'").fetchone()[0],

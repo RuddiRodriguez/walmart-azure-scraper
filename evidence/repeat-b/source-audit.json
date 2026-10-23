@@ -1,0 +1,47 @@
+{
+  "mode": "offline replay of this run source evidence; not a new live collection",
+  "records": 7,
+  "passed": true,
+  "validation": {
+    "passed": true,
+    "records": 7,
+    "errors": [],
+    "category_counts": {
+      "Diapering": 3,
+      "Balloons": 3,
+      "Food": 1
+    },
+    "duplicate_urls": 0,
+    "duplicate_product_ids": 0,
+    "field_nonempty_counts": {
+      "zipcode": 7,
+      "store_name": 7,
+      "store_location": 7,
+      "store_logo": 7,
+      "store_brand": 7,
+      "category": 7,
+      "sub_category": 7,
+      "product_title": 7,
+      "weight": 1,
+      "regular_price": 7,
+      "sale_price": 1,
+      "volume_deals_description": 0,
+      "volume_deals_price": 0,
+      "digital_deals_description": 0,
+      "digital_deals_price": 0,
+      "image_url": 7,
+      "url": 7,
+      "upc": 7,
+      "gupc": 0,
+      "ppm": 6,
+      "unit_price": 0,
+      "crawl_date": 7
+    },
+    "pending_pages": 0,
+    "pending_products": 0,
+    "products_needing_review": 0,
+    "retained_unavailable_records": 0
+  },
+  "source_mismatches": [],
+  "scope": "Record correctness only; does not imply full category coverage or production acceptance."
+}

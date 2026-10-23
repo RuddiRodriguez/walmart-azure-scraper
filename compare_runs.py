@@ -1,14 +1,26 @@
 """Compare two exported live runs without treating changing retail offers as fabricated errors."""
 import argparse
 import json
+from collections import Counter
+from datetime import datetime
 from pathlib import Path
 
 
 def compare(first, second, destination):
     runs = []
     for folder in [first, second]:
-        report = json.loads((folder / 'report.json').read_text())
-        rows = json.loads((folder / 'products.json').read_text())
+        report_path = folder / 'report.json'
+        rows = json.loads((folder / ('products.json' if (folder / 'products.json').exists() else 'products.partial.json')).read_text())
+        if report_path.exists():
+            report = json.loads(report_path.read_text())
+        else:
+            failure = json.loads((folder / 'failure.json').read_text())
+            events = [json.loads(line) for line in (folder / 'events.jsonl').read_text().splitlines()]
+            report = {'records': len(rows), 'mode': failure['mode'], 'active_seconds': failure.get('active_seconds'),
+                      'elapsed_seconds': failure.get('elapsed_seconds'), 'active_time_complete': failure.get('active_time_complete'),
+                      'elapsed_event_span_seconds': (datetime.fromisoformat(events[-1]['time']) - datetime.fromisoformat(events[0]['time'])).total_seconds(),
+                      'category_counts': dict(Counter(r['category'] for r in rows)), 'passed': False,
+                      'sample_validation': {'passed': False}, 'signature': events[0].get('signature'), 'failure': failure}
         products = {r['url'].split('?')[0].rstrip('/').split('/')[-1]: r for r in rows}
         runs.append((report, products))
     left, right = runs[0][1], runs[1][1]
@@ -19,7 +31,8 @@ def compare(first, second, destination):
     result = {'mode': 'comparison of separately collected live runs; calculation itself is offline',
               'runs': [{'folder': str(folder), 'records': report['records'], 'mode': report['mode'],
                         'active_seconds': report['active_seconds'], 'elapsed_seconds': report['elapsed_seconds'],
-                        'active_time_complete': report.get('active_time_complete', True),
+                        'active_time_complete': report.get('active_time_complete'),
+                        'elapsed_event_span_seconds': report.get('elapsed_event_span_seconds'), 'failure': report.get('failure'),
                         'category_counts': report['category_counts'],
                         'sample_passed': report.get('sample_validation', {}).get('passed'),
                         'full_passed': report['passed'], 'signature': report.get('signature')}

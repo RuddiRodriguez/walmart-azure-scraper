@@ -1,4 +1,5 @@
 """Offline runner integration with captured product data and simulated two-page navigation."""
+import copy
 import csv
 import json
 import tempfile
@@ -55,6 +56,29 @@ def check():
             args.resume = True
             run(args)
             assert fetch.call_count == 1
+        original_output = args.output
+        args.output = str(folder / 'location-failure'); args.resume = False
+        bad_data = copy.deepcopy(source['product']); bad_data['location']['intent'] = 'SHIPPING'
+        bad_product = BeautifulSoup('<script id="__NEXT_DATA__"></script>', 'html.parser')
+        bad_product.script.string = json.dumps({'props': {'pageProps': {'initialData': {'data': {'product': bad_data}}}}})
+        with patch('scrape.open_browser', return_value=sb), patch('scrape.select_store', return_value=''), patch('scrape.canary_check'), patch('scrape.verify_banner'), patch('scrape.navigate', side_effect=navigate), patch('scrape.listing_candidates', side_effect=listing), patch('scrape.discover', side_effect=lambda *a, **k: {}), patch('scrape.fetch_product', side_effect=[bad_product, product]):
+            try:
+                run(args)
+            except ValueError as error:
+                assert 'Location mismatch' in str(error)
+            else:
+                raise AssertionError('Wrong location accepted')
+            rejected = list((folder / 'location-failure').glob('100/runs/*/sources/rejected/*.json'))
+            assert len(rejected) == 1 and json.loads(rejected[0].read_text())['product']['location']['intent'] == 'SHIPPING'
+            args.resume = True
+            try:
+                run(args)
+            except RuntimeError as error:
+                assert 'publication checks' in str(error)
+            else:
+                raise AssertionError('Previously mismatched run published after resume')
+            assert not (folder / 'location-failure/100/latest.json').exists()
+        args.output = original_output
         args.sample = 2
         try:
             run(args)
@@ -65,7 +89,7 @@ def check():
             raise AssertionError('Cross-mode resume accepted')
     result = {'mode': 'offline simulated navigation; captured product fixture; no live browser or network',
               'passed': True, 'checks': ['Two pages traversed', 'Repeated product ID deduplicated',
-              'Complete valid full-mode result publishes atomically', 'Resume does not repeat committed product', 'Cross-mode resume rejected']}
+              'Complete valid full-mode result publishes atomically', 'Resume does not repeat committed product', 'Cross-mode resume rejected', 'Rejected location response saved before validation failure', 'Location mismatch permanently prevents publication even after resume']}
     Path('evidence/runner-flow-check.json').write_text(json.dumps(result, indent=2) + '\n')
     print(json.dumps(result))
 

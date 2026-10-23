@@ -1,0 +1,50 @@
+{
+  "mode": "offline replay of this run source evidence; not a new live collection",
+  "records": 259,
+  "passed": true,
+  "validation": {
+    "passed": true,
+    "records": 259,
+    "errors": [],
+    "category_counts": {
+      "Personal Care": 68,
+      "Pets": 49,
+      "Diapering": 48,
+      "Food": 5,
+      "Beauty": 62,
+      "Balloons": 27
+    },
+    "duplicate_urls": 0,
+    "duplicate_product_ids": 0,
+    "field_nonempty_counts": {
+      "zipcode": 259,
+      "store_name": 259,
+      "store_location": 259,
+      "store_logo": 259,
+      "store_brand": 259,
+      "category": 259,
+      "sub_category": 259,
+      "product_title": 259,
+      "weight": 153,
+      "regular_price": 259,
+      "sale_price": 17,
+      "volume_deals_description": 0,
+      "volume_deals_price": 0,
+      "digital_deals_description": 0,
+      "digital_deals_price": 0,
+      "image_url": 259,
+      "url": 259,
+      "upc": 243,
+      "gupc": 0,
+      "ppm": 213,
+      "unit_price": 0,
+      "crawl_date": 259
+    },
+    "pending_pages": 0,
+    "pending_products": 0,
+    "products_needing_review": 0,
+    "retained_unavailable_records": 0
+  },
+  "source_mismatches": [],
+  "scope": "Record correctness only; does not imply full category coverage or production acceptance."
+}
