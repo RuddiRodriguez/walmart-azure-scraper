@@ -5,6 +5,12 @@ source evidence, validation and atomic publication. No paid proxies or scraping 
 
 ## Current status
 
+Final demonstration review: store-context reliability remains unresolved. Latest profile test
+passed 33 records, then failed its repeat after 12. Wrong-store data was not published.
+Unsuccessful trial options have been removed from the main collector; their evidence and
+versioned trial code remain available in Git history. See `docs/REVIEW_STATUS.md`.
+
+
 October 23 review: see `WORK_LOG.md` and `docs/REVIEW_STATUS.md` for the latest evidence and gaps.
 Run `python review_package.py` to re-audit the historical demonstration and generate checksums.
 This is an offline audit, not a fresh scrape. `check_review_changes.py` uses explicitly synthetic
@@ -137,15 +143,3 @@ explicit descendant cleanup. It does not measure Chrome or prove long-run resour
 Product fetches now have browser-side cancellation timers as well as Python timeouts,
 and store canaries check ZIP in addition to store ID and pickup context.
 
-### Store-session reselection trial
-
-Set `"refresh_store_each_page": true` in a separate store configuration to reselect pickup through
-the retailer UI after category navigation and before pending product batches. This adds UI time
-and does not bypass validation: a mismatched response still invalidates the run.
-Trial evidence is under `evidence/store-refresh-*`; consult the latest review status before use.
-
-`compare_transports.py` is an optional live diagnostic requiring `requirements-transport-review.txt`.
-It compares browser fetch, Playwright shared-cookie requests and curl sessions in three fresh
-guests. `--chrome-profile` enables curl's documented Chrome compatibility profile; use `--output`
-with a new evidence directory. Cookies remain in memory and are never written to the report.
-This diagnostic does not traverse categories or publish product data.

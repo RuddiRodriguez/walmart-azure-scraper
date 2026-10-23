@@ -1,15 +1,13 @@
 {
   "mode": "offline simulated HTTP/browser responses and synthetic canary mutations",
   "passed": true,
-  "count": 16,
+  "count": 14,
   "checks": [
     "HTTP 401 stops after expected bounded attempts",
     "HTTP 403 stops after expected bounded attempts",
     "HTTP 429 stops after expected bounded attempts",
     "HTTP 404 stops after expected bounded attempts",
     "HTTP 500 stops after expected bounded attempts",
-    "Pickup request query preserves product path and logs original URL",
-    "Retailer-issued store cookie snapshot restored before product request",
     "Product request timeout stops collection",
     "Missing or malformed retailer JSON rejected",
     "Missing or malformed retailer JSON rejected",

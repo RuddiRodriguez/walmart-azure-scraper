@@ -1,26 +1,17 @@
-UNSENT DRAFT — nothing has been submitted or messaged.
+UNSENT DRAFT
 
-Hello,
+Hi,
 
-I’ve prepared the current source, running instructions, genuine 500-product JSON,
-collection logs, source evidence and a clear acceptance report.
+My latest working demonstration is available here:
+https://github.com/RuddiRodriguez/walmart-azure-scraper
 
-The original 500 records cover all 11 parent categories. In the latest local work,
-a broader attempt collected 259 valid records. The updated collector also retained
-three genuinely unavailable local items without copying shipping prices. Eleven
-fresh visible-price checks passed, one per category. Forced-stop recovery passed
-at both page and product stages.
+It includes versioned source, running instructions, the historical JSON demonstration with 500 genuine distinct products, collection logs, source evidence, screenshots and a recorded local walkthrough.
 
-I can’t yet call the full scraper production-ready. One repeat sample completed
-33 records, but the next stopped on a location mismatch. Full category coverage
-is unfinished, and long runs encountered local memory/disk pressure. The reports
-include these failures and pending work. Azure has not been tested.
+The latest test passed 33 products across all 11 main categories. Its repeat stopped after 12 products because the returned store context changed. Accepted records passed source checks, and wrong-store data was not published.
 
-Store 100 remains the trial store used for these results. I still need confirmation
-of the assigned store and the existing Azure environment/access details. I don’t
-have a reliable full-acceptance completion date until those dependencies and the
-long-run failures are resolved.
+I have documented this reliability limitation openly. Full category coverage, consistent unattended runs, genuine volume/digital offer examples and Azure execution remain unverified. Store 100 is still the trial location, pending assigned-store confirmation.
 
-Offline checks, fresh live tests and unfinished work are labeled separately.
-The public repository is https://github.com/RuddiRodriguez/walmart-azure-scraper
-Latest follow-up tests still show intermittent store-context failures. A slower rendered-page trial was reverted after its repeat also failed. Memory cleanup and request-timeout fixes are retained.
+Live testing, offline checks and unfinished work are identified separately in docs/REVIEW_STATUS.md. This is the completed demonstration portion, not a claim of full production acceptance. I cannot give a reliable completion date for the unresolved store-context issue or Azure acceptance yet.
+
+Thanks,
+Ruddi

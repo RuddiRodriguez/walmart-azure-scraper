@@ -4,6 +4,28 @@ The package contains usable source and genuine collection evidence. It is not ye
 for complete unattended collection or Azure production. All live scraper processes have stopped.
 Nothing has been submitted or messaged to the contest holder during this review.
 
+## Final demonstration decision
+
+User requested ending further experiments and finalizing the reviewable portion. No client submission or message performed.
+
+Latest dedicated-profile trial: A passed 33 products; B stopped after 12 products because the product response changed store context. Both accepted subsets passed source audits. No failed run published production data.
+
+Additional free trials also failed repeated reliability checks:
+
+| Approach | Observed result |
+|---|---|
+| Playwright shared-cookie requests | Challenges in all six sessions across two comparisons |
+| curl sessions, including Chrome compatibility | Challenges in all six sessions |
+| Browser targeted-request diagnostics | 42/42 passed, but omitted category traversal |
+| Store reselection after category navigation | 33 passed, 33 passed, then mismatch after 25 |
+| Pickup-only product request query | 33 passed, 33 passed, then mismatch after 15 |
+| Restoring retailer-issued location cookies | 33 passed, 33 passed, then mismatch after 2 |
+| Dedicated reusable browser profile | 33 passed, then mismatch after 12 |
+
+The main collector retains the previously verified memory cleanup, request cancellation, readiness and ZIP checks. Failed experimental options were removed. Their code remains in versioned history (notably 1e017bf, 5554bb8, 4580879 and 5f7ff19). New client-state and network observations are exploratory only, not validated fixes. Raw network responses and browser profiles remain excluded from Git and delivery.
+
+This package is a working demonstration with a documented reliability limitation. It is not ready to claim full unattended production acceptance. Historical 500-product JSON remains included; these repeat samples are not a new complete catalog run. No full completion time can be promised from the available results.
+
 ## Latest follow-up results
 
 A later eight-request cache probe on both recently rejected product URLs returned correct Store 100 pickup context with both original and fresh-query URLs. Every response reported cache-status Miss. This did not reproduce the fault or justify a cache-busting fix; evidence is under `evidence/cache-context-probe`.

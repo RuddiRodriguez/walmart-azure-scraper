@@ -1,33 +1,9 @@
-Latest follow-up: see docs/REVIEW_STATUS.md.
-Memory/parser cleanup and timeout/readiness/ZIP fixes retained.
-Two approaches each passed one 33-product sample and failed the repeat on store context.
-Rendered-page approach reverted; headless blocked; minimizing did not stay hidden.
-Full catalog, repeat reliability and Azure acceptance remain unproven.
+FINAL DEMONSTRATION STATUS
 
-Earlier review snapshot follows:
-
-LOCAL REVIEW RESULTS — 23 October 2026
-
-Available:
-- Historical demonstration: 500 genuine distinct products, all 11 parent categories.
-- Broader intermediate live attempt: 259 valid products, 27 completed pages; partial.
-- Latest tested collector: 57 valid products in 458.78 seconds, including 3 genuinely
-  unavailable items retained with explicit local evidence and no shipping prices.
-- Fresh visible-price checks: 11 of 11 matched, one randomly selected record per category.
-- Hard-kill recovery passed at page and product stages; saved records were not repeated.
-- Offline schema, price, fulfillment, promotion, failure and transaction checks passed.
-- Source, configuration, logs, evidence and instructions are in the private repository.
-
-Not complete:
-- Full catalog coverage: latest checkpoint still has 1,036 pending pages.
-- Reliable unattended repeat runs: repeat A passed with 33 products in 552.93 seconds;
-  repeat B stopped after 7 products on a location mismatch. Seven shared prices matched.
-- Long-run resource stability: disk reserve tripped at 2.888 GiB; space later fell to
-  about 0.36 GiB and recovered after process closure. A separate restart tripped at
-  0.578 GiB. Browser/memory pressure remains unresolved; the cache experiment was reverted.
-- Genuine live volume/digital offer examples: none verified. Offline examples are labeled.
-- Azure execution: not performed; client VM/access not supplied, and local acceptance remains incomplete.
-- Client-assigned location: Store 100 remains a trial store until confirmed.
-
-No successful full-run publication, contest upload or client message was made.
-Separate datasets overlap: do not add their counts together as unique products.
+Latest profile test: 33 products passed; repeat stopped after 12 on a store mismatch.
+Accepted records passed source audits. Wrong-store data was not published.
+Reliability remains unresolved; user requested ending further experiments.
+Historical 500-product JSON, source evidence, logs, checks and instructions included.
+Full catalog, repeated reliability and Azure acceptance remain unproven.
+Failed trial options removed from main code; trial evidence/history preserved.
+See docs/REVIEW_STATUS.md and WORK_LOG.md. Nothing submitted to client.

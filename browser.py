@@ -3,17 +3,15 @@ import asyncio
 import json
 import re
 import time
-from urllib.parse import urlsplit, urlunsplit
 
 from bs4 import BeautifulSoup
 from seleniumbase import sb_cdp
-import mycdp as cdp
 
 from extract import next_data, pickup
 
 
-def open_browser(headless=False, profile=None):
-    return sb_cdp.Chrome(locale='en', guest=profile is None, headless=headless, user_data_dir=profile)
+def open_browser(headless=False):
+    return sb_cdp.Chrome(locale='en', guest=True, headless=headless)
 
 
 def check_html(html):
@@ -97,13 +95,6 @@ def select_store(sb, store, settings, log, output):
     sb.save_screenshot(str(output / 'selected-store.png'))
     logo = soup.select_one('a[aria-label="Walmart Homepage"] img')
     log('store_selected', store=store['id'], name=store['name'], zip=store['zip'], fulfillment='PICKUP')
-    if settings.get('pin_store_cookies'):
-        cookies = sb.loop.run_until_complete(sb.driver.cookies.get_all())
-        sb.store_cookies = [cdp.network.CookieParam(name=c.name, value=c.value, domain=c.domain, path=c.path, secure=c.secure, http_only=c.http_only, same_site=c.same_site)
-                            for c in cookies if c.name in ['locDataV3', 'locGuestData', 'assortmentStoreId']]
-        if not sb.store_cookies:
-            raise ValueError('No retailer location cookies captured after store selection')
-        log('location_cookie_snapshot', names=[c.name for c in sb.store_cookies])
     return logo.get('src', '') if logo else ''
 
 
@@ -122,14 +113,6 @@ def verify_banner(soup, store):
 
 
 def fetch_product(sb, url, settings, log=None):
-    if settings.get('pin_store_cookies'):
-        sb.loop.run_until_complete(sb.driver.cookies.set_all(sb.store_cookies))
-    if settings.get('pickup_product_url'):
-        parts = urlsplit(url)
-        request_url = urlunsplit((parts.scheme, parts.netloc, parts.path, 'fulfillmentIntent=Pickup', ''))
-        if log:
-            log('product_request_url', original_url=url, request_url=request_url)
-        url = request_url
     # Abort the browser request too; cancelling Python's wait alone leaves fetch running.
     timeout_ms = max(1, int(settings['max_page_seconds'] * 1000))
     expression = '(async () => { const controller = new AbortController(); const timer = setTimeout(() => controller.abort(), ' + str(timeout_ms) + '); try { const r = await fetch(' + json.dumps(url) + ', {signal: controller.signal, cache: "no-store"}); return {status:r.status, html:await r.text()}; } finally { clearTimeout(timer); } })()'

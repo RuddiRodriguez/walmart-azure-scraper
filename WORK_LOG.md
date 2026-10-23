@@ -254,3 +254,9 @@ Cookie trial initial setup failed before browser startup due to a CDP import pat
 Cookie restoration offline ordering and runner checks passed. Declared mycdp 1.4.0 explicitly because the trial directly imports the CDP package already installed through SeleniumBase. Only location-cookie names are logged; values stay on the live browser object. No manual cookie values, paid services or client submissions.
 
 Location-cookie pinning trial: A/B passed 33 each; C failed after 2 on Diapering product 38236207. Not a reliable fix. Next isolated trial uses a new dedicated non-guest profile reused across sequential runs, under ignored data/dedicated-store100-profile. No personal browser data accessed. Other trial flags disabled; all response checks unchanged. Profile files/cookies are never included in delivery.
+
+### Finalization requested by user
+
+Dedicated profile A passed 33, B failed after 12 on store mismatch; source audits passed for accepted subsets. User requested stopping experimentation and finalizing with the limitation stated. Removed unsuccessful production trial options by restoring browser/runner and related checks from 3699cde (retains verified parser cleanup/timeouts/readiness/ZIP safeguards). Kept versioned evidence. Browser client-state probes exposed no product through the inspected router path; SPA network probe observed an ItemById request, not subsequently validated as a solution. Raw traffic/profile remains private under data/. No claim that every possible solution was exhausted. No client submission or message.
+
+Final offline demonstration verification: seven suites passed; all top-level Python files compile. Profile evidence, sanitized client-state result and sanitized endpoint summary included. No scraper/review browser process remains active. Raw network bodies and dedicated profile excluded.
