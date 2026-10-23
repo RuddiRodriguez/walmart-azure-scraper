@@ -111,7 +111,7 @@ def promotion_fields(product):
             continue
         fields[kind + '_deals_description'] += (' | ' if fields[kind + '_deals_description'] else '') + text
         # Only a final amount explicitly written in the offer, never a savings amount.
-        match = re.search(r'(?:\b\d+\s+for\s+|\bat\s+)(\$\d+(?:\.\d{1,2})?)|^(\$\d+(?:\.\d{1,2})?)\s+each\b', text, re.I)
+        match = re.search(r'(?:\b\d+\s+for\s+|\bat\s+|:\s*(?=\$\d+(?:\.\d{1,2})?\s+each))(\$\d+(?:\.\d{1,2})?)|^(\$\d+(?:\.\d{1,2})?)\s+each\b', text, re.I)
         if match:
             amount = money((match.group(1) or match.group(2))[1:])
             if fields[kind + '_deals_price'] and fields[kind + '_deals_price'] != amount:
@@ -150,7 +150,7 @@ def product_record(candidate, soup, store, private_labels, logo):
     was = re.search(r'Was \$(\d+(?:\.\d{1,2})?)', candidate['price_text'])
     weight = WEIGHT.search(title)
     weight_text = weight.group() if weight else ''
-    specs = next_data(soup).get('data', {}).get('idml', {}).get('specifications') or []
+    specs = (next_data(soup).get('data', {}).get('idml') or {}).get('specifications') or []
     for spec in specs:
         if spec.get('name', '').lower() in ['net weight', 'net content', 'net content weight', 'weight'] and isinstance(spec.get('value'), str):
             if APPROX.search(spec['value']):

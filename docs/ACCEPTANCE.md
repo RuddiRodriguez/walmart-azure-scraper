@@ -23,3 +23,18 @@ These results are in `evidence/`. They do not prove this new runner's full trave
 - Recorded walkthrough on the agreed environment, defect-support period and final transfer terms.
 
 The package is a working implementation under validation, not a claim that these checks already passed.
+
+## Packaged runner checks completed locally
+
+- Live sample: 22 new records, exactly two per each required category; sample validation passed.
+- Full publication stayed disabled; no latest.json was created for the deliberately partial sample.
+- Saved-page resume: the three completed checkpoint pages were each recorded once, without repeat
+  processing after interruption.
+- Same-store overlap: a simultaneous second process exited with the file-lock error.
+- Offline parser replay: all 500 historical records matched source fields checked by replay_evidence.py.
+- Seven synthetic promotion examples from the specification were classified without inventing prices.
+  These are clearly labeled synthetic, not live retailer offers.
+- Python compilation and Ubuntu installer shell syntax passed.
+
+Evidence: evidence/live-smoke/, evidence/recovery-check.json, evidence/overlap-check.txt,
+evidence/replay-report.json and evidence/promotion-spec-examples.json.

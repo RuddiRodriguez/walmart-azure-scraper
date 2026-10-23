@@ -66,7 +66,8 @@ def run(args):
         page_count = db.execute("SELECT count(*) FROM pages WHERE status='done'").fetchone()[0]
         # Breadth-first across categories. Sample obtains a minimum from each category.
         while True:
-            pending = db.execute("SELECT category,url FROM pages WHERE status='pending' ORDER BY rowid").fetchall()
+            order = "CASE WHEN url LIKE '%/browse/%' THEN 0 ELSE 1 END,rowid" if args.sample else 'rowid'
+            pending = db.execute("SELECT category,url FROM pages WHERE status='pending' ORDER BY " + order).fetchall()
             if not pending:
                 break
             progressed = False
@@ -138,7 +139,7 @@ def run(args):
                 continue
             soup = fetch_product(sb, candidate['url'], settings)
             row, reason, product = product_record(candidate, soup, store, settings['private_labels'], logo)
-            atomic_json(output / 'sources' / (key + '.json'), {'candidate': candidate, 'product': product, 'reason': reason})
+            atomic_json(output / 'sources' / (key + '.json'), {'candidate': candidate, 'product': product, 'specifications': (next_data(soup).get('data', {}).get('idml') or {}).get('specifications'), 'reason': reason})
             save_product(db, candidate, row, reason)
             if row:
                 sample_counts[candidate['category']] += 1

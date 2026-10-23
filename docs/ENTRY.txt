@@ -1,9 +1,9 @@
-Working Python scraper with 500 captured and validated products across all 11 requested categories, Store 100 (Bentonville, ZIP 72712).
+Python scraper with 500 validated products across 11 categories, Store 100 (Bentonville, ZIP 72712). Packaged runner also passed a 22-product live check.
 
 Zero duplicate product IDs/URLs. Pickup store, Walmart seller and current prices checked per product. 468 UPCs and 381 verbatim PPM values. Sponsored, marketplace and shipping-only offers excluded.
 
 Includes configurable stores/categories, child-category discovery, pagination, SQLite checkpoints, retries, logs, yield checks and atomic output publication. Azure Ubuntu installation and twice-weekly systemd schedule included. No paid scraping API or proxy.
 
-Source, JSON, evidence and reports kept in a private repository; available for private review. Existing 500-record evidence predates the packaged runner. Full-catalog coverage, live volume/digital deal examples and Azure acceptance remain to be demonstrated. No claim of completed production acceptance.
+Source, JSON, evidence and reports kept in a private repository; available for private review. Existing 500-record evidence predates the packaged runner. Full-catalog coverage, live volume/digital deal examples and Azure acceptance remain to be demonstrated.
 
 AI used to implement code under my direction. Retailer data and logo belong to Walmart.
