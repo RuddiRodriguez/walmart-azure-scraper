@@ -1,4 +1,4 @@
-UNSENT DRAFT — update the latest live-result paragraph from REVIEW_STATUS before sending.
+UNSENT DRAFT — prepared for review only. No message or package sent.
 
 Hello,
 
@@ -7,6 +7,8 @@ I've prepared a versioned package with the Python source, setup and running inst
 The 500 records came from the earlier live collection at Store 100 in Bentonville, with pickup selected. They cover all 11 parent categories and have no duplicate product IDs or URLs. I've rechecked them against the saved store, seller, price, UPC and displayed PPM evidence. That recheck is offline; I haven't relabeled the dataset as a new collection.
 
 This revision adds retention for unavailable products where local pickup evidence remains present, and partial-output files for interrupted runs. The unavailable-product changes have passed offline checks, but I still need genuine live evidence for that case. Products without enough local-store evidence are not assigned a local price.
+
+I also completed a fresh local sample on October 23 at 04:43 CEST: 33 products, three per category, with no duplicates. I stopped it after three saved products, then resumed it successfully without repeating completed work. That sample took 603.99 seconds including the interruption. It is not a full-catalog result: 1,094 discovered pages and 290 product candidates remain pending.
 
 Full subcategory coverage, repeated complete runs, genuine volume/digital offer examples and Azure execution remain outstanding. The package includes the coverage queues and separates local live results from offline checks. Store 100 also still needs confirmation as the assigned location, and I don't yet have access to your Azure environment.
 

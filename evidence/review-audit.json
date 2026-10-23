@@ -1,7 +1,14 @@
 {
-  "audit_time_utc": "2026-10-23T02:34:09.837902+00:00",
+  "audit_time_utc": "2026-10-23T02:44:13.052963+00:00",
   "mode": "offline audit of historical live captures; not a fresh collection",
-  "source_commit": "40ac515b4914c2413debbf9aaf0a7e9556fd8a59",
+  "audit_base_commit": "bc0eb556f231cfa44b42136f2d8f3d570fb29f2c",
+  "audited_code_sha256": {
+    "extract.py": "f036c97124034230b0441e91180afb872e21fa10957908e6a92f168be0801148",
+    "scrape.py": "c9e932f07fca9316e0e30fe219148c275f68effa99f8e4995bf30c2e8764dc6f",
+    "storage.py": "2a77bc0829040f191735b8043612ead604739234e3ea57113eead350fd49890e",
+    "validate.py": "d8645a05a94a97896c4f2fbf90424c1a0d6d955c0314e86b94e6dff0d52c644f",
+    "browser.py": "13fab7f4e586abbddb1a1191fcb6eb34fb1d330bf22894e4523dd4dcb1edc3e8"
+  },
   "passed": true,
   "records": 500,
   "sources": 500,

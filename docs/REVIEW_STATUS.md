@@ -15,6 +15,12 @@
 
 ## Completed versus outstanding
 
+Latest live result, completed October 23 at 02:43:28 UTC / 04:43:28 CEST: 33 new local records,
+three per required parent category, sample validation passed and zero duplicates. Intentional
+interruption after three committed products followed by resume passed the recorded recovery checks.
+Active time 597.81 seconds; elapsed time 603.99 seconds including the interruption. These timings
+apply only to this 33-record sample. 1,094 pages and 290 product candidates remain pending.
+
 | Requirement | Evidence and exact boundary |
 |---|---|
 | 500 distinct genuine products | Historical live collection, freshly audited offline. Zero duplicate IDs and URLs. No newly invented or relabeled records. |
@@ -23,11 +29,11 @@
 | All configured parent categories | Historical 500 records and earlier 22-record live sample cover all 11 parents. |
 | Full subcategory coverage | Not complete. Coverage queues explicitly distinguish visited and pending URLs. Parent-category representation is not exhaustive coverage. |
 | Unavailable-product retention | Revised code retains an explicitly unavailable item only with local pickup and seller evidence, including empty prices where absent. Offline synthetic checks pass. Live unavailable-item retention remains unproven; saved out-of-stock examples often lack local pickup evidence. |
-| Interruption recovery | Earlier live page-stage recovery passed. Latest product-stage recovery result is recorded separately once observed. Offline checkpoint close/reopen is also checked, and is not labeled live proof. |
+| Interruption recovery | Latest live sample was interrupted between product requests after three commits and resumed to 33 records without reprocessing committed pages/products. This was a graceful stop, not a mid-response hard kill. Offline checkpoint checks are labeled separately. |
 | Deals | Historical sample has ordinary sales. Seven earlier synthetic deal examples exist. Genuine live volume/digital offers remain unproven. Unknown promotions prevent full publication. |
 | Azure execution | Not performed. Installation and twice-weekly service/timer files are supplied. No client VM connection or approved administration path supplied. Local execution is not Azure evidence. |
 | Repeat full runs | Not complete. Separate short sessions and resumed samples do not establish unattended production reliability. |
-| Failed-run protection | Incomplete samples do not publish. Revised failure handling exports partial records and failure details without changing latest successful output. |
+| Failed-run protection | Live incomplete samples did not publish. Offline simulated access failure preserved prior output byte-for-byte and exported failure/partial files. |
 
 ## Changes in this revision
 

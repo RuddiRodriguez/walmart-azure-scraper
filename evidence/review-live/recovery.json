@@ -1,0 +1,102 @@
+{
+  "time_utc": "2026-10-23T02:40:48.017264+00:00",
+  "mode": "intentional interruption during live product collection",
+  "committed_ids_before": [
+    "14893467629",
+    "5445606208",
+    "885509773"
+  ],
+  "completed_pages_before": [
+    [
+      "Art Supplies",
+      "https://www.walmart.com/browse/arts-crafts-and-sewing/art-supplies/1334134_5899871"
+    ],
+    [
+      "Art Supplies",
+      "https://www.walmart.com/cp/art-supplies/5899871?povid=GlobalNav_rWeb_SchoolOfficeArtSupplies_ArtsCraftsSewing_ArtSupplies"
+    ],
+    [
+      "Balloons",
+      "https://www.walmart.com/browse/party-occasions/balloons/2637_1042319_1212898_3956207?povid=GlobalNav_rWeb_ETS_partysupplies_balloons"
+    ],
+    [
+      "Beauty",
+      "https://www.walmart.com/browse/beauty/beauty-trend-makeup/1085666_7614150_7738647"
+    ],
+    [
+      "Beauty",
+      "https://www.walmart.com/cp/beauty/1085666?povid=GlobalNav_rWeb_Beauty_Beauty_ShopAll_051123"
+    ],
+    [
+      "Diapering",
+      "https://www.walmart.com/browse/diapering/5427_486190?povid=GlobalNav_mWeb_BabyKids_diaperswipes"
+    ],
+    [
+      "Feeding",
+      "https://www.walmart.com/browse/feeding/baby-formula/5427_133283_4720344"
+    ],
+    [
+      "Feeding",
+      "https://www.walmart.com/cp/feeding/133283?povid=GlobalNav_mWeb_BabyKids_babyformula_babyfood"
+    ],
+    [
+      "Food",
+      "https://www.walmart.com/browse/food/porch-pumpkins/976759_976793_8739812"
+    ],
+    [
+      "Food",
+      "https://www.walmart.com/cp/food/976759?povid=GlobalNav_rWeb_Grocery_GroceryShopAll"
+    ],
+    [
+      "Health & Wellness",
+      "https://www.walmart.com/browse/health-medicine/protein-shakes/976760_1166769_1282185"
+    ],
+    [
+      "Health & Wellness",
+      "https://www.walmart.com/cp/health/976760"
+    ],
+    [
+      "Household Essentials",
+      "https://www.walmart.com/browse/household-essentials/clorox/1115193_8250903_7784444"
+    ],
+    [
+      "Household Essentials",
+      "https://www.walmart.com/cp/household-essentials/1115193?povid=GlobalNav_rWeb_HouseholdEssentials_AllPaperCleaning"
+    ],
+    [
+      "Office Supplies",
+      "https://www.walmart.com/browse/binders-accessories/1229749_5093993"
+    ],
+    [
+      "Office Supplies",
+      "https://www.walmart.com/cp/office-supplies/1229749?povid=GlobalNav_rWeb_SchoolOfficeArtSupplies_Department_ShopAllOfficeSupplies"
+    ],
+    [
+      "Personal Care",
+      "https://www.walmart.com/browse/personal-care/oral-care/1005862_1007221"
+    ],
+    [
+      "Personal Care",
+      "https://www.walmart.com/cp/personal-care/1005862?povid=GlobalNav_rWeb_PersonalCare_3.19"
+    ],
+    [
+      "Pets",
+      "https://www.walmart.com/browse/pets/dog-food-and-treats/5440_202072"
+    ],
+    [
+      "Pets",
+      "https://www.walmart.com/cp/pets/5440?povid=GlobalNav_rWeb_Pets_PetSupplies_AllPetSupplies"
+    ]
+  ],
+  "checks": {
+    "previous_products_preserved": true,
+    "previous_products_processed_once": true,
+    "previous_pages_processed_once": true,
+    "no_duplicate_ids": true,
+    "sample_validation_passed": true,
+    "intentional_interrupt_recorded": true
+  },
+  "passed": true,
+  "final_records": 33,
+  "scope": "live local sample, interruption between product requests after three commits; not a mid-response hard kill or Azure test"
+}

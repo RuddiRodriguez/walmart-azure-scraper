@@ -42,6 +42,19 @@ those prerequisites.
   range is not the total collection runtime.
 - Saved the fresh contest countdown screenshot. Public clarification board and older comments
   do not establish an assigned store or provide an Azure access path.
-- Fresh run intentionally interrupted at 02:40:48 UTC, after three committed products and 21
+- Fresh run intentionally interrupted at 02:40:48 UTC, after three committed products and 20
   completed listing/category pages. This occurred between product requests, not mid-response.
   Resumed with the identical store, sample size, configuration and parser/runner code.
+
+### Completed local review
+
+- Fresh sample finished at 02:43:28 UTC / 04:43:28 CEST: 33 records, three per parent category.
+  Sample validation passed. Zero duplicate IDs/URLs, 33 UPCs, 26 displayed PPM values.
+- Live graceful-interruption recovery passed: three prior records retained and processed once,
+  and all 20 prior page completions recorded once. No full-run publication occurred.
+- Exported selected source responses, event log, queue coverage, local HTML hashes, environment,
+  partial failure evidence and recovery report into `evidence/review-live/`.
+- Outstanding: 1,094 queued pages, 290 candidates, genuine unavailable/deal cases, repeated full
+  runs and Azure acceptance. Live retained-unavailable count is zero, so this remains unproven.
+- Updated the review matrix and unsent reply with actual fresh-run results. Original 500-record
+  JSON remains unchanged and separately identified as historical live collection.
