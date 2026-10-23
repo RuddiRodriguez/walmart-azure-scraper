@@ -1,0 +1,13 @@
+{
+  "mode": "offline synthetic regressions and saved queue analysis; no fresh collection",
+  "passed": true,
+  "checks": [
+    "Tracking and fragment aliases collapse",
+    "Pagination, filters and blank parameters retained",
+    "Normalization is idempotent",
+    "Queue deduplicates within each category without merging categories"
+  ],
+  "historical_queue_entries": 1259,
+  "normalized_entries": 1242,
+  "redundant_entries": 17
+}

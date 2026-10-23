@@ -1,0 +1,20 @@
+{
+  "mode": "offline inspection of a previously captured live response; no new request",
+  "source_sha256": "a782e795776c5413fb5a3d7231e2c77f9786b460955ef42329dac5bfba55eb9c",
+  "endpoint_path": "/orchestra/pdp/graphql/ItemById/7c8e2f054f7a73d16990caf9b8a893afd3853959d182b2b9f6c346c3b427e6b4/ip/38236207",
+  "http_status": 412,
+  "payload_keys": [
+    "appId",
+    "blockScript",
+    "firstPartyEnabled",
+    "hostUrl",
+    "jsClientSrc",
+    "redirectUrl",
+    "uuid",
+    "vid"
+  ],
+  "product_data_present": false,
+  "challenge_payload": true,
+  "conclusion": "Saved ItemById response is an HTTP 412 challenge, not usable product, store or price evidence. No replacement data source validated.",
+  "privacy": "Cookie values, visitor identifiers, raw challenge scripts and raw network bodies excluded."
+}

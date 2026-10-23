@@ -1,0 +1,22 @@
+{
+  "mode": "short offline checks; no live requests or long tests",
+  "results": [
+    {
+      "script": "check_browser_failures.py",
+      "exit": 0
+    },
+    {
+      "script": "check_page_urls.py",
+      "exit": 0
+    },
+    {
+      "script": "check_runner_flow.py",
+      "exit": 0
+    },
+    {
+      "script": "check_review_changes.py",
+      "exit": 0
+    }
+  ],
+  "passed": true
+}

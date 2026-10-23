@@ -15,7 +15,7 @@ def check():
     settings.update(retries=2, delay_seconds=0, max_page_seconds=0.02)
     store = settings['stores'][0]
     checks = []
-    for status in [401, 403, 429, 404, 500]:
+    for status in [401, 403, 412, 429, 404, 500]:
         calls = []
         async def evaluate(*args, **kwargs):
             calls.append(1)
@@ -25,7 +25,7 @@ def check():
         try:
             fetch_product(sb, 'https://www.walmart.com/ip/1', settings)
         except (ValueError, RuntimeError):
-            assert len(calls) == (1 if status in [401,403,429] else 2)
+            assert len(calls) == (1 if status in [401,403,412,429] else 2)
             checks.append('HTTP ' + str(status) + ' stops after expected bounded attempts')
         else:
             raise AssertionError('HTTP failure accepted')

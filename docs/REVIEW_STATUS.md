@@ -4,6 +4,12 @@ The package contains usable source and genuine collection evidence. It is not ye
 for complete unattended collection or Azure production. All live scraper processes have stopped.
 Nothing has been submitted or messaged to the contest holder during this review.
 
+## Quick offline follow-up
+
+Saved ItemById inspection found HTTP 412 challenge data, not product data. No alternate product source was validated. Raw bodies/visitor identifiers remain private; `evidence/itembyid-inspection.json` contains a sanitized finding.
+
+Quick fixes: immediate stop on HTTP 412, and category-queue deduplication for tracking/fragments while preserving page numbers and functional filters. Saved queue analysis removes 17 aliases from 1,259 entries; this does not demonstrate fresh coverage. Four short offline suites passed (`evidence/quick-fix-checks.json`). No live test or long run performed; store reliability limitation remains. Start a fresh run with this version; old checkpoints require their original code.
+
 ## Final demonstration decision
 
 User requested ending further experiments and finalizing the reviewable portion. No client submission or message performed.

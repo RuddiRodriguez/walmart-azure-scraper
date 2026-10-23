@@ -1,13 +1,13 @@
 {
-  "audit_time_utc": "2026-10-23T13:56:21.044992+00:00",
+  "audit_time_utc": "2026-10-23T14:05:12.283765+00:00",
   "mode": "offline audit of historical live captures; not a fresh collection",
-  "audit_base_commit": "bc33294db15a030b8d3aa55073a053135ef872b6",
+  "audit_base_commit": "bd8a1ac0e6ce49365d8e30a2459ee2e070335599",
   "audited_code_sha256": {
     "extract.py": "e252ee14a9e66c9be33220a014984e161192651759c9619202ecf73c39242605",
-    "scrape.py": "5a07a145668580f5d7c3c5550c1ba8bfaaf666faffa26fdcea9af1b818948406",
-    "storage.py": "2a77bc0829040f191735b8043612ead604739234e3ea57113eead350fd49890e",
+    "scrape.py": "f49569238bba8813aef67434dc75d643ccdef88d03f65076e136c7f50f41a532",
+    "storage.py": "2453aa318e9e59b37bcc85dd3a6b9c5d8b4cc7616368e4cbf01f41b054385c90",
     "validate.py": "da2055cc9b4f5de925593440cc92965f1339a987d54e27420d667ae24966ad28",
-    "browser.py": "ae5558768c5a77feaca4def9410418f08720d527629182a006e908fd04bc5bbc"
+    "browser.py": "ebfd7669d38ac8994ff2992e6623b33e6a81278697255da8debf63b09e33f914"
   },
   "passed": true,
   "records": 500,

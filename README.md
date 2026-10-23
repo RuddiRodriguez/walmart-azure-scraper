@@ -101,6 +101,7 @@ See `docs/OPERATIONS.md`, `docs/ACCEPTANCE.md` and `evidence/FINAL_REPORT.md`.
 These checks are offline unless explicitly marked live:
 
 ```bash
+python check_page_urls.py
 python check_requirements.py
 python check_review_changes.py
 python check_storage_recovery.py

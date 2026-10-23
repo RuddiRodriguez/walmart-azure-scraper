@@ -260,3 +260,13 @@ Location-cookie pinning trial: A/B passed 33 each; C failed after 2 on Diapering
 Dedicated profile A passed 33, B failed after 12 on store mismatch; source audits passed for accepted subsets. User requested stopping experimentation and finalizing with the limitation stated. Removed unsuccessful production trial options by restoring browser/runner and related checks from 3699cde (retains verified parser cleanup/timeouts/readiness/ZIP safeguards). Kept versioned evidence. Browser client-state probes exposed no product through the inspected router path; SPA network probe observed an ItemById request, not subsequently validated as a solution. Raw traffic/profile remains private under data/. No claim that every possible solution was exhausted. No client submission or message.
 
 Final offline demonstration verification: seven suites passed; all top-level Python files compile. Profile evidence, sanitized client-state result and sanitized endpoint summary included. No scraper/review browser process remains active. Raw network bodies and dedicated profile excluded.
+
+### Quick offline follow-up — 2026-10-23T14:05:10.795962+00:00
+
+User authorized saved ItemById inspection, small evidence-based fixes, short tests and push. No new live requests, long runs, client messages or submission.
+
+- Saved ItemById response was HTTP 412 with challenge keys (redirectUrl/jsClientSrc/blockScript), no product/location/price payload. Sanitized evidence/itembyid-inspection.json includes endpoint/status/field names and source hash only; raw visitor identifiers and challenge scripts remain private.
+- Added 412 to immediate request rejections, avoiding repeated retries of this observed challenge response. Short HTTP checks verify one attempt.
+- Normalized category queue URLs by removing only povid/athbdg tracking parameters and fragments. Pagination, functional filters, repeated and blank parameters are preserved. Next-page loop comparison uses the same normalization. In the saved 1,259-entry queue, 17 aliases collapse to 1,242 entries. This is offline analysis, not improved live coverage proof.
+- Short browser, URL queue, runner and review-regression checks passed; relevant Python files compile. No speculative promotion parser change: inspected ItemById supplied no qualifying product/deal data.
+- Store mismatch remains unresolved. Changed source requires a fresh run; existing checkpoints stay untouched and cannot be resumed with changed code.

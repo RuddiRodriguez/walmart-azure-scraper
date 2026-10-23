@@ -120,7 +120,7 @@ def fetch_product(sb, url, settings, log=None):
         try:
             result = sb.loop.run_until_complete(asyncio.wait_for(
                 sb.page.evaluate(expression, await_promise=True), timeout=settings['max_page_seconds']))
-            if result['status'] in [401, 403, 429]:
+            if result['status'] in [401, 403, 412, 429]:
                 raise ValueError(f"Access blocked: HTTP {result['status']}; run stopped")
             if result['status'] != 200:
                 raise RuntimeError(f"Product HTTP {result['status']}")

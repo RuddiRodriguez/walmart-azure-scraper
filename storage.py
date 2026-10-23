@@ -3,6 +3,7 @@ import json
 import os
 import sqlite3
 from pathlib import Path
+from urllib.parse import urlsplit, urlunsplit, parse_qsl, urlencode
 
 
 def atomic_json(path, value):
@@ -42,8 +43,16 @@ def metadata(db, key, value=None):
     return json.loads(row[0]) if row else None
 
 
+def page_url(url):
+    """Drop navigation tracking, preserving page numbers and functional filters."""
+    parts = urlsplit(url)
+    query = [(key, value) for key, value in parse_qsl(parts.query, keep_blank_values=True)
+             if key not in ['povid', 'athbdg']]
+    return urlunsplit((parts.scheme, parts.netloc, parts.path, urlencode(query), ''))
+
+
 def add_pages(db, category, urls):
-    db.executemany('INSERT OR IGNORE INTO pages(category,url) VALUES (?,?)', [(category, u) for u in urls])
+    db.executemany('INSERT OR IGNORE INTO pages(category,url) VALUES (?,?)', [(category, page_url(u)) for u in urls])
 
 
 def save_page(db, category, url, links, candidates, rejected, raw_count):

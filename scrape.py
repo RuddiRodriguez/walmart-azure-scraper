@@ -14,7 +14,7 @@ from bs4 import BeautifulSoup
 
 from browser import open_browser, select_store, navigate, verify_banner, fetch_product, canary_check
 from extract import discover, listing_candidates, next_data, product_record
-from storage import connect, metadata, atomic_json, add_pages, save_page, save_product, records
+from storage import connect, metadata, atomic_json, add_pages, save_page, save_product, records, page_url
 from validate import validate
 
 
@@ -160,7 +160,7 @@ def run(args):
                 next_link = soup.select_one('a[aria-label="Next Page"]')
                 has_next = bool(next_link and next_link.get('href'))
                 if has_next:
-                    next_url = urljoin(url, next_link['href'])
+                    next_url = page_url(urljoin(url, next_link['href']))
                     if next_url == url or db.execute("SELECT 1 FROM pages WHERE category=? AND url=? AND status='done'", (category, next_url)).fetchone():
                         raise ValueError('Pagination loop; coverage incomplete')
                     links[next_url] = 'Next Page'
