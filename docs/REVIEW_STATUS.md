@@ -6,6 +6,9 @@ Nothing has been submitted or messaged to the contest holder during this review.
 
 ## Latest follow-up results
 
+A later eight-request cache probe on both recently rejected product URLs returned correct Store 100 pickup context with both original and fresh-query URLs. Every response reported cache-status Miss. This did not reproduce the fault or justify a cache-busting fix; evidence is under `evidence/cache-context-probe`.
+
+
 Post-cleanup request-path sample A passed 33 records (543.20 seconds); B failed after 21 records (383.89 seconds) with Sacramento Store 3081 SHIPPING data. Both accepted datasets passed source replay. A fresh exact-product probe returned correct Store 100 context through both fetch and navigation: the cause remains intermittent and unproven.
 
 A fully loaded page trial passed 33 records once (722.26 seconds), then failed after 23 (643.32 seconds) on another location mismatch. That trial was reverted. No passing repeated-run claim.

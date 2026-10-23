@@ -226,3 +226,7 @@ those prerequisites.
 ### Final observed outcome
 
 Rendered-page trial A passed 33 records in 722.26 seconds. B failed after 23 records in 643.32 seconds with a product-context mismatch (487109111). Both accepted subsets replayed successfully. Rendered navigation therefore did not resolve the intermittent context problem and was slower; reverted that trial to the committed request path. Retained verified descendant cleanup, bounded fetch cancellation, readiness checks and ZIP canary checks. Headless failed a challenge; minimizing did not remain minimized. These are recorded failed approaches, not completed fixes. No client submission or message.
+
+### Cache hypothesis follow-up
+
+Eight same-session requests across the two recently rejected products compared original URLs with a fresh query parameter. All returned HTTP 200, Store 100 PICKUP, ZIP 72712 and cache-status Miss. Probe did not reproduce the fault or demonstrate an improvement. No cache-busting feature added. Only an allowlist of cache/date response headers retained; browser/session state excluded. Evidence: evidence/cache-context-probe. Intermittent long-run context remains unresolved after request and rendered-page approaches both failed repeat tests. No supported permanent fix established.
