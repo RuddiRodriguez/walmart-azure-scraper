@@ -58,3 +58,6 @@ those prerequisites.
   runs and Azure acceptance. Live retained-unavailable count is zero, so this remains unproven.
 - Updated the review matrix and unsent reply with actual fresh-run results. Original 500-record
   JSON remains unchanged and separately identified as historical live collection.
+- Refreshed the top-level README/acceptance summary and regenerated package checksums. Delivery
+  archive is built from the committed tree, verified against the checksum manifest and stored as
+  a draft release in the existing private repository. This is not a contest upload or client message.

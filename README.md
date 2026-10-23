@@ -13,7 +13,9 @@ availability variants and an offline checkpoint check.
 The included **500-product evidence dataset** came from the preceding live feasibility scripts,
 not from a completed full-catalog run of this new runner. All 11 requested parent categories
 are represented; Store 100 pickup, seller and prices were checked on product pages.
-The packaged runner also completed a live 22-product sample across all 11 categories; see `evidence/live-smoke/`. The full-catalog runner and Azure installation/scheduling files are included. End-to-end catalog
+The latest packaged runner completed a fresh live 33-product sample across all 11 categories,
+including intentional product-stage stop/resume; see `evidence/review-live/`. An earlier 22-product
+sample remains in `evidence/live-smoke/`. The full-catalog runner and Azure installation/scheduling files are included. End-to-end catalog
 coverage, live volume/digital offers and Azure execution still require acceptance testing.
 Do not describe this version as already accepted or production-proven.
 

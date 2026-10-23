@@ -1,5 +1,10 @@
 # Acceptance record
 
+Latest results: `docs/REVIEW_STATUS.md` and `evidence/review-live/` supersede the earlier sample
+counts below. October 23: 33 fresh local records across all 11 parents, plus successful graceful
+interruption between product requests and resume. Full catalog, live unavailable/deal cases and
+Azure execution remain outstanding.
+
 ## Proven in earlier local feasibility run
 
 - 500 unique records across all 11 configured parent categories.
