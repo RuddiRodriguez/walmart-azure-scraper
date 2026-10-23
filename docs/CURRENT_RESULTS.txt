@@ -7,3 +7,9 @@ Historical 500-product JSON, source evidence, logs, checks and instructions incl
 Full catalog, repeated reliability and Azure acceptance remain unproven.
 Failed trial options removed from main code; trial evidence/history preserved.
 See docs/REVIEW_STATUS.md and WORK_LOG.md. Nothing submitted to client.
+
+Quick offline follow-up: HTTP 412 stops immediately; category tracking aliases deduplicated.
+Invalidated restarts now stop before Chrome opens. Added sale consistency and package ZIP checks.
+Four short follow-up suites passed; historical 500 baseline and synthetic audit failures checked.
+Three genuine unavailable products and local page/product hard-kill recovery already have evidence.
+No new live crawl. docs/CLIENT_MESSAGE_DRAFT.txt is an unsent draft.

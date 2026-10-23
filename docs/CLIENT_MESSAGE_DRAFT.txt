@@ -1,0 +1,14 @@
+Latest package: https://github.com/RuddiRodriguez/walmart-azure-scraper
+
+I've updated the code, instructions, logs and source evidence. The historical 500-product demonstration passes validation with no duplicate IDs or URLs. Local evidence also includes three genuine unavailable products and successful page/product interruption and restart checks.
+
+Recent fixes stop blocked requests immediately, remove redundant category URLs, prevent wrong-store checkpoints from reopening Chrome, and strengthen price and ZIP checks. Four short offline suites passed; no new full live run was performed.
+
+Still open, with possible next steps:
+
+- Store reliability: one recent run accepted 33 products; its repeat stopped after 12 when store context changed. Trace where that context changes; earlier store-reselection and cookie trials didn't solve it.
+- Full coverage and sustained runs: collect outstanding categories in fresh, measured batches with more memory/disk headroom, then compare complete repeated runs. Older checkpoints require their original code.
+- Volume/digital offers: capture qualifying live examples and verify their prices and conditions. Current deal examples are synthetic tests.
+- Azure and assigned store: confirm the intended store and VM access, then repeat collection, recovery and scheduling checks there. Setup files are included; Azure execution remains untested.
+
+The completed portion is reviewable now. Reliable full collection remains unproven, so I can't give a dependable completion time until store reliability and target-environment testing are resolved.

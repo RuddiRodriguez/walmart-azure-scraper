@@ -9,6 +9,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from extract import FIELDS, money, pickup
+from validate import validate
 
 
 def build():
@@ -16,10 +17,13 @@ def build():
     evidence = root / 'evidence'
     rows = json.loads((evidence / 'products-500.json').read_text())
     sources = json.loads((evidence / 'source-records.json').read_text())
-    store = json.loads((root / 'config/stores.json').read_text())['stores'][0]
+    settings = json.loads((root / 'config/stores.json').read_text())
+    store = settings['stores'][0]
     categories = [r['Category (Auto)'] for r in csv.DictReader((root / 'config/categories.csv').open())]
     ids = [s['candidate']['item_id'] for s in sources]
     errors = []
+    validation = validate(rows, categories, store, settings, 0, 0, 0)
+    errors.extend(validation['errors'])
     if len(rows) != len(sources) or len(rows) < 500:
         errors.append('Fewer than 500 records or source count mismatch')
     for index, (row, source) in enumerate(zip(rows, sources)):
@@ -31,7 +35,7 @@ def build():
             'schema': list(row) == FIELDS and all(isinstance(v, str) for v in row.values()),
             'identity': candidate['item_id'] == str(product.get('usItemId')),
             'url': row['url'] == candidate['url'],
-            'store': location.get('intent') == 'PICKUP' and str((location.get('pickupLocation') or {}).get('storeId')) == str(store['id']) and pickup(product, store),
+            'store': location.get('intent') == 'PICKUP' and str((location.get('pickupLocation') or {}).get('storeId')) == str(store['id']) and str(location.get('postalCode') or '') == store['zip'] and pickup(product, store),
             'seller': (product.get('sellerName') or product.get('sellerDisplayName')) in ['Walmart', 'Walmart.com'],
             'price': bool(displayed) and money(current.get('price')) == money(displayed.group(1)) == (row['sale_price'] or row['regular_price']),
             'upc': row['upc'] == str(product.get('upc') or ''),

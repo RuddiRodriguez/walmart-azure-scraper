@@ -100,6 +100,9 @@ def run(args):
         current_work = {}
 
     try:
+        if metadata(db, 'location_mismatch_seen'):
+            current_work = {'kind': 'resume_validation'}
+            raise RuntimeError('Location mismatch in earlier session; publication checks require a fresh run')
         current_work = {'kind': 'store_selection'}
         sb = open_browser(headless=settings.get('headless', False))
         logo = select_store(sb, store, settings, log, output)

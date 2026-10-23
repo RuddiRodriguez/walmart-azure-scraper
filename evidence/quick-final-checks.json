@@ -1,0 +1,37 @@
+{
+  "time_utc": "2026-10-23T14:12:10.724260+00:00",
+  "passed": true,
+  "mode": "short offline checks only; no browser, network or client submission",
+  "suites": [
+    {
+      "script": "check_requirements.py",
+      "exit_code": 0,
+      "seconds": 1.83,
+      "local_log": "data/quick-final-check_requirements.log"
+    },
+    {
+      "script": "check_runner_flow.py",
+      "exit_code": 0,
+      "seconds": 1.75,
+      "local_log": "data/quick-final-check_runner_flow.log"
+    },
+    {
+      "script": "check_review_changes.py",
+      "exit_code": 0,
+      "seconds": 1.56,
+      "local_log": "data/quick-final-check_review_changes.log"
+    },
+    {
+      "script": "check_package_audit.py",
+      "exit_code": 0,
+      "seconds": 2.77,
+      "local_log": "data/quick-final-check_package_audit.log"
+    }
+  ],
+  "python_compilation": "passed",
+  "limitations": [
+    "No new live collection",
+    "Store mismatch unresolved",
+    "Full coverage, sustained repeats, real deals and Azure remain unverified"
+  ]
+}

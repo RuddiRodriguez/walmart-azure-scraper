@@ -33,8 +33,14 @@ def run():
         ('approximate weight', {'weight': 'approximately 2 lb'}), ('unknown category', {'category': 'Other'}),
         ('missing date timezone', {'crawl_date': '2026-10-23T00:00:00'}),
         ('invalid date', {'crawl_date': 'today'}), ('missing title', {'product_title': ''}),
+        ('sale above regular price', {'regular_price': '1.00', 'sale_price': '2.00'}),
+        ('sale without regular price', {'regular_price': '', 'sale_price': '1.00'}),
         ('non-retailer URL', {'url': 'https://example.com/ip/123'})]:
         check('Rejects ' + name, not valid([{**row, **change}]))
+    check('Sale without regular price rejected even for unavailable item',
+          not valid([{**row, 'regular_price': '', 'sale_price': '1.00'}], unavailable_urls={row['url']}))
+    check('Valid lower sale price retained', valid([{**row, 'regular_price': '10.00', 'sale_price': '9.00'}]))
+    check('Malformed sale price returns failure without crashing', not valid([{**row, 'sale_price': 'bad'}]))
     missing = dict(row); missing.pop('upc')
     check('Missing schema key returns failure without crashing', not valid([missing]))
     check('Reordered schema rejected', not valid([dict(reversed(list(row.items())))]))

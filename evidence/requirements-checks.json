@@ -1,8 +1,8 @@
 {
   "mode": "offline checks of captured evidence and explicitly synthetic mutations; no live acceptance claim",
-  "time_utc": "2026-10-23T13:55:23.530523+00:00",
+  "time_utc": "2026-10-23T14:12:04.476522+00:00",
   "passed": true,
-  "count": 49,
+  "count": 54,
   "checks": [
     "Captured historical record passes schema checks",
     "Rejects null field",
@@ -16,7 +16,12 @@
     "Rejects missing date timezone",
     "Rejects invalid date",
     "Rejects missing title",
+    "Rejects sale above regular price",
+    "Rejects sale without regular price",
     "Rejects non-retailer URL",
+    "Sale without regular price rejected even for unavailable item",
+    "Valid lower sale price retained",
+    "Malformed sale price returns failure without crashing",
     "Missing schema key returns failure without crashing",
     "Reordered schema rejected",
     "Non-object record returns failure",

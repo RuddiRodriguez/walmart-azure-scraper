@@ -270,3 +270,15 @@ User authorized saved ItemById inspection, small evidence-based fixes, short tes
 - Normalized category queue URLs by removing only povid/athbdg tracking parameters and fragments. Pagination, functional filters, repeated and blank parameters are preserved. Next-page loop comparison uses the same normalization. In the saved 1,259-entry queue, 17 aliases collapse to 1,242 entries. This is offline analysis, not improved live coverage proof.
 - Short browser, URL queue, runner and review-regression checks passed; relevant Python files compile. No speculative promotion parser change: inspected ItemById supplied no qualifying product/deal data.
 - Store mismatch remains unresolved. Changed source requires a fresh run; existing checkpoints stay untouched and cannot be resumed with changed code.
+
+### Additional quick fixes — 2026-10-23T14:11:41.333029+00:00
+
+User requested small fixes, short checks, logs, push and an updated unsent client message.
+No live requests, Chrome sessions, long tests, Azure deployment or client communication.
+
+- Reject a previously location-mismatched checkpoint before opening Chrome or requesting products. Preserve its records and permanent publication block; log the resume_validation stage. Runner regression verifies browser/request calls do not increase and partial output remains unpublished.
+- Reject sale prices above regular prices and sale prices without regular prices, including unavailable records. Preserve valid lower sales; malformed price strings return validation errors. No price is calculated or corrected.
+- Run full schema/field/store/price validation in the historical-package audit; also check retailer source postalCode against configured ZIP. Temporary-file regressions verify historical baseline passes and source ZIP, output ZIP and sale-price mutations fail. This is offline source replay, not fresh price/store evidence.
+- Four short suites passed: check_requirements.py (54 named checks), check_runner_flow.py, check_review_changes.py and check_package_audit.py. Requirements/runner/review stdout is under ignored data/quick-followup-*.log. Durable safe reports include evidence/quick-final-checks.json and evidence/package-audit-checks.json. Existing historical 500 re-audited; checksum manifest regenerated before commit.
+- Corrected client draft: three genuine unavailable records and live page/product hard-kill recovery already exist in evidence/unavailable-fresh, evidence/hard-page-recovery and evidence/hard-product-recovery. Do not call them missing; complete-scale/Azure verification remains missing. The draft lists remaining blockers and proposed next steps without claiming they work.
+- Store drift, complete traversal, sustained resource/repeat reliability, genuine volume/digital examples, assigned-store confirmation and Azure execution remain unresolved. No new validated retailer-side fix. Current code requires a fresh run; old checkpoints retain their original code requirement. Historical release ZIP remains an older snapshot; latest source/status are on main.

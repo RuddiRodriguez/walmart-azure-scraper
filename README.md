@@ -102,6 +102,7 @@ These checks are offline unless explicitly marked live:
 
 ```bash
 python check_page_urls.py
+python check_package_audit.py
 python check_requirements.py
 python check_review_changes.py
 python check_storage_recovery.py

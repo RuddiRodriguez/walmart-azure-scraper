@@ -61,7 +61,7 @@ def check():
         bad_data = copy.deepcopy(source['product']); bad_data['location']['intent'] = 'SHIPPING'
         bad_product = BeautifulSoup('<script id="__NEXT_DATA__"></script>', 'html.parser')
         bad_product.script.string = json.dumps({'props': {'pageProps': {'initialData': {'data': {'product': bad_data}}}}})
-        with patch('scrape.open_browser', return_value=sb), patch('scrape.select_store', return_value=''), patch('scrape.canary_check'), patch('scrape.verify_banner'), patch('scrape.navigate', side_effect=navigate), patch('scrape.listing_candidates', side_effect=listing), patch('scrape.discover', side_effect=lambda *a, **k: {}), patch('scrape.fetch_product', side_effect=[bad_product, copy.deepcopy(product)]):
+        with patch('scrape.open_browser', return_value=sb) as opened, patch('scrape.select_store', return_value=''), patch('scrape.canary_check'), patch('scrape.verify_banner'), patch('scrape.navigate', side_effect=navigate), patch('scrape.listing_candidates', side_effect=listing), patch('scrape.discover', side_effect=lambda *a, **k: {}), patch('scrape.fetch_product', side_effect=[bad_product, copy.deepcopy(product)]) as fetch:
             try:
                 run(args)
             except ValueError as error:
@@ -71,12 +71,17 @@ def check():
             rejected = list((folder / 'location-failure').glob('100/runs/*/sources/rejected/*.json'))
             assert len(rejected) == 1 and json.loads(rejected[0].read_text())['product']['location']['intent'] == 'SHIPPING'
             args.resume = True
+            opened.reset_mock()
             try:
                 run(args)
             except RuntimeError as error:
                 assert 'publication checks' in str(error)
             else:
                 raise AssertionError('Previously mismatched run published after resume')
+            opened.assert_not_called()
+            assert fetch.call_count == 1
+            failure = next((folder / 'location-failure').glob('100/runs/*/failure.json'))
+            assert json.loads(failure.read_text())['current_work'] == {'kind': 'resume_validation'}
             assert not (folder / 'location-failure/100/latest.json').exists()
         args.output = original_output
         args.sample = 2
@@ -89,7 +94,7 @@ def check():
             raise AssertionError('Cross-mode resume accepted')
     result = {'mode': 'offline simulated navigation; captured product fixture; no live browser or network',
               'passed': True, 'checks': ['Two pages traversed', 'Repeated product ID deduplicated',
-              'Complete valid full-mode result publishes atomically', 'Resume does not repeat committed product', 'Cross-mode resume rejected', 'Rejected location response saved before validation failure', 'Location mismatch permanently prevents publication even after resume']}
+              'Complete valid full-mode result publishes atomically', 'Resume does not repeat committed product', 'Cross-mode resume rejected', 'Rejected location response saved before validation failure', 'Location mismatch permanently prevents publication even after resume', 'Previously mismatched run rejected before browser launch or product request', 'Early resume failure records the failed validation stage']}
     Path('evidence/runner-flow-check.json').write_text(json.dumps(result, indent=2) + '\n')
     print(json.dumps(result))
 

@@ -10,6 +10,23 @@ Saved ItemById inspection found HTTP 412 challenge data, not product data. No al
 
 Quick fixes: immediate stop on HTTP 412, and category-queue deduplication for tracking/fragments while preserving page numbers and functional filters. Saved queue analysis removes 17 aliases from 1,259 entries; this does not demonstrate fresh coverage. Four short offline suites passed (`evidence/quick-fix-checks.json`). No live test or long run performed; store reliability limitation remains. Start a fresh run with this version; old checkpoints require their original code.
 
+## Additional quick fixes
+
+Previously location-mismatched runs now fail before opening Chrome or requesting products.
+They remain permanently ineligible for publication. This avoids wasting another browser session;
+it does not repair store drift. Failure logs identify `resume_validation`.
+
+Price validation rejects a sale above its regular price or a sale without a regular price.
+The historical-package audit now runs full record validation and checks the source response ZIP
+alongside store ID, pickup and seller evidence. Four short offline suites passed, including
+synthetic wrong-source-ZIP, wrong-output-ZIP and invalid-sale audit cases. The existing 500-product
+baseline passed. See `evidence/quick-final-checks.json` and `evidence/package-audit-checks.json`.
+No live crawl, long test, Azure deployment or client submission occurred.
+
+Earlier drafts understated existing local evidence: three genuine unavailable items and both
+page-stage and product-stage live hard-kill recovery were already demonstrated. Full-scale and
+Azure verification remain outstanding. `docs/CLIENT_MESSAGE_DRAFT.txt` reflects that distinction.
+
 ## Final demonstration decision
 
 User requested ending further experiments and finalizing the reviewable portion. No client submission or message performed.
@@ -94,7 +111,7 @@ Counts from different runs overlap. Do not add them together as a unique-product
 
 ## Test labels
 
-`check_requirements.py` has 49 named offline checks. `check_browser_failures.py` has 13 offline
+`check_requirements.py` has 54 named offline checks. `check_browser_failures.py` has 15 offline
 HTTP/timeout/shape/canary checks. `check_review_changes.py`, `check_storage_recovery.py` and
 `check_runner_flow.py` cover unavailable cases, prior publication, transaction kills and runner flow.
 Their JSON reports explicitly identify simulated data/navigation. Offline success is not live or

@@ -1,6 +1,7 @@
 import re
 from collections import Counter
 from datetime import datetime
+from decimal import Decimal
 from urllib.parse import urlsplit
 from extract import FIELDS, APPROX
 
@@ -50,6 +51,12 @@ def validate(rows, categories, store, settings, pending_pages, pending_products,
         for field in ['regular_price', 'sale_price', 'volume_deals_price', 'digital_deals_price']:
             if row[field] and not re.fullmatch(r'\d+\.\d{2}', row[field]):
                 errors.append(f'Record {index}: invalid {field}')
+        if row['sale_price']:
+            if not row['regular_price']:
+                errors.append(f'Record {index}: sale without regular price')
+            elif all(re.fullmatch(r'\d+\.\d{2}', row[field]) for field in ['regular_price', 'sale_price']):
+                if Decimal(row['sale_price']) > Decimal(row['regular_price']):
+                    errors.append(f'Record {index}: sale price exceeds regular price')
     if previous:
         for category, previous_count in previous.get('category_counts', {}).items():
             if counts[category] < previous_count * settings['minimum_yield_ratio']:
