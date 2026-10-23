@@ -15,7 +15,7 @@ from scrape import run
 def check():
     source = json.loads(Path('evidence/source-records.json').read_text())[0]
     settings = json.loads(Path('config/stores.json').read_text())
-    settings.update(minimum_records=1, minimum_category_records=1, delay_seconds=0)
+    settings.update(minimum_records=1, minimum_category_records=1, delay_seconds=0, refresh_store_each_page=True)
     store = settings['stores'][0]
     category = source['candidate']['category']
     root = 'https://www.walmart.com/browse/food/test/976759_123'
@@ -47,12 +47,13 @@ def check():
             writer = csv.DictWriter(stream, fieldnames=['Category (Auto)', 'URL'])
             writer.writeheader(); writer.writerow({'Category (Auto)': category, 'URL': root})
         args = Namespace(config=str(config), categories=str(categories), store='100', output=str(folder / 'data'), resume=False, sample=0)
-        with patch('scrape.open_browser', return_value=sb), patch('scrape.select_store', return_value=''), patch('scrape.canary_check'), patch('scrape.verify_banner'), patch('scrape.navigate', side_effect=navigate), patch('scrape.listing_candidates', side_effect=listing), patch('scrape.discover', side_effect=lambda *a, **k: {}), patch('scrape.fetch_product', side_effect=lambda *a, **k: copy.deepcopy(product)) as fetch:
+        with patch('scrape.open_browser', return_value=sb), patch('scrape.select_store', return_value='') as selected, patch('scrape.canary_check'), patch('scrape.verify_banner'), patch('scrape.navigate', side_effect=navigate), patch('scrape.listing_candidates', side_effect=listing), patch('scrape.discover', side_effect=lambda *a, **k: {}), patch('scrape.fetch_product', side_effect=lambda *a, **k: copy.deepcopy(product)) as fetch:
             run(args)
             pointer = json.loads((folder / 'data/100/latest.json').read_text())
             report = json.loads((folder / 'data/100' / pointer['report']).read_text())
             assert report['passed'] and report['records'] == 1 and report['pages_processed'] == 2
             assert report['exclusions']['duplicate'] == 1 and fetch.call_count == 1
+            assert selected.call_count == 2
             args.resume = True
             run(args)
             assert fetch.call_count == 1
@@ -88,7 +89,7 @@ def check():
         else:
             raise AssertionError('Cross-mode resume accepted')
     result = {'mode': 'offline simulated navigation; captured product fixture; no live browser or network',
-              'passed': True, 'checks': ['Two pages traversed', 'Repeated product ID deduplicated',
+              'passed': True, 'checks': ['Two pages traversed', 'Store reselected before new pending product batch', 'Repeated product ID deduplicated',
               'Complete valid full-mode result publishes atomically', 'Resume does not repeat committed product', 'Cross-mode resume rejected', 'Rejected location response saved before validation failure', 'Location mismatch permanently prevents publication even after resume']}
     Path('evidence/runner-flow-check.json').write_text(json.dumps(result, indent=2) + '\n')
     print(json.dumps(result))

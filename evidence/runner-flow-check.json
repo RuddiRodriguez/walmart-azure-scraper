@@ -3,6 +3,7 @@
   "passed": true,
   "checks": [
     "Two pages traversed",
+    "Store reselected before new pending product batch",
     "Repeated product ID deduplicated",
     "Complete valid full-mode result publishes atomically",
     "Resume does not repeat committed product",

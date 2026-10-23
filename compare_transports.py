@@ -1,4 +1,5 @@
 """Live diagnostic: compare free clients with the browser-selected guest store. No publication."""
+import argparse
 import json
 import time
 from pathlib import Path
@@ -12,7 +13,7 @@ from storage import atomic_json
 from export_run_evidence import PRODUCT_FIELDS
 
 
-def compare(output, repeats=3):
+def compare(output, repeats=3, chrome_profile=False):
     settings = json.loads(Path('config/stores.json').read_text())
     store = settings['stores'][0]
     source = json.loads(Path('evidence/post-cleanup-a/source-records.json').read_text())
@@ -33,14 +34,14 @@ def compare(output, repeats=3):
             with sync_playwright() as pw:
                 connection=pw.chromium.connect_over_cdp(sb.get_endpoint_url())
                 context=connection.contexts[0]
-                with requests.Session() as session:
+                with (requests.Session(impersonate='chrome') if chrome_profile else requests.Session()) as session:
                     for cookie in context.cookies():
                         session.cookies.set(cookie['name'],cookie['value'],domain=cookie['domain'],path=cookie['path'])
                     session.headers['User-Agent']=sb.evaluate('navigator.userAgent')
                     for method in ['browser-fetch','playwright-request','curl-session']:
                         for url in urls:
                             started=time.monotonic()
-                            row={'repeat':repeat,'method':method,'url':url,'time':datetime.now(timezone.utc).isoformat()}
+                            row={'chrome_profile':chrome_profile,'repeat':repeat,'method':method,'url':url,'time':datetime.now(timezone.utc).isoformat()}
                             soup=None
                             try:
                                 if method=='browser-fetch':
@@ -76,7 +77,7 @@ def compare(output, repeats=3):
             atomic_json(folder/'failure.json',{'error':str(error)})
         finally:
             if sb:sb.quit()
-    summary={'mode':'live diagnostic only; not full category or production acceptance','repeats_requested':repeats,'urls_per_method':len(urls),'methods':{}}
+    summary={'mode':'live diagnostic only; not full category or production acceptance','chrome_profile':chrome_profile,'repeats_requested':repeats,'urls_per_method':len(urls),'methods':{}}
     for method in ['browser-fetch','playwright-request','curl-session']:
         rows=[r for r in results if r['method']==method]
         summary['methods'][method]={'responses':len(rows),'passed':sum(r['passed'] for r in rows),'failures':len(rows)-sum(r['passed'] for r in rows),'all_repeats_complete':len(rows)==len(urls)*repeats and all(r['passed'] for r in rows)}
@@ -85,4 +86,8 @@ def compare(output, repeats=3):
 
 
 if __name__=='__main__':
-    compare(Path('evidence/transport-comparison'))
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--chrome-profile',action='store_true')
+    parser.add_argument('--output',type=Path,default=Path('evidence/transport-comparison'))
+    args=parser.parse_args()
+    compare(args.output,chrome_profile=args.chrome_profile)

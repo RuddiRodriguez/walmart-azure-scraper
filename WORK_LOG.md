@@ -238,3 +238,5 @@ Compared browser fetch, Playwright context.request (shared browser cookies) and 
 Trial flag refresh_store_each_page reselects and verifies the configured store through the normal UI after a category page introduces pending products. Then checks canary before reading product details. No acceptance bypass; previous mismatch still invalidates its run. Default behavior unchanged pending repeated live evidence. Three sequential samples planned; stop trial at first failure.
 
 Transport comparison completed: browser-fetch 21/21 correct across three fresh sessions; Playwright 0/3 and curl 0/3, each challenged on first request per session. These targeted requests omit category traversal and therefore do not establish full-flow reliability.
+
+Store-reselection trial A passed sample validation: 33 records across all 11 parents in 1108.35 seconds. Source audit passed. Full-run validation remains incomplete, as expected for a sample. Repeats B/C pending; no reliability claim yet.
