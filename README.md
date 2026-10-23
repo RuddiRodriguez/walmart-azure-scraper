@@ -13,12 +13,14 @@ availability variants and an offline checkpoint check.
 The included **500-product evidence dataset** came from the preceding live feasibility scripts,
 not from a completed full-catalog run of this new runner. All 11 requested parent categories
 are represented; Store 100 pickup, seller and prices were checked on product pages.
-The latest packaged runner completed a fresh live 33-product sample across all 11 categories,
-including intentional product-stage stop/resume; see `evidence/review-live/`. An earlier 22-product
-sample remains in `evidence/live-smoke/`. Additional October 23 tests and fresh collection are logged in `WORK_LOG.md`; the 33-record result
-above is the earlier review baseline. The full-catalog runner and Azure installation/scheduling files are included. End-to-end catalog
-coverage, live volume/digital offers and Azure execution still require acceptance testing.
-Do not describe this version as already accepted or production-proven.
+Latest local review: a broader attempt produced 259 valid partial records. The current core
+collected 57 records, including three genuinely unavailable local items, before the disk reserve
+stopped it. Eleven fresh visible-price checks passed. One 33-record repeat passed and another
+failed on a location mismatch. Live hard-kill recovery passed at page and product stages.
+
+Read `docs/REVIEW_STATUS.md` for the exact evidence and unresolved requirements. Full catalog
+coverage, consistent unattended runs, genuine volume/digital deal demonstrations and Azure
+execution remain unproven. Nothing was submitted to the contest holder during this review.
 
 ## Local setup
 
@@ -67,14 +69,16 @@ products file. Failed runs stay in their own run directory. Never read a run's p
 - Category discovery follows retailer category IDs, parent navigation references and child landing-page links within the main page content. Changes to
   site structure or missing child links need inspection; discovery cannot prove links Walmart hides.
 - Pagination loops, missing next-page controls and zero-product listing responses stop the run.
-- Unknown promotion shapes are preserved in evidence and prevent full publication.
+- Unknown local promotion shapes are preserved in evidence and prevent full publication.
+- A location mismatch permanently bars that run from publication, including after resume. Start a fresh run.
 - No CAPTCHA solving, proxy rotation, credentials, remote disabling or telemetry added by this project.
   Chrome/SeleniumBase retain their own vendor behavior; no claim is made about those dependencies.
 - PPM is copied from visible listing text. Package weight comes from title or explicit package specs;
   assembled/shipping weights are not substituted for product quantity.
 - Changed code/configuration cannot resume either a full or sample checkpoint. A 48-hour-old checkpoint is rejected to avoid combining stale and current prices.
 - Explicitly unavailable products are retained only when local pickup attribution and Walmart
-  seller evidence are present. Availability evidence stays in the source sidecar to preserve the
+  seller evidence are present. An explicit pickup OUT_OF_STOCK option for the verified store also
+  establishes unavailable local inventory; shipping prices and PPM stay empty. Availability evidence stays in the source sidecar to preserve the
   exact 22-field export. Missing local evidence is not inferred from a selected banner alone.
 - Interrupted runs export `products.partial.json` and `failure.json` for review, without publication.
 - Linux VM installation is supplied; Azure IP reputation and live retailer access are not guaranteed.

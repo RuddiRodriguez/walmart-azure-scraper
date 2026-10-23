@@ -1,9 +1,10 @@
 # Acceptance record
 
-Latest results: `docs/REVIEW_STATUS.md` and `evidence/review-live/` supersede the earlier sample
-counts below. October 23: 33 fresh local records across all 11 parents, plus successful graceful
-interruption between product requests and resume. Full catalog, live unavailable/deal cases and
-Azure execution remain outstanding.
+Latest results are in `docs/REVIEW_STATUS.md`. The earlier counts below are historical.
+October 23 work added a 259-record broader partial attempt, a 57-record current-core live run,
+three genuine unavailable records, 11 passing visible-price spot checks, and page/product-stage
+SIGKILL recovery. A repeat failed on location context; resource guards stopped long testing.
+Full catalog coverage, stable full repeats, genuine deal cases and Azure remain outstanding.
 
 ## Proven in earlier local feasibility run
 
@@ -22,7 +23,7 @@ These results are in `evidence/`. They do not prove this new runner's full trave
 - Product-page comparisons for random items, price types, UPC, PPM and package weight.
 - Genuine live volume and digital deals, including all conditions. Do not invent examples.
 - Complete repeated runs and measured duration/yield comparison.
-- Interrupt the new runner during a page and during a product, then verify resume and no duplicates.
+- Page/product hard-kill recovery has passed locally; repeat it on the final client environment.
 - Challenge/zero-yield/location-mismatch cases must leave the latest good output intact.
 - Azure VM installation, outbound access, scheduling, logs, operational alerts and resource usage.
 - Recorded walkthrough on the agreed environment, defect-support period and final transfer terms.

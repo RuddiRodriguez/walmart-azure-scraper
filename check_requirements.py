@@ -92,7 +92,7 @@ def run():
     item['isSponsoredFlag'] = False; item['sponsoredProduct'] = None; item['sellerName'] = 'Other'
     check('Marketplace listing excluded', listing(item)[1][0]['reason'] == 'marketplace')
     item['sellerName'] = 'Walmart.com'; item['fulfillmentSummary'] = []
-    check('Shipping-only listing excluded', listing(item)[1][0]['reason'] == 'no_local_pickup')
+    check('Unrendered own-seller listing requires detail evidence rather than being mislabeled local', listing(item)[1][0]['reason'] == 'not_rendered')
 
     for title in ['Robot or human?', 'Access Denied', 'CAPTCHA']:
         try:

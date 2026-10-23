@@ -1,0 +1,131 @@
+Recorded at 2026-10-23T07:36:32.343219+00:00
+
+$ python -c 'import json,csv; s=json.load(open('"'"'config/stores.json'"'"')); print('"'"'LOCAL REVIEW WALKTHROUGH - no Azure or contest submission'"'"'); print('"'"'Trial store:'"'"',s['"'"'stores'"'"'][0]['"'"'id'"'"'],s['"'"'stores'"'"'][0]['"'"'name'"'"']); print('"'"'Required parent categories:'"'"',len(list(csv.DictReader(open('"'"'config/categories.csv'"'"')))))'
+LOCAL REVIEW WALKTHROUGH - no Azure or contest submission
+Trial store: 100 Bentonville S Walton Blvd Supercenter
+Required parent categories: 11
+[exit code 0]
+
+$ python check_requirements.py
+{
+  "mode": "offline checks of captured evidence and explicitly synthetic mutations; no live acceptance claim",
+  "time_utc": "2026-10-23T07:36:37.745076+00:00",
+  "passed": true,
+  "count": 49,
+  "checks": [
+    "Captured historical record passes schema checks",
+    "Rejects null field",
+    "Rejects wrong price format",
+    "Rejects wrong store ZIP",
+    "Rejects wrong address",
+    "Rejects generated GUPC",
+    "Rejects calculated unit price",
+    "Rejects approximate weight",
+    "Rejects unknown category",
+    "Rejects missing date timezone",
+    "Rejects invalid date",
+    "Rejects missing title",
+    "Rejects non-retailer URL",
+    "Missing schema key returns failure without crashing",
+    "Reordered schema rejected",
+    "Non-object record returns failure",
+    "Duplicate URLs rejected",
+    "Same product ID with different query rejected",
+    "Material category decline rejected",
+    "Pending pages prevent publication",
+    "Pending products prevent publication",
+    "Unresolved product review prevents publication",
+    "Shipping-only product excluded with explicit reason",
+    "Marketplace product excluded with explicit reason",
+    "Unknown availability excluded with explicit reason",
+    "Changed price excluded with explicit reason",
+    "Approximate weight excluded with explicit reason",
+    "Unknown promotion excluded with explicit reason",
+    "Wrong response ZIP fails",
+    "Promotion wording and explicit price: 2 for $5. Limit 4.",
+    "Promotion wording and explicit price: Buy 1, Get 1 Free",
+    "Promotion wording and explicit price: Save $5 when you buy 5",
+    "Promotion wording and explicit price: Mix or Match 5 for $10",
+    "Promotion wording and explicit price: Must buy 4: $1.99 each",
+    "Promotion wording and explicit price: Clip Coupon: Save $2",
+    "Promotion wording and explicit price: $3.99 each with Digital Coupon",
+    "Promotion wording and explicit price: 20% off with clipped coupon",
+    "Promotion wording and explicit price: Save $5 when you buy 5 with Digital Coupon",
+    "Walmart Cash not turned into a discount",
+    "Unread linked offer terms require review",
+    "Sponsored structured product excluded",
+    "Marketplace listing excluded",
+    "Unrendered own-seller listing requires detail evidence rather than being mislabeled local",
+    "Challenge rejected: Robot or human?",
+    "Challenge rejected: Access Denied",
+    "Challenge rejected: CAPTCHA",
+    "Wrong banner rejected",
+    "Unrelated browse ancestry and recipes skipped with reasons",
+    "Composite root ID retains its child category"
+  ]
+}
+[exit code 0]
+
+$ python check_storage_recovery.py
+{"mode": "offline subprocess SIGKILL inside uncommitted SQLite transaction", "passed": true, "checks": ["Prior committed record retained", "Uncommitted record rolled back", "Database integrity OK", "Subsequent transaction committed"]}
+[exit code 0]
+
+$ python -c 'import json; p=json.load(open('"'"'evidence/products-500.json'"'"')); print('"'"'Historical genuine demonstration:'"'"',len(p),'"'"'records'"'"'); print('"'"'Historical collection dates:'"'"',min(r['"'"'crawl_date'"'"'] for r in p),'"'"'to'"'"',max(r['"'"'crawl_date'"'"'] for r in p)); print('"'"'This is not a fresh full-catalog run.'"'"'); print(open('"'"'docs/CURRENT_RESULTS.txt'"'"').read())'
+Historical genuine demonstration: 500 records
+Historical collection dates: 2026-10-22T23:19:42.144602+00:00 to 2026-10-22T23:27:39.067537+00:00
+This is not a fresh full-catalog run.
+LOCAL REVIEW RESULTS — 23 October 2026
+
+Available:
+- Historical demonstration: 500 genuine distinct products, all 11 parent categories.
+- Broader intermediate live attempt: 259 valid products, 27 completed pages; partial.
+- Latest tested collector: 57 valid products in 458.78 seconds, including 3 genuinely
+  unavailable items retained with explicit local evidence and no shipping prices.
+- Fresh visible-price checks: 11 of 11 matched, one randomly selected record per category.
+- Hard-kill recovery passed at page and product stages; saved records were not repeated.
+- Offline schema, price, fulfillment, promotion, failure and transaction checks passed.
+- Source, configuration, logs, evidence and instructions are in the private repository.
+
+Not complete:
+- Full catalog coverage: latest checkpoint still has 1,036 pending pages.
+- Reliable unattended repeat runs: repeat A passed with 33 products in 552.93 seconds;
+  repeat B stopped after 7 products on a location mismatch. Seven shared prices matched.
+- Long-run resource stability: disk reserve tripped at 2.888 GiB; space later fell to
+  about 0.36 GiB and recovered after process closure. A separate restart tripped at
+  0.578 GiB. Browser/memory pressure remains unresolved; the cache experiment was reverted.
+- Genuine live volume/digital offer examples: none verified. Offline examples are labeled.
+- Azure execution: not performed; client VM/access not supplied, and local acceptance remains incomplete.
+- Client-assigned location: Store 100 remains a trial store until confirmed.
+
+No successful full-run publication, contest upload or client message was made.
+Separate datasets overlap: do not add their counts together as unique products.
+
+[exit code 0]
+
+$ python -c 'import json; r=json.load(open('"'"'evidence/hard-product-recovery/hard-recovery.json'"'"')); print(json.dumps(r,indent=2))'
+{
+  "mode": "live SIGKILL after product request start, followed by identical-code resume",
+  "passed": true,
+  "checks": {
+    "sqlite_integrity": true,
+    "prior_pages_completed_once": true,
+    "prior_records_retained": true,
+    "prior_products_completed_once": true,
+    "interrupted_product_was_uncommitted": true,
+    "interrupted_product_attempted_twice": true,
+    "interrupted_product_completed_once": true
+  },
+  "committed_records_before_kill": 6,
+  "interrupted_product": "15154970737",
+  "limit": "Recovery proof only, not full catalog completion; precise network packet timing is not measured."
+}
+[exit code 0]
+
+$ python -c 'print('"'"'RUNNING INSTRUCTIONS (shown, not executed here)'"'"'); print('"'"'python scrape.py --store 100 --sample 3'"'"'); print('"'"'python scrape.py --store 100'"'"'); print('"'"'python scrape.py --store 100 --resume'"'"'); print('"'"'Inspect report.json and events.jsonl. Only a passing full run updates latest.json.'"'"'); print('"'"'See docs/REVIEW_STATUS.md for unresolved requirements. Azure testing remains last.'"'"')'
+RUNNING INSTRUCTIONS (shown, not executed here)
+python scrape.py --store 100 --sample 3
+python scrape.py --store 100
+python scrape.py --store 100 --resume
+Inspect report.json and events.jsonl. Only a passing full run updates latest.json.
+See docs/REVIEW_STATUS.md for unresolved requirements. Azure testing remains last.
+[exit code 0]

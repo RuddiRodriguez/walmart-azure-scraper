@@ -1,18 +1,25 @@
-UNSENT DRAFT — prepared for review only. No message or package sent.
+UNSENT DRAFT — nothing has been submitted or messaged.
 
 Hello,
 
-I've prepared a versioned package with the Python source, setup and running instructions, the actual 500-product JSON, captured source evidence and the original collection logs.
+I’ve prepared the current source, running instructions, genuine 500-product JSON,
+collection logs, source evidence and a clear acceptance report.
 
-The 500 records came from the earlier live collection at Store 100 in Bentonville, with pickup selected. They cover all 11 parent categories and have no duplicate product IDs or URLs. I've rechecked them against the saved store, seller, price, UPC and displayed PPM evidence. That recheck is offline; I haven't relabeled the dataset as a new collection.
+The original 500 records cover all 11 parent categories. In the latest local work,
+a broader attempt collected 259 valid records. The updated collector also retained
+three genuinely unavailable local items without copying shipping prices. Eleven
+fresh visible-price checks passed, one per category. Forced-stop recovery passed
+at both page and product stages.
 
-This revision adds retention for unavailable products where local pickup evidence remains present, and partial-output files for interrupted runs. The unavailable-product changes have passed offline checks, but I still need genuine live evidence for that case. Products without enough local-store evidence are not assigned a local price.
+I can’t yet call the full scraper production-ready. One repeat sample completed
+33 records, but the next stopped on a location mismatch. Full category coverage
+is unfinished, and long runs encountered local memory/disk pressure. The reports
+include these failures and pending work. Azure has not been tested.
 
-I also completed a fresh local sample on October 23 at 04:43 CEST: 33 products, three per category, with no duplicates. I stopped it after three saved products, then resumed it successfully without repeating completed work. That sample took 603.99 seconds including the interruption. It is not a full-catalog result: 1,094 discovered pages and 290 product candidates remain pending.
+Store 100 remains the trial store used for these results. I still need confirmation
+of the assigned store and the existing Azure environment/access details. I don’t
+have a reliable full-acceptance completion date until those dependencies and the
+long-run failures are resolved.
 
-Full subcategory coverage, repeated complete runs, genuine volume/digital offer examples and Azure execution remain outstanding. The package includes the coverage queues and separates local live results from offline checks. Store 100 also still needs confirmation as the assigned location, and I don't yet have access to your Azure environment.
-
-The completed portion is ready for review. I can't give a reliable completion date for the remaining acceptance work until the store and Azure access are confirmed and an initial run there establishes the runtime and any access issues. I don't want to promise a deadline I can't support.
-
-Thanks,
-Ruddi
+Offline checks, fresh live tests and unfinished work are labeled separately.
+The files are in a private repository and have not been shared with you yet.

@@ -4,6 +4,7 @@ import hashlib
 import json
 import random
 import re
+import shutil
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -31,6 +32,8 @@ def check(products, output):
         select_store(sb, store, settings, log, output)
         canary_check(sb, store, settings)
         for row in selected:
+            if shutil.disk_usage(output).free < 3 * 2**30:
+                raise RuntimeError('Disk space below 3 GiB reserve; spot check stopped')
             key = row['url'].split('?')[0].rstrip('/').split('/')[-1]
             soup = navigate(sb, row['url'], settings, log)
             verify_banner(soup, store)

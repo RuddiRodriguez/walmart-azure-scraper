@@ -12,7 +12,7 @@ PRODUCT_FIELDS = 'usItemId name upc brand sellerName sellerDisplayName availabil
 
 def export(run, destination):
     destination.mkdir(parents=True, exist_ok=True)
-    for name in ['products.json', 'report.json', 'products.partial.json', 'failure.json', 'events.jsonl', 'selected-store.png', 'hard-stop.json', 'hard-recovery.json', 'hard-stop-between-products.json', 'selected-store.json']:
+    for name in ['products.json', 'report.json', 'products.partial.json', 'failure.json', 'events.jsonl', 'selected-store.png', 'hard-stop.json', 'hard-recovery.json', 'hard-stop-between-products.json', 'selected-store.json', 'disk-guard.json', 'resource-samples.jsonl']:
         if (run / name).exists():
             shutil.copy2(run / name, destination / name)
     sources = []

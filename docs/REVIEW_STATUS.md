@@ -1,77 +1,87 @@
-# October 23 review package
+# Local acceptance review — 23 October 2026
 
-## Review starting points
+The package contains usable source and genuine collection evidence. It is not yet proven reliable
+for complete unattended collection or Azure production. All live scraper processes have stopped.
+Nothing has been submitted or messaged to the contest holder during this review.
 
-- `evidence/products-500.json`: 500 genuine distinct products from the original live collection.
-- `evidence/source-records.json`: corresponding captured listing/product evidence, in matching order.
-- `evidence/review-audit.json`: fresh offline comparison of the historical data and captured evidence.
-- `evidence/collection-logs/`: original collection and enrichment progress logs, including restarts.
-- `evidence/FINAL_REPORT.md`: historical collection counts and limitations.
-- `evidence/live-smoke/`: earlier packaged-runner live sample of 22 records across 11 categories.
-- `evidence/review-live/`: latest local live run, its coverage queue and collection evidence.
-- `evidence/review-regression.json`: explicitly synthetic/offline checks of this revision.
-- `evidence/SHA256SUMS.json`: file checksums for the review package.
-- `README.md`, `docs/OPERATIONS.md`, `deploy/`: local running, recovery and Azure setup instructions.
+## What we have
 
-## Completed versus outstanding
-
-Latest live result, completed October 23 at 02:43:28 UTC / 04:43:28 CEST: 33 new local records,
-three per required parent category, sample validation passed and zero duplicates. Intentional
-interruption after three committed products followed by resume passed the recorded recovery checks.
-Active time 597.81 seconds; elapsed time 603.99 seconds including the interruption. These timings
-apply only to this 33-record sample. 1,094 pages and 290 product candidates remain pending.
-
-| Requirement | Evidence and exact boundary |
+| Requirement | Evidence and boundary |
 |---|---|
-| 500 distinct genuine products | Historical live collection, freshly audited offline. Zero duplicate IDs and URLs. No newly invented or relabeled records. |
-| Store and fulfillment | Captures identify Store 100, Bentonville, ZIP 72712, PICKUP and Walmart seller. This remains a trial store until the client confirms assignment. |
-| Prices | Historical listing displayed current prices match captured product-detail current prices. Original crawl dates remain unchanged. This does not establish today's prices. |
-| All configured parent categories | Historical 500 records and earlier 22-record live sample cover all 11 parents. |
-| Full subcategory coverage | Not complete. Coverage queues explicitly distinguish visited and pending URLs. Parent-category representation is not exhaustive coverage. |
-| Unavailable-product retention | Revised code retains an explicitly unavailable item only with local pickup and seller evidence, including empty prices where absent. Offline synthetic checks pass. Live unavailable-item retention remains unproven; saved out-of-stock examples often lack local pickup evidence. |
-| Interruption recovery | Latest live sample was interrupted between product requests after three commits and resumed to 33 records without reprocessing committed pages/products. This was a graceful stop, not a mid-response hard kill. Offline checkpoint checks are labeled separately. |
-| Deals | Historical sample has ordinary sales. Seven earlier synthetic deal examples exist. Genuine live volume/digital offers remain unproven. Unknown promotions prevent full publication. |
-| Azure execution | Not performed. Installation and twice-weekly service/timer files are supplied. No client VM connection or approved administration path supplied. Local execution is not Azure evidence. |
-| Repeat full runs | Not complete. Separate short sessions and resumed samples do not establish unattended production reliability. |
-| Failed-run protection | Live incomplete samples did not publish. Offline simulated access failure preserved prior output byte-for-byte and exported failure/partial files. |
+| 500 genuine distinct products | `evidence/products-500.json` and corresponding source records. Historical live collection, rechecked offline; all 11 parent categories represented. This is not a new complete catalog run. |
+| Broader live collection | Intermediate attempt reached 259 accepted records and 27 completed pages. `evidence/full-attempt-v3-final/` preserves its partial data, sources and queue. |
+| Latest collector live check | `evidence/final-local/`: 57 accepted records, 11 completed parent pages, 458.78 seconds. It stopped at the disk reserve; 1,036 pages remain pending. No full publication. |
+| Correct store and fulfillment | DOM name/address, response Store 100, ZIP 72712, pickup intent and local fulfillment checked. Screenshots show Bentonville S Walton Blvd Supercenter, 406 S Walton Blvd. Store 100 is still a trial location, not confirmed client assignment. |
+| Independent visible price checks | `evidence/visible-price-check/`: 11 fresh product pages, one randomly selected record per represented category. All visible prices matched the saved record and structured response; store, seller and pickup checks passed. |
+| Unavailable-product retention | `evidence/unavailable-fresh/`: three genuine records from fresh listing-to-detail collection. Explicit local OUT_OF_STOCK evidence is retained; shipping prices/PPM are not copied. All three replayed correctly. |
+| Exact schema and data checks | Ordered 22 string fields; missing values empty; UPC preserved; GUPC and unit_price empty; PPM copied, not calculated. Offline audits passed for the historical 500 and each exported accepted dataset. |
+| Duplicate and exclusion controls | Product IDs deduplicated before detail collection. Sponsored, marketplace, outside-category and approximate-weight exclusions recorded. Own-seller candidates without a pickup summary require detail verification; they are not automatically accepted as local. |
+| Abrupt recovery | Live page-stage SIGKILL preserved four prior page commits. Live product-stage SIGKILL preserved six records; the interrupted request was retried and committed once. `evidence/hard-page-recovery/` and `evidence/hard-product-recovery/`. |
+| Failed-run protection | Live incomplete/failed runs did not publish. Offline tests verify prior-output preservation, atomic success, transaction rollback, same-job overlap rejection and permanent publication blocking after a location mismatch. |
+| Source and operations | Unencrypted Python source, pinned runtime requirements, captured local dependency versions, configuration, recovery/extension instructions and existing-VM installation/timer files supplied. |
 
-## Changes in this revision
+Counts from different runs overlap. Do not add them together as a unique-product total.
 
-1. Removed blanket stock-status exclusion where explicit local pickup attribution remains available.
-2. Allowed genuinely missing prices only for evidenced unavailable records, preserving empty strings.
-3. Added partial JSON and failure metadata for interrupted/failed runs.
-4. Included original collection logs, the supplied technical brief, an independent evidence audit,
-   source checksums and an evidence export command that excludes full browser HTML/session state.
-5. Kept historical collection, offline regression and fresh live results separate.
+## What is missing, and why
 
-These are responses to the supplied reminder and requirements. No private earlier feedback thread
-was available to audit, and no comments were visible under our entry #69.
+| Missing acceptance result | Exact reason and next dependency |
+|---|---|
+| Complete category/subcategory exhaustion | Not observed. Latest tested run has 1,036 pending pages; earlier broader attempt had 1,232 pending. Queues are separate snapshots, not counts to combine. Every available category cannot be claimed from parent representation. |
+| Consistently successful unattended repeats | Repeat A completed 33 records in 552.93 seconds. Repeat B failed after seven records with a location mismatch; its event span was about 340 seconds. `evidence/repeat-comparison.json` records seven common IDs and no price changes among those IDs. The second run is a failure, not a passing repeat. |
+| Stable fulfillment over a long run | Two earlier attempts received mismatched location context. One exact product worked in a fresh session, but the cause was not established. The original rejected responses predated pre-validation capture and are not available; new capture behavior is verified offline. No claim that the retailer/context issue is permanently fixed. |
+| Long-run resource stability on this Mac | A 3 GiB reserve stopped the latest crawl at 2.888 GiB free. Free space later fell to roughly 0.36 GiB, then recovered after process closure. A fresh browser experiment tripped at 0.578 GiB. The project's saved files were about 470 MiB; system swap was substantial. Root cause remains unproven. The attempted back-navigation-cache setting was reverted after an inconclusive test. More storage/memory headroom or a measured resource fix is needed before another long run. |
+| Genuine volume/digital deal demonstrations | No qualifying live examples verified. Ordinary sales exist. Synthetic examples cover the specified wording and no-invented-price rules; unknown local promotion shapes block full publication. Do not label synthetic offers as live. |
+| Azure execution and scheduling proof | Not run. Client VM address, OS/configuration and approved access path were not supplied. Local acceptance also remains incomplete. Azure stays last, as requested. Installer syntax was checked; that is not Linux/Azure runtime evidence. |
+| Assigned location and previous private feedback | The supplied brief/reminder are available. Store assignment and a complete previous private-feedback thread are not. These cannot be assumed resolved. |
 
-## Deadline and completion estimate
+## Changes completed
 
-Fresh contest overview on October 23 showed 1 day, 13 hours remaining. Previously saved contest
-metadata gives October 24, 2026 at 16:03:08 UTC / 18:03:08 CEST (Europe/Amsterdam). The live platform
-countdown is authoritative and should be checked again before any eventual upload.
+- Check product details after each listing page, spread work across categories, prioritize pagination
+  and listings, and preserve landing pages in the queue.
+- Log page/product starts, retries, exact failures, candidate outcomes and skipped-link reasons.
+- Check actual response ZIP and scraped store name/address against the configuration.
+- Retain verified local unavailable items while omitting unverified shipping prices and offers.
+- Save product responses before validation and preserve rejected responses separately.
+- Permanently bar a location-mismatched run from publication, even after a later resume. Use a fresh
+  run for publication; do not relax this check to obtain a passing result.
+- Reject malformed schema, duplicate IDs, inconsistent dates/prices and unresolved detail reviews.
+- Keep code/configuration signatures in both modes. Mark runtime incomplete after an unclean kill.
+- Add reproducible offline checks, live recovery evidence, source audits, resource logging and a
+  review disk guard. The guard intentionally stops only the explicitly selected review process.
 
-The completed local portion is packaged now. Full acceptance has no defensible completion date
-yet: client store assignment and Azure access are absent, complete category traversal has not been
-observed, and genuine qualifying unavailable/deal examples have not been verified. Do not promise
-completion before closing or replace those blockers with an invented date. Set a dated estimate
-after access is supplied and the first Azure/store acceptance run reveals actual runtime and failures.
+## Test labels
 
-## Running and auditing
+`check_requirements.py` has 49 named offline checks. `check_browser_failures.py` has 13 offline
+HTTP/timeout/shape/canary checks. `check_review_changes.py`, `check_storage_recovery.py` and
+`check_runner_flow.py` cover unavailable cases, prior publication, transaction kills and runner flow.
+Their JSON reports explicitly identify simulated data/navigation. Offline success is not live or
+Azure acceptance. The recorded walkthrough demonstrates local checks and saved evidence only.
+
+## Reproduce and continue
+
+See `README.md` and `docs/OPERATIONS.md`. Install Chrome and the pinned Python requirements.
+The latest tested core matches run signature
+`0a08a06154f867e5f1ab9964e8e10bd39949562e39545e8bb8a6c6e9737ca599`.
+
+After ensuring adequate resources, resume the current-code checkpoint within its 48-hour age limit:
 
 ```bash
-python3 -m venv .venv
-.venv/bin/pip install -r requirements.txt
-.venv/bin/python review_package.py
-.venv/bin/python check_review_changes.py
-.venv/bin/python scrape.py --store 100 --sample 3
+python scrape.py --store 100 --output data/final-local-20261023 --resume
 ```
 
-Chrome must be installed. The first two commands that run Python scripts are offline audits/checks;
-the final command makes a fresh local live collection and does not publish production output.
-For full collection, omit `--sample 3`. After interruption, rerun the identical command with
-`--resume`; do not reuse checkpoints after changing configuration or beyond 48 hours.
+Use the exact same code and configuration. This checkpoint stopped for disk pressure and has no
+recorded location mismatch. Older code checkpoints must not be migrated silently. For a new run,
+omit `--resume`. Do not resume a location-mismatched run expecting it to publish.
 
-No contest submission, comment, message or file upload was authorized for this review work.
+The raw HTML/checkpoints remain local under `data/`; the private package contains selected source
+responses, screenshots, hashes, logs and explicit coverage states. No browser/session state is
+included in the delivery archive.
+
+## Completion timing
+
+The completed local portion is reviewable now. No defensible full-acceptance completion date can
+be given while long-run resource stability, fulfillment consistency, assigned-store confirmation
+and Azure access remain unresolved. A dated estimate must follow those prerequisites and a timed
+complete run; promising completion before the contest closes would not be supported by these results.
+The previously saved deadline is 24 October 2026, 16:03:08 UTC / 18:03:08 CEST; check the live contest
+countdown before any eventual submission. No submission is authorized by this review.

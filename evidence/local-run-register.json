@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-10-23T06:41:30.796296+00:00",
+  "generated_utc": "2026-10-23T07:31:47.109615+00:00",
   "runs": [
     {
       "path": "data/100/runs/20261022T235159490174Z",
@@ -49,9 +49,76 @@
         ]
       },
       "failure": null,
+      "failure_is_latest_event": false,
       "sample_passed": true,
       "full_passed": false,
       "active_seconds": 1079.55,
+      "active_time_complete": null,
+      "hard_stop_evidence": []
+    },
+    {
+      "path": "data/final-local-20261023/100/runs/20261023T071051324058Z",
+      "started_utc": "2026-10-23T07:10:51.330468+00:00",
+      "status": "interrupted_or_failed",
+      "session_open": false,
+      "signature": "0a08a06154f867e5f1ab9964e8e10bd39949562e39545e8bb8a6c6e9737ca599",
+      "records": 57,
+      "category_counts": {
+        "Diapering": 29,
+        "Balloons": 28
+      },
+      "page_states": {
+        "done": 11,
+        "pending": 1036
+      },
+      "candidate_states": [
+        {
+          "status": "done",
+          "reason": "",
+          "count": 54
+        },
+        {
+          "status": "done",
+          "reason": "retained_unavailable",
+          "count": 3
+        }
+      ],
+      "last_event": {
+        "time": "2026-10-23T07:18:31.063272+00:00",
+        "event": "stopped",
+        "store": "100",
+        "error": "",
+        "error_type": "KeyboardInterrupt",
+        "current_work": {
+          "kind": "page",
+          "category": "Food",
+          "url": "https://www.walmart.com/browse/food/porch-pumpkins/976759_976793_8739812"
+        }
+      },
+      "failure": {
+        "run_id": "20261023T071051324058Z",
+        "mode": "full",
+        "active_seconds": 458.78,
+        "elapsed_seconds": 458.78,
+        "active_time_complete": true,
+        "signature": "0a08a06154f867e5f1ab9964e8e10bd39949562e39545e8bb8a6c6e9737ca599",
+        "location_mismatch_seen": false,
+        "current_work": {
+          "kind": "page",
+          "category": "Food",
+          "url": "https://www.walmart.com/browse/food/porch-pumpkins/976759_976793_8739812"
+        },
+        "error": "",
+        "error_type": "KeyboardInterrupt",
+        "records": 57,
+        "pending_pages": 1036,
+        "pending_products": 0,
+        "published": false
+      },
+      "failure_is_latest_event": true,
+      "sample_passed": null,
+      "full_passed": null,
+      "active_seconds": 459.733130790999,
       "active_time_complete": true,
       "hard_stop_evidence": []
     },
@@ -91,10 +158,11 @@
         "pending_products": 26,
         "published": false
       },
+      "failure_is_latest_event": true,
       "sample_passed": null,
       "full_passed": null,
       "active_seconds": 107.57067454099888,
-      "active_time_complete": true,
+      "active_time_complete": null,
       "hard_stop_evidence": [
         "hard-stop.json",
         "hard-recovery.json"
@@ -148,6 +216,7 @@
         "pending_products": 0,
         "published": false
       },
+      "failure_is_latest_event": true,
       "sample_passed": null,
       "full_passed": null,
       "active_seconds": 142.01405662499747,
@@ -189,6 +258,7 @@
         "pending_products": 0,
         "published": false
       },
+      "failure_is_latest_event": true,
       "sample_passed": null,
       "full_passed": null,
       "active_seconds": 28.05391437500657,
@@ -198,49 +268,238 @@
     {
       "path": "data/full-v3-20261023/100/runs/20261023T063326887142Z",
       "started_utc": "2026-10-23T06:33:26.902414+00:00",
-      "status": "unfinished",
-      "session_open": true,
+      "status": "interrupted_or_failed",
+      "session_open": false,
       "signature": "82dc1d6839b739835eb540f1fb5712f971b287ad3a6af24590afcd56e3113acc",
-      "records": 57,
+      "records": 259,
       "category_counts": {
-        "Diapering": 22,
+        "Diapering": 48,
         "Balloons": 27,
-        "Personal Care": 8
+        "Personal Care": 68,
+        "Beauty": 62,
+        "Pets": 49,
+        "Food": 5
       },
       "page_states": {
-        "done": 14,
-        "pending": 1049
+        "done": 27,
+        "pending": 1232
       },
       "candidate_states": [
         {
           "status": "done",
           "reason": "",
-          "count": 57
+          "count": 259
         },
         {
           "status": "done",
           "reason": "no_local_pickup",
-          "count": 1
+          "count": 3
         },
         {
           "status": "pending",
           "reason": null,
-          "count": 27
+          "count": 21
         }
       ],
       "last_event": {
-        "time": "2026-10-23T06:41:29.720911+00:00",
-        "event": "product",
+        "time": "2026-10-23T07:02:52.917344+00:00",
+        "event": "stopped",
         "store": "100",
-        "id": "1427387568",
-        "accepted": true,
-        "reason": "",
-        "category": "Personal Care"
+        "error": "",
+        "error_type": "KeyboardInterrupt",
+        "current_work": {
+          "kind": "product",
+          "id": "10534961",
+          "url": "https://www.walmart.com/ip/Purina-Friskies-Pate-Salmon-Dinner-Wet-Cat-Food-5-5-oz-Can/10534961?fulfillmentIntent=Pickup&filters=%5B%7B%22intent%22%3A%22fulfillmentIntent%22%2C%22values%22%3A%5B%22Pickup%22%5D%7D%5D&classType=VARIANT&athbdg=L1600",
+          "category": "Pets"
+        }
       },
-      "failure": null,
+      "failure": {
+        "run_id": "20261023T063326887142Z",
+        "mode": "full",
+        "current_work": {
+          "kind": "product",
+          "id": "10534961",
+          "url": "https://www.walmart.com/ip/Purina-Friskies-Pate-Salmon-Dinner-Wet-Cat-Food-5-5-oz-Can/10534961?fulfillmentIntent=Pickup&filters=%5B%7B%22intent%22%3A%22fulfillmentIntent%22%2C%22values%22%3A%5B%22Pickup%22%5D%7D%5D&classType=VARIANT&athbdg=L1600",
+          "category": "Pets"
+        },
+        "error": "",
+        "error_type": "KeyboardInterrupt",
+        "records": 259,
+        "pending_pages": 1232,
+        "pending_products": 21,
+        "published": false
+      },
+      "failure_is_latest_event": true,
       "sample_passed": null,
       "full_passed": null,
-      "active_seconds": 0,
+      "active_seconds": 1553.090105000003,
+      "active_time_complete": true,
+      "hard_stop_evidence": []
+    },
+    {
+      "path": "data/repeat-a-20261023/100/runs/20261023T064217321445Z",
+      "started_utc": "2026-10-23T06:42:17.326776+00:00",
+      "status": "review_required",
+      "session_open": false,
+      "signature": "3f74d0bd881dbd6f1c28349dd1ff392890c50698db420e83f0eb940d2abc4bce",
+      "records": 33,
+      "category_counts": {
+        "Diapering": 3,
+        "Balloons": 3,
+        "Food": 3,
+        "Household Essentials": 3,
+        "Personal Care": 3,
+        "Beauty": 3,
+        "Feeding": 3,
+        "Health & Wellness": 3,
+        "Pets": 3,
+        "Art Supplies": 3,
+        "Office Supplies": 3
+      },
+      "page_states": {
+        "done": 20,
+        "pending": 1079
+      },
+      "candidate_states": [
+        {
+          "status": "done",
+          "reason": "",
+          "count": 33
+        },
+        {
+          "status": "pending",
+          "reason": null,
+          "count": 285
+        }
+      ],
+      "last_event": {
+        "time": "2026-10-23T06:51:30.261621+00:00",
+        "event": "not_published",
+        "store": "100",
+        "mode": "sample",
+        "records": 33,
+        "errors": [
+          "Below minimum product count",
+          "Incomplete checkpoint queue"
+        ]
+      },
+      "failure": null,
+      "failure_is_latest_event": false,
+      "sample_passed": true,
+      "full_passed": false,
+      "active_seconds": 552.93,
+      "active_time_complete": true,
+      "hard_stop_evidence": []
+    },
+    {
+      "path": "data/repeat-b-20261023/100/runs/20261023T065237943455Z",
+      "started_utc": "2026-10-23T06:52:37.948226+00:00",
+      "status": "interrupted_or_failed",
+      "session_open": false,
+      "signature": "3f74d0bd881dbd6f1c28349dd1ff392890c50698db420e83f0eb940d2abc4bce",
+      "records": 7,
+      "category_counts": {
+        "Diapering": 3,
+        "Balloons": 3,
+        "Food": 1
+      },
+      "page_states": {
+        "done": 12,
+        "pending": 1045
+      },
+      "candidate_states": [
+        {
+          "status": "done",
+          "reason": "",
+          "count": 7
+        },
+        {
+          "status": "pending",
+          "reason": null,
+          "count": 53
+        }
+      ],
+      "last_event": {
+        "time": "2026-10-23T06:58:18.085059+00:00",
+        "event": "stopped",
+        "store": "100",
+        "error": "Location mismatch: publication prohibited",
+        "error_type": "ValueError",
+        "current_work": {
+          "kind": "product",
+          "id": "47376050",
+          "url": "https://www.walmart.com/ip/Fresh-Pie-Pumpkin-Each-Approx-1-7-2-8-lb/47376050?fulfillmentIntent=Pickup&filters=%5B%7B%22intent%22%3A%22fulfillmentIntent%22%2C%22values%22%3A%5B%22Pickup%22%5D%7D%5D&classType=REGULAR&athbdg=L1102",
+          "category": "Food"
+        }
+      },
+      "failure": {
+        "run_id": "20261023T065237943455Z",
+        "mode": "sample",
+        "current_work": {
+          "kind": "product",
+          "id": "47376050",
+          "url": "https://www.walmart.com/ip/Fresh-Pie-Pumpkin-Each-Approx-1-7-2-8-lb/47376050?fulfillmentIntent=Pickup&filters=%5B%7B%22intent%22%3A%22fulfillmentIntent%22%2C%22values%22%3A%5B%22Pickup%22%5D%7D%5D&classType=REGULAR&athbdg=L1102",
+          "category": "Food"
+        },
+        "error": "Location mismatch: publication prohibited",
+        "error_type": "ValueError",
+        "records": 7,
+        "pending_pages": 1045,
+        "pending_products": 53,
+        "published": false
+      },
+      "failure_is_latest_event": true,
+      "sample_passed": null,
+      "full_passed": null,
+      "active_seconds": 340.13696520800295,
+      "active_time_complete": true,
+      "hard_stop_evidence": []
+    },
+    {
+      "path": "data/resource-review-20261023/100/runs/20261023T072907319944Z",
+      "started_utc": "2026-10-23T07:29:07.329489+00:00",
+      "status": "interrupted_or_failed",
+      "session_open": false,
+      "signature": "15708a45e9da1295822f2dd4537b0b49b62bfdc846882aae566cc4f766e0ea3e",
+      "records": 0,
+      "category_counts": {},
+      "page_states": {
+        "pending": 11
+      },
+      "candidate_states": [],
+      "last_event": {
+        "time": "2026-10-23T07:29:35.950725+00:00",
+        "event": "stopped",
+        "store": "100",
+        "error": "",
+        "error_type": "KeyboardInterrupt",
+        "current_work": {
+          "kind": "store_selection"
+        }
+      },
+      "failure": {
+        "run_id": "20261023T072907319944Z",
+        "mode": "full",
+        "active_seconds": 26.77,
+        "elapsed_seconds": 26.77,
+        "active_time_complete": true,
+        "signature": "15708a45e9da1295822f2dd4537b0b49b62bfdc846882aae566cc4f766e0ea3e",
+        "location_mismatch_seen": false,
+        "current_work": {
+          "kind": "store_selection"
+        },
+        "error": "",
+        "error_type": "KeyboardInterrupt",
+        "records": 0,
+        "pending_pages": 11,
+        "pending_products": 0,
+        "published": false
+      },
+      "failure_is_latest_event": true,
+      "sample_passed": null,
+      "full_passed": null,
+      "active_seconds": 28.623651250003604,
       "active_time_complete": true,
       "hard_stop_evidence": []
     },
@@ -301,10 +560,11 @@
         "pending_products": 320,
         "published": false
       },
+      "failure_is_latest_event": false,
       "sample_passed": true,
       "full_passed": false,
       "active_seconds": 597.81,
-      "active_time_complete": true,
+      "active_time_complete": null,
       "hard_stop_evidence": []
     }
   ],

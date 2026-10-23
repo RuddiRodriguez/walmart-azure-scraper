@@ -172,3 +172,34 @@ those prerequisites.
   captured-response replay, not an end-to-end fresh listing run. Additional synthetic checks pass.
 - Started a fresh final-code full run at 07:10:51 UTC with no other scraper browser active. Its code
   and configuration signature is 0a08a06154f867e5f1ab9964e8e10bd39949562e39545e8bb8a6c6e9737ca599.
+
+### Resource stop and completed visible checks — 07:18–07:30 UTC
+
+- Current core completed 57 accepted records, including three genuine local unavailable records,
+  in 458.78 seconds. Eleven parent pages completed; 1,036 pages remained pending. All 57 accepted
+  records replayed without source mismatches. No publication occurred.
+- The review disk guard stopped the run at 2.888 GiB free. A later read showed about 0.36 GiB,
+  with system swap near 18 GiB. Project data/evidence/Git occupied about 470 MiB. No scraper or
+  owned guest Chrome process remained. Space recovered after process closure; this was runtime
+  resource pressure, not proof that raw source files alone filled the disk.
+- Added resource samples and a 3 GiB reserve guard for the explicitly selected review process.
+- Completed 11 fresh visible-price spot checks, one seeded random record from each category of
+  repeat A. All visible prices matched saved prices and response prices, with correct identity,
+  store, seller and pickup. Saved screenshots, event logs and response comparison fields.
+- Investigated the browser helper: evaluation returns data by value and removes completed response
+  transactions. This inspection did not establish a response-handle leak.
+- Tried disabling back-navigation cache using Chrome's documented tooling flag. The fresh process
+  hit the disk guard at 0.578 GiB during store selection, before collection. Experiment inconclusive;
+  reverted the flag. No memory fix is claimed. Reference:
+  https://github.com/GoogleChrome/chrome-launcher/blob/main/docs/chrome-flags-for-tools.md
+- Current core signature again matches the 57-record live run:
+  0a08a06154f867e5f1ab9964e8e10bd39949562e39545e8bb8a6c6e9737ca599.
+- Long live testing stopped safely. The report distinguishes completed local work from full-coverage,
+  repeat-reliability, live-deal and Azure gaps. Preparing the final private archive and local walkthrough.
+
+### Final local review packaging — 23 October 2026, 07:40 UTC
+
+- Final offline requirements (49), browser failures (13), runner flow (7), storage interruption (4), review changes and historical 500-record replay passed. All top-level Python modules compile. These are offline checks, not Azure execution.
+- Recorded actual offline terminal checks and saved-evidence explanation: `evidence/walkthrough/walkthrough.cast`, transcript and 39-second MP4. Rendered with the bundled Python/Pillow runtime after the scraper environment lacked Pillow; inspected a video frame for legibility.
+- Confirmed GitHub repository remains private. Final coverage, live tests, resource/context failures, missing acceptance results and their dependencies are documented in `docs/REVIEW_STATUS.md`. Contest-holder reply remains an unsent draft.
+- Preparing a checksum-verified archive and updating the existing private draft release; no contest upload, message or public release authorized or performed.
