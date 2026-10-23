@@ -107,3 +107,16 @@ those prerequisites.
   ZIP comes from each product's retailer response. Saved store metadata documents this source.
 - Deliberately ended the intermediate v2 run after 26 valid records to use these fixes. Offline
   replay matched all 26 exported records. Started the fresh v3 full run at 06:33:26 UTC.
+
+### Additional checks and repeat plan — 06:42 UTC
+
+- Offline runner integration passed: simulated two-page navigation, duplicate removal, successful
+  full-mode publication, committed-product resume and cross-mode checkpoint rejection. This used
+  captured product data with simulated navigation; it is not a completed live full run.
+- Captured the installed local runtime and 57 runtime dependency versions. Ubuntu installer shell
+  syntax passed locally. Azure CLI, Docker and systemd validation are not available on this Mac;
+  no Linux/Azure runtime result is claimed.
+- Added a complete local checkpoint register, repeat-run comparison tool and terminal walkthrough
+  recorder/renderer. Walkthrough tools only run local checks and show saved evidence.
+- Began a fresh 3-per-category repeat sample while the full crawl continues. Repeat-sample timing
+  will therefore include shared-machine/network load and must not be called an isolated benchmark.

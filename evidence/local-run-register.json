@@ -1,0 +1,312 @@
+{
+  "generated_utc": "2026-10-23T06:41:30.796296+00:00",
+  "runs": [
+    {
+      "path": "data/100/runs/20261022T235159490174Z",
+      "started_utc": "2026-10-22T23:51:59.557832+00:00",
+      "status": "review_required",
+      "session_open": null,
+      "signature": "7a50c8d0767f46baf6727b0b899ea4fae505e5031e50cbd20986fe0919a105c9",
+      "records": 22,
+      "category_counts": {
+        "Diapering": 2,
+        "Balloons": 2,
+        "Food": 2,
+        "Household Essentials": 2,
+        "Personal Care": 2,
+        "Beauty": 2,
+        "Feeding": 2,
+        "Health & Wellness": 2,
+        "Pets": 2,
+        "Art Supplies": 2,
+        "Office Supplies": 2
+      },
+      "page_states": {
+        "done": 30,
+        "pending": 1412
+      },
+      "candidate_states": [
+        {
+          "status": "done",
+          "reason": "",
+          "count": 22
+        },
+        {
+          "status": "pending",
+          "reason": null,
+          "count": 299
+        }
+      ],
+      "last_event": {
+        "time": "2026-10-23T00:13:39.269671+00:00",
+        "event": "not_published",
+        "store": "100",
+        "mode": "sample",
+        "records": 22,
+        "errors": [
+          "Below minimum product count",
+          "Incomplete checkpoint queue"
+        ]
+      },
+      "failure": null,
+      "sample_passed": true,
+      "full_passed": false,
+      "active_seconds": 1079.55,
+      "active_time_complete": true,
+      "hard_stop_evidence": []
+    },
+    {
+      "path": "data/full-local-20261023/100/runs/20261023T061713881561Z",
+      "started_utc": "2026-10-23T06:17:13.887049+00:00",
+      "status": "interrupted_or_failed",
+      "session_open": null,
+      "signature": "9a873a4a5d35a46b1bb156997787cac0aef14f82bab7f94952a27c06e3acd0bf",
+      "records": 0,
+      "category_counts": {},
+      "page_states": {
+        "done": 8,
+        "pending": 743
+      },
+      "candidate_states": [
+        {
+          "status": "pending",
+          "reason": null,
+          "count": 26
+        }
+      ],
+      "last_event": {
+        "time": "2026-10-23T06:24:26.505501+00:00",
+        "event": "stopped",
+        "store": "100",
+        "error": "",
+        "error_type": "KeyboardInterrupt"
+      },
+      "failure": {
+        "run_id": "20261023T061713881561Z",
+        "mode": "full",
+        "error": "",
+        "error_type": "KeyboardInterrupt",
+        "records": 0,
+        "pending_pages": 743,
+        "pending_products": 26,
+        "published": false
+      },
+      "sample_passed": null,
+      "full_passed": null,
+      "active_seconds": 107.57067454099888,
+      "active_time_complete": true,
+      "hard_stop_evidence": [
+        "hard-stop.json",
+        "hard-recovery.json"
+      ]
+    },
+    {
+      "path": "data/full-v2-20261023/100/runs/20261023T062600621976Z",
+      "started_utc": "2026-10-23T06:26:00.626682+00:00",
+      "status": "interrupted_or_failed",
+      "session_open": false,
+      "signature": "411d357d07dc78c15828077967d4d658ebe6b521d982b4d8e6186e09805abb25",
+      "records": 26,
+      "category_counts": {
+        "Diapering": 26
+      },
+      "page_states": {
+        "done": 7,
+        "pending": 619
+      },
+      "candidate_states": [
+        {
+          "status": "done",
+          "reason": "",
+          "count": 26
+        }
+      ],
+      "last_event": {
+        "time": "2026-10-23T06:32:51.808023+00:00",
+        "event": "stopped",
+        "store": "100",
+        "error": "",
+        "error_type": "KeyboardInterrupt",
+        "current_work": {
+          "kind": "page",
+          "category": "Pets",
+          "url": "https://www.walmart.com/cp/pets/5440?povid=GlobalNav_rWeb_Pets_PetSupplies_AllPetSupplies"
+        }
+      },
+      "failure": {
+        "run_id": "20261023T062600621976Z",
+        "mode": "full",
+        "current_work": {
+          "kind": "page",
+          "category": "Pets",
+          "url": "https://www.walmart.com/cp/pets/5440?povid=GlobalNav_rWeb_Pets_PetSupplies_AllPetSupplies"
+        },
+        "error": "",
+        "error_type": "KeyboardInterrupt",
+        "records": 26,
+        "pending_pages": 619,
+        "pending_products": 0,
+        "published": false
+      },
+      "sample_passed": null,
+      "full_passed": null,
+      "active_seconds": 142.01405662499747,
+      "active_time_complete": false,
+      "hard_stop_evidence": [
+        "hard-stop.json",
+        "hard-stop-between-products.json",
+        "hard-recovery.json"
+      ]
+    },
+    {
+      "path": "data/full-v2-20261023/100/runs/20261023T062824411048Z",
+      "started_utc": "2026-10-23T06:28:24.417161+00:00",
+      "status": "interrupted_or_failed",
+      "session_open": false,
+      "signature": "411d357d07dc78c15828077967d4d658ebe6b521d982b4d8e6186e09805abb25",
+      "records": 0,
+      "category_counts": {},
+      "page_states": {
+        "pending": 11
+      },
+      "candidate_states": [],
+      "last_event": {
+        "time": "2026-10-23T06:28:52.469878+00:00",
+        "event": "stopped",
+        "store": "100",
+        "error": "",
+        "error_type": "KeyboardInterrupt",
+        "current_work": {}
+      },
+      "failure": {
+        "run_id": "20261023T062824411048Z",
+        "mode": "full",
+        "current_work": {},
+        "error": "",
+        "error_type": "KeyboardInterrupt",
+        "records": 0,
+        "pending_pages": 11,
+        "pending_products": 0,
+        "published": false
+      },
+      "sample_passed": null,
+      "full_passed": null,
+      "active_seconds": 28.05391437500657,
+      "active_time_complete": true,
+      "hard_stop_evidence": []
+    },
+    {
+      "path": "data/full-v3-20261023/100/runs/20261023T063326887142Z",
+      "started_utc": "2026-10-23T06:33:26.902414+00:00",
+      "status": "unfinished",
+      "session_open": true,
+      "signature": "82dc1d6839b739835eb540f1fb5712f971b287ad3a6af24590afcd56e3113acc",
+      "records": 57,
+      "category_counts": {
+        "Diapering": 22,
+        "Balloons": 27,
+        "Personal Care": 8
+      },
+      "page_states": {
+        "done": 14,
+        "pending": 1049
+      },
+      "candidate_states": [
+        {
+          "status": "done",
+          "reason": "",
+          "count": 57
+        },
+        {
+          "status": "done",
+          "reason": "no_local_pickup",
+          "count": 1
+        },
+        {
+          "status": "pending",
+          "reason": null,
+          "count": 27
+        }
+      ],
+      "last_event": {
+        "time": "2026-10-23T06:41:29.720911+00:00",
+        "event": "product",
+        "store": "100",
+        "id": "1427387568",
+        "accepted": true,
+        "reason": "",
+        "category": "Personal Care"
+      },
+      "failure": null,
+      "sample_passed": null,
+      "full_passed": null,
+      "active_seconds": 0,
+      "active_time_complete": true,
+      "hard_stop_evidence": []
+    },
+    {
+      "path": "data/review-20261023/100/runs/20261023T023324963917Z",
+      "started_utc": "2026-10-23T02:33:24.968085+00:00",
+      "status": "review_required",
+      "session_open": null,
+      "signature": "fc8fa33032f487ea047b89aa7c3159f4edb5a04ace01f7b06923f3c6d74fd58a",
+      "records": 33,
+      "category_counts": {
+        "Diapering": 3,
+        "Balloons": 3,
+        "Food": 3,
+        "Household Essentials": 3,
+        "Personal Care": 3,
+        "Beauty": 3,
+        "Feeding": 3,
+        "Health & Wellness": 3,
+        "Pets": 3,
+        "Art Supplies": 3,
+        "Office Supplies": 3
+      },
+      "page_states": {
+        "done": 20,
+        "pending": 1094
+      },
+      "candidate_states": [
+        {
+          "status": "done",
+          "reason": "",
+          "count": 33
+        },
+        {
+          "status": "pending",
+          "reason": null,
+          "count": 290
+        }
+      ],
+      "last_event": {
+        "time": "2026-10-23T02:43:28.961887+00:00",
+        "event": "not_published",
+        "store": "100",
+        "mode": "sample",
+        "records": 33,
+        "errors": [
+          "Below minimum product count",
+          "Incomplete checkpoint queue"
+        ]
+      },
+      "failure": {
+        "run_id": "20261023T023324963917Z",
+        "mode": "sample",
+        "error": "",
+        "error_type": "KeyboardInterrupt",
+        "records": 3,
+        "pending_pages": 1094,
+        "pending_products": 320,
+        "published": false
+      },
+      "sample_passed": true,
+      "full_passed": false,
+      "active_seconds": 597.81,
+      "active_time_complete": true,
+      "hard_stop_evidence": []
+    }
+  ],
+  "limits": "Unfinished/session-open state does not prove a process is running. Older checkpoints predate explicit crash-time accounting. Prior failure files remain after successful resume."
+}

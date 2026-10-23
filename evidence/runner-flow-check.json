@@ -1,0 +1,11 @@
+{
+  "mode": "offline simulated navigation; captured product fixture; no live browser or network",
+  "passed": true,
+  "checks": [
+    "Two pages traversed",
+    "Repeated product ID deduplicated",
+    "Complete valid full-mode result publishes atomically",
+    "Resume does not repeat committed product",
+    "Cross-mode resume rejected"
+  ]
+}
