@@ -203,3 +203,15 @@ those prerequisites.
 - Recorded actual offline terminal checks and saved-evidence explanation: `evidence/walkthrough/walkthrough.cast`, transcript and 39-second MP4. Rendered with the bundled Python/Pillow runtime after the scraper environment lacked Pillow; inspected a video frame for legibility.
 - Confirmed GitHub repository remains private. Final coverage, live tests, resource/context failures, missing acceptance results and their dependencies are documented in `docs/REVIEW_STATUS.md`. Contest-holder reply remains an unsent draft.
 - Preparing a checksum-verified archive and updating the existing private draft release; no contest upload, message or public release authorized or performed.
+
+### Post-cleanup reliability work — 2026-10-23T10:09:43.031198+00:00
+
+- User authorized fixes, rerunning tests, logs and Git pushes; no client submission or message. Repository is now public at the user's earlier request.
+- Added bounded readiness checks before store selection, browser-side request abort timers, uncached product fetches, explicit parsed-page cleanup and canary ZIP verification. Six offline suites passed, including the 500-record replay and permanent rejection after a location mismatch.
+- First synthetic memory experiment showed root-only BeautifulSoup decompose did not release descendant trees adequately: 6.29 MB versus 6.17 MB retained with cyclic collection disabled. Preserved the failed experiment in evidence/parse-memory-decompose-only.json. Clearing descendants first reduced retained allocations to about 24 KB; this is an offline allocation test, not proof of Chrome memory improvement. Integration pending current live runs.
+- Started sequential fresh sample runs with disk/resource logs. User requested no repeated progress checks. User also asked about repeated visible browser windows; headless comparison planned after these runs.
+
+- Initial post-cleanup live launcher failed before browser startup: resolving the virtualenv Python symlink selected the system interpreter without BeautifulSoup. Fixed launcher to retain the virtualenv path. This attempt collected no products.
+- Integrated descendant cleanup after the successful isolated allocation experiment. Added optional headless configuration; running headless then visible samples sequentially, never concurrently. No claim that original retailer context mismatches are fixed.
+
+- Headless live attempt failed at the homepage with a retailer challenge. Zero product records; no publication. Exported failure/coverage/resource evidence under evidence/post-cleanup-headless. Its zero-record audit correctly failed. Headless remains opt-in and unproven for this site; visible default retained.

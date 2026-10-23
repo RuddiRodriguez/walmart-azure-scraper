@@ -10,8 +10,8 @@ from seleniumbase import sb_cdp
 from extract import next_data, pickup
 
 
-def open_browser():
-    return sb_cdp.Chrome(locale='en', guest=True, headless=False)
+def open_browser(headless=False):
+    return sb_cdp.Chrome(locale='en', guest=True, headless=headless)
 
 
 def check_html(html):
@@ -33,7 +33,10 @@ def navigate(sb, url, settings, log):
             html = sb.get_page_source()
             for _ in range(12):
                 pending = BeautifulSoup(html, 'html.parser')
-                if pending.title and pending.title.get_text(strip=True) and pending.select_one('#__NEXT_DATA__') and pending.select_one('[data-automation-id="fulfillment-banner"]'):
+                ready = bool(pending.title and pending.title.get_text(strip=True) and pending.select_one('#__NEXT_DATA__') and pending.select_one('[data-automation-id="fulfillment-banner"]'))
+                pending.clear(decompose=True)
+                pending.decompose()
+                if ready:
                     break
                 sb.sleep(1)
                 html = sb.get_page_source()
@@ -54,8 +57,9 @@ def navigate(sb, url, settings, log):
 
 
 def select_store(sb, store, settings, log, output):
-    sb.goto('https://www.walmart.com/')
-    sb.sleep(4)
+    initial = navigate(sb, 'https://www.walmart.com/', settings, log)
+    initial.clear(decompose=True)
+    initial.decompose()
     sb.click('[data-automation-id="fulfillment-banner"]')
     sb.sleep(2)
     soup = BeautifulSoup(sb.get_page_source(), 'html.parser')
@@ -109,7 +113,9 @@ def verify_banner(soup, store):
 
 
 def fetch_product(sb, url, settings, log=None):
-    expression = 'fetch(' + json.dumps(url) + ').then(async r => ({status:r.status, html:await r.text()}))'
+    # Abort the browser request too; cancelling Python's wait alone leaves fetch running.
+    timeout_ms = max(1, int(settings['max_page_seconds'] * 1000))
+    expression = '(async () => { const controller = new AbortController(); const timer = setTimeout(() => controller.abort(), ' + str(timeout_ms) + '); try { const r = await fetch(' + json.dumps(url) + ', {signal: controller.signal, cache: "no-store"}); return {status:r.status, html:await r.text()}; } finally { clearTimeout(timer); } })()'
     for attempt in range(settings['retries']):
         try:
             result = sb.loop.run_until_complete(asyncio.wait_for(
@@ -132,7 +138,11 @@ def canary_check(sb, store, settings):
         raise ValueError('Configure at least one observed canary product per store')
     for url in store['canary_urls']:
         soup = fetch_product(sb, url, settings)
-        product = next_data(soup).get('data', {}).get('product') or {}
+        try:
+            product = next_data(soup).get('data', {}).get('product') or {}
+        finally:
+            soup.clear(decompose=True)
+            soup.decompose()
         expected_id = re.search(r'/([0-9]+)(?:\?|$)', url)
         if expected_id and str(product.get('usItemId')) != expected_id.group(1):
             raise ValueError('Canary product identity mismatch')
@@ -141,5 +151,6 @@ def canary_check(sb, store, settings):
         location = product.get('location') or {}
         if (location.get('intent') != 'PICKUP'
                 or str((location.get('pickupLocation') or {}).get('storeId')) != str(store['id'])
+                or str(location.get('postalCode') or '') != store['zip']
                 or not pickup(product, store)):
             raise ValueError('Canary missing or incorrect store context')

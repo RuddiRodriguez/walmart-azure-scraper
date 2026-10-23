@@ -1,0 +1,13 @@
+{
+  "mode": "offline synthetic HTML; cyclic collection deliberately disabled to measure retained parse trees",
+  "without_explicit_release": {
+    "retained_bytes": 6290653,
+    "peak_bytes": 6302502
+  },
+  "with_explicit_release": {
+    "retained_bytes": 24176,
+    "peak_bytes": 324739
+  },
+  "passed": true,
+  "limit": "Does not measure Chrome memory or establish the cause of previous system swap pressure."
+}

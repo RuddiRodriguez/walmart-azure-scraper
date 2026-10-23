@@ -47,7 +47,7 @@ def check():
             writer = csv.DictWriter(stream, fieldnames=['Category (Auto)', 'URL'])
             writer.writeheader(); writer.writerow({'Category (Auto)': category, 'URL': root})
         args = Namespace(config=str(config), categories=str(categories), store='100', output=str(folder / 'data'), resume=False, sample=0)
-        with patch('scrape.open_browser', return_value=sb), patch('scrape.select_store', return_value=''), patch('scrape.canary_check'), patch('scrape.verify_banner'), patch('scrape.navigate', side_effect=navigate), patch('scrape.listing_candidates', side_effect=listing), patch('scrape.discover', side_effect=lambda *a, **k: {}), patch('scrape.fetch_product', return_value=product) as fetch:
+        with patch('scrape.open_browser', return_value=sb), patch('scrape.select_store', return_value=''), patch('scrape.canary_check'), patch('scrape.verify_banner'), patch('scrape.navigate', side_effect=navigate), patch('scrape.listing_candidates', side_effect=listing), patch('scrape.discover', side_effect=lambda *a, **k: {}), patch('scrape.fetch_product', side_effect=lambda *a, **k: copy.deepcopy(product)) as fetch:
             run(args)
             pointer = json.loads((folder / 'data/100/latest.json').read_text())
             report = json.loads((folder / 'data/100' / pointer['report']).read_text())
@@ -61,7 +61,7 @@ def check():
         bad_data = copy.deepcopy(source['product']); bad_data['location']['intent'] = 'SHIPPING'
         bad_product = BeautifulSoup('<script id="__NEXT_DATA__"></script>', 'html.parser')
         bad_product.script.string = json.dumps({'props': {'pageProps': {'initialData': {'data': {'product': bad_data}}}}})
-        with patch('scrape.open_browser', return_value=sb), patch('scrape.select_store', return_value=''), patch('scrape.canary_check'), patch('scrape.verify_banner'), patch('scrape.navigate', side_effect=navigate), patch('scrape.listing_candidates', side_effect=listing), patch('scrape.discover', side_effect=lambda *a, **k: {}), patch('scrape.fetch_product', side_effect=[bad_product, product]):
+        with patch('scrape.open_browser', return_value=sb), patch('scrape.select_store', return_value=''), patch('scrape.canary_check'), patch('scrape.verify_banner'), patch('scrape.navigate', side_effect=navigate), patch('scrape.listing_candidates', side_effect=listing), patch('scrape.discover', side_effect=lambda *a, **k: {}), patch('scrape.fetch_product', side_effect=[bad_product, copy.deepcopy(product)]):
             try:
                 run(args)
             except ValueError as error:

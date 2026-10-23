@@ -1,7 +1,7 @@
 {
   "mode": "offline simulated HTTP/browser responses and synthetic canary mutations",
   "passed": true,
-  "count": 13,
+  "count": 14,
   "checks": [
     "HTTP 401 stops after expected bounded attempts",
     "HTTP 403 stops after expected bounded attempts",
@@ -15,6 +15,7 @@
     "Canary identity change stops collection",
     "Canary seller change stops collection",
     "Canary location change stops collection",
+    "Canary ZIP change stops collection",
     "Canary pickup availability change stops collection"
   ]
 }

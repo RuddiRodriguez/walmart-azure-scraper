@@ -87,6 +87,9 @@ def run(args):
                 stamp = datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%S%fZ')
                 atomic_json(output / 'sources' / 'rejected' / (key + '-' + stamp + '.json'), source_data)
                 raise
+            finally:
+                soup.clear(decompose=True)
+                soup.decompose()
             source_data['reason'] = reason
             atomic_json(output / 'sources' / (key + '.json'), source_data)
             save_product(db, candidate, row, reason)
@@ -98,7 +101,7 @@ def run(args):
 
     try:
         current_work = {'kind': 'store_selection'}
-        sb = open_browser()
+        sb = open_browser(headless=settings.get('headless', False))
         logo = select_store(sb, store, settings, log, output)
         canary_check(sb, store, settings)
         collect_products()
@@ -120,6 +123,8 @@ def run(args):
                 log('page_started', **current_work)
                 soup = navigate(sb, url, settings, log)
                 verify_banner(soup, store)
+                soup.clear(decompose=True)
+                soup.decompose()
                 # Render lazy-loaded cards before matching structured data to visible offers.
                 stable = 0
                 prior_cards = -1
@@ -128,6 +133,8 @@ def run(args):
                     sb.sleep(0.5)
                     rendered = BeautifulSoup(sb.get_page_source(), 'html.parser')
                     card_count = len(rendered.select('[data-item-id]'))
+                    rendered.clear(decompose=True)
+                    rendered.decompose()
                     stable = stable + 1 if card_count == prior_cards else 0
                     prior_cards = card_count
                     if stable >= 4:
@@ -169,6 +176,8 @@ def run(args):
                     raw = 0
                     if not links:
                         raise ValueError('Category returned neither products nor child categories: ' + url)
+                soup.clear(decompose=True)
+                soup.decompose()
                 save_page(db, category, url, links, candidates, rejected, raw)
                 page_count += 1
                 progressed = True

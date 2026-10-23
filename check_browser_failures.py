@@ -62,6 +62,7 @@ def check():
     for name, mutate in [('identity',lambda p:p.update(usItemId='999999')),
                          ('seller',lambda p:p.update(sellerName='Other')),
                          ('location',lambda p:p['location'].update(intent='SHIPPING')),
+                         ('ZIP',lambda p:p['location'].update(postalCode='99999')),
                          ('pickup availability',lambda p:p.update(fulfillmentSummary=[]))]:
         product = copy.deepcopy(source); mutate(product)
         soup = BeautifulSoup('<script id="__NEXT_DATA__"></script>','html.parser')

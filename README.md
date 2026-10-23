@@ -124,3 +124,15 @@ Neither is a full catalog acceptance run.
 `record_walkthrough.py` records actual offline command output to an asciicast and text transcript.
 `render_walkthrough.py` optionally renders that recording with Pillow, ffmpeg and a supplied font.
 The video is a local review walkthrough, not footage of an Azure deployment or a full live crawl.
+
+### Browser visibility and memory checks
+
+The collector reuses one Chrome window within each run. Separate runs start fresh sessions.
+Set `"headless": true` in the store configuration to request Chrome without a visible window;
+omit it or use `false` for a visible window. Verify retailer access in the selected mode before
+unattended use. Headless mode alone is not a memory guarantee.
+
+`python check_parse_memory.py` compares synthetic HTML parsing allocations with and without
+explicit descendant cleanup. It does not measure Chrome or prove long-run resource stability.
+Product fetches now have browser-side cancellation timers as well as Python timeouts,
+and store canaries check ZIP in addition to store ID and pickup context.
