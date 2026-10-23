@@ -39,9 +39,10 @@ def run(args):
     output.mkdir(parents=True, exist_ok=True)
     (output / 'sources').mkdir(exist_ok=True)
     db = connect(output / 'checkpoint.sqlite')
-    signature = hashlib.sha256((Path(args.config).read_text() + Path(args.categories).read_text() + str(args.sample)).encode()).hexdigest()
+    code = '' if args.sample else ''.join((Path(__file__).parent / name).read_text() for name in ['scrape.py', 'browser.py', 'extract.py', 'storage.py', 'validate.py'])
+    signature = hashlib.sha256((Path(args.config).read_text() + Path(args.categories).read_text() + str(args.sample) + code).encode()).hexdigest()
     if args.resume and metadata(db, 'signature') != signature:
-        raise ValueError('Configuration changed; start a fresh run')
+        raise ValueError('Configuration or full-run code changed; start a fresh run')
     if args.resume and time.time() - metadata(db, 'started') > settings['max_checkpoint_age_hours'] * 3600:
         raise ValueError('Checkpoint too old; start a fresh run to avoid stale prices')
     if not args.resume:
@@ -102,9 +103,10 @@ def run(args):
                 for candidate in candidates:
                     candidate['source'] = source
                 exclusions = ['recipes', r'shop[- ]all[- ]foods?$', 'farm[- ]animals']
-                links = discover(soup, categories[category]['URL'], exclusions)
+                links = discover(soup, categories[category]['URL'], exclusions, current_url=url)
                 next_link = soup.select_one('a[aria-label="Next Page"]')
-                if next_link and next_link.get('href'):
+                has_next = bool(next_link and next_link.get('href'))
+                if has_next:
                     next_url = urljoin(url, next_link['href'])
                     if next_url == url or db.execute("SELECT 1 FROM pages WHERE category=? AND url=? AND status='done'", (category, next_url)).fetchone():
                         raise ValueError('Pagination loop; coverage incomplete')
@@ -115,7 +117,7 @@ def run(args):
                     current_page = int((pagination.get('pageProperties') or {}).get('page') or 1)
                     if raw == 0:
                         raise ValueError('Unexpected zero-product listing: ' + url)
-                    if current_page < int(pagination.get('maxPage') or 1) and not next_link:
+                    if current_page < int(pagination.get('maxPage') or 1) and not has_next:
                         raise ValueError('Missing next-page control before reported final page')
                 else:
                     raw = 0
@@ -159,6 +161,7 @@ def run(args):
                       active_seconds=round(metadata(db, 'active_seconds') + time.monotonic() - started, 2),
                       elapsed_seconds=round(time.time() - metadata(db, 'started'), 2),
                       pages_processed=page_count,
+                      duplicate_ids=db.execute('SELECT count(*)-count(DISTINCT id) FROM records').fetchone()[0],
                       exclusions=dict(db.execute('SELECT reason,sum(count) FROM exclusions GROUP BY reason')),
                       detail_exclusions=dict(db.execute("SELECT reason,count(*) FROM candidates WHERE reason!='' GROUP BY reason")))
         atomic_json(output / 'products.json', rows)

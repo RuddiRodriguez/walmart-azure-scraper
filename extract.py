@@ -3,7 +3,7 @@ import json
 import re
 from datetime import datetime, timezone
 from decimal import Decimal
-from urllib.parse import urljoin, urlsplit
+from urllib.parse import urljoin, urlsplit, parse_qs
 
 from bs4 import BeautifulSoup
 
@@ -69,11 +69,15 @@ def listing_candidates(soup, category, store):
             link = card.select_one('a[href*="/ip/"]')
             image = card.select_one('img[data-testid="productTileImage"]')
             price = card.select_one('[data-testid="unified-global-product-price-a11y-text"]')
-            if not key or not link or not image or not price:
+            if not key.isdigit() or not link or not image or not price:
                 rejected.append({'item_id': key, 'reason': 'missing_listing_fields'})
                 continue
+            product_url = urljoin('https://www.walmart.com', link['href'])
+            if urlsplit(product_url).netloc != 'www.walmart.com' or not urlsplit(product_url).path.startswith('/ip/'):
+                rejected.append({'item_id': key, 'reason': 'unexpected_product_url'})
+                continue
             accepted.append({'item_id': key, 'category': category, 'item': item,
-                             'url': urljoin('https://www.walmart.com', link['href']),
+                             'url': product_url,
                              'image_url': image.get('src', ''), 'text': text,
                              'price_text': price.get_text(' ', strip=True)})
     return accepted, rejected, result
@@ -172,8 +176,9 @@ def category_id(url):
     return path if re.fullmatch(r'\d+(?:_\d+)*', path) else ''
 
 
-def discover(soup, root_url, exclusions):
+def discover(soup, root_url, exclusions, current_url=None):
     root_id = category_id(root_url)
+    current_id = category_id(current_url or root_url)
     main = soup.select_one('main') or soup
     found = {}
     for a in main.select('a[href]'):
@@ -182,10 +187,13 @@ def discover(soup, root_url, exclusions):
         if parts.netloc != 'www.walmart.com' or not parts.path.startswith(('/cp/', '/browse/')):
             continue
         child_id = category_id(url)
-        if not child_id or not (child_id == root_id or child_id.startswith(root_id + '_')):
+        parent_reference = (parse_qs(parts.query).get('povid') or [''])[0]
+        parent_link = any(parent_reference.startswith(parent + '_') for parent in [root_id, current_id])
+        direct_landing_link = parts.path.startswith('/cp/') and urlsplit(current_url or root_url).path.startswith('/cp/')
+        if not child_id or not (re.search(r'(?:^|_)' + re.escape(root_id) + r'(?:_|$)', child_id) or parent_link or direct_landing_link):
             continue
         name = a.get_text(' ', strip=True)
-        if any(re.search(pattern, name + ' ' + parts.path, re.I) for pattern in exclusions):
+        if any((re.search(pattern, name, re.I) or re.search(pattern, parts.path, re.I)) for pattern in exclusions):
             continue
         # Tracking query strings do not define a new category.
         found[parts.scheme + '://' + parts.netloc + parts.path] = name

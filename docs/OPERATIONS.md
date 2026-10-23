@@ -34,7 +34,7 @@ manual overlap on this same machine. Do not run two machines against the same ou
 A killed process releases the OS lock. SQLite commits a page and its newly discovered work together;
 a product is marked complete only with its record or explicit rejection. Resume skips committed
 work, not merely the last URL attempted. An interrupted response is retried. Review logs first.
-Use `--resume` with identical mode/configuration. Start fresh when checkpoint age exceeds 48 hours.
+Use `--resume` with identical mode/configuration. Full runs also fingerprint source files and require a fresh run after code changes. Start fresh when checkpoint age exceeds 48 hours.
 
 ## Monitoring
 

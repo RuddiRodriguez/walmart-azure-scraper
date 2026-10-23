@@ -33,12 +33,14 @@ def navigate(sb, url, settings, log):
             html = sb.get_page_source()
             for _ in range(12):
                 pending = BeautifulSoup(html, 'html.parser')
-                if pending.title and pending.title.get_text(strip=True) and pending.select_one('#__NEXT_DATA__'):
+                if pending.title and pending.title.get_text(strip=True) and pending.select_one('#__NEXT_DATA__') and pending.select_one('[data-automation-id="fulfillment-banner"]'):
                     break
                 sb.sleep(1)
                 html = sb.get_page_source()
             soup = check_html(html)
             next_data(soup)
+            if not soup.select_one('[data-automation-id="fulfillment-banner"]'):
+                raise ValueError('Store banner not loaded; retry incomplete page')
             elapsed = time.monotonic() - started
             if elapsed > settings['max_page_seconds']:
                 raise TimeoutError(f'Abnormal page latency: {elapsed:.1f}s')
@@ -92,6 +94,8 @@ def re_address(text):
 def verify_banner(soup, store):
     banner = soup.select_one('[data-automation-id="fulfillment-banner"]')
     text = banner.get_text(' ', strip=True) if banner else ''
+    if not banner:
+        raise ValueError('Store banner missing; location cannot be verified')
     if 'Pickup' not in text or store['name'] not in text:
         raise ValueError('Location mismatch in store banner')
 

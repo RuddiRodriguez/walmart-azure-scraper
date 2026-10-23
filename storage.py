@@ -50,8 +50,10 @@ def save_page(db, category, url, links, candidates, rejected, raw_count):
     with db:
         add_pages(db, category, links)
         for candidate in candidates:
-            db.execute('INSERT OR IGNORE INTO candidates(id,data) VALUES (?,?)',
-                       (candidate['item_id'], json.dumps(candidate)))
+            inserted = db.execute('INSERT OR IGNORE INTO candidates(id,data) VALUES (?,?)',
+                                  (candidate['item_id'], json.dumps(candidate)))
+            if inserted.rowcount == 0:
+                db.execute("INSERT INTO exclusions VALUES ('duplicate',1)")
         for reason in rejected:
             db.execute('INSERT INTO exclusions VALUES (?,1)', (reason['reason'],))
         db.execute("UPDATE pages SET status='done',raw_count=?,local_count=? WHERE category=? AND url=?",

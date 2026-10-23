@@ -56,7 +56,7 @@ products file. Failed runs stay in their own run directory. Never read a run's p
 
 ## Important limits
 
-- Category discovery follows retailer category IDs within each configured category. Changes to
+- Category discovery follows retailer category IDs, parent navigation references and child landing-page links within the main page content. Changes to
   site structure or missing child links need inspection; discovery cannot prove links Walmart hides.
 - Pagination loops, missing next-page controls and zero-product listing responses stop the run.
 - Unknown promotion shapes are preserved in evidence and prevent full publication.
@@ -68,3 +68,8 @@ products file. Failed runs stay in their own run directory. Never read a run's p
 - Linux VM installation is supplied; Azure IP reputation and live retailer access are not guaranteed.
 
 See `docs/OPERATIONS.md`, `docs/ACCEPTANCE.md` and `evidence/FINAL_REPORT.md`.
+
+## Entry image tooling
+
+`make_entry_image.py` is optional presentation tooling, not required by the scraper. It uses Pillow
+12.3.0 and macOS Arial fonts. On Linux, change the two font paths to installed fonts.
