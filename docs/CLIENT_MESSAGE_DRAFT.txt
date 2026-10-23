@@ -2,7 +2,7 @@ Latest package: https://github.com/RuddiRodriguez/walmart-azure-scraper
 
 I've updated the code, instructions, logs and source evidence. The historical 500-product demonstration passes validation with no duplicate IDs or URLs. Local evidence also includes three genuine unavailable products and successful page/product interruption and restart checks.
 
-Recent fixes stop blocked requests immediately, remove redundant category URLs, prevent wrong-store checkpoints from reopening Chrome, and strengthen price and ZIP checks. Four short offline suites passed; no new full live run was performed.
+Recent fixes stop blocked requests immediately, remove redundant category URLs, prevent wrong-store checkpoints from reopening Chrome, and strengthen price and ZIP checks. Four short offline suites passed. A separate 67-second targeted check returned five correct store responses across two products, before and after a category visit. It didn't reproduce the mismatch; no new full live run was performed.
 
 Still open, with possible next steps:
 

@@ -1,0 +1,24 @@
+{
+  "mode": "one bounded live diagnostic; no crawl, production records or submission",
+  "time_utc": "2026-10-23T14:18:01.155982+00:00",
+  "seconds": 66.51,
+  "completed_plan": true,
+  "product_responses": 5,
+  "distinct_product_ids": 2,
+  "matching_store_responses": 5,
+  "matching_banner_snapshots": 14,
+  "snapshots": 14,
+  "location_cookie_names_observed": [
+    "assortmentStoreId"
+  ],
+  "location_cookie_change_events": 0,
+  "diagnostic_source_sha256": "7d233eb26f711f92763ad733738cf1289dc80fcbb1b3d83d8c60890136d87694",
+  "base_commit": "bc1c696fd2f430f7fe5fe7f6dc05d2dd500232ef",
+  "finding": "Mismatch not reproduced before/after Personal Care navigation, two scrolls and one immediate target repeat.",
+  "production_fix": "None justified by this test; existing strict store checks retained.",
+  "limits": [
+    "One fresh guest browser session, one category, two distinct products; not full traversal or repeated-run reliability.",
+    "Only three named location cookies watched; two were absent. Stable assortmentStoreId does not establish all client/server state was stable.",
+    "No causal store-change point observed. Raw HTML and selector screenshots remain private under data/."
+  ]
+}

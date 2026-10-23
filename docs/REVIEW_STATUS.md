@@ -27,6 +27,23 @@ Earlier drafts understated existing local evidence: three genuine unavailable it
 page-stage and product-stage live hard-kill recovery were already demonstrated. Full-scale and
 Azure verification remain outstanding. `docs/CLIENT_MESSAGE_DRAFT.txt` reflects that distinction.
 
+## Short targeted live follow-up
+
+One fresh guest session completed in 66.51 seconds. Two distinct products (control pumpkin 47428850
+and previously failed toothpaste 391706535) were requested before and after visiting Personal Care;
+the category was scrolled twice and the target requested once more. All five product responses
+reported Store 100, ZIP 72712 and PICKUP; all 14 visible-banner snapshots matched. The only observed
+tracked location cookie was assortmentStoreId and its value did not change. locDataV3 and
+locGuestData were absent; this does not establish that all client/server context was stable.
+
+Mismatch was not reproduced, so no change point or permanent fix was established. Production
+collection/store safeguards are unchanged. This test omits multi-category traversal, other
+products, long sessions and repeated fresh sessions. Five responses represent two product IDs,
+not five new catalog records. Evidence and sanitized source contexts:
+`evidence/store-context-trace-short/`. Raw HTML and selector screenshots stay private under data/.
+The bounded diagnostic is reusable as `trace_store_context.py`; it stops at 180 seconds or failure.
+No full crawl, Azure execution or client communication occurred.
+
 ## Final demonstration decision
 
 User requested ending further experiments and finalizing the reviewable portion. No client submission or message performed.

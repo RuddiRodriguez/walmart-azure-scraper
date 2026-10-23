@@ -1,0 +1,72 @@
+[
+  {
+    "stage": "before_category_0",
+    "source_sha256": "73dc1ffa405040fd402e32eec6723f9f8e98645558b0106505d53ab0a953a51d",
+    "product": {
+      "usItemId": "47428850",
+      "location": {
+        "intent": "PICKUP",
+        "postalCode": "72712",
+        "pickupLocation": {
+          "storeId": "100"
+        }
+      }
+    }
+  },
+  {
+    "stage": "before_category_1",
+    "source_sha256": "cb5212dd4f4a0e2ed348484486c5246080e6d492d5a5780587e8e65f0cc22357",
+    "product": {
+      "usItemId": "391706535",
+      "location": {
+        "intent": "PICKUP",
+        "postalCode": "72712",
+        "pickupLocation": {
+          "storeId": "100"
+        }
+      }
+    }
+  },
+  {
+    "stage": "after_category_0",
+    "source_sha256": "c2dd5e2478ad917a85026fe60e44d010985a0b695221f45e3b2918f691d8c00b",
+    "product": {
+      "usItemId": "47428850",
+      "location": {
+        "intent": "PICKUP",
+        "postalCode": "72712",
+        "pickupLocation": {
+          "storeId": "100"
+        }
+      }
+    }
+  },
+  {
+    "stage": "after_category_1",
+    "source_sha256": "b6777e6e73b8183a6b7ef206c16a6a59633a8151b4b27e799bb0fef73f2c007c",
+    "product": {
+      "usItemId": "391706535",
+      "location": {
+        "intent": "PICKUP",
+        "postalCode": "72712",
+        "pickupLocation": {
+          "storeId": "100"
+        }
+      }
+    }
+  },
+  {
+    "stage": "after_category_target_repeat",
+    "source_sha256": "a3f8fd6e24a16caedb165dd59adf31cdaee489696e3415b714d626aec0842eac",
+    "product": {
+      "usItemId": "391706535",
+      "location": {
+        "intent": "PICKUP",
+        "postalCode": "72712",
+        "pickupLocation": {
+          "storeId": "100"
+        }
+      }
+    }
+  }
+]

@@ -144,3 +144,20 @@ unattended use. Headless mode alone is not a memory guarantee.
 explicit descendant cleanup. It does not measure Chrome or prove long-run resource stability.
 Product fetches now have browser-side cancellation timers as well as Python timeouts,
 and store canaries check ZIP in addition to store ID and pickup context.
+
+### Short store-context diagnostic (live)
+
+`trace_store_context.py` opens one fresh guest browser, checks a control and the previously failed
+product, visits only that product's parent category, scrolls twice and repeats the product checks.
+It makes at most five explicit product fetches and stops after 180 seconds or the first failure.
+It does not crawl children, publish products, reset cookies or relax store checks.
+Use a new private output folder for each run:
+
+```bash
+python trace_store_context.py --failure evidence/profile-b/failure.json --output data/context-trace-new
+```
+
+The JSON log compares visible store banners, product-response store/ZIP/intent and changes in three
+named location cookies. Cookie values remain in memory only. Raw HTML stays in the private output
+folder. A matching response verifies location context only, not seller, availability or price.
+See `evidence/store-context-trace-short/` for the bounded result and its limitations.

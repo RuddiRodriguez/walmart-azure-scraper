@@ -1,0 +1,8 @@
+{
+  "mode": "offline reparse of new live captures plus synthetic context mutations",
+  "passed": true,
+  "checks": [
+    "All five context results agree with saved HTML and hashes",
+    "Captured matching product accepted; empty, shipping, wrong-ZIP and wrong-store synthetic contexts rejected"
+  ]
+}
