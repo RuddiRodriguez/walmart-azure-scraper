@@ -1,15 +1,11 @@
-# Private local review package — 23 October 2026
+Review package: follow-up tests and retained fixes
 
-This is a reviewable partial delivery, not production or Azure acceptance.
+Public source repository. Draft release remains unpublished. Nothing submitted to client.
 
-- Historical genuine 500-product JSON and corresponding sources, all 11 parents.
-- Broader intermediate 259-record partial collection and latest 57-record run.
-- Three genuine unavailable records retained with store-specific evidence and blank local prices.
-- Eleven fresh visible-price checks passed.
-- Live hard-kill recovery, offline regression/failure checks, complete run logs and pending queues.
-- One passing and one failing repeat sample; context and resource failures disclosed.
-- Source, configuration, running/recovery instructions, local walkthrough and checksums.
+Includes historical 500-product JSON, new sample runs and their failures, source evidence, resource logs, screenshots and operating instructions.
 
-Read `docs/REVIEW_STATUS.md` first. Full coverage, stable unattended runs, qualifying live deal
-examples and Azure execution remain outstanding. Store assignment is unconfirmed.
-No contest upload or client message was made. This release remains a draft in a private repository.
+Retained fixes: explicit parser descendant cleanup, browser-side fetch timeout, store-control readiness and canary ZIP verification. Seven offline suites passed.
+
+Request-path samples: 33 passed, then repeat failed after 21 products. Rendered-page trial: 33 passed, then failed after 23; trial reverted. Headless blocked by challenge; minimized-window test returned normal state.
+
+Full coverage, consistent repeats, genuine volume/digital offers, assigned-store confirmation and Azure execution remain outstanding. See docs/REVIEW_STATUS.md for evidence and limitations.

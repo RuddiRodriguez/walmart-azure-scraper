@@ -215,3 +215,14 @@ those prerequisites.
 - Integrated descendant cleanup after the successful isolated allocation experiment. Added optional headless configuration; running headless then visible samples sequentially, never concurrently. No claim that original retailer context mismatches are fixed.
 
 - Headless live attempt failed at the homepage with a retailer challenge. Zero product records; no publication. Exported failure/coverage/resource evidence under evidence/post-cleanup-headless. Its zero-record audit correctly failed. Headless remains opt-in and unproven for this site; visible default retained.
+
+### Rendered product-page trial
+
+- Visible repeat A passed 33 records in 543.20 seconds; B failed after 21 records in 383.89 seconds. Rejected response identifies Sacramento Store 3081, ZIP 95829 and SHIPPING, despite a local Store 100 listing. Captured evidence now proves the specific wrong-context response.
+- Fresh same-product fetch/navigation probe both returned Store 100: failure is intermittent, not a permanently wrong URL. No cache or session root cause established.
+- Eleven minimized-attempt price/store checks passed, but all observed window states were normal: minimizing did not keep Chrome hidden. Headless remains blocked.
+- Trial change: product details and canaries use fully loaded browser pages, matching the route used in successful visible-price checks. Every mismatch still invalidates the run; no fallback accepts or conceals rejected data. This is a hypothesis to test, not a claimed reliability fix.
+
+### Final observed outcome
+
+Rendered-page trial A passed 33 records in 722.26 seconds. B failed after 23 records in 643.32 seconds with a product-context mismatch (487109111). Both accepted subsets replayed successfully. Rendered navigation therefore did not resolve the intermittent context problem and was slower; reverted that trial to the committed request path. Retained verified descendant cleanup, bounded fetch cancellation, readiness checks and ZIP canary checks. Headless failed a challenge; minimizing did not remain minimized. These are recorded failed approaches, not completed fixes. No client submission or message.

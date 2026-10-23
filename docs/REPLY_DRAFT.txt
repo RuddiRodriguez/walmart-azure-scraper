@@ -22,4 +22,5 @@ have a reliable full-acceptance completion date until those dependencies and the
 long-run failures are resolved.
 
 Offline checks, fresh live tests and unfinished work are labeled separately.
-The files are in a private repository and have not been shared with you yet.
+The public repository is https://github.com/RuddiRodriguez/walmart-azure-scraper
+Latest follow-up tests still show intermittent store-context failures. A slower rendered-page trial was reverted after its repeat also failed. Memory cleanup and request-timeout fixes are retained.

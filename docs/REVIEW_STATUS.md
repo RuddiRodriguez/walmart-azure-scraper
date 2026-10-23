@@ -4,6 +4,18 @@ The package contains usable source and genuine collection evidence. It is not ye
 for complete unattended collection or Azure production. All live scraper processes have stopped.
 Nothing has been submitted or messaged to the contest holder during this review.
 
+## Latest follow-up results
+
+Post-cleanup request-path sample A passed 33 records (543.20 seconds); B failed after 21 records (383.89 seconds) with Sacramento Store 3081 SHIPPING data. Both accepted datasets passed source replay. A fresh exact-product probe returned correct Store 100 context through both fetch and navigation: the cause remains intermittent and unproven.
+
+A fully loaded page trial passed 33 records once (722.26 seconds), then failed after 23 (643.32 seconds) on another location mismatch. That trial was reverted. No passing repeated-run claim.
+
+Parser cleanup reduced retained allocations in an isolated synthetic check from about 6.3 MB to 24 KB. Live request runs peaked at 171–173 MB Python RSS and 1,959–2,090 MB browser-child RSS. This does not establish long-run memory stability. Browser requests now cancel on timeout; store selection waits for controls; canaries verify ZIP.
+
+Headless Chrome hit a retailer challenge. Eleven minimize-attempt price checks passed, but Chrome window state returned to normal; hidden-window operation on this Mac remains unresolved. Linux Xvfb is supplied but untested on Azure.
+
+Repository is public by user request. The historical package and walkthrough predate these follow-up tests; latest evidence folders and this report take precedence.
+
 ## What we have
 
 | Requirement | Evidence and boundary |
@@ -60,10 +72,10 @@ Azure acceptance. The recorded walkthrough demonstrates local checks and saved e
 ## Reproduce and continue
 
 See `README.md` and `docs/OPERATIONS.md`. Install Chrome and the pinned Python requirements.
-The latest tested core matches run signature
+The earlier tested core matched run signature
 `0a08a06154f867e5f1ab9964e8e10bd39949562e39545e8bb8a6c6e9737ca599`.
 
-After ensuring adequate resources, resume the current-code checkpoint within its 48-hour age limit:
+The following earlier checkpoint requires its original code; current code must start a fresh run:
 
 ```bash
 python scrape.py --store 100 --output data/final-local-20261023 --resume

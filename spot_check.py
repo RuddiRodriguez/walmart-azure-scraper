@@ -13,7 +13,7 @@ from extract import next_data, money, pickup
 from storage import atomic_json
 
 
-def check(products, output):
+def check(products, output, minimized=False):
     settings = json.loads(Path('config/stores.json').read_text())
     store = settings['stores'][0]
     rows = json.loads(products.read_text())
@@ -29,6 +29,9 @@ def check(products, output):
     checks = []
     try:
         sb = open_browser()
+        if minimized:
+            sb.minimize()
+            log('window_state', state=sb.get_window()[1].window_state.value)
         select_store(sb, store, settings, log, output)
         canary_check(sb, store, settings)
         for row in selected:
@@ -37,6 +40,8 @@ def check(products, output):
             key = row['url'].split('?')[0].rstrip('/').split('/')[-1]
             soup = navigate(sb, row['url'], settings, log)
             verify_banner(soup, store)
+            if minimized:
+                log('window_state', state=sb.get_window()[1].window_state.value)
             product = next_data(soup).get('data', {}).get('product') or {}
             node = soup.select_one('[data-seo-id="hero-price"]')
             visible = node.get_text(' ', strip=True) if node else ''
@@ -61,6 +66,8 @@ def check(products, output):
             sb.save_screenshot(str(output / (key + '.png')))
             atomic_json(output / 'checks.json', checks)
             log('spot_check', id=key, visible_price=observed, saved_price_matches=checks[-1]['saved_price_still_current'], context_ok=context_ok)
+            soup.clear(decompose=True)
+            soup.decompose()
             if not context_ok:
                 raise ValueError('Fresh spot-check location, seller or availability changed; review required')
         canary_check(sb, store, settings)
@@ -81,5 +88,6 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('products', type=Path)
     parser.add_argument('output', type=Path)
+    parser.add_argument('--minimized', action='store_true')
     args = parser.parse_args()
-    check(args.products, args.output)
+    check(args.products, args.output, args.minimized)

@@ -13,7 +13,7 @@ availability variants and an offline checkpoint check.
 The included **500-product evidence dataset** came from the preceding live feasibility scripts,
 not from a completed full-catalog run of this new runner. All 11 requested parent categories
 are represented; Store 100 pickup, seller and prices were checked on product pages.
-Latest local review: a broader attempt produced 259 valid partial records. The current core
+Latest local review: a broader attempt produced 259 valid partial records. An earlier core
 collected 57 records, including three genuinely unavailable local items, before the disk reserve
 stopped it. Eleven fresh visible-price checks passed. One 33-record repeat passed and another
 failed on a location mismatch. Live hard-kill recovery passed at page and product stages.

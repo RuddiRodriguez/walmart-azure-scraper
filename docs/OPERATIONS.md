@@ -70,3 +70,13 @@ Twice-weekly jobs alone do not stop VM billing; VM deallocation must be separate
 
 Browser integration reference:
 https://seleniumbase.io/examples/cdp_mode/ReadMe/
+
+## Browser visibility
+
+The collector keeps one browser session per run. Product and category pages reuse that session.
+A headless trial hit a retailer challenge; it is not the recommended mode for the current site.
+A minimize trial passed record checks but Chrome returned to normal window state. It is not a
+verified way to keep the browser hidden on this Mac.
+The supplied Linux service uses Xvfb: a virtual display for ordinary Chrome, rather than browser
+headless mode. This design avoids opening a desktop window on the VM, but still needs a real
+Azure acceptance run. No claim of Azure access or successful deployment is made.
