@@ -246,3 +246,9 @@ Reselection trial final result: A/B each passed 33 with source audit; C failed a
 Chrome-profile transport comparison completed: browser fetch 21/21; Playwright and curl Chrome-profile each 0/3 (challenge responses). This does not justify replacing the production transport. Reference: https://curl-cffi.readthedocs.io/en/stable/quick_start.html . Pickup-only request-query trial started separately with store-reselection disabled, preserving original export URLs. Browser and runner offline checks passed, including original/requested URL tracing.
 
 Pickup-only URL trial A passed: 33 records, all 11 parent categories, 562.82 active seconds; source audit passed. No full publication. Repeats still pending.
+
+Pickup-only URL trial: A/B passed 33 each; C failed after 15 on Beauty product 1832142965 (Sacramento 3081 SHIPPING). Not a reliable fix. Network probe saved raw guest traffic only under ignored data/network-probe; BTF product endpoint contained recommendations, not a verified primary local-product source. Next isolated trial captures only retailer-issued location cookies after selector verification and restores them in memory before product requests; no fabricated cookie values or bypass of store validation.
+
+Cookie trial initial setup failed before browser startup due to a CDP import path; corrected to the installed mycdp dependency used by SeleniumBase. Kept the setup failure log locally; not counted as live retailer evidence.
+
+Cookie restoration offline ordering and runner checks passed. Declared mycdp 1.4.0 explicitly because the trial directly imports the CDP package already installed through SeleniumBase. Only location-cookie names are logged; values stay on the live browser object. No manual cookie values, paid services or client submissions.

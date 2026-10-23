@@ -45,6 +45,23 @@ def check():
         checks.append('Pickup request query preserves product path and logs original URL')
     finally:
         loop.close()
+    order = []
+    async def restore(cookies):
+        assert cookies == ['selected-store-cookie']
+        order.append('restore')
+    async def request(*args, **kwargs):
+        order.append('request')
+        return {'status': 200, 'html': '<title>Product fixture</title>'}
+    loop = asyncio.new_event_loop()
+    try:
+        sb = SimpleNamespace(loop=loop, page=SimpleNamespace(evaluate=request),
+            driver=SimpleNamespace(cookies=SimpleNamespace(set_all=restore)), store_cookies=['selected-store-cookie'])
+        soup = fetch_product(sb, 'https://www.walmart.com/ip/123', {**settings, 'pin_store_cookies': True})
+        soup.clear(decompose=True); soup.decompose()
+        assert order == ['restore', 'request']
+        checks.append('Retailer-issued store cookie snapshot restored before product request')
+    finally:
+        loop.close()
     async def slow(*args, **kwargs):
         await asyncio.sleep(1)
     loop = asyncio.new_event_loop()

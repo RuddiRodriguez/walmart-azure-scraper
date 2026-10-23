@@ -1,0 +1,49 @@
+{
+  "mode": "offline replay of this run source evidence; not a new live collection",
+  "records": 15,
+  "passed": true,
+  "validation": {
+    "passed": true,
+    "records": 15,
+    "errors": [],
+    "category_counts": {
+      "Diapering": 3,
+      "Household Essentials": 3,
+      "Personal Care": 3,
+      "Food": 3,
+      "Balloons": 3
+    },
+    "duplicate_urls": 0,
+    "duplicate_product_ids": 0,
+    "field_nonempty_counts": {
+      "zipcode": 15,
+      "store_name": 15,
+      "store_location": 15,
+      "store_logo": 15,
+      "store_brand": 15,
+      "category": 15,
+      "sub_category": 15,
+      "product_title": 15,
+      "weight": 6,
+      "regular_price": 15,
+      "sale_price": 1,
+      "volume_deals_description": 0,
+      "volume_deals_price": 0,
+      "digital_deals_description": 0,
+      "digital_deals_price": 0,
+      "image_url": 15,
+      "url": 15,
+      "upc": 15,
+      "gupc": 0,
+      "ppm": 12,
+      "unit_price": 0,
+      "crawl_date": 15
+    },
+    "pending_pages": 0,
+    "pending_products": 0,
+    "products_needing_review": 0,
+    "retained_unavailable_records": 0
+  },
+  "source_mismatches": [],
+  "scope": "Record correctness only; does not imply full category coverage or production acceptance."
+}

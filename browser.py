@@ -7,6 +7,7 @@ from urllib.parse import urlsplit, urlunsplit
 
 from bs4 import BeautifulSoup
 from seleniumbase import sb_cdp
+import mycdp as cdp
 
 from extract import next_data, pickup
 
@@ -96,6 +97,13 @@ def select_store(sb, store, settings, log, output):
     sb.save_screenshot(str(output / 'selected-store.png'))
     logo = soup.select_one('a[aria-label="Walmart Homepage"] img')
     log('store_selected', store=store['id'], name=store['name'], zip=store['zip'], fulfillment='PICKUP')
+    if settings.get('pin_store_cookies'):
+        cookies = sb.loop.run_until_complete(sb.driver.cookies.get_all())
+        sb.store_cookies = [cdp.network.CookieParam(name=c.name, value=c.value, domain=c.domain, path=c.path, secure=c.secure, http_only=c.http_only, same_site=c.same_site)
+                            for c in cookies if c.name in ['locDataV3', 'locGuestData', 'assortmentStoreId']]
+        if not sb.store_cookies:
+            raise ValueError('No retailer location cookies captured after store selection')
+        log('location_cookie_snapshot', names=[c.name for c in sb.store_cookies])
     return logo.get('src', '') if logo else ''
 
 
@@ -114,6 +122,8 @@ def verify_banner(soup, store):
 
 
 def fetch_product(sb, url, settings, log=None):
+    if settings.get('pin_store_cookies'):
+        sb.loop.run_until_complete(sb.driver.cookies.set_all(sb.store_cookies))
     if settings.get('pickup_product_url'):
         parts = urlsplit(url)
         request_url = urlunsplit((parts.scheme, parts.netloc, parts.path, 'fulfillmentIntent=Pickup', ''))
