@@ -244,3 +244,5 @@ Store-reselection trial A passed sample validation: 33 records across all 11 par
 Reselection trial final result: A/B each passed 33 with source audit; C failed after 25 on Pets product 20877373221, with location mismatch. Third accepted subset replay passed. Reselection remains opt-in, not a reliability fix. Next isolated trial requests the same product path with only fulfillmentIntent=Pickup, removing tracking/classType/filter query parameters from requests while preserving original exported URLs. All identity/store checks remain required.
 
 Chrome-profile transport comparison completed: browser fetch 21/21; Playwright and curl Chrome-profile each 0/3 (challenge responses). This does not justify replacing the production transport. Reference: https://curl-cffi.readthedocs.io/en/stable/quick_start.html . Pickup-only request-query trial started separately with store-reselection disabled, preserving original export URLs. Browser and runner offline checks passed, including original/requested URL tracing.
+
+Pickup-only URL trial A passed: 33 records, all 11 parent categories, 562.82 active seconds; source audit passed. No full publication. Repeats still pending.
