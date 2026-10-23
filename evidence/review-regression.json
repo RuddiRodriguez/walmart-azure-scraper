@@ -5,6 +5,7 @@
     "Synthetic unavailable item with explicit local pickup and matching displayed price retained",
     "Missing price retained only with unavailable evidence; normal missing-price record rejected",
     "Synthetic wrong-store detail rejected",
-    "Offline checkpoint close/reopen keeps completed product and pending next page"
+    "Offline checkpoint close/reopen keeps completed product and pending next page",
+    "Offline simulated access failure exports partial evidence and leaves prior publication byte-identical"
   ]
 }

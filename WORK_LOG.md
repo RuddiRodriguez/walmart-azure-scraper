@@ -31,3 +31,17 @@ remain subject to observed results. Store 100 is still a trial store, not confir
 No Azure VM address, approved login path or client environment has been supplied; no Azure resources
 or paid services were created. No completion date for external acceptance can be guaranteed without
 those prerequisites.
+
+### Subsequent review steps
+
+- Commit `3b87f48` pushed privately: parser/validation/failure changes and historical evidence audit.
+- Commit `3c9b31b` pushed privately: review status, unsent reply, evidence exporter and interruption tool.
+- Added an offline simulated access-block check: previous publication stayed byte-identical;
+  empty partial output and failure metadata were saved. Results are in review-regression.json.
+- Original data's record timestamps span October 22, 2026, 23:19:42–23:27:39 UTC. This timestamp
+  range is not the total collection runtime.
+- Saved the fresh contest countdown screenshot. Public clarification board and older comments
+  do not establish an assigned store or provide an Azure access path.
+- Fresh run intentionally interrupted at 02:40:48 UTC, after three committed products and 21
+  completed listing/category pages. This occurred between product requests, not mid-response.
+  Resumed with the identical store, sample size, configuration and parser/runner code.

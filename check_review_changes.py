@@ -2,12 +2,15 @@
 import copy
 import json
 import tempfile
+from argparse import Namespace
 from pathlib import Path
+from unittest.mock import patch
 
 from bs4 import BeautifulSoup
 from extract import product_record
 from storage import connect, add_pages, save_page, save_product, records
 from validate import validate
+from scrape import run as scrape_run
 
 
 def run():
@@ -58,6 +61,25 @@ def run():
         assert len(records(db)) == 1
         db.close()
     results.append('Offline checkpoint close/reopen keeps completed product and pending next page')
+    with tempfile.TemporaryDirectory() as folder:
+        base = Path(folder) / '100'
+        base.mkdir()
+        prior = b'{"run_id":"prior-good-output"}\n'
+        (base / 'latest.json').write_bytes(prior)
+        args = Namespace(config='config/stores.json', categories='config/categories.csv',
+                         store='100', output=folder, resume=False, sample=0)
+        with patch('scrape.open_browser', side_effect=ValueError('Offline simulated access block')):
+            try:
+                scrape_run(args)
+            except ValueError as error:
+                assert str(error) == 'Offline simulated access block'
+            else:
+                raise AssertionError('Simulated access failure did not stop run')
+        assert (base / 'latest.json').read_bytes() == prior
+        failure = next((base / 'runs').glob('*/failure.json'))
+        assert json.loads(failure.read_text())['published'] is False
+        assert json.loads((failure.parent / 'products.partial.json').read_text()) == []
+    results.append('Offline simulated access failure exports partial evidence and leaves prior publication byte-identical')
     Path('evidence/review-regression.json').write_text(json.dumps({
         'mode': 'offline checks; availability variants are synthetic, not observed live offers',
         'passed': True, 'checks': results,
