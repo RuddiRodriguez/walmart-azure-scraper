@@ -101,12 +101,16 @@ Detail/scope-stage exclusions:
 
 ## Evidence files
 
-- validated_500_products.json: final accepted records.
-- final_validation.json: machine-readable validation results.
-- evidence.json and saved category HTML: listing data and displayed text.
-- details/proofs.json and details/<product-id>.json: product response, location, price and UPC evidence.
-- progress.json: visited pages, discovered links and rejection counters.
-- selected_store.png: store selection screenshot.
-- ../store-check/: the earlier two-session store and pagination check.
+- products-500.json: accepted records.
+- validation-500.json: validation results.
+- source-records.json: selected captured listing/product fields used for verification.
+- replay-report.json: new parser replay against those captured responses.
+- selected-store.png: original store selection screenshot.
+- repeat-store-pagination.json: earlier two-session comparison.
+- generator/: original feasibility collection and validation scripts.
 
-Conclusion: free local Python collection is feasible for this sample. The full contest requirements are not yet proven, and the production project has not been built.
+Full HTML and original logs remain in the local walmart-feasibility folder. This private package
+contains selected source evidence without browser session state.
+
+Conclusion: free local Python collection worked for this sample. Full-catalog and Azure acceptance
+remain unproven. The subsequently packaged runner is separate from this historical sample.

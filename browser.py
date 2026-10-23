@@ -17,7 +17,9 @@ def open_browser():
 def check_html(html):
     soup = BeautifulSoup(html, 'html.parser')
     title = soup.title.get_text(' ', strip=True).lower() if soup.title else ''
-    if not title or any(t in title for t in ['robot or human', 'access denied', 'captcha']):
+    if not title:
+        raise ValueError('Empty page title; page may still be loading')
+    if any(t in title for t in ['robot or human', 'access denied', 'captcha']):
         raise ValueError('Challenge, access denial, or empty page; no automated CAPTCHA solving')
     return soup
 
@@ -28,7 +30,14 @@ def navigate(sb, url, settings, log):
         try:
             sb.goto(url)
             sb.sleep(settings['delay_seconds'])
-            soup = check_html(sb.get_page_source())
+            html = sb.get_page_source()
+            for _ in range(12):
+                pending = BeautifulSoup(html, 'html.parser')
+                if pending.title and pending.title.get_text(strip=True) and pending.select_one('#__NEXT_DATA__'):
+                    break
+                sb.sleep(1)
+                html = sb.get_page_source()
+            soup = check_html(html)
             next_data(soup)
             elapsed = time.monotonic() - started
             if elapsed > settings['max_page_seconds']:
@@ -89,11 +98,19 @@ def verify_banner(soup, store):
 
 def fetch_product(sb, url, settings):
     expression = 'fetch(' + json.dumps(url) + ').then(async r => ({status:r.status, html:await r.text()}))'
-    result = sb.loop.run_until_complete(asyncio.wait_for(
-        sb.page.evaluate(expression, await_promise=True), timeout=settings['max_page_seconds']))
-    if result['status'] != 200:
-        raise ValueError(f"Product HTTP {result['status']}; run stopped")
-    return check_html(result['html'])
+    for attempt in range(settings['retries']):
+        try:
+            result = sb.loop.run_until_complete(asyncio.wait_for(
+                sb.page.evaluate(expression, await_promise=True), timeout=settings['max_page_seconds']))
+            if result['status'] in [401, 403, 429]:
+                raise ValueError(f"Access blocked: HTTP {result['status']}; run stopped")
+            if result['status'] != 200:
+                raise RuntimeError(f"Product HTTP {result['status']}")
+            return check_html(result['html'])
+        except Exception as error:
+            if 'Access blocked' in str(error) or 'Challenge' in str(error) or attempt + 1 == settings['retries']:
+                raise
+            time.sleep(settings['delay_seconds'] * (attempt + 2))
 
 
 def canary_check(sb, store, settings):
@@ -102,6 +119,11 @@ def canary_check(sb, store, settings):
     for url in store['canary_urls']:
         soup = fetch_product(sb, url, settings)
         product = next_data(soup).get('data', {}).get('product') or {}
+        expected_id = re.search(r'/([0-9]+)(?:\?|$)', url)
+        if expected_id and str(product.get('usItemId')) != expected_id.group(1):
+            raise ValueError('Canary product identity mismatch')
+        if (product.get('sellerName') or product.get('sellerDisplayName')) not in ['Walmart', 'Walmart.com']:
+            raise ValueError('Canary seller changed')
         location = product.get('location') or {}
         if (location.get('intent') != 'PICKUP'
                 or str((location.get('pickupLocation') or {}).get('storeId')) != str(store['id'])

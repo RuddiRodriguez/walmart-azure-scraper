@@ -22,9 +22,10 @@ python3 -m venv .venv
 .venv/bin/python scrape.py --store 100 --sample 2
 ```
 
-Sample mode takes at least the requested number of listing candidates per category, not an exact
-product limit. It runs product checks and writes evidence, but **never publishes production output**.
-A category page can contribute more than the requested minimum.
+Sample mode discovers at least the requested number of listing candidates per category, then checks
+products until that many accepted records per category are available or candidates are exhausted.
+It writes evidence but **never publishes production output**. Its nested `sample_validation` reports
+only sample checks; pending full-catalog queues remain visible in the main report.
 
 Full crawl:
 

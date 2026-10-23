@@ -3,7 +3,7 @@ import json
 import re
 from datetime import datetime, timezone
 from decimal import Decimal
-from urllib.parse import urljoin, urlsplit, parse_qs
+from urllib.parse import urljoin, urlsplit
 
 from bs4 import BeautifulSoup
 
@@ -18,7 +18,7 @@ def next_data(soup):
     node = soup.select_one('#__NEXT_DATA__')
     if not node:
         raise ValueError('Missing retailer data: response may be incomplete or blocked')
-    return json.loads(node.string)['props']['pageProps']['initialData']
+    return json.loads(node.string)['props']['pageProps'].get('initialData', {})
 
 
 def scope(category, item):
@@ -90,6 +90,12 @@ def promotion_fields(product):
         if not isinstance(text, str):
             text = ''
         text = BeautifulSoup(text, 'html.parser').get_text(' ', strip=True)
+        terms = promo.get('terms') or ''
+        if terms and isinstance(terms, str):
+            if terms.startswith(('http://', 'https://')):
+                unknown.append({'reason': 'offer_terms_require_review', 'terms': terms})
+            elif terms not in text:
+                text += ' ' + BeautifulSoup(terms, 'html.parser').get_text(' ', strip=True)
         if re.search(r'walmart cash|cashback|cash back|manufacturer offer', text, re.I):
             continue  # Reward, not an immediate reduction in the checkout price.
         if re.search(r'clip|activate|digital coupon|add.*offer|save.*offer', text, re.I):

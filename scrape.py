@@ -1,13 +1,16 @@
 """Run a store crawl. --sample is evidence-only; it never replaces production output."""
 import argparse
 import csv
+from collections import Counter
 import fcntl
 import hashlib
 import json
 import time
 from datetime import datetime, timezone
 from pathlib import Path
-from urllib.parse import urljoin, urlsplit, parse_qs
+from urllib.parse import urljoin
+
+from bs4 import BeautifulSoup
 
 from browser import open_browser, select_store, navigate, verify_banner, fetch_product, canary_check
 from extract import discover, listing_candidates, next_data, product_record
@@ -67,9 +70,10 @@ def run(args):
                 break
             progressed = False
             for category, url in pending:
-                category_candidates = sum(json.loads(r[0])['category'] == category for r in db.execute('SELECT data FROM candidates'))
-                if args.sample and category_candidates >= args.sample:
-                    continue
+                if args.sample:
+                    category_candidates = db.execute("SELECT count(*) FROM candidates WHERE json_extract(data, '$.category')=?", (category,)).fetchone()[0]
+                    if category_candidates >= args.sample:
+                        continue
                 if page_count >= settings['max_pages']:
                     raise ValueError('Page safety limit reached; coverage incomplete')
                 soup = navigate(sb, url, settings, log)
@@ -80,7 +84,7 @@ def run(args):
                 for _ in range(60):
                     sb.scroll_down(900)
                     sb.sleep(0.5)
-                    rendered = __import__('bs4').BeautifulSoup(sb.get_page_source(), 'html.parser')
+                    rendered = BeautifulSoup(sb.get_page_source(), 'html.parser')
                     card_count = len(rendered.select('[data-item-id]'))
                     stable = stable + 1 if card_count == prior_cards else 0
                     prior_cards = card_count
@@ -88,7 +92,7 @@ def run(args):
                         break
                 else:
                     raise ValueError('Lazy loading did not settle; coverage incomplete')
-                soup = __import__('bs4').BeautifulSoup(sb.get_page_source(), 'html.parser')
+                soup = BeautifulSoup(sb.get_page_source(), 'html.parser')
                 verify_banner(soup, store)
                 source = hashlib.sha256(url.encode()).hexdigest()[:20] + '.html'
                 (output / 'sources' / source).write_text(str(soup))
@@ -125,12 +129,17 @@ def run(args):
                     canary_check(sb, store, settings)
             if not progressed:
                 break
+        sample_counts = Counter(row['category'] for row in records(db))
         for key, text in db.execute("SELECT id,data FROM candidates WHERE status='pending' ORDER BY rowid").fetchall():
             candidate = json.loads(text)
+            if args.sample and sample_counts[candidate['category']] >= args.sample:
+                continue
             soup = fetch_product(sb, candidate['url'], settings)
             row, reason, product = product_record(candidate, soup, store, settings['private_labels'], logo)
             atomic_json(output / 'sources' / (key + '.json'), {'candidate': candidate, 'product': product, 'reason': reason})
             save_product(db, candidate, row, reason)
+            if row:
+                sample_counts[candidate['category']] += 1
             log('product', id=key, accepted=bool(row), reason=reason)
             time.sleep(settings['delay_seconds'])
         canary_check(sb, store, settings)
@@ -143,6 +152,9 @@ def run(args):
             pointer = json.loads((base / 'latest.json').read_text())
             previous = json.loads((base / pointer['report']).read_text())
         report = validate(rows, list(categories), store, settings, pending_pages, pending_products, review, previous)
+        if args.sample:
+            sample_settings = {**settings, 'minimum_records': args.sample * len(categories), 'minimum_category_records': args.sample}
+            report['sample_validation'] = validate(rows, list(categories), store, sample_settings, 0, 0, 0)
         report.update(mode='sample' if args.sample else 'full', store=store,
                       active_seconds=round(metadata(db, 'active_seconds') + time.monotonic() - started, 2),
                       elapsed_seconds=round(time.time() - metadata(db, 'started'), 2),
@@ -160,6 +172,12 @@ def run(args):
         if not args.sample and not report['passed']:
             raise RuntimeError('Full run failed publication checks; see report.json')
     except BaseException as error:
+        if sb:
+            try:
+                (output / 'failure-page.html').write_text(sb.get_page_source())
+                sb.save_screenshot(str(output / 'failure-page.png'))
+            except Exception:
+                pass  # Preserve the original failure if browser capture is unavailable.
         log('stopped', error=str(error), error_type=type(error).__name__)
         metadata(db, 'status', 'interrupted_or_failed')
         raise
