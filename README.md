@@ -142,4 +142,3 @@ unattended use. Headless mode alone is not a memory guarantee.
 explicit descendant cleanup. It does not measure Chrome or prove long-run resource stability.
 Product fetches now have browser-side cancellation timers as well as Python timeouts,
 and store canaries check ZIP in addition to store ID and pickup context.
-
