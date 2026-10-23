@@ -182,6 +182,10 @@ def run(args):
                 page_count += 1
                 progressed = True
                 log('category_page', category=category, url=url, raw=raw, local_candidates=len(candidates), discovered=len(links))
+                if settings.get('refresh_store_each_page') and db.execute("SELECT 1 FROM candidates WHERE status='pending' LIMIT 1").fetchone():
+                    log('store_refresh', reason='Reconfirm selected store after category navigation')
+                    logo = select_store(sb, store, settings, log, output)
+                    canary_check(sb, store, settings)
                 collect_products()
                 if page_count % 20 == 0:
                     canary_check(sb, store, settings)

@@ -1,0 +1,25 @@
+{
+  "mode": "live diagnostic only; not full category or production acceptance",
+  "repeats_requested": 3,
+  "urls_per_method": 7,
+  "methods": {
+    "browser-fetch": {
+      "responses": 21,
+      "passed": 21,
+      "failures": 0,
+      "all_repeats_complete": true
+    },
+    "playwright-request": {
+      "responses": 3,
+      "passed": 0,
+      "failures": 3,
+      "all_repeats_complete": false
+    },
+    "curl-session": {
+      "responses": 3,
+      "passed": 0,
+      "failures": 3,
+      "all_repeats_complete": false
+    }
+  }
+}

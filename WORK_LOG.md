@@ -230,3 +230,11 @@ Rendered-page trial A passed 33 records in 722.26 seconds. B failed after 23 rec
 ### Cache hypothesis follow-up
 
 Eight same-session requests across the two recently rejected products compared original URLs with a fresh query parameter. All returned HTTP 200, Store 100 PICKUP, ZIP 72712 and cache-status Miss. Probe did not reproduce the fault or demonstrate an improvement. No cache-busting feature added. Only an allowlist of cache/date response headers retained; browser/session state excluded. Evidence: evidence/cache-context-probe. Intermittent long-run context remains unresolved after request and rendered-page approaches both failed repeat tests. No supported permanent fix established.
+
+### Free transport and store-reselection trials
+
+Compared browser fetch, Playwright context.request (shared browser cookies) and curl_cffi session (guest cookies copied in memory). Official reference: https://playwright.dev/python/docs/api/class-apirequestcontext . No cookies saved or logged. Diagnostic code compare_transports.py; optional review dependencies Playwright 1.64.1 and curl_cffi 0.16.3.
+
+Trial flag refresh_store_each_page reselects and verifies the configured store through the normal UI after a category page introduces pending products. Then checks canary before reading product details. No acceptance bypass; previous mismatch still invalidates its run. Default behavior unchanged pending repeated live evidence. Three sequential samples planned; stop trial at first failure.
+
+Transport comparison completed: browser-fetch 21/21 correct across three fresh sessions; Playwright 0/3 and curl 0/3, each challenged on first request per session. These targeted requests omit category traversal and therefore do not establish full-flow reliability.
