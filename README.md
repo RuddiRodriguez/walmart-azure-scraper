@@ -5,6 +5,11 @@ source evidence, validation and atomic publication. No paid proxies or scraping 
 
 ## Current status
 
+October 23 review: see `WORK_LOG.md` and `docs/REVIEW_STATUS.md` for the latest evidence and gaps.
+Run `python review_package.py` to re-audit the historical demonstration and generate checksums.
+This is an offline audit, not a fresh scrape. `check_review_changes.py` uses explicitly synthetic
+availability variants and an offline checkpoint check.
+
 The included **500-product evidence dataset** came from the preceding live feasibility scripts,
 not from a completed full-catalog run of this new runner. All 11 requested parent categories
 are represented; Store 100 pickup, seller and prices were checked on product pages.
@@ -65,6 +70,10 @@ products file. Failed runs stay in their own run directory. Never read a run's p
 - PPM is copied from visible listing text. Package weight comes from title or explicit package specs;
   assembled/shipping weights are not substituted for product quantity.
 - A 48-hour-old checkpoint is rejected to avoid combining stale and current prices.
+- Explicitly unavailable products are retained only when local pickup attribution and Walmart
+  seller evidence are present. Availability evidence stays in the source sidecar to preserve the
+  exact 22-field export. Missing local evidence is not inferred from a selected banner alone.
+- Interrupted runs export `products.partial.json` and `failure.json` for review, without publication.
 - Linux VM installation is supplied; Azure IP reputation and live retailer access are not guaranteed.
 
 See `docs/OPERATIONS.md`, `docs/ACCEPTANCE.md` and `evidence/FINAL_REPORT.md`.

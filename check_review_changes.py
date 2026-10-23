@@ -1,0 +1,69 @@
+"""Offline regression checks using a captured response plus explicitly synthetic variants."""
+import copy
+import json
+import tempfile
+from pathlib import Path
+
+from bs4 import BeautifulSoup
+from extract import product_record
+from storage import connect, add_pages, save_page, save_product, records
+from validate import validate
+
+
+def run():
+    settings = json.loads(Path('config/stores.json').read_text())
+    store = settings['stores'][0]
+    source = json.loads(Path('evidence/source-records.json').read_text())[0]
+    results = []
+
+    def parse(item):
+        soup = BeautifulSoup('<script id="__NEXT_DATA__"></script>', 'html.parser')
+        soup.script.string = json.dumps({'props': {'pageProps': {'initialData': {'data': {'product': item['product']}}}}})
+        return product_record(item['candidate'], soup, store, settings['private_labels'], '')
+
+    unavailable = copy.deepcopy(source)
+    unavailable['product']['availabilityStatus'] = 'OUT_OF_STOCK'
+    row, reason, _ = parse(unavailable)
+    assert row and reason == 'retained_unavailable'
+    results.append('Synthetic unavailable item with explicit local pickup and matching displayed price retained')
+    unavailable['product']['priceInfo']['currentPrice'] = {}
+    unavailable['candidate']['price_text'] = ''
+    row, reason, _ = parse(unavailable)
+    assert row and row['regular_price'] == row['sale_price'] == ''
+    report = validate([row], [row['category']], store, {**settings, 'minimum_records': 1}, 0, 0, 0, unavailable_urls={row['url']})
+    assert report['passed']
+    assert not validate([row], [row['category']], store, {**settings, 'minimum_records': 1}, 0, 0, 0)['passed']
+    results.append('Missing price retained only with unavailable evidence; normal missing-price record rejected')
+    wrong_store = copy.deepcopy(source)
+    wrong_store['product']['location']['pickupLocation']['storeId'] = '999999'
+    try:
+        parse(wrong_store)
+    except ValueError as error:
+        assert 'Location mismatch' in str(error)
+    else:
+        raise AssertionError('Wrong store accepted')
+    results.append('Synthetic wrong-store detail rejected')
+    with tempfile.TemporaryDirectory() as folder:
+        path = Path(folder) / 'checkpoint.sqlite'
+        db = connect(path)
+        candidate = source['candidate']
+        with db:
+            add_pages(db, candidate['category'], ['page1'])
+        save_page(db, candidate['category'], 'page1', ['page2'], [candidate], [], 1)
+        save_product(db, candidate, row, reason)
+        db.close()
+        db = connect(path)
+        assert db.execute("SELECT url FROM pages WHERE status='pending'").fetchall() == [('page2',)]
+        assert db.execute("SELECT count(*) FROM candidates WHERE status='pending'").fetchone()[0] == 0
+        assert len(records(db)) == 1
+        db.close()
+    results.append('Offline checkpoint close/reopen keeps completed product and pending next page')
+    Path('evidence/review-regression.json').write_text(json.dumps({
+        'mode': 'offline checks; availability variants are synthetic, not observed live offers',
+        'passed': True, 'checks': results,
+    }, indent=2) + '\n')
+    print(json.dumps(results, indent=2))
+
+
+if __name__ == '__main__':
+    run()

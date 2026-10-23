@@ -57,8 +57,6 @@ def listing_candidates(soup, category, store):
                 reason = 'marketplace'
             elif not pickup(item, store):
                 reason = 'no_local_pickup'
-            elif item.get('availabilityStatus') != 'IN_STOCK':
-                reason = 'unavailable'
             elif not card:
                 reason = 'not_rendered'
             elif APPROX.search(item.get('name', '')) or (item.get('priceInfo') or {}).get('finalCostByWeight'):
@@ -69,7 +67,8 @@ def listing_candidates(soup, category, store):
             link = card.select_one('a[href*="/ip/"]')
             image = card.select_one('img[data-testid="productTileImage"]')
             price = card.select_one('[data-testid="unified-global-product-price-a11y-text"]')
-            if not key.isdigit() or not link or not image or not price:
+            unavailable = item.get('availabilityStatus') in ['OUT_OF_STOCK', 'UNAVAILABLE']
+            if not key.isdigit() or not link or not image or (not price and not unavailable):
                 rejected.append({'item_id': key, 'reason': 'missing_listing_fields'})
                 continue
             product_url = urljoin('https://www.walmart.com', link['href'])
@@ -79,7 +78,7 @@ def listing_candidates(soup, category, store):
             accepted.append({'item_id': key, 'category': category, 'item': item,
                              'url': product_url,
                              'image_url': image.get('src', ''), 'text': text,
-                             'price_text': price.get_text(' ', strip=True)})
+                             'price_text': price.get_text(' ', strip=True) if price else ''})
     return accepted, rejected, result
 
 
@@ -134,15 +133,17 @@ def product_record(candidate, soup, store, private_labels, logo):
         return None, 'no_local_pickup', product
     if (product.get('sellerName') or product.get('sellerDisplayName')) not in ['Walmart.com', 'Walmart']:
         return None, 'marketplace', product
-    if product.get('availabilityStatus') not in ['IN_STOCK', 'AVAILABLE']:
-        return None, 'unavailable', product
+    unavailable = product.get('availabilityStatus') in ['OUT_OF_STOCK', 'UNAVAILABLE']
+    if product.get('availabilityStatus') not in ['IN_STOCK', 'AVAILABLE', 'OUT_OF_STOCK', 'UNAVAILABLE']:
+        return None, 'unknown_availability', product
     info = product.get('priceInfo') or {}
     title = product.get('name') or candidate['item'].get('name', '')
     if APPROX.search(title) or (info.get('priceDisplayCodes') or {}).get('finalCostByWeight'):
         return None, 'approximate_weight', product
     current = (info.get('currentPrice') or {}).get('price')
     displayed = re.search(r'(?:Price Now|Price) \$(\d+(?:\.\d{1,2})?)', candidate['price_text'])
-    if current is None or not displayed or money(current) != money(displayed.group(1)):
+    missing_unavailable_price = unavailable and current is None and not displayed
+    if not missing_unavailable_price and (current is None or not displayed or money(current) != money(displayed.group(1))):
         return None, 'price_changed', product
     promos, unknown = promotion_fields(product)
     if unknown:
@@ -168,7 +169,7 @@ def product_record(candidate, soup, store, private_labels, logo):
                image_url=candidate['image_url'], url=candidate['url'], upc=str(product.get('upc') or ''),
                ppm=ppm.group() if ppm else '', crawl_date=datetime.now(timezone.utc).isoformat())
     row.update(promos)
-    return row, '', product
+    return row, 'retained_unavailable' if unavailable else '', product
 
 
 def category_id(url):

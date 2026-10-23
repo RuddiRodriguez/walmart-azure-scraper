@@ -147,6 +147,7 @@ def run(args):
             time.sleep(settings['delay_seconds'])
         canary_check(sb, store, settings)
         rows = records(db)
+        unavailable_urls = {json.loads(data)['url'] for data, in db.execute("SELECT data FROM candidates WHERE reason='retained_unavailable'")}
         pending_pages = db.execute("SELECT count(*) FROM pages WHERE status!='done'").fetchone()[0]
         pending_products = db.execute("SELECT count(*) FROM candidates WHERE status!='done'").fetchone()[0]
         review = db.execute("SELECT count(*) FROM candidates WHERE reason='promotion_review_required'").fetchone()[0]
@@ -154,10 +155,10 @@ def run(args):
         if (base / 'latest.json').exists():
             pointer = json.loads((base / 'latest.json').read_text())
             previous = json.loads((base / pointer['report']).read_text())
-        report = validate(rows, list(categories), store, settings, pending_pages, pending_products, review, previous)
+        report = validate(rows, list(categories), store, settings, pending_pages, pending_products, review, previous, unavailable_urls)
         if args.sample:
             sample_settings = {**settings, 'minimum_records': args.sample * len(categories), 'minimum_category_records': args.sample}
-            report['sample_validation'] = validate(rows, list(categories), store, sample_settings, 0, 0, 0)
+            report['sample_validation'] = validate(rows, list(categories), store, sample_settings, 0, 0, review, unavailable_urls=unavailable_urls)
         report.update(mode='sample' if args.sample else 'full', store=store,
                       active_seconds=round(metadata(db, 'active_seconds') + time.monotonic() - started, 2),
                       elapsed_seconds=round(time.time() - metadata(db, 'started'), 2),
@@ -176,6 +177,16 @@ def run(args):
         if not args.sample and not report['passed']:
             raise RuntimeError('Full run failed publication checks; see report.json')
     except BaseException as error:
+        # Keep reviewable partial output without changing the last successful publication.
+        atomic_json(output / 'products.partial.json', records(db))
+        atomic_json(output / 'failure.json', {
+            'run_id': run_id, 'mode': 'sample' if args.sample else 'full',
+            'error': str(error), 'error_type': type(error).__name__,
+            'records': len(records(db)),
+            'pending_pages': db.execute("SELECT count(*) FROM pages WHERE status!='done'").fetchone()[0],
+            'pending_products': db.execute("SELECT count(*) FROM candidates WHERE status!='done'").fetchone()[0],
+            'published': False,
+        })
         if sb:
             try:
                 (output / 'failure-page.html').write_text(sb.get_page_source())

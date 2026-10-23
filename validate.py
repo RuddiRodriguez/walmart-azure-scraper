@@ -3,7 +3,7 @@ from collections import Counter
 from extract import FIELDS, APPROX
 
 
-def validate(rows, categories, store, settings, pending_pages, pending_products, review_count, previous=None):
+def validate(rows, categories, store, settings, pending_pages, pending_products, review_count, previous=None, unavailable_urls=()):
     errors = []
     counts = Counter(row['category'] for row in rows)
     if len(rows) < settings['minimum_records']:
@@ -24,7 +24,10 @@ def validate(rows, categories, store, settings, pending_pages, pending_products,
             errors.append(f'Record {index}: forbidden field value')
         if row.get('zipcode') != store['zip'] or row.get('store_name') != store['name']:
             errors.append(f'Record {index}: store')
-        for field in ['product_title', 'regular_price', 'url', 'image_url', 'category', 'crawl_date']:
+        required = ['product_title', 'url', 'image_url', 'category', 'crawl_date']
+        if row.get('url') not in unavailable_urls:
+            required.append('regular_price')
+        for field in required:
             if not row.get(field):
                 errors.append(f'Record {index}: missing {field}')
         for field in ['regular_price', 'sale_price', 'volume_deals_price', 'digital_deals_price']:
@@ -38,4 +41,5 @@ def validate(rows, categories, store, settings, pending_pages, pending_products,
             'category_counts': dict(counts), 'duplicate_urls': len(rows) - len({r['url'] for r in rows}),
             'field_nonempty_counts': {f: sum(bool(r[f]) for r in rows) for f in FIELDS},
             'pending_pages': pending_pages, 'pending_products': pending_products,
-            'promotions_needing_review': review_count}
+            'promotions_needing_review': review_count,
+            'retained_unavailable_records': sum(r['url'] in unavailable_urls for r in rows)}

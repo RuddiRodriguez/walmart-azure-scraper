@@ -1,0 +1,12 @@
+checked 70 accepted 69 rejected {'promotion_needs_review': 1}
+checked 80 accepted 79 rejected {'promotion_needs_review': 1}
+checked 90 accepted 89 rejected {'promotion_needs_review': 1}
+checked 100 accepted 99 rejected {'promotion_needs_review': 1}
+checked 110 accepted 109 rejected {'promotion_needs_review': 1}
+checked 120 accepted 119 rejected {'promotion_needs_review': 1}
+checked 130 accepted 127 rejected {'promotion_needs_review': 3}
+Traceback (most recent call last):
+  File "/Users/ruddigarcia/Documents/ChatGPT/Free_l/walmart-feasibility/enrich_sample.py", line 75, in <module>
+    time.sleep(1)
+    ~~~~~~~~~~^^^
+KeyboardInterrupt

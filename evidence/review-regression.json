@@ -1,0 +1,10 @@
+{
+  "mode": "offline checks; availability variants are synthetic, not observed live offers",
+  "passed": true,
+  "checks": [
+    "Synthetic unavailable item with explicit local pickup and matching displayed price retained",
+    "Missing price retained only with unavailable evidence; normal missing-price record rejected",
+    "Synthetic wrong-store detail rejected",
+    "Offline checkpoint close/reopen keeps completed product and pending next page"
+  ]
+}
