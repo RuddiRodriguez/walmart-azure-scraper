@@ -1,0 +1,13 @@
+{
+  "mode": "live SIGKILL mid-page followed by unchanged-code resume",
+  "passed": true,
+  "checks": {
+    "prior_pages_completed_once": true,
+    "interrupted_page_retried": true,
+    "interrupted_page_completed_once": true,
+    "database_integrity": true
+  },
+  "committed_pages_before_kill": 4,
+  "products_before_kill": 0,
+  "limitation": "Proves page-stage recovery. No products were committed before this kill. Full crawl is still running."
+}

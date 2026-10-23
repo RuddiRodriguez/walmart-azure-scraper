@@ -61,3 +61,24 @@ those prerequisites.
 - Refreshed the top-level README/acceptance summary and regenerated package checksums. Delivery
   archive is built from the committed tree, verified against the checksum manifest and stored as
   a draft release in the existing private repository. This is not a contest upload or client message.
+
+## Expanded local acceptance work — October 23, 06:17 UTC onward
+
+- Started an unrestricted full-mode crawl on revision af0ca01. Killed the process with SIGKILL
+  immediately after a Diapering page load. Four earlier completed pages survived; SQLite integrity
+  was `ok`. Resumed unchanged code: completed pages were not repeated; the interrupted page loaded
+  again and completed exactly once. Evidence: `evidence/hard-page-recovery/`.
+- Stopped that baseline deliberately after proving recovery, to fix issues found in code review.
+  This was not an access-block failure or a completed full crawl. Eight pages completed, zero
+  product details collected because the old runner postponed all product checks until the end.
+- Revised the runner to check products after each page, alternate pending work across categories,
+  and base sample completion on accepted records rather than unverified candidate count.
+- Added page/product start events, explicit failure URLs, listing rejection evidence, skipped-link
+  reasons, detail retry logs and code/config signatures in both full and sample modes.
+- Prevented publication when detail prices, availability or promotions need review. Failed sample
+  validation now produces a failing exit code. ZIP is taken from the retailer response and checked.
+- Hardened schema checks against malformed records; added duplicate product ID, date and address
+  checks. Added 48 passing offline checks, explicitly synthetic where fields/offers are mutated.
+- Code now marks active runtime as incomplete after an abrupt unclean stop; elapsed wall time
+  remains available. Missing runtime from a killed process is not silently called complete.
+- Started a fresh revised full-mode crawl at 06:26 UTC. Product-stage SIGKILL test is queued.

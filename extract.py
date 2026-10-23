@@ -129,6 +129,8 @@ def product_record(candidate, soup, store, private_labels, logo):
     location = product.get('location') or {}
     if location.get('intent') != 'PICKUP' or str((location.get('pickupLocation') or {}).get('storeId')) != str(store['id']):
         raise ValueError('Location mismatch: publication prohibited')
+    if str(location.get('postalCode') or '') != store['zip']:
+        raise ValueError('Location ZIP mismatch: publication prohibited')
     if not pickup(product, store):
         return None, 'no_local_pickup', product
     if (product.get('sellerName') or product.get('sellerDisplayName')) not in ['Walmart.com', 'Walmart']:
@@ -161,7 +163,7 @@ def product_record(candidate, soup, store, private_labels, logo):
     ppm = PPM.search(candidate['price_text'])
     brand = product.get('brand') or ''
     row = dict.fromkeys(FIELDS, '')
-    row.update(zipcode=store['zip'], store_name=store['name'], store_location=store['address'], store_logo=logo,
+    row.update(zipcode=str(location.get('postalCode') or ''), store_name=store['name'], store_location=store['address'], store_logo=logo,
                store_brand=brand if brand in private_labels else 'no', category=candidate['category'],
                sub_category=(candidate['item'].get('category') or {}).get('categoryPath', '').split('/')[-1],
                product_title=title, weight=weight_text,
@@ -177,7 +179,7 @@ def category_id(url):
     return path if re.fullmatch(r'\d+(?:_\d+)*', path) else ''
 
 
-def discover(soup, root_url, exclusions, current_url=None):
+def discover(soup, root_url, exclusions, current_url=None, decisions=None):
     root_id = category_id(root_url)
     current_id = category_id(current_url or root_url)
     main = soup.select_one('main') or soup
@@ -194,7 +196,15 @@ def discover(soup, root_url, exclusions, current_url=None):
         if not child_id or not (re.search(r'(?:^|_)' + re.escape(root_id) + r'(?:_|$)', child_id) or parent_link or direct_landing_link):
             continue
         name = a.get_text(' ', strip=True)
+        canonical = parts.scheme + '://' + parts.netloc + parts.path
+        reason = ''
+        if parts.path.startswith('/browse/') and '_' in child_id and root_id not in child_id.split('_') and current_id not in child_id.split('_'):
+            reason = 'different_category_ancestry'
         if any((re.search(pattern, name, re.I) or re.search(pattern, parts.path, re.I)) for pattern in exclusions):
+            reason = 'brief_exclusion'
+        if decisions is not None:
+            decisions.append({'url': canonical, 'name': name, 'action': 'skipped' if reason else 'queued', 'reason': reason or 'category_link'})
+        if reason:
             continue
         # Tracking query strings do not define a new category.
         found[parts.scheme + '://' + parts.netloc + parts.path] = name

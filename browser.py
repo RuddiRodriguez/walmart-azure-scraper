@@ -100,7 +100,7 @@ def verify_banner(soup, store):
         raise ValueError('Location mismatch in store banner')
 
 
-def fetch_product(sb, url, settings):
+def fetch_product(sb, url, settings, log=None):
     expression = 'fetch(' + json.dumps(url) + ').then(async r => ({status:r.status, html:await r.text()}))'
     for attempt in range(settings['retries']):
         try:
@@ -112,6 +112,8 @@ def fetch_product(sb, url, settings):
                 raise RuntimeError(f"Product HTTP {result['status']}")
             return check_html(result['html'])
         except Exception as error:
+            if log:
+                log('product_retry', url=url, attempt=attempt + 1, error=str(error))
             if 'Access blocked' in str(error) or 'Challenge' in str(error) or attempt + 1 == settings['retries']:
                 raise
             time.sleep(settings['delay_seconds'] * (attempt + 2))

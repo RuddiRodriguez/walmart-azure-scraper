@@ -1,0 +1,32 @@
+{
+  "time_utc": "2026-10-23T06:19:22.743440+00:00",
+  "signal": "SIGKILL",
+  "last_page_loaded": {
+    "time": "2026-10-23T06:19:22.568721+00:00",
+    "event": "page_loaded",
+    "store": "100",
+    "url": "https://www.walmart.com/browse/diapering/5427_486190?povid=GlobalNav_mWeb_BabyKids_diaperswipes",
+    "seconds": 7.0
+  },
+  "completed_pages": [
+    [
+      "Food",
+      "https://www.walmart.com/cp/food/976759?povid=GlobalNav_rWeb_Grocery_GroceryShopAll"
+    ],
+    [
+      "Household Essentials",
+      "https://www.walmart.com/cp/household-essentials/1115193?povid=GlobalNav_rWeb_HouseholdEssentials_AllPaperCleaning"
+    ],
+    [
+      "Personal Care",
+      "https://www.walmart.com/cp/personal-care/1005862?povid=GlobalNav_rWeb_PersonalCare_3.19"
+    ],
+    [
+      "Beauty",
+      "https://www.walmart.com/cp/beauty/1085666?povid=GlobalNav_rWeb_Beauty_Beauty_ShopAll_051123"
+    ]
+  ],
+  "committed_ids": [],
+  "sqlite_integrity": "ok",
+  "scope": "live process killed after page load, before page processing completion; browser children also terminated"
+}
