@@ -101,7 +101,7 @@ def run(args):
 
     try:
         current_work = {'kind': 'store_selection'}
-        sb = open_browser(headless=settings.get('headless', False))
+        sb = open_browser(headless=settings.get('headless', False), profile=settings.get('browser_profile'))
         logo = select_store(sb, store, settings, log, output)
         canary_check(sb, store, settings)
         collect_products()

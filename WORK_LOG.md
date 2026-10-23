@@ -252,3 +252,5 @@ Pickup-only URL trial: A/B passed 33 each; C failed after 15 on Beauty product 1
 Cookie trial initial setup failed before browser startup due to a CDP import path; corrected to the installed mycdp dependency used by SeleniumBase. Kept the setup failure log locally; not counted as live retailer evidence.
 
 Cookie restoration offline ordering and runner checks passed. Declared mycdp 1.4.0 explicitly because the trial directly imports the CDP package already installed through SeleniumBase. Only location-cookie names are logged; values stay on the live browser object. No manual cookie values, paid services or client submissions.
+
+Location-cookie pinning trial: A/B passed 33 each; C failed after 2 on Diapering product 38236207. Not a reliable fix. Next isolated trial uses a new dedicated non-guest profile reused across sequential runs, under ignored data/dedicated-store100-profile. No personal browser data accessed. Other trial flags disabled; all response checks unchanged. Profile files/cookies are never included in delivery.

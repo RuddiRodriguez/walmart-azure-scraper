@@ -12,8 +12,8 @@ import mycdp as cdp
 from extract import next_data, pickup
 
 
-def open_browser(headless=False):
-    return sb_cdp.Chrome(locale='en', guest=True, headless=headless)
+def open_browser(headless=False, profile=None):
+    return sb_cdp.Chrome(locale='en', guest=profile is None, headless=headless, user_data_dir=profile)
 
 
 def check_html(html):

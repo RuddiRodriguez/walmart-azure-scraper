@@ -1,0 +1,16 @@
+{
+  "mode": "live browser traffic inspection; raw responses remain private under ignored data/",
+  "graphql_responses": 8,
+  "endpoints": [
+    "/orchestra/home/graphql/wPlusOptinStatus/525de8dde3f48613bba54361f5c1edfc1e0cbd7b90d60616bbde5e798def039c",
+    "/orchestra/cartxo/graphql/MergeAndGetCart/9265a26529023e761a444ea0e2fe12563482b99ba9e28dc2ff79802f86e5552d",
+    "/swag/graphql",
+    "/swag/graphql",
+    "/orchestra/home/graphql/shippingCountryList/fc56a9c78c53597db122a9cdf8cb2a7d87d5df700f9e7a411bc915491c3fb6eb",
+    "/orchestra/home/graphql",
+    "/orchestra/home/graphql/GlobalIntentCenter/402cb76746a34988d4ba52e85dc7dfb2b6196d3deb920ca4bcc1a42e41b45296",
+    "/orchestra/pdp/graphql/ItemByIdBtf/c3968605b3ab2add8db3f7d47451876d89a0fb50ce4b83cddc5d7be8923c703f/ip/1832142965"
+  ],
+  "primary_local_product_response_found": false,
+  "limit": "Observed PDP BTF response contained recommendation modules, not a verified primary local-product source."
+}
