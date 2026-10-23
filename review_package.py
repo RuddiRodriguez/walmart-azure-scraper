@@ -47,7 +47,9 @@ def build():
     report = {
         'audit_time_utc': datetime.now(timezone.utc).isoformat(),
         'mode': 'offline audit of historical live captures; not a fresh collection',
-        'source_commit': subprocess.check_output(['git', 'rev-parse', 'HEAD'], cwd=root, text=True).strip(),
+        'audit_base_commit': subprocess.check_output(['git', 'rev-parse', 'HEAD'], cwd=root, text=True).strip(),
+        'audited_code_sha256': {name: hashlib.sha256((root / name).read_bytes()).hexdigest()
+                               for name in ['extract.py', 'scrape.py', 'storage.py', 'validate.py', 'browser.py']},
         'passed': not errors, 'records': len(rows), 'sources': len(sources),
         'duplicates': duplicates, 'category_counts': dict(counts),
         'collection_dates': sorted({r['crawl_date'] for r in rows}),
