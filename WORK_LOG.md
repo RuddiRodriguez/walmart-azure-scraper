@@ -120,3 +120,20 @@ those prerequisites.
   recorder/renderer. Walkthrough tools only run local checks and show saved evidence.
 - Began a fresh 3-per-category repeat sample while the full crawl continues. Repeat-sample timing
   will therefore include shared-machine/network load and must not be called an isolated benchmark.
+
+### First broader live failure and investigation — 06:49–06:53 UTC
+
+- Full v3 collection stopped at 143 accepted products when product 5116082136 returned a location
+  mismatch. This prevented publication. Exported and replay-audited all 143 accepted records;
+  zero source mismatches. The queue contained 1,138 discovered/completed URLs at this snapshot.
+- The original failed product response was not written before validation raised; this is an
+  evidence-capture weakness to fix. Do not claim its exact rejected location is preserved.
+- A fresh, separate session checked that exact URL both through fetch and visible navigation.
+  Both returned Store 100/PICKUP, correct ZIP, IN_STOCK. Screenshot also shows Bentonville pickup.
+  This demonstrates recovery in a fresh session, not a diagnosed or permanently fixed root cause.
+- Resumed the unchanged full run at 06:52:37 UTC. The failed product then passed and collection
+  continued. The run is interrupted/resumed, not an uninterrupted production benchmark.
+- Repeat A completed 33 valid records across all 11 parents; all 33 matched exported source on
+  offline replay. Repeat B began with the same code/configuration/sample size at 06:52:37 UTC.
+- The first extra unavailable-item probe failed before store selection (pickup banner not found).
+  No product was collected in that attempt. A later isolated retry will preserve diagnostic images.

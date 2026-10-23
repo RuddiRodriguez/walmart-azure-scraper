@@ -25,10 +25,11 @@ def report():
                      'page_states': dict(db.execute('SELECT status,count(*) FROM pages GROUP BY status')),
                      'candidate_states': [{'status': status, 'reason': reason, 'count': count} for status, reason, count in db.execute('SELECT status,reason,count(*) FROM candidates GROUP BY status,reason')],
                      'last_event': events[-1] if events else None, 'failure': failure,
+                     'failure_is_latest_event': bool(failure and events and events[-1]['event'] == 'stopped'),
                      'sample_passed': result.get('sample_validation', {}).get('passed') if result else None,
                      'full_passed': result.get('passed') if result else None,
                      'active_seconds': result.get('active_seconds') if result else meta.get('active_seconds'),
-                     'active_time_complete': not meta.get('active_time_incomplete', False),
+                     'active_time_complete': (not meta.get('active_time_incomplete', False)) if 'session_open' in meta else None,
                      'hard_stop_evidence': [p.name for p in folder.glob('hard-*.json')]})
         db.close()
     output = {'generated_utc': datetime.now(timezone.utc).isoformat(), 'runs': runs,

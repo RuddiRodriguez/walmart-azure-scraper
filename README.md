@@ -15,7 +15,8 @@ not from a completed full-catalog run of this new runner. All 11 requested paren
 are represented; Store 100 pickup, seller and prices were checked on product pages.
 The latest packaged runner completed a fresh live 33-product sample across all 11 categories,
 including intentional product-stage stop/resume; see `evidence/review-live/`. An earlier 22-product
-sample remains in `evidence/live-smoke/`. The full-catalog runner and Azure installation/scheduling files are included. End-to-end catalog
+sample remains in `evidence/live-smoke/`. Additional October 23 tests and fresh collection are logged in `WORK_LOG.md`; the 33-record result
+above is the earlier review baseline. The full-catalog runner and Azure installation/scheduling files are included. End-to-end catalog
 coverage, live volume/digital offers and Azure execution still require acceptance testing.
 Do not describe this version as already accepted or production-proven.
 
@@ -29,8 +30,8 @@ python3 -m venv .venv
 .venv/bin/python scrape.py --store 100 --sample 2
 ```
 
-Sample mode discovers at least the requested number of listing candidates per category, then checks
-products until that many accepted records per category are available or candidates are exhausted.
+Sample mode checks products after each listing page and continues discovery until the requested
+number of accepted records is reached in each category or the available queue is exhausted.
 It writes evidence but **never publishes production output**. Its nested `sample_validation` reports
 only sample checks; pending full-catalog queues remain visible in the main report.
 
@@ -71,7 +72,7 @@ products file. Failed runs stay in their own run directory. Never read a run's p
   Chrome/SeleniumBase retain their own vendor behavior; no claim is made about those dependencies.
 - PPM is copied from visible listing text. Package weight comes from title or explicit package specs;
   assembled/shipping weights are not substituted for product quantity.
-- A 48-hour-old checkpoint is rejected to avoid combining stale and current prices.
+- Changed code/configuration cannot resume either a full or sample checkpoint. A 48-hour-old checkpoint is rejected to avoid combining stale and current prices.
 - Explicitly unavailable products are retained only when local pickup attribution and Walmart
   seller evidence are present. Availability evidence stays in the source sidecar to preserve the
   exact 22-field export. Missing local evidence is not inferred from a selected banner alone.
@@ -84,3 +85,38 @@ See `docs/OPERATIONS.md`, `docs/ACCEPTANCE.md` and `evidence/FINAL_REPORT.md`.
 
 `make_entry_image.py` is optional presentation tooling, not required by the scraper. It uses Pillow
 12.3.0 and macOS Arial fonts. On Linux, change the two font paths to installed fonts.
+
+## Local review commands
+
+These checks are offline unless explicitly marked live:
+
+```bash
+python check_requirements.py
+python check_review_changes.py
+python check_storage_recovery.py
+python check_runner_flow.py
+python report_local_runs.py
+python export_run_evidence.py data/<output>/<store>/runs/<run-id> evidence/<review-name>
+python audit_run.py evidence/<review-name>
+python compare_runs.py evidence/<first> evidence/<second> evidence/repeat-comparison.json
+```
+
+The exporter includes page and candidate states, rejection reasons, skipped-link decisions, source
+responses and HTML hashes. Full HTML and browser/session state stay local under `data/`. A stopped
+run exports partial products; it does not replace `latest.json`. Offline tests using constructed
+offers or simulated navigation are labeled explicitly in their JSON reports.
+
+`hard_stop_review.py` intentionally kills an explicitly selected scraper process for recovery
+testing. It needs `requirements-review.txt`; use only on a disposable review run.
+`verify_hard_recovery.py` checks the later live continuation against the captured committed state.
+After a hard kill, `active_time_complete=false` indicates missing active-runtime accounting; use
+elapsed time with its interruption caveat.
+
+`spot_check.py` is live: it opens a fresh browser, selects the configured store, and compares one
+randomly chosen record per represented category against visible product-page prices.
+`probe_unavailable.py` is a bounded live investigation of previously observed unavailable items.
+Neither is a full catalog acceptance run.
+
+`record_walkthrough.py` records actual offline command output to an asciicast and text transcript.
+`render_walkthrough.py` optionally renders that recording with Pillow, ffmpeg and a supplied font.
+The video is a local review walkthrough, not footage of an Azure deployment or a full live crawl.

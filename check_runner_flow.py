@@ -46,7 +46,7 @@ def check():
             writer = csv.DictWriter(stream, fieldnames=['Category (Auto)', 'URL'])
             writer.writeheader(); writer.writerow({'Category (Auto)': category, 'URL': root})
         args = Namespace(config=str(config), categories=str(categories), store='100', output=str(folder / 'data'), resume=False, sample=0)
-        with patch('scrape.open_browser', return_value=sb), patch('scrape.select_store', return_value=''), patch('scrape.canary_check'), patch('scrape.verify_banner'), patch('scrape.navigate', side_effect=navigate), patch('scrape.listing_candidates', side_effect=listing), patch('scrape.discover', return_value={}), patch('scrape.fetch_product', return_value=product) as fetch:
+        with patch('scrape.open_browser', return_value=sb), patch('scrape.select_store', return_value=''), patch('scrape.canary_check'), patch('scrape.verify_banner'), patch('scrape.navigate', side_effect=navigate), patch('scrape.listing_candidates', side_effect=listing), patch('scrape.discover', side_effect=lambda *a, **k: {}), patch('scrape.fetch_product', return_value=product) as fetch:
             run(args)
             pointer = json.loads((folder / 'data/100/latest.json').read_text())
             report = json.loads((folder / 'data/100' / pointer['report']).read_text())
