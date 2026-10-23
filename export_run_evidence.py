@@ -7,7 +7,7 @@ import sqlite3
 from pathlib import Path
 
 
-PRODUCT_FIELDS = 'usItemId name upc brand sellerName sellerDisplayName availabilityStatus priceInfo location fulfillmentSummary promoData promoDiscount'.split()
+PRODUCT_FIELDS = 'usItemId name upc brand sellerName sellerDisplayName availabilityStatus priceInfo location fulfillmentSummary fulfillmentOptions promoData promoDiscount'.split()
 
 
 def export(run, destination):

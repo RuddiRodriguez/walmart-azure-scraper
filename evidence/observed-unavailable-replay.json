@@ -1,0 +1,60 @@
+{
+  "mode": "offline parser replay combining historical listing capture and fresh live fulfillment probe; not an end-to-end fresh listing crawl",
+  "checks": [
+    {
+      "id": "19723755399",
+      "category": "Food",
+      "retained": false,
+      "listing_rejection": [
+        {
+          "item_id": "19723755399",
+          "reason": "outside_category"
+        }
+      ]
+    },
+    {
+      "id": "19670301595",
+      "category": "Food",
+      "retained": false,
+      "listing_rejection": [
+        {
+          "item_id": "19670301595",
+          "reason": "outside_category"
+        }
+      ]
+    },
+    {
+      "id": "19648607759",
+      "category": "Balloons",
+      "retained": false,
+      "listing_rejection": [
+        {
+          "item_id": "19648607759",
+          "reason": "outside_category"
+        }
+      ]
+    },
+    {
+      "id": "11469112192",
+      "category": "Office Supplies",
+      "retained": true,
+      "reason": "",
+      "price": "10.52"
+    },
+    {
+      "id": "11452574423",
+      "category": "Office Supplies",
+      "retained": true,
+      "reason": "retained_unavailable",
+      "price": ""
+    },
+    {
+      "id": "5367596097",
+      "category": "Office Supplies",
+      "retained": true,
+      "reason": "retained_unavailable",
+      "price": ""
+    }
+  ],
+  "retained_unavailable": 2
+}

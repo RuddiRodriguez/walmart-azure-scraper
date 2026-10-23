@@ -155,3 +155,20 @@ those prerequisites.
   retaining landing pages in the queue, to reach useful category breadth sooner.
 - Added 13 passing offline HTTP/timeout/malformed-response/canary checks. They are not live block
   demonstrations. Retrying the unavailable-item investigation with no other scraper browser active.
+
+### Store-specific unavailable products — 07:06–07:14 UTC
+
+- Isolated live retry succeeded for six previously unavailable items. Five had an explicit
+  PICKUP option marked OUT_OF_STOCK at Bentonville S Walton Blvd Supercenter. Some remained
+  available for shipping. Global availability alone is therefore insufficient.
+- Added handling for the observed store-specific pickup option, verified alongside the response's
+  store ID, ZIP and pickup intent. Own-seller listing candidates without pickup are now checked
+  on the detail page, rather than discarded before local unavailable status can be established.
+- Explicit local out-of-stock records without a local pickup offer retain empty prices, PPM and
+  deal fields. Shipping prices are not copied. NOT_AVAILABLE or a different store name does not
+  count as proven local out-of-stock inventory.
+- Offline replay of historical listing candidates plus fresh live response captures retained two
+  qualifying Office Supplies items. Three unrelated category items stayed excluded. This is
+  captured-response replay, not an end-to-end fresh listing run. Additional synthetic checks pass.
+- Started a fresh final-code full run at 07:10:51 UTC with no other scraper browser active. Its code
+  and configuration signature is 0a08a06154f867e5f1ab9964e8e10bd39949562e39545e8bb8a6c6e9737ca599.

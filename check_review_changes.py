@@ -37,6 +37,20 @@ def run():
     assert report['passed']
     assert not validate([row], [row['category']], store, {**settings, 'minimum_records': 1}, 0, 0, 0)['passed']
     results.append('Missing price retained only with unavailable evidence; normal missing-price record rejected')
+    local_unavailable = copy.deepcopy(source)
+    local_unavailable['product']['fulfillmentSummary'] = []
+    local_unavailable['product']['availabilityStatus'] = 'IN_STOCK'  # Shipping remains available.
+    local_unavailable['product']['fulfillmentOptions'] = [
+        {'type': 'PICKUP', 'locationText': store['name'], 'availabilityStatus': 'OUT_OF_STOCK'}]
+    retained, reason, _ = parse(local_unavailable)
+    assert retained and reason == 'retained_unavailable'
+    assert all(retained[field] == '' for field in ['regular_price', 'sale_price', 'ppm', 'volume_deals_price', 'digital_deals_price'])
+    results.append('Explicit store-specific out-of-stock status retained without copying shipping prices or PPM')
+    local_unavailable['product']['fulfillmentOptions'][0]['locationText'] = 'Different store'
+    assert parse(local_unavailable)[1] == 'no_local_pickup'
+    local_unavailable['product']['fulfillmentOptions'][0].update(locationText=store['name'], availabilityStatus='NOT_AVAILABLE')
+    assert parse(local_unavailable)[1] == 'no_local_pickup'
+    results.append('Different-store and not-available pickup options do not prove local out-of-stock inventory')
     wrong_store = copy.deepcopy(source)
     wrong_store['product']['location']['pickupLocation']['storeId'] = '999999'
     try:

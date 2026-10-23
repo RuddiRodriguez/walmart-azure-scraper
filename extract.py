@@ -55,8 +55,6 @@ def listing_candidates(soup, category, store):
                 reason = 'outside_category'
             elif item.get('sellerName') != 'Walmart.com':
                 reason = 'marketplace'
-            elif not pickup(item, store):
-                reason = 'no_local_pickup'
             elif not card:
                 reason = 'not_rendered'
             elif APPROX.search(item.get('name', '')) or (item.get('priceInfo') or {}).get('finalCostByWeight'):
@@ -78,7 +76,8 @@ def listing_candidates(soup, category, store):
             accepted.append({'item_id': key, 'category': category, 'item': item,
                              'url': product_url,
                              'image_url': image.get('src', ''), 'text': text,
-                             'price_text': price.get_text(' ', strip=True) if price else ''})
+                             'price_text': price.get_text(' ', strip=True) if price else '',
+                             'local_pickup_at_listing': pickup(item, store)})
     return accepted, rejected, result
 
 
@@ -131,26 +130,33 @@ def product_record(candidate, soup, store, private_labels, logo):
         raise ValueError('Location mismatch: publication prohibited')
     if str(location.get('postalCode') or '') != store['zip']:
         raise ValueError('Location ZIP mismatch: publication prohibited')
-    if not pickup(product, store):
+    has_pickup_offer = pickup(product, store)
+    local_out_of_stock = any(option.get('type') == 'PICKUP'
+                             and option.get('locationText') == store['name']
+                             and option.get('availabilityStatus') == 'OUT_OF_STOCK'
+                             for option in product.get('fulfillmentOptions') or [])
+    if not has_pickup_offer and not local_out_of_stock:
         return None, 'no_local_pickup', product
     if (product.get('sellerName') or product.get('sellerDisplayName')) not in ['Walmart.com', 'Walmart']:
         return None, 'marketplace', product
-    unavailable = product.get('availabilityStatus') in ['OUT_OF_STOCK', 'UNAVAILABLE']
-    if product.get('availabilityStatus') not in ['IN_STOCK', 'AVAILABLE', 'OUT_OF_STOCK', 'UNAVAILABLE']:
+    unavailable = local_out_of_stock or product.get('availabilityStatus') in ['OUT_OF_STOCK', 'UNAVAILABLE']
+    if not local_out_of_stock and product.get('availabilityStatus') not in ['IN_STOCK', 'AVAILABLE', 'OUT_OF_STOCK', 'UNAVAILABLE']:
         return None, 'unknown_availability', product
     info = product.get('priceInfo') or {}
     title = product.get('name') or candidate['item'].get('name', '')
     if APPROX.search(title) or (info.get('priceDisplayCodes') or {}).get('finalCostByWeight'):
         return None, 'approximate_weight', product
-    current = (info.get('currentPrice') or {}).get('price')
-    displayed = re.search(r'(?:Price Now|Price) \$(\d+(?:\.\d{1,2})?)', candidate['price_text'])
+    # No local offer means any displayed shipping price must not enter the local export.
+    local_price_unknown = local_out_of_stock and not has_pickup_offer
+    current = None if local_price_unknown else (info.get('currentPrice') or {}).get('price')
+    displayed = None if local_price_unknown else re.search(r'(?:Price Now|Price) \$(\d+(?:\.\d{1,2})?)', candidate['price_text'])
     missing_unavailable_price = unavailable and current is None and not displayed
     if not missing_unavailable_price and (current is None or not displayed or money(current) != money(displayed.group(1))):
         return None, 'price_changed', product
-    promos, unknown = promotion_fields(product)
+    promos, unknown = promotion_fields({} if local_price_unknown else product)
     if unknown:
         return None, 'promotion_review_required', product
-    was = re.search(r'Was \$(\d+(?:\.\d{1,2})?)', candidate['price_text'])
+    was = None if local_price_unknown else re.search(r'Was \$(\d+(?:\.\d{1,2})?)', candidate['price_text'])
     weight = WEIGHT.search(title)
     weight_text = weight.group() if weight else ''
     specs = (next_data(soup).get('data', {}).get('idml') or {}).get('specifications') or []
@@ -160,7 +166,7 @@ def product_record(candidate, soup, store, private_labels, logo):
                 return None, 'approximate_weight', product
             if not weight_text and WEIGHT.search(spec['value']):
                 weight_text = spec['value']
-    ppm = PPM.search(candidate['price_text'])
+    ppm = None if local_price_unknown else PPM.search(candidate['price_text'])
     brand = product.get('brand') or ''
     row = dict.fromkeys(FIELDS, '')
     row.update(zipcode=str(location.get('postalCode') or ''), store_name=store['name'], store_location=store['address'], store_logo=logo,
