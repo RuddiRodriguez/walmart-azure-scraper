@@ -316,3 +316,7 @@ Added optional store snapshots around real collection, plus response status/redi
 #### Landing-page pagination fix — 2026-10-24T09:27:31.285827+00:00
 
 First live run stopped after 44.12s with zero records: Food landing Next Page href was #, not a crawlable next URL. Store remained correct. Saved HTML has 205 discoverable child links. Added simple next_page_url helper ignoring fragment/JavaScript/empty hrefs; logs skipped control. Real self/previous URL loops remain detectable, and reported pagination without a navigable next link still fails. Saved-page regression and runner checks passed. Fresh diagnostic-b started; no live fix success claimed yet.
+
+#### Review-only rejection probe and time guard — 2026-10-24T09:31:11.038403+00:00
+
+Prepared a review wrapper that observes a rejection before browser closure, compares one identical fetch and one visible navigation, and always preserves the original rejection/publication block. It is not a validated store fix and has not yet run live. Synthetic probe-failure test confirms original exception and restored review replacements. Added timezone-aware --stop-at to the existing selected-process resource guard; a disposable child test verified SIGINT and recorded cutoff. No real collection was killed by that test. Both helpers keep raw data private and avoid new paid dependencies.

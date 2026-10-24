@@ -181,3 +181,11 @@ Cookie values stay in memory. Diagnostic capture failure cannot hide the origina
 error. Product response logs include status, final URL without query values, redirect flag and
 an allowlist of cache/date headers. These observations do not establish the cause of store drift.
 Start a fresh run after code/configuration changes.
+
+`probe_collection_context.py` is review-only: on a location rejection it records immediate visible
+store state, makes at most one same-page re-fetch and one visible navigation, then re-raises the
+original rejection. A probe never repairs or publishes the failed run. Stop after a challenge.
+Use a fresh private output folder and the same normal collection configuration.
+
+`guard_review_disk.py` accepts `--stop-at 2026-10-24T14:36:31+00:00` to enforce a review cutoff
+with SIGINT. It targets only the selected collector PID and also retains its disk-reserve check.

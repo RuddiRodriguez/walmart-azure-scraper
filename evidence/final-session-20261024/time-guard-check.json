@@ -1,0 +1,9 @@
+{
+  "mode": "offline disposable child named scrape.py; no live browser or retailer requests",
+  "passed": true,
+  "checks": [
+    "Time budget sends SIGINT only to selected review child",
+    "Child handles stop gracefully",
+    "Guard records cutoff reason and final state"
+  ]
+}
