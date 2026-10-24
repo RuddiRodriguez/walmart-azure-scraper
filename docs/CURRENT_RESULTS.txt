@@ -1,15 +1,12 @@
-FINAL DEMONSTRATION STATUS
-
-Latest profile test: 33 products passed; repeat stopped after 12 on a store mismatch.
-Accepted records passed source audits. Wrong-store data was not published.
-Reliability remains unresolved; user requested ending further experiments.
-Historical 500-product JSON, source evidence, logs, checks and instructions included.
-Full catalog, repeated reliability and Azure acceptance remain unproven.
-Failed trial options removed from main code; trial evidence/history preserved.
-See docs/REVIEW_STATUS.md and WORK_LOG.md. Nothing submitted to client.
-
-Quick offline follow-up: HTTP 412 stops immediately; category tracking aliases deduplicated.
-Invalidated restarts now stop before Chrome opens. Added sale consistency and package ZIP checks.
-Four short follow-up suites passed; historical 500 baseline and synthetic audit failures checked.
-Three genuine unavailable products and local page/product hard-kill recovery already have evidence.
-No new live crawl. docs/CLIENT_MESSAGE_DRAFT.txt is an unsent draft.
+FINAL REVIEW — 24 October 2026, 12:27 CEST (UTC+2)
+Version: review-20261024-final
+Historical JSON:500 genuine distinct products/11 parents; unchanged; offline source audit passed.
+Fresh C/D:33 records each,613.89/596.86seconds; same33 IDs,0price changes; both source audits passed.
+Broader A/C:stopped32/64records after301.91/631.46seconds on location mismatch; accepted subsets audited, no publication.
+Live primary pagination:Diapering pages1/2 retained100/PICKUP;38 new listing IDs, not accepted products.
+Fresh visible-price checks:11/11store/seller/pickup and visible/response/saved prices matched.
+Latest hard-kill attempt:NOT performed;180-second window elapsed. SIGINT left1 accepted record; no resume performed. Do not claim latest-code recovery.
+Prior Oct23 live page/product hard-kill and restart evidence retained; three genuine unavailable examples retained.
+Nine final offline suites, Python compilation and installer shell syntax passed.
+Missing:sustained reliability, fresh complete500+ final-runner result, exhaustive coverage, live volume/digital deals, latest-code recovery, assigned-store confirmation, Azure execution.
+No more broad experiments planned. No client send/submission.

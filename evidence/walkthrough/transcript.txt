@@ -1,4 +1,4 @@
-Recorded at 2026-10-23T07:36:32.343219+00:00
+Recorded at 2026-10-24T10:28:13.165326+00:00
 
 $ python -c 'import json,csv; s=json.load(open('"'"'config/stores.json'"'"')); print('"'"'LOCAL REVIEW WALKTHROUGH - no Azure or contest submission'"'"'); print('"'"'Trial store:'"'"',s['"'"'stores'"'"'][0]['"'"'id'"'"'],s['"'"'stores'"'"'][0]['"'"'name'"'"']); print('"'"'Required parent categories:'"'"',len(list(csv.DictReader(open('"'"'config/categories.csv'"'"')))))'
 LOCAL REVIEW WALKTHROUGH - no Azure or contest submission
@@ -9,9 +9,9 @@ Required parent categories: 11
 $ python check_requirements.py
 {
   "mode": "offline checks of captured evidence and explicitly synthetic mutations; no live acceptance claim",
-  "time_utc": "2026-10-23T07:36:37.745076+00:00",
+  "time_utc": "2026-10-24T10:28:18.664566+00:00",
   "passed": true,
-  "count": 49,
+  "count": 54,
   "checks": [
     "Captured historical record passes schema checks",
     "Rejects null field",
@@ -25,7 +25,12 @@ $ python check_requirements.py
     "Rejects missing date timezone",
     "Rejects invalid date",
     "Rejects missing title",
+    "Rejects sale above regular price",
+    "Rejects sale without regular price",
     "Rejects non-retailer URL",
+    "Sale without regular price rejected even for unavailable item",
+    "Valid lower sale price retained",
+    "Malformed sale price returns failure without crashing",
     "Missing schema key returns failure without crashing",
     "Reordered schema rejected",
     "Non-object record returns failure",
@@ -74,31 +79,18 @@ $ python -c 'import json; p=json.load(open('"'"'evidence/products-500.json'"'"')
 Historical genuine demonstration: 500 records
 Historical collection dates: 2026-10-22T23:19:42.144602+00:00 to 2026-10-22T23:27:39.067537+00:00
 This is not a fresh full-catalog run.
-LOCAL REVIEW RESULTS — 23 October 2026
-
-Available:
-- Historical demonstration: 500 genuine distinct products, all 11 parent categories.
-- Broader intermediate live attempt: 259 valid products, 27 completed pages; partial.
-- Latest tested collector: 57 valid products in 458.78 seconds, including 3 genuinely
-  unavailable items retained with explicit local evidence and no shipping prices.
-- Fresh visible-price checks: 11 of 11 matched, one randomly selected record per category.
-- Hard-kill recovery passed at page and product stages; saved records were not repeated.
-- Offline schema, price, fulfillment, promotion, failure and transaction checks passed.
-- Source, configuration, logs, evidence and instructions are in the private repository.
-
-Not complete:
-- Full catalog coverage: latest checkpoint still has 1,036 pending pages.
-- Reliable unattended repeat runs: repeat A passed with 33 products in 552.93 seconds;
-  repeat B stopped after 7 products on a location mismatch. Seven shared prices matched.
-- Long-run resource stability: disk reserve tripped at 2.888 GiB; space later fell to
-  about 0.36 GiB and recovered after process closure. A separate restart tripped at
-  0.578 GiB. Browser/memory pressure remains unresolved; the cache experiment was reverted.
-- Genuine live volume/digital offer examples: none verified. Offline examples are labeled.
-- Azure execution: not performed; client VM/access not supplied, and local acceptance remains incomplete.
-- Client-assigned location: Store 100 remains a trial store until confirmed.
-
-No successful full-run publication, contest upload or client message was made.
-Separate datasets overlap: do not add their counts together as unique products.
+FINAL REVIEW — 24 October 2026, 12:27 CEST (UTC+2)
+Version: review-20261024-final
+Historical JSON:500 genuine distinct products/11 parents; unchanged; offline source audit passed.
+Fresh C/D:33 records each,613.89/596.86seconds; same33 IDs,0price changes; both source audits passed.
+Broader A/C:stopped32/64records after301.91/631.46seconds on location mismatch; accepted subsets audited, no publication.
+Live primary pagination:Diapering pages1/2 retained100/PICKUP;38 new listing IDs, not accepted products.
+Fresh visible-price checks:11/11store/seller/pickup and visible/response/saved prices matched.
+Latest hard-kill attempt:NOT performed;180-second window elapsed. SIGINT left1 accepted record; no resume performed. Do not claim latest-code recovery.
+Prior Oct23 live page/product hard-kill and restart evidence retained; three genuine unavailable examples retained.
+Nine final offline suites, Python compilation and installer shell syntax passed.
+Missing:sustained reliability, fresh complete500+ final-runner result, exhaustive coverage, live volume/digital deals, latest-code recovery, assigned-store confirmation, Azure execution.
+No more broad experiments planned. No client send/submission.
 
 [exit code 0]
 

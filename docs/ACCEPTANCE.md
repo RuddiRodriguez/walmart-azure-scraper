@@ -1,6 +1,6 @@
 # Acceptance record
 
-Latest results are in `docs/REVIEW_STATUS.md`. The earlier counts below are historical.
+Latest results are in `docs/REVIEW_STATUS.md` and `evidence/final-session-20261024/FINAL_RESULTS.json`. Two fresh33-record samples and11visible-price checks passed today, but broader32/64-record attempts failed store checks. Latest-code hard-kill recovery was not completed. The earlier counts below are historical.
 October 23 work added a 259-record broader partial attempt, a 57-record current-core live run,
 three genuine unavailable records, 11 passing visible-price spot checks, and page/product-stage
 SIGKILL recovery. A repeat failed on location context; resource guards stopped long testing.

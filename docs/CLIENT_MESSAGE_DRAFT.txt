@@ -1,14 +1,23 @@
-Latest package: https://github.com/RuddiRodriguez/walmart-azure-scraper
+UNSENT DRAFT — 24 October 2026, 12:27 CEST (UTC+2)
 
-I've updated the code, instructions, logs and source evidence. The historical 500-product demonstration passes validation with no duplicate IDs or URLs. Local evidence also includes three genuine unavailable products and successful page/product interruption and restart checks.
+Hi,
 
-Recent fixes stop blocked requests immediately, remove redundant category URLs, prevent wrong-store checkpoints from reopening Chrome, and strengthen price and ZIP checks. Four short offline suites passed. Short targeted checks included a single-category visit and a separate three-category sequence. All monitored responses matched the intended store, but neither reproduced the fault; no new full live run was performed.
+Here’s my latest completed review package:
+https://github.com/RuddiRodriguez/walmart-azure-scraper/tree/review-20261024-final
 
-Still open, with possible next steps:
+The source, running instructions and logs are included. evidence/products-500.json contains 500 genuine, distinct products across all 11 main categories, with zero duplicate IDs or URLs. This is the earlier live demonstration, not a fresh full run of the final version. Source records and store/fulfillment/price evidence are included.
 
-- Store reliability: one recent run accepted 33 products; its repeat stopped after 12 when store context changed. Trace where that context changes; earlier store-reselection and cookie trials didn't solve it.
-- Full coverage and sustained runs: collect outstanding categories in fresh, measured batches with more memory/disk headroom, then compare complete repeated runs. Older checkpoints require their original code.
-- Volume/digital offers: capture qualifying live examples and verify their prices and conditions. Current deal examples are synthetic tests.
-- Azure and assigned store: confirm the intended store and VM access, then repeat collection, recovery and scheduling checks there. Setup files are included; Azure execution remains untested.
+Today, two fresh 33-product samples passed with the same products and prices. Eleven separate visible-page checks also matched Store 100, pickup, Walmart seller and prices. I fixed category pagination and strengthened listing-store checks; nine final offline suites passed.
 
-The completed portion is reviewable now. Reliable full collection remains unproven, so I can't give a dependable completion time until store reliability and target-environment testing are resolved.
+The main issue remains intermittent store context. Broader attempts stopped safely after 32 and 64 accepted products; the latter received Sacramento Store 3081 data despite a Bentonville Store 100 banner. Neither run was published. Re-fetching returned the right store, but this is not a proven fix. A possible next step is a supported store-specific product source; the ItemById route tested so far was challenged.
+
+Still outstanding:
+- Complete category coverage and sustained repeats: finish measured full runs after store consistency is resolved.
+- Live volume/digital offers: capture qualifying examples and verify their conditions; current promotion tests are synthetic.
+- Final-version recovery: earlier local page/product hard-kill recovery passed, but today’s bounded attempt did not reach its planned interruption. Repeat it with enough time for committed work.
+- Azure and assigned store: setup and twice-weekly scheduling files are included, but Azure has not been run. I need the assigned store and approved VM access before that verification.
+
+This completed portion is ready for review as of 24 October 2026, 12:27 CEST (UTC+2). I’m stopping further broad experiments at this point. I can’t responsibly give a completion date for full acceptance until the store-context blocker is resolved and the target environment is available. docs/REVIEW_STATUS.md separates live results, offline checks and remaining work.
+
+Thanks,
+Ruddi

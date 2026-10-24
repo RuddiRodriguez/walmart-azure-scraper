@@ -1,9 +1,25 @@
-Python scraper with 500 validated products across 11 categories, Store 100 (Bentonville, ZIP 72712). Packaged runner also passed a 22-product live check.
+UNSENT REFERENCE COPY
 
-Zero duplicate product IDs/URLs. Pickup store, Walmart seller and current prices checked per product. 468 UPCs and 381 verbatim PPM values. Sponsored, marketplace and shipping-only offers excluded.
+UNSENT DRAFT — 24 October 2026, 12:27 CEST (UTC+2)
 
-Includes configurable stores/categories, child-category discovery, pagination, SQLite checkpoints, retries, logs, yield checks and atomic output publication. Azure Ubuntu installation and twice-weekly systemd schedule included. No paid scraping API or proxy.
+Hi,
 
-Source, JSON, evidence and reports kept in a private repository; available for private review. Existing 500-record evidence predates the packaged runner. Full-catalog coverage, live volume/digital deal examples and Azure acceptance remain to be demonstrated.
+Here’s my latest completed review package:
+https://github.com/RuddiRodriguez/walmart-azure-scraper/tree/review-20261024-final
 
-AI used to implement code under my direction. Retailer data and logo belong to Walmart.
+The source, running instructions and logs are included. evidence/products-500.json contains 500 genuine, distinct products across all 11 main categories, with zero duplicate IDs or URLs. This is the earlier live demonstration, not a fresh full run of the final version. Source records and store/fulfillment/price evidence are included.
+
+Today, two fresh 33-product samples passed with the same products and prices. Eleven separate visible-page checks also matched Store 100, pickup, Walmart seller and prices. I fixed category pagination and strengthened listing-store checks; nine final offline suites passed.
+
+The main issue remains intermittent store context. Broader attempts stopped safely after 32 and 64 accepted products; the latter received Sacramento Store 3081 data despite a Bentonville Store 100 banner. Neither run was published. Re-fetching returned the right store, but this is not a proven fix. A possible next step is a supported store-specific product source; the ItemById route tested so far was challenged.
+
+Still outstanding:
+- Complete category coverage and sustained repeats: finish measured full runs after store consistency is resolved.
+- Live volume/digital offers: capture qualifying examples and verify their conditions; current promotion tests are synthetic.
+- Final-version recovery: earlier local page/product hard-kill recovery passed, but today’s bounded attempt did not reach its planned interruption. Repeat it with enough time for committed work.
+- Azure and assigned store: setup and twice-weekly scheduling files are included, but Azure has not been run. I need the assigned store and approved VM access before that verification.
+
+This completed portion is ready for review as of 24 October 2026, 12:27 CEST (UTC+2). I’m stopping further broad experiments at this point. I can’t responsibly give a completion date for full acceptance until the store-context blocker is resolved and the target environment is available. docs/REVIEW_STATUS.md separates live results, offline checks and remaining work.
+
+Thanks,
+Ruddi

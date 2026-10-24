@@ -1,0 +1,64 @@
+{
+  "prepared_local": "24 October 2026, 12:27 CEST (UTC+2)",
+  "version": "review-20261024-final",
+  "historical_records": 500,
+  "historical_dataset_unchanged": true,
+  "fresh_samples": [
+    {
+      "name": "diagnostic-c",
+      "records": 33,
+      "seconds": 613.89,
+      "source_audit": true
+    },
+    {
+      "name": "repeat-d",
+      "records": 33,
+      "seconds": 596.86,
+      "source_audit": true
+    }
+  ],
+  "repeat_common_ids": 33,
+  "repeat_price_changes": 0,
+  "broader_attempts": [
+    {
+      "name": "fresh-506-a",
+      "records": 32,
+      "seconds": 301.91,
+      "error": "Store banner mismatch",
+      "published": false
+    },
+    {
+      "name": "fresh-506-c",
+      "records": 64,
+      "seconds": 631.46,
+      "error": "Product857115210 returned3081/95829/SHIPPING despite100 banner",
+      "published": false
+    }
+  ],
+  "visible_price_checks": {
+    "records": 11,
+    "store_seller_pickup_passed": 11,
+    "visible_response_price_match": 11,
+    "historical_saved_price_match": 11
+  },
+  "latest_recovery": {
+    "hard_kill_performed": false,
+    "reason": "180-second observation window elapsed before qualifying interruption",
+    "sigint_after_timeout": true,
+    "accepted_records": 1,
+    "source_audit": true,
+    "resume_executed": false
+  },
+  "prior_live_recovery": "Oct23 page/product SIGKILL and restart passed; original code/evidence retained",
+  "offline_suites_passed": 9,
+  "remaining": [
+    "Sustained store reliability",
+    "Fresh complete500+ collection with final runner",
+    "All category/subcategory traversal",
+    "Genuine live volume and digital deals",
+    "Latest-code successful live hard-kill/resume",
+    "Assigned store confirmation",
+    "Azure execution and scheduler verification"
+  ],
+  "client_contact": false
+}

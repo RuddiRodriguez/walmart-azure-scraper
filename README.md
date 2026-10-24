@@ -3,30 +3,25 @@
 Python scraper with local Chrome, configurable stores/categories, transactional checkpoints,
 source evidence, validation and atomic publication. No paid proxies or scraping APIs.
 
-## Current status
+## Current status — 24 October 2026
 
-Final demonstration review: store-context reliability remains unresolved. Latest profile test
-passed 33 records, then failed its repeat after 12. Wrong-store data was not published.
-Unsuccessful trial options have been removed from the main collector; their evidence and
-versioned trial code remain available in Git history. See `docs/REVIEW_STATUS.md`.
+Review package with an unresolved store-context reliability issue. The historical
+500-product JSON is genuine, distinct and source-audited; it predates a completed full run
+of this runner. All 11 parent categories are represented, which does not prove full coverage.
 
+Today's two fresh33-product samples passed source audits with identical products/prices.
+Eleven visible-page checks passed. Broader attempts stopped after32 and64 accepted records
+on store mismatch and were not published. The latest hard-kill test timed out before performing
+the planned interruption; earlier successful local recovery evidence remains separately dated.
+Nine final offline suites passed. Primary pagination and listing-store checks were improved.
 
-October 23 review: see `WORK_LOG.md` and `docs/REVIEW_STATUS.md` for the latest evidence and gaps.
-Run `python review_package.py` to re-audit the historical demonstration and generate checksums.
-This is an offline audit, not a fresh scrape. `check_review_changes.py` uses explicitly synthetic
-availability variants and an offline checkpoint check.
+Full coverage, sustained repeats, live volume/digital offers, latest-code recovery and Azure
+execution remain unproven. Store 100 is still a trial location. No further broad experiments
+are planned without a supported fix. See docs/REVIEW_STATUS.md and
+evidence/final-session-20261024/FINAL_RESULTS.json for exact scope.
 
-The included **500-product evidence dataset** came from the preceding live feasibility scripts,
-not from a completed full-catalog run of this new runner. All 11 requested parent categories
-are represented; Store 100 pickup, seller and prices were checked on product pages.
-Latest local review: a broader attempt produced 259 valid partial records. An earlier core
-collected 57 records, including three genuinely unavailable local items, before the disk reserve
-stopped it. Eleven fresh visible-price checks passed. One 33-record repeat passed and another
-failed on a location mismatch. Live hard-kill recovery passed at page and product stages.
-
-Read `docs/REVIEW_STATUS.md` for the exact evidence and unresolved requirements. Full catalog
-coverage, consistent unattended runs, genuine volume/digital deal demonstrations and Azure
-execution remain unproven. Nothing was submitted to the contest holder during this review.
+Run `python review_package.py` for an offline audit of the historical dataset and checksums.
+No client message or contest submission was made during this review.
 
 ## Local setup
 

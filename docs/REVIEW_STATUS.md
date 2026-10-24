@@ -1,184 +1,95 @@
-# Final timed review — 24 October 2026 (in progress)
+# Final review — 24 October 2026
 
-Two fresh33-product samples across11 parents passed source audits with identical IDs/prices. Broader attempts stopped at32 and64 records on location mismatches; neither was published. Immediate diagnostic re-fetch/navigation returned the expected store, but no permanent reliability fix is established. No further broad attempts are planned. Final bounded live recovery/price checks are running; results pending. Azure access and client-assigned store remain unconfirmed. Final packaging will distinguish all completed and outstanding requirements. No client communication or submission.
+This is a completed local demonstration package, with unresolved production requirements.
+No scraper or live check remains running. No client message, contest submission, Azure deployment
+or GitHub release was made during this review. See FINAL_RESULTS.json under
+`evidence/final-session-20261024/` and WORK_LOG.md for exact observations and history.
 
-# Local acceptance review — 23 October 2026
+## Version and running instructions
 
-The package contains usable source and genuine collection evidence. It is not yet proven reliable
-for complete unattended collection or Azure production. The 23 October live scraper processes stopped; see the current review below for later checks.
-Nothing has been submitted or messaged to the contest holder during this review.
+Version tag: `review-20261024-final`. Source/configuration/dependencies are in the repository.
+Local setup and full/sample/resume commands: README.md. Existing Ubuntu VM setup, recovery,
+store/category extension and twice-weekly scheduling: docs/OPERATIONS.md and deploy/.
+The timer/install files are supplied, not proof of Azure execution or scheduler acceptance.
+`requirements-review.txt` adds dependencies for local review tools; the collector uses requirements.txt.
 
-## Quick offline follow-up
+## Completed live evidence
 
-Saved ItemById inspection found HTTP 412 challenge data, not product data. No alternate product source was validated. Raw bodies/visitor identifiers remain private; `evidence/itembyid-inspection.json` contains a sanitized finding.
+- Historical `evidence/products-500.json`:500 genuine distinct products, all 11 parent categories,
+  zero duplicate IDs/URLs. Its unchanged SHA256 is frozen in the session plan. Product/source
+  context, seller, price, schema and ZIP passed the final offline audit. It predates a complete
+  run of the final packaged runner; it is not today's full collection.
+- Fresh diagnostic-c and repeat-d:33 accepted records each,3 per parent,613.89/596.86seconds.
+  Same33 IDs, zero price changes. Both source audits passed. Samples do not publish production data.
+- Live primary Diapering pages1/2:Store 100/PICKUP retained;38 new page-two identifiers. Listing
+  IDs do not count as accepted detail records. Not proof of exhaustive pagination elsewhere.
+- Fresh visible-page comparison:11/11 checks matched Store 100,72712,PICKUP,Walmart seller,
+  visible/response price and historical saved price. UPC/PPM observations are preserved in checks.json.
+- Earlier genuine unavailable examples and successful live page/product SIGKILL/restart evidence
+  remain in evidence/observed-unavailable-replay.json and its referenced source evidence and evidence/hard-product-recovery/ (see directory contents
+  and original timestamps). These do not prove recovery with today's changed code or Azure.
 
-Quick fixes: immediate stop on HTTP 412, and category-queue deduplication for tracking/fragments while preserving page numbers and functional filters. Saved queue analysis removes 17 aliases from 1,259 entries; this does not demonstrate fresh coverage. Four short offline suites passed (`evidence/quick-fix-checks.json`). No live test or long run performed; store reliability limitation remains. Start a fresh run with this version; old checkpoints require their original code.
+Evidence: evidence/final-session-20261024/{diagnostic-c,repeat-d,primary-pagination-live,
+price-spot-check,repeat-comparison.json}. Historical500 and source-records remain at evidence/.
+Raw HTML/checkpoints remain private under ignored data/. Public source projections, hashes,
+selected-store screenshots and logs contain no browser cookie values or session credentials.
 
-## Additional quick fixes
+## Failed live attempts and safeguards
 
-Previously location-mismatched runs now fail before opening Chrome or requesting products.
-They remain permanently ineligible for publication. This avoids wasting another browser session;
-it does not repair store drift. Failure logs identify `resume_validation`.
+- Broad fresh-506-a:32 accepted records,301.91seconds; stopped at Feeding banner mismatch.
+- Broad fresh-506-c:64 accepted records,631.46seconds; Clorox 857115210 returned Store 3081,
+  ZIP 95829,SHIPPING despite a visible Store 100 banner. The identical diagnostic re-fetch and
+  native navigation both returned100/72712/PICKUP. That does not establish a permanent fix.
+- Accepted subsets passed source audits. Both runs remain failed and were not published.
+  Their overlapping records must not be summed into a fresh distinct500-product result.
+- Requirement: any location mismatch fails validation and prevents publication of its run,
+  including resume. A retry cannot make that run acceptable. Start fresh after investigation.
+- Today’s hard-kill observation window elapsed after180-seconds before the required interruption
+  point. No SIGKILL occurred. The coordinator then sent SIGINT, leaving1 accepted source-audited
+  record; no resume was executed. This is an incomplete latest-code recovery test.
+- Four-visit short banner replay did not reproduce the banner issue. Its Diapering URL was /cp,
+  rather than the configured /browse URL; Feeding used the failing URL. Its scope is limited.
 
-Price validation rejects a sale above its regular price or a sale without a regular price.
-The historical-package audit now runs full record validation and checks the source response ZIP
-alongside store ID, pickup and seller evidence. Four short offline suites passed, including
-synthetic wrong-source-ZIP, wrong-output-ZIP and invalid-sale audit cases. The existing 500-product
-baseline passed. See `evidence/quick-final-checks.json` and `evidence/package-audit-checks.json`.
-No live crawl, long test, Azure deployment or client submission occurred.
+## Resolved implementation issues
 
-Earlier drafts understated existing local evidence: three genuine unavailable items and both
-page-stage and product-stage live hard-kill recovery were already demonstrated. Full-scale and
-Azure verification remain outstanding. `docs/CLIENT_MESSAGE_DRAFT.txt` reflects that distinction.
+Primary JavaScript pagination now follows the explicitly observed sequential page metadata,
+preserves filters and rejects loops/unexpected jumps. Placeholder landing-widget links are not
+mistaken for primary catalog pagination. Primary listing store IDs are checked. A Food embedded
+widget declared3081 while the banner showed100; that non-primary shelf was not consumed.
+Optional tracing logs safe banner/context snapshots and response cache/date metadata. The review
+wrapper captures rejected detail/banner context without changing acceptance rules.
+Earlier fixes stop HTTP412 immediately, deduplicate category URL aliases, reject invalidated
+checkpoints before Chrome, cancel timed-out requests and validate sale/ZIP consistency.
 
-## Short targeted live follow-up
+## Offline verification
 
-One fresh guest session completed in 66.51 seconds. Two distinct products (control pumpkin 47428850
-and previously failed toothpaste 391706535) were requested before and after visiting Personal Care;
-the category was scrolled twice and the target requested once more. All five product responses
-reported Store 100, ZIP 72712 and PICKUP; all 14 visible-banner snapshots matched. The only observed
-tracked location cookie was assortmentStoreId and its value did not change. locDataV3 and
-locGuestData were absent; this does not establish that all client/server context was stable.
+Nine final offline scripts passed, including historical source replay; Python compilation and
+installer shell syntax passed. Probe-failure simulations preserve the original rejection.
+Offline promotion/unavailable variations are synthetic; they are not fresh live offers.
+See final-offline-suites.json, banner-probe-offline.json and evidence/review-audit.json.
 
-Mismatch was not reproduced, so no change point or permanent fix was established. Production
-collection/store safeguards are unchanged. This test omits multi-category traversal, other
-products, long sessions and repeated fresh sessions. Five responses represent two product IDs,
-not five new catalog records. Evidence and sanitized source contexts:
-`evidence/store-context-trace-short/`. Raw HTML and selector screenshots stay private under data/.
-The bounded diagnostic is reusable as `trace_store_context.py`; it stops at 180 seconds or failure.
-No full crawl, Azure execution or client communication occurred.
+## Outstanding work and potential next steps
 
-## Short category-switch follow-up
+1. Sustained store reliability:investigate a supported store-specific product source with
+   unambiguous local context. Tested ItemById was challenged; prior native-page,cache-busting,
+   reselection and free transport trials did not prove a reliable solution. No supported
+   permanent fix is established, so broad trials have stopped.
+2. Full category/subcategory coverage and repeat/runtime acceptance:after a supported store fix,
+   run the full pending queue and compare complete fresh runs. Every visited/skipped/blocked page
+   already has an evidence trail; all 11 parent samples do not prove full traversal.
+3. Genuine volume/digital offers:collect qualifying live examples, verify displayed prices and
+   conditions, and retain source proof. Existing promotion cases are synthetic checks.
+4. Latest-code hard-kill recovery:allow a longer bounded initial collection to reach committed
+   work, kill the selected process, then resume identical code/configuration and audit the result.
+5. Assigned store and Azure:client must confirm the store and provide approved existing VM access.
+   Then verify collection,recovery,resource usage and the twice-weekly timer there. No az CLI,
+   VM credentials/access or approved target was available; no Azure execution is claimed.
 
-A separate fresh guest session visited Diapering → Beauty → Personal Care, with two scrolls per
-parent. The same control pumpkin and previously failed toothpaste were checked before the sequence
-and after each visit. All eight responses matched identity and Store 100/PICKUP/72712; all 26
-banner snapshots matched. Observed assortmentStoreId was unchanged; locDataV3/locGuestData were
-absent. Runtime: 112.99 seconds, within the 180-second cap.
+## Completion and scope
 
-Switching these three parents did not reproduce the mismatch for these two products. This does
-not rule out different sequences, other products or longer-session effects. No child traversal,
-category-specific inventory validation, full run or new production publication occurred. No
-production fix was justified. The diagnostic now accepts an explicit category sequence; collector
-safeguards remain unchanged. Sanitized events, results, source contexts, hashes and offline source
-checks are in `evidence/store-context-switches-short/`. Raw HTML remains private under data/.
-No client communication or Azure work occurred.
-
-## Final demonstration decision
-
-User requested ending further experiments and finalizing the reviewable portion. No client submission or message performed.
-
-Latest dedicated-profile trial: A passed 33 products; B stopped after 12 products because the product response changed store context. Both accepted subsets passed source audits. No failed run published production data.
-
-Additional free trials also failed repeated reliability checks:
-
-| Approach | Observed result |
-|---|---|
-| Playwright shared-cookie requests | Challenges in all six sessions across two comparisons |
-| curl sessions, including Chrome compatibility | Challenges in all six sessions |
-| Browser targeted-request diagnostics | 42/42 passed, but omitted category traversal |
-| Store reselection after category navigation | 33 passed, 33 passed, then mismatch after 25 |
-| Pickup-only product request query | 33 passed, 33 passed, then mismatch after 15 |
-| Restoring retailer-issued location cookies | 33 passed, 33 passed, then mismatch after 2 |
-| Dedicated reusable browser profile | 33 passed, then mismatch after 12 |
-
-The main collector retains the previously verified memory cleanup, request cancellation, readiness and ZIP checks. Failed experimental options were removed. Their code remains in versioned history (notably 1e017bf, 5554bb8, 4580879 and 5f7ff19). New client-state and network observations are exploratory only, not validated fixes. Raw network responses and browser profiles remain excluded from Git and delivery.
-
-This package is a working demonstration with a documented reliability limitation. It is not ready to claim full unattended production acceptance. Historical 500-product JSON remains included; these repeat samples are not a new complete catalog run. No full completion time can be promised from the available results.
-
-## Latest follow-up results
-
-A later eight-request cache probe on both recently rejected product URLs returned correct Store 100 pickup context with both original and fresh-query URLs. Every response reported cache-status Miss. This did not reproduce the fault or justify a cache-busting fix; evidence is under `evidence/cache-context-probe`.
-
-
-Post-cleanup request-path sample A passed 33 records (543.20 seconds); B failed after 21 records (383.89 seconds) with Sacramento Store 3081 SHIPPING data. Both accepted datasets passed source replay. A fresh exact-product probe returned correct Store 100 context through both fetch and navigation: the cause remains intermittent and unproven.
-
-A fully loaded page trial passed 33 records once (722.26 seconds), then failed after 23 (643.32 seconds) on another location mismatch. That trial was reverted. No passing repeated-run claim.
-
-Parser cleanup reduced retained allocations in an isolated synthetic check from about 6.3 MB to 24 KB. Live request runs peaked at 171–173 MB Python RSS and 1,959–2,090 MB browser-child RSS. This does not establish long-run memory stability. Browser requests now cancel on timeout; store selection waits for controls; canaries verify ZIP.
-
-Headless Chrome hit a retailer challenge. Eleven minimize-attempt price checks passed, but Chrome window state returned to normal; hidden-window operation on this Mac remains unresolved. Linux Xvfb is supplied but untested on Azure.
-
-Repository is public by user request. The historical package and walkthrough predate these follow-up tests; latest evidence folders and this report take precedence.
-
-## What we have
-
-| Requirement | Evidence and boundary |
-|---|---|
-| 500 genuine distinct products | `evidence/products-500.json` and corresponding source records. Historical live collection, rechecked offline; all 11 parent categories represented. This is not a new complete catalog run. |
-| Broader live collection | Intermediate attempt reached 259 accepted records and 27 completed pages. `evidence/full-attempt-v3-final/` preserves its partial data, sources and queue. |
-| Latest collector live check | `evidence/final-local/`: 57 accepted records, 11 completed parent pages, 458.78 seconds. It stopped at the disk reserve; 1,036 pages remain pending. No full publication. |
-| Correct store and fulfillment | DOM name/address, response Store 100, ZIP 72712, pickup intent and local fulfillment checked. Screenshots show Bentonville S Walton Blvd Supercenter, 406 S Walton Blvd. Store 100 is still a trial location, not confirmed client assignment. |
-| Independent visible price checks | `evidence/visible-price-check/`: 11 fresh product pages, one randomly selected record per represented category. All visible prices matched the saved record and structured response; store, seller and pickup checks passed. |
-| Unavailable-product retention | `evidence/unavailable-fresh/`: three genuine records from fresh listing-to-detail collection. Explicit local OUT_OF_STOCK evidence is retained; shipping prices/PPM are not copied. All three replayed correctly. |
-| Exact schema and data checks | Ordered 22 string fields; missing values empty; UPC preserved; GUPC and unit_price empty; PPM copied, not calculated. Offline audits passed for the historical 500 and each exported accepted dataset. |
-| Duplicate and exclusion controls | Product IDs deduplicated before detail collection. Sponsored, marketplace, outside-category and approximate-weight exclusions recorded. Own-seller candidates without a pickup summary require detail verification; they are not automatically accepted as local. |
-| Abrupt recovery | Live page-stage SIGKILL preserved four prior page commits. Live product-stage SIGKILL preserved six records; the interrupted request was retried and committed once. `evidence/hard-page-recovery/` and `evidence/hard-product-recovery/`. |
-| Failed-run protection | Live incomplete/failed runs did not publish. Offline tests verify prior-output preservation, atomic success, transaction rollback, same-job overlap rejection and permanent publication blocking after a location mismatch. |
-| Source and operations | Unencrypted Python source, pinned runtime requirements, captured local dependency versions, configuration, recovery/extension instructions and existing-VM installation/timer files supplied. |
-
-Counts from different runs overlap. Do not add them together as a unique-product total.
-
-## What is missing, and why
-
-| Missing acceptance result | Exact reason and next dependency |
-|---|---|
-| Complete category/subcategory exhaustion | Not observed. Latest tested run has 1,036 pending pages; earlier broader attempt had 1,232 pending. Queues are separate snapshots, not counts to combine. Every available category cannot be claimed from parent representation. |
-| Consistently successful unattended repeats | Repeat A completed 33 records in 552.93 seconds. Repeat B failed after seven records with a location mismatch; its event span was about 340 seconds. `evidence/repeat-comparison.json` records seven common IDs and no price changes among those IDs. The second run is a failure, not a passing repeat. |
-| Stable fulfillment over a long run | Two earlier attempts received mismatched location context. One exact product worked in a fresh session, but the cause was not established. The original rejected responses predated pre-validation capture and are not available; new capture behavior is verified offline. No claim that the retailer/context issue is permanently fixed. |
-| Long-run resource stability on this Mac | A 3 GiB reserve stopped the latest crawl at 2.888 GiB free. Free space later fell to roughly 0.36 GiB, then recovered after process closure. A fresh browser experiment tripped at 0.578 GiB. The project's saved files were about 470 MiB; system swap was substantial. Root cause remains unproven. The attempted back-navigation-cache setting was reverted after an inconclusive test. More storage/memory headroom or a measured resource fix is needed before another long run. |
-| Genuine volume/digital deal demonstrations | No qualifying live examples verified. Ordinary sales exist. Synthetic examples cover the specified wording and no-invented-price rules; unknown local promotion shapes block full publication. Do not label synthetic offers as live. |
-| Azure execution and scheduling proof | Not run. Client VM address, OS/configuration and approved access path were not supplied. Local acceptance also remains incomplete. Azure stays last, as requested. Installer syntax was checked; that is not Linux/Azure runtime evidence. |
-| Assigned location and previous private feedback | The supplied brief/reminder are available. Store assignment and a complete previous private-feedback thread are not. These cannot be assumed resolved. |
-
-## Changes completed
-
-- Check product details after each listing page, spread work across categories, prioritize pagination
-  and listings, and preserve landing pages in the queue.
-- Log page/product starts, retries, exact failures, candidate outcomes and skipped-link reasons.
-- Check actual response ZIP and scraped store name/address against the configuration.
-- Retain verified local unavailable items while omitting unverified shipping prices and offers.
-- Save product responses before validation and preserve rejected responses separately.
-- Permanently bar a location-mismatched run from publication, even after a later resume. Use a fresh
-  run for publication; do not relax this check to obtain a passing result.
-- Reject malformed schema, duplicate IDs, inconsistent dates/prices and unresolved detail reviews.
-- Keep code/configuration signatures in both modes. Mark runtime incomplete after an unclean kill.
-- Add reproducible offline checks, live recovery evidence, source audits, resource logging and a
-  review disk guard. The guard intentionally stops only the explicitly selected review process.
-
-## Test labels
-
-`check_requirements.py` has 54 named offline checks. `check_browser_failures.py` has 15 offline
-HTTP/timeout/shape/canary checks. `check_review_changes.py`, `check_storage_recovery.py` and
-`check_runner_flow.py` cover unavailable cases, prior publication, transaction kills and runner flow.
-Their JSON reports explicitly identify simulated data/navigation. Offline success is not live or
-Azure acceptance. The recorded walkthrough demonstrates local checks and saved evidence only.
-
-## Reproduce and continue
-
-See `README.md` and `docs/OPERATIONS.md`. Install Chrome and the pinned Python requirements.
-The earlier tested core matched run signature
-`0a08a06154f867e5f1ab9964e8e10bd39949562e39545e8bb8a6c6e9737ca599`.
-
-The following earlier checkpoint requires its original code; current code must start a fresh run:
-
-```bash
-python scrape.py --store 100 --output data/final-local-20261023 --resume
-```
-
-Use the exact same code and configuration. This checkpoint stopped for disk pressure and has no
-recorded location mismatch. Older code checkpoints must not be migrated silently. For a new run,
-omit `--resume`. Do not resume a location-mismatched run expecting it to publish.
-
-The raw HTML/checkpoints remain local under `data/`; the private package contains selected source
-responses, screenshots, hashes, logs and explicit coverage states. No browser/session state is
-included in the delivery archive.
-
-## Completion timing
-
-The completed local portion is reviewable now. No defensible full-acceptance completion date can
-be given while long-run resource stability, fulfillment consistency, assigned-store confirmation
-and Azure access remain unresolved. A dated estimate must follow those prerequisites and a timed
-complete run; promising completion before the contest closes would not be supported by these results.
-The previously saved deadline is 24 October 2026, 16:03:08 UTC / 18:03:08 CEST; check the live contest
-countdown before any eventual submission. No submission is authorized by this review.
+The completed review portion is available now. Store 100 remains a trial location. Source,JSON,
+logs,evidence,instructions and a recorded local/offline walkthrough are packaged. The final draft
+client message is unsent. A full-acceptance date cannot be responsibly estimated until the store
+context issue is resolved and the assigned environment is available. Further work means a supported
+store fix, full observed collection/repeats, deal/recovery checks and Azure acceptance; it is
+substantial validation, not just uploading files. No deadline promise is made from partial results.

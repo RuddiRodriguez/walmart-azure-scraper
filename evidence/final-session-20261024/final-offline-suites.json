@@ -1,0 +1,54 @@
+{
+  "time_utc": "2026-10-24T10:26:59.050735+00:00",
+  "mode": "final offline suites; not live collection or Azure",
+  "passed": true,
+  "suites": [
+    {
+      "script": "check_requirements.py",
+      "exit_code": 0,
+      "seconds": 2.59
+    },
+    {
+      "script": "check_browser_failures.py",
+      "exit_code": 0,
+      "seconds": 2.57
+    },
+    {
+      "script": "check_review_changes.py",
+      "exit_code": 0,
+      "seconds": 2.38
+    },
+    {
+      "script": "check_storage_recovery.py",
+      "exit_code": 0,
+      "seconds": 0.47
+    },
+    {
+      "script": "check_runner_flow.py",
+      "exit_code": 0,
+      "seconds": 2.62
+    },
+    {
+      "script": "check_parse_memory.py",
+      "exit_code": 0,
+      "seconds": 5.99
+    },
+    {
+      "script": "check_page_urls.py",
+      "exit_code": 0,
+      "seconds": 0.31
+    },
+    {
+      "script": "check_package_audit.py",
+      "exit_code": 0,
+      "seconds": 3.83
+    },
+    {
+      "script": "replay_evidence.py",
+      "exit_code": 0,
+      "seconds": 1.02
+    }
+  ],
+  "python_compilation": "passed",
+  "installer_shell_syntax": true
+}
