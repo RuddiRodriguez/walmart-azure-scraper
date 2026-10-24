@@ -1,0 +1,64 @@
+{
+  "started_utc": "2026-10-24T09:21:31+00:00",
+  "packaging_starts_utc": "2026-10-24T14:36:31+00:00",
+  "finish_utc": "2026-10-24T15:21:31+00:00",
+  "timezone": "Europe/Amsterdam",
+  "packaging_starts_local": "2026-10-24T16:36:31+02:00",
+  "finish_local": "2026-10-24T17:21:31+02:00",
+  "base_commit": "d48f863df5b7d21aa0f59adda34c5067d5b45703",
+  "historical_products_sha256": "ac8bd8dddd1208faf803f0790e0df2378253e9236cd37357cd1433f11f674ba6",
+  "contest_countdown_observed": "6 hours, 40 minutes remaining; visible contest page, approximately 09:23 UTC",
+  "restrictions": [
+    "No client messages or contest submissions",
+    "No paid scraping services",
+    "Strict store and publication checks retained"
+  ],
+  "blockers": [
+    "Client-assigned store not confirmed; using trial Store 100",
+    "Azure host/access unavailable; az CLI absent"
+  ],
+  "phases": [
+    {
+      "minutes": [
+        0,
+        15
+      ],
+      "work": "baseline and prerequisites"
+    },
+    {
+      "minutes": [
+        15,
+        90
+      ],
+      "work": "bounded store diagnosis"
+    },
+    {
+      "minutes": [
+        90,
+        150
+      ],
+      "work": "supported fixes and repeat samples"
+    },
+    {
+      "minutes": [
+        150,
+        270
+      ],
+      "work": "fresh broader collection"
+    },
+    {
+      "minutes": [
+        270,
+        315
+      ],
+      "work": "Azure only after local acceptance and access; otherwise local evidence"
+    },
+    {
+      "minutes": [
+        315,
+        360
+      ],
+      "work": "freeze, audit, package, push, unsent client draft"
+    }
+  ]
+}

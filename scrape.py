@@ -12,7 +12,7 @@ from urllib.parse import urljoin
 
 from bs4 import BeautifulSoup
 
-from browser import open_browser, select_store, navigate, verify_banner, fetch_product, canary_check
+from browser import open_browser, select_store, navigate, verify_banner, fetch_product, canary_check, store_snapshot
 from extract import discover, listing_candidates, next_data, product_record
 from storage import connect, metadata, atomic_json, add_pages, save_page, save_product, records, page_url
 from validate import validate
@@ -66,6 +66,13 @@ def run(args):
     sb = None
     current_work = {}
     sample_counts = Counter(row['category'] for row in records(db))
+    prior_store_cookies = None
+
+    def trace_context(stage):
+        nonlocal prior_store_cookies
+        if settings.get('trace_store_context'):
+            snapshot, prior_store_cookies = store_snapshot(sb, store, prior_store_cookies)
+            log('store_context', stage=stage, **snapshot)
 
     def collect_products():
         nonlocal current_work
@@ -75,6 +82,7 @@ def run(args):
                 continue
             current_work = {'kind': 'product', 'id': key, 'url': candidate['url'], 'category': candidate['category']}
             log('product_started', **current_work)
+            trace_context('before_product_' + key)
             soup = fetch_product(sb, candidate['url'], settings, log)
             data = next_data(soup).get('data') or {}
             source_data = {'candidate': candidate, 'product': data.get('product'),
@@ -86,6 +94,10 @@ def run(args):
                 source_data.update(reason='validation_error', error=str(error))
                 stamp = datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%S%fZ')
                 atomic_json(output / 'sources' / 'rejected' / (key + '-' + stamp + '.json'), source_data)
+                try:
+                    trace_context('rejected_product_' + key)
+                except Exception as trace_error:
+                    log('store_trace_unavailable', error=str(trace_error))
                 raise
             finally:
                 soup.clear(decompose=True)
@@ -106,6 +118,7 @@ def run(args):
         current_work = {'kind': 'store_selection'}
         sb = open_browser(headless=settings.get('headless', False))
         logo = select_store(sb, store, settings, log, output)
+        trace_context('store_selected')
         canary_check(sb, store, settings)
         collect_products()
         page_count = db.execute("SELECT count(*) FROM pages WHERE status='done'").fetchone()[0]
@@ -128,6 +141,7 @@ def run(args):
                 verify_banner(soup, store)
                 soup.clear(decompose=True)
                 soup.decompose()
+                trace_context('category_loaded')
                 # Render lazy-loaded cards before matching structured data to visible offers.
                 stable = 0
                 prior_cards = -1

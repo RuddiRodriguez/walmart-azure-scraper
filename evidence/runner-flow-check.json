@@ -10,6 +10,7 @@
     "Rejected location response saved before validation failure",
     "Location mismatch permanently prevents publication even after resume",
     "Previously mismatched run rejected before browser launch or product request",
-    "Early resume failure records the failed validation stage"
+    "Early resume failure records the failed validation stage",
+    "Diagnostic snapshot failure cannot mask a location mismatch or its publication block"
   ]
 }

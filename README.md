@@ -172,3 +172,12 @@ python trace_store_context.py --categories Diapering Beauty "Personal Care" --ou
 
 `evidence/store-context-switches-short/` records a 112.99-second, three-category diagnostic.
 Eight responses matched Store 100 pickup; this does not establish complete or repeated reliability.
+
+### Optional store diagnosis
+
+Set `"trace_store_context": true` in a separate review configuration to log the visible store banner
+and location-cookie names/change flags before product requests and after a rejected response.
+Cookie values stay in memory. Diagnostic capture failure cannot hide the original validation
+error. Product response logs include status, final URL without query values, redirect flag and
+an allowlist of cache/date headers. These observations do not establish the cause of store drift.
+Start a fresh run after code/configuration changes.

@@ -1,7 +1,7 @@
 {
   "mode": "offline simulated HTTP/browser responses and synthetic canary mutations",
   "passed": true,
-  "count": 15,
+  "count": 16,
   "checks": [
     "HTTP 401 stops after expected bounded attempts",
     "HTTP 403 stops after expected bounded attempts",
@@ -13,6 +13,7 @@
     "Missing or malformed retailer JSON rejected",
     "Missing or malformed retailer JSON rejected",
     "Completed navigation exceeding latency threshold rejected",
+    "Response status, redirect and cache metadata logged without final URL query values",
     "Canary identity change stops collection",
     "Canary seller change stops collection",
     "Canary location change stops collection",

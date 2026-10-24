@@ -304,3 +304,11 @@ User authorized a short multi-category test, simple code, logging and push; no f
 - Offline reparse checked all eight private HTML captures, their SHA256 and published context projections. Expected visit order, response count and identity/store consistency passed; diagnostic compiled. No new broad/long offline suites.
 - Private raw HTML/screenshots/stdout: data/store-context-switches-20261023-short/ and matching .log. Public sanitized events/results, source contexts, hashes, summary and offline-checks: evidence/store-context-switches-short/. No cookie values/session IDs exported. Eight responses are two distinct IDs, not eight new catalog products.
 - Updated README, review status and unsent client draft. Regenerated historical 500 audit and tracked-file checksum manifest. No full crawl, Azure work, client message or submission.
+
+### Six-hour autonomous final session — 2026-10-24T09:21:31+00:00
+
+User authorized the six-hour plan; no messages or submissions. Baseline d48f863df5b7d21aa0f59adda34c5067d5b45703. Packaging reserved from 2026-10-24T16:36:31+02:00; finish 2026-10-24T17:21:31+02:00. Live countdown approximately 6h40 at 09:23 UTC. 48 GiB disk free, 16 GiB physical RAM, about 627 MiB swap used. az absent; no client VM/access or confirmed assigned store. Asked user for prerequisites while continuing trial Store 100. Historical 500 SHA frozen in evidence/final-session-20261024/plan.json.
+
+#### Initial instrumentation — 2026-10-24T09:25:21.411034+00:00
+
+Added optional store snapshots around real collection, plus response status/redirect/cache-date logging. No cookie values or request headers logged. Snapshot failure preserves the original location exception and permanent publication block. Browser and runner offline checks passed; synthetic snapshot checks verify name-only changes. First live sample uses three accepted products per parent, all 11 configured categories, tracing enabled, fresh checkpoint, and 8 GiB disk reserve. This is diagnosis, not a fixed-reliability claim.

@@ -3,6 +3,7 @@ import asyncio
 import json
 import re
 import time
+from urllib.parse import urlsplit
 
 from bs4 import BeautifulSoup
 from seleniumbase import sb_cdp
@@ -112,14 +113,34 @@ def verify_banner(soup, store):
         raise ValueError('Location mismatch in store banner')
 
 
+def store_snapshot(sb, store, previous=None):
+    """Observe store state; retain cookie values in memory, never in logs."""
+    cookies = {(c.name, c.domain, c.path): c.value for c in sb.get_all_cookies()
+               if c.name in ['locDataV3', 'locGuestData', 'assortmentStoreId']}
+    changed = [] if previous is None else sorted({key[0] for key in cookies.keys() | previous.keys()
+                                                 if cookies.get(key) != previous.get(key)})
+    soup = BeautifulSoup(sb.get_page_source(), 'html.parser')
+    banner = soup.select_one('[data-automation-id="fulfillment-banner"]')
+    text = banner.get_text(' ', strip=True) if banner else ''
+    soup.clear(decompose=True)
+    soup.decompose()
+    return {'banner': text, 'banner_matches': 'Pickup' in text and store['name'] in text,
+            'location_cookie_names': sorted({key[0] for key in cookies}),
+            'changed_location_cookie_names': changed}, cookies
+
+
 def fetch_product(sb, url, settings, log=None):
     # Abort the browser request too; cancelling Python's wait alone leaves fetch running.
     timeout_ms = max(1, int(settings['max_page_seconds'] * 1000))
-    expression = '(async () => { const controller = new AbortController(); const timer = setTimeout(() => controller.abort(), ' + str(timeout_ms) + '); try { const r = await fetch(' + json.dumps(url) + ', {signal: controller.signal, cache: "no-store"}); return {status:r.status, html:await r.text()}; } finally { clearTimeout(timer); } })()'
+    expression = '(async () => { const controller = new AbortController(); const timer = setTimeout(() => controller.abort(), ' + str(timeout_ms) + '); try { const r = await fetch(' + json.dumps(url) + ', {signal: controller.signal, cache: "no-store"}); const headers = Object.fromEntries(["date", "age", "cache-control", "cache-status", "x-cache", "vary"].map(k => [k, r.headers.get(k)]).filter(v => v[1] !== null)); return {status:r.status, url:r.url, redirected:r.redirected, headers, html:await r.text()}; } finally { clearTimeout(timer); } })()'
     for attempt in range(settings['retries']):
         try:
             result = sb.loop.run_until_complete(asyncio.wait_for(
                 sb.page.evaluate(expression, await_promise=True), timeout=settings['max_page_seconds']))
+            if log:
+                response_url = urlsplit(result.get('url', url))._replace(query='', fragment='').geturl()
+                log('product_response', url=url, response_url=response_url, status=result['status'],
+                    redirected=result.get('redirected', False), headers=result.get('headers', {}))
             if result['status'] in [401, 403, 412, 429]:
                 raise ValueError(f"Access blocked: HTTP {result['status']}; run stopped")
             if result['status'] != 200:

@@ -1,0 +1,21 @@
+{
+  "time_utc": "2026-10-24T09:24:54.695250+00:00",
+  "mode": "offline simulated browser/store states; no live requests",
+  "passed": true,
+  "suites": [
+    {
+      "script": "check_browser_failures.py",
+      "exit_code": 0
+    },
+    {
+      "script": "check_runner_flow.py",
+      "exit_code": 0
+    }
+  ],
+  "snapshot_checks": [
+    "Matching banner detected",
+    "Unchanged cookie detected",
+    "Changed cookie name recorded",
+    "Cookie values excluded from log projection"
+  ]
+}

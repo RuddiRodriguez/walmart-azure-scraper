@@ -59,6 +59,24 @@ def check():
         else:
             raise AssertionError('Slow navigation accepted')
     source = json.loads(Path('evidence/source-records.json').read_text())[0]['product']
+    messages = []
+    async def response_metadata(*args, **kwargs):
+        return {'status': 200, 'html': '<title>Offline product</title>',
+                'url': 'https://www.walmart.com/ip/1?session=synthetic-private-value',
+                'redirected': True, 'headers': {'cache-status': 'Miss'}}
+    loop = asyncio.new_event_loop()
+    try:
+        soup = fetch_product(SimpleNamespace(loop=loop, page=SimpleNamespace(evaluate=response_metadata)),
+                             'https://www.walmart.com/ip/1', settings,
+                             lambda event, **values: messages.append({'event': event, **values}))
+        soup.decompose()
+    finally:
+        loop.close()
+    assert messages[0]['event'] == 'product_response'
+    assert messages[0]['response_url'] == 'https://www.walmart.com/ip/1'
+    assert messages[0]['headers'] == {'cache-status': 'Miss'}
+    assert 'synthetic-private-value' not in json.dumps(messages)
+    checks.append('Response status, redirect and cache metadata logged without final URL query values')
     for name, mutate in [('identity',lambda p:p.update(usItemId='999999')),
                          ('seller',lambda p:p.update(sellerName='Other')),
                          ('location',lambda p:p['location'].update(intent='SHIPPING')),
