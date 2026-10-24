@@ -1,0 +1,56 @@
+{
+  "time_utc": "2026-10-24T09:41:24.926452+00:00",
+  "mode": "offline suites only; separate live collector unaffected",
+  "passed": true,
+  "suites": [
+    {
+      "script": "check_requirements.py",
+      "exit_code": 0,
+      "seconds": 2.67,
+      "local_log": "data/final-session-20261024/suite-check_requirements.py.log"
+    },
+    {
+      "script": "check_browser_failures.py",
+      "exit_code": 0,
+      "seconds": 2.68,
+      "local_log": "data/final-session-20261024/suite-check_browser_failures.py.log"
+    },
+    {
+      "script": "check_review_changes.py",
+      "exit_code": 0,
+      "seconds": 2.57,
+      "local_log": "data/final-session-20261024/suite-check_review_changes.py.log"
+    },
+    {
+      "script": "check_storage_recovery.py",
+      "exit_code": 0,
+      "seconds": 0.41,
+      "local_log": "data/final-session-20261024/suite-check_storage_recovery.py.log"
+    },
+    {
+      "script": "check_runner_flow.py",
+      "exit_code": 0,
+      "seconds": 2.17,
+      "local_log": "data/final-session-20261024/suite-check_runner_flow.py.log"
+    },
+    {
+      "script": "check_parse_memory.py",
+      "exit_code": 0,
+      "seconds": 4.38,
+      "local_log": "data/final-session-20261024/suite-check_parse_memory.py.log"
+    },
+    {
+      "script": "check_page_urls.py",
+      "exit_code": 0,
+      "seconds": 0.3,
+      "local_log": "data/final-session-20261024/suite-check_page_urls.py.log"
+    },
+    {
+      "script": "check_package_audit.py",
+      "exit_code": 0,
+      "seconds": 2.81,
+      "local_log": "data/final-session-20261024/suite-check_package_audit.py.log"
+    }
+  ],
+  "compilation": "passed"
+}
