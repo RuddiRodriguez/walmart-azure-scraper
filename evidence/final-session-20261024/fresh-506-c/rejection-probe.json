@@ -1,0 +1,55 @@
+{
+  "mode": "live diagnostic after a rejected product; cannot repair or publish its run",
+  "url": "https://www.walmart.com/ip/Clorox-No-Splash-Bleach-Morning-Bloom-77-fl-oz/857115210?fulfillmentIntent=Pickup&filters=%5B%7B%22intent%22%3A%22fulfillmentIntent%22%2C%22values%22%3A%5B%22Pickup%22%5D%7D%5D&classType=VARIANT&athbdg=L1102",
+  "observations": [
+    {
+      "mode": "same_page_fetch",
+      "source_sha256": "dbf389135cece82ee66214bb945f3e485789add1e671fd925ec03eb695d0111d",
+      "product_id": "857115210",
+      "store_id": "100",
+      "zip": "72712",
+      "intent": "PICKUP",
+      "store_matches": true,
+      "visible_store": {
+        "banner": "Pickup or delivery? Pickup Bentonville S Walton Blvd Supercenter",
+        "banner_matches": true,
+        "location_cookie_names": [
+          "assortmentStoreId"
+        ],
+        "changed_location_cookie_names": []
+      }
+    },
+    {
+      "mode": "visible_navigation",
+      "source_sha256": "8dbe549f86efb63dff2ef7c18ffb48ac9fc4c0c82615edd3386b797e6595e435",
+      "product_id": "857115210",
+      "store_id": "100",
+      "zip": "72712",
+      "intent": "PICKUP",
+      "store_matches": true,
+      "visible_store": {
+        "banner": "Pickup or delivery? Pickup Bentonville S Walton Blvd Supercenter",
+        "banner_matches": true,
+        "location_cookie_names": [
+          "assortmentStoreId"
+        ],
+        "changed_location_cookie_names": []
+      }
+    }
+  ],
+  "before_probe": {
+    "banner": "Pickup or delivery? Pickup Bentonville S Walton Blvd Supercenter",
+    "banner_matches": true,
+    "location_cookie_names": [
+      "assortmentStoreId"
+    ],
+    "changed_location_cookie_names": []
+  },
+  "rejected_context": {
+    "product_id": "857115210",
+    "store_id": "3081",
+    "zip": "95829",
+    "intent": "SHIPPING",
+    "store_matches": false
+  }
+}

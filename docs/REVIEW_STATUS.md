@@ -1,7 +1,11 @@
+# Final timed review — 24 October 2026 (in progress)
+
+Two fresh33-product samples across11 parents passed source audits with identical IDs/prices. Broader attempts stopped at32 and64 records on location mismatches; neither was published. Immediate diagnostic re-fetch/navigation returned the expected store, but no permanent reliability fix is established. No further broad attempts are planned. Final bounded live recovery/price checks are running; results pending. Azure access and client-assigned store remain unconfirmed. Final packaging will distinguish all completed and outstanding requirements. No client communication or submission.
+
 # Local acceptance review — 23 October 2026
 
 The package contains usable source and genuine collection evidence. It is not yet proven reliable
-for complete unattended collection or Azure production. All live scraper processes have stopped.
+for complete unattended collection or Azure production. The 23 October live scraper processes stopped; see the current review below for later checks.
 Nothing has been submitted or messaged to the contest holder during this review.
 
 ## Quick offline follow-up
