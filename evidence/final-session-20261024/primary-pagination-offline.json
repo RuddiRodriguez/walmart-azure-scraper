@@ -1,0 +1,10 @@
+{
+  "mode": "offline saved live primary-listing regression; no new requests",
+  "passed": true,
+  "checks": [
+    "JavaScript control target 2 maps to observed page query shape",
+    "Filters and blank query values preserved",
+    "Correct explicit primary listing store accepted",
+    "Wrong explicit primary listing store rejected"
+  ]
+}

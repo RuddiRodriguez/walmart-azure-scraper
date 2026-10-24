@@ -9,7 +9,7 @@ from types import SimpleNamespace
 from unittest.mock import patch
 from bs4 import BeautifulSoup
 
-from scrape import run, next_page_url
+from scrape import run, next_page_url, verify_listing_store
 
 
 def check():
@@ -25,6 +25,20 @@ def check():
     fixture = BeautifulSoup('<a aria-label="Next Page" href="?page=2&amp;povid=tracking">Next</a>', 'html.parser')
     assert next_page_url(fixture, root) == root + '?page=2'
     assert next_page_url(BeautifulSoup('<a aria-label="Next Page" href="' + root + '">Next</a>', 'html.parser'), root) == root
+    button = BeautifulSoup('<a aria-label="Next Page" href="#"></a>', 'html.parser')
+    button.a['data-dca-extras'] = json.dumps({'custom': [{'owner': 'search', 'name': 'paginationPage', 'value': '2'}]})
+    primary = {'paginationV2': {'pageProperties': {'page': 1, 'stores': '100'}, 'maxPage': 3}}
+    assert next_page_url(button, root + '?facet=brand%3AExample&empty=', primary) == root + '?facet=brand%3AExample&empty=&page=2'
+    verify_listing_store(primary, store)
+    wrong_primary = {'paginationV2': {'pageProperties': {'page': 1, 'stores': '3081'}, 'maxPage': 3}}
+    try:
+        verify_listing_store(wrong_primary, store)
+    except ValueError as error:
+        assert 'Location mismatch' in str(error)
+    else:
+        raise AssertionError('Wrong-store primary listing accepted')
+    button.a['data-dca-extras'] = json.dumps({'custom': [{'owner': 'search', 'name': 'paginationPage', 'value': '3'}]})
+    assert next_page_url(button, root, primary) == ''
     state = {}
     def navigate(sb, url, settings, log):
         second = '?page=2' in url
@@ -35,6 +49,7 @@ def check():
         if not second:
             soup.append(BeautifulSoup('<a aria-label="Next Page" href="' + root + '?page=2">Next</a>', 'html.parser'))
         state['html'] = str(soup)
+        state['url'] = url
         log('page_loaded', url=url, seconds=0)
         return soup
     def listing(soup, category, store):
@@ -44,6 +59,7 @@ def check():
     product.script.string = json.dumps({'props': {'pageProps': {'initialData': {'data': {'product': source['product']}}}}})
     sb = SimpleNamespace(scroll_down=lambda _: None, sleep=lambda _: None,
                          get_page_source=lambda: state.get('html', ''), quit=lambda: None,
+                         get_current_url=lambda: state.get('url', root),
                          save_screenshot=lambda _: None)
     with tempfile.TemporaryDirectory() as folder:
         folder = Path(folder)
@@ -107,7 +123,7 @@ def check():
             raise AssertionError('Cross-mode resume accepted')
     result = {'mode': 'offline simulated navigation; captured product fixture; no live browser or network',
               'passed': True, 'checks': ['Two pages traversed', 'Repeated product ID deduplicated',
-              'Complete valid full-mode result publishes atomically', 'Resume does not repeat committed product', 'Cross-mode resume rejected', 'Rejected location response saved before validation failure', 'Location mismatch permanently prevents publication even after resume', 'Previously mismatched run rejected before browser launch or product request', 'Early resume failure records the failed validation stage', 'Diagnostic snapshot failure cannot mask a location mismatch or its publication block', 'Placeholder and JavaScript next-page controls do not become URL loops', 'Real pagination URL and real loop targets preserved for validation']}
+              'Complete valid full-mode result publishes atomically', 'Resume does not repeat committed product', 'Cross-mode resume rejected', 'Rejected location response saved before validation failure', 'Location mismatch permanently prevents publication even after resume', 'Previously mismatched run rejected before browser launch or product request', 'Early resume failure records the failed validation stage', 'Diagnostic snapshot failure cannot mask a location mismatch or its publication block', 'Placeholder and JavaScript next-page controls do not become URL loops', 'Real pagination URL and real loop targets preserved for validation', 'Explicit next-page metadata preserves functional filters', 'Unexpected page jumps rejected', 'Explicit wrong-store primary listing rejected']}
     Path('evidence/runner-flow-check.json').write_text(json.dumps(result, indent=2) + '\n')
     print(json.dumps(result))
 

@@ -8,7 +8,7 @@ import json
 import time
 from datetime import datetime, timezone
 from pathlib import Path
-from urllib.parse import urljoin
+from urllib.parse import urljoin, urlsplit, urlunsplit, parse_qsl, urlencode
 
 from bs4 import BeautifulSoup
 
@@ -18,12 +18,31 @@ from storage import connect, metadata, atomic_json, add_pages, save_page, save_p
 from validate import validate
 
 
-def next_page_url(soup, current_url):
+def next_page_url(soup, current_url, search=None):
     link = soup.select_one('a[aria-label="Next Page"]')
     href = (link.get('href') or '').strip() if link else ''
-    if not href or href.startswith(('#', 'javascript:')):
+    if href and not href.startswith(('#', 'javascript:')):
+        return page_url(urljoin(current_url, href))
+    if not link or not search:
         return ''
-    return page_url(urljoin(current_url, href))
+    # Current buttons carry the next page explicitly; URL shape was observed live.
+    pagination = search.get('paginationV2') or {}
+    current = int((pagination.get('pageProperties') or {}).get('page') or 1)
+    extras = json.loads(link.get('data-dca-extras') or '{}')
+    target = next((int(item['value']) for item in extras.get('custom', [])
+                   if item.get('owner') == 'search' and item.get('name') == 'paginationPage'), 0)
+    if target != current + 1 or target > int(pagination.get('maxPage') or 1):
+        return ''
+    parts = urlsplit(current_url)
+    query = [(key, value) for key, value in parse_qsl(parts.query, keep_blank_values=True) if key != 'page']
+    query.append(('page', str(target)))
+    return page_url(urlunsplit((parts.scheme, parts.netloc, parts.path, urlencode(query), '')))
+
+
+def verify_listing_store(search, store):
+    props = ((search or {}).get('paginationV2') or {}).get('pageProperties') or {}
+    if props.get('stores') and str(props['stores']) != str(store['id']):
+        raise ValueError('Location mismatch in primary listing store context')
 
 
 def run(args):
@@ -171,6 +190,7 @@ def run(args):
                 source = hashlib.sha256(url.encode()).hexdigest()[:20] + '.html'
                 (output / 'sources' / source).write_text(str(soup))
                 candidates, rejected, search = listing_candidates(soup, category, store)
+                verify_listing_store(search, store)
                 atomic_json(output / 'sources' / (source + '.listing.json'), {'category': category, 'url': url, 'rejected': rejected, 'candidate_ids': [c['item_id'] for c in candidates]})
                 unresolved = [r for r in rejected if r['reason'] in ['not_rendered', 'missing_listing_fields', 'unexpected_product_url']]
                 if unresolved:
@@ -182,7 +202,7 @@ def run(args):
                 exclusions = ['recipes', r'shop[- ]all[- ]foods?$', 'farm[- ]animals']
                 links = discover(soup, categories[category]['URL'], exclusions, current_url=url, decisions=(decisions := []))
                 next_link = soup.select_one('a[aria-label="Next Page"]')
-                next_url = next_page_url(soup, url)
+                next_url = next_page_url(soup, sb.get_current_url() if search else url, search)
                 has_next = bool(next_url)
                 if next_link and not has_next:
                     decisions.append({'url': url, 'name': 'Next Page', 'action': 'skipped',

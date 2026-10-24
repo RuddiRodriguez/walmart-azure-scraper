@@ -13,6 +13,9 @@
     "Early resume failure records the failed validation stage",
     "Diagnostic snapshot failure cannot mask a location mismatch or its publication block",
     "Placeholder and JavaScript next-page controls do not become URL loops",
-    "Real pagination URL and real loop targets preserved for validation"
+    "Real pagination URL and real loop targets preserved for validation",
+    "Explicit next-page metadata preserves functional filters",
+    "Unexpected page jumps rejected",
+    "Explicit wrong-store primary listing rejected"
   ]
 }

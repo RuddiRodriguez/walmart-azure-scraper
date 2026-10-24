@@ -189,3 +189,8 @@ Use a fresh private output folder and the same normal collection configuration.
 
 `guard_review_disk.py` accepts `--stop-at 2026-10-24T14:36:31+00:00` to enforce a review cutoff
 with SIGINT. It targets only the selected collector PID and also retains its disk-reserve check.
+
+Primary listing pagination supports ordinary hrefs and observed JavaScript controls carrying an
+explicit sequential paginationPage. Query filters are retained. Wrong explicit primary-listing
+store metadata stops collection. Embedded landing-page recommendation/shelf widgets are not
+accepted as primary local catalog data merely because the visible banner matches.

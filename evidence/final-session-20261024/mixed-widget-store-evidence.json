@@ -1,0 +1,26 @@
+{
+  "mode": "offline projection of newly captured live pages; no new requests",
+  "time_utc": "2026-10-24T09:36:51.079818+00:00",
+  "food": {
+    "visible_banner": "Pickup or delivery? Pickup Bentonville S Walton Blvd Supercenter",
+    "html_sha256": "e2ced15017c60ebd6ac6b20b7d690b7e5d8d7f844b339d329953bbea94c54b1f",
+    "embedded_widgets": [
+      {
+        "type": "ItemStack",
+        "name": "Food Weekly Essentials Item Stack WEB Fri 10/16/2026 12:11:59 PM PDT",
+        "stores": "3081",
+        "facet": "shelf_id:7172997",
+        "page": 1,
+        "max_page": 15
+      }
+    ]
+  },
+  "diapering_primary": {
+    "stores": "100",
+    "facet": "fulfillment_method:Pickup",
+    "page": 1,
+    "html_sha256": "54682ef603e9cc4a5ecda75780742c9e81094af6f454f6d9933a03f1d6aefe8e"
+  },
+  "finding": "A Store 100 banner coexists with a Store 3081 embedded shelf. That shelf is not accepted as a local primary listing.",
+  "limit": "Does not prove that embedded shelves cause the previously rejected product response context."
+}
