@@ -41,9 +41,28 @@ def probe(sb, candidate, soup, store, settings, output):
             atomic_json(output / 'probe.json', result)
 
 
+def probe_banner(sb, soup, store, destination):
+    destination.mkdir(parents=True, exist_ok=True)
+    html = str(soup)
+    (destination / 'rejected.html').write_text(html)
+    banner = soup.select_one('[data-automation-id="fulfillment-banner"]')
+    result = {'mode': 'live observation after rejection; original failure preserved',
+              'source_sha256': hashlib.sha256(html.encode()).hexdigest(),
+              'rejected_banner': banner.get_text(' ', strip=True) if banner else '',
+              'observations': []}
+    cookies = None
+    for delay in [0, 1, 3]:
+        if delay:
+            sb.sleep(delay)
+        state, cookies = browser.store_snapshot(sb, store, cookies)
+        result['observations'].append({'delay_seconds': delay, **state})
+        atomic_json(destination / 'probe.json', result)
+
+
 def run(args):
     original_open = scrape.open_browser
     original_parse = scrape.product_record
+    original_verify = scrape.verify_banner
     sb = None
     settings = json.loads(Path(args.config).read_text())
 
@@ -64,13 +83,26 @@ def run(args):
                     atomic_json(Path(args.output) / 'probe-failure.json', {'error': str(probe_error)})
             raise
 
+    def verify_banner(soup, store):
+        try:
+            return original_verify(soup, store)
+        except ValueError as error:
+            if 'Location mismatch' in str(error):
+                try:
+                    probe_banner(sb, soup, store, Path(args.output) / 'banner-rejection')
+                except Exception as probe_error:
+                    atomic_json(Path(args.output) / 'banner-probe-failure.json', {'error': str(probe_error)})
+            raise
+
     scrape.open_browser = open_browser
     scrape.product_record = parse
+    scrape.verify_banner = verify_banner
     try:
         scrape.run(args)
     finally:
         scrape.open_browser = original_open
         scrape.product_record = original_parse
+        scrape.verify_banner = original_verify
 
 
 if __name__ == '__main__':

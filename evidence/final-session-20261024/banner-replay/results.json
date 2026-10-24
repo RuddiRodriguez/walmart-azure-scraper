@@ -1,0 +1,138 @@
+{
+  "mode": "short live banner observation; not a crawl or fix",
+  "observations": [
+    {
+      "category": "diapering/486190",
+      "delay": 0,
+      "source_sha256": "76480cce30e32675e8032f3cf863505d9226a2b7c961c3501d91dfac836acf6b",
+      "banner": "Pickup or delivery? Pickup Bentonville S Walton Blvd Supercenter",
+      "banner_matches": true,
+      "location_cookie_names": [
+        "assortmentStoreId"
+      ],
+      "changed_location_cookie_names": []
+    },
+    {
+      "category": "diapering/486190",
+      "delay": 2,
+      "source_sha256": "76480cce30e32675e8032f3cf863505d9226a2b7c961c3501d91dfac836acf6b",
+      "banner": "Pickup or delivery? Pickup Bentonville S Walton Blvd Supercenter",
+      "banner_matches": true,
+      "location_cookie_names": [
+        "assortmentStoreId"
+      ],
+      "changed_location_cookie_names": []
+    },
+    {
+      "category": "diapering/486190",
+      "delay": 3,
+      "source_sha256": "76480cce30e32675e8032f3cf863505d9226a2b7c961c3501d91dfac836acf6b",
+      "banner": "Pickup or delivery? Pickup Bentonville S Walton Blvd Supercenter",
+      "banner_matches": true,
+      "location_cookie_names": [
+        "assortmentStoreId"
+      ],
+      "changed_location_cookie_names": []
+    },
+    {
+      "category": "feeding/133283",
+      "delay": 0,
+      "source_sha256": "3e0deb8d19778e5f8eb17f1d210d9d51164ca31be3408e77f36b1fa082ea7b91",
+      "banner": "Pickup or delivery? Pickup Bentonville S Walton Blvd Supercenter",
+      "banner_matches": true,
+      "location_cookie_names": [
+        "assortmentStoreId"
+      ],
+      "changed_location_cookie_names": []
+    },
+    {
+      "category": "feeding/133283",
+      "delay": 2,
+      "source_sha256": "3e0deb8d19778e5f8eb17f1d210d9d51164ca31be3408e77f36b1fa082ea7b91",
+      "banner": "Pickup or delivery? Pickup Bentonville S Walton Blvd Supercenter",
+      "banner_matches": true,
+      "location_cookie_names": [
+        "assortmentStoreId"
+      ],
+      "changed_location_cookie_names": []
+    },
+    {
+      "category": "feeding/133283",
+      "delay": 3,
+      "source_sha256": "3e0deb8d19778e5f8eb17f1d210d9d51164ca31be3408e77f36b1fa082ea7b91",
+      "banner": "Pickup or delivery? Pickup Bentonville S Walton Blvd Supercenter",
+      "banner_matches": true,
+      "location_cookie_names": [
+        "assortmentStoreId"
+      ],
+      "changed_location_cookie_names": []
+    },
+    {
+      "category": "diapering/486190",
+      "delay": 0,
+      "source_sha256": "479e9325f0d34e142803e8a924159ebc796377c074a01550efbb1a21aed5a713",
+      "banner": "Pickup or delivery? Pickup Bentonville S Walton Blvd Supercenter",
+      "banner_matches": true,
+      "location_cookie_names": [
+        "assortmentStoreId"
+      ],
+      "changed_location_cookie_names": []
+    },
+    {
+      "category": "diapering/486190",
+      "delay": 2,
+      "source_sha256": "479e9325f0d34e142803e8a924159ebc796377c074a01550efbb1a21aed5a713",
+      "banner": "Pickup or delivery? Pickup Bentonville S Walton Blvd Supercenter",
+      "banner_matches": true,
+      "location_cookie_names": [
+        "assortmentStoreId"
+      ],
+      "changed_location_cookie_names": []
+    },
+    {
+      "category": "diapering/486190",
+      "delay": 3,
+      "source_sha256": "479e9325f0d34e142803e8a924159ebc796377c074a01550efbb1a21aed5a713",
+      "banner": "Pickup or delivery? Pickup Bentonville S Walton Blvd Supercenter",
+      "banner_matches": true,
+      "location_cookie_names": [
+        "assortmentStoreId"
+      ],
+      "changed_location_cookie_names": []
+    },
+    {
+      "category": "feeding/133283",
+      "delay": 0,
+      "source_sha256": "c0bc02638dc753105a18c6c66470e642ff2a955f0d9bd1fcc0928ea3826454c8",
+      "banner": "Pickup or delivery? Pickup Bentonville S Walton Blvd Supercenter",
+      "banner_matches": true,
+      "location_cookie_names": [
+        "assortmentStoreId"
+      ],
+      "changed_location_cookie_names": []
+    },
+    {
+      "category": "feeding/133283",
+      "delay": 2,
+      "source_sha256": "c0bc02638dc753105a18c6c66470e642ff2a955f0d9bd1fcc0928ea3826454c8",
+      "banner": "Pickup or delivery? Pickup Bentonville S Walton Blvd Supercenter",
+      "banner_matches": true,
+      "location_cookie_names": [
+        "assortmentStoreId"
+      ],
+      "changed_location_cookie_names": []
+    },
+    {
+      "category": "feeding/133283",
+      "delay": 3,
+      "source_sha256": "c0bc02638dc753105a18c6c66470e642ff2a955f0d9bd1fcc0928ea3826454c8",
+      "banner": "Pickup or delivery? Pickup Bentonville S Walton Blvd Supercenter",
+      "banner_matches": true,
+      "location_cookie_names": [
+        "assortmentStoreId"
+      ],
+      "changed_location_cookie_names": []
+    }
+  ],
+  "limit": "No mismatch reproduced. Diapering replay used a /cp URL rather than the configured /browse URL; Feeding used the actual failing URL. No source of original failure established."
+}
