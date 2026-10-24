@@ -1,0 +1,8 @@
+{"time": "2026-10-24T09:23:44.795242+00:00", "event": "run_started", "store": "100", "run_id": "20261024T092344785300Z", "resume": false, "unclean_resume": false, "signature": "867dfe4598f58ac2a9fba5713f7bd62b3a2ff10e0a22c4eb356edb4bf76d1192"}
+{"time": "2026-10-24T09:23:54.116125+00:00", "event": "page_loaded", "store": "100", "url": "https://www.walmart.com/", "seconds": 5.47}
+{"time": "2026-10-24T09:24:11.505365+00:00", "event": "store_selected", "store": "100", "name": "Bentonville S Walton Blvd Supercenter", "zip": "72712", "fulfillment": "PICKUP"}
+{"time": "2026-10-24T09:24:11.643255+00:00", "event": "store_context", "store": "100", "stage": "store_selected", "banner": "Pickup or delivery? Pickup Bentonville S Walton Blvd Supercenter", "banner_matches": true, "location_cookie_names": ["assortmentStoreId"], "changed_location_cookie_names": []}
+{"time": "2026-10-24T09:24:12.837436+00:00", "event": "page_started", "store": "100", "kind": "page", "category": "Food", "url": "https://www.walmart.com/cp/food/976759"}
+{"time": "2026-10-24T09:24:17.230944+00:00", "event": "page_loaded", "store": "100", "url": "https://www.walmart.com/cp/food/976759", "seconds": 4.39}
+{"time": "2026-10-24T09:24:17.801805+00:00", "event": "store_context", "store": "100", "stage": "category_loaded", "banner": "Pickup or delivery? Pickup Bentonville S Walton Blvd Supercenter", "banner_matches": true, "location_cookie_names": ["assortmentStoreId"], "changed_location_cookie_names": []}
+{"time": "2026-10-24T09:24:30.532717+00:00", "event": "stopped", "store": "100", "error": "Pagination loop; coverage incomplete", "error_type": "ValueError", "current_work": {"kind": "page", "category": "Food", "url": "https://www.walmart.com/cp/food/976759"}}

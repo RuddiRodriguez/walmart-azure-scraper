@@ -18,6 +18,14 @@ from storage import connect, metadata, atomic_json, add_pages, save_page, save_p
 from validate import validate
 
 
+def next_page_url(soup, current_url):
+    link = soup.select_one('a[aria-label="Next Page"]')
+    href = (link.get('href') or '').strip() if link else ''
+    if not href or href.startswith(('#', 'javascript:')):
+        return ''
+    return page_url(urljoin(current_url, href))
+
+
 def run(args):
     settings = json.loads(Path(args.config).read_text())
     store = next(s for s in settings['stores'] if str(s['id']) == args.store)
@@ -173,11 +181,15 @@ def run(args):
                     candidate['source'] = source
                 exclusions = ['recipes', r'shop[- ]all[- ]foods?$', 'farm[- ]animals']
                 links = discover(soup, categories[category]['URL'], exclusions, current_url=url, decisions=(decisions := []))
-                atomic_json(output / 'sources' / (source + '.links.json'), decisions)
                 next_link = soup.select_one('a[aria-label="Next Page"]')
-                has_next = bool(next_link and next_link.get('href'))
+                next_url = next_page_url(soup, url)
+                has_next = bool(next_url)
+                if next_link and not has_next:
+                    decisions.append({'url': url, 'name': 'Next Page', 'action': 'skipped',
+                                      'reason': 'placeholder_pagination_control'})
+                    log('pagination_control_not_navigable', category=category, url=url)
+                atomic_json(output / 'sources' / (source + '.links.json'), decisions)
                 if has_next:
-                    next_url = page_url(urljoin(url, next_link['href']))
                     if next_url == url or db.execute("SELECT 1 FROM pages WHERE category=? AND url=? AND status='done'", (category, next_url)).fetchone():
                         raise ValueError('Pagination loop; coverage incomplete')
                     links[next_url] = 'Next Page'

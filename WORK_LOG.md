@@ -312,3 +312,7 @@ User authorized the six-hour plan; no messages or submissions. Baseline d48f863d
 #### Initial instrumentation — 2026-10-24T09:25:21.411034+00:00
 
 Added optional store snapshots around real collection, plus response status/redirect/cache-date logging. No cookie values or request headers logged. Snapshot failure preserves the original location exception and permanent publication block. Browser and runner offline checks passed; synthetic snapshot checks verify name-only changes. First live sample uses three accepted products per parent, all 11 configured categories, tracing enabled, fresh checkpoint, and 8 GiB disk reserve. This is diagnosis, not a fixed-reliability claim.
+
+#### Landing-page pagination fix — 2026-10-24T09:27:31.285827+00:00
+
+First live run stopped after 44.12s with zero records: Food landing Next Page href was #, not a crawlable next URL. Store remained correct. Saved HTML has 205 discoverable child links. Added simple next_page_url helper ignoring fragment/JavaScript/empty hrefs; logs skipped control. Real self/previous URL loops remain detectable, and reported pagination without a navigable next link still fails. Saved-page regression and runner checks passed. Fresh diagnostic-b started; no live fix success claimed yet.

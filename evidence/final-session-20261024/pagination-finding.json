@@ -1,0 +1,14 @@
+{
+  "time_utc": "2026-10-24T09:27:31.285827+00:00",
+  "mode": "new live attempt; failed before collection, then offline saved-page regression",
+  "live_result": {
+    "records": 0,
+    "seconds": 44.12,
+    "failure": "Next Page placeholder # misclassified as URL loop",
+    "store_mismatch_seen": false
+  },
+  "saved_page_sha256": "e570bb957844569a9a441db782a0b6ecc6d3c39889d00c71420332d8d06c2565",
+  "fixed": "Placeholder/fragment/JavaScript controls logged and excluded from URL navigation; real loop targets retained; structured missing-next guard retained",
+  "offline_regression_passed": true,
+  "live_retest": "Fresh diagnostic-b in progress; no result claimed"
+}

@@ -9,7 +9,7 @@ from types import SimpleNamespace
 from unittest.mock import patch
 from bs4 import BeautifulSoup
 
-from scrape import run
+from scrape import run, next_page_url
 
 
 def check():
@@ -19,6 +19,12 @@ def check():
     store = settings['stores'][0]
     category = source['candidate']['category']
     root = 'https://www.walmart.com/browse/food/test/976759_123'
+    for href in ['#', '#page2', 'javascript:void(0)', '']:
+        fixture = BeautifulSoup('<a aria-label="Next Page" href="' + href + '">Next</a>', 'html.parser')
+        assert next_page_url(fixture, root) == ''
+    fixture = BeautifulSoup('<a aria-label="Next Page" href="?page=2&amp;povid=tracking">Next</a>', 'html.parser')
+    assert next_page_url(fixture, root) == root + '?page=2'
+    assert next_page_url(BeautifulSoup('<a aria-label="Next Page" href="' + root + '">Next</a>', 'html.parser'), root) == root
     state = {}
     def navigate(sb, url, settings, log):
         second = '?page=2' in url
@@ -101,7 +107,7 @@ def check():
             raise AssertionError('Cross-mode resume accepted')
     result = {'mode': 'offline simulated navigation; captured product fixture; no live browser or network',
               'passed': True, 'checks': ['Two pages traversed', 'Repeated product ID deduplicated',
-              'Complete valid full-mode result publishes atomically', 'Resume does not repeat committed product', 'Cross-mode resume rejected', 'Rejected location response saved before validation failure', 'Location mismatch permanently prevents publication even after resume', 'Previously mismatched run rejected before browser launch or product request', 'Early resume failure records the failed validation stage', 'Diagnostic snapshot failure cannot mask a location mismatch or its publication block']}
+              'Complete valid full-mode result publishes atomically', 'Resume does not repeat committed product', 'Cross-mode resume rejected', 'Rejected location response saved before validation failure', 'Location mismatch permanently prevents publication even after resume', 'Previously mismatched run rejected before browser launch or product request', 'Early resume failure records the failed validation stage', 'Diagnostic snapshot failure cannot mask a location mismatch or its publication block', 'Placeholder and JavaScript next-page controls do not become URL loops', 'Real pagination URL and real loop targets preserved for validation']}
     Path('evidence/runner-flow-check.json').write_text(json.dumps(result, indent=2) + '\n')
     print(json.dumps(result))
 
