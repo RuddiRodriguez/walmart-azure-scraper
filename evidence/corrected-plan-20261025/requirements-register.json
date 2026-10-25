@@ -23,13 +23,14 @@
     },
     {
       "request": "Paired complete wrong-store response and corrected re-fetch",
-      "status": "Open: historical-length probe stopped after38products on native navigation empty title; no drift",
+      "status": "Open: one67-product rendered-candidate probe reached historical length with no drift",
       "evidence": [
         "docs/STEP1_BASELINE_20261025.md",
         "evidence/corrected-plan-20261025/step2-results/summary.json",
         "evidence/corrected-plan-20261025/paginated-drift-probe/summary.json",
         "evidence/corrected-plan-20261025/rendered-pagination/probe-summary.json",
-        "evidence/corrected-plan-20261025/historical-length-probe/summary.json"
+        "evidence/corrected-plan-20261025/historical-length-probe/summary.json",
+        "evidence/corrected-plan-20261025/rendered-candidate-probe/summary.json"
       ],
       "completion_gate": "Actual complete wrong and corrected bodies from documented sequence; reviewed redacted copies; hashes; no reconstructed data"
     },
@@ -55,10 +56,11 @@
     },
     {
       "request": "Exclude invalid local prices; preserve unavailable products and last good output",
-      "status": "Safeguard evidence available with limited live scope",
+      "status": "Safeguard offline evidence plus three real unavailable products retained in bounded67-product live probe; full scope unproven",
       "evidence": [
         "evidence/diagnostic-20261025/step2-offline-checks.json",
-        "evidence/observed-unavailable-replay.json"
+        "evidence/observed-unavailable-replay.json",
+        "evidence/corrected-plan-20261025/rendered-candidate-probe/source-contexts.json"
       ],
       "completion_gate": "Invalid response cannot publish; supported local unavailable products retained; prior good data/pointer survives. Current matched sample had no unavailable items"
     },
