@@ -1,6 +1,8 @@
 """Inspect two bounded local-pickup offer searches. Never publishes product output."""
 import argparse
 import csv
+import hashlib
+import subprocess
 import json
 import os
 import re
@@ -13,11 +15,14 @@ from urllib.parse import urlencode
 from browser import open_browser, select_store, navigate, verify_banner, fetch_product
 from diagnostic_capture import make_capture, safe_url
 from extract import listing_candidates, next_data, pickup, product_record, promotion_fields
+from capture_store_drift import listing_from_rendered
+from inspect_rendered_pagination import rendered_next
+from scrape import verify_listing_store
 from storage import atomic_json
 from trace_store_context import product_context
 
 
-def review(output):
+def review(output, expanded=False):
     output = Path(output).resolve()
     if not output.is_relative_to(Path('data').resolve()):
         raise ValueError('Offer evidence must stay under ignored data/')
@@ -27,11 +32,17 @@ def review(output):
     store = settings['stores'][0]
     with Path('config/categories.csv').open() as source:
         categories = [r['Category (Auto)'] for r in csv.DictReader(source)]
-    state = {'started': time.monotonic(), 'limits': {'product_requests': 8, 'listing_requests': 2, 'seconds': 600},
+    queries = ['buy 2 save', '2 for', 'digital coupon', 'clip coupon'] if expanded else ['buy 2 save', 'digital coupon']
+    per_query = 4 if expanded else 3
+    seen = set()
+    state = {'started': time.monotonic(), 'limits': {'product_requests': len(queries) * per_query + 2, 'listing_requests': len(queries), 'seconds': 600},
              'product_requests': 0, 'listing_requests': 0, 'sequence': 0, 'body_bytes': 0}
     result = {'mode': 'bounded live offer inspection; not a catalog run',
               'started_utc': datetime.now(timezone.utc).isoformat(), 'queries': [], 'products': [],
-              'verified_examples': [], 'completed': False, 'paid_services_used': False}
+              'verified_examples': [], 'completed': False, 'paid_services_used': False,
+              'expanded_rendered_search': expanded, 'limits': state['limits'],
+              'source_commit': subprocess.check_output(['git', 'rev-parse', 'HEAD'], text=True).strip(),
+              'source_sha256': {p: hashlib.sha256(Path(p).read_bytes()).hexdigest() for p in ['review_live_offers.py', 'extract.py', 'scrape.py', 'capture_store_drift.py']}}
     sb = None
 
     def save():
@@ -64,32 +75,38 @@ def review(output):
         sb = open_browser()
         logo = select_store(sb, store, settings, log, output)
         control()
-        for query in ['buy 2 save', 'digital coupon']:
+        for query in queries:
             url = 'https://www.walmart.com/search?' + urlencode({'q': query, 'stores': '100', 'facet': 'fulfillment_method:Pickup'})
             entry = {'query': query, 'url': safe_url(url), 'inspected': 0}
             result['queries'].append(entry)
             page = navigate(sb, url, settings, log)
             verify_banner(page, store)
             page.decompose()
+            snapshot = output / f'query-{len(result["queries"])}.html'
+            if expanded:
+                rendered_next(sb, url, store, snapshot, log)
             page = fetch_product(sb, url, settings, capture=make_capture(output / 'captures', 'offers', state, 'listing'))
             try:
                 search = next_data(page).get('searchResult') or {}
                 props = (search.get('paginationV2') or {}).get('pageProperties') or {}
                 entry['listing_context'] = {k: props.get(k) for k in ['stores', 'facet', 'page']}
-                if str(props.get('stores') or '') != '100' or 'fulfillment_method:Pickup' not in str(props.get('facet') or ''):
-                    raise ValueError('Offer search lacks verified local-pickup source context')
+                verify_listing_store(search, store)
                 candidates = {}
                 for category in categories:
-                    local, _, _ = listing_candidates(page, category, store)
+                    local, _, _ = (listing_from_rendered(snapshot, page, category, store) if expanded
+                                   else listing_candidates(page, category, store))
                     for candidate in local:
                         candidates.setdefault(candidate['item_id'], candidate)
                 pattern = re.compile(r'\b\d+\s+for\s+\$|\bbuy\s+\d|when you buy|mix or match|must buy|digital coupon|\bclip\b|\bactivate\b', re.I)
                 ranked = sorted(candidates.values(), key=lambda c: not bool(pattern.search(c['text'])))
                 entry['eligible_candidates'] = len(ranked)
-                selected = ranked[:3]
+                selected = [c for c in ranked if c['item_id'] not in seen][:per_query]
+                entry['listing_sequence'] = state['sequence']
+                entry['selected_ids'] = [c['item_id'] for c in selected]
             finally:
                 page.decompose()
             for candidate in selected:
+                seen.add(candidate['item_id'])
                 page = fetch_product(sb, candidate['url'], settings, capture=make_capture(output / 'captures', 'offers', state))
                 try:
                     record, reason, product = product_record(candidate, page, store, settings['private_labels'], logo)
@@ -101,10 +118,11 @@ def review(output):
                            **product_context(product, store), 'accepted': record is not None, 'reason': reason,
                            'fields': fields, 'unknown_offer_shapes': unknown,
                            'description_visible_in_response': description_visible,
+                           'explicit_offer_price': bool(fields['volume_deals_price'] or fields['digital_deals_price']),
                            'current_local_price': (record['sale_price'] or record['regular_price']) if record else ''}
                     result['products'].append(row)
                     entry['inspected'] += 1
-                    if record and reason != 'retained_unavailable' and not unknown and description_visible:
+                    if record and reason != 'retained_unavailable' and not unknown and description_visible and row['explicit_offer_price']:
                         result['verified_examples'].append(row)
                     save()
                 finally:
@@ -130,7 +148,8 @@ def review(output):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output', required=True)
+    parser.add_argument('--expanded', action='store_true')
     args = parser.parse_args()
     os.umask(0o077)
-    if not review(args.output)['completed']:
+    if not review(args.output, args.expanded)['completed']:
         raise SystemExit(1)
