@@ -25,7 +25,9 @@ from trace_store_context import product_context
 REVIEW = ['Personal Care', 'Beauty', 'Feeding', 'Health & Wellness', 'Pets', 'Art Supplies', 'Office Supplies']
 
 
-def review(output, plan=None):
+def review(output, plan=None, seconds=600):
+    if seconds not in [180, 600]:
+        raise ValueError("Use a180or600second bounded review")
     output = Path(output).absolute()
     if not output.resolve().is_relative_to(Path('data').resolve()):
         raise ValueError('Private evidence must stay under data/')
@@ -52,7 +54,7 @@ def review(output, plan=None):
                          and category_id(case['url']).split('_')[-1] == ids[-1])
             if not supported:
                 raise ValueError('Selected page requires matching observed descendant ID evidence')
-    state = dict(started=time.monotonic(), limits=dict(product_requests=2, listing_requests=7, seconds=600),
+    state = dict(started=time.monotonic(), limits=dict(product_requests=2, listing_requests=len(cases), seconds=seconds),
                  product_requests=0, listing_requests=0, sequence=0, body_bytes=0)
     result = dict(mode='Live bounded category-root discovery only; no child crawl or publication',
                   started_utc=datetime.now(timezone.utc).isoformat(), completed=False, categories=[],
@@ -84,10 +86,10 @@ def review(output, plan=None):
             page.decompose()
 
     def timeout(*_):
-        raise TimeoutError('Category review ten-minute limit')
+        raise TimeoutError(f'Category review {seconds}-second limit')
 
     previous = signal.signal(signal.SIGALRM, timeout)
-    signal.alarm(600)
+    signal.alarm(seconds)
     save()
     try:
         sb = open_browser()
@@ -164,6 +166,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output', type=Path, required=True)
     parser.add_argument('--plan', type=Path)
+    parser.add_argument('--seconds', type=int, choices=[180, 600], default=600)
     args = parser.parse_args()
     os.umask(0o077)
-    review(args.output, args.plan)
+    review(args.output, args.plan, args.seconds)
