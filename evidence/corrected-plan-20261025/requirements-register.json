@@ -85,7 +85,7 @@
     },
     {
       "request": "Full uncapped coverage",
-      "status": "Open: ArtAprons returns HTTP200 empty-category payload; cause unresolved; scope/queue exhaustion still missing",
+      "status": "Open: valid ArtSets page freshly verified; ArtAprons empty-category issue and unresolved scope/queue exhaustion remain",
       "evidence": [
         "config/categories.csv",
         "config/stores.json",
@@ -96,7 +96,8 @@
         "evidence/corrected-plan-20261025/step6-remaining-scope/live-summary.json",
         "evidence/corrected-plan-20261025/step6-followup-scope/summary.json",
         "evidence/corrected-plan-20261025/step6-followup-scope/live-summary.json",
-        "evidence/corrected-plan-20261025/art-aprons-diagnostic/summary.json"
+        "evidence/corrected-plan-20261025/art-aprons-diagnostic/summary.json",
+        "evidence/corrected-plan-20261025/art-valid-route/summary.json"
       ],
       "completion_gate": "Every required category/subcategory/page accounted for; queue exhausted with exclusions justified; blocked/stopped/truncated run remains incomplete"
     },

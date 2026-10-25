@@ -1,0 +1,54 @@
+{
+  "mode": "One bounded fresh ArtSets page test plus offline source audit",
+  "source_commit": "8fd2961ac58fe87538ad88abdf5ec57a02b401d2",
+  "source_hashes": {
+    "review_category_coverage.py": "b9d960944b33838ba68a9293509bdebcd91592b487c2014a79d66fdb9a4a8bff",
+    "scrape.py": "ac43589987b1811f0b707f24eb1c1556d978b72f12a630caee784e7e50740e47",
+    "extract.py": "e252ee14a9e66c9be33220a014984e161192651759c9619202ecf73c39242605",
+    "browser.py": "2b46d80e5b5edd1b75c7cbf36d460d96da91cfd218e0b1dfa309dcc3459cec24",
+    "config/categories.csv": "65127cf3cd48f967ea3db0c4dd2be67de3f2ac1f6b60aef406c0778c999f3640"
+  },
+  "started_utc": "2026-10-25T20:34:07.475336+00:00",
+  "seconds": 42.777,
+  "counts": {
+    "product_requests": 2,
+    "listing_requests": 1,
+    "sequence": 3,
+    "body_bytes": 2107673
+  },
+  "limits": {
+    "product_requests": 2,
+    "listing_requests": 1,
+    "seconds": 180
+  },
+  "completed_attempt": true,
+  "valid_route": "https://www.walmart.com/browse/arts-crafts-sewing/art-sets/1334134_5899871_7148292",
+  "listing": {
+    "status": 200,
+    "store_id": "100",
+    "facet": "fulfillment_method:Pickup",
+    "category_id": "1334134_5899871_7148292",
+    "category_name": "Art Sets",
+    "title_present": true,
+    "reported_count": 53,
+    "primary_response_product_entries": 52,
+    "page": 1,
+    "max_page": 2
+  },
+  "visible_eligible_candidates": 36,
+  "product_details_collected": 0,
+  "initial_and_final_controls_passed": true,
+  "body_hashes_verified": 3,
+  "native_snapshot_hashes_verified": 1,
+  "unvisited_discovered_links": 13,
+  "raw_wrong_correct_pair_status": "Open",
+  "genuine_offers_status": "Open",
+  "art_aprons_status": "Open; alternative ArtSets page does not repair empty ArtAprons category",
+  "full_coverage_complete": false,
+  "limitations": [
+    "Single ArtSets page, not full Art category/queue exhaustion or repeated complete collection.",
+    "Rendered candidates and response entry counts not validated product records; no candidate details/prices collected.",
+    "Complete originals/unreviewed redaction drafts/native DOM private.",
+    "No production change, publication, paid service, Azure or client contact."
+  ]
+}

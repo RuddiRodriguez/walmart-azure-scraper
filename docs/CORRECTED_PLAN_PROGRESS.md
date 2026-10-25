@@ -100,3 +100,12 @@ Immediate failure is a fully loaded empty category payload, not merely insuffici
 retailer mapping/rendering/catalog cause remains unproven. Keep rejection; do not count page as
 complete or claim fixed. Full coverage, wrong/correct pair and genuine offers remain OPEN. No job
 running or client contact. Evidence: evidence/corrected-plan-20261025/art-aprons-diagnostic/.
+
+## Valid observed ArtSupplies alternative
+
+Exact root-observed ArtSets route1334134_5899871_7148292passed one fresh42.777second test.
+Captured response resolved ArtSets category ID/name, nonempty title and100/Pickup context.36eligible
+rendered candidates observed; no product details collected. Initial/final controls passed;3original
+Fetch body hashes and1native snapshot hash verified. This is one valid Art page, not an ArtAprons
+fix or full-category completion. Response pair/offers remain OPEN. No job running or client contact.
+Evidence: evidence/corrected-plan-20261025/art-valid-route/.
