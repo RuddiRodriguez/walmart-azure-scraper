@@ -1,0 +1,119 @@
+[
+  {
+    "category": "Office Supplies",
+    "url": "https://www.walmart.com/browse/office-supplies/whiteboards-dry-erase-boards/1229749_1565348",
+    "status": "root_reviewed_children_not_crawled",
+    "decisions": [
+      {
+        "url": "https://www.walmart.com/cp/1229749",
+        "name": "Office Supplies",
+        "action": "queued",
+        "reason": "category_link"
+      },
+      {
+        "url": "https://www.walmart.com/browse/boards-easels/whiteboards-dry-erase-boards/1229749_2661079_1565348",
+        "name": "Whiteboards & Dry Erase Boards",
+        "action": "queued",
+        "reason": "category_link"
+      },
+      {
+        "url": "https://www.walmart.com/browse/office-supplies/magnetic-boards/1229749_1565348_7012109",
+        "name": "Magnetic Boards",
+        "action": "queued",
+        "reason": "category_link"
+      },
+      {
+        "url": "https://www.walmart.com/browse/office-supplies/dry-erase-markers/1229749_9081741_3115238",
+        "name": "Dry Erase Markers",
+        "action": "queued",
+        "reason": "category_link"
+      },
+      {
+        "url": "https://www.walmart.com/browse/office-supplies/dry-erasers/1229749_5237975_2684798",
+        "name": "Dry Erase Board Cleaners",
+        "action": "queued",
+        "reason": "category_link"
+      },
+      {
+        "url": "https://www.walmart.com/browse/office-supplies/magnets/1229749_3417460_7835039",
+        "name": "Magnets",
+        "action": "queued",
+        "reason": "category_link"
+      },
+      {
+        "url": "https://www.walmart.com/browse/office-supplies/dry-erase-calendar-boards/1229749_1565348_6953414",
+        "name": "Dry Erase Calendar Boards",
+        "action": "queued",
+        "reason": "category_link"
+      },
+      {
+        "url": "https://www.walmart.com/browse/office-supplies/combination-boards/1229749_1565348_1653870",
+        "name": "Combination Boards",
+        "action": "queued",
+        "reason": "category_link"
+      },
+      {
+        "url": "https://www.walmart.com/browse/office-supplies/glass-whiteboards/1229749_1565348_6322322",
+        "name": "Glass Whiteboards",
+        "action": "queued",
+        "reason": "category_link"
+      },
+      {
+        "url": "https://www.walmart.com/browse/office-supplies/whiteboard-stand/1229749_1565348_4794338",
+        "name": "Whiteboard Stand",
+        "action": "queued",
+        "reason": "category_link"
+      },
+      {
+        "url": "https://www.walmart.com/browse/office-supplies/whiteboards/1229749_1565348_4161504",
+        "name": "All Whiteboards",
+        "action": "queued",
+        "reason": "category_link"
+      },
+      {
+        "url": "https://www.walmart.com/browse/boards-easels/1229749_2661079",
+        "name": "All Boards & Easels",
+        "action": "queued",
+        "reason": "category_link"
+      }
+    ],
+    "native_snapshot_sha256": "792ae814edc9ebf2822f4533a5e5600c77165cd0a41b3177b5ae411d4dff4ec7",
+    "native_context_verified": true,
+    "rejected_candidate_reasons": {
+      "outside_category": 2,
+      "sponsored": 4,
+      "marketplace": 26
+    },
+    "visible_candidates": 0,
+    "excluded_candidates": 32,
+    "discovered_child_urls": [
+      "https://www.walmart.com/cp/1229749",
+      "https://www.walmart.com/browse/boards-easels/whiteboards-dry-erase-boards/1229749_2661079_1565348",
+      "https://www.walmart.com/browse/office-supplies/magnetic-boards/1229749_1565348_7012109",
+      "https://www.walmart.com/browse/office-supplies/dry-erase-markers/1229749_9081741_3115238",
+      "https://www.walmart.com/browse/office-supplies/dry-erasers/1229749_5237975_2684798",
+      "https://www.walmart.com/browse/office-supplies/magnets/1229749_3417460_7835039",
+      "https://www.walmart.com/browse/office-supplies/dry-erase-calendar-boards/1229749_1565348_6953414",
+      "https://www.walmart.com/browse/office-supplies/combination-boards/1229749_1565348_1653870",
+      "https://www.walmart.com/browse/office-supplies/glass-whiteboards/1229749_1565348_6322322",
+      "https://www.walmart.com/browse/office-supplies/whiteboard-stand/1229749_1565348_4794338",
+      "https://www.walmart.com/browse/office-supplies/whiteboards/1229749_1565348_4161504",
+      "https://www.walmart.com/browse/boards-easels/1229749_2661079"
+    ],
+    "child_urls_not_visited": 12,
+    "fetch_context_verified": true,
+    "fetch_context": {
+      "stores": "100",
+      "facet": "fulfillment_method:Pickup",
+      "page": 1
+    },
+    "fetch_sequence": 2
+  },
+  {
+    "category": "Art Supplies",
+    "url": "https://www.walmart.com/browse/arts-crafts-sewing/art-aprons/1334134_5899871_4519281",
+    "status": "failed",
+    "decisions": [],
+    "error": "Empty page title; page may still be loading"
+  }
+]

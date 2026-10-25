@@ -85,7 +85,7 @@
     },
     {
       "request": "Full uncapped coverage",
-      "status": "Open:80remaining associations and61newURLs reviewed;11alias candidates supported,69unresolved; next bounded test stopped after5pages",
+      "status": "Open:69prior associations plus3new landing URLs unresolved; Office page inspected with zero eligible products, ArtAprons native empty title persists",
       "evidence": [
         "config/categories.csv",
         "config/stores.json",
@@ -93,7 +93,9 @@
         "evidence/corrected-plan-20261025/step6-link-scope/summary.json",
         "evidence/corrected-plan-20261025/step6-link-scope/live-summary.json",
         "evidence/corrected-plan-20261025/step6-remaining-scope/summary.json",
-        "evidence/corrected-plan-20261025/step6-remaining-scope/live-summary.json"
+        "evidence/corrected-plan-20261025/step6-remaining-scope/live-summary.json",
+        "evidence/corrected-plan-20261025/step6-followup-scope/summary.json",
+        "evidence/corrected-plan-20261025/step6-followup-scope/live-summary.json"
       ],
       "completion_gate": "Every required category/subcategory/page accounted for; queue exhausted with exclusions justified; blocked/stopped/truncated run remains incomplete"
     },

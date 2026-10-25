@@ -1,0 +1,55 @@
+{
+  "mode": "One bounded Office/Art live test stopped early; offline source audit",
+  "source_commit": "05e82d92a80c8b4abd9bfdc574c4005dec354502",
+  "source_hashes": {
+    "review_category_coverage.py": "b9d960944b33838ba68a9293509bdebcd91592b487c2014a79d66fdb9a4a8bff",
+    "scrape.py": "ac43589987b1811f0b707f24eb1c1556d978b72f12a630caee784e7e50740e47",
+    "extract.py": "e252ee14a9e66c9be33220a014984e161192651759c9619202ecf73c39242605",
+    "browser.py": "2b46d80e5b5edd1b75c7cbf36d460d96da91cfd218e0b1dfa309dcc3459cec24",
+    "config/categories.csv": "65127cf3cd48f967ea3db0c4dd2be67de3f2ac1f6b60aef406c0778c999f3640"
+  },
+  "started_utc": "2026-10-25T20:22:55.564811+00:00",
+  "seconds": 58.546,
+  "counts": {
+    "product_requests": 1,
+    "listing_requests": 1,
+    "sequence": 2,
+    "body_bytes": 1374313
+  },
+  "limits": {
+    "product_requests": 2,
+    "listing_requests": 2,
+    "seconds": 180
+  },
+  "completed_attempt": false,
+  "error": "Empty page title; page may still be loading",
+  "reviewed_category": "Office Supplies",
+  "failed_category": "Art Supplies / Art Aprons",
+  "body_hashes_verified": 2,
+  "native_snapshots_verified": 1,
+  "office_listing_store_pickup_verified": true,
+  "initial_control_passed": true,
+  "final_control_executed": false,
+  "product_details_collected": 0,
+  "visible_office_candidates": 0,
+  "discovered_link_occurrences_not_visited": 12,
+  "additional_unique_urls": 2,
+  "original_unresolved_associations": 69,
+  "new_unresolved_independent_urls": 3,
+  "full_coverage_complete": false,
+  "raw_wrong_correct_pair_status": "Open",
+  "genuine_offers_status": "Open",
+  "limitations": [
+    "ArtAprons native navigation failed before original failing response capture; repeated empty title does not prove cause.",
+    "Office page success is not full Office category coverage; product detail prices not tested.",
+    "No re-fetch/second run or final control after failure.",
+    "Complete originals/unreviewed sharing drafts/native snapshot private.",
+    "No publication, paid service, Azure or client contact.",
+    "Office page yielded zero eligible candidates:26marketplace,4sponsored,2outside-category exclusions; no first-party product collection proof."
+  ],
+  "office_candidate_exclusion_counts": {
+    "outside_category": 2,
+    "sponsored": 4,
+    "marketplace": 26
+  }
+}

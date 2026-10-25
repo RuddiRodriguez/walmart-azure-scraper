@@ -76,3 +76,15 @@ response capture; OfficeSupplies not reached. Initial control passed; final cont
 and5native snapshot hashes verified.132additional unique URLs recorded but not scope-reviewed. No
 recursive crawl or product dataset. Full coverage, raw pair and genuine offers remain OPEN. No job
 running; no client contact. Evidence: evidence/corrected-plan-20261025/step6-remaining-scope/.
+
+##69remaining entries and132new URLs
+
+All requested links re-reviewed against captured native evidence:69associations remain unresolved.
+New132URLs classify127ID-supported descendants,2root aliases,3independent landings unresolved.
+
+One180second-ceiling Office/Art test stopped58.546seconds: OfficeWhiteboards page returned correct
+100/Pickup context, but zero eligible products (26marketplace,4sponsored,2outside-category exclusions).
+ArtAprons again returned empty title before failing body capture. Initial control passed; final
+control not run.2body and1snapshot hashes verified.2additional URLs reviewed for ID ancestry only.
+Full coverage, raw response pair and offers remain OPEN. No job running or client contact.
+Evidence: evidence/corrected-plan-20261025/step6-followup-scope/.

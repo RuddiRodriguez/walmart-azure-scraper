@@ -1,0 +1,76 @@
+[
+  {
+    "id": "coverage-001",
+    "session": "coverage",
+    "kind": "product",
+    "sequence": 1,
+    "request": {
+      "url": "https://www.walmart.com/ip/Carving-Pumpkin-Each/47428850?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-25T20:23:21.024474+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Carving-Pumpkin-Each/47428850?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 20:23:21 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T20:23:22.009922+00:00",
+      "elapsed_seconds": 0.985
+    },
+    "body_bytes": 499044,
+    "body_sha256": "316fcb4e86b764d8a3f9ab27488f482389c71df4ce4a09db14e1eb84a0683556",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-002",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 2,
+    "request": {
+      "url": "https://www.walmart.com/browse/office-supplies/whiteboards-dry-erase-boards/1229749_1565348",
+      "attempt": 1,
+      "started_utc": "2026-10-25T20:23:37.157816+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/office-supplies/whiteboards-dry-erase-boards/1229749_1565348",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 20:23:37 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T20:23:37.322170+00:00",
+      "elapsed_seconds": 0.164
+    },
+    "body_bytes": 875269,
+    "body_sha256": "31528fc0e554847708421cdaf38e84b2ca7a9afa85a7b86ba5d534ccff7ccb17",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  }
+]
