@@ -10,7 +10,9 @@ import capture_store_drift as review
 
 def check():
     results = []
-    for drift in [False, True]:
+    for mode in ['normal', 'drift', 'pagination_gap']:
+        drift = mode == 'drift'
+        gap = mode == 'pagination_gap'
         counts = {'listings': 0, 'products': 0}
 
         def page():
@@ -28,7 +30,7 @@ def check():
         def candidates(*_):
             start = counts['listings'] * 100
             return ([{'item_id': str(i), 'url': f'https://www.walmart.com/ip/{i}'}
-                     for i in range(start, start + 10)], [], {})
+                     for i in range(start, start + 10)], [], {'paginationV2': {'maxPage': 2, 'pageProperties': {'page': 1}}})
 
         def context(*_):
             return {'product_id': 'synthetic', 'store_matches': not drift or counts['products'] > 1}
@@ -40,7 +42,7 @@ def check():
                  patch.object(review, 'store_snapshot', return_value=({}, {})), \
                  patch.object(review, 'navigate', side_effect=lambda *a: page()), \
                  patch.object(review, 'verify_banner'), patch.object(review, 'verify_listing_store'), \
-                 patch.object(review, 'next_page_url', side_effect=lambda p, url, search: url + '?page=next'), \
+                 patch.object(review, 'next_page_url', side_effect=lambda p, url, search: None if gap else url + '?page=next'), \
                  patch.object(review, 'fetch_product', side_effect=fetch), \
                  patch.object(review, 'listing_candidates', side_effect=candidates), \
                  patch.object(review, 'next_data', return_value={'data': {'product': {'usItemId': 'synthetic'}}}), \
@@ -56,6 +58,11 @@ def check():
                 assert result['counts']['product_requests'] == 2
                 assert result['accepted'] == []
                 results.append('Synthetic wrong/correct pair stops invalid run; retry cannot publish')
+            elif gap:
+                assert result['attempt_finished'] and not result['completed']
+                assert len(result['pagination_gaps']) == 2
+                assert result['counts']['listing_requests'] == 4
+                results.append('Reported extra pages without next controls leave expanded scope incomplete')
             else:
                 assert result['completed']
                 assert result['counts']['listing_requests'] == 8

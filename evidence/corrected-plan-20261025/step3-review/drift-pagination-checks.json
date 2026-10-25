@@ -3,6 +3,7 @@
   "passed": true,
   "checks": [
     "Synthetic paginated orchestration respects request limits",
-    "Synthetic wrong/correct pair stops invalid run; retry cannot publish"
+    "Synthetic wrong/correct pair stops invalid run; retry cannot publish",
+    "Reported extra pages without next controls leave expanded scope incomplete"
   ]
 }

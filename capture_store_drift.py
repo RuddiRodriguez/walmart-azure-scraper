@@ -37,7 +37,7 @@ def run(output, pages=1):
     state = dict(started=time.monotonic(), limits=dict(product_requests=60, listing_requests=2 * pages + 2, seconds=1200),
                  product_requests=0, listing_requests=0, sequence=0, body_bytes=0)
     report = dict(started_utc=datetime.now(timezone.utc).isoformat(), completed=False,
-                  pair_captured=False, observations=[], accepted=[], category_visits=0,
+                  pair_captured=False, pagination_gaps=[], observations=[], accepted=[], category_visits=0,
                   pages_per_large_category=pages, limits=state['limits'], mode='Private live diagnostic; no production output',
                   source_hashes={p: hashlib.sha256(Path(p).read_bytes()).hexdigest()
                                  for p in ['capture_store_drift.py', 'browser.py', 'extract.py', 'diagnostic_capture.py']})
@@ -118,6 +118,9 @@ def run(output, pages=1):
                         facet=props.get('facet'), candidates=len(candidates), excluded=len(rejected))
                     verify_listing_store(search, store)
                     following = next_page_url(page, url, search)
+                    pagination = (search or {}).get('paginationV2') or {}
+                    current_page = int(props.get('page') or 1)
+                    more_reported = current_page < int(pagination.get('maxPage') or 1)
                 finally:
                     page.decompose()
                 selected = [c for c in candidates if c['item_id'] not in seen]
@@ -129,10 +132,14 @@ def run(output, pages=1):
                     observe(candidate)
                     remaining -= 1
                 save()
+                if not following and more_reported and remaining and category in ['Balloons', 'Diapering'] and pages > 1:
+                    report['pagination_gaps'].append(dict(category=category, page=current_page,
+                                                         reason='More pages reported but no observed next-page control'))
                 if remaining == 0 or not following:
                     break
                 url = following
-        report['completed'] = True
+        report['attempt_finished'] = True
+        report['completed'] = not report['pagination_gaps']
     except Exception as error:
         report.update(error=str(error), error_type=type(error).__name__)
     finally:

@@ -23,10 +23,11 @@
     },
     {
       "request": "Paired complete wrong-store response and corrected re-fetch",
-      "status": "Open: latest bounded attempt finished without reproducing drift",
+      "status": "Open: latest bounded probe17 products; no drift; expanded pagination not reached",
       "evidence": [
         "docs/STEP1_BASELINE_20261025.md",
-        "evidence/corrected-plan-20261025/step2-results/summary.json"
+        "evidence/corrected-plan-20261025/step2-results/summary.json",
+        "evidence/corrected-plan-20261025/paginated-drift-probe/summary.json"
       ],
       "completion_gate": "Actual complete wrong and corrected bodies from documented sequence; reviewed redacted copies; hashes; no reconstructed data"
     },

@@ -1,0 +1,61 @@
+{
+  "started_utc": "2026-10-25T19:12:11.443056+00:00",
+  "counts": {
+    "product_requests": 17,
+    "listing_requests": 4,
+    "sequence": 21,
+    "body_bytes": 14735526
+  },
+  "seconds": 125.309,
+  "pair_captured": false,
+  "source_hashes": {
+    "capture_store_drift.py": "0ddf01c4d01351513d6aaad30d6ab29dcf6f19e200e646a95e90e24f58992a2e",
+    "browser.py": "2b46d80e5b5edd1b75c7cbf36d460d96da91cfd218e0b1dfa309dcc3459cec24",
+    "extract.py": "e252ee14a9e66c9be33220a014984e161192651759c9619202ecf73c39242605",
+    "diagnostic_capture.py": "617b898e43770eda6ed0650eeb2e51611e8e2569f1328075c1169ef73172eea5"
+  },
+  "source_commit": "9943fc2",
+  "attempt_finished": true,
+  "expanded_pagination_scope_completed": false,
+  "actual_distinct_products": 17,
+  "body_hashes_verified": 21,
+  "pagination_gaps": [
+    {
+      "url": "https://www.walmart.com/browse/party-occasions/balloons/2637_1042319_1212898_3956207",
+      "store_id": "100",
+      "facet": "fulfillment_method:Pickup",
+      "page": 1,
+      "maxPage": 5,
+      "next_control_present": false
+    },
+    {
+      "url": "https://www.walmart.com/browse/diapering/5427_486190",
+      "store_id": "100",
+      "facet": "fulfillment_method:Pickup",
+      "page": 1,
+      "maxPage": 11,
+      "next_control_present": false
+    },
+    {
+      "url": "https://www.walmart.com/browse/household-essentials/clorox/1115193_8250903_7784444",
+      "store_id": "100",
+      "facet": "fulfillment_method:Pickup",
+      "page": 1,
+      "maxPage": 3,
+      "next_control_present": false
+    }
+  ],
+  "limits": {
+    "product_requests": 60,
+    "listing_requests": 8,
+    "seconds": 1200
+  },
+  "verdict": "No store drift reproduced; raw-pair requirement remains open. Planned expanded pagination not reached.",
+  "limitations": [
+    "Only four first-page listings, not eight; 17 products, not a mature57-product sequence.",
+    "Complete Fetch-decoded originals and unreviewed redaction drafts remain private.",
+    "Raw report completed=true meant loop finished; offline review found pagination scope incomplete. Subsequent runner correction marks such gaps incomplete.",
+    "No retry, real offers, full coverage, reliability or Azure proof."
+  ],
+  "next_supported_investigation": "Observe native rendered next-page controls and retain link/page evidence before another larger bounded probe; do not invent next URLs or claim coverage."
+}
