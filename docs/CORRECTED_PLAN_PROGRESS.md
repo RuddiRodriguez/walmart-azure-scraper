@@ -88,3 +88,15 @@ ArtAprons again returned empty title before failing body capture. Initial contro
 control not run.2body and1snapshot hashes verified.2additional URLs reviewed for ID ancestry only.
 Full coverage, raw response pair and offers remain OPEN. No job running or client contact.
 Evidence: evidence/corrected-plan-20261025/step6-followup-scope/.
+
+## ArtAprons immediate failure diagnosed
+
+One49.811second Fetch/native comparison: Art route returned HTTP200 with empty title/category ID,
+zero products and no pagination. Native browser reported complete/200/no redirects; title remained
+blank through20seconds. Store100/Pickup banner verified at3/10/20seconds; initial product control
+passed. No visible challenge.2original Fetch body hashes and4serialized DOM hashes verified.
+
+Immediate failure is a fully loaded empty category payload, not merely insufficient wait. Underlying
+retailer mapping/rendering/catalog cause remains unproven. Keep rejection; do not count page as
+complete or claim fixed. Full coverage, wrong/correct pair and genuine offers remain OPEN. No job
+running or client contact. Evidence: evidence/corrected-plan-20261025/art-aprons-diagnostic/.

@@ -1,0 +1,48 @@
+{
+  "mode": "One bounded live Fetch/native comparison plus offline original-body audit",
+  "source_commit": "a0675ac4c3bbf8588a9fcc9d37e7a9ddc3dbbcfc",
+  "helper_sha256": "74f86cb4789ede49f7ec38ef04ec32ca58a93db152fe94aa00ea2f0ec142e2a3",
+  "started_utc": "2026-10-25T20:28:47.310008+00:00",
+  "seconds": 49.811,
+  "completed_attempt": true,
+  "counts": {
+    "product_requests": 1,
+    "listing_requests": 1,
+    "sequence": 2,
+    "body_bytes": 884618
+  },
+  "limits": {
+    "product_requests": 1,
+    "listing_requests": 1,
+    "seconds": 180
+  },
+  "native_target_loads": 1,
+  "body_hashes_verified": 2,
+  "native_snapshot_hashes_verified": 4,
+  "initial_store_control_passed": true,
+  "native_banner_verified_at_seconds": [
+    3,
+    10,
+    20
+  ],
+  "fetch_status": 200,
+  "native_timing_status": 200,
+  "native_redirect_count": 0,
+  "native_ready_state": "complete",
+  "title_empty_through_seconds": 20,
+  "visible_challenge_observed": false,
+  "category_payload": "Empty title/category ID, zero product items, no pagination, no structured errorResponse",
+  "immediate_diagnosis": "Title guard rejects a fully loaded empty category response, not merely a short wait for title. No proof yet why retailer returned that payload.",
+  "underlying_cause": "Unresolved: invalid/stale category mapping or retailer rendering/catalog failure are hypotheses, not confirmed.",
+  "next_supported_action": "Keep rejection; do not bypass title/store guards or count this page complete. Seek an independently observed valid Art category route before a separately bounded alternative test.",
+  "raw_wrong_correct_pair_status": "Open",
+  "genuine_offers_status": "Open",
+  "full_coverage_complete": false,
+  "limitations": [
+    "One guest session and one native target load; this does not prove repeat behavior or cause.",
+    "Navigation timing is browser telemetry, not a captured original native HTTP body; separate Fetch original is saved.",
+    "No products, local prices or working ArtAprons coverage established.",
+    "Complete originals/unreviewed redaction drafts/native DOM remain private.",
+    "No production change, paid service, Azure, publication or client contact."
+  ]
+}
