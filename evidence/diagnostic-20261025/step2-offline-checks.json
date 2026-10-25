@@ -1,0 +1,17 @@
+{
+  "mode": "offline synthetic checks; no retailer requests or browser launched",
+  "passed": true,
+  "checks": [
+    "Complete synthetic Fetch bytes retained before parser failure; hash and redacted metadata verified",
+    "Actual capture JavaScript executed offline with mocked Fetch; CRLF and invalid UTF8 bytes preserved",
+    "HTTP412 captured then stopped without retry",
+    "Request budget stops before network call",
+    "Raw evidence output outside ignored data rejected",
+    "Synthetic redaction removes known secrets while preserving product/store/price identifiers",
+    "Two matched A/B comparisons planned; six fresh sessions and36product/control requests",
+    "Synthetic wrong_store preserves last good; invalid output rejected or unavailable retained",
+    "Synthetic missing_zip preserves last good; invalid output rejected or unavailable retained",
+    "Synthetic unavailable preserves last good; invalid output rejected or unavailable retained"
+  ],
+  "live_acceptance": false
+}

@@ -1,0 +1,35 @@
+{
+  "mode": "offline regression checks only; no browser or retailer requests",
+  "passed": true,
+  "checks": [
+    {
+      "script": "check_browser_failures.py",
+      "exit_code": 0
+    },
+    {
+      "script": "check_review_changes.py",
+      "exit_code": 0
+    },
+    {
+      "script": "check_runner_flow.py",
+      "exit_code": 0
+    },
+    {
+      "script": "check_storage_recovery.py",
+      "exit_code": 0
+    },
+    {
+      "script": "check_requirements.py",
+      "exit_code": 0
+    },
+    {
+      "script": "check_page_urls.py",
+      "exit_code": 0
+    },
+    {
+      "script": "check_package_audit.py",
+      "exit_code": 0
+    }
+  ],
+  "compilation": "passed"
+}

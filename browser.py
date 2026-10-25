@@ -3,6 +3,7 @@ import asyncio
 import json
 import re
 import time
+from datetime import datetime, timezone
 from urllib.parse import urlsplit
 
 from bs4 import BeautifulSoup
@@ -129,14 +130,42 @@ def store_snapshot(sb, store, previous=None):
             'changed_location_cookie_names': changed}, cookies
 
 
-def fetch_product(sb, url, settings, log=None):
+def fetch_product(sb, url, settings, log=None, capture=None):
     # Abort the browser request too; cancelling Python's wait alone leaves fetch running.
     timeout_ms = max(1, int(settings['max_page_seconds'] * 1000))
-    expression = '(async () => { const controller = new AbortController(); const timer = setTimeout(() => controller.abort(), ' + str(timeout_ms) + '); try { const r = await fetch(' + json.dumps(url) + ', {signal: controller.signal, cache: "no-store"}); const headers = Object.fromEntries(["date", "age", "cache-control", "cache-status", "x-cache", "vary"].map(k => [k, r.headers.get(k)]).filter(v => v[1] !== null)); return {status:r.status, url:r.url, redirected:r.redirected, headers, html:await r.text()}; } finally { clearTimeout(timer); } })()'
+    body = 'return {status:r.status, url:r.url, redirected:r.redirected, headers, html:await r.text()};'
+    if capture:
+        # Fetch exposes decoded body bytes, not compressed/TLS wire bytes.
+        body = '''const reader = r.body.getReader(); const chunks = []; let length = 0;
+        while (true) {
+            const chunk = await reader.read(); if (chunk.done) break;
+            length += chunk.value.length;
+            if (length > 10485760) { await reader.cancel(); throw new Error("Diagnostic response exceeds 10 MiB"); }
+            chunks.push(chunk.value);
+        }
+        const bytes = new Uint8Array(length); let offset = 0;
+        for (const chunk of chunks) { bytes.set(chunk, offset); offset += chunk.length; }
+        let binary = "";
+        for (let i=0; i<bytes.length; i+=16384) binary += String.fromCharCode(...bytes.subarray(i,i+16384));
+        return {status:r.status, url:r.url, redirected:r.redirected, headers,
+                html:new TextDecoder().decode(bytes), body_base64:btoa(binary)};'''
+    expression = '(async () => { const controller = new AbortController(); const timer = setTimeout(() => controller.abort(), ' + str(timeout_ms) + '); try { const r = await fetch(' + json.dumps(url) + ', {signal: controller.signal, cache: "no-store"}); const headers = Object.fromEntries(["date", "age", "cache-control", "cache-status", "x-cache", "vary", "content-type"].map(k => [k, r.headers.get(k)]).filter(v => v[1] !== null)); ' + body + ' } finally { clearTimeout(timer); } })()'
     for attempt in range(settings['retries']):
+        started = time.monotonic()
+        if capture:
+            capture('request', url=url, attempt=attempt + 1, started_utc=datetime.now(timezone.utc).isoformat(),
+                    settings={'method': 'GET', 'cache': 'no-store', 'credentials': 'same-origin (browser default)',
+                              'redirect': 'follow (browser default)', 'timeout_seconds': settings['max_page_seconds'],
+                              'configured_attempts': settings['retries'], 'request_headers': 'browser-managed; not captured'})
         try:
             result = sb.loop.run_until_complete(asyncio.wait_for(
                 sb.page.evaluate(expression, await_promise=True), timeout=settings['max_page_seconds']))
+            if capture:
+                try:
+                    capture('response', result=result, elapsed_seconds=round(time.monotonic() - started, 3),
+                            received_utc=datetime.now(timezone.utc).isoformat())
+                except Exception as error:
+                    raise RuntimeError('Evidence capture failed; run stopped') from error
             if log:
                 response_url = urlsplit(result.get('url', url))._replace(query='', fragment='').geturl()
                 log('product_response', url=url, response_url=response_url, status=result['status'],
@@ -147,9 +176,11 @@ def fetch_product(sb, url, settings, log=None):
                 raise RuntimeError(f"Product HTTP {result['status']}")
             return check_html(result['html'])
         except Exception as error:
+            if capture:
+                capture('error', error_type=type(error).__name__, error=str(error))
             if log:
                 log('product_retry', url=url, attempt=attempt + 1, error=str(error))
-            if 'Access blocked' in str(error) or 'Challenge' in str(error) or attempt + 1 == settings['retries']:
+            if 'Evidence capture failed' in str(error) or 'Access blocked' in str(error) or 'Challenge' in str(error) or attempt + 1 == settings['retries']:
                 raise
             time.sleep(settings['delay_seconds'] * (attempt + 2))
 
