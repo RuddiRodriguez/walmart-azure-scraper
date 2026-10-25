@@ -1,0 +1,141 @@
+{
+  "started_utc": "2026-10-25T19:18:44.628696+00:00",
+  "completed": true,
+  "pair_captured": false,
+  "pagination_gaps": [],
+  "counts": {
+    "product_requests": 28,
+    "listing_requests": 8,
+    "sequence": 36,
+    "body_bytes": 25429425
+  },
+  "seconds": 233.671,
+  "source_hashes": {
+    "capture_store_drift.py": "56c437c1b323198f25420ae90ad66af216c5727c5116ef6502ea393cd09eb87f",
+    "browser.py": "2b46d80e5b5edd1b75c7cbf36d460d96da91cfd218e0b1dfa309dcc3459cec24",
+    "extract.py": "e252ee14a9e66c9be33220a014984e161192651759c9619202ecf73c39242605",
+    "diagnostic_capture.py": "617b898e43770eda6ed0650eeb2e51611e8e2569f1328075c1169ef73172eea5",
+    "scrape.py": "ac43589987b1811f0b707f24eb1c1556d978b72f12a630caee784e7e50740e47",
+    "inspect_rendered_pagination.py": "0e3745e228746939283d9a436beebfceee282fddf2266a0a77111130696def86"
+  },
+  "source_commit": "04fa66f",
+  "distinct_product_responses": 28,
+  "accepted_records": 28,
+  "complete_bodies_verified": 36,
+  "native_snapshots_verified": 8,
+  "rendered_pages": [
+    {
+      "time_utc": "2026-10-25T19:19:15.103381+00:00",
+      "event": "rendered_pagination",
+      "url": "https://www.walmart.com/browse/party-occasions/balloons/2637_1042319_1212898_3956207",
+      "page": 1,
+      "max_page": 5,
+      "store": "100",
+      "facet": "fulfillment_method:Pickup",
+      "next_url": "https://www.walmart.com/browse/party-occasions/balloons/2637_1042319_1212898_3956207?page=2",
+      "scrolls": 0,
+      "snapshot_sha256": "3ae3329ef467c80cca68d9fc341b2ff8c3c5f9c6601843d54dd6e0fa6c27c1a9",
+      "snapshot_scope": "Serialized rendered DOM, not original HTTP body"
+    },
+    {
+      "time_utc": "2026-10-25T19:19:42.959442+00:00",
+      "event": "rendered_pagination",
+      "url": "https://www.walmart.com/browse/party-occasions/balloons/2637_1042319_1212898_3956207?page=2",
+      "page": 2,
+      "max_page": 5,
+      "store": "100",
+      "facet": "fulfillment_method:Pickup",
+      "next_url": "https://www.walmart.com/browse/party-occasions/balloons/2637_1042319_1212898_3956207?page=3",
+      "scrolls": 0,
+      "snapshot_sha256": "efb7db2700a34d4ded6dc4e4b88b9ca9ea7c0933321b54513bcb13b1194c743d",
+      "snapshot_scope": "Serialized rendered DOM, not original HTTP body"
+    },
+    {
+      "time_utc": "2026-10-25T19:20:05.146543+00:00",
+      "event": "rendered_pagination",
+      "url": "https://www.walmart.com/browse/party-occasions/balloons/2637_1042319_1212898_3956207?page=3",
+      "page": 3,
+      "max_page": 5,
+      "store": "100",
+      "facet": "fulfillment_method:Pickup",
+      "next_url": "https://www.walmart.com/browse/party-occasions/balloons/2637_1042319_1212898_3956207?page=4",
+      "scrolls": 0,
+      "snapshot_sha256": "eb1830171aef573155652c660e300b08e9582d731aa8106d78c862075edd0a76",
+      "snapshot_scope": "Serialized rendered DOM, not original HTTP body"
+    },
+    {
+      "time_utc": "2026-10-25T19:20:21.877523+00:00",
+      "event": "rendered_pagination",
+      "url": "https://www.walmart.com/browse/diapering/5427_486190",
+      "page": 1,
+      "max_page": 11,
+      "store": "100",
+      "facet": "fulfillment_method:Pickup",
+      "next_url": "https://www.walmart.com/browse/diapering/5427_486190?page=2",
+      "scrolls": 0,
+      "snapshot_sha256": "c7fe1fe47696e430cf57dc75cb7ded123dce8a907fa00e18a94f1a5a4be9b81c",
+      "snapshot_scope": "Serialized rendered DOM, not original HTTP body"
+    },
+    {
+      "time_utc": "2026-10-25T19:20:50.950441+00:00",
+      "event": "rendered_pagination",
+      "url": "https://www.walmart.com/browse/diapering/5427_486190?page=2",
+      "page": 2,
+      "max_page": 11,
+      "store": "100",
+      "facet": "fulfillment_method:Pickup",
+      "next_url": "https://www.walmart.com/browse/diapering/5427_486190?page=3",
+      "scrolls": 0,
+      "snapshot_sha256": "d365eb705a1f541a59264df2b7c35df98836c8466a0720225f13547b8eccccb0",
+      "snapshot_scope": "Serialized rendered DOM, not original HTTP body"
+    },
+    {
+      "time_utc": "2026-10-25T19:21:04.202522+00:00",
+      "event": "rendered_pagination",
+      "url": "https://www.walmart.com/browse/diapering/5427_486190?page=3",
+      "page": 3,
+      "max_page": 11,
+      "store": "100",
+      "facet": "fulfillment_method:Pickup",
+      "next_url": "https://www.walmart.com/browse/diapering/5427_486190?page=4",
+      "scrolls": 0,
+      "snapshot_sha256": "7eadd71512a136993650c31010790a3ba34d18a0def7a36592371c99d6f69271",
+      "snapshot_scope": "Serialized rendered DOM, not original HTTP body"
+    },
+    {
+      "time_utc": "2026-10-25T19:22:05.433786+00:00",
+      "event": "rendered_pagination",
+      "url": "https://www.walmart.com/browse/food/porch-pumpkins/976759_976793_8739812",
+      "page": 1,
+      "max_page": 1,
+      "store": "100",
+      "facet": "fulfillment_method:Pickup",
+      "next_url": null,
+      "scrolls": 20,
+      "snapshot_sha256": "d6961e8ac185ab115966062821b885363689b6918e0440aaac0e662cc6eb183d",
+      "snapshot_scope": "Serialized rendered DOM, not original HTTP body"
+    },
+    {
+      "time_utc": "2026-10-25T19:22:21.314246+00:00",
+      "event": "rendered_pagination",
+      "url": "https://www.walmart.com/browse/household-essentials/clorox/1115193_8250903_7784444",
+      "page": 1,
+      "max_page": 3,
+      "store": "100",
+      "facet": "fulfillment_method:Pickup",
+      "next_url": "https://www.walmart.com/browse/household-essentials/clorox/1115193_8250903_7784444?page=2",
+      "scrolls": 0,
+      "snapshot_sha256": "936c170df0e414aa1f63b98d6d075edd50015d69d223db5de9f134ba163c63f7",
+      "snapshot_scope": "Serialized rendered DOM, not original HTTP body"
+    }
+  ],
+  "scope": "One guest session; Balloons pages1-3, Diapering pages1-3, Food page1, Household page1. Bounded quotas, not full category coverage.",
+  "verdict": "Rendered pagination confirmed and extended probe finished; no wrong-store response or corrected re-fetch captured. Drift remedy remains unproven.",
+  "limitations": [
+    "28actual product requests, below historical64-record failure session; not57actual targets.",
+    "One run only; no complete repeated collection or uncapped coverage.",
+    "No re-fetch occurred, so requested complete wrong/correct raw pair remains open.",
+    "Original Fetch-decoded bodies and unreviewed sharing drafts private; native snapshots serialized DOM, not raw HTTP bodies.",
+    "No production publication, paid service or Azure execution."
+  ]
+}

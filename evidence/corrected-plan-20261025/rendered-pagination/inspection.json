@@ -1,0 +1,33 @@
+{
+  "completed": true,
+  "pages": [
+    {
+      "url": "https://www.walmart.com/browse/party-occasions/balloons/2637_1042319_1212898_3956207",
+      "page": 1,
+      "max_page": 5,
+      "store": "100",
+      "facet": "fulfillment_method:Pickup",
+      "next_url": "https://www.walmart.com/browse/party-occasions/balloons/2637_1042319_1212898_3956207?page=2",
+      "scrolls": 0,
+      "snapshot_sha256": "77d9f8235085ab543597c77584994d6da57564b8fcbdcaf38b28b39cdc9f75c0",
+      "snapshot_scope": "Serialized rendered DOM, not original HTTP body"
+    },
+    {
+      "url": "https://www.walmart.com/browse/party-occasions/balloons/2637_1042319_1212898_3956207?page=2",
+      "page": 2,
+      "max_page": 5,
+      "store": "100",
+      "facet": "fulfillment_method:Pickup",
+      "next_url": "https://www.walmart.com/browse/party-occasions/balloons/2637_1042319_1212898_3956207?page=3",
+      "scrolls": 0,
+      "snapshot_sha256": "6165b1a17283642ba749913d06eac5fc6678b22b4a05e9f86d4b6d31a6a4d997",
+      "snapshot_scope": "Serialized rendered DOM, not original HTTP body"
+    }
+  ],
+  "limit_seconds": 180,
+  "seconds": 39.551,
+  "mode": "Live native two-page inspection; serialized DOM hashes verified offline",
+  "helper_sha256": "0e3745e228746939283d9a436beebfceee282fddf2266a0a77111130696def86",
+  "source_commit": "04fa66f",
+  "raw_http_pair": false
+}
