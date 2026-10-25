@@ -16,9 +16,9 @@ from storage import atomic_json
 from trace_store_context import product_context
 
 
-def sessions(cases):
+def sessions(cases, repeats=2):
     result = []
-    for repeat in [1, 2]:
+    for repeat in range(1, repeats + 1):
         result.append({'id': f'A{repeat}', 'mode': 'existing_session', 'cases': cases})
         for index in [0, 1]:
             result.append({'id': f'B{repeat}-{index + 1}', 'mode': 'fresh_small_batch',
@@ -46,6 +46,7 @@ def run(plan, output):
     limits = plan['limits']
     state = {'started': time.monotonic(), 'limits': limits, 'product_requests': 0,
              'listing_requests': 0, 'sequence': 0, 'body_bytes': 0, 'category_visits': 0, 'browser_sessions': 0}
+    state.update(plan.get('counts_before', {}))
     report = {'mode': 'bounded live diagnostic; never publishes production data', 'sessions': [],
               'observations': [], 'completed': False, 'store_mismatch_seen': False,
               'plan': plan, 'started_utc': datetime.now(timezone.utc).isoformat(),
@@ -59,6 +60,8 @@ def run(plan, output):
     def save():
         report['counts'] = {key: state[key] for key in ['product_requests', 'listing_requests', 'sequence',
                                                        'body_bytes', 'category_visits', 'browser_sessions']}
+        report['counts_this_run'] = {key: value - plan.get('counts_before', {}).get(key, 0)
+                                    for key, value in report['counts'].items()}
         report['seconds'] = round(time.monotonic() - state['started'], 3)
         atomic_json(output / 'report.json', report)
 
@@ -109,7 +112,7 @@ def run(plan, output):
     signal.alarm(limits['seconds'])
     save()
     try:
-        for session in sessions(plan['cases']):
+        for session in sessions(plan['cases'], plan.get('comparison_repeats', 2)):
             if state['browser_sessions'] >= 6:
                 raise RuntimeError('Diagnostic browser-session budget reached')
             current = None
@@ -200,5 +203,5 @@ if __name__ == '__main__':
         if not result['completed']:
             raise SystemExit(1)
     else:
-        print(json.dumps({'mode': 'plan only; no browser or requests', 'sessions': sessions(plan['cases']),
+        print(json.dumps({'mode': 'plan only; no browser or requests', 'sessions': sessions(plan['cases'], plan.get('comparison_repeats', 2)),
                           'limits': plan['limits']}, indent=2))

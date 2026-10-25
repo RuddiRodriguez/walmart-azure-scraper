@@ -1,0 +1,74 @@
+{
+  "mode": "proposed diagnostic only; not executed",
+  "demo_store": {
+    "id": "100",
+    "zip": "72712",
+    "intent": "PICKUP"
+  },
+  "smallest_change": "Keep browser-fetch transport; compare one six-target session with fresh three-target batches. Same six targets and capture settings in both arms.",
+  "cases": [
+    {
+      "category": "Diapering",
+      "listing_url": "https://www.walmart.com/browse/diapering/5427_486190",
+      "item_id": "38236207"
+    },
+    {
+      "category": "Diapering",
+      "listing_url": "https://www.walmart.com/browse/diapering/5427_486190",
+      "item_id": "5445606208"
+    },
+    {
+      "category": "Diapering",
+      "listing_url": "https://www.walmart.com/browse/diapering/5427_486190",
+      "item_id": "362649628"
+    },
+    {
+      "category": "Household Essentials",
+      "listing_url": "https://www.walmart.com/browse/household-essentials/clorox/1115193_8250903_7784444",
+      "item_id": "914173307"
+    },
+    {
+      "category": "Household Essentials",
+      "listing_url": "https://www.walmart.com/browse/household-essentials/clorox/1115193_8250903_7784444",
+      "item_id": "883632494"
+    },
+    {
+      "category": "Household Essentials",
+      "listing_url": "https://www.walmart.com/browse/household-essentials/clorox/1115193_8250903_7784444",
+      "item_id": "15543972"
+    }
+  ],
+  "limits": {
+    "product_requests": 36,
+    "listing_requests": 8,
+    "seconds": 2246,
+    "browser_sessions": 6,
+    "category_visits": 8,
+    "response_bytes": 10485760,
+    "saved_body_bytes": 262144000,
+    "disk_reserve_gib": 8,
+    "paid_service_spend_eur": 0
+  },
+  "counts_scope": "36 product requests include control requests, failed attempts and any single diagnostic re-fetch. Listing capture GETs are additional to eight category navigations. Store-selection UI/asset requests are not included; runtime bounds entire job.",
+  "retries": 1,
+  "publication": "Never writes production latest.json; any drift invalidates comparison and stops it. Re-fetch is evidence only.",
+  "privacy": "Ignored data/ only; complete Fetch-decoded originals plus redaction drafts. No automatic sharing or public body export. Manual privacy review required.",
+  "limitations": [
+    "Not full catalog coverage",
+    "Not production acceptance",
+    "Cannot prove absence of all silent pricing defects",
+    "Fresh-session batching is an unvalidated hypothesis",
+    "No Azure access granted"
+  ],
+  "comparison_repeats": 1,
+  "counts_before": {
+    "product_requests": 2,
+    "listing_requests": 2,
+    "sequence": 4,
+    "body_bytes": 3951492,
+    "category_visits": 2,
+    "browser_sessions": 2
+  },
+  "original_deadline_utc": "2026-10-25T17:32:07.527370+00:00",
+  "scope_adjustment": "Initial stale-target attempt and one fresh listing discovery consume the original budget. Run one matched A/B comparison only; second matched repeat omitted. Do not combine their product records."
+}
