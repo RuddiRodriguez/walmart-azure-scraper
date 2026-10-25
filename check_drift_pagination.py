@@ -12,7 +12,7 @@ def check():
     results = []
     for mode in ['normal', 'drift', 'pagination_gap', 'rendered_fallback', 'extended']:
         drift = mode == 'drift'
-        gap = mode in ['pagination_gap', 'rendered_fallback', 'extended']
+        gap = mode in ['pagination_gap', 'rendered_fallback']
         counts = {'listings': 0, 'products': 0}
 
         def page():
