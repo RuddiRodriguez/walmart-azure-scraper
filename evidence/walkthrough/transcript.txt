@@ -1,15 +1,15 @@
-Recorded at 2026-10-24T10:28:13.165326+00:00
+Recorded at 2026-10-25T18:25:49.004609+00:00
 
-$ python -c 'import json,csv; s=json.load(open('"'"'config/stores.json'"'"')); print('"'"'LOCAL REVIEW WALKTHROUGH - no Azure or contest submission'"'"'); print('"'"'Trial store:'"'"',s['"'"'stores'"'"'][0]['"'"'id'"'"'],s['"'"'stores'"'"'][0]['"'"'name'"'"']); print('"'"'Required parent categories:'"'"',len(list(csv.DictReader(open('"'"'config/categories.csv'"'"')))))'
+$ python -c 'import json,csv; s=json.load(open('"'"'config/stores.json'"'"')); print('"'"'LOCAL REVIEW WALKTHROUGH - no Azure or contest submission'"'"'); print('"'"'Client-accepted demonstration store:'"'"',s['"'"'stores'"'"'][0]['"'"'id'"'"'],s['"'"'stores'"'"'][0]['"'"'name'"'"']); print('"'"'Required parent categories:'"'"',len(list(csv.DictReader(open('"'"'config/categories.csv'"'"')))))'
 LOCAL REVIEW WALKTHROUGH - no Azure or contest submission
-Trial store: 100 Bentonville S Walton Blvd Supercenter
+Client-accepted demonstration store: 100 Bentonville S Walton Blvd Supercenter
 Required parent categories: 11
 [exit code 0]
 
 $ python check_requirements.py
 {
   "mode": "offline checks of captured evidence and explicitly synthetic mutations; no live acceptance claim",
-  "time_utc": "2026-10-24T10:28:18.664566+00:00",
+  "time_utc": "2026-10-25T18:25:54.383091+00:00",
   "passed": true,
   "count": 54,
   "checks": [
@@ -79,22 +79,22 @@ $ python -c 'import json; p=json.load(open('"'"'evidence/products-500.json'"'"')
 Historical genuine demonstration: 500 records
 Historical collection dates: 2026-10-22T23:19:42.144602+00:00 to 2026-10-22T23:27:39.067537+00:00
 This is not a fresh full-catalog run.
-FINAL REVIEW — 24 October 2026, 12:27 CEST (UTC+2)
-Version: review-20261024-final
-Historical JSON:500 genuine distinct products/11 parents; unchanged; offline source audit passed.
-Fresh C/D:33 records each,613.89/596.86seconds; same33 IDs,0price changes; both source audits passed.
-Broader A/C:stopped32/64records after301.91/631.46seconds on location mismatch; accepted subsets audited, no publication.
-Live primary pagination:Diapering pages1/2 retained100/PICKUP;38 new listing IDs, not accepted products.
-Fresh visible-price checks:11/11store/seller/pickup and visible/response/saved prices matched.
-Latest hard-kill attempt:NOT performed;180-second window elapsed. SIGINT left1 accepted record; no resume performed. Do not claim latest-code recovery.
-Prior Oct23 live page/product hard-kill and restart evidence retained; three genuine unavailable examples retained.
-Nine final offline suites, Python compilation and installer shell syntax passed.
-Missing:sustained reliability, fresh complete500+ final-runner result, exhaustive coverage, live volume/digital deals, latest-code recovery, assigned-store confirmation, Azure execution.
-No more broad experiments planned. No client send/submission.
+CURRENT DIAGNOSTIC PACKAGE — 25 October 2026, 19:21 CET (UTC+1)
+Version:review-20261025-final
+Historical 500:unchanged genuine distinct products/11 parents; earlier live demonstration, not fresh final-runner coverage.
+24 October:two33-product samples passed; broader32/64accepted subsets stopped on store mismatch and were not published.
+25 October comparison:one matched A/B comparison of the same 6 targets passed,18 product/control responses,164.762 seconds. No drift and no proven improvement. Initial stale-target stop and listing discovery remain separately recorded; second matched repeat omitted to keep budget.
+25 October recovery:SIGKILL/resume passed current collector code on a one-category/3-product sample;7 checks and 3 source audits passed;87.422 seconds. Scope excludes full-catalog/Azure recovery.
+25 October offers:2 searches,5 checks/3 distinct targets,0verified volume/digital examples;62.594 seconds.
+35 complete Fetch-decoded bodies retained privately; hashes verified. Public source projections/metadata included. No complete paired wrong/correct raw capture exists.
+Store100/PICKUP accepted by client for bounded demonstration. No Azure access granted or Azure execution.
+Offline:10 synthetic capture/safeguard checks and 7 regression scripts passed; final historical audit and package checks recorded separately.
+Still open:paired drift capture, sustained reliability, full uncapped coverage, repeated complete collection, real offers, Azure.
+No live jobs, paid scraping service, client message or submission.
 
 [exit code 0]
 
-$ python -c 'import json; r=json.load(open('"'"'evidence/hard-product-recovery/hard-recovery.json'"'"')); print(json.dumps(r,indent=2))'
+$ python -c 'import json; r=json.load(open('"'"'evidence/diagnostic-20261025/step4-recovery/hard-recovery.json'"'"')); print(json.dumps(r,indent=2))'
 {
   "mode": "live SIGKILL after product request start, followed by identical-code resume",
   "passed": true,
@@ -107,8 +107,8 @@ $ python -c 'import json; r=json.load(open('"'"'evidence/hard-product-recovery/h
     "interrupted_product_attempted_twice": true,
     "interrupted_product_completed_once": true
   },
-  "committed_records_before_kill": 6,
-  "interrupted_product": "15154970737",
+  "committed_records_before_kill": 1,
+  "interrupted_product": "883632494",
   "limit": "Recovery proof only, not full catalog completion; precise network packet timing is not measured."
 }
 [exit code 0]

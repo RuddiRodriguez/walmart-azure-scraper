@@ -59,7 +59,7 @@ def build():
         'collection_dates': sorted({r['crawl_date'] for r in rows}),
         'field_nonempty_counts': {f: sum(bool(r[f]) for r in rows) for f in FIELDS},
         'errors': errors,
-        'limits': ['Store 100 is a trial store; assignment unconfirmed.',
+        'limits': ['Client accepts Store 100/PICKUP for bounded demonstrations; production assignment is not claimed.',
                    'Parent representation is not full subcategory coverage.',
                    'Historical multi-pass logs do not establish uninterrupted runtime.',
                    'Azure execution and genuine live volume/digital offers remain unproven.'],

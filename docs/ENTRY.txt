@@ -1,25 +1,25 @@
 UNSENT REFERENCE COPY
 
-UNSENT DRAFT — 24 October 2026, 12:27 CEST (UTC+2)
+UNSENT DRAFT — 25 October 2026, 19:21 CET (UTC+1)
 
 Hi,
 
-Here’s my latest completed review package:
-https://github.com/RuddiRodriguez/walmart-azure-scraper/tree/review-20261024-final
+Thanks for confirming Bentonville #100, 406 S Walton Blvd, AR 72712, PICKUP for the demonstration. Here’s the updated versioned package:
+https://github.com/RuddiRodriguez/walmart-azure-scraper/tree/review-20261025-final
 
-The source, running instructions and logs are included. evidence/products-500.json contains 500 genuine, distinct products across all 11 main categories, with zero duplicate IDs or URLs. This is the earlier live demonstration, not a fresh full run of the final version. Source records and store/fulfillment/price evidence are included.
+It includes source, running instructions, hashes, logs and source evidence. Collector modules match live-tested commit 53cb6d94be5fc29eeedd32cd3f75b129d2f2aed4; file hashes are in evidence/SHA256SUMS.json. evidence/products-500.json still contains the earlier 500 genuine, distinct products. It remains separate from the two 33-product samples and today’s diagnostic results.
 
-Today, two fresh 33-product samples passed with the same products and prices. Eleven separate visible-page checks also matched Store 100, pickup, Walmart seller and prices. I fixed category pagination and strengthened listing-store checks; nine final offline suites passed.
+I tested the smallest session change: the same six products in one session versus fresh sessions after three products, keeping browser-fetch transport. Both approaches passed with matching prices and Store 100/PICKUP response identifiers. No drift appeared, so this does not establish batching as a remedy.
 
-The main issue remains intermittent store context. Broader attempts stopped safely after 32 and 64 accepted products; the latter received Sacramento Store 3081 data despite a Bentonville Store 100 banner. Neither run was published. Re-fetching returned the right store, but this is not a proven fix. A possible next step is a supported store-specific product source; the ItemById route tested so far was challenged.
+Capture now saves complete Fetch-decoded bodies before parsing, with request options, timing, sequence and attempts. Thirty-five bodies are retained privately with hashes and redaction drafts; public evidence contains metadata and selected listing/product source fields. The requested complete wrong/correct pair remains missing: the earlier wrong result was saved as product JSON, and today’s test did not reproduce it.
 
-Still outstanding:
-- Complete category coverage and sustained repeats: finish measured full runs after store consistency is resolved.
-- Live volume/digital offers: capture qualifying examples and verify their conditions; current promotion tests are synthetic.
-- Final-version recovery: earlier local page/product hard-kill recovery passed, but today’s bounded attempt did not reach its planned interruption. Repeat it with enough time for committed work.
-- Azure and assigned store: setup and twice-weekly scheduling files are included, but Azure has not been run. I need the assigned store and approved VM access before that verification.
+Store checks inspect listing/product identifiers, ZIP, fulfillment and local offer evidence, so a correct banner cannot override conflicting data. Any mismatch fails its run. Unavailable-product safeguards and last-good publication checks passed offline; earlier genuine unavailable examples remain separately dated.
 
-This completed portion is ready for review as of 24 October 2026, 12:27 CEST (UTC+2). I’m stopping further broad experiments at this point. I can’t responsibly give a completion date for full acceptance until the store-context blocker is resolved and the target environment is available. docs/REVIEW_STATUS.md separates live results, offline checks and remaining work.
+Current-code live interruption/resume passed: one saved product survived SIGKILL, the interrupted product completed once after restart, and all three final records passed source checks. Two offer searches checked three distinct products; no qualifying volume/digital example was verified.
+
+Tests used local Python/Chrome, without paid scraping services. The comparison stayed within 36 product requests/40 minutes; recovery within 12 attempts/15 minutes; offer review within 8 product requests/10 minutes. Exact environment and limits are documented. Azure was not run, and I understand access has not been granted.
+
+This is the next diagnostic deliverable requested in your feedback, prepared 25 October 2026, 19:21 CET (UTC+1). Still open are the paired drift capture, sustained reliability, full uncapped coverage, repeated complete collection, real offers and Azure acceptance. A further bounded drift investigation is the next proposed step; a dependable full-completion date still depends on resolving that blocker.
 
 Thanks,
 Ruddi

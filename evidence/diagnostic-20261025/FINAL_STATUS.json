@@ -1,0 +1,77 @@
+{
+  "prepared_local": "25 October 2026, 19:21 CET (UTC+1)",
+  "version": "review-20261025-final",
+  "collector_source_commit": "53cb6d94be5fc29eeedd32cd3f75b129d2f2aed4",
+  "historical_500": "Earlier live demonstration;500distinct products,11parents;not a fresh full final-runner collection",
+  "oct24_samples": "Two33-product samples passed; broader32/64partial runs failed store validation and were not published",
+  "oct25_comparison": {
+    "distinct_targets": 6,
+    "matched_comparisons": 1,
+    "same_products_and_prices": true,
+    "product_control_responses": 18,
+    "seconds": 164.762,
+    "drift_reproduced": false,
+    "batching_proven_fix": false
+  },
+  "oct25_recovery": {
+    "passed": true,
+    "seconds": 87.422,
+    "sigkill_performed": true,
+    "resume_executed": true,
+    "committed_before_kill": 1,
+    "final_records": 3,
+    "target_attempts": 4,
+    "configured_canary_attempts_upper_bound": 2,
+    "interrupted_product": "883632494",
+    "checks": {
+      "sqlite_integrity": true,
+      "prior_pages_completed_once": true,
+      "prior_records_retained": true,
+      "prior_products_completed_once": true,
+      "interrupted_product_was_uncommitted": true,
+      "interrupted_product_attempted_twice": true,
+      "interrupted_product_completed_once": true
+    },
+    "scope": "Current collector code, one-category/three-product bounded sample; same code/config on resume. Not full-catalog or Azure recovery."
+  },
+  "oct25_offers": {
+    "search_completed": true,
+    "seconds": 62.594,
+    "queries": [
+      "buy 2 save",
+      "digital coupon"
+    ],
+    "target_checks": 5,
+    "distinct_target_products": 3,
+    "verified_volume_or_digital_examples": 0,
+    "counts": {
+      "product_requests": 7,
+      "listing_requests": 2,
+      "sequence": 9,
+      "body_bytes": 5901130
+    },
+    "body_hashes_verified": 9,
+    "error": null,
+    "finding": "No qualifying volume/digital offers found in this bounded inspection; requirement remains open. Ordinary prices, financing and rewards are not substitutes."
+  },
+  "complete_fetch_bodies_private": 35,
+  "complete_wrong_correct_pair_available": false,
+  "demo_store_confirmed": true,
+  "demo_context": {
+    "store": "100",
+    "address": "406 S Walton Blvd, Bentonville, AR72712",
+    "fulfillment": "PICKUP"
+  },
+  "latest_collector_hashes_match_live_recovery": true,
+  "production_data_changed": false,
+  "open": [
+    "Complete paired wrong/correct raw responses; original wrong full body was not saved and no new drift reproduced",
+    "Sustained store reliability and repeated complete collection",
+    "Full uncapped category/subcategory coverage",
+    "Genuine volume/digital offer examples",
+    "Azure execution and target-environment acceptance; access ungranted"
+  ],
+  "client_message_sent": false,
+  "contest_submitted": false,
+  "next_diagnostic_deliverable": "This completed bounded diagnostic package,25October2026; full-acceptance completion date remains unsupported"
+}

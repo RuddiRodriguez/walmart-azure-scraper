@@ -1,39 +1,26 @@
 # Walmart location-aware catalog scraper
 
-Step 4 update, 25 October: current collector passed live SIGKILL/resume on a bounded three-product sample; all seven recovery checks and three source audits passed. Two offer searches checked three distinct products, with no qualifying volume/digital example verified. See docs/STEP4_RESULTS_20261025.md.
+Python collector with local Chrome, store/category configuration, checkpoints, source evidence,
+validation and atomic publication. No paid scraping APIs or proxies.
 
+## Current status — 25 October 2026
 
+Client accepts Bentonville #100/PICKUP for bounded demonstration. Historical 500-product JSON
+is genuine and distinct, with all 11 parent categories represented. It predates complete collection
+by the final runner and remains separate from newer samples.
 
-Step 3 update, 25 October:one matched live comparison passed the same six targets in one session and fresh three-target batches, with matching prices. No drift reproduced and no reliability improvement established.26complete response bodies retained privately; safe metadata/source contexts published. See docs/STEP3_RESULTS_20261025.md.
+Today's matched comparison passed the same six products in one session and fresh three-product
+batches. No drift reproduced and no session fix established. Current collector code also passed
+live SIGKILL/resume on a one-category/three-product sample; all source/recovery checks passed.
+Two offer searches checked three distinct products and found no qualifying volume/digital example.
 
+35 complete Fetch-decoded response bodies are retained privately with hashes and redaction drafts.
+Public evidence contains safe metadata/source fields. Complete paired wrong/correct raw evidence,
+sustained reliability,full uncapped traversal,repeated complete collection,real offers and Azure
+acceptance remain open. No client message/submission or Azure execution occurred.
 
-
-Python scraper with local Chrome, configurable stores/categories, transactional checkpoints,
-source evidence, validation and atomic publication. No paid proxies or scraping APIs.
-
-## Baseline update — 25 October 2026
-
-Client feedback confirms Store #100/PICKUP as a valid demonstration context; Azure access remains ungranted. Earlier frozen review notes retain their original dates. Existing corrected HTML snapshots are parsed/reserialized, not untouched response bodies. Paired complete raw evidence remains missing. Step1 inventory: docs/STEP1_BASELINE_20261025.md. No collector behavior changed or new run started.
-
-## Current status — 24 October 2026
-
-Review package with an unresolved store-context reliability issue. The historical
-500-product JSON is genuine, distinct and source-audited; it predates a completed full run
-of this runner. All 11 parent categories are represented, which does not prove full coverage.
-
-Today's two fresh33-product samples passed source audits with identical products/prices.
-Eleven visible-page checks passed. Broader attempts stopped after32 and64 accepted records
-on store mismatch and were not published. The latest hard-kill test timed out before performing
-the planned interruption; earlier successful local recovery evidence remains separately dated.
-Nine final offline suites passed. Primary pagination and listing-store checks were improved.
-
-Full coverage, sustained repeats, live volume/digital offers, latest-code recovery and Azure
-execution remain unproven. Store 100 is still a trial location. No further broad experiments
-are planned without a supported fix. See docs/REVIEW_STATUS.md and
-evidence/final-session-20261024/FINAL_RESULTS.json for exact scope.
-
-Run `python review_package.py` for an offline audit of the historical dataset and checksums.
-No client message or contest submission was made during this review.
+Start with docs/REVIEW_STATUS.md and evidence/diagnostic-20261025/FINAL_STATUS.json. Source version:
+review-20261025-final. The collector modules match live-tested commit 53cb6d9.
 
 ## Local setup
 

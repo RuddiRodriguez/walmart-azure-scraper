@@ -12,11 +12,11 @@ from pathlib import Path
 def record(destination):
     destination.mkdir(parents=True, exist_ok=True)
     commands = [
-        [sys.executable, '-c', "import json,csv; s=json.load(open('config/stores.json')); print('LOCAL REVIEW WALKTHROUGH - no Azure or contest submission'); print('Trial store:',s['stores'][0]['id'],s['stores'][0]['name']); print('Required parent categories:',len(list(csv.DictReader(open('config/categories.csv')))))"],
+        [sys.executable, '-c', "import json,csv; s=json.load(open('config/stores.json')); print('LOCAL REVIEW WALKTHROUGH - no Azure or contest submission'); print('Client-accepted demonstration store:',s['stores'][0]['id'],s['stores'][0]['name']); print('Required parent categories:',len(list(csv.DictReader(open('config/categories.csv')))))"],
         [sys.executable, 'check_requirements.py'],
         [sys.executable, 'check_storage_recovery.py'],
         [sys.executable, '-c', "import json; p=json.load(open('evidence/products-500.json')); print('Historical genuine demonstration:',len(p),'records'); print('Historical collection dates:',min(r['crawl_date'] for r in p),'to',max(r['crawl_date'] for r in p)); print('This is not a fresh full-catalog run.'); print(open('docs/CURRENT_RESULTS.txt').read())"],
-        [sys.executable, '-c', "import json; r=json.load(open('evidence/hard-product-recovery/hard-recovery.json')); print(json.dumps(r,indent=2))"],
+        [sys.executable, '-c', "import json; r=json.load(open('evidence/diagnostic-20261025/step4-recovery/hard-recovery.json')); print(json.dumps(r,indent=2))"],
         [sys.executable, '-c', "print('RUNNING INSTRUCTIONS (shown, not executed here)'); print('python scrape.py --store 100 --sample 3'); print('python scrape.py --store 100'); print('python scrape.py --store 100 --resume'); print('Inspect report.json and events.jsonl. Only a passing full run updates latest.json.'); print('See docs/REVIEW_STATUS.md for unresolved requirements. Azure testing remains last.')"],
     ]
     started = time.monotonic()

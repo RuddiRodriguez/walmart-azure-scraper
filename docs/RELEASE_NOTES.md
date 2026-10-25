@@ -1,8 +1,10 @@
-Final review package — 24 October 2026, 12:27 CEST (UTC+2)
-Version:review-20261024-final
+Diagnostic review package — 25 October 2026, 19:21 CET (UTC+1)
+Version:review-20261025-final
 
-Historical500-product demonstration, source evidence, current source/configuration, running/recovery/Azure installation instructions, twice-weekly timer, safe collection logs and recorded local walkthrough included.
+Includes historical 500-product demonstration, source/configuration/dependencies, running/recovery/Azure setup instructions, twice-weekly timer, safe collection logs, source contexts, hashes and updated local/offline walkthrough.
 
-Today's passing33/33samples and11visible-price checks do not resolve store reliability: broad attempts failed32/64records. Primary JavaScript pagination and explicit listing-store checks improved. All9 final offline suites passed. Latest bounded hard-kill attempt timed out without performing the kill; prior successful recovery evidence is separately dated.
+New evidence:complete pre-parse Fetch-body capture; matched6-target session comparison passed; current-code live SIGKILL/resume passed on3 records. No store drift reproduced and no proven session fix. Two offer searches found no qualifying volume/digital example across 3 distinct products.
 
-Remaining:full traversal, sustained full repeats, genuine live volume/digital offers, latest-code recovery and Azure/assigned-store acceptance. No full-acceptance completion date is supported. Nothing sent to client or submitted. No GitHub release published.
+Complete raw bodies/redaction drafts remain private; public ZIP excludes private data and sessions. Paired wrong/correct complete-body evidence, full traversal, sustained full repeats, genuine live deals and Azure acceptance remain open.
+
+Source-only diagnostic package; no GitHub release, client message or contest submission published.

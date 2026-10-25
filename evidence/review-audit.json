@@ -1,13 +1,13 @@
 {
-  "audit_time_utc": "2026-10-24T10:31:07.186326+00:00",
+  "audit_time_utc": "2026-10-25T18:28:06.583940+00:00",
   "mode": "offline audit of historical live captures; not a fresh collection",
-  "audit_base_commit": "415a7c23d09b2fce113f8550b0b4474bd0a6f4d0",
+  "audit_base_commit": "56ca5eba486686a83f794354270710c8d6c72737",
   "audited_code_sha256": {
     "extract.py": "e252ee14a9e66c9be33220a014984e161192651759c9619202ecf73c39242605",
     "scrape.py": "01d6aee1f2d91c36acebd132c580df32e7914323fe3a3f7b5506bad3217894d1",
     "storage.py": "2453aa318e9e59b37bcc85dd3a6b9c5d8b4cc7616368e4cbf01f41b054385c90",
     "validate.py": "d316b2e14887bbc02b08a5b54af6fe7c5d340d1ad9b1f5819e242de39ec53ada",
-    "browser.py": "1a54a2d143a3da19063f5aa389c556da7a5c5521248ee9fc419d7aafedf1af12"
+    "browser.py": "2b46d80e5b5edd1b75c7cbf36d460d96da91cfd218e0b1dfa309dcc3459cec24"
   },
   "passed": true,
   "records": 500,
@@ -557,7 +557,7 @@
   },
   "errors": [],
   "limits": [
-    "Store 100 is a trial store; assignment unconfirmed.",
+    "Client accepts Store 100/PICKUP for bounded demonstrations; production assignment is not claimed.",
     "Parent representation is not full subcategory coverage.",
     "Historical multi-pass logs do not establish uninterrupted runtime.",
     "Azure execution and genuine live volume/digital offers remain unproven."
