@@ -56,11 +56,12 @@
     },
     {
       "request": "Exclude invalid local prices; preserve unavailable products and last good output",
-      "status": "Safeguard offline evidence plus three real unavailable products retained in bounded67-product live probe; full scope unproven",
+      "status": "43offline safeguard checks passed; three real unavailable products re-audited with blank local prices; recorded scope only",
       "evidence": [
         "evidence/diagnostic-20261025/step2-offline-checks.json",
         "evidence/observed-unavailable-replay.json",
-        "evidence/corrected-plan-20261025/rendered-candidate-probe/source-contexts.json"
+        "evidence/corrected-plan-20261025/rendered-candidate-probe/source-contexts.json",
+        "evidence/corrected-plan-20261025/step4-safeguards/summary.json"
       ],
       "completion_gate": "Invalid response cannot publish; supported local unavailable products retained; prior good data/pointer survives. Current matched sample had no unavailable items"
     },

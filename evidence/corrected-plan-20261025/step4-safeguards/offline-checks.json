@@ -1,0 +1,70 @@
+{
+  "listing": {
+    "mode": "Offline synthetic unit and crawler integration checks; zero live requests",
+    "passed": true,
+    "checks": [
+      "correct",
+      "wrong_store",
+      "missing_store",
+      "missing_pickup",
+      "shipping",
+      "conflicting_intents",
+      "pickup_prefix_is_not_pickup",
+      "other_facets",
+      "navigation_without_context_not_price_verified",
+      "unverified_candidates_never_queued_or_fetched",
+      "navigation_children_preserved"
+    ]
+  },
+  "unavailable_checkpoint_last_good": {
+    "mode": "offline checks; availability variants are synthetic, not observed live offers",
+    "passed": true,
+    "checks": [
+      "Synthetic unavailable item with explicit local pickup and matching displayed price retained",
+      "Missing price retained only with unavailable evidence; normal missing-price record rejected",
+      "Explicit store-specific out-of-stock status retained without copying shipping prices or PPM",
+      "Different-store and not-available pickup options do not prove local out-of-stock inventory",
+      "Synthetic wrong-store detail rejected",
+      "Offline checkpoint close/reopen keeps completed product and pending next page",
+      "Offline simulated access failure exports partial evidence and leaves prior publication byte-identical"
+    ]
+  },
+  "runner_flow": {
+    "mode": "offline simulated navigation; captured product fixture; no live browser or network",
+    "passed": true,
+    "checks": [
+      "Two pages traversed",
+      "Repeated product ID deduplicated",
+      "Complete valid full-mode result publishes atomically",
+      "Resume does not repeat committed product",
+      "Cross-mode resume rejected",
+      "Rejected location response saved before validation failure",
+      "Location mismatch permanently prevents publication even after resume",
+      "Previously mismatched run rejected before browser launch or product request",
+      "Early resume failure records the failed validation stage",
+      "Diagnostic snapshot failure cannot mask a location mismatch or its publication block",
+      "Placeholder and JavaScript next-page controls do not become URL loops",
+      "Real pagination URL and real loop targets preserved for validation",
+      "Explicit next-page metadata preserves functional filters",
+      "Unexpected page jumps rejected",
+      "Explicit wrong-store primary listing rejected"
+    ]
+  },
+  "capture": {
+    "mode": "offline synthetic checks; no retailer requests or browser launched",
+    "passed": true,
+    "checks": [
+      "Complete synthetic Fetch bytes retained before parser failure; hash and redacted metadata verified",
+      "Actual capture JavaScript executed offline with mocked Fetch; CRLF and invalid UTF8 bytes preserved",
+      "HTTP412 captured then stopped without retry",
+      "Request budget stops before network call",
+      "Raw evidence output outside ignored data rejected",
+      "Synthetic redaction removes known secrets while preserving product/store/price identifiers",
+      "Two matched A/B comparisons planned; six fresh sessions and36product/control requests",
+      "Synthetic wrong_store preserves last good; invalid output rejected or unavailable retained",
+      "Synthetic missing_zip preserves last good; invalid output rejected or unavailable retained",
+      "Synthetic unavailable preserves last good; invalid output rejected or unavailable retained"
+    ],
+    "live_acceptance": false
+  }
+}
