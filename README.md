@@ -3,6 +3,10 @@
 Python scraper with local Chrome, configurable stores/categories, transactional checkpoints,
 source evidence, validation and atomic publication. No paid proxies or scraping APIs.
 
+## Baseline update — 25 October 2026
+
+Client feedback confirms Store #100/PICKUP as a valid demonstration context; Azure access remains ungranted. Earlier frozen review notes retain their original dates. Existing corrected HTML snapshots are parsed/reserialized, not untouched response bodies. Paired complete raw evidence remains missing. Step1 inventory: docs/STEP1_BASELINE_20261025.md. No collector behavior changed or new run started.
+
 ## Current status — 24 October 2026
 
 Review package with an unresolved store-context reliability issue. The historical

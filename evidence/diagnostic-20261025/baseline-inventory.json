@@ -1,0 +1,346 @@
+{
+  "step": 1,
+  "recorded_utc": "2026-10-25T12:50:44.019904+00:00",
+  "recorded_amsterdam": "2026-10-25T13:50:44.019904+01:00",
+  "scope": "Inventory only; no new scraper run, behavior change or acceptance test",
+  "repository": {
+    "baseline_head": "04c157e2cae106ee4cb2ffbb32408d8bda8b693c",
+    "frozen_tag": "review-20261024-final",
+    "frozen_commit": "415a7c23d09b2fce113f8550b0b4474bd0a6f4d0",
+    "core_sha256": {
+      "scrape.py": "01d6aee1f2d91c36acebd132c580df32e7914323fe3a3f7b5506bad3217894d1",
+      "browser.py": "1a54a2d143a3da19063f5aa389c556da7a5c5521248ee9fc419d7aafedf1af12",
+      "extract.py": "e252ee14a9e66c9be33220a014984e161192651759c9619202ecf73c39242605",
+      "storage.py": "2453aa318e9e59b37bcc85dd3a6b9c5d8b4cc7616368e4cbf01f41b054385c90",
+      "validate.py": "d316b2e14887bbc02b08a5b54af6fe7c5d340d1ad9b1f5819e242de39ec53ada",
+      "config/stores.json": "63f24c4ad600cdf99173ff4066ce800eb983474d0540099161cdb261fecbb08d",
+      "config/categories.csv": "65127cf3cd48f967ea3db0c4dd2be67de3f2ac1f6b60aef406c0778c999f3640",
+      "requirements.txt": "8e334bf56fa0620b2aade00651701b49c5840ccfa331eb3100dafb672d07852f"
+    }
+  },
+  "demo_context": {
+    "store_id": "100",
+    "name": "Bentonville S Walton Blvd Supercenter",
+    "address": "406 S Walton Blvd, Bentonville, AR 72712",
+    "zip": "72712",
+    "intent": "PICKUP",
+    "status": "Client accepts this identified demonstration context for next bounded test",
+    "authority": "User-supplied client feedback headed Progress feedback - October24 - Walmart",
+    "production_store_assignment_claimed": false,
+    "azure_access_granted": false
+  },
+  "environment": {
+    "os": "macOS-27.0.1-arm64-arm-64bit-Mach-O",
+    "python": "3.14.5",
+    "chrome": "155.0.8059.85",
+    "seleniumbase": "4.56.3",
+    "beautifulsoup4": "4.15.0",
+    "psutil": "7.2.2",
+    "transport": "Local Chrome through SeleniumBase; product fetch in existing browser context",
+    "service_dependency": "Walmart public website must return complete local-store listing/product context; no paid proxy/API configured"
+  },
+  "historical": {
+    "records": 500,
+    "distinct_product_ids": 500,
+    "categories": 11,
+    "sha256": "ac8bd8dddd1208faf803f0790e0df2378253e9236cd37357cd1433f11f674ba6",
+    "matches_frozen_session_plan": true,
+    "origin": "Earlier live feasibility demonstration; not fresh final-runner coverage",
+    "files": [
+      {
+        "path": "evidence/products-500.json",
+        "kind": "historical separate500-product dataset",
+        "bytes": 666376,
+        "sha256": "ac8bd8dddd1208faf803f0790e0df2378253e9236cd37357cd1433f11f674ba6",
+        "access": "versioned repository file"
+      },
+      {
+        "path": "evidence/source-records.json",
+        "kind": "historical source projections",
+        "bytes": 14103853,
+        "sha256": "69653b041123caed065ad3485a326f1e5fc54f9120c634f11cdff287fac6036a",
+        "access": "versioned repository file"
+      }
+    ]
+  },
+  "fresh_runs": [
+    {
+      "name": "diagnostic-c",
+      "records": 33,
+      "mode": "sample",
+      "active_seconds": 613.89,
+      "signature": "c4efbbb2c4db522a2da273348604fb76c354ac08f4b75b0290a093ecaa0d2b90",
+      "sample_passed": true,
+      "published": false,
+      "error": null,
+      "files": [
+        {
+          "path": "evidence/final-session-20261024/diagnostic-c/report.json",
+          "kind": "run report or failure",
+          "bytes": 3079,
+          "sha256": "140817e4c339263cdb8abd9b10e1d73a5bd17037e704284afc35f68a70312bab",
+          "access": "versioned repository file"
+        },
+        {
+          "path": "evidence/final-session-20261024/diagnostic-c/products.json",
+          "kind": "separate run dataset",
+          "bytes": 43407,
+          "sha256": "e52c9df52cb86fd7a7fed3c80a3ab00717e3fc8a21249e2e50139b5ebc8e715c",
+          "access": "versioned repository file"
+        },
+        {
+          "path": "evidence/final-session-20261024/diagnostic-c/source-audit.json",
+          "kind": "existing offline source audit",
+          "bytes": 1380,
+          "sha256": "3cfbdf2d25302414cba516bc7888979e32d69219525dff3524e885031caa00f6",
+          "access": "versioned repository file"
+        }
+      ]
+    },
+    {
+      "name": "repeat-d",
+      "records": 33,
+      "mode": "sample",
+      "active_seconds": 596.86,
+      "signature": "c4efbbb2c4db522a2da273348604fb76c354ac08f4b75b0290a093ecaa0d2b90",
+      "sample_passed": true,
+      "published": false,
+      "error": null,
+      "files": [
+        {
+          "path": "evidence/final-session-20261024/repeat-d/report.json",
+          "kind": "run report or failure",
+          "bytes": 3079,
+          "sha256": "f1b93a666baf87b2ef44df495ecfbbf5ce3036c6154e27e30d4edfe67e29dec7",
+          "access": "versioned repository file"
+        },
+        {
+          "path": "evidence/final-session-20261024/repeat-d/products.json",
+          "kind": "separate run dataset",
+          "bytes": 43394,
+          "sha256": "11f93c44c1c2d5f319d265439e69f66b44037edfce18aa4a8fc20118343bf832",
+          "access": "versioned repository file"
+        },
+        {
+          "path": "evidence/final-session-20261024/repeat-d/source-audit.json",
+          "kind": "existing offline source audit",
+          "bytes": 1380,
+          "sha256": "3cfbdf2d25302414cba516bc7888979e32d69219525dff3524e885031caa00f6",
+          "access": "versioned repository file"
+        }
+      ]
+    },
+    {
+      "name": "fresh-506-a",
+      "records": 32,
+      "mode": "sample",
+      "active_seconds": 301.91,
+      "signature": "fdaa901015addf0de6e1504220c26c4924a44844afa2b40b8dc38abda3ecb13a",
+      "sample_passed": false,
+      "published": false,
+      "error": "Location mismatch in store banner",
+      "files": [
+        {
+          "path": "evidence/final-session-20261024/fresh-506-a/failure.json",
+          "kind": "run report or failure",
+          "bytes": 559,
+          "sha256": "12465780265d857064a7adbfa1163bddb7a42e46fcef418472b829b5119d8a63",
+          "access": "versioned repository file"
+        },
+        {
+          "path": "evidence/final-session-20261024/fresh-506-a/products.partial.json",
+          "kind": "separate run dataset",
+          "bytes": 42998,
+          "sha256": "c5b5baab55cf3ec395936a8ab11604b3a6ece4e365192ded2765d4a2a4d76cbc",
+          "access": "versioned repository file"
+        },
+        {
+          "path": "evidence/final-session-20261024/fresh-506-a/source-audit.json",
+          "kind": "existing offline source audit",
+          "bytes": 1145,
+          "sha256": "ff688bb867b87f3a27cd06f46cba214a45c5a4490659d7244bb1cbdd098b9c30",
+          "access": "versioned repository file"
+        }
+      ]
+    },
+    {
+      "name": "fresh-506-c",
+      "records": 64,
+      "mode": "sample",
+      "active_seconds": 631.46,
+      "signature": "fdaa901015addf0de6e1504220c26c4924a44844afa2b40b8dc38abda3ecb13a",
+      "sample_passed": false,
+      "published": false,
+      "error": "Location mismatch: publication prohibited",
+      "files": [
+        {
+          "path": "evidence/final-session-20261024/fresh-506-c/failure.json",
+          "kind": "run report or failure",
+          "bytes": 801,
+          "sha256": "7279538bd374fe10845e24d01d20505bbe147e0e4a3ce0aa28d12732031be96d",
+          "access": "versioned repository file"
+        },
+        {
+          "path": "evidence/final-session-20261024/fresh-506-c/products.partial.json",
+          "kind": "separate run dataset",
+          "bytes": 83780,
+          "sha256": "c338a89cf8cf34e531bcc446c493e7329d85d72b0f4c0fbee669380f29fd8e6d",
+          "access": "versioned repository file"
+        },
+        {
+          "path": "evidence/final-session-20261024/fresh-506-c/source-audit.json",
+          "kind": "existing offline source audit",
+          "bytes": 1184,
+          "sha256": "044e78514b90f07dac910df3dca45e9961577d6fa644df53ea98081f98fcbc45",
+          "access": "versioned repository file"
+        }
+      ]
+    }
+  ],
+  "mismatch_pair": {
+    "rejected": {
+      "product_id": "857115210",
+      "store_id": "3081",
+      "zip": "95829",
+      "intent": "SHIPPING",
+      "current_price": 6.26,
+      "seller": "Walmart.com"
+    },
+    "listing_price_text": "Price $6.26 8.1 \u00a2/fl oz Options from $6.26 \u2013 $18.78",
+    "corrected": [
+      {
+        "mode": "same_page_fetch.html",
+        "product_id": "857115210",
+        "store_id": "100",
+        "zip": "72712",
+        "intent": "PICKUP",
+        "current_price": 6.26,
+        "seller": "Walmart.com"
+      },
+      {
+        "mode": "visible_navigation.html",
+        "product_id": "857115210",
+        "store_id": "100",
+        "zip": "72712",
+        "intent": "PICKUP",
+        "current_price": 6.26,
+        "seller": "Walmart.com"
+      }
+    ],
+    "complete_paired_raw_response_available": false
+  },
+  "sequence_evidence": [
+    {
+      "path": "data/final-session-20261024/fresh-506-c/100/runs/20261024T100616959578Z/sources/rejected/857115210-20261024T101647563170Z.json",
+      "kind": "parsed product/candidate JSON; not complete raw HTTP response",
+      "bytes": 58747,
+      "sha256": "973cdbd2cd41815ab3b145dca3d37462fab07dca09958b4d7cb121e232c202fd",
+      "access": "private local file"
+    },
+    {
+      "path": "data/final-session-20261024/fresh-506-c/100/runs/20261024T100616959578Z/sources/e9580d142d19320e1228.html",
+      "kind": "parsed/reserialized listing HTML snapshot; not exact HTTP body",
+      "bytes": 2196166,
+      "sha256": "5da8aa98972554f699053393a0f03feac41f381af64cb45b519689aba14fe91e",
+      "access": "private local file"
+    },
+    {
+      "path": "data/final-session-20261024/fresh-506-c/rejection-probe/same_page_fetch.html",
+      "kind": "parsed/reserialized corrected HTML snapshot; not exact HTTP body",
+      "bytes": 570524,
+      "sha256": "dbf389135cece82ee66214bb945f3e485789add1e671fd925ec03eb695d0111d",
+      "access": "private local file"
+    },
+    {
+      "path": "data/final-session-20261024/fresh-506-c/rejection-probe/visible_navigation.html",
+      "kind": "parsed/reserialized corrected HTML snapshot; not exact HTTP body",
+      "bytes": 1659887,
+      "sha256": "8dbe549f86efb63dff2ef7c18ffb48ac9fc4c0c82615edd3386b797e6595e435",
+      "access": "private local file"
+    },
+    {
+      "path": "evidence/final-session-20261024/fresh-506-c/rejection-probe.json",
+      "kind": "sanitized sequence, context and source hashes",
+      "bytes": 1846,
+      "sha256": "e09fd4cbf2730044b1048f3067dec97f298159a207056be9d34b4a3abec8ee47",
+      "access": "versioned repository file"
+    },
+    {
+      "path": "evidence/final-session-20261024/fresh-506-c/events.jsonl",
+      "kind": "collection sequence and allowed response metadata; incomplete request capture",
+      "bytes": 114084,
+      "sha256": "e3c99a9e3818afd89ed9ef1f117f319d7355bebd739d6e02d3c1030c8ac4680e",
+      "access": "versioned repository file"
+    }
+  ],
+  "request_capture": {
+    "available": [
+      "candidate URL",
+      "core/config version hashes",
+      "safe response status/cache/date headers",
+      "collection event order",
+      "same-page re-fetch then visible-navigation probe",
+      "cookie names/change flags only"
+    ],
+    "missing": [
+      "Exact original wrong-store full response body",
+      "Untouched corrected response bodies; existing HTML is parsed/reserialized",
+      "Paired redacted complete request settings captured at request time",
+      "Complete transport/session sequence for all probe requests with exact timing"
+    ],
+    "privacy": "Raw originals remain private; no cookie values, credentials or visitor identifiers published"
+  },
+  "package": {
+    "built_utc": "2026-10-24T10:30:42.183845+00:00",
+    "version": "review-20261024-final",
+    "source_commit": "415a7c23d09b2fce113f8550b0b4474bd0a6f4d0",
+    "archive_filename": "walmart-review-20261024-final.zip",
+    "archive_bytes": 115997313,
+    "archive_sha256": "79ec1bfa0d2424ce31b9ebe528216dfceea41d2e1dc99a8b7421277891cd1d3f",
+    "zip_crc_passed": true,
+    "manifest_verified_files": 712,
+    "historical_unique_products": 500,
+    "excluded": "Ignored private data, browser profiles/session files and .git are not included",
+    "scope": "Exact git archive of frozen version tag; follow-up receipt is stored separately",
+    "client_message_sent": false,
+    "contest_submitted": false,
+    "azure_executed": false,
+    "archive_present": true,
+    "archive_sha256_verified_now": true,
+    "versioned_source_url": "https://github.com/RuddiRodriguez/walmart-azure-scraper/tree/review-20261024-final",
+    "public_access_checks": [
+      {
+        "url": "https://github.com/RuddiRodriguez/walmart-azure-scraper/tree/review-20261024-final",
+        "status": 200,
+        "content_type": "text/html; charset=utf-8",
+        "anonymous": true,
+        "response_body_downloaded": false
+      },
+      {
+        "url": "https://raw.githubusercontent.com/RuddiRodriguez/walmart-azure-scraper/review-20261024-final/evidence/products-500.json",
+        "status": 200,
+        "content_type": "text/plain; charset=utf-8",
+        "anonymous": true,
+        "response_body_downloaded": false
+      },
+      {
+        "url": "https://github.com/RuddiRodriguez/walmart-azure-scraper/archive/refs/tags/review-20261024-final.zip",
+        "status": 200,
+        "content_type": "application/zip",
+        "anonymous": true,
+        "response_body_downloaded": false
+      }
+    ]
+  },
+  "open_acceptance": [
+    "Sustained store correctness",
+    "Paired complete wrong/correct raw response capture",
+    "Full uncapped category/subcategory traversal",
+    "Repeated complete collection",
+    "Genuine live offer examples",
+    "Successful final-version live interruption/resume",
+    "Azure execution; not authorized by client feedback"
+  ],
+  "next_step": "Step2 requires separate user instruction; no transport/session change implemented",
+  "live_collectors_at_inventory": []
+}

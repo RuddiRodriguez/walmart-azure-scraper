@@ -1,3 +1,7 @@
+# Baseline update — 25 October 2026
+
+Store #100/PICKUP is now accepted by the client for the next bounded demonstration. This supersedes the earlier unconfirmed-demonstration note below; it does not grant Azure access or confirm a production assignment. Complete paired raw responses remain missing: saved corrected HTML was parsed/reserialized. See docs/STEP1_BASELINE_20261025.md and evidence/diagnostic-20261025/baseline-inventory.json. Step1 only; no new live run or collector change.
+
 # Final review — 24 October 2026
 
 This is a completed local demonstration package, with unresolved production requirements.
