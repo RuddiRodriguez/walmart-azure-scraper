@@ -1,0 +1,32 @@
+{
+  "mode": "Offline synthetic input review of existing function; zero live requests; no remedy implemented",
+  "source_commit": "859d3ef",
+  "scrape_sha256": "01d6aee1f2d91c36acebd132c580df32e7914323fe3a3f7b5506bad3217894d1",
+  "cases": [
+    {
+      "case": "correct",
+      "current_guard": "accepted",
+      "desired_guard": "accepted"
+    },
+    {
+      "case": "wrong_store",
+      "current_guard": "rejected",
+      "desired_guard": "rejected"
+    },
+    {
+      "case": "missing_store",
+      "current_guard": "accepted",
+      "desired_guard": "rejected"
+    },
+    {
+      "case": "missing_pickup",
+      "current_guard": "accepted",
+      "desired_guard": "rejected"
+    },
+    {
+      "case": "shipping",
+      "current_guard": "accepted",
+      "desired_guard": "rejected"
+    }
+  ]
+}
