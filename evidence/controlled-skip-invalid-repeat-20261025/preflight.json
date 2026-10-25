@@ -1,0 +1,40 @@
+{
+  "mode": "Offline repeat preflight; zero new retailer requests",
+  "baseline_source_commit": "e90c5f059bc6e2ae25a33b97230ed798bd4177be",
+  "current_commit": "139774111763534de41232fa1bb1f2591d5f834e",
+  "source_hashes_match_baseline": true,
+  "source_hashes": {
+    "controlled_collection.py": "c62b8af54759b65c9c94dcd12d5ea6ea6ec039c772641849b6b9f80d5163b154",
+    "diagnostic_capture.py": "7aae043eed5e95efb2a1bf6de58af0dc93c1473d37ad4cfbe2748aa8c0268e65",
+    "capture_store_drift.py": "9ce534bfb7b887af0776fa18843dc19e162c397e3a6e7f844ffb97f5aa5bf6f7",
+    "scrape.py": "ac43589987b1811f0b707f24eb1c1556d978b72f12a630caee784e7e50740e47",
+    "browser.py": "2b46d80e5b5edd1b75c7cbf36d460d96da91cfd218e0b1dfa309dcc3459cec24",
+    "extract.py": "e252ee14a9e66c9be33220a014984e161192651759c9619202ecf73c39242605",
+    "storage.py": "2453aa318e9e59b37bcc85dd3a6b9c5d8b4cc7616368e4cbf01f41b054385c90",
+    "validate.py": "d316b2e14887bbc02b08a5b54af6fe7c5d340d1ad9b1f5819e242de39ec53ada"
+  },
+  "identical_plan_sha256": "e933bd31499a3a5a64e44ed36867696268565befa1f9b91efebc334a3700c983",
+  "baseline_dataset_sha256": "eb54f4bd0e123b88f9fe6a6442b10cc67a917d9df390304116d6cf9a933b8268",
+  "limits": {
+    "product_requests": 750,
+    "listing_requests": 80,
+    "seconds": 3600
+  },
+  "scope": "Repeat bounded506sample, not full uncapped category coverage; no source/settings change or automatic restart.",
+  "config_hashes_match_baseline": true,
+  "config_sha256": {
+    "config/stores.json": "63f24c4ad600cdf99173ff4066ce800eb983474d0540099161cdb261fecbb08d",
+    "config/categories.csv": "65127cf3cd48f967ea3db0c4dd2be67de3f2ac1f6b60aef406c0778c999f3640",
+    "requirements.txt": "8e334bf56fa0620b2aade00651701b49c5840ccfa331eb3100dafb672d07852f"
+  },
+  "environment_matches_baseline": true,
+  "environment": {
+    "python": "3.14.5",
+    "chrome": "155.0.8059.85",
+    "packages": {
+      "seleniumbase": "4.56.3",
+      "beautifulsoup4": "4.15.0"
+    }
+  },
+  "free_gib": 39.6
+}
