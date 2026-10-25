@@ -25,7 +25,7 @@ CATEGORIES = [
 ]
 
 
-def run(output, pages=1, rendered=False):
+def run(output, pages=1, rendered=False, extended=False):
     if pages not in [1, 3]:
         raise ValueError("Use one or three pages per large category")
     output = output.absolute()
@@ -35,11 +35,13 @@ def run(output, pages=1, rendered=False):
     settings = json.loads(Path('config/stores.json').read_text())
     settings.update(retries=1, max_page_seconds=25)
     store = settings['stores'][0]
-    state = dict(started=time.monotonic(), limits=dict(product_requests=60, listing_requests=2 * pages + 2, seconds=1200),
+    cases = [(category, path, quota) for (category, path, _), quota in zip(CATEGORIES, [27, 32, 5, 6])] if extended else CATEGORIES
+    page_limits = dict(zip([c[0] for c in CATEGORIES], [5, 11, 1, 3])) if extended else {}
+    state = dict(started=time.monotonic(), limits=dict(product_requests=72 if extended else 60, listing_requests=20 if extended else 2 * pages + 2, seconds=1200),
                  product_requests=0, listing_requests=0, sequence=0, body_bytes=0)
     report = dict(started_utc=datetime.now(timezone.utc).isoformat(), completed=False,
                   pair_captured=False, pagination_gaps=[], observations=[], accepted=[], category_visits=0,
-                  pages_per_large_category=pages, rendered_pagination=rendered, limits=state['limits'], mode='Private live diagnostic; no production output',
+                  pages_per_large_category=pages, rendered_pagination=rendered, extended=extended, target_product_ceiling=sum(c[2] for c in cases), limits=state['limits'], mode='Private live diagnostic; no production output',
                   source_hashes={p: hashlib.sha256(Path(p).read_bytes()).hexdigest()
                                  for p in ['capture_store_drift.py', 'browser.py', 'extract.py', 'diagnostic_capture.py', 'scrape.py', 'inspect_rendered_pagination.py']})
     sb = None
@@ -99,10 +101,11 @@ def run(output, pages=1, rendered=False):
         sb = open_browser()
         logo = select_store(sb, store, settings, log, output)
         seen = set()
-        for category, path, limit in CATEGORIES:
+        for category, path, limit in cases:
             url = 'https://www.walmart.com/browse/' + path
             remaining = limit
-            for _ in range(pages if category in ['Balloons', 'Diapering'] else 1):
+            page_limit = page_limits.get(category, pages if category in ['Balloons', 'Diapering'] else 1)
+            for _ in range(page_limit):
                 report['category_visits'] += 1
                 log('category_visit', category=category, url=safe_url(url))
                 page = navigate(sb, url, settings, log)
@@ -139,7 +142,7 @@ def run(output, pages=1, rendered=False):
                     observe(candidate)
                     remaining -= 1
                 save()
-                if not following and more_reported and remaining and category in ['Balloons', 'Diapering'] and pages > 1:
+                if not following and more_reported and remaining and page_limit > 1:
                     report['pagination_gaps'].append(dict(category=category, page=current_page,
                                                          reason='More pages reported but no observed next-page control'))
                 if remaining == 0 or not following:
@@ -163,7 +166,8 @@ if __name__ == '__main__':
     parser.add_argument('--output', required=True, type=Path)
     parser.add_argument('--pages', type=int, choices=[1, 3], default=1)
     parser.add_argument('--rendered-pagination', action='store_true')
+    parser.add_argument('--extended', action='store_true', help='One historical-length probe: up to70 targets/20 listings')
     args = parser.parse_args()
     os.umask(0o077)
-    result = run(args.output, args.pages, args.rendered_pagination)
+    result = run(args.output, args.pages, args.rendered_pagination, args.extended)
     print(json.dumps({key: result.get(key) for key in ['completed', 'pair_captured', 'counts', 'seconds', 'error']}))

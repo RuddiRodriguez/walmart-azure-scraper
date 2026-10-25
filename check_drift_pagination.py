@@ -10,9 +10,9 @@ import capture_store_drift as review
 
 def check():
     results = []
-    for mode in ['normal', 'drift', 'pagination_gap', 'rendered_fallback']:
+    for mode in ['normal', 'drift', 'pagination_gap', 'rendered_fallback', 'extended']:
         drift = mode == 'drift'
-        gap = mode in ['pagination_gap', 'rendered_fallback']
+        gap = mode in ['pagination_gap', 'rendered_fallback', 'extended']
         counts = {'listings': 0, 'products': 0}
 
         def page():
@@ -53,7 +53,7 @@ def check():
                 def data(*_):
                     return {'data': {'product': {'usItemId': counts['id']}}}
                 with patch.object(review, 'next_data', side_effect=data):
-                    result = review.run(Path(folder) / 'run', pages=3, rendered=mode == 'rendered_fallback')
+                    result = review.run(Path(folder) / 'run', pages=3, rendered=mode == 'rendered_fallback', extended=mode == 'extended')
             if drift:
                 assert not result['completed'] and result['pair_captured']
                 assert result['counts']['product_requests'] == 2
@@ -64,6 +64,13 @@ def check():
                 assert len(result['pagination_gaps']) == 2
                 assert result['counts']['listing_requests'] == 4
                 results.append('Reported extra pages without next controls leave expanded scope incomplete')
+            elif mode == 'extended':
+                assert result['completed'] and len(result['accepted']) == 70
+                assert result['counts']['product_requests'] == 70
+                assert result['counts']['listing_requests'] == 9
+                assert result['limits']['product_requests'] == 72
+                assert result['limits']['listing_requests'] == 20
+                results.append('Extended synthetic scope reaches70targets within72product/20listing bounds')
             else:
                 assert result['completed']
                 assert result['counts']['listing_requests'] == 8
