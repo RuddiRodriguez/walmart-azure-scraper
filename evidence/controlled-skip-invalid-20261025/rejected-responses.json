@@ -1,0 +1,925 @@
+[
+  {
+    "sequence": 81,
+    "expected_product_id": "733110876",
+    "actual_product_id": "733110876",
+    "reason": "no_local_pickup",
+    "listing_sequence": 44,
+    "body_sha256": "f840db8f6ea004c4597ac51730bd34b6f19d55c4aa02532ffcde600d9acfac98",
+    "listing_price_text": "Price $5.99 $7.99/100 ct Options from $5.99 \u2013 $42.79",
+    "product_price_info": {
+      "dropPrice": false,
+      "priceDisplayCodes": {
+        "clearance": null,
+        "eligibleForAssociateDiscount": null,
+        "finalCostByWeight": null,
+        "priceDisplayCondition": null,
+        "reducedPrice": null,
+        "rollback": null,
+        "submapType": null,
+        "isB2BPrice": false,
+        "pricePerUnitUom": null,
+        "priceDisplayType": "UNKNOWN",
+        "priceComparedToNew": false
+      },
+      "currentPrice": {
+        "price": 5.99,
+        "priceString": "$5.99",
+        "variantPriceString": "$5.99",
+        "currencyUnit": "USD",
+        "bestValue": null,
+        "supportText": null,
+        "priceDisplay": "$5.99"
+      },
+      "basePrice": null,
+      "wasPrice": null,
+      "comparisonPrice": null,
+      "unitPrice": {
+        "price": 7.99,
+        "priceString": "$7.99/100 ct",
+        "variantPriceString": null,
+        "currencyUnit": "USD",
+        "bestValue": false,
+        "supportText": null
+      },
+      "savings": null,
+      "savingsAmount": null,
+      "secondaryOfferBoost": "$5.52",
+      "shipPrice": null,
+      "isPriceReduced": false,
+      "priceReducedDisplay": null,
+      "subscriptionPrice": null,
+      "priceRange": {
+        "minPrice": null,
+        "maxPrice": null,
+        "priceString": null,
+        "currencyUnit": null,
+        "denominations": null
+      },
+      "listPrice": null,
+      "capType": null,
+      "volumePriceTiers": [],
+      "walmartFundedAmount": null,
+      "wPlusEarlyAccessPrice": null,
+      "additionalFees": {
+        "dutyFee": {
+          "price": 0,
+          "priceString": "$0.00"
+        },
+        "shippingAndImportFee": {
+          "price": 0,
+          "priceString": "$0.00"
+        },
+        "giftCardMarginAndFee": null,
+        "estimatedTotalPrice": {
+          "price": 5.99,
+          "priceString": "$5.99"
+        },
+        "countryName": "United States"
+      },
+      "taxInfo": null
+    },
+    "store_id": "100",
+    "zip": "72712",
+    "intent": "PICKUP",
+    "price_validation_detail": null
+  },
+  {
+    "sequence": 227,
+    "expected_product_id": "20736762290",
+    "actual_product_id": "20736762290",
+    "reason": "no_local_pickup",
+    "listing_sequence": 222,
+    "body_sha256": "00ba3ef4a1a35572b82821b400d203a2b6885510d1a13595d2cf62b166819f6f",
+    "listing_price_text": "Price $25.97 59.0 \u00a2/lb Options from $16.98",
+    "product_price_info": {
+      "dropPrice": false,
+      "priceDisplayCodes": {
+        "clearance": null,
+        "eligibleForAssociateDiscount": null,
+        "finalCostByWeight": null,
+        "priceDisplayCondition": null,
+        "reducedPrice": null,
+        "rollback": null,
+        "submapType": null,
+        "isB2BPrice": false,
+        "pricePerUnitUom": null,
+        "priceDisplayType": "UNKNOWN",
+        "priceComparedToNew": false
+      },
+      "currentPrice": null,
+      "basePrice": null,
+      "wasPrice": null,
+      "comparisonPrice": null,
+      "unitPrice": null,
+      "savings": null,
+      "savingsAmount": null,
+      "secondaryOfferBoost": null,
+      "shipPrice": null,
+      "isPriceReduced": false,
+      "priceReducedDisplay": null,
+      "subscriptionPrice": null,
+      "priceRange": {
+        "minPrice": null,
+        "maxPrice": null,
+        "priceString": null,
+        "currencyUnit": null,
+        "denominations": null
+      },
+      "listPrice": null,
+      "capType": null,
+      "volumePriceTiers": [],
+      "walmartFundedAmount": null,
+      "wPlusEarlyAccessPrice": null,
+      "additionalFees": {
+        "dutyFee": {
+          "price": 0,
+          "priceString": "$0.00"
+        },
+        "shippingAndImportFee": {
+          "price": 0,
+          "priceString": "$0.00"
+        },
+        "giftCardMarginAndFee": null,
+        "estimatedTotalPrice": {
+          "price": 0,
+          "priceString": "$0.00"
+        },
+        "countryName": "United States"
+      },
+      "taxInfo": null
+    },
+    "store_id": "100",
+    "zip": "72712",
+    "intent": "PICKUP",
+    "price_validation_detail": null
+  },
+  {
+    "sequence": 352,
+    "expected_product_id": "20803673411",
+    "actual_product_id": "20803673411",
+    "reason": "no_local_pickup",
+    "listing_sequence": 327,
+    "body_sha256": "4743730c00635ebef9e9f5806fec11dd6e9c8a63a80ddc655a5bb012a8b72e85",
+    "listing_price_text": "Price Now $14.99 Was $18.99",
+    "product_price_info": {
+      "dropPrice": false,
+      "priceDisplayCodes": {
+        "clearance": null,
+        "eligibleForAssociateDiscount": true,
+        "finalCostByWeight": null,
+        "priceDisplayCondition": null,
+        "reducedPrice": null,
+        "rollback": null,
+        "submapType": null,
+        "isB2BPrice": false,
+        "pricePerUnitUom": "EA",
+        "priceDisplayType": "UNKNOWN",
+        "priceComparedToNew": false
+      },
+      "currentPrice": {
+        "price": 14.99,
+        "priceString": "$14.99",
+        "variantPriceString": "$14.99",
+        "currencyUnit": "USD",
+        "bestValue": null,
+        "supportText": null,
+        "priceDisplay": "Now $14.99"
+      },
+      "basePrice": null,
+      "wasPrice": {
+        "price": 18.99,
+        "priceString": "$18.99",
+        "variantPriceString": null,
+        "currencyUnit": "USD",
+        "bestValue": null,
+        "supportText": null
+      },
+      "comparisonPrice": null,
+      "unitPrice": null,
+      "savings": null,
+      "savingsAmount": {
+        "amount": 4,
+        "priceString": "SAVE $4.00"
+      },
+      "secondaryOfferBoost": null,
+      "shipPrice": null,
+      "isPriceReduced": true,
+      "priceReducedDisplay": "Now $14.99",
+      "subscriptionPrice": null,
+      "priceRange": {
+        "minPrice": null,
+        "maxPrice": null,
+        "priceString": null,
+        "currencyUnit": null,
+        "denominations": null
+      },
+      "listPrice": {
+        "price": 18.99,
+        "priceString": "$18.99",
+        "variantPriceString": null,
+        "currencyUnit": "USD",
+        "bestValue": null,
+        "supportText": null
+      },
+      "capType": null,
+      "volumePriceTiers": [],
+      "walmartFundedAmount": null,
+      "wPlusEarlyAccessPrice": null,
+      "additionalFees": {
+        "dutyFee": {
+          "price": 0,
+          "priceString": "$0.00"
+        },
+        "shippingAndImportFee": {
+          "price": 0,
+          "priceString": "$0.00"
+        },
+        "giftCardMarginAndFee": null,
+        "estimatedTotalPrice": {
+          "price": 14.99,
+          "priceString": "$14.99"
+        },
+        "countryName": "United States"
+      },
+      "taxInfo": null
+    },
+    "store_id": "100",
+    "zip": "72712",
+    "intent": "PICKUP",
+    "price_validation_detail": null
+  },
+  {
+    "sequence": 353,
+    "expected_product_id": "17941208051",
+    "actual_product_id": "17941208051",
+    "reason": "no_local_pickup",
+    "listing_sequence": 327,
+    "body_sha256": "f3b01a2a4ef98ed5a64b0ff9117e90dd5b24c2b1928389adb5b5622285015840",
+    "listing_price_text": "Price $17.99 $17.99/count",
+    "product_price_info": {
+      "dropPrice": false,
+      "priceDisplayCodes": {
+        "clearance": null,
+        "eligibleForAssociateDiscount": true,
+        "finalCostByWeight": null,
+        "priceDisplayCondition": null,
+        "reducedPrice": null,
+        "rollback": null,
+        "submapType": null,
+        "isB2BPrice": false,
+        "pricePerUnitUom": null,
+        "priceDisplayType": "UNKNOWN",
+        "priceComparedToNew": false
+      },
+      "currentPrice": {
+        "price": 17.99,
+        "priceString": "$17.99",
+        "variantPriceString": "$17.99",
+        "currencyUnit": "USD",
+        "bestValue": null,
+        "supportText": null,
+        "priceDisplay": "$17.99"
+      },
+      "basePrice": null,
+      "wasPrice": null,
+      "comparisonPrice": null,
+      "unitPrice": {
+        "price": 17.99,
+        "priceString": "$17.99/count",
+        "variantPriceString": null,
+        "currencyUnit": "USD",
+        "bestValue": null,
+        "supportText": null
+      },
+      "savings": null,
+      "savingsAmount": null,
+      "secondaryOfferBoost": null,
+      "shipPrice": null,
+      "isPriceReduced": false,
+      "priceReducedDisplay": null,
+      "subscriptionPrice": null,
+      "priceRange": {
+        "minPrice": null,
+        "maxPrice": null,
+        "priceString": null,
+        "currencyUnit": null,
+        "denominations": null
+      },
+      "listPrice": null,
+      "capType": null,
+      "volumePriceTiers": [],
+      "walmartFundedAmount": null,
+      "wPlusEarlyAccessPrice": null,
+      "additionalFees": {
+        "dutyFee": {
+          "price": 0,
+          "priceString": "$0.00"
+        },
+        "shippingAndImportFee": {
+          "price": 0,
+          "priceString": "$0.00"
+        },
+        "giftCardMarginAndFee": null,
+        "estimatedTotalPrice": {
+          "price": 17.99,
+          "priceString": "$17.99"
+        },
+        "countryName": "United States"
+      },
+      "taxInfo": null
+    },
+    "store_id": "100",
+    "zip": "72712",
+    "intent": "PICKUP",
+    "price_validation_detail": null
+  },
+  {
+    "sequence": 476,
+    "expected_product_id": "598478108",
+    "actual_product_id": "598478108",
+    "reason": "price_changed",
+    "listing_sequence": 475,
+    "body_sha256": "665427496aae8fb2be36c45395fb8f106781ffa76ba28b9b25f9d097b00aa2a5",
+    "listing_price_text": "",
+    "product_price_info": {
+      "dropPrice": false,
+      "priceDisplayCodes": {
+        "clearance": null,
+        "eligibleForAssociateDiscount": true,
+        "finalCostByWeight": null,
+        "priceDisplayCondition": null,
+        "reducedPrice": null,
+        "rollback": null,
+        "submapType": null,
+        "isB2BPrice": false,
+        "pricePerUnitUom": null,
+        "priceDisplayType": "UNKNOWN",
+        "priceComparedToNew": false
+      },
+      "currentPrice": {
+        "price": 9.97,
+        "priceString": "$9.97",
+        "variantPriceString": "$9.97",
+        "currencyUnit": "USD",
+        "bestValue": null,
+        "supportText": null,
+        "priceDisplay": "$9.97"
+      },
+      "basePrice": null,
+      "wasPrice": null,
+      "comparisonPrice": null,
+      "unitPrice": {
+        "price": 0.554,
+        "priceString": "55.4 \u00a2/count",
+        "variantPriceString": null,
+        "currencyUnit": "USD",
+        "bestValue": null,
+        "supportText": null
+      },
+      "savings": null,
+      "savingsAmount": null,
+      "secondaryOfferBoost": null,
+      "shipPrice": null,
+      "isPriceReduced": false,
+      "priceReducedDisplay": null,
+      "subscriptionPrice": null,
+      "priceRange": {
+        "minPrice": null,
+        "maxPrice": null,
+        "priceString": null,
+        "currencyUnit": null,
+        "denominations": null
+      },
+      "listPrice": null,
+      "capType": null,
+      "volumePriceTiers": [],
+      "walmartFundedAmount": null,
+      "wPlusEarlyAccessPrice": null,
+      "additionalFees": {
+        "dutyFee": {
+          "price": 0,
+          "priceString": "$0.00"
+        },
+        "shippingAndImportFee": {
+          "price": 0,
+          "priceString": "$0.00"
+        },
+        "giftCardMarginAndFee": null,
+        "estimatedTotalPrice": {
+          "price": 9.97,
+          "priceString": "$9.97"
+        },
+        "countryName": "United States"
+      },
+      "taxInfo": null
+    },
+    "store_id": "100",
+    "zip": "72712",
+    "intent": "PICKUP",
+    "price_validation_detail": "missing_listing_price"
+  },
+  {
+    "sequence": 477,
+    "expected_product_id": "5212491762",
+    "actual_product_id": "5212491762",
+    "reason": "price_changed",
+    "listing_sequence": 475,
+    "body_sha256": "a6a57aefb1c28cc0eb01f0184f1f6b08a6ada201ebc9fc3b90b1ff8c13e53bba",
+    "listing_price_text": "",
+    "product_price_info": {
+      "dropPrice": false,
+      "priceDisplayCodes": {
+        "clearance": null,
+        "eligibleForAssociateDiscount": true,
+        "finalCostByWeight": null,
+        "priceDisplayCondition": null,
+        "reducedPrice": null,
+        "rollback": null,
+        "submapType": null,
+        "isB2BPrice": false,
+        "pricePerUnitUom": "EA",
+        "priceDisplayType": "UNKNOWN",
+        "priceComparedToNew": false
+      },
+      "currentPrice": {
+        "price": 27.97,
+        "priceString": "$27.97",
+        "variantPriceString": "$27.97",
+        "currencyUnit": "USD",
+        "bestValue": null,
+        "supportText": null,
+        "priceDisplay": "$27.97"
+      },
+      "basePrice": null,
+      "wasPrice": null,
+      "comparisonPrice": null,
+      "unitPrice": null,
+      "savings": null,
+      "savingsAmount": null,
+      "secondaryOfferBoost": null,
+      "shipPrice": null,
+      "isPriceReduced": false,
+      "priceReducedDisplay": null,
+      "subscriptionPrice": null,
+      "priceRange": {
+        "minPrice": null,
+        "maxPrice": null,
+        "priceString": null,
+        "currencyUnit": null,
+        "denominations": null
+      },
+      "listPrice": null,
+      "capType": null,
+      "volumePriceTiers": [],
+      "walmartFundedAmount": null,
+      "wPlusEarlyAccessPrice": null,
+      "additionalFees": {
+        "dutyFee": {
+          "price": 0,
+          "priceString": "$0.00"
+        },
+        "shippingAndImportFee": {
+          "price": 0,
+          "priceString": "$0.00"
+        },
+        "giftCardMarginAndFee": null,
+        "estimatedTotalPrice": {
+          "price": 27.97,
+          "priceString": "$27.97"
+        },
+        "countryName": "United States"
+      },
+      "taxInfo": null
+    },
+    "store_id": "100",
+    "zip": "72712",
+    "intent": "PICKUP",
+    "price_validation_detail": "missing_listing_price"
+  },
+  {
+    "sequence": 478,
+    "expected_product_id": "5113125462",
+    "actual_product_id": "5113125462",
+    "reason": "price_changed",
+    "listing_sequence": 475,
+    "body_sha256": "25921f861fa4f6135faad802c70f539eeea10547afd2172b1b54ac2238d192ca",
+    "listing_price_text": "",
+    "product_price_info": {
+      "dropPrice": false,
+      "priceDisplayCodes": {
+        "clearance": null,
+        "eligibleForAssociateDiscount": true,
+        "finalCostByWeight": null,
+        "priceDisplayCondition": null,
+        "reducedPrice": null,
+        "rollback": null,
+        "submapType": null,
+        "isB2BPrice": false,
+        "pricePerUnitUom": null,
+        "priceDisplayType": "UNKNOWN",
+        "priceComparedToNew": false
+      },
+      "currentPrice": {
+        "price": 11.97,
+        "priceString": "$11.97",
+        "variantPriceString": "$11.97",
+        "currencyUnit": "USD",
+        "bestValue": null,
+        "supportText": null,
+        "priceDisplay": "$11.97"
+      },
+      "basePrice": null,
+      "wasPrice": null,
+      "comparisonPrice": null,
+      "unitPrice": {
+        "price": 0.222,
+        "priceString": "22.2 \u00a2/count",
+        "variantPriceString": null,
+        "currencyUnit": "USD",
+        "bestValue": null,
+        "supportText": null
+      },
+      "savings": null,
+      "savingsAmount": null,
+      "secondaryOfferBoost": null,
+      "shipPrice": null,
+      "isPriceReduced": false,
+      "priceReducedDisplay": null,
+      "subscriptionPrice": null,
+      "priceRange": {
+        "minPrice": null,
+        "maxPrice": null,
+        "priceString": null,
+        "currencyUnit": null,
+        "denominations": null
+      },
+      "listPrice": null,
+      "capType": null,
+      "volumePriceTiers": [],
+      "walmartFundedAmount": null,
+      "wPlusEarlyAccessPrice": null,
+      "additionalFees": {
+        "dutyFee": {
+          "price": 0,
+          "priceString": "$0.00"
+        },
+        "shippingAndImportFee": {
+          "price": 0,
+          "priceString": "$0.00"
+        },
+        "giftCardMarginAndFee": null,
+        "estimatedTotalPrice": {
+          "price": 11.97,
+          "priceString": "$11.97"
+        },
+        "countryName": "United States"
+      },
+      "taxInfo": null
+    },
+    "store_id": "100",
+    "zip": "72712",
+    "intent": "PICKUP",
+    "price_validation_detail": "missing_listing_price"
+  },
+  {
+    "sequence": 479,
+    "expected_product_id": "35511656",
+    "actual_product_id": "35511656",
+    "reason": "price_changed",
+    "listing_sequence": 475,
+    "body_sha256": "3158bdbb715d78245992b146c061eeb2d650859c063469710702011df456ce97",
+    "listing_price_text": "",
+    "product_price_info": {
+      "dropPrice": false,
+      "priceDisplayCodes": {
+        "clearance": null,
+        "eligibleForAssociateDiscount": true,
+        "finalCostByWeight": null,
+        "priceDisplayCondition": null,
+        "reducedPrice": null,
+        "rollback": null,
+        "submapType": null,
+        "isB2BPrice": false,
+        "pricePerUnitUom": "EA",
+        "priceDisplayType": "UNKNOWN",
+        "priceComparedToNew": false
+      },
+      "currentPrice": {
+        "price": 31.97,
+        "priceString": "$31.97",
+        "variantPriceString": "$31.97",
+        "currencyUnit": "USD",
+        "bestValue": null,
+        "supportText": null,
+        "priceDisplay": "$31.97"
+      },
+      "basePrice": null,
+      "wasPrice": null,
+      "comparisonPrice": null,
+      "unitPrice": {
+        "price": 0.727,
+        "priceString": "72.7 \u00a2/ea",
+        "variantPriceString": null,
+        "currencyUnit": "USD",
+        "bestValue": false,
+        "supportText": null
+      },
+      "savings": null,
+      "savingsAmount": null,
+      "secondaryOfferBoost": null,
+      "shipPrice": null,
+      "isPriceReduced": false,
+      "priceReducedDisplay": null,
+      "subscriptionPrice": null,
+      "priceRange": {
+        "minPrice": null,
+        "maxPrice": null,
+        "priceString": null,
+        "currencyUnit": null,
+        "denominations": null
+      },
+      "listPrice": null,
+      "capType": null,
+      "volumePriceTiers": [],
+      "walmartFundedAmount": null,
+      "wPlusEarlyAccessPrice": null,
+      "additionalFees": {
+        "dutyFee": {
+          "price": 0,
+          "priceString": "$0.00"
+        },
+        "shippingAndImportFee": {
+          "price": 0,
+          "priceString": "$0.00"
+        },
+        "giftCardMarginAndFee": null,
+        "estimatedTotalPrice": {
+          "price": 31.97,
+          "priceString": "$31.97"
+        },
+        "countryName": "United States"
+      },
+      "taxInfo": null
+    },
+    "store_id": "100",
+    "zip": "72712",
+    "intent": "PICKUP",
+    "price_validation_detail": "missing_listing_price"
+  },
+  {
+    "sequence": 480,
+    "expected_product_id": "606723351",
+    "actual_product_id": "606723351",
+    "reason": "price_changed",
+    "listing_sequence": 475,
+    "body_sha256": "8d7fa4093b7991c66001c98b71de6ffc7522bbac19e934b20c196cdaf9ea9f1c",
+    "listing_price_text": "",
+    "product_price_info": {
+      "dropPrice": false,
+      "priceDisplayCodes": {
+        "clearance": null,
+        "eligibleForAssociateDiscount": true,
+        "finalCostByWeight": null,
+        "priceDisplayCondition": null,
+        "reducedPrice": null,
+        "rollback": null,
+        "submapType": null,
+        "isB2BPrice": false,
+        "pricePerUnitUom": "OZ",
+        "priceDisplayType": "UNKNOWN",
+        "priceComparedToNew": false
+      },
+      "currentPrice": {
+        "price": 6.97,
+        "priceString": "$6.97",
+        "variantPriceString": "$6.97",
+        "currencyUnit": "USD",
+        "bestValue": null,
+        "supportText": null,
+        "priceDisplay": "$6.97"
+      },
+      "basePrice": null,
+      "wasPrice": null,
+      "comparisonPrice": null,
+      "unitPrice": {
+        "price": 3.49,
+        "priceString": "$3.49/oz",
+        "variantPriceString": null,
+        "currencyUnit": "USD",
+        "bestValue": null,
+        "supportText": null
+      },
+      "savings": null,
+      "savingsAmount": null,
+      "secondaryOfferBoost": null,
+      "shipPrice": null,
+      "isPriceReduced": false,
+      "priceReducedDisplay": null,
+      "subscriptionPrice": null,
+      "priceRange": {
+        "minPrice": null,
+        "maxPrice": null,
+        "priceString": null,
+        "currencyUnit": null,
+        "denominations": null
+      },
+      "listPrice": null,
+      "capType": null,
+      "volumePriceTiers": [],
+      "walmartFundedAmount": null,
+      "wPlusEarlyAccessPrice": null,
+      "additionalFees": {
+        "dutyFee": {
+          "price": 0,
+          "priceString": "$0.00"
+        },
+        "shippingAndImportFee": {
+          "price": 0,
+          "priceString": "$0.00"
+        },
+        "giftCardMarginAndFee": null,
+        "estimatedTotalPrice": {
+          "price": 6.97,
+          "priceString": "$6.97"
+        },
+        "countryName": "United States"
+      },
+      "taxInfo": null
+    },
+    "store_id": "100",
+    "zip": "72712",
+    "intent": "PICKUP",
+    "price_validation_detail": "missing_listing_price"
+  },
+  {
+    "sequence": 481,
+    "expected_product_id": "20109864798",
+    "actual_product_id": "20109864798",
+    "reason": "price_changed",
+    "listing_sequence": 475,
+    "body_sha256": "f7b8f3a5c5fecae6fdddf74d9f15122fca2eaded21b14abc2be8c935bb819c63",
+    "listing_price_text": "",
+    "product_price_info": {
+      "dropPrice": false,
+      "priceDisplayCodes": {
+        "clearance": null,
+        "eligibleForAssociateDiscount": true,
+        "finalCostByWeight": null,
+        "priceDisplayCondition": null,
+        "reducedPrice": null,
+        "rollback": null,
+        "submapType": null,
+        "isB2BPrice": false,
+        "pricePerUnitUom": null,
+        "priceDisplayType": "UNKNOWN",
+        "priceComparedToNew": false
+      },
+      "currentPrice": {
+        "price": 29.97,
+        "priceString": "$29.97",
+        "variantPriceString": "$29.97",
+        "currencyUnit": "USD",
+        "bestValue": null,
+        "supportText": null,
+        "priceDisplay": "$29.97"
+      },
+      "basePrice": null,
+      "wasPrice": null,
+      "comparisonPrice": null,
+      "unitPrice": {
+        "price": 0.5,
+        "priceString": "50.0 \u00a2/count",
+        "variantPriceString": null,
+        "currencyUnit": "USD",
+        "bestValue": null,
+        "supportText": null
+      },
+      "savings": null,
+      "savingsAmount": null,
+      "secondaryOfferBoost": null,
+      "shipPrice": null,
+      "isPriceReduced": false,
+      "priceReducedDisplay": null,
+      "subscriptionPrice": null,
+      "priceRange": {
+        "minPrice": null,
+        "maxPrice": null,
+        "priceString": null,
+        "currencyUnit": null,
+        "denominations": null
+      },
+      "listPrice": null,
+      "capType": null,
+      "volumePriceTiers": [],
+      "walmartFundedAmount": null,
+      "wPlusEarlyAccessPrice": null,
+      "additionalFees": {
+        "dutyFee": {
+          "price": 0,
+          "priceString": "$0.00"
+        },
+        "shippingAndImportFee": {
+          "price": 0,
+          "priceString": "$0.00"
+        },
+        "giftCardMarginAndFee": null,
+        "estimatedTotalPrice": {
+          "price": 29.97,
+          "priceString": "$29.97"
+        },
+        "countryName": "United States"
+      },
+      "taxInfo": null
+    },
+    "store_id": "100",
+    "zip": "72712",
+    "intent": "PICKUP",
+    "price_validation_detail": "missing_listing_price"
+  },
+  {
+    "sequence": 482,
+    "expected_product_id": "10533021",
+    "actual_product_id": "10533021",
+    "reason": "price_changed",
+    "listing_sequence": 475,
+    "body_sha256": "5d98725d829dc4a9ccf35b4365e350191b1b38399175fd8acb5a34d524e16878",
+    "listing_price_text": "",
+    "product_price_info": {
+      "dropPrice": false,
+      "priceDisplayCodes": {
+        "clearance": null,
+        "eligibleForAssociateDiscount": true,
+        "finalCostByWeight": null,
+        "priceDisplayCondition": null,
+        "reducedPrice": null,
+        "rollback": null,
+        "submapType": null,
+        "isB2BPrice": false,
+        "pricePerUnitUom": "OZ",
+        "priceDisplayType": "UNKNOWN",
+        "priceComparedToNew": false
+      },
+      "currentPrice": {
+        "price": 5.97,
+        "priceString": "$5.97",
+        "variantPriceString": "$5.97",
+        "currencyUnit": "USD",
+        "bestValue": null,
+        "supportText": null,
+        "priceDisplay": "$5.97"
+      },
+      "basePrice": null,
+      "wasPrice": null,
+      "comparisonPrice": null,
+      "unitPrice": {
+        "price": 0.459,
+        "priceString": "45.9 \u00a2/oz",
+        "variantPriceString": null,
+        "currencyUnit": "USD",
+        "bestValue": null,
+        "supportText": null
+      },
+      "savings": null,
+      "savingsAmount": null,
+      "secondaryOfferBoost": null,
+      "shipPrice": null,
+      "isPriceReduced": false,
+      "priceReducedDisplay": null,
+      "subscriptionPrice": null,
+      "priceRange": {
+        "minPrice": null,
+        "maxPrice": null,
+        "priceString": null,
+        "currencyUnit": null,
+        "denominations": null
+      },
+      "listPrice": null,
+      "capType": null,
+      "volumePriceTiers": [],
+      "walmartFundedAmount": null,
+      "wPlusEarlyAccessPrice": null,
+      "additionalFees": {
+        "dutyFee": {
+          "price": 0,
+          "priceString": "$0.00"
+        },
+        "shippingAndImportFee": {
+          "price": 0,
+          "priceString": "$0.00"
+        },
+        "giftCardMarginAndFee": null,
+        "estimatedTotalPrice": {
+          "price": 5.97,
+          "priceString": "$5.97"
+        },
+        "countryName": "United States"
+      },
+      "taxInfo": null
+    },
+    "store_id": "100",
+    "zip": "72712",
+    "intent": "PICKUP",
+    "price_validation_detail": "missing_listing_price"
+  }
+]

@@ -1,23 +1,25 @@
-# Acceptance record — 25 October 2026
+# Acceptance record — current controlled collection
 
-Authoritative current status:docs/REVIEW_STATUS.md and evidence/diagnostic-20261025/FINAL_STATUS.json.
-Earlier phase reports retain their original dates and scopes.
+Authoritative status:docs/REVIEW_STATUS.md and
+evidence/controlled-skip-invalid-20261025/summary.json. Earlier reports retain their original scope.
 
-| Client feedback request | Current evidence | Status |
+| Requirement | Evidence | Status |
 |---|---|---|
-| Historical 500 separate from fresh 33 samples | Separate dataset paths and source audits | Complete |
-| Identify #100/PICKUP through response evidence |35 complete captured bodies privately; public listing/product context metadata | Bounded observations complete |
-| Paired raw wrong/correct responses | Earlier wrong JSON survives; original full body missing; no new drift | Open |
-| Redacted settings,session sequence,retry behavior | New capture metadata records options,timing,attempts and hashes; generated HTTP headers omitted | Implemented and observed within stated scope |
-| Smallest session change and drift checks | Same transport; fresh 3-target sessions versus6-target baseline; both passed | No proven improvement |
-| Exclude invalid local prices,preserve unavailable/last good | Existing validation; synthetic safeguard checks; earlier genuine unavailable evidence; historical data unchanged | Safeguards checked; no unavailable items in today's matched sample |
-| Current-version live interruption/resume | Current collector code passed SIGKILL/resume,3 records,7 checks | Complete for bounded local config |
-| Real volume/digital offer examples |2 searches,5 checks,3 distinct products;0verified examples | Open |
-| Full uncapped category coverage and repeated collection | Parent samples and queue evidence only | Open |
-| Version/hash,current package,instructions | Immutable review tag,source checksums,ZIP receipt,README/OPERATIONS and walkthrough | Packaged |
-| Precise dependency/runtime/request/cost bounds | Step3/4 summaries and REVIEW_STATUS | Documented |
-| Azure execution | Installation and timer supplied; no access granted or deployment run | Open |
-| Dated next diagnostic deliverable | This25 October package and unsent update | Prepared; not sent |
+|Actual500+genuine distinct products|Fresh506 JSON, source e90c5f0, independent506 record audit|Passed bounded sample|
+|All11required parent categories represented|12 to 80accepted records/category|Passed representation, not full coverage|
+|Store/Pickup/price/identity checks|506 source replays; initial/final controls passed|Passed sample checks|
+|Reject bad responses and continue|4 no-pickup/7 missing-listing-price rejections; source unchanged midrun|Observed live; store/identity rejection also tested offline|
+|Unavailable products retained|35actual local unavailable records with blank local prices|Passed recorded cases|
+|Missing values/schema/deduplication|Empty source values preserved; no invented UPC/weight/PPM;0 duplicate IDs/URLs|Passed current schema/sample rules|
+|Historical data separated|Historical500/33/67/79/68notmerged into fresh506|Maintained|
+|Raw wrong/correct response pair|2 actual complete pairs private; safe hashes/settings/context metadata public|Reviewed sharing bodies/access pending|
+|Smallest transport/session remedy|No prevention remedy proven; validation/filtering mitigation implemented|Open|
+|Genuine volume/digital offers|0 verified examples|Open|
+|Full uncapped category coverage|Bounded routes/queue only; uncertain links/ArtAprons remain|Open|
+|Repeated complete collection|Only one successful506 sample in this mode|Open|
+|Final-wrapper live recovery|Earlier3-product production-core recovery is separate|Open for this wrapper/scope|
+|Current version/instructions|Live source e90c5f0, plan, JSON, safe audit/checksums in repository|Current repo evidence; earlier ZIP historical|
+|Environment/request/runtime/cost bounds|Local Python/Chrome; no paid service; actual519product/control+18listing requests,2063.272 seconds|Documented; browser assets additional|
+|Azure|No approved access or execution|Open|
 
-No production acceptance is claimed. Further core/configuration changes require new matching
-live recovery evidence. Raw redaction drafts require privacy review before external sharing.
+No full production acceptance claimed. Private originals/redaction drafts remain unshared.

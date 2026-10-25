@@ -5,6 +5,7 @@ import hashlib
 import json
 import subprocess
 from pathlib import Path
+from urllib.parse import urlsplit
 
 from bs4 import BeautifulSoup
 from capture_store_drift import listing_from_rendered
@@ -82,13 +83,25 @@ def audit(run, evidence):
                                      current_price_info=product.get('priceInfo'), acceptance_reason=reason,
                                      source_replay_passed=passed, **{k: context[k] for k in ['store_id', 'zip', 'intent']}))
         page.decompose()
+    observations = {o['sequence']: o for o in report['observations']}
+    rejections = []
     for sequence, item in indexed.items():
         if item['kind'] != 'product':
             continue
         page = BeautifulSoup((run / 'captures' / item['body_file']).read_bytes(), 'html.parser')
         try:
             product = next_data(page).get('data', {}).get('product') or {}
-            contexts.append(dict(sequence=sequence, **product_context(product, store)))
+            context = product_context(product, store)
+            contexts.append(dict(sequence=sequence, **context))
+            observation = observations.get(sequence, {})
+            reason = observation.get('acceptance_reason')
+            if reason not in [None, '', 'retained_unavailable']:
+                expected = urlsplit(item['request']['url']).path.rsplit('/', 1)[-1]
+                candidate = derived.get((observation.get('listing_sequence'), expected))
+                rejections.append(dict(sequence=sequence, expected_product_id=expected, actual_product_id=context['product_id'],
+                    reason=reason, price_validation_detail=('missing_listing_price' if reason == 'price_changed' and not (candidate and candidate['price_text']) else None), listing_sequence=observation.get('listing_sequence'), body_sha256=item['body_sha256'],
+                    listing_price_text=candidate['price_text'] if candidate else None, product_price_info=product.get('priceInfo'),
+                    store_id=context['store_id'], zip=context['zip'], intent=context['intent']))
         except (ValueError, KeyError, TypeError):
             contexts.append(dict(sequence=sequence, structured_context_unavailable=True,
                                  response_status=item.get('response', {}).get('status')))
@@ -115,6 +128,8 @@ def audit(run, evidence):
                   controls=report.get('controls', []),
                   initial_control_passed=report.get('initial_control_passed'),
                   final_control_passed=report.get('final_control_passed'),
+                  rejection_ledger_count=len(rejections),
+                  rejected_product_details=dict(Counter(r['price_validation_detail'] or r['reason'] for r in rejections)),
                   unavailable_successes=len(unavailable),
                   handled_failures=report.get('failures', []),
                   excluded_listing_or_product_reasons=report['exclusions'],
@@ -131,7 +146,7 @@ def audit(run, evidence):
     evidence.mkdir(parents=True, exist_ok=True)
     for name, value in [('summary.json', result), ('products.json', rows), ('capture-metadata.json', metadata),
                         ('source-contexts.json', contexts), ('accepted-source-audit.json', verified_sources),
-                        ('page-decisions.json', report['pages'])]:
+                        ('page-decisions.json', report['pages']), ('rejected-responses.json', rejections)]:
         atomic_json(evidence / name, value)
     atomic_json(evidence / 'SHA256SUMS.json', {p.name: hashlib.sha256(p.read_bytes()).hexdigest()
                 for p in sorted(evidence.iterdir()) if p.is_file() and p.name != 'SHA256SUMS.json'})

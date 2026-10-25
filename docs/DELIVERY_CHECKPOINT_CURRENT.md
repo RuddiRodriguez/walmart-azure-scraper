@@ -1,41 +1,33 @@
 # Current delivery checkpoint
 
-Goal: a reviewable scraper and honest evidence against the client's requirements. More reviews are
-expected. Do not spend further runs exploring branches without a specific requirement/evidence gate.
-No client message or submission is authorized.
+Goal: reviewable source and evidence against client requirements. More reviews expected; no
+additional exploratory collection/restart is queued. No client sending/submission authorized.
 
-## Verified work
+## Latest verified delivery
 
-- Historical500-product demonstration remains separate; not a fresh final-version full crawl.
-- Fresh67-product live diagnostic, five listing loads, sourcec09da73: correct100/72712/PICKUP,
-  original response evidence, old failing Clorox target tested, three real unavailable items retained.
-- Current five-product ArtSets sample, source091ea95:5distinct accepted records, correct local
-  source/price checks,5offline source replays and sample validation passed;6body hashes verified.
-  Evidence: evidence/corrected-plan-20261025/art-product-test/.
-- Changed production collector source tested at34c969c: bounded live SIGKILL/resume passed7checks.
-  Reuse only matching collector hashes/configuration/scope; diagnostic helper tests are separate.
-- Listing context gate and recorded wrong-price/unavailable/last-good safeguards tested offline.
+Fresh506 distinct products across all 11required categories, source e90c5f0, one2063.272second run.
+11 responses rejected (4 no local pickup,7 missing listing prices);0 processing errors,
+0 duplicate IDs/URLs.35 local unavailable records retained with blank local prices.
 
-## Open requirements
+Actual JSON:evidence/controlled-skip-invalid-20261025/products.json.
+Independent audit:evidence/controlled-skip-invalid-20261025/summary.json.
+All506 accepted records replayed against original source;537 Fetch body and18 native snapshot hashes
+verified. Both store 100/72712/PICKUP controls passed. Corrected mode rejects/logs bad responses and
+continues, without re-fetching. No wrong-store response occurred in this run; that continuation path
+was tested offline. No transport remedy or sustained reliability claim.
 
-- Actual complete wrong-store/corrected same-session response pair: now captured privately during
-  controlled run6f9284b (product14898365, store3520/SHIPPING then100/PICKUP). Safe metadata and hashes
-  published; privacy-reviewed sharing copies/access still pending. One re-fetch is not a proved remedy.
-  Original collection stopped at79valid partial rows and remains invalid for publication. A second
-  private pair was captured for51237368(store3081/SHIPPING then100/PICKUP). Both remain pending safe sharing review.
-- Genuine qualifying volume/digital offer examples: zero; credit/reward promotions excluded.
-- Full uncapped category scope and queue exhaustion: unproven.69prior associations and3new landing
-  URLs remain uncertain; ArtAprons returns an empty HTTP200category payload, cause unproven.
-- Fresh500+final-version collection and repeated complete collection: not demonstrated. Exactly one
-  fresh-session continuation stopped at68accepted rows after a different store mismatch. Both
-  partial datasets stay separate; no fresh500success or third run. Ordinary failures are skipped once;
-  unsafe context stops collection. Outcome: evidence/controlled-collection-outcome-20261025.json.
-- Final/full-scope recovery and Azure execution: not demonstrated. Azure access ungranted.
-- Existing frozen ZIP predates latest changes; current repository/evidence commits are the current
-  source. Refresh final package/manifest and unsent client message when delivery scope is frozen.
+Historical500,33/67/5samples and stopped79/68attempts remain separate and were not merged. Those
+stopped attempts produced2 complete private wrong/correct pairs; reviewed sharing bodies/access
+still pending. Private originals/native DOM/session details never pushed.
 
-## Next work discipline
+## Still open
 
-Stop additional small branch tests here. Next work should close a named delivery gap or consolidate
-the package for review. Keep all datasets, local/live/offline evidence and source versions separate.
-A working ArtSets sample does not replace missing ArtAprons coverage or complete the project.
+- Full uncapped category scope/queue exhaustion, uncertain landing links and empty ArtAprons route.
+- Genuine volume/digital offer examples.
+- Repeated complete collection and final-wrapper live interruption/resume.
+- Reviewed raw-pair sharing/access and refreshed frozenZIP/unsent client draft.
+- Azure access/execution (not granted or run).
+
+Older production-core3-product recovery proof retains its recorded source/config/scope. Current
+506 sample acceptance does not complete all project requirements. Run/audit instructions in
+CONTROLLED_COLLECTION.md. Missing source values remain empty; no UPC/weight/PPM/deal price invented.

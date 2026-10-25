@@ -13,11 +13,12 @@
     },
     {
       "request": "Retain listing/product identifiers and price-bearing #100/PICKUP context",
-      "status": "Verified within existing bounded captures",
+      "status": "Passed for fresh506bounded sample:506source replays,537body hashes,18native snapshots verified",
       "evidence": [
         "evidence/diagnostic-20261025/step3-results/source-contexts.json",
         "evidence/diagnostic-20261025/step4-offers/source-contexts.json",
-        "evidence/corrected-plan-20261025/step2-results/source-contexts.json"
+        "evidence/corrected-plan-20261025/step2-results/source-contexts.json",
+        "evidence/controlled-skip-invalid-20261025/summary.json"
       ],
       "completion_gate": "Actual response identity/store/ZIP/fulfillment and local price association; banner alone insufficient"
     },
@@ -58,21 +59,23 @@
     },
     {
       "request": "Exclude invalid local prices; preserve unavailable products and last good output",
-      "status": "43offline safeguard checks passed; three real unavailable products re-audited with blank local prices; recorded scope only",
+      "status": "Fresh sample rejected4without local pickup and7with missing listing price;35local unavailable retained blank prices; production pointers untouched",
       "evidence": [
         "evidence/diagnostic-20261025/step2-offline-checks.json",
         "evidence/observed-unavailable-replay.json",
         "evidence/corrected-plan-20261025/rendered-candidate-probe/source-contexts.json",
-        "evidence/corrected-plan-20261025/step4-safeguards/summary.json"
+        "evidence/corrected-plan-20261025/step4-safeguards/summary.json",
+        "evidence/controlled-skip-invalid-20261025/summary.json"
       ],
       "completion_gate": "Invalid response cannot publish; supported local unavailable products retained; prior good data/pointer survives. Current matched sample had no unavailable items"
     },
     {
       "request": "Precise environment/service dependency and bounded request/runtime/cost limits",
-      "status": "Environment frozen; next run limits require new configuration",
+      "status": "Current run environment/plan/actual519product+18listing Fetches/2063.272seconds documented; assets extra, no paid service/Azure",
       "evidence": [
         "evidence/corrected-plan-20261025/step1-baseline.json",
-        "docs/REVIEW_STATUS.md"
+        "docs/REVIEW_STATUS.md",
+        "evidence/controlled-skip-invalid-20261025/environment.json"
       ],
       "completion_gate": "Exact versions/source/config; operational counters/time limits; no paid services; disclose browser asset/UI count limits"
     },
@@ -87,7 +90,7 @@
     },
     {
       "request": "Full uncapped coverage",
-      "status": "Open: controlled506attempt and sole continuation stopped on store drift at79and68accepted rows, kept separate",
+      "status": "Open full scope/queue exhaustion; fresh506distinct sample acrossall11parent categories achieved",
       "evidence": [
         "config/categories.csv",
         "config/stores.json",
@@ -100,13 +103,14 @@
         "evidence/corrected-plan-20261025/step6-followup-scope/live-summary.json",
         "evidence/corrected-plan-20261025/art-aprons-diagnostic/summary.json",
         "evidence/corrected-plan-20261025/art-valid-route/summary.json",
-        "evidence/controlled-collection-outcome-20261025.json"
+        "evidence/controlled-collection-outcome-20261025.json",
+        "evidence/controlled-skip-invalid-20261025/summary.json"
       ],
       "completion_gate": "Every required category/subcategory/page accounted for; queue exhausted with exclusions justified; blocked/stopped/truncated run remains incomplete"
     },
     {
       "request": "Final-version live interruption/resume",
-      "status": "Passed for changed collector34c969c, one-leaf sample3 bounded configuration only",
+      "status": "Open for current controlled wrapper/scope; earlier production-core bounded recovery remains separate evidence",
       "evidence": [
         "evidence/diagnostic-20261025/step4-recovery/hard-recovery.json",
         "evidence/diagnostic-20261025/step4-recovery/review.json",
@@ -117,19 +121,21 @@
     },
     {
       "request": "Repeated collection",
-      "status": "Open: two controlled attempts both stopped; not repeated complete collections",
+      "status": "Open: one successful fresh506sample with new reject-and-continue mode, not repeated complete collection",
       "evidence": [
         "evidence/diagnostic-20261025/step3-results/summary.json",
-        "evidence/controlled-collection-outcome-20261025.json"
+        "evidence/controlled-collection-outcome-20261025.json",
+        "evidence/controlled-skip-invalid-20261025/summary.json"
       ],
       "completion_gate": "Repeated complete collections with matched frozen code/config and store/count/price/duplicate/missing-field/runtime checks"
     },
     {
       "request": "Authoritative version/hash and accessible current package",
-      "status": "Verified existing package",
+      "status": "Current repository has sourcee90c5f0,fresh506JSON,safe audit/checksums/instructions; earlier frozenZIP historical, refresh pending",
       "evidence": [
         "evidence/diagnostic-20261025/public-package-receipt.json",
-        "evidence/corrected-plan-20261025/step1-baseline.json"
+        "evidence/corrected-plan-20261025/step1-baseline.json",
+        "evidence/controlled-skip-invalid-20261025/summary.json"
       ],
       "completion_gate": "Frozen tag/commit,source/config hashes,accessible package and verified receipts"
     },

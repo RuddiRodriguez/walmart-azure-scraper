@@ -7,24 +7,27 @@ Corrected plan baseline: [step 1 report](docs/CORRECTED_PLAN_BASELINE.md) and [r
 Python collector with local Chrome, store/category configuration, checkpoints, source evidence,
 validation and atomic publication. No paid scraping APIs or proxies.
 
-## Current status — 25 October 2026
+## Current review status
 
-Client accepts Bentonville #100/PICKUP for bounded demonstration. Historical 500-product JSON
-is genuine and distinct, with all 11 parent categories represented. It predates complete collection
-by the final runner and remains separate from newer samples.
+Fresh controlled sample: **506 distinct validated products across all 11required categories**,
+collected in2063.272 seconds.11 responses rejected (4 no local pickup,7 missing listing prices);
+zero processing errors.35 local unavailable products retained with blank local prices.
 
-Today's matched comparison passed the same six products in one session and fresh three-product
-batches. No drift reproduced and no session fix established. Current collector code also passed
-live SIGKILL/resume on a one-category/three-product sample; all source/recovery checks passed.
-Two offer searches checked three distinct products and found no qualifying volume/digital example.
+- [Actual fresh JSON](evidence/controlled-skip-invalid-20261025/products.json)
+- [Independent source/hash audit](evidence/controlled-skip-invalid-20261025/summary.json)
+- [Reject-and-continue instructions](docs/CONTROLLED_COLLECTION.md)
+- [Current review status and gaps](docs/REVIEW_STATUS.md)
 
-35 complete Fetch-decoded response bodies are retained privately with hashes and redaction drafts.
-Public evidence contains safe metadata/source fields. Complete paired wrong/correct raw evidence,
-sustained reliability,full uncapped traversal,repeated complete collection,real offers and Azure
-acceptance remain open. No client message/submission or Azure execution occurred.
+Live source commit:e90c5f0. All506 record replays,537 original Fetch-body hashes and18 native snapshot
+hashes passed. Bad responses are excluded, not retried; each accepted record independently matches
+store 100/72712/PICKUP and its listing/product evidence. No wrong-store response occurred in this
+particular run; wrong-store continuation was tested offline. Earlier two real raw wrong/correct
+pairs remain private pending reviewed sharing copies/access. No transport remedy claimed.
 
-Start with docs/REVIEW_STATUS.md and evidence/diagnostic-20261025/FINAL_STATUS.json. Source version:
-review-20261025-final-v2. The collector modules match live-tested commit 53cb6d9.
+This meets the bounded500+sample goal, **not full uncapped category coverage**. Genuine deals,
+repeated complete collection, recovery for this new wrapper and Azure remain open. Historical500,
+33and failed79/68datasets stay separate. Earlier frozen ZIP/tag is historical and needs refreshing
+before representing the latest implementation. No client message/submission or Azure execution.
 
 ## Local setup
 

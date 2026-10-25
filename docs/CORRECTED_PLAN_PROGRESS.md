@@ -116,3 +116,13 @@ Requested ArtSets sample completed51.279seconds:5distinct accepted/validated rec
 replays,6original-body hashes and1snapshot hash passed. This supports step6, not full coverage.
 No further branch tests queued. See docs/DELIVERY_CHECKPOINT_CURRENT.md for delivery evidence/gaps.
 Response pair/offers remain OPEN; nothing sent to client.
+
+## User-approved reject-and-continue run: fresh506goal achieved
+
+One sourcee90c5f0run completed2063.272seconds:506distinct source-validated records,all11categories,
+11rejections (4no pickup,7price validation mismatches),0processing errors/duplicates.35local
+unavailable products retained with blank local prices. All506source replays,537Fetch body hashes
+and18native snapshot hashes passed. No historical rows reused. No wrong-store response occurred in
+this run; no drift remedy claimed. Full uncapped coverage/offers/repeat complete collection/new-mode
+recovery/Azure/private-pair sharing remain open. Nothing sent to client; no new collection queued.
+Actual JSON/audit: evidence/controlled-skip-invalid-20261025/.
