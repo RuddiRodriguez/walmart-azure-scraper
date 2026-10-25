@@ -1,5 +1,5 @@
 Diagnostic review package — 25 October 2026, 19:21 CET (UTC+1)
-Version:review-20261025-final
+Version:review-20261025-final-v2
 
 Includes historical 500-product demonstration, source/configuration/dependencies, running/recovery/Azure setup instructions, twice-weekly timer, safe collection logs, source contexts, hashes and updated local/offline walkthrough.
 

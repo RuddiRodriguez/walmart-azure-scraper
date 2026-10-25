@@ -15,6 +15,7 @@ from validate import validate
 def build():
     root = Path(__file__).parent
     evidence = root / 'evidence'
+    checkout = (root / '.git').exists()
     rows = json.loads((evidence / 'products-500.json').read_text())
     sources = json.loads((evidence / 'source-records.json').read_text())
     settings = json.loads((root / 'config/stores.json').read_text())
@@ -51,7 +52,8 @@ def build():
     report = {
         'audit_time_utc': datetime.now(timezone.utc).isoformat(),
         'mode': 'offline audit of historical live captures; not a fresh collection',
-        'audit_base_commit': subprocess.check_output(['git', 'rev-parse', 'HEAD'], cwd=root, text=True).strip(),
+        'audit_base_commit': (subprocess.check_output(['git', 'rev-parse', 'HEAD'], cwd=root, text=True).strip()
+                              if checkout else 'Source archive without Git metadata; verify frozen tag and file manifest'),
         'audited_code_sha256': {name: hashlib.sha256((root / name).read_bytes()).hexdigest()
                                for name in ['extract.py', 'scrape.py', 'storage.py', 'validate.py', 'browser.py']},
         'passed': not errors, 'records': len(rows), 'sources': len(sources),
@@ -65,7 +67,8 @@ def build():
                    'Azure execution and genuine live volume/digital offers remain unproven.'],
     }
     (evidence / 'review-audit.json').write_text(json.dumps(report, indent=2) + '\n')
-    files = subprocess.check_output(['git', 'ls-files'], cwd=root, text=True).splitlines()
+    files = (subprocess.check_output(['git', 'ls-files'], cwd=root, text=True).splitlines() if checkout
+             else list(json.loads((evidence / 'SHA256SUMS.json').read_text())))
     manifest = {name: hashlib.sha256((root / name).read_bytes()).hexdigest() for name in files
                 if (root / name).is_file() and name != 'evidence/SHA256SUMS.json'}
     (evidence / 'SHA256SUMS.json').write_text(json.dumps(manifest, indent=2) + '\n')

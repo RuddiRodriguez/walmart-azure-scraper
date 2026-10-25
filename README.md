@@ -20,7 +20,7 @@ sustained reliability,full uncapped traversal,repeated complete collection,real 
 acceptance remain open. No client message/submission or Azure execution occurred.
 
 Start with docs/REVIEW_STATUS.md and evidence/diagnostic-20261025/FINAL_STATUS.json. Source version:
-review-20261025-final. The collector modules match live-tested commit 53cb6d9.
+review-20261025-final-v2. The collector modules match live-tested commit 53cb6d9.
 
 ## Local setup
 

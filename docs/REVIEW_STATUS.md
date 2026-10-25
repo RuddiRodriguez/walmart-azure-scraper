@@ -1,6 +1,6 @@
 # Current diagnostic delivery — 25 October 2026, 19:23 CET (UTC+1)
 
-Version: `review-20261025-final`. This is the completed bounded diagnostic requested in the latest feedback.
+Version: `review-20261025-final-v2`. This is the completed bounded diagnostic requested in the latest feedback.
 It remains a demonstration package with unresolved production requirements. No live process is
 running. Client messages and submissions remain unsent; no Azure execution occurred.
 

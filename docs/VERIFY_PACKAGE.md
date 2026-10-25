@@ -1,6 +1,6 @@
 # Verify the review package
 
-Frozen version: review-20261025-final. GitHub tag identifies the complete source/evidence snapshot.
+Frozen version: review-20261025-final-v2. GitHub tag identifies the complete source/evidence snapshot.
 Collector modules match live-tested commit53cb6d94be5fc29eeedd32cd3f75b129d2f2aed4. Current status
 and exact scope: docs/REVIEW_STATUS.md and evidence/diagnostic-20261025/FINAL_STATUS.json.
 

@@ -1,4 +1,4 @@
-Recorded at 2026-10-25T18:25:49.004609+00:00
+Recorded at 2026-10-25T18:32:01.775779+00:00
 
 $ python -c 'import json,csv; s=json.load(open('"'"'config/stores.json'"'"')); print('"'"'LOCAL REVIEW WALKTHROUGH - no Azure or contest submission'"'"'); print('"'"'Client-accepted demonstration store:'"'"',s['"'"'stores'"'"'][0]['"'"'id'"'"'],s['"'"'stores'"'"'][0]['"'"'name'"'"']); print('"'"'Required parent categories:'"'"',len(list(csv.DictReader(open('"'"'config/categories.csv'"'"')))))'
 LOCAL REVIEW WALKTHROUGH - no Azure or contest submission
@@ -9,7 +9,7 @@ Required parent categories: 11
 $ python check_requirements.py
 {
   "mode": "offline checks of captured evidence and explicitly synthetic mutations; no live acceptance claim",
-  "time_utc": "2026-10-25T18:25:54.383091+00:00",
+  "time_utc": "2026-10-25T18:32:07.039539+00:00",
   "passed": true,
   "count": 54,
   "checks": [
@@ -80,7 +80,7 @@ Historical genuine demonstration: 500 records
 Historical collection dates: 2026-10-22T23:19:42.144602+00:00 to 2026-10-22T23:27:39.067537+00:00
 This is not a fresh full-catalog run.
 CURRENT DIAGNOSTIC PACKAGE — 25 October 2026, 19:21 CET (UTC+1)
-Version:review-20261025-final
+Version:review-20261025-final-v2
 Historical 500:unchanged genuine distinct products/11 parents; earlier live demonstration, not fresh final-runner coverage.
 24 October:two33-product samples passed; broader32/64accepted subsets stopped on store mismatch and were not published.
 25 October comparison:one matched A/B comparison of the same 6 targets passed,18 product/control responses,164.762 seconds. No drift and no proven improvement. Initial stale-target stop and listing discovery remain separately recorded; second matched repeat omitted to keep budget.
