@@ -1,5 +1,9 @@
 # Walmart location-aware catalog scraper
 
+Corrected plan baseline: [step 1 report](docs/CORRECTED_PLAN_BASELINE.md) and [requirement register](evidence/corrected-plan-20261025/requirements-register.json). Existing evidence is reusable only within its recorded source/configuration/scope; outstanding requirements remain open.
+
+
+
 Python collector with local Chrome, store/category configuration, checkpoints, source evidence,
 validation and atomic publication. No paid scraping APIs or proxies.
 

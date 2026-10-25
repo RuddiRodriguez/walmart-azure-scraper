@@ -1,0 +1,471 @@
+{
+  "milestone": "Corrected plan / step1 baseline freeze",
+  "recorded_utc": "2026-10-25T18:48:16.663042+00:00",
+  "recorded_amsterdam": "2026-10-25T19:48:16.663042+01:00",
+  "scope": "Inventory and immutable baseline only; no collector changes or new live/offline acceptance tests",
+  "source_head_before_baseline": "9b7f4ca20c9d76c7a68ba1312a558cd7f7e97d11",
+  "source_package_tag": "review-20261025-final-v2",
+  "source_package_commit": "80740bca2fe19bf823637a168cccaaae9f20adec",
+  "baseline_tag": "corrected-baseline-20261025",
+  "source_and_config": {
+    "audit_run.py": {
+      "sha256": "b0d6d4203bdfacd7f6d3d770da53ea8ccc619fd15817b2e62ba456049944dfe2",
+      "bytes": 2666,
+      "matches_frozen_package": true
+    },
+    "bounded_store_review.py": {
+      "sha256": "8b93f616aa0d33b357a40d3b274374458d169e565dd98954b33903f1dd04d020",
+      "bytes": 10759,
+      "matches_frozen_package": true
+    },
+    "browser.py": {
+      "sha256": "2b46d80e5b5edd1b75c7cbf36d460d96da91cfd218e0b1dfa309dcc3459cec24",
+      "bytes": 11263,
+      "matches_frozen_package": true
+    },
+    "check_browser_failures.py": {
+      "sha256": "8cd9e299718ff28737184d129f6478d966fed9d52227aa50b1cd371055917c53",
+      "bytes": 5190,
+      "matches_frozen_package": true
+    },
+    "check_diagnostic_capture.py": {
+      "sha256": "49dc5abfebe78e5505a49bbef240a133b57e67dbde6a3a385c1c90edc1669435",
+      "bytes": 10465,
+      "matches_frozen_package": true
+    },
+    "check_package_audit.py": {
+      "sha256": "d2929b27a866e41e5ce241a38624a0e32347f3819e4dbf69b0fae1b5b237d0e6",
+      "bytes": 2566,
+      "matches_frozen_package": true
+    },
+    "check_page_urls.py": {
+      "sha256": "7b401608b8189a52d5262f274e3aafe1d12afdddb218ad8f2a638ac60b1bb1f5",
+      "bytes": 2053,
+      "matches_frozen_package": true
+    },
+    "check_parse_memory.py": {
+      "sha256": "e636083cfe639956f0859b8d7a6563e1fadb1ad8fe55a89beeedd4484daa95f2",
+      "bytes": 1461,
+      "matches_frozen_package": true
+    },
+    "check_requirements.py": {
+      "sha256": "774457196e13be8a91303fb685e1bbcf68fc5150886f9219befcf3d73adbaac1",
+      "bytes": 8620,
+      "matches_frozen_package": true
+    },
+    "check_review_changes.py": {
+      "sha256": "b2568e58c40a20287a52abad8922b1f3b2792910f88a8dc8767eae5cfc33a14b",
+      "bytes": 5643,
+      "matches_frozen_package": true
+    },
+    "check_runner_flow.py": {
+      "sha256": "0011365d589c088b69e83938788c85cf8ca47428ee7f21c891c733a1daba4186",
+      "bytes": 9283,
+      "matches_frozen_package": true
+    },
+    "check_storage_recovery.py": {
+      "sha256": "2ee6e61ab7e3d64d2ee38bc4dc3f6c0bf2ca3adb0f6e1c0f43ef7726e79afcdf",
+      "bytes": 1660,
+      "matches_frozen_package": true
+    },
+    "compare_runs.py": {
+      "sha256": "da9dae1abce7051bf153fb9fe9a4cc89cee1416ebe7d375a811d23e4dab004ab",
+      "bytes": 3853,
+      "matches_frozen_package": true
+    },
+    "compare_transports.py": {
+      "sha256": "1ac96cf4f9a80a80bad1fe252c49baf0ff6dba261f293bc7d574ffbf09e37163",
+      "bytes": 6213,
+      "matches_frozen_package": true
+    },
+    "config/categories.csv": {
+      "sha256": "65127cf3cd48f967ea3db0c4dd2be67de3f2ac1f6b60aef406c0778c999f3640",
+      "bytes": 1764,
+      "matches_frozen_package": true
+    },
+    "config/diagnostic-20261025-current.json": {
+      "sha256": "de6c040b03af22f8603e911ac698980b3f4e81ae45bd47b84e7e9af687034daf",
+      "bytes": 2927,
+      "matches_frozen_package": true
+    },
+    "config/diagnostic-20261025.json": {
+      "sha256": "398fdaf1b1f506e16f3ecc56b8c03b4872280c3d665f38ae301eba3af2dc717e",
+      "bytes": 2441,
+      "matches_frozen_package": true
+    },
+    "config/stores.json": {
+      "sha256": "63f24c4ad600cdf99173ff4066ce800eb983474d0540099161cdb261fecbb08d",
+      "bytes": 916,
+      "matches_frozen_package": true
+    },
+    "deploy/install-ubuntu.sh": {
+      "sha256": "a96d0a823cfc434beba47705862388b58409484a6dadf79c2063e8140b6f0ee0",
+      "bytes": 1017,
+      "matches_frozen_package": true
+    },
+    "deploy/walmart-scraper@.service": {
+      "sha256": "91ef52750387fd80a9c6850d7827fa1a4be8e19cdf7cb98fdce44cf950058c08",
+      "bytes": 609,
+      "matches_frozen_package": true
+    },
+    "deploy/walmart-scraper@.timer": {
+      "sha256": "777c287afbf217ae3a6e99260962c7109808f2e11cb1b2ef5e23b10afca20ccb",
+      "bytes": 209,
+      "matches_frozen_package": true
+    },
+    "diagnostic_capture.py": {
+      "sha256": "617b898e43770eda6ed0650eeb2e51611e8e2569f1328075c1169ef73172eea5",
+      "bytes": 5142,
+      "matches_frozen_package": true
+    },
+    "evidence/final-session-20261024/banner-replay/run.py": {
+      "sha256": "898789f009a5e12c1217bd2cb25315e05d9f69b6efc3ee30eec292765af4944e",
+      "bytes": 1950,
+      "matches_frozen_package": true
+    },
+    "evidence/final-session-20261024/batch-runner-provenance.py": {
+      "sha256": "6d8f41f3f54655182612530e19217dbb783650d3a18695216b48fd35e2d51df2",
+      "bytes": 3832,
+      "matches_frozen_package": true
+    },
+    "evidence/final-session-20261024/batch-runner-v2-provenance.py": {
+      "sha256": "f836bffb3a657fe5aae28cf718db3d5e346876761f9b0a72f57843b2b72e6820",
+      "bytes": 3734,
+      "matches_frozen_package": true
+    },
+    "evidence/final-session-20261024/diagnostic-scripts/pagination_probe.py": {
+      "sha256": "44eb365d368871d06d6082abe603b8ad014af63a22e8e148c515d723d43f817b",
+      "bytes": 2827,
+      "matches_frozen_package": true
+    },
+    "evidence/final-session-20261024/diagnostic-scripts/verify_primary_pagination.py": {
+      "sha256": "a0d3d300a38079ffd6d0e3be8b30283514ccd506e2782afbd8b9c7c309125c1c",
+      "bytes": 2387,
+      "matches_frozen_package": true
+    },
+    "evidence/final-session-20261024/final-checks-provenance.py": {
+      "sha256": "10eb2c46b022bb2908293b8fcb3f60a49d72c536d8f0156ba671a747cf022050",
+      "bytes": 3150,
+      "matches_frozen_package": true
+    },
+    "evidence/generator/collect_sample.py": {
+      "sha256": "8ef2ef50cc5c575206cf3457d659fcd8148ace925057d46df8365dee17d6e5dc",
+      "bytes": 9322,
+      "matches_frozen_package": true
+    },
+    "evidence/generator/enrich_sample.py": {
+      "sha256": "a79c8076157dc5b1e398b3a87395a031070723d3551650e9527fe242d7971716",
+      "bytes": 4681,
+      "matches_frozen_package": true
+    },
+    "evidence/generator/validate_final.py": {
+      "sha256": "ea5c1d072b60441d85d3646c72214d122ede0035614213471c0ae6c92540ef9a",
+      "bytes": 4453,
+      "matches_frozen_package": true
+    },
+    "evidence/generator/validate_sample.py": {
+      "sha256": "a2e858722e95d95b350d69a4a5a64daa50fe382176317e8230dbf863ad71666c",
+      "bytes": 2459,
+      "matches_frozen_package": true
+    },
+    "export_run_evidence.py": {
+      "sha256": "ee64a0029b5fc15dfe9edb21e97ce8881deaee7dd49ccb9306c27804adfc7d18",
+      "bytes": 4144,
+      "matches_frozen_package": true
+    },
+    "export_unavailable_records.py": {
+      "sha256": "c53935bfc3b6345c20f4fd6d824e65000cb3db00f8ef7a7ff7960c2a3d3abeec",
+      "bytes": 1830,
+      "matches_frozen_package": true
+    },
+    "extract.py": {
+      "sha256": "e252ee14a9e66c9be33220a014984e161192651759c9619202ecf73c39242605",
+      "bytes": 12903,
+      "matches_frozen_package": true
+    },
+    "guard_review_disk.py": {
+      "sha256": "44b27d69338fe1cfa3f33e15d68b79066fead161100b70f9a0bbb107de18c823",
+      "bytes": 2824,
+      "matches_frozen_package": true
+    },
+    "hard_stop_review.py": {
+      "sha256": "8693c1923f0058a0a4269e09052734d2f233121598c5ea6507d02ae729600fa8",
+      "bytes": 2799,
+      "matches_frozen_package": true
+    },
+    "inspect_observed_cases.py": {
+      "sha256": "425ea625810bcd7ebe4c44de3300ab45e96c38fc182176b2d1acac367e10b0c9",
+      "bytes": 2473,
+      "matches_frozen_package": true
+    },
+    "inspect_product_context.py": {
+      "sha256": "1fa378c786988513ceae49a74d47838051350cbe1f612eb1747cc4a13372d480",
+      "bytes": 2440,
+      "matches_frozen_package": true
+    },
+    "interrupt_for_review.py": {
+      "sha256": "00ea63edba76eca33fabe0410efae33a75f121900633df8e9c06faa92481d896",
+      "bytes": 1566,
+      "matches_frozen_package": true
+    },
+    "make_entry_image.py": {
+      "sha256": "a0a41c844cfbd93686c220233ec46d23b23ac541961d0b33dd58d179435c48de",
+      "bytes": 2161,
+      "matches_frozen_package": true
+    },
+    "probe_collection_context.py": {
+      "sha256": "5b5a647bf4938ae5f90ef9c6c8719963f7cf4ed4a15cec69473e1e82e89f157e",
+      "bytes": 4976,
+      "matches_frozen_package": true
+    },
+    "probe_unavailable.py": {
+      "sha256": "af80acbdc993781fe57e302212f2978c10eefedac7e0e5a2da41d848ae2c6915",
+      "bytes": 3190,
+      "matches_frozen_package": true
+    },
+    "record_walkthrough.py": {
+      "sha256": "3924a97a3beb44625771d0a6ed680588167b8ee64dbfdea840d690457a5a6f51",
+      "bytes": 3317,
+      "matches_frozen_package": true
+    },
+    "render_walkthrough.py": {
+      "sha256": "1f22f2a8efd68f63739e92b43a82fde84bfdf2cee69154a1dcbc628e5b2af44c",
+      "bytes": 1987,
+      "matches_frozen_package": true
+    },
+    "replay_evidence.py": {
+      "sha256": "025be38f34f135c21f05a948b15f2e3ffb108fd594fa163a193dc4ab5e715959",
+      "bytes": 1807,
+      "matches_frozen_package": true
+    },
+    "report_local_runs.py": {
+      "sha256": "930984b12999f4a80de9a1872ee85d5b7bf38efbe080f6a4556fcf805e947ab2",
+      "bytes": 2939,
+      "matches_frozen_package": true
+    },
+    "requirements-review.txt": {
+      "sha256": "b083347f4b358e025cf7e6ad2c54a530834f7b020187d8e304ba9b96933d2db2",
+      "bytes": 49,
+      "matches_frozen_package": true
+    },
+    "requirements-transport-review.txt": {
+      "sha256": "0ee27416280c0c4ce9cb4d25f06a658f5e43521bd5f923420c6310db86ef3266",
+      "bytes": 64,
+      "matches_frozen_package": true
+    },
+    "requirements.txt": {
+      "sha256": "8e334bf56fa0620b2aade00651701b49c5840ccfa331eb3100dafb672d07852f",
+      "bytes": 44,
+      "matches_frozen_package": true
+    },
+    "review_live_offers.py": {
+      "sha256": "e564de8e68e8c762e9e2f6a8d571f1ebb1860264a199cc32254d8d48898d2bc7",
+      "bytes": 7197,
+      "matches_frozen_package": true
+    },
+    "review_package.py": {
+      "sha256": "e875ec5276e5dea23a99d7aaf58bd55f038acde3cea2772c1644ab3dc2b84c91",
+      "bytes": 5056,
+      "matches_frozen_package": true
+    },
+    "run_recovery_review.py": {
+      "sha256": "c23417de1fb0d7ac04217c8ce9499da4b4cd2ea82654952a4229d3f484e740fc",
+      "bytes": 6369,
+      "matches_frozen_package": true
+    },
+    "scrape.py": {
+      "sha256": "01d6aee1f2d91c36acebd132c580df32e7914323fe3a3f7b5506bad3217894d1",
+      "bytes": 19251,
+      "matches_frozen_package": true
+    },
+    "spot_check.py": {
+      "sha256": "fefdf11c7d246dc2d7ef882808c50b689be695550e343edc2ecb356915cb2e89",
+      "bytes": 5638,
+      "matches_frozen_package": true
+    },
+    "storage.py": {
+      "sha256": "2453aa318e9e59b37bcc85dd3a6b9c5d8b4cc7616368e4cbf01f41b054385c90",
+      "bytes": 3275,
+      "matches_frozen_package": true
+    },
+    "trace_store_context.py": {
+      "sha256": "aed1c316a0fd0682a9dd5c3f5de04bb74df3ad2c87542b0db4bd816fd64716dc",
+      "bytes": 7016,
+      "matches_frozen_package": true
+    },
+    "validate.py": {
+      "sha256": "d316b2e14887bbc02b08a5b54af6fe7c5d340d1ad9b1f5819e242de39ec53ada",
+      "bytes": 4179,
+      "matches_frozen_package": true
+    },
+    "verify_hard_recovery.py": {
+      "sha256": "2aec6d1518e0c56a2b85f7591a2a300eca57b95238374df88bb9d1134064b314",
+      "bytes": 2096,
+      "matches_frozen_package": true
+    },
+    "verify_recovery.py": {
+      "sha256": "78f627b025a7133b3235d8a2590baba9c5124e6adf4287ad6c77c4577047db3f",
+      "bytes": 2075,
+      "matches_frozen_package": true
+    }
+  },
+  "all_selected_files_match_frozen_package": true,
+  "environment": {
+    "os": "macOS-27.0.1-arm64-arm-64bit-Mach-O",
+    "python": "3.14.5",
+    "chrome": "155.0.8059.85",
+    "seleniumbase": "4.56.3",
+    "beautifulsoup4": "4.15.0",
+    "psutil": "7.2.2",
+    "Pillow": "13.0.0",
+    "local_transport": "Chrome guest sessions with in-browser Fetch",
+    "service_dependency": "Walmart must provide consistent store/PICKUP/listing/product price context. Availability is external and not guaranteed.",
+    "paid_scraping_services": "None",
+    "azure_access_granted": false
+  },
+  "demo_context": {
+    "id": "100",
+    "name": "Bentonville S Walton Blvd Supercenter",
+    "address": "406 S WALTON BLVD, Bentonville, AR 72712",
+    "zip": "72712",
+    "fulfillment": "PICKUP",
+    "authority": "Client feedback supplied by user; valid bounded demonstration, not production assignment"
+  },
+  "datasets": [
+    {
+      "path": "evidence/products-500.json",
+      "label": "historical500",
+      "scope": "Earlier live demonstration; not fresh final-runner coverage",
+      "rows": 500,
+      "distinct_ids": 500,
+      "sha256": "ac8bd8dddd1208faf803f0790e0df2378253e9236cd37357cd1433f11f674ba6"
+    },
+    {
+      "path": "evidence/final-session-20261024/diagnostic-c/products.json",
+      "label": "fresh_sample_c",
+      "scope": "24October sample only",
+      "rows": 33,
+      "distinct_ids": 33,
+      "sha256": "e52c9df52cb86fd7a7fed3c80a3ab00717e3fc8a21249e2e50139b5ebc8e715c"
+    },
+    {
+      "path": "evidence/final-session-20261024/repeat-d/products.json",
+      "label": "fresh_sample_d",
+      "scope": "24October sample only",
+      "rows": 33,
+      "distinct_ids": 33,
+      "sha256": "11f93c44c1c2d5f319d265439e69f66b44037edfce18aa4a8fc20118343bf832"
+    },
+    {
+      "path": "evidence/final-session-20261024/fresh-506-a/products.partial.json",
+      "label": "failed_broad32",
+      "scope": "Failed store validation; never publish/merge as successful",
+      "rows": 32,
+      "distinct_ids": 32,
+      "sha256": "c5b5baab55cf3ec395936a8ab11604b3a6ece4e365192ded2765d4a2a4d76cbc"
+    },
+    {
+      "path": "evidence/final-session-20261024/fresh-506-c/products.partial.json",
+      "label": "failed_broad64",
+      "scope": "Failed store validation; never publish/merge as successful",
+      "rows": 64,
+      "distinct_ids": 64,
+      "sha256": "c338a89cf8cf34e531bcc446c493e7329d85d72b0f4c0fbee669380f29fd8e6d"
+    },
+    {
+      "path": "evidence/diagnostic-20261025/step4-recovery/products.json",
+      "label": "current_code_recovery3",
+      "scope": "25October bounded recovery sample; not full catalog",
+      "rows": 3,
+      "distinct_ids": 3,
+      "sha256": "5b32dbcf904bb7f8a334a78d7780284ef1c20dd641b22104fa117a4b8ea1f410"
+    }
+  ],
+  "matched_comparison": {
+    "path": "evidence/diagnostic-20261025/step3-results/accepted-by-session.json",
+    "sha256": "840d37a7622d91a77663b49d8b19205d302f9a085ca59fcb9f17f0f704b89712",
+    "sessions": {
+      "A1": 6,
+      "B1-1": 3,
+      "B1-2": 3
+    },
+    "distinct_ids_across_sessions": 6,
+    "scope": "One matched six-target comparison; do not count repeated rows as12distinct products"
+  },
+  "reusable_recovery": {
+    "record": "evidence/diagnostic-20261025/step4-recovery/review.json",
+    "source_commit": "53cb6d94be5fc29eeedd32cd3f75b129d2f2aed4",
+    "core_matches": {
+      "scrape.py": true,
+      "browser.py": true,
+      "extract.py": true,
+      "storage.py": true,
+      "validate.py": true
+    },
+    "passed_live_sigkill_resume": true,
+    "scope": "Current collector code, one category,3records; identical bounded settings on resume",
+    "default_config_differences": {
+      "trace_store_context": {
+        "default": null,
+        "bounded_recovery": false
+      },
+      "retries": {
+        "default": 3,
+        "bounded_recovery": 1
+      },
+      "max_page_seconds": {
+        "default": 90,
+        "bounded_recovery": 25
+      }
+    },
+    "category_files_identical": false,
+    "reuse_limit": "Reusable only for recorded bounded scope. Does not prove default/full-run configuration or Azure recovery. Recheck after source/config changes."
+  },
+  "capture_evidence": {
+    "complete_fetch_bodies_private": 35,
+    "complete_wrong_correct_pair_available": false,
+    "legacy_wrong_full_body_saved": false,
+    "redaction_drafts_reviewed": false,
+    "generated_request_headers_captured": false
+  },
+  "configuration_gaps": {
+    "default_max_pages": 20000,
+    "full_uncapped_coverage_proven": false,
+    "old_diagnostic_plan_current_for_new_execution": false,
+    "old_plan_note": "diagnostic-20261025-current.json retains counters and an expired deadline from the completed experiment; do not reuse as a new run plan"
+  },
+  "artifacts": [
+    {
+      "receipt": "evidence/diagnostic-20261025/public-package-receipt.json",
+      "filename": "walmart-review-20261025-final-v2.zip",
+      "exists": true,
+      "sha256_matches_receipt": true,
+      "file_mode": "0o644",
+      "privacy": "Public source/evidence artifact; no complete raw bodies"
+    },
+    {
+      "receipt": "evidence/diagnostic-20261025/private-bundle-receipt.json",
+      "filename": "walmart-private-evidence-20261025.zip",
+      "exists": true,
+      "sha256_matches_receipt": true,
+      "file_mode": "0o600",
+      "privacy": "private local; not sent/uploaded"
+    }
+  ],
+  "live_processes": [],
+  "next_diagnostic_deliverable": {
+    "proposed": "2026-10-26T18:00:00+01:00",
+    "timezone": "Europe/Amsterdam",
+    "scope": "Diagnostic evidence/findings and remaining blockers; not a full-completion promise",
+    "execution_scheduled": false
+  },
+  "status_rule": "A requirement is verified only when its completion evidence exists; failed,stopped or inconclusive attempts leave it open",
+  "client_message_sent": false,
+  "next_milestone": "Step2:paired raw drift investigation under a newly frozen bounded run configuration; not started",
+  "public_package_access": {
+    "url": "https://github.com/RuddiRodriguez/walmart-azure-scraper/tree/review-20261025-final-v2",
+    "status": 200,
+    "anonymous": true,
+    "verified_utc": "2026-10-25T18:49:17.548632+00:00"
+  }
+}

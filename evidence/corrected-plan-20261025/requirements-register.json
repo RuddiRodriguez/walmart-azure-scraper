@@ -1,0 +1,127 @@
+{
+  "rule": "A requirement is verified only when its completion evidence exists; failed,stopped or inconclusive attempts leave it open",
+  "items": [
+    {
+      "request": "Keep historical500 separate from fresh33samples",
+      "status": "Verified artifact separation",
+      "evidence": [
+        "evidence/products-500.json",
+        "evidence/final-session-20261024/diagnostic-c/products.json",
+        "evidence/final-session-20261024/repeat-d/products.json"
+      ],
+      "completion_gate": "Maintain separate datasets and provenance; never sum overlapping/failed rows"
+    },
+    {
+      "request": "Retain listing/product identifiers and price-bearing #100/PICKUP context",
+      "status": "Verified within existing bounded captures",
+      "evidence": [
+        "evidence/diagnostic-20261025/step3-results/source-contexts.json",
+        "evidence/diagnostic-20261025/step4-offers/source-contexts.json"
+      ],
+      "completion_gate": "Actual response identity/store/ZIP/fulfillment and local price association; banner alone insufficient"
+    },
+    {
+      "request": "Paired complete wrong-store response and corrected re-fetch",
+      "status": "Open",
+      "evidence": [
+        "docs/STEP1_BASELINE_20261025.md"
+      ],
+      "completion_gate": "Actual complete wrong and corrected bodies from documented sequence; reviewed redacted copies; hashes; no reconstructed data"
+    },
+    {
+      "request": "Redacted request settings,session sequence,retry behavior",
+      "status": "Partial:metadata available; requested raw pair absent",
+      "evidence": [
+        "evidence/diagnostic-20261025/step3-results/capture-metadata.json"
+      ],
+      "completion_gate": "Metadata tied to both pair members; browser-generated headers explicitly unobserved; raw sharing copies privacy-reviewed"
+    },
+    {
+      "request": "Smallest transport/session change and explicit/silent drift detection",
+      "status": "Proposal evaluated; remedy unproven",
+      "evidence": [
+        "evidence/diagnostic-20261025/step3-results/summary.json",
+        "evidence/diagnostic-20261025/step2-offline-checks.json"
+      ],
+      "completion_gate": "Single supported change; reject wrong/missing/contradictory response context; evidence required before claiming improvement"
+    },
+    {
+      "request": "Exclude invalid local prices; preserve unavailable products and last good output",
+      "status": "Safeguard evidence available with limited live scope",
+      "evidence": [
+        "evidence/diagnostic-20261025/step2-offline-checks.json",
+        "evidence/observed-unavailable-replay.json"
+      ],
+      "completion_gate": "Invalid response cannot publish; supported local unavailable products retained; prior good data/pointer survives. Current matched sample had no unavailable items"
+    },
+    {
+      "request": "Precise environment/service dependency and bounded request/runtime/cost limits",
+      "status": "Environment frozen; next run limits require new configuration",
+      "evidence": [
+        "evidence/corrected-plan-20261025/step1-baseline.json",
+        "docs/REVIEW_STATUS.md"
+      ],
+      "completion_gate": "Exact versions/source/config; operational counters/time limits; no paid services; disclose browser asset/UI count limits"
+    },
+    {
+      "request": "Genuine live offer examples",
+      "status": "Open:zero verified",
+      "evidence": [
+        "evidence/diagnostic-20261025/step4-summary.json"
+      ],
+      "completion_gate": "Real qualifying volume/digital terms and prices verified with correct local source evidence; unsuccessful search is not completion"
+    },
+    {
+      "request": "Full uncapped coverage",
+      "status": "Open",
+      "evidence": [
+        "config/categories.csv",
+        "config/stores.json"
+      ],
+      "completion_gate": "Every required category/subcategory/page accounted for; queue exhausted with exclusions justified; blocked/stopped/truncated run remains incomplete"
+    },
+    {
+      "request": "Final-version live interruption/resume",
+      "status": "Passed for current code in recorded bounded config only",
+      "evidence": [
+        "evidence/diagnostic-20261025/step4-recovery/hard-recovery.json",
+        "evidence/diagnostic-20261025/step4-recovery/review.json"
+      ],
+      "completion_gate": "Freeze final candidate/config/scope; reuse only matching evidence, otherwise rerun affected recovery check. No lost/duplicate saved work"
+    },
+    {
+      "request": "Repeated collection",
+      "status": "Open beyond short matched sample",
+      "evidence": [
+        "evidence/diagnostic-20261025/step3-results/summary.json"
+      ],
+      "completion_gate": "Repeated complete collections with matched frozen code/config and store/count/price/duplicate/missing-field/runtime checks"
+    },
+    {
+      "request": "Authoritative version/hash and accessible current package",
+      "status": "Verified existing package",
+      "evidence": [
+        "evidence/diagnostic-20261025/public-package-receipt.json",
+        "evidence/corrected-plan-20261025/step1-baseline.json"
+      ],
+      "completion_gate": "Frozen tag/commit,source/config hashes,accessible package and verified receipts"
+    },
+    {
+      "request": "Date for next diagnostic deliverable",
+      "status": "Proposed date recorded; delivery not completed",
+      "evidence": [
+        "evidence/corrected-plan-20261025/step1-baseline.json"
+      ],
+      "completion_gate": "Prepare diagnostic evidence/findings/blockers by proposed26October2026 18:00CET. A dated proposal is not proof of delivery"
+    },
+    {
+      "request": "Distinguish live,offline and unexecuted Azure work",
+      "status": "Scope labels recorded; permission boundary obeyed",
+      "evidence": [
+        "docs/REVIEW_STATUS.md",
+        "evidence/corrected-plan-20261025/step1-baseline.json"
+      ],
+      "completion_gate": "Every claim identifies source/scope. Azure not executed; latest message grants no access. No client sending authorized"
+    }
+  ]
+}
