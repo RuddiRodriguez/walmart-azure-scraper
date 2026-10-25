@@ -63,3 +63,16 @@ verified.177visible candidates are not validated products: no candidate details 
 entries recorded, including61URLs absent from original680; all remain unvisited by this test. Full
 coverage, missing wrong/correct pair and genuine offers remain OPEN. No job running or client contact.
 Evidence: evidence/corrected-plan-20261025/step6-link-scope/.
+
+## Remaining80links and61new URLs
+
+Reviewed80category associations (77unique URLs):11landing-alias candidates have matching observed
+descendant IDs;69remain unresolved.61new URLs:54supported descendants,7root aliases. Support is
+for bounded testing, not full-content equivalence.
+
+One subsequent test stopped131.226seconds after five reviewed pages: four navigation-only landing
+aliases and BabyBowls (verified100/Pickup listing). ArtAprons returned an empty title before failing
+response capture; OfficeSupplies not reached. Initial control passed; final control not run.6response
+and5native snapshot hashes verified.132additional unique URLs recorded but not scope-reviewed. No
+recursive crawl or product dataset. Full coverage, raw pair and genuine offers remain OPEN. No job
+running; no client contact. Evidence: evidence/corrected-plan-20261025/step6-remaining-scope/.

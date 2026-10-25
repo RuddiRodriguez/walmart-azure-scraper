@@ -1,0 +1,224 @@
+[
+  {
+    "id": "coverage-001",
+    "session": "coverage",
+    "kind": "product",
+    "sequence": 1,
+    "request": {
+      "url": "https://www.walmart.com/ip/Carving-Pumpkin-Each/47428850?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-25T20:17:26.021835+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Carving-Pumpkin-Each/47428850?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 20:17:27 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T20:17:27.846186+00:00",
+      "elapsed_seconds": 1.824
+    },
+    "body_bytes": 504166,
+    "body_sha256": "8882ba3c978afc976dfd6032cf963ecac27adc0b2bf3acd06ce0285c2f709e0e",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-002",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 2,
+    "request": {
+      "url": "https://www.walmart.com/cp/bath-body/1071969",
+      "attempt": 1,
+      "started_utc": "2026-10-25T20:17:42.464528+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/cp/bath-body/1071969",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 20:17:42 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T20:17:42.639271+00:00",
+      "elapsed_seconds": 0.175
+    },
+    "body_bytes": 608786,
+    "body_sha256": "150b40eff393430f93601827c2aa8c287fc8745b2ba9c7e9277884829ffa1580",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-003",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 3,
+    "request": {
+      "url": "https://www.walmart.com/cp/makeup/1007040",
+      "attempt": 1,
+      "started_utc": "2026-10-25T20:18:03.262796+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/cp/makeup/1007040",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 20:18:03 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T20:18:03.711256+00:00",
+      "elapsed_seconds": 0.448
+    },
+    "body_bytes": 2559876,
+    "body_sha256": "162360a97db75f257b31b7ff543b8e5271d11c5063752041014d798d4f4e7520",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-004",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 4,
+    "request": {
+      "url": "https://www.walmart.com/browse/feeding/baby-bowls/5427_133283_6299622",
+      "attempt": 1,
+      "started_utc": "2026-10-25T20:18:19.319541+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/feeding/baby-bowls/5427_133283_6299622",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 20:18:19 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T20:18:19.590750+00:00",
+      "elapsed_seconds": 0.271
+    },
+    "body_bytes": 675856,
+    "body_sha256": "bf5210034294cadd6aafa1a933e7df029b84611d99bf45dad992f50038f19826",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-005",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 5,
+    "request": {
+      "url": "https://www.walmart.com/cp/pain-management/6972993",
+      "attempt": 1,
+      "started_utc": "2026-10-25T20:18:39.035149+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/cp/pain-management/6972993",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 20:18:39 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T20:18:39.318535+00:00",
+      "elapsed_seconds": 0.283
+    },
+    "body_bytes": 1387492,
+    "body_sha256": "868a2ba2bfce991ead5f8b545e5866557310d3b25b171136fec1ee6319fa2a4e",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-006",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 6,
+    "request": {
+      "url": "https://www.walmart.com/cp/dogs/202072",
+      "attempt": 1,
+      "started_utc": "2026-10-25T20:18:55.296234+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/cp/dogs/202072",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 20:18:55 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T20:18:55.585993+00:00",
+      "elapsed_seconds": 0.29
+    },
+    "body_bytes": 798088,
+    "body_sha256": "345a6a39653e4663c1e20d197ecd9675949965b079e64b5ee720bbd709581463",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  }
+]
