@@ -1,0 +1,335 @@
+[
+  {
+    "id": "offers-001",
+    "session": "offers",
+    "kind": "product",
+    "sequence": 1,
+    "request": {
+      "url": "https://www.walmart.com/ip/Carving-Pumpkin-Each/47428850?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-25T17:28:31.282213+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Carving-Pumpkin-Each/47428850?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 17:28:32 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T17:28:32.327264+00:00",
+      "elapsed_seconds": 1.045
+    },
+    "body_bytes": 504150,
+    "body_sha256": "425687476198f2326330b667d1ad7154bbea800a69cacaf9224f2e280dd69c79",
+    "sharing_status": "Private originals and redaction draft; manual review required before sharing"
+  },
+  {
+    "id": "offers-002",
+    "session": "offers",
+    "kind": "listing",
+    "sequence": 2,
+    "request": {
+      "url": "https://www.walmart.com/search?q=%5Bredacted%5D&stores=100&facet=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-25T17:28:39.185217+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/search?q=%5Bredacted%5D&stores=100&facet=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 17:28:40 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T17:28:40.948059+00:00",
+      "elapsed_seconds": 1.763
+    },
+    "body_bytes": 1220233,
+    "body_sha256": "6a63a9dc0c6c98de28dff7522b621d66ff8e1b9749bf4723683a3208ae4c4fa9",
+    "sharing_status": "Private originals and redaction draft; manual review required before sharing"
+  },
+  {
+    "id": "offers-003",
+    "session": "offers",
+    "kind": "product",
+    "sequence": 3,
+    "request": {
+      "url": "https://www.walmart.com/ip/Great-Value-Purified-Drinking-Water-16-9-Fl-Oz-40-Count/992524020?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D&from=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-25T17:28:41.213317+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Great-Value-Purified-Drinking-Water-16-9-Fl-Oz-40-Count/992524020?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D&from=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 17:28:42 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T17:28:42.433309+00:00",
+      "elapsed_seconds": 1.22
+    },
+    "body_bytes": 566261,
+    "body_sha256": "00aefd5a2eb55dca74fe48b32035bda55876bb4676c5c138070d6516e42fdc5d",
+    "sharing_status": "Private originals and redaction draft; manual review required before sharing"
+  },
+  {
+    "id": "offers-004",
+    "session": "offers",
+    "kind": "product",
+    "sequence": 4,
+    "request": {
+      "url": "https://www.walmart.com/ip/Great-Value-Purified-Drinking-Water-16-9-fl-oz-24-Count/13448854?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D&from=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-25T17:28:44.531078+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Great-Value-Purified-Drinking-Water-16-9-fl-oz-24-Count/13448854?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D&from=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 17:28:45 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T17:28:45.679179+00:00",
+      "elapsed_seconds": 1.148
+    },
+    "body_bytes": 564166,
+    "body_sha256": "423a9f34523edbd9ff9d5d47ff948a1dafd7719c71c2d1986a764ace4569588f",
+    "sharing_status": "Private originals and redaction draft; manual review required before sharing"
+  },
+  {
+    "id": "offers-005",
+    "session": "offers",
+    "kind": "product",
+    "sequence": 5,
+    "request": {
+      "url": "https://www.walmart.com/ip/2-pack-Great-Value-Less-Sodium-Soy-Sauce-15-fl-oz/5670414759?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&from=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-25T17:28:47.786075+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/2-pack-Great-Value-Less-Sodium-Soy-Sauce-15-fl-oz/5670414759?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&from=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 17:28:49 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T17:28:49.770841+00:00",
+      "elapsed_seconds": 1.985
+    },
+    "body_bytes": 556927,
+    "body_sha256": "cf4cb1edc49b2600b9265a939c85c0fb5cdbcc25bca770567c74bc9f0377623b",
+    "sharing_status": "Private originals and redaction draft; manual review required before sharing"
+  },
+  {
+    "id": "offers-006",
+    "session": "offers",
+    "kind": "listing",
+    "sequence": 6,
+    "request": {
+      "url": "https://www.walmart.com/search?q=%5Bredacted%5D&stores=100&facet=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-25T17:28:59.245768+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/search?q=%5Bredacted%5D&stores=100&facet=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 17:29:00 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T17:29:01.025184+00:00",
+      "elapsed_seconds": 1.779
+    },
+    "body_bytes": 854641,
+    "body_sha256": "d50a19f630a51e6ec911d22f6dd3bf9716b68ea85cd81ca5f0b262e88d7733d1",
+    "sharing_status": "Private originals and redaction draft; manual review required before sharing"
+  },
+  {
+    "id": "offers-007",
+    "session": "offers",
+    "kind": "product",
+    "sequence": 7,
+    "request": {
+      "url": "https://www.walmart.com/ip/Great-Value-Purified-Drinking-Water-16-9-Fl-Oz-40-Count/992524020?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D&from=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-25T17:29:01.235132+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Great-Value-Purified-Drinking-Water-16-9-Fl-Oz-40-Count/992524020?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D&from=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 17:29:02 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T17:29:02.262227+00:00",
+      "elapsed_seconds": 1.027
+    },
+    "body_bytes": 566151,
+    "body_sha256": "895a3ece094d7589929821879085cb86646dccb93e7ffe9357f0c9af7449e837",
+    "sharing_status": "Private originals and redaction draft; manual review required before sharing"
+  },
+  {
+    "id": "offers-008",
+    "session": "offers",
+    "kind": "product",
+    "sequence": 8,
+    "request": {
+      "url": "https://www.walmart.com/ip/Great-Value-Purified-Drinking-Water-16-9-fl-oz-24-Count/13448854?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D&from=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-25T17:29:04.361727+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Great-Value-Purified-Drinking-Water-16-9-fl-oz-24-Count/13448854?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D&from=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 17:29:05 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T17:29:05.389409+00:00",
+      "elapsed_seconds": 1.028
+    },
+    "body_bytes": 564238,
+    "body_sha256": "ed2b681b26da12758b27f61ac2fcf2ccb62a825fabfa7a97fafbd23f4ab55b91",
+    "sharing_status": "Private originals and redaction draft; manual review required before sharing"
+  },
+  {
+    "id": "offers-009",
+    "session": "offers",
+    "kind": "product",
+    "sequence": 9,
+    "request": {
+      "url": "https://www.walmart.com/ip/Carving-Pumpkin-Each/47428850?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-25T17:29:07.495841+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Carving-Pumpkin-Each/47428850?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 17:29:08 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T17:29:08.501043+00:00",
+      "elapsed_seconds": 1.005
+    },
+    "body_bytes": 504363,
+    "body_sha256": "83c3149077a495a6f1d46da523782be2c2a66b2c48e9fc1b668d102d50948676",
+    "sharing_status": "Private originals and redaction draft; manual review required before sharing"
+  }
+]

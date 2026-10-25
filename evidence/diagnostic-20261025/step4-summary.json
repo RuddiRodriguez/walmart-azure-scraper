@@ -1,0 +1,54 @@
+{
+  "recorded_utc": "2026-10-25T17:30:16.126637+00:00",
+  "core_source_commit": "53cb6d94be5fc29eeedd32cd3f75b129d2f2aed4",
+  "core_hashes_unchanged": true,
+  "recovery": {
+    "passed": true,
+    "seconds": 87.422,
+    "sigkill_performed": true,
+    "resume_executed": true,
+    "committed_before_kill": 1,
+    "final_records": 3,
+    "target_attempts": 4,
+    "configured_canary_attempts_upper_bound": 2,
+    "interrupted_product": "883632494",
+    "checks": {
+      "sqlite_integrity": true,
+      "prior_pages_completed_once": true,
+      "prior_records_retained": true,
+      "prior_products_completed_once": true,
+      "interrupted_product_was_uncommitted": true,
+      "interrupted_product_attempted_twice": true,
+      "interrupted_product_completed_once": true
+    },
+    "scope": "Current collector code, one-category/three-product bounded sample; same code/config on resume. Not full-catalog or Azure recovery."
+  },
+  "offers": {
+    "search_completed": true,
+    "seconds": 62.594,
+    "queries": [
+      "buy 2 save",
+      "digital coupon"
+    ],
+    "target_checks": 5,
+    "distinct_target_products": 3,
+    "verified_volume_or_digital_examples": 0,
+    "counts": {
+      "product_requests": 7,
+      "listing_requests": 2,
+      "sequence": 9,
+      "body_bytes": 5901130
+    },
+    "body_hashes_verified": 9,
+    "error": null,
+    "finding": "No qualifying volume/digital offers found in this bounded inspection; requirement remains open. Ordinary prices, financing and rewards are not substitutes."
+  },
+  "historical_and_production_latest_unchanged": true,
+  "controller_sha256": {
+    "run_recovery_review.py": "c23417de1fb0d7ac04217c8ce9499da4b4cd2ea82654952a4229d3f484e740fc",
+    "review_live_offers.py": "e564de8e68e8c762e9e2f6a8d571f1ebb1860264a199cc32254d8d48898d2bc7"
+  },
+  "raw_offer_bodies": "Retained privately with unreviewed redaction drafts; metadata/source projections exported only",
+  "azure_executed": false,
+  "client_contact": false
+}

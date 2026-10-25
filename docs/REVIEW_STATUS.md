@@ -1,3 +1,7 @@
+# Step 4 review — 25 October 2026
+
+Step 4 update, 25 October: current collector passed live SIGKILL/resume on a bounded three-product sample; all seven recovery checks and three source audits passed. Two offer searches checked three distinct products, with no qualifying volume/digital example verified. See docs/STEP4_RESULTS_20261025.md.
+
 # Step 3 review — 25 October 2026
 
 Step 3 update, 25 October:one matched live comparison passed the same six targets in one session and fresh three-target batches, with matching prices. No drift reproduced and no reliability improvement established.26complete response bodies retained privately; safe metadata/source contexts published. See docs/STEP3_RESULTS_20261025.md.

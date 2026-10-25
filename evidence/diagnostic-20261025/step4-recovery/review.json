@@ -1,0 +1,21 @@
+{
+  "mode": "one live recovery attempt, maximum15minutes/12product attempts including controls",
+  "started_utc": "2026-10-25T17:26:26.522380+00:00",
+  "source_commit": "53cb6d94be5fc29eeedd32cd3f75b129d2f2aed4",
+  "core_sha256": {
+    "scrape.py": "01d6aee1f2d91c36acebd132c580df32e7914323fe3a3f7b5506bad3217894d1",
+    "browser.py": "2b46d80e5b5edd1b75c7cbf36d460d96da91cfd218e0b1dfa309dcc3459cec24",
+    "extract.py": "e252ee14a9e66c9be33220a014984e161192651759c9619202ecf73c39242605",
+    "storage.py": "2453aa318e9e59b37bcc85dd3a6b9c5d8b4cc7616368e4cbf01f41b054385c90",
+    "validate.py": "d316b2e14887bbc02b08a5b54af6fe7c5d340d1ad9b1f5819e242de39ec53ada"
+  },
+  "sigkill_performed": true,
+  "resume_executed": true,
+  "recovery_passed": true,
+  "run": "data/diagnostic-20261025/step4-recovery/collection/100/runs/20261025T172627441744Z",
+  "target_attempts": 4,
+  "stopper_exit": 0,
+  "initial_exit": -9,
+  "seconds": 87.422,
+  "resume_exit": 0
+}

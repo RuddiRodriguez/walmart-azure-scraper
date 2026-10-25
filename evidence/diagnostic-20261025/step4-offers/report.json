@@ -1,0 +1,145 @@
+{
+  "mode": "bounded live offer inspection; not a catalog run",
+  "started_utc": "2026-10-25T17:28:06.197844+00:00",
+  "queries": [
+    {
+      "query": "buy 2 save",
+      "url": "https://www.walmart.com/search?q=%5Bredacted%5D&stores=100&facet=%5Bredacted%5D",
+      "inspected": 3,
+      "listing_context": {
+        "stores": "100",
+        "facet": "fulfillment_method:Pickup",
+        "page": 1
+      },
+      "eligible_candidates": 6
+    },
+    {
+      "query": "digital coupon",
+      "url": "https://www.walmart.com/search?q=%5Bredacted%5D&stores=100&facet=%5Bredacted%5D",
+      "inspected": 2,
+      "listing_context": {
+        "stores": "100",
+        "facet": "fulfillment_method:Pickup",
+        "page": 1
+      },
+      "eligible_candidates": 2
+    }
+  ],
+  "products": [
+    {
+      "sequence": 3,
+      "query": "buy 2 save",
+      "candidate_id": "992524020",
+      "product_id": "992524020",
+      "store_id": "100",
+      "zip": "72712",
+      "intent": "PICKUP",
+      "store_matches": true,
+      "accepted": true,
+      "reason": "",
+      "fields": {
+        "volume_deals_description": "",
+        "volume_deals_price": "",
+        "digital_deals_description": "",
+        "digital_deals_price": ""
+      },
+      "unknown_offer_shapes": [],
+      "description_visible_in_response": false,
+      "current_local_price": "5.97"
+    },
+    {
+      "sequence": 4,
+      "query": "buy 2 save",
+      "candidate_id": "13448854",
+      "product_id": "13448854",
+      "store_id": "100",
+      "zip": "72712",
+      "intent": "PICKUP",
+      "store_matches": true,
+      "accepted": true,
+      "reason": "",
+      "fields": {
+        "volume_deals_description": "",
+        "volume_deals_price": "",
+        "digital_deals_description": "",
+        "digital_deals_price": ""
+      },
+      "unknown_offer_shapes": [],
+      "description_visible_in_response": false,
+      "current_local_price": "3.97"
+    },
+    {
+      "sequence": 5,
+      "query": "buy 2 save",
+      "candidate_id": "5670414759",
+      "product_id": "5670414759",
+      "store_id": "100",
+      "zip": "72712",
+      "intent": "PICKUP",
+      "store_matches": true,
+      "accepted": true,
+      "reason": "",
+      "fields": {
+        "volume_deals_description": "",
+        "volume_deals_price": "",
+        "digital_deals_description": "",
+        "digital_deals_price": ""
+      },
+      "unknown_offer_shapes": [],
+      "description_visible_in_response": false,
+      "current_local_price": "3.46"
+    },
+    {
+      "sequence": 7,
+      "query": "digital coupon",
+      "candidate_id": "992524020",
+      "product_id": "992524020",
+      "store_id": "100",
+      "zip": "72712",
+      "intent": "PICKUP",
+      "store_matches": true,
+      "accepted": true,
+      "reason": "",
+      "fields": {
+        "volume_deals_description": "",
+        "volume_deals_price": "",
+        "digital_deals_description": "",
+        "digital_deals_price": ""
+      },
+      "unknown_offer_shapes": [],
+      "description_visible_in_response": false,
+      "current_local_price": "5.97"
+    },
+    {
+      "sequence": 8,
+      "query": "digital coupon",
+      "candidate_id": "13448854",
+      "product_id": "13448854",
+      "store_id": "100",
+      "zip": "72712",
+      "intent": "PICKUP",
+      "store_matches": true,
+      "accepted": true,
+      "reason": "",
+      "fields": {
+        "volume_deals_description": "",
+        "volume_deals_price": "",
+        "digital_deals_description": "",
+        "digital_deals_price": ""
+      },
+      "unknown_offer_shapes": [],
+      "description_visible_in_response": false,
+      "current_local_price": "3.97"
+    }
+  ],
+  "verified_examples": [],
+  "completed": true,
+  "paid_services_used": false,
+  "counts": {
+    "product_requests": 7,
+    "listing_requests": 2,
+    "sequence": 9,
+    "body_bytes": 5901130
+  },
+  "seconds": 62.594
+}
