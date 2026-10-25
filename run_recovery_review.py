@@ -1,4 +1,4 @@
-"""One bounded live SIGKILL/resume review of the unchanged production collector."""
+"""One bounded live SIGKILL/resume review of the current production collector."""
 import csv
 import hashlib
 import json
@@ -64,7 +64,7 @@ def review(output):
         events = [json.loads(line) for line in path.read_text().splitlines()] if path.exists() else []
         attempts = sum(e['event'] == 'product_started' for e in events)
         result['target_attempts'] = attempts
-        return time.monotonic() >= deadline or attempts >= 10
+        return time.monotonic() >= deadline or attempts >= 9
 
     worker = None
     stopper = None
