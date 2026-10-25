@@ -4,8 +4,9 @@
   "checks": [
     "Cross-category target reached; duplicate excluded; actual schema validation passed",
     "Wrong response excluded; one corrected diagnostic retry never rehabilitates run",
-    "Synthetic empty_page stops safely with partial evidence",
+    "Both bad pages skipped once; final control reached, no retry loop",
     "Synthetic budget stops safely with partial evidence",
+    "Ordinary product error skipped once; later products continue successfully",
     "Synthetic original-body budget default enforced without large allocation",
     "Synthetic original-body budget controlled enforced without large allocation",
     "Synthetic original-body budget clamped enforced without large allocation"

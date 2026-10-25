@@ -27,6 +27,12 @@ LIMITS = dict(product_requests=750, listing_requests=80, seconds=3600)
 
 
 def run(output, plan):
+    plan = {**plan, 'limits': dict(plan['limits'])}
+    if plan.get('deadline_utc'):
+        remaining = int(datetime.fromisoformat(plan['deadline_utc']).timestamp() - time.time())
+        if remaining <= 0:
+            raise ValueError('Original controlled collection deadline expired')
+        plan['limits']['seconds'] = min(plan['limits']['seconds'], remaining)
     if any(not 0 < plan['limits'][key] <= value for key, value in LIMITS.items()):
         raise ValueError('Plan exceeds controlled request/runtime limits')
     if not 0 < plan['target'] <= 550 or plan['minimum_per_category'] < 1:
@@ -39,7 +45,7 @@ def run(output, plan):
     settings.update(retries=1, max_page_seconds=25)
     store = settings['stores'][0]
     state = dict(started=time.monotonic(), limits=plan['limits'], product_requests=0,
-                 listing_requests=0, sequence=0, body_bytes=0, body_limit_bytes=1024 * 2**20)
+                 listing_requests=0, sequence=0, body_bytes=0, body_limit_bytes=min(plan.get('body_limit_bytes', 1024 * 2**20), 1024 * 2**20))
     names = [c['category'] for c in plan['categories']]
     queues = {c['category']: deque(c['urls']) for c in plan['categories']}
     roots = {c['category']: c['required_root'] for c in plan['categories']}
@@ -50,7 +56,7 @@ def run(output, plan):
                   started_utc=datetime.now(timezone.utc).isoformat(), source_commit=subprocess.check_output(['git', 'rev-parse', 'HEAD'], text=True).strip(),
                   source_hashes={p: hashlib.sha256(Path(p).read_bytes()).hexdigest() for p in
                                  ['controlled_collection.py', 'diagnostic_capture.py', 'capture_store_drift.py', 'scrape.py', 'browser.py', 'extract.py', 'storage.py', 'validate.py']},
-                  plan=plan, pages=[], observations=[], exclusions={}, completed_attempt=False,
+                  plan=plan, pages=[], observations=[], failures=[], exclusions={}, completed_attempt=False,
                   target_reached=False, pair_captured=False, full_coverage_complete=False)
     sb = None
 
@@ -70,6 +76,18 @@ def run(output, plan):
 
     def exclude(reason):
         report['exclusions'][reason] = report['exclusions'].get(reason, 0) + 1
+
+    def fatal(error):
+        message = str(error).lower()
+        return any(word in message for word in ['store drift', 'store control', 'location mismatch',
+            'location zip mismatch', 'product identity', 'access blocked', 'challenge', 'evidence capture',
+            'budget reached', 'body budget', 'disk reserve', 'runtime limit', 'failure ceiling'])
+
+    def failure(kind, error, **values):
+        report['failures'].append(dict(kind=kind, reason=str(error), error_type=type(error).__name__, **values))
+        log('failed_once', kind=kind, reason=str(error), **values)
+        if fatal(error) or len(report['failures']) >= plan.get('maximum_ordinary_failures', 10):
+            raise RuntimeError('Failure ceiling reached or unsafe context: ' + str(error)) from error
 
     def observe(candidate, listing_sequence, diagnostic_only=False):
         page = fetch_product(sb, candidate['url'], settings,
@@ -151,78 +169,99 @@ def run(output, plan):
                 entry = dict(category=name, url=safe_url(url), status='started', decisions=[])
                 report['pages'].append(entry)
                 save()
-                native = navigate(sb, url, settings, log)
                 try:
-                    verify_banner(native, store)
-                    stable, prior = 0, -1
-                    for _ in range(20):
-                        sb.scroll_down(900)
-                        sb.sleep(0.4)
-                        native.decompose()
-                        native = BeautifulSoup(sb.get_page_source(), 'html.parser')
+                    native = navigate(sb, url, settings, log)
+                    try:
                         verify_banner(native, store)
-                        visible = len(native.select('[data-item-id]'))
-                        stable = stable + 1 if visible == prior else 0
-                        prior = visible
-                        if stable >= 4:
+                        stable, prior = 0, -1
+                        for _ in range(20):
+                            sb.scroll_down(900)
+                            sb.sleep(0.4)
+                            native.decompose()
+                            native = BeautifulSoup(sb.get_page_source(), 'html.parser')
+                            verify_banner(native, store)
+                            visible = len(native.select('[data-item-id]'))
+                            stable = stable + 1 if visible == prior else 0
+                            prior = visible
+                            if stable >= 4:
+                                break
+                        else:
+                            raise ValueError('Listing lazy loading did not settle')
+                        snapshot = output / f'native-{len(report["pages"])}.html'
+                        body = str(native).encode()
+                        snapshot.write_bytes(body)
+                        entry.update(snapshot=snapshot.name, snapshot_sha256=hashlib.sha256(body).hexdigest())
+                        native_search = next_data(native).get('searchResult')
+                        native_next = next_page_url(native, url, native_search)
+                        links = discover(native, roots[name], ['recipes', r'shop[- ]all[- ]foods?$', 'farm[- ]animals'],
+                                         current_url=url, decisions=entry['decisions'])
+                    finally:
+                        native.decompose()
+                    page = fetch_product(sb, url, settings, capture=make_capture(output / 'captures', 'collection', state, 'listing'))
+                    try:
+                        listing_sequence = state['sequence']
+                        search = next_data(page).get('searchResult')
+                        if bool(native_search) != bool(search):
+                            raise ValueError('Native and captured listing kinds differ')
+                        if search:
+                            candidates, rejected, search = listing_from_rendered(snapshot, page, name, store)
+                            verify_listing_store(search, store)
+                            following = next_page_url(page, url, search) or native_next
+                            props = (search.get('paginationV2') or {}).get('pageProperties') or {}
+                            if int(props.get('page') or 1) < int((search.get('paginationV2') or {}).get('maxPage') or 1) and not following:
+                                raise ValueError('Reported next page lacks observed control')
+                            if following:
+                                queues[name].appendleft(following)
+                        else:
+                            candidates, rejected = [], []
+                        for rejection in rejected:
+                            exclude(rejection['reason'])
+                        entry.update(listing_sequence=listing_sequence, candidate_ids=[c['item_id'] for c in candidates],
+                                     rejected_candidates=rejected, status='reviewed')
+                    finally:
+                        page.decompose()
+                    for link in links:
+                        parent = category_id(roots[name])
+                        uncertain_pet_branch = name == 'Pets' and '1092244' in category_id(link).split('_')
+                        if re.search(r'(?:^|_)' + re.escape(parent) + r'(?:_|$)', category_id(link)) and '4519281' not in category_id(link).split('_') and not uncertain_pet_branch:
+                            if (name, link) not in seen_pages:
+                                queues[name].append(link)
+                        else:
+                            for decision in entry['decisions']:
+                                if decision['url'] == link and decision['action'] == 'queued':
+                                    decision.update(action='not_crawled', reason='scope_unverified_or_known_empty_route')
+                    for candidate in candidates:
+                        if candidate['item_id'] in plan.get('quarantined_product_ids', []):
+                            seen_products.add(candidate['item_id'])
+                            exclude('prior_wrong_store_product_quarantined')
+                            continue
+                        if len(accepted) >= plan['target'] and all(counts[n] >= plan['minimum_per_category'] for n in names):
                             break
+                        if candidate['item_id'] in seen_products:
+                            exclude('duplicate_product_id')
+                            continue
+                        # Leave room for a diagnostic re-fetch and final control.
+                        if state['product_requests'] >= plan['limits']['product_requests'] - 2:
+                            raise RuntimeError('Product budget reached')
+                        seen_products.add(candidate['item_id'])
+                        try:
+                            observe(candidate, listing_sequence)
+                        except Exception as error:
+                            failure('product', error, product_id=candidate['item_id'], category=name)
+                            exclude('product_exception')
+                            save()
+                    save()
+                except Exception as error:
+                    if entry['status'] == 'started':
+                        entry.update(status='failed', error=str(error))
+                        failure('page', error, category=name, url=safe_url(url))
+                        save()
                     else:
-                        raise ValueError('Listing lazy loading did not settle')
-                    snapshot = output / f'native-{len(report["pages"])}.html'
-                    body = str(native).encode()
-                    snapshot.write_bytes(body)
-                    entry.update(snapshot=snapshot.name, snapshot_sha256=hashlib.sha256(body).hexdigest())
-                    native_search = next_data(native).get('searchResult')
-                    native_next = next_page_url(native, url, native_search)
-                    links = discover(native, roots[name], ['recipes', r'shop[- ]all[- ]foods?$', 'farm[- ]animals'],
-                                     current_url=url, decisions=entry['decisions'])
-                finally:
-                    native.decompose()
-                page = fetch_product(sb, url, settings, capture=make_capture(output / 'captures', 'collection', state, 'listing'))
-                try:
-                    listing_sequence = state['sequence']
-                    search = next_data(page).get('searchResult')
-                    if bool(native_search) != bool(search):
-                        raise ValueError('Native and captured listing kinds differ')
-                    if search:
-                        candidates, rejected, search = listing_from_rendered(snapshot, page, name, store)
-                        verify_listing_store(search, store)
-                        following = next_page_url(page, url, search) or native_next
-                        props = (search.get('paginationV2') or {}).get('pageProperties') or {}
-                        if int(props.get('page') or 1) < int((search.get('paginationV2') or {}).get('maxPage') or 1) and not following:
-                            raise ValueError('Reported next page lacks observed control')
-                        if following:
-                            queues[name].appendleft(following)
-                    else:
-                        candidates, rejected = [], []
-                    for rejection in rejected:
-                        exclude(rejection['reason'])
-                    entry.update(listing_sequence=listing_sequence, candidate_ids=[c['item_id'] for c in candidates],
-                                 rejected_candidates=rejected, status='reviewed')
-                finally:
-                    page.decompose()
-                for link in links:
-                    parent = category_id(roots[name])
-                    uncertain_pet_branch = name == 'Pets' and '1092244' in category_id(link).split('_')
-                    if re.search(r'(?:^|_)' + re.escape(parent) + r'(?:_|$)', category_id(link)) and '4519281' not in category_id(link).split('_') and not uncertain_pet_branch:
-                        if (name, link) not in seen_pages:
-                            queues[name].append(link)
-                    else:
-                        for decision in entry['decisions']:
-                            if decision['url'] == link and decision['action'] == 'queued':
-                                decision.update(action='not_crawled', reason='scope_unverified_or_known_empty_route')
-                for candidate in candidates:
-                    if len(accepted) >= plan['target'] and all(counts[n] >= plan['minimum_per_category'] for n in names):
-                        break
-                    if candidate['item_id'] in seen_products:
-                        exclude('duplicate_product_id')
-                        continue
-                    # Leave room for a diagnostic re-fetch and final control.
-                    if state['product_requests'] >= plan['limits']['product_requests'] - 2:
-                        raise RuntimeError('Product budget reached')
-                    seen_products.add(candidate['item_id'])
-                    observe(candidate, listing_sequence)
-                save()
+                        if fatal(error):
+                            raise
+                        entry['processing_error'] = str(error)
+                        failure('page_processing', error, category=name, url=safe_url(url))
+                        save()
         control()
         report['final_control_passed'] = True
         report['completed_attempt'] = True

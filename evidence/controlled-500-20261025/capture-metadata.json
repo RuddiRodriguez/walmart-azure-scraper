@@ -1,0 +1,3517 @@
+[
+  {
+    "id": "collection-001",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 1,
+    "request": {
+      "url": "https://www.walmart.com/ip/Carving-Pumpkin-Each/47428850?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:04:37.207223+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Carving-Pumpkin-Each/47428850?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:04:38 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:04:38.103153+00:00",
+      "elapsed_seconds": 0.896
+    },
+    "body_bytes": 484987,
+    "body_sha256": "20fce434bfd13659efa65c7fa2527f0d6519ca9730aad71f4d7003717ddd046e",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-002",
+    "session": "collection",
+    "kind": "listing",
+    "sequence": 2,
+    "request": {
+      "url": "https://www.walmart.com/cp/food/976759",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:04:52.438710+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/cp/food/976759",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:04:54 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:04:54.930967+00:00",
+      "elapsed_seconds": 2.492
+    },
+    "body_bytes": 945299,
+    "body_sha256": "54392f4f7047effc807ae753adf4927093e7b1cf749b36a7d897bce6f5bc10d3",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-003",
+    "session": "collection",
+    "kind": "listing",
+    "sequence": 3,
+    "request": {
+      "url": "https://www.walmart.com/cp/household-essentials/1115193",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:05:19.131803+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/cp/household-essentials/1115193",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:05:21 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:05:22.469547+00:00",
+      "elapsed_seconds": 3.338
+    },
+    "body_bytes": 2411977,
+    "body_sha256": "18ba42554e055a12c391157ed5b3d5796537b408c0e37f8db9bfbaf22dcac331",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-004",
+    "session": "collection",
+    "kind": "listing",
+    "sequence": 4,
+    "request": {
+      "url": "https://www.walmart.com/cp/personal-care/1005862",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:05:39.204067+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/cp/personal-care/1005862",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:05:39 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:05:39.498103+00:00",
+      "elapsed_seconds": 0.294
+    },
+    "body_bytes": 1163898,
+    "body_sha256": "ab51da81360bdc514c808d6f060f173eb4a32df8b52e879a9eac9f56a0c2cf41",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-005",
+    "session": "collection",
+    "kind": "listing",
+    "sequence": 5,
+    "request": {
+      "url": "https://www.walmart.com/cp/beauty/1085666",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:05:56.674145+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/cp/beauty/1085666",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:05:58 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:05:58.603088+00:00",
+      "elapsed_seconds": 1.929
+    },
+    "body_bytes": 1722881,
+    "body_sha256": "74bc89b71a4d53f067681c024a0f2cc8c89a196c91c9b818ba955c3a0914bbe2",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-006",
+    "session": "collection",
+    "kind": "listing",
+    "sequence": 6,
+    "request": {
+      "url": "https://www.walmart.com/browse/diapering/5427_486190",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:06:15.028124+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/diapering/5427_486190",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:06:15 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:06:15.262442+00:00",
+      "elapsed_seconds": 0.234
+    },
+    "body_bytes": 1492210,
+    "body_sha256": "97e1480e3816862e16d20d3ac206afc8cf43ed113172ce7fb6bb23eb7a8655b2",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-007",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 7,
+    "request": {
+      "url": "https://www.walmart.com/ip/Luvs-Platinum-Protection-Baby-Diapers-Size-5-72-Count-Select-for-More-Options/5445606208?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:06:15.609350+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Luvs-Platinum-Protection-Baby-Diapers-Size-5-72-Count-Select-for-More-Options/5445606208?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:06:16 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:06:16.511345+00:00",
+      "elapsed_seconds": 0.902
+    },
+    "body_bytes": 622584,
+    "body_sha256": "4cd332d10cfc66c623f9d1475c3b82b964549b123e1dd5a002ab61acb6f16a9c",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-008",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 8,
+    "request": {
+      "url": "https://www.walmart.com/ip/HUGGIES-Natural-Care-Baby-Wipes-56-sheets-Pack-of-3/38236207?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:06:18.697965+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/HUGGIES-Natural-Care-Baby-Wipes-56-sheets-Pack-of-3/38236207?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:06:19 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:06:19.553224+00:00",
+      "elapsed_seconds": 0.855
+    },
+    "body_bytes": 560199,
+    "body_sha256": "cc89b466bc9fdf814041a67c1a5ca58ed94b2136c79e328359e591be6d8d66cd",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-009",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 9,
+    "request": {
+      "url": "https://www.walmart.com/ip/Parent-s-Choice-Dry-Gentle-Diapers-Size-5-27-Count-Select-for-More-Options/885509773?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:06:21.659522+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Parent-s-Choice-Dry-Gentle-Diapers-Size-5-27-Count-Select-for-More-Options/885509773?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:06:22 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:06:22.674275+00:00",
+      "elapsed_seconds": 1.015
+    },
+    "body_bytes": 608014,
+    "body_sha256": "08aee0bb990f845aa3d6b993034904068afd61002a0e951c76f28c9c5f236f85",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-010",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 10,
+    "request": {
+      "url": "https://www.walmart.com/ip/Pampers-Swaddlers-Baby-Diapers-Size-4-66-Count-Select-for-More-Options/362649628?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:06:24.794408+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Pampers-Swaddlers-Baby-Diapers-Size-4-66-Count-Select-for-More-Options/362649628?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:06:25 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:06:26.078656+00:00",
+      "elapsed_seconds": 1.284
+    },
+    "body_bytes": 614477,
+    "body_sha256": "0dc1849c7a0fa9e0fed50b862cd63c093339c3c9c56e9a4923b68de998c71277",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-011",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 11,
+    "request": {
+      "url": "https://www.walmart.com/ip/Millie-Moon-Sensitive-Wipes-648-Count/2790112831?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:06:28.200236+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Millie-Moon-Sensitive-Wipes-648-Count/2790112831?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:06:29 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:06:29.124692+00:00",
+      "elapsed_seconds": 0.924
+    },
+    "body_bytes": 525423,
+    "body_sha256": "2e7577d982be7dd8a0c1ea0abbbf6b5efce1b5c6b22fcdaccff92d23efc7cbf8",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-012",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 12,
+    "request": {
+      "url": "https://www.walmart.com/ip/Huggies-Little-Snugglers-Fragrance-Free-Baby-Diapers-Size-1-32-Count/378937848?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:06:31.228594+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Huggies-Little-Snugglers-Fragrance-Free-Baby-Diapers-Size-1-32-Count/378937848?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:06:31 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:06:32.156471+00:00",
+      "elapsed_seconds": 0.928
+    },
+    "body_bytes": 565870,
+    "body_sha256": "4f6cc435766cee8bc152ccb574ad01b56c5ef62e460e108a5c3cea5ea26c9347",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-013",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 13,
+    "request": {
+      "url": "https://www.walmart.com/ip/Rascals-Premium-Absorbent-Baby-Diapers-Size-4-72-Count/15154970737?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:06:34.265012+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Rascals-Premium-Absorbent-Baby-Diapers-Size-4-72-Count/15154970737?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:06:35 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:06:35.151182+00:00",
+      "elapsed_seconds": 0.886
+    },
+    "body_bytes": 571702,
+    "body_sha256": "9d41ed56eaa6b2ddeb9981a49b36cc22d60510761635f249920af2b5bd0f9108",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-014",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 14,
+    "request": {
+      "url": "https://www.walmart.com/ip/Pampers-Baby-Dry-Baby-Diapers-Size-7-54-Count-Select-for-More-Options/1599724784?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:06:37.263152+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Pampers-Baby-Dry-Baby-Diapers-Size-7-54-Count-Select-for-More-Options/1599724784?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:06:38 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:06:38.449126+00:00",
+      "elapsed_seconds": 1.186
+    },
+    "body_bytes": 593361,
+    "body_sha256": "c4889a3a0907b49c8ae42e4e755f8c09d0c7173c84740c4e706b51ff565d16a1",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-015",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 15,
+    "request": {
+      "url": "https://www.walmart.com/ip/Parent-s-Choice-Refreshing-Cucumber-Baby-Wipes-300-Count/2220368533?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:06:40.564730+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Parent-s-Choice-Refreshing-Cucumber-Baby-Wipes-300-Count/2220368533?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:06:41 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:06:41.458784+00:00",
+      "elapsed_seconds": 0.894
+    },
+    "body_bytes": 532113,
+    "body_sha256": "371739213f7c4890507045298c3e1c8c7d4250c0911274c2df513ca66d1216e1",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-016",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 16,
+    "request": {
+      "url": "https://www.walmart.com/ip/Desitin-Maximum-Strength-Baby-Diaper-Rash-Cream-Travel-Size-2-oz/941882113?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:06:43.562779+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Desitin-Maximum-Strength-Baby-Diaper-Rash-Cream-Travel-Size-2-oz/941882113?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:06:44 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:06:44.555321+00:00",
+      "elapsed_seconds": 0.993
+    },
+    "body_bytes": 537903,
+    "body_sha256": "4834f09b3f0db5f992725741d23cc11a6553f0a141e549ffa26d338575eaa554",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-017",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 17,
+    "request": {
+      "url": "https://www.walmart.com/ip/Desitin-Maximum-Strength-Diaper-Rash-Paste-40-Zinc-Oxide-Skin-Protectant-4-oz-Tube-Hypoallergenic-Baby-Barrier-Cream/11046907?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:06:46.658450+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Desitin-Maximum-Strength-Diaper-Rash-Paste-40-Zinc-Oxide-Skin-Protectant-4-oz-Tube-Hypoallergenic-Baby-Barrier-Cream/11046907?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:06:47 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:06:47.905197+00:00",
+      "elapsed_seconds": 1.247
+    },
+    "body_bytes": 539443,
+    "body_sha256": "57bbf6241ebf96b5d8d0d7eef4a9d6e8c63958a341cc4342414bb817cd91dadf",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-018",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 18,
+    "request": {
+      "url": "https://www.walmart.com/ip/Parent-s-Choice-Soothing-Shea-Butter-Baby-Wipes-300-Count/2946588580?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:06:50.011223+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Parent-s-Choice-Soothing-Shea-Butter-Baby-Wipes-300-Count/2946588580?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:06:50 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:06:51.125726+00:00",
+      "elapsed_seconds": 1.115
+    },
+    "body_bytes": 529128,
+    "body_sha256": "be6c6233e516c5862727127370232f6f67b50756788c8667c43868a0fbd223bf",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-019",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 19,
+    "request": {
+      "url": "https://www.walmart.com/ip/Goodnites-Boys-Absorbent-Disposable-Nighttime-Bedwetting-Underwear-L-46-Count/5293190496?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:06:53.230004+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Goodnites-Boys-Absorbent-Disposable-Nighttime-Bedwetting-Underwear-L-46-Count/5293190496?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:06:54 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:06:54.283983+00:00",
+      "elapsed_seconds": 1.054
+    },
+    "body_bytes": 559774,
+    "body_sha256": "d834322955a5fa73b422885ce5fa20aa72745cd95eeddffe3fac6173dda01bac",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-020",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 20,
+    "request": {
+      "url": "https://www.walmart.com/ip/Huggies-Little-Movers-Baby-Diapers-Size-5-100-Ct-Select-for-More-Options/11726106860?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:06:56.387764+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Huggies-Little-Movers-Baby-Diapers-Size-5-100-Ct-Select-for-More-Options/11726106860?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:06:57 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:06:57.570608+00:00",
+      "elapsed_seconds": 1.183
+    },
+    "body_bytes": 647076,
+    "body_sha256": "8b64f221c9f54a86b81e356bbcbf8d9f25c11c2cbf48fd7a217b6e3491ad4863",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-021",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 21,
+    "request": {
+      "url": "https://www.walmart.com/ip/Huggies-Little-Movers-Little-Monsters-Edition-Baby-Diapers-Size-4-58-Count/18722654384?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:06:59.692138+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Huggies-Little-Movers-Little-Monsters-Edition-Baby-Diapers-Size-4-58-Count/18722654384?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:07:00 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:07:00.774176+00:00",
+      "elapsed_seconds": 1.082
+    },
+    "body_bytes": 546337,
+    "body_sha256": "312e8a274e31669cba9031484e15cb69d160fcfadb1fe9175b964f47df6e1680",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-022",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 22,
+    "request": {
+      "url": "https://www.walmart.com/ip/Pull-Ups-Boys-Potty-Training-Pants-4T-5T-38-50-lbs-60-Count-Select-for-More/13752058189?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:07:02.880913+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Pull-Ups-Boys-Potty-Training-Pants-4T-5T-38-50-lbs-60-Count-Select-for-More/13752058189?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:07:04 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:07:05.202098+00:00",
+      "elapsed_seconds": 2.321
+    },
+    "body_bytes": 586799,
+    "body_sha256": "3c606ab81b38468fe091fcd849e27cd2749b5a4b4ccb5af836a4719852c14da1",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-023",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 23,
+    "request": {
+      "url": "https://www.walmart.com/ip/Pull-Ups-Girls-Potty-Training-Pants-3T-4T-32-40-lbs-70-Count-Select-for-More/17368854?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:07:07.310766+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Pull-Ups-Girls-Potty-Training-Pants-3T-4T-32-40-lbs-70-Count-Select-for-More/17368854?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:07:08 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:07:08.720254+00:00",
+      "elapsed_seconds": 1.409
+    },
+    "body_bytes": 589054,
+    "body_sha256": "55cb09b5975e209e07ea265415da0f560e4844e5821976aee20c9821f724068b",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-024",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 24,
+    "request": {
+      "url": "https://www.walmart.com/ip/Pampers-Sensitive-Baby-Wipes-Unscented-16-Pack-1344-Total-Count-Select-for-More-Options/5169127548?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:07:10.871335+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Pampers-Sensitive-Baby-Wipes-Unscented-16-Pack-1344-Total-Count-Select-for-More-Options/5169127548?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:07:11 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:07:12.054798+00:00",
+      "elapsed_seconds": 1.183
+    },
+    "body_bytes": 559902,
+    "body_sha256": "f4ba44c9197acb269eaa5c32b873c230e3f5f37bd6ae7ca23b11bf03724d1cce",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-025",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 25,
+    "request": {
+      "url": "https://www.walmart.com/ip/JOHNSONS-BABY-FIRST-TOUCH-GIFT-SET/14765971579?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:07:14.161538+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/JOHNSONS-BABY-FIRST-TOUCH-GIFT-SET/14765971579?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:07:14 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:07:15.050899+00:00",
+      "elapsed_seconds": 0.889
+    },
+    "body_bytes": 493708,
+    "body_sha256": "ca39dd109ab5abda8eedfe3a4302d4bd0a102153efb5ff2b50be44bcc70c2f71",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-026",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 26,
+    "request": {
+      "url": "https://www.walmart.com/ip/Huggies-Snug-Dry-Baby-Diapers-Size-5-25-37-lbs-60-Count-Select-for-More/18915261532?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:07:17.146717+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Huggies-Snug-Dry-Baby-Diapers-Size-5-25-37-lbs-60-Count-Select-for-More/18915261532?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:07:18 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:07:18.274883+00:00",
+      "elapsed_seconds": 1.128
+    },
+    "body_bytes": 606607,
+    "body_sha256": "6b13cceae9bc6d72a911447e8a0c905af949f41c37b893199c576a568b369f7f",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-027",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 27,
+    "request": {
+      "url": "https://www.walmart.com/ip/Goodnites-Boys-Absorbent-Disposable-Nighttime-Bedwetting-Underwear-XL-28-Count/5164255366?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:07:20.392987+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Goodnites-Boys-Absorbent-Disposable-Nighttime-Bedwetting-Underwear-XL-28-Count/5164255366?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:07:21 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:07:21.427627+00:00",
+      "elapsed_seconds": 1.035
+    },
+    "body_bytes": 563341,
+    "body_sha256": "47a109127f6f65bd29e0f7e37d53f658bcec152433e88efa7e380fe3d254fffb",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-028",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 28,
+    "request": {
+      "url": "https://www.walmart.com/ip/Pampers-Aqua-Pure-Baby-Wipes-Unscented-7-Pack-392-Total-Count-Select-for-More-Options/15134100568?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:07:23.535395+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Pampers-Aqua-Pure-Baby-Wipes-Unscented-7-Pack-392-Total-Count-Select-for-More-Options/15134100568?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:07:24 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:07:24.485853+00:00",
+      "elapsed_seconds": 0.95
+    },
+    "body_bytes": 566622,
+    "body_sha256": "6dab3cfb29c33944e4255b0dbd11de09115ae5e76d7e82ebd393fbb15c4d355b",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-029",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 29,
+    "request": {
+      "url": "https://www.walmart.com/ip/Huggies-Overnites-Nighttime-Baby-Diapers-Size-6-35-lbs-70-Ct-Select-for-More/18714368611?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:07:26.596210+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Huggies-Overnites-Nighttime-Baby-Diapers-Size-6-35-lbs-70-Ct-Select-for-More/18714368611?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:07:27 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:07:27.651522+00:00",
+      "elapsed_seconds": 1.055
+    },
+    "body_bytes": 556889,
+    "body_sha256": "6601aa7d482b5cc1f9b659e240c705321ba711649e6c20f4fc8279cf1e3af96a",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-030",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 30,
+    "request": {
+      "url": "https://www.walmart.com/ip/Equate-Baby-Everyday-Clean-Wipes-with-Aloe-Vera-and-Vitamin-E-80-Wipes/15754318?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:07:29.758147+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Equate-Baby-Everyday-Clean-Wipes-with-Aloe-Vera-and-Vitamin-E-80-Wipes/15754318?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:07:30 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:07:30.703706+00:00",
+      "elapsed_seconds": 0.946
+    },
+    "body_bytes": 525311,
+    "body_sha256": "b48b06026ba09d1584aa403f36f1a0bad1ac288e4bd60c7f55d0bb34be1b9976",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-031",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 31,
+    "request": {
+      "url": "https://www.walmart.com/ip/Goodnites-Girls-Absorbent-Disposable-Nighttime-Bedwetting-Underwear-S-M-44-Count/35511669?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:07:32.808116+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Goodnites-Girls-Absorbent-Disposable-Nighttime-Bedwetting-Underwear-S-M-44-Count/35511669?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:07:33 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:07:33.951008+00:00",
+      "elapsed_seconds": 1.143
+    },
+    "body_bytes": 572628,
+    "body_sha256": "7e224c169510366ce183d757a4540a5acb380df33f9d522a3bdfb70049b5b61a",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-032",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 32,
+    "request": {
+      "url": "https://www.walmart.com/ip/Pampers-Splashers-Swim-Diapers-Size-mM-18-Count-Select-for-More-Options/598478108?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:07:36.060656+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Pampers-Splashers-Swim-Diapers-Size-mM-18-Count-Select-for-More-Options/598478108?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:07:36 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:07:37.142151+00:00",
+      "elapsed_seconds": 1.081
+    },
+    "body_bytes": 530836,
+    "body_sha256": "cf4c643d57d1a977194ebb22b3ff59f5b55a1593d2625032ef560da43c6676f7",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-033",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 33,
+    "request": {
+      "url": "https://www.walmart.com/ip/Diaper-Genie-Classic-Pail-White-1-Diaper-Pail-1-Square-Refill-165-Ct/5212491762?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:07:39.243262+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Diaper-Genie-Classic-Pail-White-1-Diaper-Pail-1-Square-Refill-165-Ct/5212491762?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:07:40 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:07:40.224130+00:00",
+      "elapsed_seconds": 0.981
+    },
+    "body_bytes": 502464,
+    "body_sha256": "d17ed521130ecf894fac8fa3ba3bb4a6ae9595e34eeaef3028b03117e435935d",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-034",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 34,
+    "request": {
+      "url": "https://www.walmart.com/ip/Parent-s-Choice-Explorer-360-Active-Fit-Diaper-Pants-Size-4-54-Count/5113125462?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:07:42.323646+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Parent-s-Choice-Explorer-360-Active-Fit-Diaper-Pants-Size-4-54-Count/5113125462?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:07:43 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:07:43.425710+00:00",
+      "elapsed_seconds": 1.102
+    },
+    "body_bytes": 531311,
+    "body_sha256": "58e7e5f74c18bd2c28fb2ba4d5bb6595a03c17dbf69285e53e3d7d3f82ffee74",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-035",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 35,
+    "request": {
+      "url": "https://www.walmart.com/ip/Millie-Moon-99-Pure-Water-Baby-Wipes-216-Count/16744012208?fulfillmentIntent=Shipping&filters=%5Bredacted%5D&classType=VARIANT",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:07:45.529241+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Millie-Moon-99-Pure-Water-Baby-Wipes-216-Count/16744012208?fulfillmentIntent=Shipping&filters=%5Bredacted%5D&classType=VARIANT",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:07:46 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:07:46.568607+00:00",
+      "elapsed_seconds": 1.039
+    },
+    "body_bytes": 510750,
+    "body_sha256": "caec9f1288a370dd6073af4a13931d37db68676d1137ad85f0545047b4ca817c",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-036",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 36,
+    "request": {
+      "url": "https://www.walmart.com/ip/Honest-Company-Clean-Conscious-Diapers-100-Leak-Protection-Designed-Protect-Delicate-Skin-Hypoallergenic-Fragrance-Free-Rose-Blossom-Tutu-Cute-Size-1/5302220449?fulfillmentIntent=Shipping&filters=%5Bredacted%5D&classType=VARIANT",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:07:48.665850+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Honest-Company-Clean-Conscious-Diapers-100-Leak-Protection-Designed-Protect-Delicate-Skin-Hypoallergenic-Fragrance-Free-Rose-Blossom-Tutu-Cute-Size-1/5302220449?fulfillmentIntent=Shipping&filters=%5Bredacted%5D&classType=VARIANT",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:07:49 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:07:49.823394+00:00",
+      "elapsed_seconds": 1.158
+    },
+    "body_bytes": 721791,
+    "body_sha256": "25ec998719e8e0cd98ce24033bf43821a180eb842fb894440473af3da7fc5daf",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-037",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 37,
+    "request": {
+      "url": "https://www.walmart.com/ip/The-Honest-Company-Clean-Conscious-Disposable-Baby-Diapers-Above-It-All-Print-Size-2-32-Count-Select-for-More-Options/952129916?fulfillmentIntent=Shipping&filters=%5Bredacted%5D&classType=REGULAR",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:07:51.948229+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/The-Honest-Company-Clean-Conscious-Disposable-Baby-Diapers-Above-It-All-Print-Size-2-32-Count-Select-for-More-Options/952129916?fulfillmentIntent=Shipping&filters=%5Bredacted%5D&classType=REGULAR",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:07:52 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:07:53.173990+00:00",
+      "elapsed_seconds": 1.226
+    },
+    "body_bytes": 503191,
+    "body_sha256": "63e1ae298354adbbd6b9c7e69c3aeef08c016d49e6b9aca040e102aa6b64ee9a",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-038",
+    "session": "collection",
+    "kind": "listing",
+    "sequence": 38,
+    "request": {
+      "url": "https://www.walmart.com/cp/feeding/133283",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:08:09.133863+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/cp/feeding/133283",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:08:09 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:08:09.296795+00:00",
+      "elapsed_seconds": 0.163
+    },
+    "body_bytes": 635353,
+    "body_sha256": "90b541f35adcae3b1bf9f9efd4f898de747eacc7268a40109cf03c5f15e27413",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-039",
+    "session": "collection",
+    "kind": "listing",
+    "sequence": 39,
+    "request": {
+      "url": "https://www.walmart.com/cp/health/976760",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:08:27.607954+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/cp/health/976760",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:08:27 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:08:27.858585+00:00",
+      "elapsed_seconds": 0.251
+    },
+    "body_bytes": 1468458,
+    "body_sha256": "cc01efbbf35cdf913d673276b41f383f09a761f8601bd956292b4120b3377452",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-040",
+    "session": "collection",
+    "kind": "listing",
+    "sequence": 40,
+    "request": {
+      "url": "https://www.walmart.com/cp/pets/5440",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:08:44.311140+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/cp/pets/5440",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:08:44 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:08:44.501559+00:00",
+      "elapsed_seconds": 0.19
+    },
+    "body_bytes": 909793,
+    "body_sha256": "4afc39c84ece635229b1c5c96d505d5862822062ea7ac9b4fb20ecd50192b5fc",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-041",
+    "session": "collection",
+    "kind": "listing",
+    "sequence": 41,
+    "request": {
+      "url": "https://www.walmart.com/browse/party-occasions/balloons/2637_1042319_1212898_3956207",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:08:59.786586+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/party-occasions/balloons/2637_1042319_1212898_3956207",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:08:59 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:09:00.022459+00:00",
+      "elapsed_seconds": 0.236
+    },
+    "body_bytes": 1279715,
+    "body_sha256": "d943d31633869ee6e0b015ec0fd96326785bae3aaeaeaa1617f98f6606630ce0",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-042",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 42,
+    "request": {
+      "url": "https://www.walmart.com/ip/9-Pink-Mix-Latex-Balloons-20-Pieces-by-Way-To-Celebrate/37523996?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:09:00.448257+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/9-Pink-Mix-Latex-Balloons-20-Pieces-by-Way-To-Celebrate/37523996?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:09:01 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:09:01.357892+00:00",
+      "elapsed_seconds": 0.91
+    },
+    "body_bytes": 489943,
+    "body_sha256": "2b0bdfb0c753f886bd0007ffb3cd5ba1ed3f832a2ae6d52d4dc78204f5984d7d",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-043",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 43,
+    "request": {
+      "url": "https://www.walmart.com/ip/12-Standard-Mix-Latex-Balloons-15-Pieces-by-Way-To-Celebrate/974601065?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:09:03.455877+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/12-Standard-Mix-Latex-Balloons-15-Pieces-by-Way-To-Celebrate/974601065?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:09:04 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:09:04.289285+00:00",
+      "elapsed_seconds": 0.833
+    },
+    "body_bytes": 490859,
+    "body_sha256": "ca1d02f7ccc98d467b01baee0765d346745a98c4119e2acbf6ee07b36e367153",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-044",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 44,
+    "request": {
+      "url": "https://www.walmart.com/ip/12-Electric-Blue-Latex-Balloons-15-Pieces-by-Way-To-Celebrate/939272184?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:09:06.399742+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/12-Electric-Blue-Latex-Balloons-15-Pieces-by-Way-To-Celebrate/939272184?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:09:07 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:09:07.655124+00:00",
+      "elapsed_seconds": 1.255
+    },
+    "body_bytes": 613856,
+    "body_sha256": "1a9f7f8b19ed7091268d3d0249c376911a0f264e057c9907e9e70ad1667ca9b1",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-045",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 45,
+    "request": {
+      "url": "https://www.walmart.com/ip/12-Gold-Metallic-Latex-Balloons-with-Chrome-Effect-5-Pieces-by-Way-To-Celebrate/418527883?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:09:09.773522+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/12-Gold-Metallic-Latex-Balloons-with-Chrome-Effect-5-Pieces-by-Way-To-Celebrate/418527883?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:09:10 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:09:10.771820+00:00",
+      "elapsed_seconds": 0.998
+    },
+    "body_bytes": 491144,
+    "body_sha256": "aa1a035a510bfc54e6b95fcee5219b5dda2943ae4a4cdc1d749121bffa4f8fb7",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-046",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 46,
+    "request": {
+      "url": "https://www.walmart.com/ip/16-inch-Number-1-Foil-Balloon-Gold-by-Way-To-Celebrate/982241152?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:09:12.876105+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/16-inch-Number-1-Foil-Balloon-Gold-by-Way-To-Celebrate/982241152?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:09:13 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:09:13.739127+00:00",
+      "elapsed_seconds": 0.863
+    },
+    "body_bytes": 506367,
+    "body_sha256": "ffdf06de84e06858db1ea6c74e98321307fe160c5077837c13976b1efe8e1521",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-047",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 47,
+    "request": {
+      "url": "https://www.walmart.com/ip/12-Silver-Gold-Foil-Confetti-Balloons-5-Count-by-Way-To-Celebrate/966995460?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:09:15.847795+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/12-Silver-Gold-Foil-Confetti-Balloons-5-Count-by-Way-To-Celebrate/966995460?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:09:19 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:09:20.135076+00:00",
+      "elapsed_seconds": 4.287
+    },
+    "body_bytes": 487796,
+    "body_sha256": "7a1148dd85087519d6c34c65616cabcedd172932f366c9063498c8c8fb6c3b53",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-048",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 48,
+    "request": {
+      "url": "https://www.walmart.com/ip/12-Multicolor-Metallic-Latex-Balloons-with-Chrome-Effect-5-Pieces-by-Way-To-Celebrate/668144339?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:09:22.233686+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/12-Multicolor-Metallic-Latex-Balloons-with-Chrome-Effect-5-Pieces-by-Way-To-Celebrate/668144339?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:09:23 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:09:23.225278+00:00",
+      "elapsed_seconds": 0.992
+    },
+    "body_bytes": 493951,
+    "body_sha256": "38e175788b1cda65e26cb63282853c4f5655a6df8a4cbafa13b29e7046c2e8a9",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-049",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 49,
+    "request": {
+      "url": "https://www.walmart.com/ip/12-Silver-Metallic-Latex-Balloons-with-Chrome-Effect-5-Pieces-by-Way-To-Celebrate/924215907?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:09:25.328981+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/12-Silver-Metallic-Latex-Balloons-with-Chrome-Effect-5-Pieces-by-Way-To-Celebrate/924215907?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:09:26 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:09:26.786901+00:00",
+      "elapsed_seconds": 1.458
+    },
+    "body_bytes": 492403,
+    "body_sha256": "2fa206b73725d8b4637a82432cbdf36ac07d9079b890e2dd29e06e00f0326dad",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-050",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 50,
+    "request": {
+      "url": "https://www.walmart.com/ip/12-Pink-Metallic-Latex-Balloons-with-Chrome-Effect-5-Pieces-by-Way-To-Celebrate/878984109?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:09:28.934048+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/12-Pink-Metallic-Latex-Balloons-with-Chrome-Effect-5-Pieces-by-Way-To-Celebrate/878984109?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:09:29 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:09:30.046590+00:00",
+      "elapsed_seconds": 1.113
+    },
+    "body_bytes": 494345,
+    "body_sha256": "470057e2f8ddee90d0239dc1c1d62ce9aa42fa12602d5a79f7cd803fb33a92ed",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-051",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 51,
+    "request": {
+      "url": "https://www.walmart.com/ip/Black-Foil-Balloon-Weight-by-Way-To-Celebrate/342469207?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:09:32.256338+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Black-Foil-Balloon-Weight-by-Way-To-Celebrate/342469207?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:09:33 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:09:33.276765+00:00",
+      "elapsed_seconds": 1.02
+    },
+    "body_bytes": 518984,
+    "body_sha256": "49999759da734e6716bf10e40dc728b3987bd819698d3b700948bb6260f92c1d",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-052",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 52,
+    "request": {
+      "url": "https://www.walmart.com/ip/12-Blue-Metallic-Latex-Balloons-with-Chrome-Effect-5-Pieces-by-Way-To-Celebrate/342177028?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:09:35.382884+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/12-Blue-Metallic-Latex-Balloons-with-Chrome-Effect-5-Pieces-by-Way-To-Celebrate/342177028?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:09:36 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:09:36.713489+00:00",
+      "elapsed_seconds": 1.331
+    },
+    "body_bytes": 493871,
+    "body_sha256": "9e27db78fc709fe1e42b174070e4d6d4a35b9a3b0c068df88ebd74747030ee98",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-053",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 53,
+    "request": {
+      "url": "https://www.walmart.com/ip/9-Pearl-Mix-Latex-Balloons-20-Pieces-by-Way-To-Celebrate/133192590?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:09:38.814422+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/9-Pearl-Mix-Latex-Balloons-20-Pieces-by-Way-To-Celebrate/133192590?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:09:39 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:09:39.808686+00:00",
+      "elapsed_seconds": 0.994
+    },
+    "body_bytes": 489600,
+    "body_sha256": "66a34f2fd64218409e000ed95c6d804af07120276c81e08c869e3c08486227d0",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-054",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 54,
+    "request": {
+      "url": "https://www.walmart.com/ip/Clear-Balloon-Garland-Tape-16-4-by-Way-To-Celebrate/503000843?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:09:41.911651+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Clear-Balloon-Garland-Tape-16-4-by-Way-To-Celebrate/503000843?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:09:43 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:09:43.517401+00:00",
+      "elapsed_seconds": 1.606
+    },
+    "body_bytes": 489445,
+    "body_sha256": "9525f8fce56327e15906068e040f18c5bc0848314de1fa0b494f9bd30ca75b5c",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-055",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 55,
+    "request": {
+      "url": "https://www.walmart.com/ip/12-Multi-Color-Foil-Confetti-Balloons-5-Count-by-Way-To-Celebrate/916872627?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:09:45.617342+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/12-Multi-Color-Foil-Confetti-Balloons-5-Count-by-Way-To-Celebrate/916872627?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:09:46 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:09:46.615576+00:00",
+      "elapsed_seconds": 0.998
+    },
+    "body_bytes": 491880,
+    "body_sha256": "039400bfc2e3b9e220d5606f5285d138c53b59def308778d227dc969de4aa6c2",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-056",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 56,
+    "request": {
+      "url": "https://www.walmart.com/ip/12-Pastel-Mix-Latex-Balloons-15-Pieces-by-Way-To-Celebrate/14659924021?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:09:48.714557+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/12-Pastel-Mix-Latex-Balloons-15-Pieces-by-Way-To-Celebrate/14659924021?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:09:49 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:09:49.650546+00:00",
+      "elapsed_seconds": 0.936
+    },
+    "body_bytes": 481652,
+    "body_sha256": "e1f7477e846b36099915e8e81da1cac7b92721d8ff2d747529c95469f4ef480d",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-057",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 57,
+    "request": {
+      "url": "https://www.walmart.com/ip/Pastel-Gold-Foil-Balloon-Garland-49-Pieces-by-Way-To-Celebrate/14579210177?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:09:51.751607+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Pastel-Gold-Foil-Balloon-Garland-49-Pieces-by-Way-To-Celebrate/14579210177?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:09:52 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:09:53.126012+00:00",
+      "elapsed_seconds": 1.374
+    },
+    "body_bytes": 476127,
+    "body_sha256": "f8f3b80318ae0901d8f469d515919d7caf75400e11c64cf0b81dbbe599a62b4b",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-058",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 58,
+    "request": {
+      "url": "https://www.walmart.com/ip/Gold-Foil-Party-Balloon-Number-5-16-by-Way-to-Celebrate/706619274?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:09:55.219535+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Gold-Foil-Party-Balloon-Number-5-16-by-Way-to-Celebrate/706619274?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:09:56 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:09:56.167316+00:00",
+      "elapsed_seconds": 0.948
+    },
+    "body_bytes": 499122,
+    "body_sha256": "1e9cdbb6f81c518f64727998bf0bb63b53783128129073d0376c84720a2a81d0",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-059",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 59,
+    "request": {
+      "url": "https://www.walmart.com/ip/12-Rose-Gold-Metallic-Latex-Balloons-with-Chrome-Effect-5-Pieces-by-Way-To-Celebrate/603477379?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:09:58.270039+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/12-Rose-Gold-Metallic-Latex-Balloons-with-Chrome-Effect-5-Pieces-by-Way-To-Celebrate/603477379?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:09:59 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:10:00.122151+00:00",
+      "elapsed_seconds": 1.852
+    },
+    "body_bytes": 508496,
+    "body_sha256": "fd21622b410aa41f2c5f4850317c3602c46e26e307118cc385c2a7f610faf76f",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-060",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 60,
+    "request": {
+      "url": "https://www.walmart.com/ip/16-inch-Foil-Balloon-Number-3-Gold-by-Way-to-Celebrate/997111289?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:10:02.223280+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/16-inch-Foil-Balloon-Number-3-Gold-by-Way-to-Celebrate/997111289?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:10:03 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:10:03.181513+00:00",
+      "elapsed_seconds": 0.958
+    },
+    "body_bytes": 500324,
+    "body_sha256": "60315d100f4cb5f5ea42e7d82debe1aa9d52899dff772761ab0f6d4f03890ff7",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-061",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 61,
+    "request": {
+      "url": "https://www.walmart.com/ip/Helium-Tank-for-20-9-Balloons-4-98-Cubic-Feet-by-Unique/19673815020?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:10:05.335624+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Helium-Tank-for-20-9-Balloons-4-98-Cubic-Feet-by-Unique/19673815020?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:10:06 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:10:06.401530+00:00",
+      "elapsed_seconds": 1.066
+    },
+    "body_bytes": 474873,
+    "body_sha256": "73be7a75e13f9d5a53801d36f597d0406cd0b2e53c06071b0eb43c2f2b45ff76",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-062",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 62,
+    "request": {
+      "url": "https://www.walmart.com/ip/HI-FLOAT-Balloon-Treatment-5-oz-Extends-Float-Time-for-Helium-Latex-Balloons/180357699?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:10:08.503037+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/HI-FLOAT-Balloon-Treatment-5-oz-Extends-Float-Time-for-Helium-Latex-Balloons/180357699?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:10:09 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:10:09.703851+00:00",
+      "elapsed_seconds": 1.201
+    },
+    "body_bytes": 500138,
+    "body_sha256": "328bd6657e497cd41da0b8323f55f6dedd630fcac605d6ab0810e7f69f06d8cf",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-063",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 63,
+    "request": {
+      "url": "https://www.walmart.com/ip/Silver-Happy-Birthday-Air-Filled-Balloon-Banner-16-Pieces-by-Way-To-Celebrate/215283573?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:10:11.806613+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Silver-Happy-Birthday-Air-Filled-Balloon-Banner-16-Pieces-by-Way-To-Celebrate/215283573?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:10:12 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:10:12.924978+00:00",
+      "elapsed_seconds": 1.118
+    },
+    "body_bytes": 484841,
+    "body_sha256": "7dbf462354c41b08dd367e04252537cd614302c414a99dc271f78cb15c3bb7f0",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-064",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 64,
+    "request": {
+      "url": "https://www.walmart.com/ip/16-inch-Gold-Number-0-Foil-Balloon-by-Way-To-Celebrate/404699305?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:10:15.020824+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/16-inch-Gold-Number-0-Foil-Balloon-by-Way-To-Celebrate/404699305?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:10:15 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:10:15.988960+00:00",
+      "elapsed_seconds": 0.968
+    },
+    "body_bytes": 504844,
+    "body_sha256": "4e197f5850dedcfa8cd9559759c83065aae12c988c88e92d693b400d2bedec02",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-065",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 65,
+    "request": {
+      "url": "https://www.walmart.com/ip/16-inch-Number-2-Foil-Balloon-Gold-by-Way-To-Celebrate/371510233?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:10:18.094590+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/16-inch-Number-2-Foil-Balloon-Gold-by-Way-To-Celebrate/371510233?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:10:19 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:10:19.773510+00:00",
+      "elapsed_seconds": 1.679
+    },
+    "body_bytes": 506783,
+    "body_sha256": "5533a140d17ce6b513a1f254c7fd1530f672b9eef7a568fb18a438e0cfecc56a",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-066",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 66,
+    "request": {
+      "url": "https://www.walmart.com/ip/Big-Barrel-E-Z-Safety-Seal-Helium-Balloon-Valves-Quickly-Seals-Latex-Balloons-25-Ct/165946158?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:10:21.883063+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Big-Barrel-E-Z-Safety-Seal-Helium-Balloon-Valves-Quickly-Seals-Latex-Balloons-25-Ct/165946158?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:10:22 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:10:23.038014+00:00",
+      "elapsed_seconds": 1.155
+    },
+    "body_bytes": 508561,
+    "body_sha256": "47ab4e464bf23b3cfaf9e7abc8acfc163d30345c3c825052d7d77a1915bd6118",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-067",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 67,
+    "request": {
+      "url": "https://www.walmart.com/ip/24-Multicolor-Butterfly-Balloon-by-Way-To-Celebrate/14178609886?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:10:25.142191+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/24-Multicolor-Butterfly-Balloon-by-Way-To-Celebrate/14178609886?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:10:25 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:10:26.014620+00:00",
+      "elapsed_seconds": 0.872
+    },
+    "body_bytes": 475610,
+    "body_sha256": "4e7a52cf00a7b8e2257e7879fda36bfe2118f872297e858299f689f50581b339",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-068",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 68,
+    "request": {
+      "url": "https://www.walmart.com/ip/Assorted-Rainbow-Colors-Tabletop-Balloon-Arch-Kit-with-Frame-160-Pieces-by-Way-To-Celebrate/14219905831?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:10:28.115351+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Assorted-Rainbow-Colors-Tabletop-Balloon-Arch-Kit-with-Frame-160-Pieces-by-Way-To-Celebrate/14219905831?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:10:28 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:10:29.002191+00:00",
+      "elapsed_seconds": 0.887
+    },
+    "body_bytes": 486371,
+    "body_sha256": "45aaa15aec1ab0c88b57e5a88391cd0ecbf7594912ec6270e0156bde11527ec3",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-069",
+    "session": "collection",
+    "kind": "listing",
+    "sequence": 69,
+    "request": {
+      "url": "https://www.walmart.com/cp/art-supplies/5899871",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:10:44.828729+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/cp/art-supplies/5899871",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:10:44 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:10:44.995051+00:00",
+      "elapsed_seconds": 0.166
+    },
+    "body_bytes": 736928,
+    "body_sha256": "b726d952421fa5e650eadbbc5e31cfd3acc02e0f1bac8ffc37ff634cb1d645fa",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-070",
+    "session": "collection",
+    "kind": "listing",
+    "sequence": 70,
+    "request": {
+      "url": "https://www.walmart.com/cp/office-supplies/1229749",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:10:59.013644+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/cp/office-supplies/1229749",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:10:59 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:10:59.204186+00:00",
+      "elapsed_seconds": 0.191
+    },
+    "body_bytes": 780569,
+    "body_sha256": "c938bdae1cd78eec98734065af49ddeae35af428904f1bf420b04c181d568ec0",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-071",
+    "session": "collection",
+    "kind": "listing",
+    "sequence": 71,
+    "request": {
+      "url": "https://www.walmart.com/browse/food/porch-pumpkins/976759_976793_8739812",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:11:13.526505+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/food/porch-pumpkins/976759_976793_8739812",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:11:13 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:11:13.678697+00:00",
+      "elapsed_seconds": 0.152
+    },
+    "body_bytes": 875160,
+    "body_sha256": "4969e9d510b31929b76cba4662618c430ae2e7ce9508b4e7da2754ec6a465402",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-072",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 72,
+    "request": {
+      "url": "https://www.walmart.com/ip/Carving-Pumpkin-Each/47428850?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:11:13.913789+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Carving-Pumpkin-Each/47428850?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:11:14 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:11:14.751145+00:00",
+      "elapsed_seconds": 0.837
+    },
+    "body_bytes": 484859,
+    "body_sha256": "694522507792587fe30d15d9cd3e3503900a968300ad08f58da83d5eb34c175f",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-073",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 73,
+    "request": {
+      "url": "https://www.walmart.com/ip/Fresh-Pie-Pumpkin-Each-Approx-1-7-2-8-lb/47376050?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:11:16.850537+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Fresh-Pie-Pumpkin-Each-Approx-1-7-2-8-lb/47376050?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:11:17 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:11:17.904142+00:00",
+      "elapsed_seconds": 1.054
+    },
+    "body_bytes": 476916,
+    "body_sha256": "ae9113288364e98de84191dcaf14d2066247178e6c77ab3aa1ffb625b8192ac0",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-074",
+    "session": "collection",
+    "kind": "listing",
+    "sequence": 74,
+    "request": {
+      "url": "https://www.walmart.com/browse/household-essentials/clorox/1115193_8250903_7784444",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:11:38.348110+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/household-essentials/clorox/1115193_8250903_7784444",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:11:38 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:11:38.557736+00:00",
+      "elapsed_seconds": 0.21
+    },
+    "body_bytes": 1322434,
+    "body_sha256": "6cf9bf49aeb91119668c50ce0014a1daaa1ef3d151a6c9e0e90bf6cd17a7777d",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-075",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 75,
+    "request": {
+      "url": "https://www.walmart.com/ip/Clorox-Disinfecting-Bleach-Regular-43-fl-oz/914173307?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:11:38.897055+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Clorox-Disinfecting-Bleach-Regular-43-fl-oz/914173307?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:11:40 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:11:40.800914+00:00",
+      "elapsed_seconds": 1.904
+    },
+    "body_bytes": 522963,
+    "body_sha256": "4e7256bc8f9436c852d8f51d667efbbdfb42836384d88a20cf8e7a5926e47e02",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-076",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 76,
+    "request": {
+      "url": "https://www.walmart.com/ip/Clorox-Splash-Less-Liquid-Bleach-Cleaner-Regular-Scent-77-fl-oz/883632494?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:11:42.976625+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Clorox-Splash-Less-Liquid-Bleach-Cleaner-Regular-Scent-77-fl-oz/883632494?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:11:44 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:11:44.529812+00:00",
+      "elapsed_seconds": 1.553
+    },
+    "body_bytes": 512379,
+    "body_sha256": "f5be2b2fd594f08a1124fc7d5906194ecb5c42148c162c290f2bc13e70a77bc9",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-077",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 77,
+    "request": {
+      "url": "https://www.walmart.com/ip/Clorox-Disinfecting-Liquid-Bleach-Cleaner-Regular-Scent-121-fl-oz/341539270?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:11:46.636206+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Clorox-Disinfecting-Liquid-Bleach-Cleaner-Regular-Scent-121-fl-oz/341539270?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:11:47 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:11:47.700500+00:00",
+      "elapsed_seconds": 1.064
+    },
+    "body_bytes": 536941,
+    "body_sha256": "81ae32168af25b6479cfd41495d6804dafc706c3d61092f185f73d24d9fb3ad2",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-078",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 78,
+    "request": {
+      "url": "https://www.walmart.com/ip/Clorox-Disinfecting-Wipes-Bleach-Free-Fresh-Scent-And-Crisp-Lemon-Scent-35-Count-3-Pack/15543972?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:11:49.959335+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Clorox-Disinfecting-Wipes-Bleach-Free-Fresh-Scent-And-Crisp-Lemon-Scent-35-Count-3-Pack/15543972?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:11:50 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:11:50.882608+00:00",
+      "elapsed_seconds": 0.923
+    },
+    "body_bytes": 517545,
+    "body_sha256": "31ed9b452f9a3a52967bdf2cb97b0e3e39289c3142f41363f103320e1e2ed7ce",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-079",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 79,
+    "request": {
+      "url": "https://www.walmart.com/ip/Clorox-ToiletWand-All-in-One-Toilet-Cleaning-System-ToiletWand-Storage-Caddy-and-6-Refills/14898380?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:11:52.987489+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Clorox-ToiletWand-All-in-One-Toilet-Cleaning-System-ToiletWand-Storage-Caddy-and-6-Refills/14898380?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:11:53 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:11:53.992859+00:00",
+      "elapsed_seconds": 1.005
+    },
+    "body_bytes": 526004,
+    "body_sha256": "40e87b0681567bd960a5751df2ae73b4c60ab89b56e2510dedc933dd7b79d642",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-080",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 80,
+    "request": {
+      "url": "https://www.walmart.com/ip/Clorox-No-Splash-Bleach-117-fl-oz/941543804?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:11:56.157133+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Clorox-No-Splash-Bleach-117-fl-oz/941543804?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:11:57 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:11:57.239780+00:00",
+      "elapsed_seconds": 1.083
+    },
+    "body_bytes": 497292,
+    "body_sha256": "062a8a86e1cd1bf3911944007cb6bcf3ff264b32b1c2e70cd8441975ab56e663",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-081",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 81,
+    "request": {
+      "url": "https://www.walmart.com/ip/Clorox-Clean-Up-Multi-Surface-All-Purpose-Cleaner-with-Bleach-Original-32-fl-oz/12443823?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:11:59.356367+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Clorox-Clean-Up-Multi-Surface-All-Purpose-Cleaner-with-Bleach-Original-32-fl-oz/12443823?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:12:00 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:12:00.298329+00:00",
+      "elapsed_seconds": 0.942
+    },
+    "body_bytes": 529499,
+    "body_sha256": "c4ee8e15cbdec15998690ede4162cf35fd177c90af66a7897441f2399025fcdd",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-082",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 82,
+    "request": {
+      "url": "https://www.walmart.com/ip/Clorox-Disinfecting-Bleach-Free-All-Purpose-Cleaner-Crisp-Lemon-32-fl-oz/304859896?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:12:02.405412+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Clorox-Disinfecting-Bleach-Free-All-Purpose-Cleaner-Crisp-Lemon-32-fl-oz/304859896?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:12:03 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:12:03.587879+00:00",
+      "elapsed_seconds": 1.182
+    },
+    "body_bytes": 540190,
+    "body_sha256": "fcebc6a155308cebf6aa99bbebdf53efabdf36520f6a08b71b1faf350d2ff539",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-083",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 83,
+    "request": {
+      "url": "https://www.walmart.com/ip/Clorox-Extendable-Tub-And-Tile-Scrubber/2537720607?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:12:05.699598+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Clorox-Extendable-Tub-And-Tile-Scrubber/2537720607?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:12:06 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:12:06.644801+00:00",
+      "elapsed_seconds": 0.945
+    },
+    "body_bytes": 516558,
+    "body_sha256": "760fdc5bf4bfbb48394b568cca1f3b4cdd80709945b02b94455c413b0c9e15b7",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-084",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 84,
+    "request": {
+      "url": "https://www.walmart.com/ip/Clorox-Disinfecting-Wipes-on-the-Go-Bleach-Free-Travel-Wipes-Fresh-Scent-9-Count/22210582?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:12:08.747697+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Clorox-Disinfecting-Wipes-on-the-Go-Bleach-Free-Travel-Wipes-Fresh-Scent-9-Count/22210582?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:12:09 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:12:09.657488+00:00",
+      "elapsed_seconds": 0.91
+    },
+    "body_bytes": 535050,
+    "body_sha256": "5a5faa531e4bce5403bf438504c065948303ccd4e8026bb5f35e1f662637d928",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-085",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 85,
+    "request": {
+      "url": "https://www.walmart.com/ip/Clorox-No-Splash-Bleach-Morning-Bloom-77-fl-oz/857115210?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:12:11.767976+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Clorox-No-Splash-Bleach-Morning-Bloom-77-fl-oz/857115210?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:12:12 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:12:12.702524+00:00",
+      "elapsed_seconds": 0.935
+    },
+    "body_bytes": 518314,
+    "body_sha256": "58611b113684d887a0545542b47591545688bb589b6af11fa37447f67411033b",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-086",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 86,
+    "request": {
+      "url": "https://www.walmart.com/ip/Clorox-Disinfecting-Wipes-Bleach-Free-Cleaner-Crisp-Lemon-35-Count-Single-Pack/12443825?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:12:14.809886+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Clorox-Disinfecting-Wipes-Bleach-Free-Cleaner-Crisp-Lemon-35-Count-Single-Pack/12443825?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:12:15 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:12:15.874724+00:00",
+      "elapsed_seconds": 1.065
+    },
+    "body_bytes": 527344,
+    "body_sha256": "e546c30db2005fcc7c7c86a21d25bf94b300f03286cda7f59d4e32789e1c1c72",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-087",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 87,
+    "request": {
+      "url": "https://www.walmart.com/ip/Clorox-ToiletWand-Disinfecting-Brush-Refills-Toilet-Bowl-Cleaner-Disposable-Wand-Heads-10-Count/14898376?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:12:17.983520+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Clorox-ToiletWand-Disinfecting-Brush-Refills-Toilet-Bowl-Cleaner-Disposable-Wand-Heads-10-Count/14898376?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:12:18 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:12:19.160560+00:00",
+      "elapsed_seconds": 1.177
+    },
+    "body_bytes": 542079,
+    "body_sha256": "3c5edfa08cafee6f34ce8b694e8e417d11ecdeadee1ba5611abf8adb4c115511",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-088",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 88,
+    "request": {
+      "url": "https://www.walmart.com/ip/Clorox-Disinfecting-Liquid-Bleach-Cleaner-Regular-Scent-81-fl-oz/586467973?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:12:21.272363+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Clorox-Disinfecting-Liquid-Bleach-Cleaner-Regular-Scent-81-fl-oz/586467973?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:12:22 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:12:22.469772+00:00",
+      "elapsed_seconds": 1.197
+    },
+    "body_bytes": 533573,
+    "body_sha256": "d4dc2d98a53afe8087c7ed4c97fcfbad61ca92e4519f9d58a40ed3b4d2b1f126",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-089",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 89,
+    "request": {
+      "url": "https://www.walmart.com/ip/Clorox-Bleach-Automatic-Toilet-Bowl-Cleaner-Tablets-2-Pack/12443844?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:12:24.575256+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Clorox-Bleach-Automatic-Toilet-Bowl-Cleaner-Tablets-2-Pack/12443844?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:12:25 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:12:25.933675+00:00",
+      "elapsed_seconds": 1.358
+    },
+    "body_bytes": 523403,
+    "body_sha256": "8f2c1d9a709a1d633266ae2948291ddb19932111ad0673d5edfb60f6fc67b814",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-090",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 90,
+    "request": {
+      "url": "https://www.walmart.com/ip/Clorox-Toilet-Bowl-Cleaner-Clinging-Bleach-Gel-Crisp-Lemon-24-fl-oz/152998400?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:12:28.044214+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Clorox-Toilet-Bowl-Cleaner-Clinging-Bleach-Gel-Crisp-Lemon-24-fl-oz/152998400?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:12:28 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:12:29.158381+00:00",
+      "elapsed_seconds": 1.114
+    },
+    "body_bytes": 523783,
+    "body_sha256": "d54b542345e96c6722ab266d26049332a9aaeedb09e71bd7020db0098f03f75e",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-091",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 91,
+    "request": {
+      "url": "https://www.walmart.com/ip/Clorox-Scentiva-Manual-Toilet-Bowl-Cleaner-Cherry-Blossom-Peach-24fo/17772913007?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:12:31.269866+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Clorox-Scentiva-Manual-Toilet-Bowl-Cleaner-Cherry-Blossom-Peach-24fo/17772913007?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:12:32 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:12:32.314544+00:00",
+      "elapsed_seconds": 1.045
+    },
+    "body_bytes": 548041,
+    "body_sha256": "95832e3c147470cfad4568f7e0bfb0276271c8f37073ad5d26a704b4cb97538e",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-092",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 92,
+    "request": {
+      "url": "https://www.walmart.com/ip/Clorox-Scentiva-Scented-Bleach-Disinfecting-Cleaner-Lavender-and-Jasmine-81-fl-oz/5578393742?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:12:34.433481+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Clorox-Scentiva-Scented-Bleach-Disinfecting-Cleaner-Lavender-and-Jasmine-81-fl-oz/5578393742?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:12:35 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:12:35.776838+00:00",
+      "elapsed_seconds": 1.343
+    },
+    "body_bytes": 523874,
+    "body_sha256": "15c948080e9ff21129aa70ce7f64d86372a0faed5ef277ae417f3d3828891be6",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-093",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 93,
+    "request": {
+      "url": "https://www.walmart.com/ip/Clorox-Scentiva-Bleach-Liquid-Cherry-Blossom-Peach-6-81fo/16606508409?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:12:37.887213+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Clorox-Scentiva-Bleach-Liquid-Cherry-Blossom-Peach-6-81fo/16606508409?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:12:38 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:12:38.803451+00:00",
+      "elapsed_seconds": 0.916
+    },
+    "body_bytes": 508390,
+    "body_sha256": "de2d9b36b20f3bca050feddc85415faff839c607e6c8fef6331ce4e8f16f81d0",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-094",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 94,
+    "request": {
+      "url": "https://www.walmart.com/ip/Clorox-Disinfecting-and-Cleaning-Wipes-Crisp-Lemon-and-Fresh-Scent-75-Count-Each-3-Pack/14898365?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:12:40.907928+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Clorox-Disinfecting-and-Cleaning-Wipes-Crisp-Lemon-and-Fresh-Scent-75-Count-Each-3-Pack/14898365?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:12:44 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:12:44.395455+00:00",
+      "elapsed_seconds": 3.488
+    },
+    "body_bytes": 562316,
+    "body_sha256": "504e3c3e61feb374e377b8fcd4cf8762350e34eb14cfda722a31cd5a48a58815",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-095",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 95,
+    "request": {
+      "url": "https://www.walmart.com/ip/Clorox-Disinfecting-and-Cleaning-Wipes-Crisp-Lemon-and-Fresh-Scent-75-Count-Each-3-Pack/14898365?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-25T21:12:44.521819+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Clorox-Disinfecting-and-Cleaning-Wipes-Crisp-Lemon-and-Fresh-Scent-75-Count-Each-3-Pack/14898365?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 21:12:45 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T21:12:45.903342+00:00",
+      "elapsed_seconds": 1.382
+    },
+    "body_bytes": 511907,
+    "body_sha256": "c7453892fd4009cd89dbd2f00b9d06c64f89a36f31e52d3b04d66028e7fade39",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  }
+]

@@ -3,6 +3,7 @@ import argparse
 from collections import Counter
 import hashlib
 import json
+import subprocess
 from pathlib import Path
 
 from bs4 import BeautifulSoup
@@ -24,7 +25,9 @@ def audit(run, evidence):
     errors, metadata, contexts, indexed = [], [], [], {}
     for name, digest in report['source_hashes'].items():
         if hashlib.sha256(Path(name).read_bytes()).hexdigest() != digest:
-            errors.append('Source changed after live run: ' + name)
+            committed = subprocess.check_output(['git', 'show', report['source_commit'] + ':' + name])
+            if hashlib.sha256(committed).hexdigest() != digest:
+                errors.append('Recorded source version/hash mismatch: ' + name)
     for path in sorted((run / 'captures').glob('*.json')):
         item = json.loads(path.read_text())
         if 'body_file' in item:
@@ -106,7 +109,10 @@ def audit(run, evidence):
                   rejected_product_reasons=dict(Counter(o.get('acceptance_reason') for o in report['observations']
                       if o.get('acceptance_reason') not in [None, '', 'retained_unavailable'])),
                   request_error_types=dict(Counter(m.get('error_type') for m in metadata if m.get('error_type'))),
+                  wrong_store_observations=sum(not o['store_matches'] for o in report['observations'] if not o['diagnostic_only']),
+                  diagnostic_refetches=sum(o['diagnostic_only'] for o in report['observations']),
                   unavailable_successes=len(unavailable),
+                  handled_failures=report.get('failures', []),
                   excluded_listing_or_product_reasons=report['exclusions'],
                   target_reached=report['target_reached'], completed_attempt=report['completed_attempt'],
                   stop_reason=report.get('error'), captured_bodies_hash_verified=len(indexed),

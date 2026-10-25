@@ -1,0 +1,106 @@
+{
+  "target": 506,
+  "minimum_per_category": 5,
+  "limits": {
+    "product_requests": 668,
+    "listing_requests": 67,
+    "seconds": 2763
+  },
+  "body_limit_mib": 1024,
+  "categories": [
+    {
+      "category": "Food",
+      "required_root": "https://www.walmart.com/cp/food/976759",
+      "urls": [
+        "https://www.walmart.com/browse/food/canned-goods/976759_976794_7433209",
+        "https://www.walmart.com/cp/food/976759"
+      ]
+    },
+    {
+      "category": "Household Essentials",
+      "required_root": "https://www.walmart.com/cp/household-essentials/1115193",
+      "urls": [
+        "https://www.walmart.com/browse/household-essentials/clorox/1115193_8250903_7784444",
+        "https://www.walmart.com/cp/household-essentials/1115193"
+      ]
+    },
+    {
+      "category": "Personal Care",
+      "required_root": "https://www.walmart.com/cp/personal-care/1005862",
+      "urls": [
+        "https://www.walmart.com/browse/personal-care/1005862_1071969",
+        "https://www.walmart.com/cp/personal-care/1005862"
+      ]
+    },
+    {
+      "category": "Beauty",
+      "required_root": "https://www.walmart.com/cp/beauty/1085666",
+      "urls": [
+        "https://www.walmart.com/browse/1085666_1056884",
+        "https://www.walmart.com/cp/beauty/1085666"
+      ]
+    },
+    {
+      "category": "Diapering",
+      "required_root": "https://www.walmart.com/browse/diapering/5427_486190",
+      "urls": [
+        "https://www.walmart.com/browse/diapering/5427_486190"
+      ]
+    },
+    {
+      "category": "Feeding",
+      "required_root": "https://www.walmart.com/cp/feeding/133283",
+      "urls": [
+        "https://www.walmart.com/browse/feeding/5427_133283_3864647",
+        "https://www.walmart.com/cp/feeding/133283"
+      ]
+    },
+    {
+      "category": "Health & Wellness",
+      "required_root": "https://www.walmart.com/cp/health/976760",
+      "urls": [
+        "https://www.walmart.com/browse/976760_4661388",
+        "https://www.walmart.com/cp/health/976760"
+      ]
+    },
+    {
+      "category": "Pets",
+      "required_root": "https://www.walmart.com/cp/pets/5440",
+      "urls": [
+        "https://www.walmart.com/browse/pets/dog-food-and-treats/5440_202072",
+        "https://www.walmart.com/cp/pets/5440"
+      ]
+    },
+    {
+      "category": "Balloons",
+      "required_root": "https://www.walmart.com/browse/party-occasions/balloons/2637_1042319_1212898_3956207",
+      "urls": [
+        "https://www.walmart.com/browse/party-occasions/balloons/2637_1042319_1212898_3956207"
+      ]
+    },
+    {
+      "category": "Art Supplies",
+      "required_root": "https://www.walmart.com/cp/art-supplies/5899871",
+      "urls": [
+        "https://www.walmart.com/browse/arts-crafts-sewing/art-sets/1334134_5899871_7148292",
+        "https://www.walmart.com/cp/art-supplies/5899871"
+      ]
+    },
+    {
+      "category": "Office Supplies",
+      "required_root": "https://www.walmart.com/cp/office-supplies/1229749",
+      "urls": [
+        "https://www.walmart.com/browse/boards-easels/1229749_2661079",
+        "https://www.walmart.com/cp/office-supplies/1229749"
+      ]
+    }
+  ],
+  "scope": "Controlled500-product sample across all11categories; not full uncapped coverage. Uncertain links and known empty ArtAprons retained as gaps, not counted complete.",
+  "deadline_utc": "2026-10-25T22:04:05.475978+00:00",
+  "maximum_ordinary_failures": 10,
+  "body_limit_bytes": 1014566148,
+  "quarantined_product_ids": [
+    "14898365"
+  ],
+  "continuation_policy": "Exactly one fresh-session continuation; previous79rows remain separate and never count toward506. No further restart on store drift/access block or after original deadline."
+}

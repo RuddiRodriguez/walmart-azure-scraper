@@ -17,13 +17,15 @@ def check():
     search = {'paginationV2': {'pageProperties': {'stores': '100', 'facet': 'fulfillment_method:Pickup', 'page': 1}, 'maxPage': 1}}
     html = '<title>Fixture</title><script id="__NEXT_DATA__">' + json.dumps({'props': {'pageProps': {'initialData': {'searchResult': search}}}}) + '</script>'
     checks = []
-    for mode in ['success', 'wrong_store', 'empty_page', 'budget']:
+    for mode in ['success', 'wrong_store', 'empty_page', 'budget', 'product_error']:
         calls = {'product': 0}
         def fetch(sb, url, settings, capture=None):
             capture('request', url=url, attempt=1)
             if '/browse/' in url:
                 return BeautifulSoup(html, 'html.parser')
             calls['product'] += 1
+            if mode == 'product_error' and calls['product'] == 2:
+                raise ValueError('Synthetic product parse failure')
             product = copy.deepcopy(source['product'])
             product['usItemId'] = url.split('?')[0].rsplit('/', 1)[-1]
             if mode == 'wrong_store' and calls['product'] == 2:
@@ -59,6 +61,14 @@ def check():
             elif mode == 'wrong_store':
                 assert not result['target_reached'] and result['pair_captured'] and result['accepted_records'] == 0
                 checks.append('Wrong response excluded; one corrected diagnostic retry never rehabilitates run')
+            elif mode == 'empty_page':
+                assert not result['target_reached'] and result['completed_attempt']
+                assert len(result['failures']) == 2 and result['accepted_records'] == 0
+                checks.append('Both bad pages skipped once; final control reached, no retry loop')
+            elif mode == 'product_error':
+                assert result['completed_attempt'] and result['accepted_records'] == 2
+                assert len(result['failures']) == 1
+                checks.append('Ordinary product error skipped once; later products continue successfully')
             else:
                 assert not result['target_reached'] and result['error'] and result['accepted_records'] == 0
                 checks.append('Synthetic ' + mode + ' stops safely with partial evidence')
