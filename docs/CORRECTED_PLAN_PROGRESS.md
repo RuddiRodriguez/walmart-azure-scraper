@@ -109,3 +109,10 @@ rendered candidates observed; no product details collected. Initial/final contro
 Fetch body hashes and1native snapshot hash verified. This is one valid Art page, not an ArtAprons
 fix or full-category completion. Response pair/offers remain OPEN. No job running or client contact.
 Evidence: evidence/corrected-plan-20261025/art-valid-route/.
+
+## Delivery focus after five Art products
+
+Requested ArtSets sample completed51.279seconds:5distinct accepted/validated records,5source
+replays,6original-body hashes and1snapshot hash passed. This supports step6, not full coverage.
+No further branch tests queued. See docs/DELIVERY_CHECKPOINT_CURRENT.md for delivery evidence/gaps.
+Response pair/offers remain OPEN; nothing sent to client.

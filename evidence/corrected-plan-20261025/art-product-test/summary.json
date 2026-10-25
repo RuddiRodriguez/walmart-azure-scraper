@@ -1,0 +1,79 @@
+{
+  "mode": "One bounded live ArtSets product sample plus offline record/source validation",
+  "source_commit": "091ea95",
+  "source_hashes": {
+    "capture_store_drift.py": "9ce534bfb7b887af0776fa18843dc19e162c397e3a6e7f844ffb97f5aa5bf6f7",
+    "browser.py": "2b46d80e5b5edd1b75c7cbf36d460d96da91cfd218e0b1dfa309dcc3459cec24",
+    "extract.py": "e252ee14a9e66c9be33220a014984e161192651759c9619202ecf73c39242605",
+    "diagnostic_capture.py": "617b898e43770eda6ed0650eeb2e51611e8e2569f1328075c1169ef73172eea5",
+    "scrape.py": "ac43589987b1811f0b707f24eb1c1556d978b72f12a630caee784e7e50740e47",
+    "inspect_rendered_pagination.py": "0e3745e228746939283d9a436beebfceee282fddf2266a0a77111130696def86"
+  },
+  "started_utc": "2026-10-25T20:43:26.261327+00:00",
+  "seconds": 51.279,
+  "completed_attempt": true,
+  "counts": {
+    "product_requests": 5,
+    "listing_requests": 1,
+    "sequence": 6,
+    "body_bytes": 3878667
+  },
+  "limits": {
+    "product_requests": 6,
+    "listing_requests": 1,
+    "seconds": 180
+  },
+  "distinct_product_responses": 5,
+  "accepted_records": 5,
+  "record_replays_passed": 5,
+  "sample_validation": {
+    "passed": true,
+    "records": 5,
+    "errors": [],
+    "category_counts": {
+      "Art Supplies": 5
+    },
+    "duplicate_urls": 0,
+    "duplicate_product_ids": 0,
+    "field_nonempty_counts": {
+      "zipcode": 5,
+      "store_name": 5,
+      "store_location": 5,
+      "store_logo": 5,
+      "store_brand": 5,
+      "category": 5,
+      "sub_category": 5,
+      "product_title": 5,
+      "weight": 3,
+      "regular_price": 5,
+      "sale_price": 2,
+      "volume_deals_description": 0,
+      "volume_deals_price": 0,
+      "digital_deals_description": 0,
+      "digital_deals_price": 0,
+      "image_url": 5,
+      "url": 5,
+      "upc": 5,
+      "gupc": 0,
+      "ppm": 1,
+      "unit_price": 0,
+      "crawl_date": 5
+    },
+    "pending_pages": 0,
+    "pending_products": 0,
+    "products_needing_review": 0,
+    "retained_unavailable_records": 0
+  },
+  "body_hashes_verified": 6,
+  "native_snapshot_hashes_verified": 1,
+  "raw_wrong_correct_pair_status": "Open",
+  "genuine_offers_status": "Open",
+  "full_coverage_complete": false,
+  "limitations": [
+    "Five-product sample only, not fresh500/full coverage or repeated complete collection.",
+    "ArtSets result does not repair or substitute for ArtAprons.",
+    "Complete originals/unreviewed redaction drafts/native DOM private.",
+    "No production publication, paid service, Azure or client contact."
+  ],
+  "next": "Consolidate delivery evidence/gaps; no automatic further exploratory tests."
+}
