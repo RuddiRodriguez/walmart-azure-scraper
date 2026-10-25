@@ -1,0 +1,668 @@
+[
+  {
+    "id": "offers-001",
+    "session": "offers",
+    "kind": "product",
+    "sequence": 1,
+    "request": {
+      "url": "https://www.walmart.com/ip/Carving-Pumpkin-Each/47428850?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-25T19:50:19.765763+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Carving-Pumpkin-Each/47428850?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 19:50:21 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T19:50:21.964047+00:00",
+      "elapsed_seconds": 2.198
+    },
+    "body_bytes": 501803,
+    "body_sha256": "1314073040c4b4bd85cb87b00deb351b7e002c3d4aa107ac6f8924b4bb65b003",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "offers-002",
+    "session": "offers",
+    "kind": "listing",
+    "sequence": 2,
+    "request": {
+      "url": "https://www.walmart.com/search?q=%5Bredacted%5D&stores=100&facet=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-25T19:50:28.933333+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/search?q=%5Bredacted%5D&stores=100&facet=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 19:50:30 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T19:50:31.081145+00:00",
+      "elapsed_seconds": 2.148
+    },
+    "body_bytes": 1405341,
+    "body_sha256": "7751cc4accf76cc16c97691842f09a176649141d4db160abc556b6c077c41027",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "offers-003",
+    "session": "offers",
+    "kind": "product",
+    "sequence": 3,
+    "request": {
+      "url": "https://www.walmart.com/ip/Great-Value-White-Sandwich-Bread-20-oz/10315752?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D&from=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-25T19:50:32.840090+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Great-Value-White-Sandwich-Bread-20-oz/10315752?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D&from=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 19:50:34 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T19:50:34.329810+00:00",
+      "elapsed_seconds": 1.49
+    },
+    "body_bytes": 543923,
+    "body_sha256": "fdc8010da6d996f3e8e07bd3759d41b7444ff787e9959a21e6670f35f739f772",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "offers-004",
+    "session": "offers",
+    "kind": "product",
+    "sequence": 4,
+    "request": {
+      "url": "https://www.walmart.com/ip/Great-Value-Vegetable-Oil-48-fl-oz/10451002?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&from=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-25T19:50:36.423154+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Great-Value-Vegetable-Oil-48-fl-oz/10451002?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&from=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 19:50:37 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T19:50:38.152640+00:00",
+      "elapsed_seconds": 1.729
+    },
+    "body_bytes": 543049,
+    "body_sha256": "5b90fdb110982d3176b415cead24e18d1688d10b87825d8dbd50162add71d82e",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "offers-005",
+    "session": "offers",
+    "kind": "product",
+    "sequence": 5,
+    "request": {
+      "url": "https://www.walmart.com/ip/Great-Value-Large-White-Eggs-18-Count/172844767?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D&from=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-25T19:50:40.251698+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Great-Value-Large-White-Eggs-18-Count/172844767?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D&from=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 19:50:41 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T19:50:41.318130+00:00",
+      "elapsed_seconds": 1.066
+    },
+    "body_bytes": 545380,
+    "body_sha256": "c7215e7b07f4e94f9b57b4b50ca81e1f6113837793fa01db9621ad2c367c11c4",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "offers-006",
+    "session": "offers",
+    "kind": "product",
+    "sequence": 6,
+    "request": {
+      "url": "https://www.walmart.com/ip/Great-Value-Cream-Cheese-Brick-8-oz-Refrigerated/10452429?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&from=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-25T19:50:43.419400+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Great-Value-Cream-Cheese-Brick-8-oz-Refrigerated/10452429?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&from=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 19:50:45 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T19:50:45.470440+00:00",
+      "elapsed_seconds": 2.051
+    },
+    "body_bytes": 535512,
+    "body_sha256": "85b0194236f61ee4f0fdc8839dc0e338d37a9bcd6b9d8983c9aaad38e7415f4e",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "offers-007",
+    "session": "offers",
+    "kind": "listing",
+    "sequence": 7,
+    "request": {
+      "url": "https://www.walmart.com/search?q=%5Bredacted%5D&stores=100&facet=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-25T19:50:55.321421+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/search?q=%5Bredacted%5D&stores=100&facet=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 19:50:57 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T19:50:58.280266+00:00",
+      "elapsed_seconds": 2.959
+    },
+    "body_bytes": 1745355,
+    "body_sha256": "578f46a3a8f352afe428a564fd657b6650ca8bff52be85a5bce1de77bea7e32f",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "offers-008",
+    "session": "offers",
+    "kind": "product",
+    "sequence": 8,
+    "request": {
+      "url": "https://www.walmart.com/ip/Sprite-Lemon-Lime-Soda-Pop-2-Liter-Bottle/15610628?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D&from=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-25T19:51:00.392073+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Sprite-Lemon-Lime-Soda-Pop-2-Liter-Bottle/15610628?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D&from=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 19:51:01 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T19:51:01.895504+00:00",
+      "elapsed_seconds": 1.503
+    },
+    "body_bytes": 569547,
+    "body_sha256": "a182108c8904bd5319012a73c1de5f970525125bb22cee620828ca1697eb793b",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "offers-009",
+    "session": "offers",
+    "kind": "product",
+    "sequence": 9,
+    "request": {
+      "url": "https://www.walmart.com/ip/Coca-Cola-Soda-Pop-2-Liters-Bottle/16618684?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D&from=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-25T19:51:03.996117+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Coca-Cola-Soda-Pop-2-Liters-Bottle/16618684?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D&from=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 19:51:05 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T19:51:06.224988+00:00",
+      "elapsed_seconds": 2.229
+    },
+    "body_bytes": 541082,
+    "body_sha256": "fa603b630c1021d5678496843605adc4dec48aeb57cbdcbfab1328f18f38c705",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "offers-010",
+    "session": "offers",
+    "kind": "product",
+    "sequence": 10,
+    "request": {
+      "url": "https://www.walmart.com/ip/Diet-Coke-Cola-2-l/15610624?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D&from=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-25T19:51:08.315985+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Diet-Coke-Cola-2-l/15610624?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D&from=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 19:51:09 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T19:51:09.496499+00:00",
+      "elapsed_seconds": 1.181
+    },
+    "body_bytes": 600368,
+    "body_sha256": "9644c740797c10fbf0bf7aeeb7e36fe56a71ce7a9c68342313978504c7039273",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "offers-011",
+    "session": "offers",
+    "kind": "product",
+    "sequence": 11,
+    "request": {
+      "url": "https://www.walmart.com/ip/Great-Value-2-Reduced-Fat-Milk-Gallon-Refrigerated/10450115?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D&from=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-25T19:51:11.600514+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Great-Value-2-Reduced-Fat-Milk-Gallon-Refrigerated/10450115?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D&from=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 19:51:13 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T19:51:13.388585+00:00",
+      "elapsed_seconds": 1.788
+    },
+    "body_bytes": 507008,
+    "body_sha256": "5fbeebfc448263183e549c62c1717b6cbc5ee8aee12006394a6a5e3a8cfbf708",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "offers-012",
+    "session": "offers",
+    "kind": "listing",
+    "sequence": 12,
+    "request": {
+      "url": "https://www.walmart.com/search?q=%5Bredacted%5D&stores=100&facet=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-25T19:52:06.092665+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/search?q=%5Bredacted%5D&stores=100&facet=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 19:52:07 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T19:52:07.840944+00:00",
+      "elapsed_seconds": 1.748
+    },
+    "body_bytes": 756757,
+    "body_sha256": "6e8aee128a987d7ebf9fdddad7cc27af9d6dd24ecf0844f7da791560063b974a",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "offers-013",
+    "session": "offers",
+    "kind": "listing",
+    "sequence": 13,
+    "request": {
+      "url": "https://www.walmart.com/search?q=%5Bredacted%5D&stores=100&facet=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-25T19:52:16.175955+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/search?q=%5Bredacted%5D&stores=100&facet=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 19:52:18 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T19:52:18.983873+00:00",
+      "elapsed_seconds": 2.808
+    },
+    "body_bytes": 1061175,
+    "body_sha256": "ce66f9cff42975528a1a638bcd21ac6d8572e35630cbcb11ba70ed704395de61",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "offers-014",
+    "session": "offers",
+    "kind": "product",
+    "sequence": 14,
+    "request": {
+      "url": "https://www.walmart.com/ip/Expert-Grill-Digital-Fry-Thermometer-Waterproof-Design-with-Pot-Clip/16418558210?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&from=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-25T19:52:20.818313+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Expert-Grill-Digital-Fry-Thermometer-Waterproof-Design-with-Pot-Clip/16418558210?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&from=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 19:52:22 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T19:52:22.866455+00:00",
+      "elapsed_seconds": 2.048
+    },
+    "body_bytes": 573770,
+    "body_sha256": "b89f2bc81e3760641c4a0546eb0bd1a93ddfe425aaade10ac0105cf3d0f019d0",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "offers-015",
+    "session": "offers",
+    "kind": "product",
+    "sequence": 15,
+    "request": {
+      "url": "https://www.walmart.com/ip/Farberware-Professional-Magnetic-Bag-Clip-Set-Multi-Colored-5-Pieces/18388374828?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&from=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-25T19:52:24.961620+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Farberware-Professional-Magnetic-Bag-Clip-Set-Multi-Colored-5-Pieces/18388374828?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&from=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 19:52:26 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T19:52:26.396363+00:00",
+      "elapsed_seconds": 1.435
+    },
+    "body_bytes": 578492,
+    "body_sha256": "d1d4e1de17fd83fa9f8cc2f121163369e6cbd71dd6deaf03c7fe5df7ea8db173",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "offers-016",
+    "session": "offers",
+    "kind": "product",
+    "sequence": 16,
+    "request": {
+      "url": "https://www.walmart.com/ip/Mainstays-6LB-High-Precision-Digital-Kitchen-Scale-with-Blue-Backlit-Black/13891909169?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D&from=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-25T19:52:28.493930+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Mainstays-6LB-High-Precision-Digital-Kitchen-Scale-with-Blue-Backlit-Black/13891909169?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D&from=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 19:52:29 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T19:52:29.771134+00:00",
+      "elapsed_seconds": 1.277
+    },
+    "body_bytes": 532843,
+    "body_sha256": "7789ba92504b7a4c4dbae3d48a125e2b5ab1cb92e74e4a6e098b77b293ee0889",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "offers-017",
+    "session": "offers",
+    "kind": "product",
+    "sequence": 17,
+    "request": {
+      "url": "https://www.walmart.com/ip/Time-and-Tru-Women-s-Metal-Claw-Hair-Clips-2-Pack-Gold-Tone-Silver-Tone/13790552450?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR",
+      "attempt": 1,
+      "started_utc": "2026-10-25T19:52:31.866370+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Time-and-Tru-Women-s-Metal-Claw-Hair-Clips-2-Pack-Gold-Tone-Silver-Tone/13790552450?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 19:52:33 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T19:52:33.864338+00:00",
+      "elapsed_seconds": 1.998
+    },
+    "body_bytes": 519888,
+    "body_sha256": "a43e5b9476547d0ea97733116f905152577ee0a98c8d7673a57c9cd99ce225b8",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "offers-018",
+    "session": "offers",
+    "kind": "product",
+    "sequence": 18,
+    "request": {
+      "url": "https://www.walmart.com/ip/Carving-Pumpkin-Each/47428850?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-25T19:52:35.960936+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Carving-Pumpkin-Each/47428850?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 19:52:36 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T19:52:37.101484+00:00",
+      "elapsed_seconds": 1.141
+    },
+    "body_bytes": 501716,
+    "body_sha256": "29ce11a49f5db79ae6238f2fb2bc08063a54ec508255704b2b8ac0e3758e1ceb",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  }
+]

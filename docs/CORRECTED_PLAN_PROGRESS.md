@@ -29,3 +29,13 @@ Prior searches found zero qualifying examples; requirement remains open. Full un
 repeated complete collection and final packaging still require separate evidence. Existing recovery
 proof remains limited to its recorded source/configuration/one-category sample. Azure not executed;
 access ungranted. No automatic offer job launched by this step.
+
+## Step5 offer search attempt
+
+Expanded bounded live search finished162.181seconds: four first-page queries,12distinct products,
+14product/control requests plus four captured listings.18complete response body hashes and four
+native snapshot hashes verified offline. Product extraction replays passed for all12inspected items.
+Zero genuine qualifying volume/digital offers found. Observed promotion type was1PAYCC financing,
+which is excluded. This does not establish offers are absent store-wide. Requirement remains OPEN;
+missing wrong/correct raw pair also OPEN. Evidence: evidence/corrected-plan-20261025/step5-live-offers/.
+No further offer run queued, no client contact, production publication or Azure execution.

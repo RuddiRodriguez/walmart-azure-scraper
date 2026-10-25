@@ -1,0 +1,110 @@
+{
+  "mode": "Bounded live offer search plus offline source verification",
+  "source_commit": "a2d6695aca0d8142532763499f8d04d74da5e8de",
+  "source_sha256": {
+    "review_live_offers.py": "42fc5c8f088b7d7678746d90f73a505a1dad7bf93f5a4625a2e94d45e3324c91",
+    "extract.py": "e252ee14a9e66c9be33220a014984e161192651759c9619202ecf73c39242605",
+    "scrape.py": "ac43589987b1811f0b707f24eb1c1556d978b72f12a630caee784e7e50740e47",
+    "capture_store_drift.py": "3b0ad6983afebdbcbb2b9ccb88452b52310a45ee8717edbfab1711d3dd168ea7"
+  },
+  "started_utc": "2026-10-25T19:49:55.606773+00:00",
+  "completed_attempt": true,
+  "seconds": 162.181,
+  "limits": {
+    "product_requests": 18,
+    "listing_requests": 4,
+    "seconds": 600
+  },
+  "counts": {
+    "product_requests": 14,
+    "listing_requests": 4,
+    "sequence": 18,
+    "body_bytes": 12563009
+  },
+  "distinct_products_inspected": 12,
+  "verified_examples": 0,
+  "genuine_offer_requirement_status": "Open; no qualifying terms/prices observed in inspected product responses",
+  "raw_wrong_correct_pair_status": "Open; offer test does not address that missing pair",
+  "body_hashes_verified": 18,
+  "native_snapshot_hashes_verified": 4,
+  "record_replays_passed": 12,
+  "queries": [
+    {
+      "query": "buy 2 save",
+      "url": "https://www.walmart.com/search?q=%5Bredacted%5D&stores=100&facet=%5Bredacted%5D",
+      "inspected": 4,
+      "listing_context": {
+        "stores": "100",
+        "facet": "fulfillment_method:Pickup",
+        "page": 1
+      },
+      "eligible_candidates": 33,
+      "listing_sequence": 2,
+      "selected_ids": [
+        "10315752",
+        "10451002",
+        "172844767",
+        "10452429"
+      ]
+    },
+    {
+      "query": "2 for",
+      "url": "https://www.walmart.com/search?q=%5Bredacted%5D&stores=100&facet=%5Bredacted%5D",
+      "inspected": 4,
+      "listing_context": {
+        "stores": "100",
+        "facet": "fulfillment_method:Pickup",
+        "page": 1
+      },
+      "eligible_candidates": 13,
+      "listing_sequence": 7,
+      "selected_ids": [
+        "15610628",
+        "16618684",
+        "15610624",
+        "10450115"
+      ]
+    },
+    {
+      "query": "digital coupon",
+      "url": "https://www.walmart.com/search?q=%5Bredacted%5D&stores=100&facet=%5Bredacted%5D",
+      "inspected": 0,
+      "listing_context": {
+        "stores": "100",
+        "facet": "fulfillment_method:Pickup",
+        "page": 1
+      },
+      "eligible_candidates": 0,
+      "listing_sequence": 12,
+      "selected_ids": []
+    },
+    {
+      "query": "clip coupon",
+      "url": "https://www.walmart.com/search?q=%5Bredacted%5D&stores=100&facet=%5Bredacted%5D",
+      "inspected": 4,
+      "listing_context": {
+        "stores": "100",
+        "facet": "fulfillment_method:Pickup",
+        "page": 1
+      },
+      "eligible_candidates": 4,
+      "listing_sequence": 13,
+      "selected_ids": [
+        "16418558210",
+        "18388374828",
+        "13891909169",
+        "13790552450"
+      ]
+    }
+  ],
+  "observed_promo_types_including_controls": {
+    "1PAYCC": 14
+  },
+  "limitations": [
+    "First-page bounded searches only, not exhaustive offer availability search.",
+    "Digital coupon query returned zero eligible in-scope candidates; search phrase alone is not offer proof.",
+    "All12inspected product records accepted locally but contained no extracted volume/digital offer terms.",
+    "Raw bodies and unreviewed redaction drafts private; native snapshots serialized DOM.",
+    "No production publication, paid service, client contact or Azure."
+  ]
+}
