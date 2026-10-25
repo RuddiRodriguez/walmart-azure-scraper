@@ -1,5 +1,9 @@
 # Walmart location-aware catalog scraper
 
+Step 3 update, 25 October:one matched live comparison passed the same six targets in one session and fresh three-target batches, with matching prices. No drift reproduced and no reliability improvement established.26complete response bodies retained privately; safe metadata/source contexts published. See docs/STEP3_RESULTS_20261025.md.
+
+
+
 Python scraper with local Chrome, configurable stores/categories, transactional checkpoints,
 source evidence, validation and atomic publication. No paid proxies or scraping APIs.
 

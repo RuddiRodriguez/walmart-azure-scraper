@@ -1,0 +1,3749 @@
+[
+  {
+    "role": "initial_stale_target",
+    "capture_id": "A1-001",
+    "sha256": "dd1f930fa33ded04d3e1c6ebb77dab33a24076e08b43007686d3922fcbe388cb",
+    "type": "product",
+    "product_id": "47428850",
+    "store_id": "100",
+    "zip": "72712",
+    "intent": "PICKUP",
+    "seller": "Walmart.com",
+    "availability": "IN_STOCK",
+    "prices": {
+      "currentPrice": {
+        "price": 3.97,
+        "priceString": "$3.97",
+        "variantPriceString": "$3.97",
+        "currencyUnit": "USD",
+        "bestValue": null,
+        "supportText": null,
+        "priceDisplay": "$3.97"
+      },
+      "wasPrice": null,
+      "unitPrice": null
+    },
+    "pickup_evidence": [
+      {
+        "storeId": "100",
+        "fulfillment": "DELIVERY",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "100",
+        "fulfillment": "DELIVERY",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "100",
+        "fulfillment": "DELIVERY",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "100",
+        "fulfillment": "PICKUP",
+        "availabilityStatus": null
+      }
+    ]
+  },
+  {
+    "role": "initial_stale_target",
+    "capture_id": "A1-002",
+    "sha256": "fe846a1cf15b537549ee64349094fc3a4258a5de3405d4cbfbc4dd7085d35fe0",
+    "type": "listing",
+    "stores": "100",
+    "facet": "fulfillment_method:Pickup",
+    "page": 1,
+    "items": [
+      {
+        "usItemId": "440982862",
+        "price": 22.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": true
+      },
+      {
+        "usItemId": "5212491762",
+        "price": 27.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": true
+      },
+      {
+        "usItemId": "19983565494",
+        "price": 9.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": true
+      },
+      {
+        "usItemId": "19933509551",
+        "price": 9.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": true
+      },
+      {
+        "usItemId": "38236207",
+        "price": 7.27,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "5445606208",
+        "price": 16.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "671290840",
+        "price": 19.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "362649628",
+        "price": 27.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "885509773",
+        "price": 5.38,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "2790112831",
+        "price": 19.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "15060809110",
+        "price": 9.87,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": true
+      },
+      {
+        "usItemId": "19379210395",
+        "price": 7.47,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": true
+      },
+      {
+        "usItemId": "378937848",
+        "price": 9.94,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "10316199",
+        "price": 7.47,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "1599724784",
+        "price": 27.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "15154970737",
+        "price": 19.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "2220368533",
+        "price": 6.87,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "5293190496",
+        "price": 42.47,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "11046907",
+        "price": 6.98,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "53953005",
+        "price": 3.67,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "492823756",
+        "price": 7.84,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": true
+      },
+      {
+        "usItemId": "1357250428",
+        "price": 33.94,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": true
+      },
+      {
+        "usItemId": "44926105",
+        "price": 4.48,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "440982862",
+        "price": 22.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "5164255366",
+        "price": 31.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "194039855",
+        "price": 9.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "466394422",
+        "price": 4.78,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "941882113",
+        "price": 4.47,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "299965693",
+        "price": 7.87,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "5169127548",
+        "price": 39.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "5328321109",
+        "price": 22.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": true
+      },
+      {
+        "usItemId": "801983020",
+        "price": 8.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": true
+      },
+      {
+        "usItemId": "791170038",
+        "price": 3.94,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "1818112164",
+        "price": 7.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "18283968493",
+        "price": 8.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "5113125462",
+        "price": 11.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "14765971579",
+        "price": 10.19,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "15134100568",
+        "price": 19.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "18915261532",
+        "price": 19.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "35511669",
+        "price": 31.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "20109864798",
+        "price": 29.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "158942704",
+        "price": 8.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "11726106860",
+        "price": 39.77,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "17368854",
+        "price": 29.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "13752058189",
+        "price": 29.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "18722654384",
+        "price": 24.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "19653401981",
+        "price": 4.78,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "15754318",
+        "price": 1.98,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "18792750442",
+        "price": 19.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "17417250414",
+        "price": 17.49,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "16744012208",
+        "price": 11.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "16701450812",
+        "price": 41,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "5720787777",
+        "price": 11.69,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "5302220449",
+        "price": 21.59,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "18179762932",
+        "price": 44,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "20693614705",
+        "price": 9.99,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "15595851945",
+        "price": 45.85,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "952129916",
+        "price": 12.98,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "6389912620",
+        "price": 39.99,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "18051711900",
+        "price": 22.99,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      }
+    ]
+  },
+  {
+    "role": "initial_stale_target",
+    "capture_id": "A1-003",
+    "sha256": "157626666719dc6fa12c6271aa01785dcbd900414b3de386953b48b674468eb9",
+    "type": "product",
+    "product_id": "5445606208",
+    "store_id": "100",
+    "zip": "72712",
+    "intent": "PICKUP",
+    "seller": "Walmart.com",
+    "availability": "IN_STOCK",
+    "prices": {
+      "currentPrice": {
+        "price": 16.97,
+        "priceString": "$16.97",
+        "variantPriceString": "$16.97",
+        "currencyUnit": "USD",
+        "bestValue": null,
+        "supportText": null,
+        "priceDisplay": "Now $16.97"
+      },
+      "wasPrice": {
+        "price": 18.97,
+        "priceString": "$18.97",
+        "variantPriceString": null,
+        "currencyUnit": "USD",
+        "bestValue": null,
+        "supportText": null
+      },
+      "unitPrice": {
+        "price": 0.236,
+        "priceString": "23.6 \u00a2/count",
+        "variantPriceString": null,
+        "currencyUnit": "USD",
+        "bestValue": true,
+        "supportText": null
+      }
+    },
+    "pickup_evidence": [
+      {
+        "storeId": "100",
+        "fulfillment": "DELIVERY",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "100",
+        "fulfillment": "DELIVERY",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "100",
+        "fulfillment": "DELIVERY",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "100",
+        "fulfillment": "PICKUP",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "100",
+        "fulfillment": "PICKUP",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "0",
+        "fulfillment": "DELIVERY",
+        "availabilityStatus": null
+      }
+    ]
+  },
+  {
+    "role": "listing_discovery",
+    "capture_id": "discovery-001",
+    "sha256": "cd060e482d42c60a1de442e76a3b5747e75f40c32391dcd7b92fffd9bbbf2e97",
+    "type": "listing",
+    "stores": "100",
+    "facet": "fulfillment_method:Pickup",
+    "page": 1,
+    "items": [
+      {
+        "usItemId": "17330364149",
+        "price": 5.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": true
+      },
+      {
+        "usItemId": "304859896",
+        "price": 3.98,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": true
+      },
+      {
+        "usItemId": "17281351564",
+        "price": 5.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": true
+      },
+      {
+        "usItemId": "14898380",
+        "price": 12.84,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": true
+      },
+      {
+        "usItemId": "914173307",
+        "price": 3.98,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "883632494",
+        "price": 6.26,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "15543972",
+        "price": 7.28,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "341539270",
+        "price": 8.33,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "14898380",
+        "price": 12.84,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "941543804",
+        "price": 8.33,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "17249166485",
+        "price": 5.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": true
+      },
+      {
+        "usItemId": "304859896",
+        "price": 3.98,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "12443823",
+        "price": 5.26,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "2537720607",
+        "price": 9.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "22210582",
+        "price": 0.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "857115210",
+        "price": 6.26,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "12443825",
+        "price": 2.98,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "586467973",
+        "price": 6.26,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "14898376",
+        "price": 7.57,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "17732323178",
+        "price": 3.98,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": true
+      },
+      {
+        "usItemId": "17761667797",
+        "price": 3.98,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": true
+      },
+      {
+        "usItemId": "152998400",
+        "price": 2.82,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "12443844",
+        "price": 7.57,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "5578393742",
+        "price": 6.26,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "17772913007",
+        "price": 2.82,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "13867217503",
+        "price": 4.52,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "350850761",
+        "price": 2.82,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "12443853",
+        "price": 5.26,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "16606508409",
+        "price": 6.26,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "12860958761",
+        "price": 18.24,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": true
+      },
+      {
+        "usItemId": "17249116139",
+        "price": 6.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": true
+      },
+      {
+        "usItemId": "14898365",
+        "price": 12.78,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "20606798",
+        "price": 5.28,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "14898381",
+        "price": 5.76,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "14664731",
+        "price": 12.84,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "423323634",
+        "price": 15.88,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "933889813",
+        "price": 15.96,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "21108358",
+        "price": 5.24,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "15056051",
+        "price": 4.17,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "51237368",
+        "price": 7.57,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "413618110",
+        "price": 4.28,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "125731649",
+        "price": 3.87,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "20348462808",
+        "price": 16.56,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "12443842",
+        "price": 5.28,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "5150283435",
+        "price": 5.24,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "21190601",
+        "price": 15.52,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "12860958761",
+        "price": 18.24,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "12443828",
+        "price": 5.52,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "14898378",
+        "price": 5.24,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "733110876",
+        "price": 5.52,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "17767958065",
+        "price": 5.28,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "18446019970",
+        "price": 5.52,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "22210584",
+        "price": 2,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "765604579",
+        "price": 4.28,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "17766712052",
+        "price": 9,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "22733966",
+        "price": 7.32,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "20215822423",
+        "price": 5.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "13226024318",
+        "price": 10.94,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "55497496",
+        "price": 13.96,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      }
+    ]
+  },
+  {
+    "role": "matched_comparison",
+    "capture_id": "A1-005",
+    "sha256": "36667843e1b52edb9948963867f580c120b5c17f09a847d3c3365aa10e5d6393",
+    "type": "product",
+    "product_id": "47428850",
+    "store_id": "100",
+    "zip": "72712",
+    "intent": "PICKUP",
+    "seller": "Walmart.com",
+    "availability": "IN_STOCK",
+    "prices": {
+      "currentPrice": {
+        "price": 3.97,
+        "priceString": "$3.97",
+        "variantPriceString": "$3.97",
+        "currencyUnit": "USD",
+        "bestValue": null,
+        "supportText": null,
+        "priceDisplay": "$3.97"
+      },
+      "wasPrice": null,
+      "unitPrice": null
+    },
+    "pickup_evidence": [
+      {
+        "storeId": "100",
+        "fulfillment": "PICKUP",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "100",
+        "fulfillment": "DELIVERY",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "100",
+        "fulfillment": "DELIVERY",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "100",
+        "fulfillment": "DELIVERY",
+        "availabilityStatus": null
+      }
+    ]
+  },
+  {
+    "role": "matched_comparison",
+    "capture_id": "A1-006",
+    "sha256": "fe846a1cf15b537549ee64349094fc3a4258a5de3405d4cbfbc4dd7085d35fe0",
+    "type": "listing",
+    "stores": "100",
+    "facet": "fulfillment_method:Pickup",
+    "page": 1,
+    "items": [
+      {
+        "usItemId": "440982862",
+        "price": 22.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": true
+      },
+      {
+        "usItemId": "5212491762",
+        "price": 27.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": true
+      },
+      {
+        "usItemId": "19983565494",
+        "price": 9.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": true
+      },
+      {
+        "usItemId": "19933509551",
+        "price": 9.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": true
+      },
+      {
+        "usItemId": "38236207",
+        "price": 7.27,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "5445606208",
+        "price": 16.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "671290840",
+        "price": 19.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "362649628",
+        "price": 27.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "885509773",
+        "price": 5.38,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "2790112831",
+        "price": 19.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "15060809110",
+        "price": 9.87,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": true
+      },
+      {
+        "usItemId": "19379210395",
+        "price": 7.47,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": true
+      },
+      {
+        "usItemId": "378937848",
+        "price": 9.94,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "10316199",
+        "price": 7.47,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "1599724784",
+        "price": 27.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "15154970737",
+        "price": 19.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "2220368533",
+        "price": 6.87,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "5293190496",
+        "price": 42.47,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "11046907",
+        "price": 6.98,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "53953005",
+        "price": 3.67,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "492823756",
+        "price": 7.84,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": true
+      },
+      {
+        "usItemId": "1357250428",
+        "price": 33.94,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": true
+      },
+      {
+        "usItemId": "44926105",
+        "price": 4.48,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "440982862",
+        "price": 22.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "5164255366",
+        "price": 31.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "194039855",
+        "price": 9.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "466394422",
+        "price": 4.78,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "941882113",
+        "price": 4.47,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "299965693",
+        "price": 7.87,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "5169127548",
+        "price": 39.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "5328321109",
+        "price": 22.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": true
+      },
+      {
+        "usItemId": "801983020",
+        "price": 8.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": true
+      },
+      {
+        "usItemId": "791170038",
+        "price": 3.94,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "1818112164",
+        "price": 7.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "18283968493",
+        "price": 8.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "5113125462",
+        "price": 11.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "14765971579",
+        "price": 10.19,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "15134100568",
+        "price": 19.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "18915261532",
+        "price": 19.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "35511669",
+        "price": 31.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "20109864798",
+        "price": 29.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "158942704",
+        "price": 8.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "11726106860",
+        "price": 39.77,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "17368854",
+        "price": 29.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "13752058189",
+        "price": 29.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "18722654384",
+        "price": 24.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "19653401981",
+        "price": 4.78,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "15754318",
+        "price": 1.98,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "18792750442",
+        "price": 19.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "17417250414",
+        "price": 17.49,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "16744012208",
+        "price": 11.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "16701450812",
+        "price": 41,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "5720787777",
+        "price": 11.69,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "5302220449",
+        "price": 21.59,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "18179762932",
+        "price": 44,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "20693614705",
+        "price": 9.99,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "15595851945",
+        "price": 45.85,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "952129916",
+        "price": 12.98,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "6389912620",
+        "price": 39.99,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "18051711900",
+        "price": 22.99,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      }
+    ]
+  },
+  {
+    "role": "matched_comparison",
+    "capture_id": "A1-007",
+    "sha256": "e884346cad5beec1e9fc55c6cf7108f489029702198e30382dc86a6bfc6c46b3",
+    "type": "product",
+    "product_id": "38236207",
+    "store_id": "100",
+    "zip": "72712",
+    "intent": "PICKUP",
+    "seller": "Walmart.com",
+    "availability": "IN_STOCK",
+    "prices": {
+      "currentPrice": {
+        "price": 7.27,
+        "priceString": "$7.27",
+        "variantPriceString": "$7.27",
+        "currencyUnit": "USD",
+        "bestValue": null,
+        "supportText": null,
+        "priceDisplay": "$7.27"
+      },
+      "wasPrice": null,
+      "unitPrice": {
+        "price": 4.33,
+        "priceString": "$4.33/100 ct",
+        "variantPriceString": null,
+        "currencyUnit": "USD",
+        "bestValue": false,
+        "supportText": null
+      }
+    },
+    "pickup_evidence": [
+      {
+        "storeId": "100",
+        "fulfillment": "PICKUP",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "100",
+        "fulfillment": "PICKUP",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "100",
+        "fulfillment": "DELIVERY",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "100",
+        "fulfillment": "DELIVERY",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "100",
+        "fulfillment": "DELIVERY",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "0",
+        "fulfillment": "DELIVERY",
+        "availabilityStatus": null
+      }
+    ]
+  },
+  {
+    "role": "matched_comparison",
+    "capture_id": "A1-008",
+    "sha256": "0ac9dc06231e7fe65a5ddfc0debfa45edc4d10fadb8312a5920351166485eec6",
+    "type": "product",
+    "product_id": "5445606208",
+    "store_id": "100",
+    "zip": "72712",
+    "intent": "PICKUP",
+    "seller": "Walmart.com",
+    "availability": "IN_STOCK",
+    "prices": {
+      "currentPrice": {
+        "price": 16.97,
+        "priceString": "$16.97",
+        "variantPriceString": "$16.97",
+        "currencyUnit": "USD",
+        "bestValue": null,
+        "supportText": null,
+        "priceDisplay": "Now $16.97"
+      },
+      "wasPrice": {
+        "price": 18.97,
+        "priceString": "$18.97",
+        "variantPriceString": null,
+        "currencyUnit": "USD",
+        "bestValue": null,
+        "supportText": null
+      },
+      "unitPrice": {
+        "price": 0.236,
+        "priceString": "23.6 \u00a2/count",
+        "variantPriceString": null,
+        "currencyUnit": "USD",
+        "bestValue": true,
+        "supportText": null
+      }
+    },
+    "pickup_evidence": [
+      {
+        "storeId": "100",
+        "fulfillment": "PICKUP",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "100",
+        "fulfillment": "PICKUP",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "100",
+        "fulfillment": "DELIVERY",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "100",
+        "fulfillment": "DELIVERY",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "100",
+        "fulfillment": "DELIVERY",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "0",
+        "fulfillment": "DELIVERY",
+        "availabilityStatus": null
+      }
+    ]
+  },
+  {
+    "role": "matched_comparison",
+    "capture_id": "A1-009",
+    "sha256": "03b29f0e52100fefb3e2a11aadb3eb3d8e6d2a43e2e5770c287cd299208ec480",
+    "type": "product",
+    "product_id": "362649628",
+    "store_id": "100",
+    "zip": "72712",
+    "intent": "PICKUP",
+    "seller": "Walmart.com",
+    "availability": "IN_STOCK",
+    "prices": {
+      "currentPrice": {
+        "price": 27.97,
+        "priceString": "$27.97",
+        "variantPriceString": "$27.97",
+        "currencyUnit": "USD",
+        "bestValue": null,
+        "supportText": null,
+        "priceDisplay": "$27.97"
+      },
+      "wasPrice": null,
+      "unitPrice": {
+        "price": 0.424,
+        "priceString": "42.4 \u00a2/count",
+        "variantPriceString": null,
+        "currencyUnit": "USD",
+        "bestValue": false,
+        "supportText": null
+      }
+    },
+    "pickup_evidence": [
+      {
+        "storeId": "100",
+        "fulfillment": "PICKUP",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "100",
+        "fulfillment": "PICKUP",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "100",
+        "fulfillment": "DELIVERY",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "100",
+        "fulfillment": "DELIVERY",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "100",
+        "fulfillment": "DELIVERY",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "0",
+        "fulfillment": "DELIVERY",
+        "availabilityStatus": null
+      }
+    ]
+  },
+  {
+    "role": "matched_comparison",
+    "capture_id": "A1-010",
+    "sha256": "cd060e482d42c60a1de442e76a3b5747e75f40c32391dcd7b92fffd9bbbf2e97",
+    "type": "listing",
+    "stores": "100",
+    "facet": "fulfillment_method:Pickup",
+    "page": 1,
+    "items": [
+      {
+        "usItemId": "17330364149",
+        "price": 5.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": true
+      },
+      {
+        "usItemId": "304859896",
+        "price": 3.98,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": true
+      },
+      {
+        "usItemId": "17281351564",
+        "price": 5.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": true
+      },
+      {
+        "usItemId": "14898380",
+        "price": 12.84,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": true
+      },
+      {
+        "usItemId": "914173307",
+        "price": 3.98,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "883632494",
+        "price": 6.26,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "15543972",
+        "price": 7.28,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "341539270",
+        "price": 8.33,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "14898380",
+        "price": 12.84,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "941543804",
+        "price": 8.33,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "17249166485",
+        "price": 5.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": true
+      },
+      {
+        "usItemId": "304859896",
+        "price": 3.98,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "12443823",
+        "price": 5.26,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "2537720607",
+        "price": 9.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "22210582",
+        "price": 0.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "857115210",
+        "price": 6.26,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "12443825",
+        "price": 2.98,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "586467973",
+        "price": 6.26,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "14898376",
+        "price": 7.57,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "17732323178",
+        "price": 3.98,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": true
+      },
+      {
+        "usItemId": "17761667797",
+        "price": 3.98,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": true
+      },
+      {
+        "usItemId": "152998400",
+        "price": 2.82,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "12443844",
+        "price": 7.57,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "5578393742",
+        "price": 6.26,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "17772913007",
+        "price": 2.82,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "13867217503",
+        "price": 4.52,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "350850761",
+        "price": 2.82,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "12443853",
+        "price": 5.26,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "16606508409",
+        "price": 6.26,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "12860958761",
+        "price": 18.24,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": true
+      },
+      {
+        "usItemId": "17249116139",
+        "price": 6.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": true
+      },
+      {
+        "usItemId": "14898365",
+        "price": 12.78,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "20606798",
+        "price": 5.28,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "14898381",
+        "price": 5.76,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "14664731",
+        "price": 12.84,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "423323634",
+        "price": 15.88,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "933889813",
+        "price": 15.96,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "21108358",
+        "price": 5.24,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "15056051",
+        "price": 4.17,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "51237368",
+        "price": 7.57,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "413618110",
+        "price": 4.28,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "125731649",
+        "price": 3.87,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "20348462808",
+        "price": 16.56,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "12443842",
+        "price": 5.28,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "5150283435",
+        "price": 5.24,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "21190601",
+        "price": 15.52,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "12860958761",
+        "price": 18.24,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "12443828",
+        "price": 5.52,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "14898378",
+        "price": 5.24,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "733110876",
+        "price": 5.52,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "17767958065",
+        "price": 5.28,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "18446019970",
+        "price": 5.52,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "22210584",
+        "price": 2,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "765604579",
+        "price": 4.28,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "17766712052",
+        "price": 9,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "22733966",
+        "price": 7.32,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "20215822423",
+        "price": 5.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "13226024318",
+        "price": 10.94,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "55497496",
+        "price": 13.96,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      }
+    ]
+  },
+  {
+    "role": "matched_comparison",
+    "capture_id": "A1-011",
+    "sha256": "854f46a743b09c81f4151210aeec5fda55f7e78f7e00366c51fde517f0f67b9b",
+    "type": "product",
+    "product_id": "914173307",
+    "store_id": "100",
+    "zip": "72712",
+    "intent": "PICKUP",
+    "seller": "Walmart.com",
+    "availability": "IN_STOCK",
+    "prices": {
+      "currentPrice": {
+        "price": 3.98,
+        "priceString": "$3.98",
+        "variantPriceString": "$3.98",
+        "currencyUnit": "USD",
+        "bestValue": null,
+        "supportText": null,
+        "priceDisplay": "$3.98"
+      },
+      "wasPrice": null,
+      "unitPrice": {
+        "price": 0.093,
+        "priceString": "9.3 \u00a2/fl oz",
+        "variantPriceString": null,
+        "currencyUnit": "USD",
+        "bestValue": true,
+        "supportText": null
+      }
+    },
+    "pickup_evidence": [
+      {
+        "storeId": "100",
+        "fulfillment": "PICKUP",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "100",
+        "fulfillment": "PICKUP",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "100",
+        "fulfillment": "DELIVERY",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "100",
+        "fulfillment": "DELIVERY",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "100",
+        "fulfillment": "DELIVERY",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "0",
+        "fulfillment": "DELIVERY",
+        "availabilityStatus": null
+      }
+    ]
+  },
+  {
+    "role": "matched_comparison",
+    "capture_id": "A1-012",
+    "sha256": "4562ee5057ecb81bdd0a580fbebc41f9f045b4f9298969bf8d72a09ea6c93bb3",
+    "type": "product",
+    "product_id": "883632494",
+    "store_id": "100",
+    "zip": "72712",
+    "intent": "PICKUP",
+    "seller": "Walmart.com",
+    "availability": "IN_STOCK",
+    "prices": {
+      "currentPrice": {
+        "price": 6.26,
+        "priceString": "$6.26",
+        "variantPriceString": "$6.26",
+        "currencyUnit": "USD",
+        "bestValue": null,
+        "supportText": null,
+        "priceDisplay": "$6.26"
+      },
+      "wasPrice": null,
+      "unitPrice": {
+        "price": 0.081,
+        "priceString": "8.1 \u00a2/fl oz",
+        "variantPriceString": null,
+        "currencyUnit": "USD",
+        "bestValue": null,
+        "supportText": null
+      }
+    },
+    "pickup_evidence": [
+      {
+        "storeId": "100",
+        "fulfillment": "PICKUP",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "100",
+        "fulfillment": "PICKUP",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "100",
+        "fulfillment": "DELIVERY",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "100",
+        "fulfillment": "DELIVERY",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "100",
+        "fulfillment": "DELIVERY",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "0",
+        "fulfillment": "DELIVERY",
+        "availabilityStatus": null
+      }
+    ]
+  },
+  {
+    "role": "matched_comparison",
+    "capture_id": "A1-013",
+    "sha256": "e34f101df1dafcd2c5e61d21db9a073adf6d232b2b07b72bb3de4b6d5caa2d96",
+    "type": "product",
+    "product_id": "15543972",
+    "store_id": "100",
+    "zip": "72712",
+    "intent": "PICKUP",
+    "seller": "Walmart.com",
+    "availability": "IN_STOCK",
+    "prices": {
+      "currentPrice": {
+        "price": 7.28,
+        "priceString": "$7.28",
+        "variantPriceString": "$7.28",
+        "currencyUnit": "USD",
+        "bestValue": null,
+        "supportText": null,
+        "priceDisplay": "$7.28"
+      },
+      "wasPrice": null,
+      "unitPrice": {
+        "price": 6.93,
+        "priceString": "$6.93/100 ct",
+        "variantPriceString": null,
+        "currencyUnit": "USD",
+        "bestValue": true,
+        "supportText": null
+      }
+    },
+    "pickup_evidence": [
+      {
+        "storeId": "100",
+        "fulfillment": "PICKUP",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "100",
+        "fulfillment": "PICKUP",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "100",
+        "fulfillment": "DELIVERY",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "100",
+        "fulfillment": "DELIVERY",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "100",
+        "fulfillment": "DELIVERY",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "0",
+        "fulfillment": "DELIVERY",
+        "availabilityStatus": null
+      }
+    ]
+  },
+  {
+    "role": "matched_comparison",
+    "capture_id": "A1-014",
+    "sha256": "9ef1e829c36f1c206956b6405672876ed5bca82971057cc7960114e487e16096",
+    "type": "product",
+    "product_id": "47428850",
+    "store_id": "100",
+    "zip": "72712",
+    "intent": "PICKUP",
+    "seller": "Walmart.com",
+    "availability": "IN_STOCK",
+    "prices": {
+      "currentPrice": {
+        "price": 3.97,
+        "priceString": "$3.97",
+        "variantPriceString": "$3.97",
+        "currencyUnit": "USD",
+        "bestValue": null,
+        "supportText": null,
+        "priceDisplay": "$3.97"
+      },
+      "wasPrice": null,
+      "unitPrice": null
+    },
+    "pickup_evidence": [
+      {
+        "storeId": "100",
+        "fulfillment": "PICKUP",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "100",
+        "fulfillment": "DELIVERY",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "100",
+        "fulfillment": "DELIVERY",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "100",
+        "fulfillment": "DELIVERY",
+        "availabilityStatus": null
+      }
+    ]
+  },
+  {
+    "role": "matched_comparison",
+    "capture_id": "B1-1-015",
+    "sha256": "6b461f360ad3cd1f49931e136ea66105e2f5d4bf0c3947bd2633fa22faf1acaf",
+    "type": "product",
+    "product_id": "47428850",
+    "store_id": "100",
+    "zip": "72712",
+    "intent": "PICKUP",
+    "seller": "Walmart.com",
+    "availability": "IN_STOCK",
+    "prices": {
+      "currentPrice": {
+        "price": 3.97,
+        "priceString": "$3.97",
+        "variantPriceString": "$3.97",
+        "currencyUnit": "USD",
+        "bestValue": null,
+        "supportText": null,
+        "priceDisplay": "$3.97"
+      },
+      "wasPrice": null,
+      "unitPrice": null
+    },
+    "pickup_evidence": [
+      {
+        "storeId": "100",
+        "fulfillment": "DELIVERY",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "100",
+        "fulfillment": "DELIVERY",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "100",
+        "fulfillment": "DELIVERY",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "100",
+        "fulfillment": "PICKUP",
+        "availabilityStatus": null
+      }
+    ]
+  },
+  {
+    "role": "matched_comparison",
+    "capture_id": "B1-1-016",
+    "sha256": "fe846a1cf15b537549ee64349094fc3a4258a5de3405d4cbfbc4dd7085d35fe0",
+    "type": "listing",
+    "stores": "100",
+    "facet": "fulfillment_method:Pickup",
+    "page": 1,
+    "items": [
+      {
+        "usItemId": "440982862",
+        "price": 22.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": true
+      },
+      {
+        "usItemId": "5212491762",
+        "price": 27.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": true
+      },
+      {
+        "usItemId": "19983565494",
+        "price": 9.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": true
+      },
+      {
+        "usItemId": "19933509551",
+        "price": 9.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": true
+      },
+      {
+        "usItemId": "38236207",
+        "price": 7.27,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "5445606208",
+        "price": 16.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "671290840",
+        "price": 19.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "362649628",
+        "price": 27.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "885509773",
+        "price": 5.38,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "2790112831",
+        "price": 19.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "15060809110",
+        "price": 9.87,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": true
+      },
+      {
+        "usItemId": "19379210395",
+        "price": 7.47,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": true
+      },
+      {
+        "usItemId": "378937848",
+        "price": 9.94,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "10316199",
+        "price": 7.47,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "1599724784",
+        "price": 27.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "15154970737",
+        "price": 19.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "2220368533",
+        "price": 6.87,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "5293190496",
+        "price": 42.47,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "11046907",
+        "price": 6.98,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "53953005",
+        "price": 3.67,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "492823756",
+        "price": 7.84,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": true
+      },
+      {
+        "usItemId": "1357250428",
+        "price": 33.94,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": true
+      },
+      {
+        "usItemId": "44926105",
+        "price": 4.48,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "440982862",
+        "price": 22.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "5164255366",
+        "price": 31.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "194039855",
+        "price": 9.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "466394422",
+        "price": 4.78,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "941882113",
+        "price": 4.47,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "299965693",
+        "price": 7.87,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "5169127548",
+        "price": 39.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "5328321109",
+        "price": 22.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": true
+      },
+      {
+        "usItemId": "801983020",
+        "price": 8.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": true
+      },
+      {
+        "usItemId": "791170038",
+        "price": 3.94,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "1818112164",
+        "price": 7.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "18283968493",
+        "price": 8.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "5113125462",
+        "price": 11.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "14765971579",
+        "price": 10.19,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "15134100568",
+        "price": 19.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "18915261532",
+        "price": 19.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "35511669",
+        "price": 31.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "20109864798",
+        "price": 29.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "158942704",
+        "price": 8.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "11726106860",
+        "price": 39.77,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "17368854",
+        "price": 29.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "13752058189",
+        "price": 29.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "18722654384",
+        "price": 24.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "19653401981",
+        "price": 4.78,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "15754318",
+        "price": 1.98,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "18792750442",
+        "price": 19.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "17417250414",
+        "price": 17.49,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "16744012208",
+        "price": 11.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "16701450812",
+        "price": 41,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "5720787777",
+        "price": 11.69,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "5302220449",
+        "price": 21.59,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "18179762932",
+        "price": 44,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "20693614705",
+        "price": 9.99,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "15595851945",
+        "price": 45.85,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "952129916",
+        "price": 12.98,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "6389912620",
+        "price": 39.99,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "18051711900",
+        "price": 22.99,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      }
+    ]
+  },
+  {
+    "role": "matched_comparison",
+    "capture_id": "B1-1-017",
+    "sha256": "fd11a63229f48ff70f484176333deef1f284743618c832c98b1dd8377d381c62",
+    "type": "product",
+    "product_id": "38236207",
+    "store_id": "100",
+    "zip": "72712",
+    "intent": "PICKUP",
+    "seller": "Walmart.com",
+    "availability": "IN_STOCK",
+    "prices": {
+      "currentPrice": {
+        "price": 7.27,
+        "priceString": "$7.27",
+        "variantPriceString": "$7.27",
+        "currencyUnit": "USD",
+        "bestValue": null,
+        "supportText": null,
+        "priceDisplay": "$7.27"
+      },
+      "wasPrice": null,
+      "unitPrice": {
+        "price": 4.33,
+        "priceString": "$4.33/100 ct",
+        "variantPriceString": null,
+        "currencyUnit": "USD",
+        "bestValue": false,
+        "supportText": null
+      }
+    },
+    "pickup_evidence": [
+      {
+        "storeId": "100",
+        "fulfillment": "DELIVERY",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "100",
+        "fulfillment": "DELIVERY",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "100",
+        "fulfillment": "DELIVERY",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "100",
+        "fulfillment": "PICKUP",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "100",
+        "fulfillment": "PICKUP",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "0",
+        "fulfillment": "DELIVERY",
+        "availabilityStatus": null
+      }
+    ]
+  },
+  {
+    "role": "matched_comparison",
+    "capture_id": "B1-1-018",
+    "sha256": "04059e2ade322c2246cab64008ac20f37ade4041c2c171884725f453fba7b1fd",
+    "type": "product",
+    "product_id": "5445606208",
+    "store_id": "100",
+    "zip": "72712",
+    "intent": "PICKUP",
+    "seller": "Walmart.com",
+    "availability": "IN_STOCK",
+    "prices": {
+      "currentPrice": {
+        "price": 16.97,
+        "priceString": "$16.97",
+        "variantPriceString": "$16.97",
+        "currencyUnit": "USD",
+        "bestValue": null,
+        "supportText": null,
+        "priceDisplay": "Now $16.97"
+      },
+      "wasPrice": {
+        "price": 18.97,
+        "priceString": "$18.97",
+        "variantPriceString": null,
+        "currencyUnit": "USD",
+        "bestValue": null,
+        "supportText": null
+      },
+      "unitPrice": {
+        "price": 0.236,
+        "priceString": "23.6 \u00a2/count",
+        "variantPriceString": null,
+        "currencyUnit": "USD",
+        "bestValue": true,
+        "supportText": null
+      }
+    },
+    "pickup_evidence": [
+      {
+        "storeId": "100",
+        "fulfillment": "DELIVERY",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "100",
+        "fulfillment": "DELIVERY",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "100",
+        "fulfillment": "DELIVERY",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "100",
+        "fulfillment": "PICKUP",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "100",
+        "fulfillment": "PICKUP",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "0",
+        "fulfillment": "DELIVERY",
+        "availabilityStatus": null
+      }
+    ]
+  },
+  {
+    "role": "matched_comparison",
+    "capture_id": "B1-1-019",
+    "sha256": "959211a5c5d8e204120a191cda5e74b8da3819892106951d92f569f76419a404",
+    "type": "product",
+    "product_id": "362649628",
+    "store_id": "100",
+    "zip": "72712",
+    "intent": "PICKUP",
+    "seller": "Walmart.com",
+    "availability": "IN_STOCK",
+    "prices": {
+      "currentPrice": {
+        "price": 27.97,
+        "priceString": "$27.97",
+        "variantPriceString": "$27.97",
+        "currencyUnit": "USD",
+        "bestValue": null,
+        "supportText": null,
+        "priceDisplay": "$27.97"
+      },
+      "wasPrice": null,
+      "unitPrice": {
+        "price": 0.424,
+        "priceString": "42.4 \u00a2/count",
+        "variantPriceString": null,
+        "currencyUnit": "USD",
+        "bestValue": false,
+        "supportText": null
+      }
+    },
+    "pickup_evidence": [
+      {
+        "storeId": "100",
+        "fulfillment": "DELIVERY",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "100",
+        "fulfillment": "DELIVERY",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "100",
+        "fulfillment": "DELIVERY",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "100",
+        "fulfillment": "PICKUP",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "100",
+        "fulfillment": "PICKUP",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "0",
+        "fulfillment": "DELIVERY",
+        "availabilityStatus": null
+      }
+    ]
+  },
+  {
+    "role": "matched_comparison",
+    "capture_id": "B1-1-020",
+    "sha256": "dc9e5c0d67d40eefde22bda788080bf3bfcd2d8f10a54256d022e7f589528f99",
+    "type": "product",
+    "product_id": "47428850",
+    "store_id": "100",
+    "zip": "72712",
+    "intent": "PICKUP",
+    "seller": "Walmart.com",
+    "availability": "IN_STOCK",
+    "prices": {
+      "currentPrice": {
+        "price": 3.97,
+        "priceString": "$3.97",
+        "variantPriceString": "$3.97",
+        "currencyUnit": "USD",
+        "bestValue": null,
+        "supportText": null,
+        "priceDisplay": "$3.97"
+      },
+      "wasPrice": null,
+      "unitPrice": null
+    },
+    "pickup_evidence": [
+      {
+        "storeId": "100",
+        "fulfillment": "DELIVERY",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "100",
+        "fulfillment": "DELIVERY",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "100",
+        "fulfillment": "DELIVERY",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "100",
+        "fulfillment": "PICKUP",
+        "availabilityStatus": null
+      }
+    ]
+  },
+  {
+    "role": "matched_comparison",
+    "capture_id": "B1-2-021",
+    "sha256": "dd20a79373350a2ecf2809e58c111aa086d0339f02cd8f933790f1c9b7eb0a0e",
+    "type": "product",
+    "product_id": "47428850",
+    "store_id": "100",
+    "zip": "72712",
+    "intent": "PICKUP",
+    "seller": "Walmart.com",
+    "availability": "IN_STOCK",
+    "prices": {
+      "currentPrice": {
+        "price": 3.97,
+        "priceString": "$3.97",
+        "variantPriceString": "$3.97",
+        "currencyUnit": "USD",
+        "bestValue": null,
+        "supportText": null,
+        "priceDisplay": "$3.97"
+      },
+      "wasPrice": null,
+      "unitPrice": null
+    },
+    "pickup_evidence": [
+      {
+        "storeId": "100",
+        "fulfillment": "DELIVERY",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "100",
+        "fulfillment": "DELIVERY",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "100",
+        "fulfillment": "DELIVERY",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "100",
+        "fulfillment": "PICKUP",
+        "availabilityStatus": null
+      }
+    ]
+  },
+  {
+    "role": "matched_comparison",
+    "capture_id": "B1-2-022",
+    "sha256": "cd060e482d42c60a1de442e76a3b5747e75f40c32391dcd7b92fffd9bbbf2e97",
+    "type": "listing",
+    "stores": "100",
+    "facet": "fulfillment_method:Pickup",
+    "page": 1,
+    "items": [
+      {
+        "usItemId": "17330364149",
+        "price": 5.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": true
+      },
+      {
+        "usItemId": "304859896",
+        "price": 3.98,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": true
+      },
+      {
+        "usItemId": "17281351564",
+        "price": 5.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": true
+      },
+      {
+        "usItemId": "14898380",
+        "price": 12.84,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": true
+      },
+      {
+        "usItemId": "914173307",
+        "price": 3.98,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "883632494",
+        "price": 6.26,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "15543972",
+        "price": 7.28,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "341539270",
+        "price": 8.33,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "14898380",
+        "price": 12.84,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "941543804",
+        "price": 8.33,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "17249166485",
+        "price": 5.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": true
+      },
+      {
+        "usItemId": "304859896",
+        "price": 3.98,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "12443823",
+        "price": 5.26,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "2537720607",
+        "price": 9.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "22210582",
+        "price": 0.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "857115210",
+        "price": 6.26,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "12443825",
+        "price": 2.98,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "586467973",
+        "price": 6.26,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "14898376",
+        "price": 7.57,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "17732323178",
+        "price": 3.98,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": true
+      },
+      {
+        "usItemId": "17761667797",
+        "price": 3.98,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": true
+      },
+      {
+        "usItemId": "152998400",
+        "price": 2.82,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "12443844",
+        "price": 7.57,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "5578393742",
+        "price": 6.26,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "17772913007",
+        "price": 2.82,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "13867217503",
+        "price": 4.52,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "350850761",
+        "price": 2.82,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "12443853",
+        "price": 5.26,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "16606508409",
+        "price": 6.26,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "12860958761",
+        "price": 18.24,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": true
+      },
+      {
+        "usItemId": "17249116139",
+        "price": 6.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": true
+      },
+      {
+        "usItemId": "14898365",
+        "price": 12.78,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "20606798",
+        "price": 5.28,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "14898381",
+        "price": 5.76,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "14664731",
+        "price": 12.84,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "423323634",
+        "price": 15.88,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "933889813",
+        "price": 15.96,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "21108358",
+        "price": 5.24,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "15056051",
+        "price": 4.17,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "51237368",
+        "price": 7.57,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "413618110",
+        "price": 4.28,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "125731649",
+        "price": 3.87,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "20348462808",
+        "price": 16.56,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "12443842",
+        "price": 5.28,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "5150283435",
+        "price": 5.24,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "21190601",
+        "price": 15.52,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "12860958761",
+        "price": 18.24,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "12443828",
+        "price": 5.52,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "14898378",
+        "price": 5.24,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "733110876",
+        "price": 5.52,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "17767958065",
+        "price": 5.28,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "18446019970",
+        "price": 5.52,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "22210584",
+        "price": 2,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "765604579",
+        "price": 4.28,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "17766712052",
+        "price": 9,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "22733966",
+        "price": 7.32,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "20215822423",
+        "price": 5.97,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "13226024318",
+        "price": 10.94,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      },
+      {
+        "usItemId": "55497496",
+        "price": 13.96,
+        "wasPrice": null,
+        "availabilityStatus": "IN_STOCK",
+        "isSponsoredFlag": false
+      }
+    ]
+  },
+  {
+    "role": "matched_comparison",
+    "capture_id": "B1-2-023",
+    "sha256": "983bb5a1f9ac983ac96271c8e80e2bdc870e575390432cfafeea78ccccb91b7e",
+    "type": "product",
+    "product_id": "914173307",
+    "store_id": "100",
+    "zip": "72712",
+    "intent": "PICKUP",
+    "seller": "Walmart.com",
+    "availability": "IN_STOCK",
+    "prices": {
+      "currentPrice": {
+        "price": 3.98,
+        "priceString": "$3.98",
+        "variantPriceString": "$3.98",
+        "currencyUnit": "USD",
+        "bestValue": null,
+        "supportText": null,
+        "priceDisplay": "$3.98"
+      },
+      "wasPrice": null,
+      "unitPrice": {
+        "price": 0.093,
+        "priceString": "9.3 \u00a2/fl oz",
+        "variantPriceString": null,
+        "currencyUnit": "USD",
+        "bestValue": true,
+        "supportText": null
+      }
+    },
+    "pickup_evidence": [
+      {
+        "storeId": "100",
+        "fulfillment": "DELIVERY",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "100",
+        "fulfillment": "DELIVERY",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "100",
+        "fulfillment": "DELIVERY",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "100",
+        "fulfillment": "PICKUP",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "100",
+        "fulfillment": "PICKUP",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "0",
+        "fulfillment": "DELIVERY",
+        "availabilityStatus": null
+      }
+    ]
+  },
+  {
+    "role": "matched_comparison",
+    "capture_id": "B1-2-024",
+    "sha256": "c547e2b1379f177a15cf57d4db3b2a00451cb02bfd0c2d6521a21ee2a7a8a275",
+    "type": "product",
+    "product_id": "883632494",
+    "store_id": "100",
+    "zip": "72712",
+    "intent": "PICKUP",
+    "seller": "Walmart.com",
+    "availability": "IN_STOCK",
+    "prices": {
+      "currentPrice": {
+        "price": 6.26,
+        "priceString": "$6.26",
+        "variantPriceString": "$6.26",
+        "currencyUnit": "USD",
+        "bestValue": null,
+        "supportText": null,
+        "priceDisplay": "$6.26"
+      },
+      "wasPrice": null,
+      "unitPrice": {
+        "price": 0.081,
+        "priceString": "8.1 \u00a2/fl oz",
+        "variantPriceString": null,
+        "currencyUnit": "USD",
+        "bestValue": null,
+        "supportText": null
+      }
+    },
+    "pickup_evidence": [
+      {
+        "storeId": "100",
+        "fulfillment": "DELIVERY",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "100",
+        "fulfillment": "DELIVERY",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "100",
+        "fulfillment": "DELIVERY",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "100",
+        "fulfillment": "PICKUP",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "100",
+        "fulfillment": "PICKUP",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "0",
+        "fulfillment": "DELIVERY",
+        "availabilityStatus": null
+      }
+    ]
+  },
+  {
+    "role": "matched_comparison",
+    "capture_id": "B1-2-025",
+    "sha256": "73b179a92e2aff161fb61943cff4d52372816755eee0f2b5796d27f82cc5e52b",
+    "type": "product",
+    "product_id": "15543972",
+    "store_id": "100",
+    "zip": "72712",
+    "intent": "PICKUP",
+    "seller": "Walmart.com",
+    "availability": "IN_STOCK",
+    "prices": {
+      "currentPrice": {
+        "price": 7.28,
+        "priceString": "$7.28",
+        "variantPriceString": "$7.28",
+        "currencyUnit": "USD",
+        "bestValue": null,
+        "supportText": null,
+        "priceDisplay": "$7.28"
+      },
+      "wasPrice": null,
+      "unitPrice": {
+        "price": 6.93,
+        "priceString": "$6.93/100 ct",
+        "variantPriceString": null,
+        "currencyUnit": "USD",
+        "bestValue": true,
+        "supportText": null
+      }
+    },
+    "pickup_evidence": [
+      {
+        "storeId": "100",
+        "fulfillment": "DELIVERY",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "100",
+        "fulfillment": "DELIVERY",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "100",
+        "fulfillment": "DELIVERY",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "100",
+        "fulfillment": "PICKUP",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "100",
+        "fulfillment": "PICKUP",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "0",
+        "fulfillment": "DELIVERY",
+        "availabilityStatus": null
+      }
+    ]
+  },
+  {
+    "role": "matched_comparison",
+    "capture_id": "B1-2-026",
+    "sha256": "17787709c0c50733ec123faa4c48505c32f2762e0a28b63c6f86357e6c91406f",
+    "type": "product",
+    "product_id": "47428850",
+    "store_id": "100",
+    "zip": "72712",
+    "intent": "PICKUP",
+    "seller": "Walmart.com",
+    "availability": "IN_STOCK",
+    "prices": {
+      "currentPrice": {
+        "price": 3.97,
+        "priceString": "$3.97",
+        "variantPriceString": "$3.97",
+        "currencyUnit": "USD",
+        "bestValue": null,
+        "supportText": null,
+        "priceDisplay": "$3.97"
+      },
+      "wasPrice": null,
+      "unitPrice": null
+    },
+    "pickup_evidence": [
+      {
+        "storeId": "100",
+        "fulfillment": "DELIVERY",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "100",
+        "fulfillment": "DELIVERY",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "100",
+        "fulfillment": "DELIVERY",
+        "availabilityStatus": null
+      },
+      {
+        "storeId": "100",
+        "fulfillment": "PICKUP",
+        "availabilityStatus": null
+      }
+    ]
+  }
+]

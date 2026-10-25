@@ -1,0 +1,72 @@
+{
+  "recorded_utc": "2026-10-25T16:58:44.512015+00:00",
+  "code_commit": "09c92cb7e28ff1cd6bad95f23c1fcc10d7bb23a6",
+  "mode": "Completed bounded live A/B diagnostic; not full collection acceptance",
+  "completed": true,
+  "seconds_this_comparison": 164.762,
+  "cumulative_application_counts": {
+    "product_requests": 20,
+    "listing_requests": 6,
+    "sequence": 26,
+    "body_bytes": 19832327,
+    "category_visits": 6,
+    "browser_sessions": 5
+  },
+  "counts_this_comparison": {
+    "product_requests": 18,
+    "listing_requests": 4,
+    "sequence": 22,
+    "body_bytes": 15880835,
+    "category_visits": 4,
+    "browser_sessions": 3
+  },
+  "sessions": [
+    {
+      "id": "A1",
+      "passed": true,
+      "accepted": 6
+    },
+    {
+      "id": "B1-1",
+      "passed": true,
+      "accepted": 3
+    },
+    {
+      "id": "B1-2",
+      "passed": true,
+      "accepted": 3
+    }
+  ],
+  "distinct_target_products": 6,
+  "same_ordered_target_ids": true,
+  "same_target_prices": true,
+  "product_responses_this_comparison": 18,
+  "source_capture_bodies_hash_verified": 26,
+  "wrong_store_responses_observed": 0,
+  "paired_wrong_correct_full_bodies_available": false,
+  "historical_and_last_good_unchanged": true,
+  "initial_attempt": {
+    "seconds": 42.21,
+    "error": "Planned product absent from verified current listing",
+    "accepted": 1
+  },
+  "scope_adjustment": "One matched comparison only; stale-target attempt and listing discovery consume original budget. Second matched repeat omitted.",
+  "finding": "Both session strategies passed the same six targets; no store drift reproduced and no reliability improvement established.",
+  "raw_evidence": "Complete Fetch-decoded bodies and redaction drafts retained privately; manual review needed before any sharing. Public files contain metadata and selected source fields only.",
+  "remaining": [
+    "Paired wrong/correct full-body drift reproduction",
+    "Repeated complete collection and sustained reliability",
+    "Full uncapped category coverage",
+    "Real promotional offer cases",
+    "Final-version live interruption/resume",
+    "Azure execution; access ungranted"
+  ],
+  "source_context_audit": {
+    "mode": "offline inspection of newly captured live response bodies",
+    "product_bodies": 20,
+    "listing_bodies": 6,
+    "all_products_store100_zip72712_pickup": true,
+    "all_listings_store100_pickup": true
+  },
+  "unavailable_products_observed_in_matched_sample": 0
+}

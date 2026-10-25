@@ -1,3 +1,7 @@
+# Step 3 review — 25 October 2026
+
+Step 3 update, 25 October:one matched live comparison passed the same six targets in one session and fresh three-target batches, with matching prices. No drift reproduced and no reliability improvement established.26complete response bodies retained privately; safe metadata/source contexts published. See docs/STEP3_RESULTS_20261025.md.
+
 # Baseline update — 25 October 2026
 
 Store #100/PICKUP is now accepted by the client for the next bounded demonstration. This supersedes the earlier unconfirmed-demonstration note below; it does not grant Azure access or confirm a production assignment. Complete paired raw responses remain missing: saved corrected HTML was parsed/reserialized. See docs/STEP1_BASELINE_20261025.md and evidence/diagnostic-20261025/baseline-inventory.json. Step1 only; no new live run or collector change.

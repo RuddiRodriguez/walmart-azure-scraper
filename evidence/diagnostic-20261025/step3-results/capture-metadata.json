@@ -1,0 +1,1016 @@
+[
+  {
+    "role": "initial_stale_target",
+    "id": "A1-001",
+    "session": "A1",
+    "kind": "product",
+    "sequence": 1,
+    "request": {
+      "url": "https://www.walmart.com/ip/Carving-Pumpkin-Each/47428850?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-25T16:52:34.715766+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Carving-Pumpkin-Each/47428850?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 16:52:35 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T16:52:35.976694+00:00",
+      "elapsed_seconds": 1.261
+    },
+    "body_bytes": 504085,
+    "body_sha256": "dd1f930fa33ded04d3e1c6ebb77dab33a24076e08b43007686d3922fcbe388cb",
+    "sharing_status": "Private originals and redaction draft; manual review required before sharing",
+    "body_access": "Private complete Fetch-decoded body; no raw body exported"
+  },
+  {
+    "role": "initial_stale_target",
+    "id": "A1-002",
+    "session": "A1",
+    "kind": "listing",
+    "sequence": 2,
+    "request": {
+      "url": "https://www.walmart.com/browse/diapering/5427_486190",
+      "attempt": 1,
+      "started_utc": "2026-10-25T16:52:45.627015+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/diapering/5427_486190",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 16:52:45 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T16:52:45.905770+00:00",
+      "elapsed_seconds": 0.279
+    },
+    "body_bytes": 1489361,
+    "body_sha256": "fe846a1cf15b537549ee64349094fc3a4258a5de3405d4cbfbc4dd7085d35fe0",
+    "sharing_status": "Private originals and redaction draft; manual review required before sharing",
+    "body_access": "Private complete Fetch-decoded body; no raw body exported"
+  },
+  {
+    "role": "initial_stale_target",
+    "id": "A1-003",
+    "session": "A1",
+    "kind": "product",
+    "sequence": 3,
+    "request": {
+      "url": "https://www.walmart.com/ip/Luvs-Platinum-Protection-Baby-Diapers-Size-5-72-Count-Select-for-More-Options/5445606208?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-25T16:52:46.222922+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Luvs-Platinum-Protection-Baby-Diapers-Size-5-72-Count-Select-for-More-Options/5445606208?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 16:52:47 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T16:52:47.331012+00:00",
+      "elapsed_seconds": 1.108
+    },
+    "body_bytes": 642852,
+    "body_sha256": "157626666719dc6fa12c6271aa01785dcbd900414b3de386953b48b674468eb9",
+    "sharing_status": "Private originals and redaction draft; manual review required before sharing",
+    "body_access": "Private complete Fetch-decoded body; no raw body exported"
+  },
+  {
+    "role": "listing_discovery",
+    "id": "discovery-001",
+    "session": "discovery",
+    "kind": "listing",
+    "sequence": 1,
+    "request": {
+      "url": "https://www.walmart.com/browse/household-essentials/clorox/1115193_8250903_7784444",
+      "attempt": 1,
+      "started_utc": "2026-10-25T16:54:21.035413+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/household-essentials/clorox/1115193_8250903_7784444",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 16:54:21 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T16:54:21.413093+00:00",
+      "elapsed_seconds": 0.378
+    },
+    "body_bytes": 1315194,
+    "body_sha256": "cd060e482d42c60a1de442e76a3b5747e75f40c32391dcd7b92fffd9bbbf2e97",
+    "sharing_status": "Private originals and redaction draft; manual review required before sharing",
+    "body_access": "Private complete Fetch-decoded body; no raw body exported"
+  },
+  {
+    "role": "matched_comparison",
+    "id": "A1-005",
+    "session": "A1",
+    "kind": "product",
+    "sequence": 5,
+    "request": {
+      "url": "https://www.walmart.com/ip/Carving-Pumpkin-Each/47428850?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-25T16:55:22.523108+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Carving-Pumpkin-Each/47428850?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 16:55:23 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T16:55:23.653757+00:00",
+      "elapsed_seconds": 1.131
+    },
+    "body_bytes": 503106,
+    "body_sha256": "36667843e1b52edb9948963867f580c120b5c17f09a847d3c3365aa10e5d6393",
+    "sharing_status": "Private originals and redaction draft; manual review required before sharing",
+    "body_access": "Private complete Fetch-decoded body; no raw body exported"
+  },
+  {
+    "role": "matched_comparison",
+    "id": "A1-006",
+    "session": "A1",
+    "kind": "listing",
+    "sequence": 6,
+    "request": {
+      "url": "https://www.walmart.com/browse/diapering/5427_486190",
+      "attempt": 1,
+      "started_utc": "2026-10-25T16:55:29.942417+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/diapering/5427_486190",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 16:55:30 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T16:55:30.274084+00:00",
+      "elapsed_seconds": 0.332
+    },
+    "body_bytes": 1489361,
+    "body_sha256": "fe846a1cf15b537549ee64349094fc3a4258a5de3405d4cbfbc4dd7085d35fe0",
+    "sharing_status": "Private originals and redaction draft; manual review required before sharing",
+    "body_access": "Private complete Fetch-decoded body; no raw body exported"
+  },
+  {
+    "role": "matched_comparison",
+    "id": "A1-007",
+    "session": "A1",
+    "kind": "product",
+    "sequence": 7,
+    "request": {
+      "url": "https://www.walmart.com/ip/HUGGIES-Natural-Care-Baby-Wipes-56-sheets-Pack-of-3/38236207?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-25T16:55:31.035535+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/HUGGIES-Natural-Care-Baby-Wipes-56-sheets-Pack-of-3/38236207?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 16:55:33 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T16:55:33.640715+00:00",
+      "elapsed_seconds": 2.605
+    },
+    "body_bytes": 618495,
+    "body_sha256": "e884346cad5beec1e9fc55c6cf7108f489029702198e30382dc86a6bfc6c46b3",
+    "sharing_status": "Private originals and redaction draft; manual review required before sharing",
+    "body_access": "Private complete Fetch-decoded body; no raw body exported"
+  },
+  {
+    "role": "matched_comparison",
+    "id": "A1-008",
+    "session": "A1",
+    "kind": "product",
+    "sequence": 8,
+    "request": {
+      "url": "https://www.walmart.com/ip/Luvs-Platinum-Protection-Baby-Diapers-Size-5-72-Count-Select-for-More-Options/5445606208?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-25T16:55:36.148108+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Luvs-Platinum-Protection-Baby-Diapers-Size-5-72-Count-Select-for-More-Options/5445606208?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 16:55:37 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T16:55:37.499491+00:00",
+      "elapsed_seconds": 1.351
+    },
+    "body_bytes": 641844,
+    "body_sha256": "0ac9dc06231e7fe65a5ddfc0debfa45edc4d10fadb8312a5920351166485eec6",
+    "sharing_status": "Private originals and redaction draft; manual review required before sharing",
+    "body_access": "Private complete Fetch-decoded body; no raw body exported"
+  },
+  {
+    "role": "matched_comparison",
+    "id": "A1-009",
+    "session": "A1",
+    "kind": "product",
+    "sequence": 9,
+    "request": {
+      "url": "https://www.walmart.com/ip/Pampers-Swaddlers-Baby-Diapers-Size-4-66-Count-Select-for-More-Options/362649628?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-25T16:55:39.978151+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Pampers-Swaddlers-Baby-Diapers-Size-4-66-Count-Select-for-More-Options/362649628?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 16:55:41 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T16:55:41.533541+00:00",
+      "elapsed_seconds": 1.555
+    },
+    "body_bytes": 634484,
+    "body_sha256": "03b29f0e52100fefb3e2a11aadb3eb3d8e6d2a43e2e5770c287cd299208ec480",
+    "sharing_status": "Private originals and redaction draft; manual review required before sharing",
+    "body_access": "Private complete Fetch-decoded body; no raw body exported"
+  },
+  {
+    "role": "matched_comparison",
+    "id": "A1-010",
+    "session": "A1",
+    "kind": "listing",
+    "sequence": 10,
+    "request": {
+      "url": "https://www.walmart.com/browse/household-essentials/clorox/1115193_8250903_7784444",
+      "attempt": 1,
+      "started_utc": "2026-10-25T16:55:47.555677+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/household-essentials/clorox/1115193_8250903_7784444",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 16:55:47 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T16:55:47.892288+00:00",
+      "elapsed_seconds": 0.337
+    },
+    "body_bytes": 1315194,
+    "body_sha256": "cd060e482d42c60a1de442e76a3b5747e75f40c32391dcd7b92fffd9bbbf2e97",
+    "sharing_status": "Private originals and redaction draft; manual review required before sharing",
+    "body_access": "Private complete Fetch-decoded body; no raw body exported"
+  },
+  {
+    "role": "matched_comparison",
+    "id": "A1-011",
+    "session": "A1",
+    "kind": "product",
+    "sequence": 11,
+    "request": {
+      "url": "https://www.walmart.com/ip/Clorox-Disinfecting-Bleach-Regular-43-fl-oz/914173307?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-25T16:55:48.586159+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Clorox-Disinfecting-Bleach-Regular-43-fl-oz/914173307?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 16:55:49 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T16:55:49.889301+00:00",
+      "elapsed_seconds": 1.303
+    },
+    "body_bytes": 580784,
+    "body_sha256": "854f46a743b09c81f4151210aeec5fda55f7e78f7e00366c51fde517f0f67b9b",
+    "sharing_status": "Private originals and redaction draft; manual review required before sharing",
+    "body_access": "Private complete Fetch-decoded body; no raw body exported"
+  },
+  {
+    "role": "matched_comparison",
+    "id": "A1-012",
+    "session": "A1",
+    "kind": "product",
+    "sequence": 12,
+    "request": {
+      "url": "https://www.walmart.com/ip/Clorox-Splash-Less-Liquid-Bleach-Cleaner-Regular-Scent-77-fl-oz/883632494?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT",
+      "attempt": 1,
+      "started_utc": "2026-10-25T16:55:52.385496+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Clorox-Splash-Less-Liquid-Bleach-Cleaner-Regular-Scent-77-fl-oz/883632494?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 16:55:53 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T16:55:53.742840+00:00",
+      "elapsed_seconds": 1.357
+    },
+    "body_bytes": 577053,
+    "body_sha256": "4562ee5057ecb81bdd0a580fbebc41f9f045b4f9298969bf8d72a09ea6c93bb3",
+    "sharing_status": "Private originals and redaction draft; manual review required before sharing",
+    "body_access": "Private complete Fetch-decoded body; no raw body exported"
+  },
+  {
+    "role": "matched_comparison",
+    "id": "A1-013",
+    "session": "A1",
+    "kind": "product",
+    "sequence": 13,
+    "request": {
+      "url": "https://www.walmart.com/ip/Clorox-Disinfecting-Wipes-Bleach-Free-Fresh-Scent-And-Crisp-Lemon-Scent-35-Count-3-Pack/15543972?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT",
+      "attempt": 1,
+      "started_utc": "2026-10-25T16:55:56.276189+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Clorox-Disinfecting-Wipes-Bleach-Free-Fresh-Scent-And-Crisp-Lemon-Scent-35-Count-3-Pack/15543972?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 16:55:57 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T16:55:58.213041+00:00",
+      "elapsed_seconds": 1.937
+    },
+    "body_bytes": 576381,
+    "body_sha256": "e34f101df1dafcd2c5e61d21db9a073adf6d232b2b07b72bb3de4b6d5caa2d96",
+    "sharing_status": "Private originals and redaction draft; manual review required before sharing",
+    "body_access": "Private complete Fetch-decoded body; no raw body exported"
+  },
+  {
+    "role": "matched_comparison",
+    "id": "A1-014",
+    "session": "A1",
+    "kind": "product",
+    "sequence": 14,
+    "request": {
+      "url": "https://www.walmart.com/ip/Carving-Pumpkin-Each/47428850?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-25T16:56:00.648520+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Carving-Pumpkin-Each/47428850?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 16:56:01 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T16:56:01.714590+00:00",
+      "elapsed_seconds": 1.066
+    },
+    "body_bytes": 503380,
+    "body_sha256": "9ef1e829c36f1c206956b6405672876ed5bca82971057cc7960114e487e16096",
+    "sharing_status": "Private originals and redaction draft; manual review required before sharing",
+    "body_access": "Private complete Fetch-decoded body; no raw body exported"
+  },
+  {
+    "role": "matched_comparison",
+    "id": "B1-1-015",
+    "session": "B1-1",
+    "kind": "product",
+    "sequence": 15,
+    "request": {
+      "url": "https://www.walmart.com/ip/Carving-Pumpkin-Each/47428850?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-25T16:56:28.545895+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Carving-Pumpkin-Each/47428850?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 16:56:29 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T16:56:29.857104+00:00",
+      "elapsed_seconds": 1.311
+    },
+    "body_bytes": 503113,
+    "body_sha256": "6b461f360ad3cd1f49931e136ea66105e2f5d4bf0c3947bd2633fa22faf1acaf",
+    "sharing_status": "Private originals and redaction draft; manual review required before sharing",
+    "body_access": "Private complete Fetch-decoded body; no raw body exported"
+  },
+  {
+    "role": "matched_comparison",
+    "id": "B1-1-016",
+    "session": "B1-1",
+    "kind": "listing",
+    "sequence": 16,
+    "request": {
+      "url": "https://www.walmart.com/browse/diapering/5427_486190",
+      "attempt": 1,
+      "started_utc": "2026-10-25T16:56:35.691741+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/diapering/5427_486190",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 16:56:35 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T16:56:35.976639+00:00",
+      "elapsed_seconds": 0.285
+    },
+    "body_bytes": 1489361,
+    "body_sha256": "fe846a1cf15b537549ee64349094fc3a4258a5de3405d4cbfbc4dd7085d35fe0",
+    "sharing_status": "Private originals and redaction draft; manual review required before sharing",
+    "body_access": "Private complete Fetch-decoded body; no raw body exported"
+  },
+  {
+    "role": "matched_comparison",
+    "id": "B1-1-017",
+    "session": "B1-1",
+    "kind": "product",
+    "sequence": 17,
+    "request": {
+      "url": "https://www.walmart.com/ip/HUGGIES-Natural-Care-Baby-Wipes-56-sheets-Pack-of-3/38236207?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-25T16:56:36.356576+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/HUGGIES-Natural-Care-Baby-Wipes-56-sheets-Pack-of-3/38236207?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 16:56:38 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T16:56:38.622562+00:00",
+      "elapsed_seconds": 2.266
+    },
+    "body_bytes": 618743,
+    "body_sha256": "fd11a63229f48ff70f484176333deef1f284743618c832c98b1dd8377d381c62",
+    "sharing_status": "Private originals and redaction draft; manual review required before sharing",
+    "body_access": "Private complete Fetch-decoded body; no raw body exported"
+  },
+  {
+    "role": "matched_comparison",
+    "id": "B1-1-018",
+    "session": "B1-1",
+    "kind": "product",
+    "sequence": 18,
+    "request": {
+      "url": "https://www.walmart.com/ip/Luvs-Platinum-Protection-Baby-Diapers-Size-5-72-Count-Select-for-More-Options/5445606208?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-25T16:56:41.087881+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Luvs-Platinum-Protection-Baby-Diapers-Size-5-72-Count-Select-for-More-Options/5445606208?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 16:56:43 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T16:56:43.609561+00:00",
+      "elapsed_seconds": 2.522
+    },
+    "body_bytes": 638248,
+    "body_sha256": "04059e2ade322c2246cab64008ac20f37ade4041c2c171884725f453fba7b1fd",
+    "sharing_status": "Private originals and redaction draft; manual review required before sharing",
+    "body_access": "Private complete Fetch-decoded body; no raw body exported"
+  },
+  {
+    "role": "matched_comparison",
+    "id": "B1-1-019",
+    "session": "B1-1",
+    "kind": "product",
+    "sequence": 19,
+    "request": {
+      "url": "https://www.walmart.com/ip/Pampers-Swaddlers-Baby-Diapers-Size-4-66-Count-Select-for-More-Options/362649628?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-25T16:56:46.086991+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Pampers-Swaddlers-Baby-Diapers-Size-4-66-Count-Select-for-More-Options/362649628?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 16:56:47 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T16:56:47.463543+00:00",
+      "elapsed_seconds": 1.377
+    },
+    "body_bytes": 634437,
+    "body_sha256": "959211a5c5d8e204120a191cda5e74b8da3819892106951d92f569f76419a404",
+    "sharing_status": "Private originals and redaction draft; manual review required before sharing",
+    "body_access": "Private complete Fetch-decoded body; no raw body exported"
+  },
+  {
+    "role": "matched_comparison",
+    "id": "B1-1-020",
+    "session": "B1-1",
+    "kind": "product",
+    "sequence": 20,
+    "request": {
+      "url": "https://www.walmart.com/ip/Carving-Pumpkin-Each/47428850?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-25T16:56:49.982432+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Carving-Pumpkin-Each/47428850?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 16:56:51 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T16:56:51.726379+00:00",
+      "elapsed_seconds": 1.744
+    },
+    "body_bytes": 503238,
+    "body_sha256": "dc9e5c0d67d40eefde22bda788080bf3bfcd2d8f10a54256d022e7f589528f99",
+    "sharing_status": "Private originals and redaction draft; manual review required before sharing",
+    "body_access": "Private complete Fetch-decoded body; no raw body exported"
+  },
+  {
+    "role": "matched_comparison",
+    "id": "B1-2-021",
+    "session": "B1-2",
+    "kind": "product",
+    "sequence": 21,
+    "request": {
+      "url": "https://www.walmart.com/ip/Carving-Pumpkin-Each/47428850?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-25T16:57:17.216419+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Carving-Pumpkin-Each/47428850?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 16:57:18 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T16:57:18.637160+00:00",
+      "elapsed_seconds": 1.421
+    },
+    "body_bytes": 504168,
+    "body_sha256": "dd20a79373350a2ecf2809e58c111aa086d0339f02cd8f933790f1c9b7eb0a0e",
+    "sharing_status": "Private originals and redaction draft; manual review required before sharing",
+    "body_access": "Private complete Fetch-decoded body; no raw body exported"
+  },
+  {
+    "role": "matched_comparison",
+    "id": "B1-2-022",
+    "session": "B1-2",
+    "kind": "listing",
+    "sequence": 22,
+    "request": {
+      "url": "https://www.walmart.com/browse/household-essentials/clorox/1115193_8250903_7784444",
+      "attempt": 1,
+      "started_utc": "2026-10-25T16:57:25.828120+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/household-essentials/clorox/1115193_8250903_7784444",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 16:57:25 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T16:57:26.080100+00:00",
+      "elapsed_seconds": 0.252
+    },
+    "body_bytes": 1315194,
+    "body_sha256": "cd060e482d42c60a1de442e76a3b5747e75f40c32391dcd7b92fffd9bbbf2e97",
+    "sharing_status": "Private originals and redaction draft; manual review required before sharing",
+    "body_access": "Private complete Fetch-decoded body; no raw body exported"
+  },
+  {
+    "role": "matched_comparison",
+    "id": "B1-2-023",
+    "session": "B1-2",
+    "kind": "product",
+    "sequence": 23,
+    "request": {
+      "url": "https://www.walmart.com/ip/Clorox-Disinfecting-Bleach-Regular-43-fl-oz/914173307?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-25T16:57:26.575768+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Clorox-Disinfecting-Bleach-Regular-43-fl-oz/914173307?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 16:57:27 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T16:57:27.978929+00:00",
+      "elapsed_seconds": 1.403
+    },
+    "body_bytes": 581773,
+    "body_sha256": "983bb5a1f9ac983ac96271c8e80e2bdc870e575390432cfafeea78ccccb91b7e",
+    "sharing_status": "Private originals and redaction draft; manual review required before sharing",
+    "body_access": "Private complete Fetch-decoded body; no raw body exported"
+  },
+  {
+    "role": "matched_comparison",
+    "id": "B1-2-024",
+    "session": "B1-2",
+    "kind": "product",
+    "sequence": 24,
+    "request": {
+      "url": "https://www.walmart.com/ip/Clorox-Splash-Less-Liquid-Bleach-Cleaner-Regular-Scent-77-fl-oz/883632494?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT",
+      "attempt": 1,
+      "started_utc": "2026-10-25T16:57:30.473268+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Clorox-Splash-Less-Liquid-Bleach-Cleaner-Regular-Scent-77-fl-oz/883632494?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 16:57:31 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T16:57:31.559949+00:00",
+      "elapsed_seconds": 1.087
+    },
+    "body_bytes": 570736,
+    "body_sha256": "c547e2b1379f177a15cf57d4db3b2a00451cb02bfd0c2d6521a21ee2a7a8a275",
+    "sharing_status": "Private originals and redaction draft; manual review required before sharing",
+    "body_access": "Private complete Fetch-decoded body; no raw body exported"
+  },
+  {
+    "role": "matched_comparison",
+    "id": "B1-2-025",
+    "session": "B1-2",
+    "kind": "product",
+    "sequence": 25,
+    "request": {
+      "url": "https://www.walmart.com/ip/Clorox-Disinfecting-Wipes-Bleach-Free-Fresh-Scent-And-Crisp-Lemon-Scent-35-Count-3-Pack/15543972?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT",
+      "attempt": 1,
+      "started_utc": "2026-10-25T16:57:34.065856+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Clorox-Disinfecting-Wipes-Bleach-Free-Fresh-Scent-And-Crisp-Lemon-Scent-35-Count-3-Pack/15543972?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 16:57:35 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T16:57:35.834868+00:00",
+      "elapsed_seconds": 1.769
+    },
+    "body_bytes": 577388,
+    "body_sha256": "73b179a92e2aff161fb61943cff4d52372816755eee0f2b5796d27f82cc5e52b",
+    "sharing_status": "Private originals and redaction draft; manual review required before sharing",
+    "body_access": "Private complete Fetch-decoded body; no raw body exported"
+  },
+  {
+    "role": "matched_comparison",
+    "id": "B1-2-026",
+    "session": "B1-2",
+    "kind": "product",
+    "sequence": 26,
+    "request": {
+      "url": "https://www.walmart.com/ip/Carving-Pumpkin-Each/47428850?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-25T16:57:38.292565+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Carving-Pumpkin-Each/47428850?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Sun, 25 Oct 2026 16:57:39 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-25T16:57:39.482161+00:00",
+      "elapsed_seconds": 1.19
+    },
+    "body_bytes": 504354,
+    "body_sha256": "17787709c0c50733ec123faa4c48505c32f2762e0a28b63c6f86357e6c91406f",
+    "sharing_status": "Private originals and redaction draft; manual review required before sharing",
+    "body_access": "Private complete Fetch-decoded body; no raw body exported"
+  }
+]
