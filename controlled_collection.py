@@ -56,13 +56,16 @@ def run(output, plan):
                   started_utc=datetime.now(timezone.utc).isoformat(), source_commit=subprocess.check_output(['git', 'rev-parse', 'HEAD'], text=True).strip(),
                   source_hashes={p: hashlib.sha256(Path(p).read_bytes()).hexdigest() for p in
                                  ['controlled_collection.py', 'diagnostic_capture.py', 'capture_store_drift.py', 'scrape.py', 'browser.py', 'extract.py', 'storage.py', 'validate.py']},
-                  plan=plan, pages=[], observations=[], failures=[], exclusions={}, completed_attempt=False,
+                  plan=plan, pages=[], observations=[], controls=[], failures=[], exclusions={}, completed_attempt=False,
                   target_reached=False, pair_captured=False, full_coverage_complete=False)
     sb = None
 
     def save():
         report['counts'] = {k: state[k] for k in ['product_requests', 'listing_requests', 'sequence', 'body_bytes']}
         report['accepted_records'] = len(accepted)
+        report['rejected_product_responses'] = sum(o.get('acceptance_reason') not in [None, '', 'retained_unavailable'] for o in report['observations'])
+        report['product_errors'] = sum(f['kind'] == 'product' for f in report['failures'])
+        report['page_errors'] = sum(f['kind'] in ['page', 'page_processing'] for f in report['failures'])
         report['category_counts'] = dict(counts)
         report['seconds'] = round(time.monotonic() - state['started'], 3)
         report['pending_pages'] = {name: len(queue) for name, queue in queues.items()}
@@ -79,8 +82,7 @@ def run(output, plan):
 
     def fatal(error):
         message = str(error).lower()
-        return any(word in message for word in ['store drift', 'store control', 'location mismatch',
-            'location zip mismatch', 'product identity', 'access blocked', 'challenge', 'evidence capture',
+        return any(word in message for word in ['store control', 'access blocked', 'challenge', 'evidence capture',
             'budget reached', 'body budget', 'disk reserve', 'runtime limit', 'failure ceiling'])
 
     def failure(kind, error, **values):
@@ -89,7 +91,7 @@ def run(output, plan):
         if fatal(error) or len(report['failures']) >= plan.get('maximum_ordinary_failures', 10):
             raise RuntimeError('Failure ceiling reached or unsafe context: ' + str(error)) from error
 
-    def observe(candidate, listing_sequence, diagnostic_only=False):
+    def observe(candidate, listing_sequence):
         page = fetch_product(sb, candidate['url'], settings,
                              capture=make_capture(output / 'captures', 'collection', state))
         try:
@@ -98,21 +100,17 @@ def run(output, plan):
             context = product_context(product, store)
             observation = dict(sequence=state['sequence'], listing_sequence=listing_sequence,
                                identity_matches=str(product.get('usItemId')) == candidate['item_id'],
-                               diagnostic_only=diagnostic_only, **context)
+                               diagnostic_only=False, **context)
             report['observations'].append(observation)
-            if diagnostic_only:
-                return observation
-            if not context['store_matches']:
-                report['wrong_sequence'] = state['sequence']
-                try:
-                    corrected = observe(candidate, listing_sequence, diagnostic_only=True)
-                    report['pair_captured'] = corrected['store_matches'] and corrected['identity_matches']
-                    report['refetch_sequence'] = corrected['sequence']
-                except Exception as error:
-                    report['refetch_error'] = str(error)
-                raise ValueError('Store drift: entire collection invalid for publication')
-            if not observation['identity_matches']:
-                raise ValueError('Product identity mismatch')
+            reason = ('wrong_store_context' if not context['store_matches'] else
+                      'product_identity_mismatch' if not observation['identity_matches'] else '')
+            if reason:
+                observation['acceptance_reason'] = reason
+                exclude(reason)
+                log('response_rejected', product_id=candidate['item_id'], sequence=state['sequence'], reason=reason)
+                save()
+                time.sleep(settings['delay_seconds'])
+                return
             row, reason, _ = product_record(candidate, page, store, settings['private_labels'], logo)
             observation['acceptance_reason'] = reason
             if row:
@@ -131,16 +129,27 @@ def run(output, plan):
         finally:
             page.decompose()
 
-    def control():
+    def control(stage):
         url = store['canary_urls'][0]
-        page = fetch_product(sb, url, settings, capture=make_capture(output / 'captures', 'collection', state))
+        page = None
         try:
+            page = fetch_product(sb, url, settings, capture=make_capture(output / 'captures', 'collection', state))
             product = next_data(page).get('data', {}).get('product') or {}
-            if (not product_context(product, store)['store_matches'] or str(product.get('usItemId')) != '47428850'
-                    or not pickup(product, store) or (product.get('sellerName') or product.get('sellerDisplayName')) not in ['Walmart', 'Walmart.com']):
-                raise ValueError('Store control failed')
+            context = product_context(product, store)
+            passed = (context['store_matches'] and str(product.get('usItemId')) == '47428850'
+                      and pickup(product, store) and (product.get('sellerName') or product.get('sellerDisplayName')) in ['Walmart', 'Walmart.com'])
+            report['controls'].append(dict(stage=stage, sequence=state['sequence'], passed=passed, **context))
+            if not passed:
+                exclude('control_context_rejected')
+                log('control_rejected', stage=stage, sequence=state['sequence'])
+            return passed
+        except Exception as error:
+            failure('control', error, stage=stage)
+            report['controls'].append(dict(stage=stage, sequence=state['sequence'], passed=False, error_type=type(error).__name__))
+            return False
         finally:
-            page.decompose()
+            if page:
+                page.decompose()
 
     def timeout(*_):
         raise TimeoutError('Controlled collection runtime limit')
@@ -151,8 +160,7 @@ def run(output, plan):
     try:
         sb = open_browser()
         logo = select_store(sb, store, settings, log, output)
-        control()
-        report['initial_control_passed'] = True
+        report['initial_control_passed'] = control('initial')
         while any(queues.values()) and not (len(accepted) >= plan['target'] and all(counts[n] >= plan['minimum_per_category'] for n in names)):
             for name in names:
                 if len(accepted) >= plan['target'] and all(counts[n] >= plan['minimum_per_category'] for n in names):
@@ -240,7 +248,7 @@ def run(output, plan):
                         if candidate['item_id'] in seen_products:
                             exclude('duplicate_product_id')
                             continue
-                        # Leave room for a diagnostic re-fetch and final control.
+                        # Reserve control headroom within the fixed request budget.
                         if state['product_requests'] >= plan['limits']['product_requests'] - 2:
                             raise RuntimeError('Product budget reached')
                         seen_products.add(candidate['item_id'])
@@ -262,8 +270,7 @@ def run(output, plan):
                         entry['processing_error'] = str(error)
                         failure('page_processing', error, category=name, url=safe_url(url))
                         save()
-        control()
-        report['final_control_passed'] = True
+        report['final_control_passed'] = control('final')
         report['completed_attempt'] = True
         report['target_reached'] = len(accepted) >= plan['target'] and all(counts[n] >= plan['minimum_per_category'] for n in names)
     except Exception as error:

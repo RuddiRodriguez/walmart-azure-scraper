@@ -17,19 +17,23 @@ def check():
     search = {'paginationV2': {'pageProperties': {'stores': '100', 'facet': 'fulfillment_method:Pickup', 'page': 1}, 'maxPage': 1}}
     html = '<title>Fixture</title><script id="__NEXT_DATA__">' + json.dumps({'props': {'pageProps': {'initialData': {'searchResult': search}}}}) + '</script>'
     checks = []
-    for mode in ['success', 'wrong_store', 'empty_page', 'budget', 'product_error']:
+    for mode in ['success', 'wrong_store', 'wrong_identity', 'control_wrong', 'blocked', 'empty_page', 'budget', 'product_error']:
         calls = {'product': 0}
         def fetch(sb, url, settings, capture=None):
             capture('request', url=url, attempt=1)
             if '/browse/' in url:
                 return BeautifulSoup(html, 'html.parser')
             calls['product'] += 1
+            if mode == 'blocked' and calls['product'] == 2:
+                raise ValueError('Access blocked: HTTP403; synthetic')
             if mode == 'product_error' and calls['product'] == 2:
                 raise ValueError('Synthetic product parse failure')
             product = copy.deepcopy(source['product'])
             product['usItemId'] = url.split('?')[0].rsplit('/', 1)[-1]
-            if mode == 'wrong_store' and calls['product'] == 2:
+            if (mode == 'wrong_store' and calls['product'] == 2) or (mode == 'control_wrong' and calls['product'] == 1):
                 product['location']['pickupLocation']['storeId'] = '3081'
+            if mode == 'wrong_identity' and calls['product'] == 2:
+                product['usItemId'] = '999999'
             page = BeautifulSoup('<title>Fixture</title><script id="__NEXT_DATA__"></script>', 'html.parser')
             page.script.string = json.dumps({'props': {'pageProps': {'initialData': {'data': {'product': product}}}}})
             return page
@@ -58,9 +62,22 @@ def check():
                 assert result['target_reached'] and result['accepted_records'] == 3 and result['sample_validation']['passed']
                 assert result['exclusions']['duplicate_product_id'] == 1
                 checks.append('Cross-category target reached; duplicate excluded; actual schema validation passed')
-            elif mode == 'wrong_store':
-                assert not result['target_reached'] and result['pair_captured'] and result['accepted_records'] == 0
-                checks.append('Wrong response excluded; one corrected diagnostic retry never rehabilitates run')
+            elif mode == 'control_wrong':
+                assert result['target_reached'] and result['accepted_records'] == 3
+                assert not result['initial_control_passed'] and result['final_control_passed']
+                assert result['exclusions']['control_context_rejected'] == 1
+                checks.append('Bad control logged; independently valid product records still collected')
+            elif mode in ['wrong_store', 'wrong_identity']:
+                assert result['completed_attempt'] and result['accepted_records'] == 2
+                reason = 'wrong_store_context' if mode == 'wrong_store' else 'product_identity_mismatch'
+                assert result['exclusions'][reason] == 1
+                assert len(result['observations']) == 3 and calls['product'] == 5
+                assert not result['pair_captured']
+                checks.append(mode + ' rejected without re-fetch; later products continue')
+            elif mode == 'blocked':
+                assert not result['completed_attempt'] and result['accepted_records'] == 0
+                assert calls['product'] == 2 and 'Access blocked' in result['error']
+                checks.append('Access blocking stops without further requests or bypass')
             elif mode == 'empty_page':
                 assert not result['target_reached'] and result['completed_attempt']
                 assert len(result['failures']) == 2 and result['accepted_records'] == 0
@@ -91,7 +108,7 @@ def check():
             else:
                 assert allowed
             checks.append('Synthetic original-body budget ' + label + ' enforced without large allocation')
-    out = Path('evidence/controlled-500-20261025');out.mkdir(exist_ok=True)
+    out = Path('evidence/controlled-skip-invalid-20261025');out.mkdir(exist_ok=True)
     (out/'offline-checks.json').write_text(json.dumps({'mode':'Offline synthetic transport, zero live requests','passed':True,'checks':checks},indent=2)+'\n')
     print(json.dumps({'passed':True,'checks':len(checks),'live_requests':0}))
 

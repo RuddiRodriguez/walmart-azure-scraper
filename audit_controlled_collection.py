@@ -109,8 +109,12 @@ def audit(run, evidence):
                   rejected_product_reasons=dict(Counter(o.get('acceptance_reason') for o in report['observations']
                       if o.get('acceptance_reason') not in [None, '', 'retained_unavailable'])),
                   request_error_types=dict(Counter(m.get('error_type') for m in metadata if m.get('error_type'))),
+                  identity_mismatch_observations=sum(not o['identity_matches'] for o in report['observations'] if not o['diagnostic_only']),
                   wrong_store_observations=sum(not o['store_matches'] for o in report['observations'] if not o['diagnostic_only']),
                   diagnostic_refetches=sum(o['diagnostic_only'] for o in report['observations']),
+                  controls=report.get('controls', []),
+                  initial_control_passed=report.get('initial_control_passed'),
+                  final_control_passed=report.get('final_control_passed'),
                   unavailable_successes=len(unavailable),
                   handled_failures=report.get('failures', []),
                   excluded_listing_or_product_reasons=report['exclusions'],
