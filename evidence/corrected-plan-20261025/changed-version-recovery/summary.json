@@ -1,0 +1,23 @@
+{
+  "mode": "New live bounded sample and SIGKILL/resume, followed by offline source replay",
+  "source_commit": "34c969c04f06f49667f290811ccfe666b264950d",
+  "seconds_wall": 86.555,
+  "distinct_products": 3,
+  "target_start_events": 4,
+  "control_fetches": "Three canary invocations inferred from successful code paths; no per-control response capture",
+  "sample_validation_passed": true,
+  "recovery_checks_passed": 7,
+  "source_replays_passed": 3,
+  "listing_gate_observed_verified": true,
+  "published": false,
+  "store_mismatch_observed": false,
+  "limitations": [
+    "Single leaf and three records; full validation correctly failed minimum500 and unfinished queue.",
+    "No drift reproduced or complete wrong/correct response pair.",
+    "No genuine offers or unavailable products observed.",
+    "Interruption after product-start event; network packet timing unmeasured.",
+    "Wall runtime measured; pre-kill active-time accounting incomplete and flagged.",
+    "Private pages serialized DOM, not complete raw HTTP bodies.",
+    "Not default/full coverage or Azure recovery proof."
+  ]
+}

@@ -1,0 +1,66 @@
+[
+  {
+    "time": "2026-10-25T19:07:21.018411+00:00",
+    "event": "run_started",
+    "store": "100",
+    "run_id": "20261025T190721012276Z",
+    "resume": false,
+    "unclean_resume": false,
+    "signature": "0d8ec86e2b59ad9de112c8f4eca6ed3b9cb682c79b707f9ee5127e255bb1678e"
+  },
+  {
+    "time": "2026-10-25T19:08:07.783281+00:00",
+    "event": "listing_context",
+    "store": "100",
+    "verified": true,
+    "candidates": 42,
+    "reason": "matching_store_pickup"
+  },
+  {
+    "time": "2026-10-25T19:08:08.895577+00:00",
+    "event": "product",
+    "store": "100",
+    "id": "914173307",
+    "accepted": true,
+    "reason": "",
+    "category": "Household Essentials"
+  },
+  {
+    "time": "2026-10-25T19:08:12.341075+00:00",
+    "event": "run_started",
+    "store": "100",
+    "run_id": "20261025T190721012276Z",
+    "resume": true,
+    "unclean_resume": true,
+    "signature": "0d8ec86e2b59ad9de112c8f4eca6ed3b9cb682c79b707f9ee5127e255bb1678e"
+  },
+  {
+    "time": "2026-10-25T19:08:39.620630+00:00",
+    "event": "product",
+    "store": "100",
+    "id": "883632494",
+    "accepted": true,
+    "reason": "",
+    "category": "Household Essentials"
+  },
+  {
+    "time": "2026-10-25T19:08:42.923359+00:00",
+    "event": "product",
+    "store": "100",
+    "id": "17761667797",
+    "accepted": true,
+    "reason": "",
+    "category": "Household Essentials"
+  },
+  {
+    "time": "2026-10-25T19:08:46.050897+00:00",
+    "event": "not_published",
+    "store": "100",
+    "mode": "sample",
+    "records": 3,
+    "errors": [
+      "Below minimum product count",
+      "Incomplete checkpoint queue"
+    ]
+  }
+]

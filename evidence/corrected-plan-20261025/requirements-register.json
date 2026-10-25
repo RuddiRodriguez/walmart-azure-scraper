@@ -87,10 +87,12 @@
     },
     {
       "request": "Final-version live interruption/resume",
-      "status": "Open for changed collector version; earlier bounded live recovery remains historical",
+      "status": "Passed for changed collector34c969c, one-leaf sample3 bounded configuration only",
       "evidence": [
         "evidence/diagnostic-20261025/step4-recovery/hard-recovery.json",
-        "evidence/diagnostic-20261025/step4-recovery/review.json"
+        "evidence/diagnostic-20261025/step4-recovery/review.json",
+        "evidence/corrected-plan-20261025/changed-version-recovery/summary.json",
+        "evidence/corrected-plan-20261025/changed-version-recovery/hard-recovery.json"
       ],
       "completion_gate": "Freeze final candidate/config/scope; reuse only matching evidence, otherwise rerun affected recovery check. No lost/duplicate saved work"
     },
