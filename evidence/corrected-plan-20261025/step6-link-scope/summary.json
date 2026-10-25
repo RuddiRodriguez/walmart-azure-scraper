@@ -1,0 +1,14 @@
+{
+  "mode": "Offline audit of seven prior live root DOM snapshots; no new requests",
+  "occurrences_reviewed": 683,
+  "unique_urls_reviewed": 680,
+  "classification_counts": {
+    "supported_descendant_id": 596,
+    "unresolved_independent_landing": 80,
+    "root_or_root_alias": 6,
+    "broader_ancestor_not_descendant": 1
+  },
+  "selected_test_pages": 7,
+  "full_coverage_complete": false,
+  "scope_limit": "ID ancestry supports a test choice, not exhaustive category correctness. Tracking references alone do not prove ancestry. Unresolved links retained for review, never silently removed from full-coverage obligations."
+}
