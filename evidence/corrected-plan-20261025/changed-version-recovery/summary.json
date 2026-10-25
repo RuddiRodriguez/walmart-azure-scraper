@@ -19,5 +19,10 @@
     "Wall runtime measured; pre-kill active-time accounting incomplete and flagged.",
     "Private pages serialized DOM, not complete raw HTTP bodies.",
     "Not default/full coverage or Azure recovery proof."
-  ]
+  ],
+  "config_sha256": {
+    "settings.json": "e0df1af20e7e95f950fd342ddeaac9033050ffa7caef499dacf3768d3f319723",
+    "categories.csv": "2b2a4a24023391ada6f98aaf3587cc28e9ce80c20356fde121bac85e390cebb4"
+  },
+  "config_copy_note": "CSV retains exact live-tested CRLF bytes; Git whitespace check reports CRLF as trailing whitespace. Do not normalize this evidence copy."
 }
