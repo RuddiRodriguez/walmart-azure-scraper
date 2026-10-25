@@ -1,0 +1,12 @@
+{
+  "mode": "Offline synthetic orchestration only; not real drift evidence",
+  "passed": true,
+  "checks": [
+    "Synthetic paginated orchestration respects request limits",
+    "Synthetic wrong/correct pair stops invalid run; retry cannot publish",
+    "Reported extra pages without next controls leave expanded scope incomplete",
+    "Synthetic paginated orchestration respects request limits",
+    "Extended synthetic scope reaches70targets within72product/20listing bounds",
+    "ArtSets profile bounded to5targets/onepage/180seconds plus one diagnostic re-fetch"
+  ]
+}

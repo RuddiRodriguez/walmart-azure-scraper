@@ -46,7 +46,9 @@ def listing_from_rendered(snapshot, fetched, category, store):
         native.decompose()
 
 
-def run(output, pages=1, rendered=False, extended=False, rendered_cards=False):
+def run(output, pages=1, rendered=False, extended=False, rendered_cards=False, artsets=False):
+    if artsets and extended:
+        raise ValueError("Select one bounded profile")
     if rendered_cards and not rendered:
         raise ValueError("Rendered candidates require rendered pagination snapshots")
     if pages not in [1, 3]:
@@ -60,11 +62,16 @@ def run(output, pages=1, rendered=False, extended=False, rendered_cards=False):
     store = settings['stores'][0]
     cases = [(category, path, quota) for (category, path, _), quota in zip(CATEGORIES, [27, 32, 5, 6])] if extended else CATEGORIES
     page_limits = dict(zip([c[0] for c in CATEGORIES], [5, 11, 1, 3])) if extended else {}
-    state = dict(started=time.monotonic(), limits=dict(product_requests=72 if extended else 60, listing_requests=20 if extended else 2 * pages + 2, seconds=1200),
+    limits = dict(product_requests=72 if extended else 60, listing_requests=20 if extended else 2 * pages + 2, seconds=1200)
+    if artsets:
+        cases = [('Art Supplies', 'arts-crafts-sewing/art-sets/1334134_5899871_7148292', 5)]
+        page_limits = {'Art Supplies': 1}
+        limits = dict(product_requests=6, listing_requests=1, seconds=180)
+    state = dict(started=time.monotonic(), limits=limits,
                  product_requests=0, listing_requests=0, sequence=0, body_bytes=0)
     report = dict(started_utc=datetime.now(timezone.utc).isoformat(), completed=False,
                   pair_captured=False, listings=[], rendered_candidates=rendered_cards, pagination_gaps=[], observations=[], accepted=[], category_visits=0,
-                  pages_per_large_category=pages, rendered_pagination=rendered, extended=extended, target_product_ceiling=sum(c[2] for c in cases), limits=state['limits'], mode='Private live diagnostic; no production output',
+                  pages_per_large_category=pages, rendered_pagination=rendered, extended=extended, artsets=artsets, target_product_ceiling=sum(c[2] for c in cases), limits=state['limits'], mode='Private live diagnostic; no production output',
                   source_hashes={p: hashlib.sha256(Path(p).read_bytes()).hexdigest()
                                  for p in ['capture_store_drift.py', 'browser.py', 'extract.py', 'diagnostic_capture.py', 'scrape.py', 'inspect_rendered_pagination.py']})
     sb = None
@@ -116,10 +123,10 @@ def run(output, pages=1, rendered=False, extended=False, rendered_cards=False):
             page.decompose()
 
     def timeout(*_):
-        raise TimeoutError('1200-second diagnostic limit reached')
+        raise TimeoutError(f"{limits['seconds']}-second diagnostic limit reached")
 
     prior = signal.signal(signal.SIGALRM, timeout)
-    signal.alarm(1200)
+    signal.alarm(limits['seconds'])
     save()
     try:
         sb = open_browser()
@@ -201,7 +208,8 @@ if __name__ == '__main__':
     parser.add_argument('--rendered-pagination', action='store_true')
     parser.add_argument('--extended', action='store_true', help='One historical-length probe: up to70 targets/20 listings')
     parser.add_argument('--rendered-candidates', action='store_true')
+    parser.add_argument('--artsets', action='store_true', help='One page/up to5products/180seconds')
     args = parser.parse_args()
     os.umask(0o077)
-    result = run(args.output, args.pages, args.rendered_pagination, args.extended, args.rendered_candidates)
+    result = run(args.output, args.pages, args.rendered_pagination, args.extended, args.rendered_candidates, args.artsets)
     print(json.dumps({key: result.get(key) for key in ['completed', 'pair_captured', 'counts', 'seconds', 'error']}))

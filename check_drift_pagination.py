@@ -10,7 +10,7 @@ import capture_store_drift as review
 
 def check():
     results = []
-    for mode in ['normal', 'drift', 'pagination_gap', 'rendered_fallback', 'extended']:
+    for mode in ['normal', 'drift', 'pagination_gap', 'rendered_fallback', 'extended', 'artsets']:
         drift = mode == 'drift'
         gap = mode in ['pagination_gap', 'rendered_fallback']
         counts = {'listings': 0, 'products': 0}
@@ -53,7 +53,7 @@ def check():
                 def data(*_):
                     return {'data': {'product': {'usItemId': counts['id']}}}
                 with patch.object(review, 'next_data', side_effect=data):
-                    result = review.run(Path(folder) / 'run', pages=3, rendered=mode == 'rendered_fallback', extended=mode == 'extended')
+                    result = review.run(Path(folder) / 'run', pages=3, rendered=mode == 'rendered_fallback', extended=mode == 'extended', artsets=mode == 'artsets')
             if drift:
                 assert not result['completed'] and result['pair_captured']
                 assert result['counts']['product_requests'] == 2
@@ -64,6 +64,11 @@ def check():
                 assert len(result['pagination_gaps']) == 2
                 assert result['counts']['listing_requests'] == 4
                 results.append('Reported extra pages without next controls leave expanded scope incomplete')
+            elif mode == 'artsets':
+                assert result['completed'] and len(result['accepted']) == 5
+                assert result['counts']['product_requests'] == 5 and result['counts']['listing_requests'] == 1
+                assert result['limits'] == {'product_requests': 6, 'listing_requests': 1, 'seconds': 180}
+                results.append('ArtSets profile bounded to5targets/onepage/180seconds plus one diagnostic re-fetch')
             elif mode == 'extended':
                 assert result['completed'] and len(result['accepted']) == 70
                 assert result['counts']['product_requests'] == 70
@@ -77,7 +82,8 @@ def check():
                 assert result['counts']['product_requests'] == 57
                 assert len(result['accepted']) == 57
                 results.append('Synthetic paginated orchestration respects request limits')
-    path = Path('evidence/corrected-plan-20261025/step3-review/drift-pagination-checks.json')
+    path = Path('evidence/corrected-plan-20261025/art-product-test/offline-checks.json')
+    path.parent.mkdir(exist_ok=True)
     path.write_text(json.dumps({'mode': 'Offline synthetic orchestration only; not real drift evidence',
                                'passed': True, 'checks': results}, indent=2) + '\n')
     print(json.dumps({'passed': True, 'checks': len(results), 'live_requests': 0}))
