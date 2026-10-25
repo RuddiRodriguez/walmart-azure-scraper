@@ -40,12 +40,13 @@
     },
     {
       "request": "Smallest transport/session change and explicit/silent drift detection",
-      "status": "Corrected proposal reviewed; listing safety gap verified offline; transport remedy unproven",
+      "status": "Listing safety gate implemented and checked offline; transport remedy unproven",
       "evidence": [
         "evidence/diagnostic-20261025/step3-results/summary.json",
         "evidence/diagnostic-20261025/step2-offline-checks.json",
         "docs/CORRECTED_STEP3_PROPOSAL.md",
-        "evidence/corrected-plan-20261025/step3-review/listing-guard-review.json"
+        "evidence/corrected-plan-20261025/step3-review/listing-guard-review.json",
+        "evidence/corrected-plan-20261025/step3-review/implementation-checks.json"
       ],
       "completion_gate": "Single supported change; reject wrong/missing/contradictory response context; evidence required before claiming improvement"
     },
@@ -86,7 +87,7 @@
     },
     {
       "request": "Final-version live interruption/resume",
-      "status": "Passed for current code in recorded bounded config only",
+      "status": "Open for changed collector version; earlier bounded live recovery remains historical",
       "evidence": [
         "evidence/diagnostic-20261025/step4-recovery/hard-recovery.json",
         "evidence/diagnostic-20261025/step4-recovery/review.json"

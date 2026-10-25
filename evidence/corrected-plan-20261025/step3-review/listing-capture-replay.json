@@ -1,0 +1,27 @@
+{
+  "mode": "Offline replay of four previously collected live listing bodies; no new live requests",
+  "scrape_sha256": "ac43589987b1811f0b707f24eb1c1556d978b72f12a630caee784e7e50740e47",
+  "passed": true,
+  "responses": [
+    {
+      "sequence": 1,
+      "body_sha256": "d94c720a842afcfee53b66193a29040afd5ee312b01402b41dd7cec6b5f8339f",
+      "passed": true
+    },
+    {
+      "sequence": 8,
+      "body_sha256": "b40e5152f4919c3ee7e7092eb46149e372d9d00d80abd3ec2dd6e5919adbcf38",
+      "passed": true
+    },
+    {
+      "sequence": 14,
+      "body_sha256": "3cbd8c2c28e928ff45d19779524b90c7fa6b1b58851a500f66f47f6a81221544",
+      "passed": true
+    },
+    {
+      "sequence": 17,
+      "body_sha256": "1347a9d2c046007db8d43c63c55e00bc96bf25d62d1e007f3fc10b4d303e1395",
+      "passed": true
+    }
+  ]
+}

@@ -5,6 +5,7 @@ from collections import Counter
 import fcntl
 import hashlib
 import json
+import re
 import time
 from datetime import datetime, timezone
 from pathlib import Path
@@ -39,10 +40,18 @@ def next_page_url(soup, current_url, search=None):
     return page_url(urlunsplit((parts.scheme, parts.netloc, parts.path, urlencode(query), '')))
 
 
-def verify_listing_store(search, store):
+def verify_listing_store(search, store, require_context=True):
     props = ((search or {}).get('paginationV2') or {}).get('pageProperties') or {}
-    if props.get('stores') and str(props['stores']) != str(store['id']):
+    actual_store = str(props.get('stores') or '')
+    intents = set(re.findall(r'fulfillment_method:([^|,;\s]+)', str(props.get('facet') or '')))
+    if actual_store and actual_store != str(store['id']):
         raise ValueError('Location mismatch in primary listing store context')
+    if intents and intents != {'Pickup'}:
+        raise ValueError('Location mismatch in primary listing fulfillment context')
+    verified = actual_store == str(store['id']) and intents == {'Pickup'}
+    if require_context and not verified:
+        raise ValueError('Location mismatch: primary listing store/Pickup context missing')
+    return verified
 
 
 def run(args):
@@ -190,7 +199,9 @@ def run(args):
                 source = hashlib.sha256(url.encode()).hexdigest()[:20] + '.html'
                 (output / 'sources' / source).write_text(str(soup))
                 candidates, rejected, search = listing_candidates(soup, category, store)
-                verify_listing_store(search, store)
+                verified = verify_listing_store(search, store, require_context=bool(candidates))
+                log('listing_context', verified=verified, candidates=len(candidates),
+                    reason='matching_store_pickup' if verified else 'no_candidates_context_unverified')
                 atomic_json(output / 'sources' / (source + '.listing.json'), {'category': category, 'url': url, 'rejected': rejected, 'candidate_ids': [c['item_id'] for c in candidates]})
                 unresolved = [r for r in rejected if r['reason'] in ['not_rendered', 'missing_listing_fields', 'unexpected_product_url']]
                 if unresolved:

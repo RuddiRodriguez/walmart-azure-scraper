@@ -1,0 +1,17 @@
+{
+  "mode": "Offline synthetic unit and crawler integration checks; zero live requests",
+  "passed": true,
+  "checks": [
+    "correct",
+    "wrong_store",
+    "missing_store",
+    "missing_pickup",
+    "shipping",
+    "conflicting_intents",
+    "pickup_prefix_is_not_pickup",
+    "other_facets",
+    "navigation_without_context_not_price_verified",
+    "unverified_candidates_never_queued_or_fetched",
+    "navigation_children_preserved"
+  ]
+}

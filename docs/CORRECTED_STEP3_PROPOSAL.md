@@ -40,3 +40,7 @@ Do not equate unavailable with wrong-store: retain correctly identified local un
 5. Real offers, full uncapped coverage and repeated complete collection remain open. Existing bounded interruption/resume does not establish full/default/Azure recovery. Azure access remains ungranted.
 
 Step3 review/proposal is complete. Implementation and transport validation are not complete. No client message sent.
+
+## Implementation follow-up
+
+The proposed candidate listing gate is now implemented in scrape.py. Navigation-only pages retain discovery and log unverified context; explicit conflicting context still stops. Eleven focused synthetic/integration checks, seven unavailable/checkpoint/last-good regressions, ten capture checks and offline replay of four previously captured live listing bodies passed. No new live collection or transport change. Complete results and current source hashes: evidence/corrected-plan-20261025/step3-review/implementation-checks.json. This change invalidates reuse of earlier live recovery as final-version proof; that result remains historical bounded evidence. Store drift and raw-pair requirements remain open.
