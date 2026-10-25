@@ -1,0 +1,9 @@
+{
+  "mode": "Offline synthetic comparison, no live requests",
+  "passed": true,
+  "checks": [
+    "Distinct sample overlap and membership",
+    "Known prices compared without treating blanks as zero",
+    "Source unavailability changes separated"
+  ]
+}
