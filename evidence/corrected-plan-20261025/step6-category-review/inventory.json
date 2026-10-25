@@ -1,0 +1,102 @@
+{
+  "mode": "Offline required-category inventory; product counts are not coverage proof",
+  "required_categories": 11,
+  "original_comparison": {
+    "original_csv_available": true,
+    "original_sha256": "65127cf3cd48f967ea3db0c4dd2be67de3f2ac1f6b60aef406c0778c999f3640",
+    "original_rows": 11,
+    "same_category_urls": true
+  },
+  "default_page_safety_cap": 20000,
+  "matrix": [
+    {
+      "category": "Food",
+      "required_url": "https://www.walmart.com/cp/food/976759",
+      "required_scope": "Category + ALL subcategories",
+      "historical500_products": 36,
+      "recent67_products": 2,
+      "full_coverage_status": "Open: no uncapped queue-exhaustion proof"
+    },
+    {
+      "category": "Household Essentials",
+      "required_url": "https://www.walmart.com/cp/household-essentials/1115193",
+      "required_scope": "Category + ALL subcategories",
+      "historical500_products": 54,
+      "recent67_products": 6,
+      "full_coverage_status": "Open: no uncapped queue-exhaustion proof"
+    },
+    {
+      "category": "Personal Care",
+      "required_url": "https://www.walmart.com/cp/personal-care/1005862",
+      "required_scope": "Category + ALL subcategories",
+      "historical500_products": 49,
+      "recent67_products": 0,
+      "full_coverage_status": "Open: no uncapped queue-exhaustion proof"
+    },
+    {
+      "category": "Beauty",
+      "required_url": "https://www.walmart.com/cp/beauty/1085666",
+      "required_scope": "Category + ALL subcategories",
+      "historical500_products": 55,
+      "recent67_products": 0,
+      "full_coverage_status": "Open: no uncapped queue-exhaustion proof"
+    },
+    {
+      "category": "Diapering",
+      "required_url": "https://www.walmart.com/browse/diapering/5427_486190",
+      "required_scope": "Category + ALL subcategories",
+      "historical500_products": 34,
+      "recent67_products": 32,
+      "full_coverage_status": "Open: no uncapped queue-exhaustion proof"
+    },
+    {
+      "category": "Feeding",
+      "required_url": "https://www.walmart.com/cp/feeding/133283",
+      "required_scope": "Category + ALL subcategories",
+      "historical500_products": 46,
+      "recent67_products": 0,
+      "full_coverage_status": "Open: no uncapped queue-exhaustion proof"
+    },
+    {
+      "category": "Health & Wellness",
+      "required_url": "https://www.walmart.com/cp/health/976760",
+      "required_scope": "Category + ALL subcategories",
+      "historical500_products": 52,
+      "recent67_products": 0,
+      "full_coverage_status": "Open: no uncapped queue-exhaustion proof"
+    },
+    {
+      "category": "Pets",
+      "required_url": "https://www.walmart.com/cp/pets/5440",
+      "required_scope": "Category + ALL subcategories",
+      "historical500_products": 54,
+      "recent67_products": 0,
+      "full_coverage_status": "Open: no uncapped queue-exhaustion proof"
+    },
+    {
+      "category": "Balloons",
+      "required_url": "https://www.walmart.com/browse/party-occasions/balloons/2637_1042319_1212898_3956207",
+      "required_scope": "Category + ALL subcategories",
+      "historical500_products": 28,
+      "recent67_products": 27,
+      "full_coverage_status": "Open: no uncapped queue-exhaustion proof"
+    },
+    {
+      "category": "Art Supplies",
+      "required_url": "https://www.walmart.com/cp/art-supplies/5899871",
+      "required_scope": "Category + ALL subcategories",
+      "historical500_products": 40,
+      "recent67_products": 0,
+      "full_coverage_status": "Open: no uncapped queue-exhaustion proof"
+    },
+    {
+      "category": "Office Supplies",
+      "required_url": "https://www.walmart.com/cp/office-supplies/1229749",
+      "required_scope": "Category + ALL subcategories",
+      "historical500_products": 52,
+      "recent67_products": 0,
+      "full_coverage_status": "Open: no uncapped queue-exhaustion proof"
+    }
+  ],
+  "discovery_limit": "Existing /cp/ landing-link discovery permits direct landing links without ancestry proof; discovered links require scope review, not automatic full-coverage claims."
+}
