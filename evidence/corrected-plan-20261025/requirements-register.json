@@ -85,10 +85,11 @@
     },
     {
       "request": "Full uncapped coverage",
-      "status": "Open",
+      "status": "Open: eleven-category source inventory matched; seven roots inspected,680unique discovered URLs unvisited; no reviewed queue exhaustion",
       "evidence": [
         "config/categories.csv",
-        "config/stores.json"
+        "config/stores.json",
+        "evidence/corrected-plan-20261025/step6-category-review/summary.json"
       ],
       "completion_gate": "Every required category/subcategory/page accounted for; queue exhausted with exclusions justified; blocked/stopped/truncated run remains incomplete"
     },

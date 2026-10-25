@@ -39,3 +39,14 @@ Zero genuine qualifying volume/digital offers found. Observed promotion type was
 which is excluded. This does not establish offers are absent store-wide. Requirement remains OPEN;
 missing wrong/correct raw pair also OPEN. Evidence: evidence/corrected-plan-20261025/step5-live-offers/.
 No further offer run queued, no client contact, production publication or Azure execution.
+
+## Step6 coverage review and bounded roots
+
+All11configured category names/URLs match supplied CSV. Seven previously unsampled roots reviewed
+in150.574seconds;9complete response hashes and7native snapshot hashes verified.683link entries
+represent680unique discovered URLs, all unvisited by this root-only test. No direct cross-link to
+another required root found; independent /cp/ ancestry/scope still needs review. None of these
+navigation-only roots established local-price response context; no root prices exported. Full
+uncapped coverage remains OPEN pending scope review and genuine queue exhaustion without hitting
+safety limits. Raw wrong/correct pair and genuine offers remain OPEN. No further job queued.
+Evidence: evidence/corrected-plan-20261025/step6-category-review/.
