@@ -1,0 +1,46 @@
+{
+  "mode": "One bounded live descendant review plus offline source verification; no product-detail collection",
+  "source_commit": "93e6feb16ef70e380c673c213e1238370f69a10d",
+  "source_hashes": {
+    "review_category_coverage.py": "64974a52f12b27901dded5da458a97aebb67e5df72ce689840e543bb4670e8bf",
+    "scrape.py": "ac43589987b1811f0b707f24eb1c1556d978b72f12a630caee784e7e50740e47",
+    "extract.py": "e252ee14a9e66c9be33220a014984e161192651759c9619202ecf73c39242605",
+    "browser.py": "2b46d80e5b5edd1b75c7cbf36d460d96da91cfd218e0b1dfa309dcc3459cec24",
+    "config/categories.csv": "65127cf3cd48f967ea3db0c4dd2be67de3f2ac1f6b60aef406c0778c999f3640"
+  },
+  "started_utc": "2026-10-25T20:09:33.026489+00:00",
+  "seconds": 148.48,
+  "counts": {
+    "product_requests": 2,
+    "listing_requests": 7,
+    "sequence": 9,
+    "body_bytes": 8826444
+  },
+  "limits": {
+    "product_requests": 2,
+    "listing_requests": 7,
+    "seconds": 600
+  },
+  "completed_attempt": true,
+  "pages_reviewed": 7,
+  "body_hashes_verified": 9,
+  "native_snapshot_hashes_verified": 7,
+  "all_listing_store_pickup_verified": true,
+  "all_returned_url_category_ids_matched": true,
+  "visible_candidate_count": 177,
+  "product_details_collected": 0,
+  "discovered_link_occurrences_not_visited": 76,
+  "unique_discovered_urls_not_visited": 76,
+  "additional_urls_beyond_original680": 61,
+  "full_coverage_complete": false,
+  "raw_wrong_correct_pair_status": "Open",
+  "genuine_offers_status": "Open",
+  "limitations": [
+    "Selected seven ancestry-supported URLs only; no recursive or uncapped category coverage.",
+    "Visible candidates not validated product records; control fetches do not validate candidate prices.",
+    "80original independent landing entries unresolved and broader/root aliases not descendant proof.",
+    "New descendant links recorded but not crawled or fully scope-reviewed.",
+    "Original Fetch bodies and unreviewed sharing drafts/native DOM private.",
+    "No publication, paid service, client contact or Azure."
+  ]
+}

@@ -50,3 +50,16 @@ navigation-only roots established local-price response context; no root prices e
 uncapped coverage remains OPEN pending scope review and genuine queue exhaustion without hitting
 safety limits. Raw wrong/correct pair and genuine offers remain OPEN. No further job queued.
 Evidence: evidence/corrected-plan-20261025/step6-category-review/.
+
+##680URL scope audit and descendant test
+
+All680unique URLs reviewed as683category-link associations:596supported by parent IDs,80unresolved
+independent landing entries,6root aliases and1broader ancestor. Original native source anchors/hashes
+verified. Unresolved links retained, not counted as completed or silently excluded.
+
+One bounded test then visited seven supported descendants in148.48seconds. All7listing responses
+reported100/Pickup and returned URL category IDs matched requested IDs.9body and7snapshot hashes
+verified.177visible candidates are not validated products: no candidate details fetched.76more link
+entries recorded, including61URLs absent from original680; all remain unvisited by this test. Full
+coverage, missing wrong/correct pair and genuine offers remain OPEN. No job running or client contact.
+Evidence: evidence/corrected-plan-20261025/step6-link-scope/.

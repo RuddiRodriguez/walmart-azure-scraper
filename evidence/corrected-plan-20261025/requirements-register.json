@@ -85,11 +85,13 @@
     },
     {
       "request": "Full uncapped coverage",
-      "status": "Open: eleven-category source inventory matched; seven roots inspected,680unique discovered URLs unvisited; no reviewed queue exhaustion",
+      "status": "Open:680URLs scope-reviewed,80category-link entries unresolved; seven supported descendants inspected, queue not exhausted",
       "evidence": [
         "config/categories.csv",
         "config/stores.json",
-        "evidence/corrected-plan-20261025/step6-category-review/summary.json"
+        "evidence/corrected-plan-20261025/step6-category-review/summary.json",
+        "evidence/corrected-plan-20261025/step6-link-scope/summary.json",
+        "evidence/corrected-plan-20261025/step6-link-scope/live-summary.json"
       ],
       "completion_gate": "Every required category/subcategory/page accounted for; queue exhausted with exclusions justified; blocked/stopped/truncated run remains incomplete"
     },
