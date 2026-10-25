@@ -1,0 +1,10 @@
+{
+  "mode": "Offline synthetic root discovery; zero live requests",
+  "passed": true,
+  "checks": [
+    "Navigation-only root retains child and excluded-link accounting without visiting children",
+    "Wrong-store control stops before root visits; unvisited roots accounted for",
+    "Supported landing alias admitted with observed descendant ID proof",
+    "Landing ID differing from supported descendant rejected before browser launch"
+  ]
+}

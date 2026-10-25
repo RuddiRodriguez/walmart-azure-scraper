@@ -1,0 +1,58 @@
+[
+  {
+    "category": "Personal Care",
+    "url": "https://www.walmart.com/cp/bath-body/1071969",
+    "required_root": "https://www.walmart.com/cp/personal-care/1005862",
+    "scope_evidence_url": "https://www.walmart.com/browse/personal-care/1005862_1071969",
+    "source_snapshot_sha256": "518fca7a4f356701d2d27829bbee6fc25fd93883564263f0e377c33de802cf01",
+    "reason": "Observed landing ID matches observed descendant leaf"
+  },
+  {
+    "category": "Beauty",
+    "url": "https://www.walmart.com/cp/makeup/1007040",
+    "required_root": "https://www.walmart.com/cp/beauty/1085666",
+    "scope_evidence_url": "https://www.walmart.com/browse/beauty/makeup/1085666_1007040",
+    "source_snapshot_sha256": "85803e031d20ef6574d9b09bb20ad7d0d8bfb327c40b5e681104f490771ed5e2",
+    "reason": "Observed landing ID matches observed descendant leaf"
+  },
+  {
+    "category": "Feeding",
+    "url": "https://www.walmart.com/browse/feeding/baby-bowls/5427_133283_6299622",
+    "required_root": "https://www.walmart.com/cp/feeding/133283",
+    "scope_evidence_url": "https://www.walmart.com/browse/feeding/baby-bowls/5427_133283_6299622",
+    "source_snapshot_sha256": "79cbb2b5d759c649accaf044a78183adcf5f6c193825076f5465faac07237012",
+    "reason": "Observed explicit descendant ID ancestry"
+  },
+  {
+    "category": "Health & Wellness",
+    "url": "https://www.walmart.com/cp/pain-management/6972993",
+    "required_root": "https://www.walmart.com/cp/health/976760",
+    "scope_evidence_url": "https://www.walmart.com/browse/health/pain-relievers/976760_6972993",
+    "source_snapshot_sha256": "bd181b80e28b9edee264bfcd3e80a7d2554ea74319d040b4bc761c3f77d2084a",
+    "reason": "Observed landing ID matches observed descendant leaf"
+  },
+  {
+    "category": "Pets",
+    "url": "https://www.walmart.com/cp/dogs/202072",
+    "required_root": "https://www.walmart.com/cp/pets/5440",
+    "scope_evidence_url": "https://www.walmart.com/browse/pets/dog-food-and-treats/5440_202072",
+    "source_snapshot_sha256": "6515f84869cb750f01e8e0d7112f5ec5f24f4ea8c7e65921c58a0359f2b140ef",
+    "reason": "Observed landing ID matches observed descendant leaf"
+  },
+  {
+    "category": "Art Supplies",
+    "url": "https://www.walmart.com/browse/arts-crafts-sewing/art-aprons/1334134_5899871_4519281",
+    "required_root": "https://www.walmart.com/cp/art-supplies/5899871",
+    "scope_evidence_url": "https://www.walmart.com/browse/arts-crafts-sewing/art-aprons/1334134_5899871_4519281",
+    "source_snapshot_sha256": "e3bbe4e264456e9ba5bd790ab305016c921def195fed15caa4a9be01a29b4b47",
+    "reason": "Observed explicit descendant ID ancestry"
+  },
+  {
+    "category": "Office Supplies",
+    "url": "https://www.walmart.com/browse/office-supplies/whiteboards-dry-erase-boards/1229749_1565348",
+    "required_root": "https://www.walmart.com/cp/office-supplies/1229749",
+    "scope_evidence_url": "https://www.walmart.com/browse/office-supplies/whiteboards-dry-erase-boards/1229749_1565348",
+    "source_snapshot_sha256": "721e45aeff516612d30c0435f89e9653c8f4974521ec2113c08f295797428e56",
+    "reason": "Observed explicit descendant ID ancestry"
+  }
+]

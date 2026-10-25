@@ -10,6 +10,7 @@ import subprocess
 import time
 from datetime import datetime, timezone
 from pathlib import Path
+from urllib.parse import urlsplit
 
 from bs4 import BeautifulSoup
 
@@ -38,8 +39,19 @@ def review(output, plan=None):
         raise ValueError('Coverage review requires one to seven distinct categories')
     for case in cases:
         required = next(r for r in roots if r['Category (Auto)'] == case['category'])
-        if plan and (not case['url'].startswith('https://www.walmart.com/browse/') or category_id(required['URL']) not in category_id(case['url']).split('_')):
-            raise ValueError('Selected child must have explicit required-root ancestry')
+        if plan:
+            parts = urlsplit(case['url'])
+            proof = case.get('scope_evidence_url') or case['url']
+            proof_parts = urlsplit(proof)
+            ids = category_id(proof).split('_')
+            supported = (parts.scheme == 'https' and parts.netloc == 'www.walmart.com'
+                         and parts.path.startswith(('/cp/', '/browse/'))
+                         and proof_parts.scheme == 'https' and proof_parts.netloc == 'www.walmart.com'
+                         and proof_parts.path.startswith('/browse/')
+                         and category_id(required['URL']) in ids[:-1]
+                         and category_id(case['url']).split('_')[-1] == ids[-1])
+            if not supported:
+                raise ValueError('Selected page requires matching observed descendant ID evidence')
     state = dict(started=time.monotonic(), limits=dict(product_requests=2, listing_requests=7, seconds=600),
                  product_requests=0, listing_requests=0, sequence=0, body_bytes=0)
     result = dict(mode='Live bounded category-root discovery only; no child crawl or publication',

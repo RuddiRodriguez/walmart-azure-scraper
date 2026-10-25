@@ -15,7 +15,7 @@ def check():
         '<a href="/browse/pets/dogs/5440_202072">Dogs</a>'
         '<a href="/browse/pets/farm-animals/5440_123">Farm Animals</a></main>')
     checks = []
-    for wrong in [False, True]:
+    for wrong, alias in [(False, False), (True, False), (False, True)]:
         counts = {'product': 0, 'listing': 0}
 
         def fetch(sb, url, settings, capture=None):
@@ -35,12 +35,16 @@ def check():
         browser = SimpleNamespace(scroll_down=lambda _: None, sleep=lambda _: None,
                                   get_page_source=lambda: html, quit=lambda: None)
         with tempfile.TemporaryDirectory(dir='data') as folder:
+            plan = None
+            if alias:
+                plan = Path(folder) / 'plan.json'
+                plan.write_text(json.dumps([{'category': 'Pets', 'url': 'https://www.walmart.com/cp/dogs/202072', 'scope_evidence_url': 'https://www.walmart.com/browse/pets/dogs/5440_202072'}]))
             with patch.object(coverage, 'REVIEW', ['Pets']), \
                  patch.object(coverage, 'open_browser', return_value=browser), \
                  patch.object(coverage, 'select_store'), patch.object(coverage, 'verify_banner'), \
                  patch.object(coverage, 'navigate', side_effect=lambda *a: BeautifulSoup(html, 'html.parser')), \
                  patch.object(coverage, 'fetch_product', side_effect=fetch):
-                coverage.review(Path(folder) / 'run')
+                coverage.review(Path(folder) / 'run', plan)
             result = json.loads((Path(folder) / 'run/report.json').read_text())
             assert result['full_coverage_complete'] is False
             if wrong:
@@ -53,8 +57,19 @@ def check():
                 assert root['child_urls_not_visited'] == 1
                 assert any(d['reason'] == 'brief_exclusion' for d in root['decisions'])
                 assert root['native_context_verified'] is False
-                checks.append('Navigation-only root retains child and excluded-link accounting without visiting children')
-    out = Path('evidence/corrected-plan-20261025/step6-category-review')
+                checks.append('Supported landing alias admitted with observed descendant ID proof' if alias else 'Navigation-only root retains child and excluded-link accounting without visiting children')
+    with tempfile.TemporaryDirectory(dir='data') as folder:
+        plan = Path(folder) / 'bad-plan.json'
+        plan.write_text(json.dumps([{'category': 'Pets', 'url': 'https://www.walmart.com/cp/other/999',
+                                     'scope_evidence_url': 'https://www.walmart.com/browse/pets/dogs/5440_202072'}]))
+        try:
+            coverage.review(Path(folder) / 'run', plan)
+        except ValueError as error:
+            assert 'matching observed' in str(error)
+        else:
+            raise AssertionError('Mismatched landing alias admitted')
+        checks.append('Landing ID differing from supported descendant rejected before browser launch')
+    out = Path('evidence/corrected-plan-20261025/step6-remaining-scope')
     out.mkdir(exist_ok=True)
     (out/'offline-checks.json').write_text(json.dumps({'mode': 'Offline synthetic root discovery; zero live requests',
                                                      'passed': True, 'checks': checks}, indent=2) + '\n')
