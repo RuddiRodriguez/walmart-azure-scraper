@@ -1,0 +1,13 @@
+{
+  "mode": "Offline synthetic transport, zero live requests",
+  "passed": true,
+  "checks": [
+    "Cross-category target reached; duplicate excluded; actual schema validation passed",
+    "Wrong response excluded; one corrected diagnostic retry never rehabilitates run",
+    "Synthetic empty_page stops safely with partial evidence",
+    "Synthetic budget stops safely with partial evidence",
+    "Synthetic original-body budget default enforced without large allocation",
+    "Synthetic original-body budget controlled enforced without large allocation",
+    "Synthetic original-body budget clamped enforced without large allocation"
+  ]
+}

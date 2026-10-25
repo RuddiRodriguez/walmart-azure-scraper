@@ -77,7 +77,7 @@ def make_capture(output, session, state, kind='product'):
         elif event == 'response':
             result = data['result']
             body = base64.b64decode(result['body_base64'], validate=True)
-            if len(body) > 10 * 2**20 or state['body_bytes'] + len(body) > 250 * 2**20:
+            if len(body) > 10 * 2**20 or state['body_bytes'] + len(body) > min(state.get('body_limit_bytes', 250 * 2**20), 1024 * 2**20):
                 raise RuntimeError('Diagnostic saved-body budget reached')
             state['body_bytes'] += len(body)
             path = folder / (record['id'] + '.body')
