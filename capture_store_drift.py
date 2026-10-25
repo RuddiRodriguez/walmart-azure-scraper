@@ -8,6 +8,8 @@ import time
 from datetime import datetime, timezone
 from pathlib import Path
 
+from bs4 import BeautifulSoup
+
 from browser import open_browser, select_store, navigate, verify_banner, fetch_product, store_snapshot
 from diagnostic_capture import make_capture, safe_url
 from extract import listing_candidates, next_data, product_record
@@ -25,7 +27,28 @@ CATEGORIES = [
 ]
 
 
-def run(output, pages=1, rendered=False, extended=False):
+def listing_from_rendered(snapshot, fetched, category, store):
+    """Match visible native cards against the separately captured listing response."""
+    native = BeautifulSoup(Path(snapshot).read_bytes(), 'html.parser')
+    try:
+        primary = next_data(native).get('searchResult')
+        captured = next_data(fetched).get('searchResult')
+        verify_listing_store(primary, store)
+        verify_listing_store(captured, store)
+        native_page = (primary['paginationV2'].get('pageProperties') or {}).get('page', 1)
+        fetched_page = (captured['paginationV2'].get('pageProperties') or {}).get('page', 1)
+        if str(native_page) != str(fetched_page):
+            raise ValueError('Rendered and captured listing page identifiers differ')
+        # Existing extractor now uses raw-response item IDs/flags with visible cards.
+        native.select_one('#__NEXT_DATA__').string = fetched.select_one('#__NEXT_DATA__').string
+        return listing_candidates(native, category, store)
+    finally:
+        native.decompose()
+
+
+def run(output, pages=1, rendered=False, extended=False, rendered_cards=False):
+    if rendered_cards and not rendered:
+        raise ValueError("Rendered candidates require rendered pagination snapshots")
     if pages not in [1, 3]:
         raise ValueError("Use one or three pages per large category")
     output = output.absolute()
@@ -40,7 +63,7 @@ def run(output, pages=1, rendered=False, extended=False):
     state = dict(started=time.monotonic(), limits=dict(product_requests=72 if extended else 60, listing_requests=20 if extended else 2 * pages + 2, seconds=1200),
                  product_requests=0, listing_requests=0, sequence=0, body_bytes=0)
     report = dict(started_utc=datetime.now(timezone.utc).isoformat(), completed=False,
-                  pair_captured=False, pagination_gaps=[], observations=[], accepted=[], category_visits=0,
+                  pair_captured=False, listings=[], rendered_candidates=rendered_cards, pagination_gaps=[], observations=[], accepted=[], category_visits=0,
                   pages_per_large_category=pages, rendered_pagination=rendered, extended=extended, target_product_ceiling=sum(c[2] for c in cases), limits=state['limits'], mode='Private live diagnostic; no production output',
                   source_hashes={p: hashlib.sha256(Path(p).read_bytes()).hexdigest()
                                  for p in ['capture_store_drift.py', 'browser.py', 'extract.py', 'diagnostic_capture.py', 'scrape.py', 'inspect_rendered_pagination.py']})
@@ -65,6 +88,7 @@ def run(output, pages=1, rendered=False, extended=False):
             context = product_context(product, store)
             row = dict(sequence=state['sequence'], diagnostic_only=diagnostic_only,
                        identity_matches=str(product.get('usItemId')) == candidate['item_id'],
+                       listing_sequence=candidate.get('listing_sequence'),
                        price_context=product.get('priceInfo'), **context)
             report['observations'].append(row)
             save()
@@ -120,7 +144,15 @@ def run(output, pages=1, rendered=False, extended=False):
                 page = fetch_product(sb, url, settings,
                                      capture=make_capture(output / 'captures', 'same-session', state, 'listing'))
                 try:
-                    candidates, rejected, search = listing_candidates(page, category, store)
+                    if rendered_cards:
+                        candidates, rejected, search = listing_from_rendered(
+                            output / f"rendered-{report['category_visits']}.html", page, category, store)
+                    else:
+                        candidates, rejected, search = listing_candidates(page, category, store)
+                    listing_sequence = state['sequence']
+                    report['listings'].append(dict(sequence=listing_sequence, category=category,
+                                                   candidate_ids=[c['item_id'] for c in candidates],
+                                                   rendered_snapshot=f"rendered-{report['category_visits']}.html" if rendered_cards else None))
                     props = ((search or {}).get('paginationV2') or {}).get('pageProperties') or {}
                     log('listing_context', sequence=state['sequence'], store=props.get('stores'),
                         facet=props.get('facet'), candidates=len(candidates), excluded=len(rejected))
@@ -139,6 +171,7 @@ def run(output, pages=1, rendered=False, extended=False):
                     selected.sort(key=lambda c: c['item_id'] != '857115210')
                 for candidate in selected[:remaining]:
                     seen.add(candidate['item_id'])
+                    candidate['listing_sequence'] = listing_sequence
                     observe(candidate)
                     remaining -= 1
                 save()
@@ -167,7 +200,8 @@ if __name__ == '__main__':
     parser.add_argument('--pages', type=int, choices=[1, 3], default=1)
     parser.add_argument('--rendered-pagination', action='store_true')
     parser.add_argument('--extended', action='store_true', help='One historical-length probe: up to70 targets/20 listings')
+    parser.add_argument('--rendered-candidates', action='store_true')
     args = parser.parse_args()
     os.umask(0o077)
-    result = run(args.output, args.pages, args.rendered_pagination, args.extended)
+    result = run(args.output, args.pages, args.rendered_pagination, args.extended, args.rendered_candidates)
     print(json.dumps({key: result.get(key) for key in ['completed', 'pair_captured', 'counts', 'seconds', 'error']}))

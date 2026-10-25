@@ -1,0 +1,10 @@
+{
+  "mode": "Offline synthetic cards and captured historical item fixture; zero live requests",
+  "passed": true,
+  "checks": [
+    "Rendered-only outsider excluded; accepted IDs belong to captured primary listing",
+    "Visible price retained for independent product-response comparison",
+    "Captured sponsored flag rejects otherwise visible native card",
+    "Wrong store and mismatched native/captured page rejected"
+  ]
+}
