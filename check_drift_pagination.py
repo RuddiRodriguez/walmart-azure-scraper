@@ -10,9 +10,9 @@ import capture_store_drift as review
 
 def check():
     results = []
-    for mode in ['normal', 'drift', 'pagination_gap']:
+    for mode in ['normal', 'drift', 'pagination_gap', 'rendered_fallback']:
         drift = mode == 'drift'
-        gap = mode == 'pagination_gap'
+        gap = mode in ['pagination_gap', 'rendered_fallback']
         counts = {'listings': 0, 'products': 0}
 
         def page():
@@ -43,6 +43,7 @@ def check():
                  patch.object(review, 'navigate', side_effect=lambda *a: page()), \
                  patch.object(review, 'verify_banner'), patch.object(review, 'verify_listing_store'), \
                  patch.object(review, 'next_page_url', side_effect=lambda p, url, search: None if gap else url + '?page=next'), \
+                 patch.object(review, 'rendered_next', return_value=('https://www.walmart.com/browse/test?page=2', {'page': 1})), \
                  patch.object(review, 'fetch_product', side_effect=fetch), \
                  patch.object(review, 'listing_candidates', side_effect=candidates), \
                  patch.object(review, 'next_data', return_value={'data': {'product': {'usItemId': 'synthetic'}}}), \
@@ -52,13 +53,13 @@ def check():
                 def data(*_):
                     return {'data': {'product': {'usItemId': counts['id']}}}
                 with patch.object(review, 'next_data', side_effect=data):
-                    result = review.run(Path(folder) / 'run', pages=3)
+                    result = review.run(Path(folder) / 'run', pages=3, rendered=mode == 'rendered_fallback')
             if drift:
                 assert not result['completed'] and result['pair_captured']
                 assert result['counts']['product_requests'] == 2
                 assert result['accepted'] == []
                 results.append('Synthetic wrong/correct pair stops invalid run; retry cannot publish')
-            elif gap:
+            elif mode == 'pagination_gap':
                 assert result['attempt_finished'] and not result['completed']
                 assert len(result['pagination_gaps']) == 2
                 assert result['counts']['listing_requests'] == 4

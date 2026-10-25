@@ -12,6 +12,7 @@ from browser import open_browser, select_store, navigate, verify_banner, fetch_p
 from diagnostic_capture import make_capture, safe_url
 from extract import listing_candidates, next_data, product_record
 from scrape import next_page_url, verify_listing_store
+from inspect_rendered_pagination import rendered_next
 from storage import atomic_json
 from trace_store_context import product_context
 
@@ -24,7 +25,7 @@ CATEGORIES = [
 ]
 
 
-def run(output, pages=1):
+def run(output, pages=1, rendered=False):
     if pages not in [1, 3]:
         raise ValueError("Use one or three pages per large category")
     output = output.absolute()
@@ -38,9 +39,9 @@ def run(output, pages=1):
                  product_requests=0, listing_requests=0, sequence=0, body_bytes=0)
     report = dict(started_utc=datetime.now(timezone.utc).isoformat(), completed=False,
                   pair_captured=False, pagination_gaps=[], observations=[], accepted=[], category_visits=0,
-                  pages_per_large_category=pages, limits=state['limits'], mode='Private live diagnostic; no production output',
+                  pages_per_large_category=pages, rendered_pagination=rendered, limits=state['limits'], mode='Private live diagnostic; no production output',
                   source_hashes={p: hashlib.sha256(Path(p).read_bytes()).hexdigest()
-                                 for p in ['capture_store_drift.py', 'browser.py', 'extract.py', 'diagnostic_capture.py']})
+                                 for p in ['capture_store_drift.py', 'browser.py', 'extract.py', 'diagnostic_capture.py', 'scrape.py', 'inspect_rendered_pagination.py']})
     sb = None
 
     def save():
@@ -107,6 +108,10 @@ def run(output, pages=1):
                 page = navigate(sb, url, settings, log)
                 try:
                     verify_banner(page, store)
+                    native_next, native_context = None, None
+                    if rendered:
+                        native_next, native_context = rendered_next(
+                            sb, url, store, output / f"rendered-{report['category_visits']}.html", log)
                 finally:
                     page.decompose()
                 page = fetch_product(sb, url, settings,
@@ -117,9 +122,11 @@ def run(output, pages=1):
                     log('listing_context', sequence=state['sequence'], store=props.get('stores'),
                         facet=props.get('facet'), candidates=len(candidates), excluded=len(rejected))
                     verify_listing_store(search, store)
-                    following = next_page_url(page, url, search)
+                    following = next_page_url(page, url, search) or native_next
                     pagination = (search or {}).get('paginationV2') or {}
                     current_page = int(props.get('page') or 1)
+                    if native_context and native_context['page'] != current_page:
+                        raise ValueError('Rendered and fetched listing page identifiers differ')
                     more_reported = current_page < int(pagination.get('maxPage') or 1)
                 finally:
                     page.decompose()
@@ -155,7 +162,8 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output', required=True, type=Path)
     parser.add_argument('--pages', type=int, choices=[1, 3], default=1)
+    parser.add_argument('--rendered-pagination', action='store_true')
     args = parser.parse_args()
     os.umask(0o077)
-    result = run(args.output, args.pages)
+    result = run(args.output, args.pages, args.rendered_pagination)
     print(json.dumps({key: result.get(key) for key in ['completed', 'pair_captured', 'counts', 'seconds', 'error']}))
