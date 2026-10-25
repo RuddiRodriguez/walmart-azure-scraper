@@ -1,0 +1,8 @@
+{
+  "mode": "Offline synthetic orchestration only; not real drift evidence",
+  "passed": true,
+  "checks": [
+    "Synthetic paginated orchestration respects request limits",
+    "Synthetic wrong/correct pair stops invalid run; retry cannot publish"
+  ]
+}
