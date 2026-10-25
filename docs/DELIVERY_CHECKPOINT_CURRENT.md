@@ -21,13 +21,15 @@ No client message or submission is authorized.
 - Actual complete wrong-store/corrected same-session response pair: now captured privately during
   controlled run6f9284b (product14898365, store3520/SHIPPING then100/PICKUP). Safe metadata and hashes
   published; privacy-reviewed sharing copies/access still pending. One re-fetch is not a proved remedy.
-  Original collection stopped at79valid partial rows and remains invalid for publication.
+  Original collection stopped at79valid partial rows and remains invalid for publication. A second
+  private pair was captured for51237368(store3081/SHIPPING then100/PICKUP). Both remain pending safe sharing review.
 - Genuine qualifying volume/digital offer examples: zero; credit/reward promotions excluded.
 - Full uncapped category scope and queue exhaustion: unproven.69prior associations and3new landing
   URLs remain uncertain; ArtAprons returns an empty HTTP200category payload, cause unproven.
 - Fresh500+final-version collection and repeated complete collection: not demonstrated. Exactly one
-  fresh-session continuation is running under the original aggregate limits/deadline; original79rows
-  stay separate. Ordinary failures are skipped once; unsafe context stops collection.
+  fresh-session continuation stopped at68accepted rows after a different store mismatch. Both
+  partial datasets stay separate; no fresh500success or third run. Ordinary failures are skipped once;
+  unsafe context stops collection. Outcome: evidence/controlled-collection-outcome-20261025.json.
 - Final/full-scope recovery and Azure execution: not demonstrated. Azure access ungranted.
 - Existing frozen ZIP predates latest changes; current repository/evidence commits are the current
   source. Refresh final package/manifest and unsent client message when delivery scope is frozen.

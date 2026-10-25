@@ -1,0 +1,127 @@
+{
+  "mode": "Offline audit of this fresh controlled live run; not uncapped coverage",
+  "source_commit": "2a32583283d5a14a57f29857e17836c344bf6044",
+  "source_hashes": {
+    "controlled_collection.py": "b6172b99f5c8d1cef300ddc30fa868e12ffca6d5d32d3b591107025e28563684",
+    "diagnostic_capture.py": "7aae043eed5e95efb2a1bf6de58af0dc93c1473d37ad4cfbe2748aa8c0268e65",
+    "capture_store_drift.py": "9ce534bfb7b887af0776fa18843dc19e162c397e3a6e7f844ffb97f5aa5bf6f7",
+    "scrape.py": "ac43589987b1811f0b707f24eb1c1556d978b72f12a630caee784e7e50740e47",
+    "browser.py": "2b46d80e5b5edd1b75c7cbf36d460d96da91cfd218e0b1dfa309dcc3459cec24",
+    "extract.py": "e252ee14a9e66c9be33220a014984e161192651759c9619202ecf73c39242605",
+    "storage.py": "2453aa318e9e59b37bcc85dd3a6b9c5d8b4cc7616368e4cbf01f41b054385c90",
+    "validate.py": "d316b2e14887bbc02b08a5b54af6fe7c5d340d1ad9b1f5819e242de39ec53ada"
+  },
+  "started_utc": "2026-10-25T21:19:22.216366+00:00",
+  "seconds": 292.568,
+  "counts": {
+    "product_requests": 71,
+    "listing_requests": 2,
+    "sequence": 73,
+    "body_bytes": 43344746
+  },
+  "accepted_records": 68,
+  "category_counts": {
+    "Food": 41,
+    "Household Essentials": 27
+  },
+  "page_successes": 2,
+  "page_failures": 0,
+  "rejected_product_reasons": {},
+  "request_error_types": {},
+  "wrong_store_observations": 1,
+  "diagnostic_refetches": 1,
+  "unavailable_successes": 1,
+  "handled_failures": [
+    {
+      "kind": "product",
+      "reason": "Store drift: entire collection invalid for publication",
+      "error_type": "ValueError",
+      "product_id": "51237368",
+      "category": "Household Essentials"
+    }
+  ],
+  "excluded_listing_or_product_reasons": {
+    "sponsored": 20,
+    "marketplace": 11,
+    "outside_category": 6,
+    "prior_wrong_store_product_quarantined": 1
+  },
+  "target_reached": false,
+  "completed_attempt": false,
+  "stop_reason": "Failure ceiling reached or unsafe context: Store drift: entire collection invalid for publication",
+  "captured_bodies_hash_verified": 73,
+  "native_snapshots_hash_verified": 2,
+  "source_replays": 68,
+  "accepted_evidence_passed": true,
+  "audit_errors": [],
+  "sample_validation": {
+    "passed": false,
+    "records": 68,
+    "errors": [
+      "Below minimum product count",
+      "Missing or thin category: Personal Care",
+      "Missing or thin category: Beauty",
+      "Missing or thin category: Diapering",
+      "Missing or thin category: Feeding",
+      "Missing or thin category: Health & Wellness",
+      "Missing or thin category: Pets",
+      "Missing or thin category: Balloons",
+      "Missing or thin category: Art Supplies",
+      "Missing or thin category: Office Supplies"
+    ],
+    "category_counts": {
+      "Food": 41,
+      "Household Essentials": 27
+    },
+    "duplicate_urls": 0,
+    "duplicate_product_ids": 0,
+    "field_nonempty_counts": {
+      "zipcode": 68,
+      "store_name": 68,
+      "store_location": 68,
+      "store_logo": 68,
+      "store_brand": 68,
+      "category": 68,
+      "sub_category": 68,
+      "product_title": 68,
+      "weight": 62,
+      "regular_price": 67,
+      "sale_price": 4,
+      "volume_deals_description": 0,
+      "volume_deals_price": 0,
+      "digital_deals_description": 0,
+      "digital_deals_price": 0,
+      "image_url": 68,
+      "url": 68,
+      "upc": 67,
+      "gupc": 0,
+      "ppm": 65,
+      "unit_price": 0,
+      "crawl_date": 68
+    },
+    "pending_pages": 0,
+    "pending_products": 0,
+    "products_needing_review": 0,
+    "retained_unavailable_records": 1
+  },
+  "sample_accepted": false,
+  "pair_captured_private": true,
+  "full_coverage_complete": false,
+  "pending_pages": {
+    "Food": 14,
+    "Household Essentials": 10,
+    "Personal Care": 2,
+    "Beauty": 2,
+    "Diapering": 1,
+    "Feeding": 2,
+    "Health & Wellness": 2,
+    "Pets": 2,
+    "Balloons": 1,
+    "Art Supplies": 2,
+    "Office Supplies": 2
+  },
+  "unattempted_candidate_count": 13,
+  "genuine_offers_requirement": "Open; this collection does not substitute for verified offer examples",
+  "raw_pair_requirement": "Open unless actual pair exists and privacy-reviewed evidence is prepared",
+  "scope_note": "Source-valid partial rows remain partial if run stopped. No historical data merged. No production pointer or client submission."
+}

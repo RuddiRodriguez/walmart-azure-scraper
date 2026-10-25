@@ -23,14 +23,16 @@
     },
     {
       "request": "Paired complete wrong-store response and corrected re-fetch",
-      "status": "Open: one67-product rendered-candidate probe reached historical length with no drift",
+      "status": "Two actual complete private pairs hash/context verified; privacy-reviewed sharing bodies/access pending, not marked complete",
       "evidence": [
         "docs/STEP1_BASELINE_20261025.md",
         "evidence/corrected-plan-20261025/step2-results/summary.json",
         "evidence/corrected-plan-20261025/paginated-drift-probe/summary.json",
         "evidence/corrected-plan-20261025/rendered-pagination/probe-summary.json",
         "evidence/corrected-plan-20261025/historical-length-probe/summary.json",
-        "evidence/corrected-plan-20261025/rendered-candidate-probe/summary.json"
+        "evidence/corrected-plan-20261025/rendered-candidate-probe/summary.json",
+        "evidence/controlled-500-20261025/raw-pair-metadata.json",
+        "evidence/controlled-500-continuation-20261025/raw-pair-metadata.json"
       ],
       "completion_gate": "Actual complete wrong and corrected bodies from documented sequence; reviewed redacted copies; hashes; no reconstructed data"
     },
@@ -85,7 +87,7 @@
     },
     {
       "request": "Full uncapped coverage",
-      "status": "Open: valid ArtSets page freshly verified; ArtAprons empty-category issue and unresolved scope/queue exhaustion remain",
+      "status": "Open: controlled506attempt and sole continuation stopped on store drift at79and68accepted rows, kept separate",
       "evidence": [
         "config/categories.csv",
         "config/stores.json",
@@ -97,7 +99,8 @@
         "evidence/corrected-plan-20261025/step6-followup-scope/summary.json",
         "evidence/corrected-plan-20261025/step6-followup-scope/live-summary.json",
         "evidence/corrected-plan-20261025/art-aprons-diagnostic/summary.json",
-        "evidence/corrected-plan-20261025/art-valid-route/summary.json"
+        "evidence/corrected-plan-20261025/art-valid-route/summary.json",
+        "evidence/controlled-collection-outcome-20261025.json"
       ],
       "completion_gate": "Every required category/subcategory/page accounted for; queue exhausted with exclusions justified; blocked/stopped/truncated run remains incomplete"
     },
@@ -114,9 +117,10 @@
     },
     {
       "request": "Repeated collection",
-      "status": "Open beyond short matched sample",
+      "status": "Open: two controlled attempts both stopped; not repeated complete collections",
       "evidence": [
-        "evidence/diagnostic-20261025/step3-results/summary.json"
+        "evidence/diagnostic-20261025/step3-results/summary.json",
+        "evidence/controlled-collection-outcome-20261025.json"
       ],
       "completion_gate": "Repeated complete collections with matched frozen code/config and store/count/price/duplicate/missing-field/runtime checks"
     },

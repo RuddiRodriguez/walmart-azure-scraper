@@ -1,0 +1,57 @@
+{
+  "mode": "Two separate controlled attempts; second is sole remaining-budget continuation, not an infinite retry loop",
+  "attempts": [
+    {
+      "evidence": "evidence/controlled-500-20261025",
+      "source_commit": "6f9284bfb698acfac62bc48106bb96bac37aa530",
+      "accepted_records": 79,
+      "category_counts": {
+        "Diapering": 31,
+        "Balloons": 27,
+        "Food": 2,
+        "Household Essentials": 19
+      },
+      "page_successes": 13,
+      "page_failures": 0,
+      "wrong_store_failures": 1,
+      "diagnostic_refetches": 1,
+      "source_replays": 79,
+      "captured_bodies_hash_verified": 95,
+      "sample_accepted": false,
+      "stop_reason": "Store drift: entire collection invalid for publication"
+    },
+    {
+      "evidence": "evidence/controlled-500-continuation-20261025",
+      "source_commit": "2a32583283d5a14a57f29857e17836c344bf6044",
+      "accepted_records": 68,
+      "category_counts": {
+        "Food": 41,
+        "Household Essentials": 27
+      },
+      "page_successes": 2,
+      "page_failures": 0,
+      "wrong_store_failures": 1,
+      "diagnostic_refetches": 1,
+      "source_replays": 68,
+      "captured_bodies_hash_verified": 73,
+      "sample_accepted": false,
+      "stop_reason": "Failure ceiling reached or unsafe context: Store drift: entire collection invalid for publication"
+    }
+  ],
+  "combined_counts_not_a_merged_dataset": {
+    "product_fetch_attempts": 153,
+    "listing_fetch_attempts": 15,
+    "wrong_store_failures": 2,
+    "real_ordinary_page_or_product_exceptions": 0,
+    "complete_bodies_hash_verified": 168
+  },
+  "fresh506_goal_achieved": false,
+  "datasets_merged": false,
+  "complete_raw_pairs_private": 2,
+  "raw_pair_requirement": "Private originals verified; sharing-body privacy review and access pending",
+  "genuine_offers_requirement": "Open",
+  "full_coverage_requirement": "Open",
+  "repeated_complete_collection": "Not achieved",
+  "third_run_started": false,
+  "client_contact": false
+}
