@@ -1,25 +1,27 @@
-# Acceptance record — current controlled collection
+# Acceptance record — current controlled collection and repeat
 
-Authoritative status:docs/REVIEW_STATUS.md and
-evidence/controlled-skip-invalid-20261025/summary.json. Earlier reports retain their original scope.
+Current evidence: docs/REVIEW_STATUS.md and
+evidence/controlled-skip-invalid-repeat-20261025/summary.json plus comparison.json.
+Earlier reports retain their original dates, versions and scopes.
 
 | Requirement | Evidence | Status |
 |---|---|---|
-|Actual500+genuine distinct products|Fresh506 JSON, source e90c5f0, independent506 record audit|Passed bounded sample|
-|All11required parent categories represented|12 to 80accepted records/category|Passed representation, not full coverage|
-|Store/Pickup/price/identity checks|506 source replays; initial/final controls passed|Passed sample checks|
-|Reject bad responses and continue|4 no-pickup/7 missing-listing-price rejections; source unchanged midrun|Observed live; store/identity rejection also tested offline|
-|Unavailable products retained|35actual local unavailable records with blank local prices|Passed recorded cases|
-|Missing values/schema/deduplication|Empty source values preserved; no invented UPC/weight/PPM;0 duplicate IDs/URLs|Passed current schema/sample rules|
-|Historical data separated|Historical500/33/67/79/68notmerged into fresh506|Maintained|
-|Raw wrong/correct response pair|2 actual complete pairs private; safe hashes/settings/context metadata public|Reviewed sharing bodies/access pending|
-|Smallest transport/session remedy|No prevention remedy proven; validation/filtering mitigation implemented|Open|
-|Genuine volume/digital offers|0 verified examples|Open|
-|Full uncapped category coverage|Bounded routes/queue only; uncertain links/ArtAprons remain|Open|
-|Repeated complete collection|Only one successful506 sample in this mode|Open|
-|Final-wrapper live recovery|Earlier3-product production-core recovery is separate|Open for this wrapper/scope|
-|Current version/instructions|Live source e90c5f0, plan, JSON, safe audit/checksums in repository|Current repo evidence; earlier ZIP historical|
-|Environment/request/runtime/cost bounds|Local Python/Chrome; no paid service; actual519product/control+18listing requests,2063.272 seconds|Documented; browser assets additional|
-|Azure|No approved access or execution|Open|
+| Actual 500+ genuine distinct products | Two separate 506-record JSON files; 506 source replays each | Passed bounded samples |
+| All 11 required parent categories represented | Both samples include every required category | Passed representation, not full coverage |
+| Store/Pickup/identity/price validation | Every accepted record source-audited; both runs' controls passed | Passed sample checks |
+| Reject invalid responses and continue | First: 4 no-pickup, 7 missing listing price. Repeat: 2 wrong-store, 4 no-pickup | Observed live; rejected rows never inserted/re-fetched |
+| Unavailable retention | 35 local unavailable records in each sample; blank local prices preserved | Passed recorded cases |
+| Schema/missing fields/duplicates | Missing source values stay blank; zero duplicate IDs/URLs in either sample | Passed current sample rules |
+| Bounded repeat with unchanged collection code/settings | Producer hashes, plan bytes, configs and versions matched | Passed requested bounded repeat |
+| Repeated full uncapped collection | Scope and queue exhaustion not established | Open |
+| Raw wrong/correct response pair | Two actual complete pairs private; safe hashes/settings metadata public | Reviewed sharing bodies/access pending |
+| Transport/session prevention remedy | Rejection/filtering mitigation works; cause/prevention unproven | Open |
+| Genuine volume/digital offers | Zero verified examples | Open |
+| Full uncapped category coverage | Uncertain landing links/ArtAprons and pending queues remain | Open |
+| Final-wrapper live recovery | Earlier three-product production-core proof is a separate scope | Open for this wrapper/scope |
+| Version/instructions/package | Current source/JSON/audits/plan/comparison in repo; older frozen ZIP historical | Repo evidence current; refreshed package pending |
+| Request/runtime/cost bounds | Both bounded runs within identical caps; no paid service, assets additional | Documented |
+| Azure | No approved access or execution | Open |
 
-No full production acceptance claimed. Private originals/redaction drafts remain unshared.
+No full production acceptance claimed. Complete original bodies, native DOM and unreviewed redaction
+copies remain private. No client messages or submissions sent.

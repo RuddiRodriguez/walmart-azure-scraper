@@ -3,7 +3,7 @@
 Goal: reviewable source and evidence against client requirements. More reviews expected; no
 additional exploratory collection/restart is queued. No client sending/submission authorized.
 
-## Latest verified delivery
+## First controlled sample (baseline)
 
 Fresh506 distinct products across all 11required categories, source e90c5f0, one2063.272second run.
 11 responses rejected (4 no local pickup,7 missing listing prices);0 processing errors,
@@ -31,3 +31,14 @@ still pending. Private originals/native DOM/session details never pushed.
 Older production-core3-product recovery proof retains its recorded source/config/scope. Current
 506 sample acceptance does not complete all project requirements. Run/audit instructions in
 CONTROLLED_COLLECTION.md. Missing source values remain empty; no UPC/weight/PPM/deal price invented.
+
+## Latest: bounded repeat completed
+
+Same producer hashes/settings/plan: repeat source 2ff5e20 produced506 validated records across all 11
+categories in 2048.379 seconds, versus 2063.272 seconds baseline.6rejections (2 wrong store,4 no pickup),
+0 processing errors/duplicates,35 unavailable retained.506 replays/533 body/19 snapshot hashes passed.
+468 common IDs,433 known-price pairs unchanged,1 matched product now locally unavailable.38 sample-only
+IDs each side are not product additions/deletions. Original baseline unchanged. Comparison/data in
+evidence/controlled-skip-invalid-repeat-20261025/. No job running; nothing sent to client.
+This closes requested bounded repeat only. Repeated full uncapped collection/recovery/Azure/offers
+and reviewed pair sharing still open. No upstream store-drift remedy claim.

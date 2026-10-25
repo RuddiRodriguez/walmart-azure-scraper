@@ -59,13 +59,14 @@
     },
     {
       "request": "Exclude invalid local prices; preserve unavailable products and last good output",
-      "status": "Fresh sample rejected4without local pickup and7with missing listing price;35local unavailable retained blank prices; production pointers untouched",
+      "status": "Repeat rejected2wrong-store/4no-pickup responses and continued;506accepted rows source-verified,35unavailable retained; baseline unchanged",
       "evidence": [
         "evidence/diagnostic-20261025/step2-offline-checks.json",
         "evidence/observed-unavailable-replay.json",
         "evidence/corrected-plan-20261025/rendered-candidate-probe/source-contexts.json",
         "evidence/corrected-plan-20261025/step4-safeguards/summary.json",
-        "evidence/controlled-skip-invalid-20261025/summary.json"
+        "evidence/controlled-skip-invalid-20261025/summary.json",
+        "evidence/controlled-skip-invalid-repeat-20261025/summary.json"
       ],
       "completion_gate": "Invalid response cannot publish; supported local unavailable products retained; prior good data/pointer survives. Current matched sample had no unavailable items"
     },
@@ -90,7 +91,7 @@
     },
     {
       "request": "Full uncapped coverage",
-      "status": "Open full scope/queue exhaustion; fresh506distinct sample acrossall11parent categories achieved",
+      "status": "Open: two506bounded samples cover all11parent labels, not complete subcategory/page queues",
       "evidence": [
         "config/categories.csv",
         "config/stores.json",
@@ -121,21 +122,24 @@
     },
     {
       "request": "Repeated collection",
-      "status": "Open: one successful fresh506sample with new reject-and-continue mode, not repeated complete collection",
+      "status": "Requested bounded repeat passed: two506validated samples, identical producer/settings/plan; repeated full uncapped collection remains open",
       "evidence": [
         "evidence/diagnostic-20261025/step3-results/summary.json",
         "evidence/controlled-collection-outcome-20261025.json",
-        "evidence/controlled-skip-invalid-20261025/summary.json"
+        "evidence/controlled-skip-invalid-20261025/summary.json",
+        "evidence/controlled-skip-invalid-repeat-20261025/summary.json",
+        "evidence/controlled-skip-invalid-repeat-20261025/comparison.json"
       ],
       "completion_gate": "Repeated complete collections with matched frozen code/config and store/count/price/duplicate/missing-field/runtime checks"
     },
     {
       "request": "Authoritative version/hash and accessible current package",
-      "status": "Current repository has sourcee90c5f0,fresh506JSON,safe audit/checksums/instructions; earlier frozenZIP historical, refresh pending",
+      "status": "Repo contains two506datasets/source audits/comparison; producer hashes identicale90c5f0/2ff5e20; older frozenZIP historical",
       "evidence": [
         "evidence/diagnostic-20261025/public-package-receipt.json",
         "evidence/corrected-plan-20261025/step1-baseline.json",
-        "evidence/controlled-skip-invalid-20261025/summary.json"
+        "evidence/controlled-skip-invalid-20261025/summary.json",
+        "evidence/controlled-skip-invalid-repeat-20261025/preflight.json"
       ],
       "completion_gate": "Frozen tag/commit,source/config hashes,accessible package and verified receipts"
     },

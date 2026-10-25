@@ -9,25 +9,36 @@ validation and atomic publication. No paid scraping APIs or proxies.
 
 ## Current review status
 
-Fresh controlled sample: **506 distinct validated products across all 11required categories**,
-collected in2063.272 seconds.11 responses rejected (4 no local pickup,7 missing listing prices);
-zero processing errors.35 local unavailable products retained with blank local prices.
+Two independent bounded runs each produced **506 validated distinct products across all 11 required
+categories**, using identical collection-code hashes, plan bytes, configs and dependency versions.
 
-- [Actual fresh JSON](evidence/controlled-skip-invalid-20261025/products.json)
-- [Independent source/hash audit](evidence/controlled-skip-invalid-20261025/summary.json)
-- [Reject-and-continue instructions](docs/CONTROLLED_COLLECTION.md)
-- [Current review status and gaps](docs/REVIEW_STATUS.md)
+|Measure|First run|Repeat|
+|---|---:|---:|
+|Accepted records|506|506|
+|Rejected responses|11|6|
+|Processing errors / duplicate IDs|0 / 0|0 / 0|
+|Runtime seconds|2063.272|2048.379|
 
-Live source commit:e90c5f0. All506 record replays,537 original Fetch-body hashes and18 native snapshot
-hashes passed. Bad responses are excluded, not retried; each accepted record independently matches
-store 100/72712/PICKUP and its listing/product evidence. No wrong-store response occurred in this
-particular run; wrong-store continuation was tested offline. Earlier two real raw wrong/correct
-pairs remain private pending reviewed sharing copies/access. No transport remedy claimed.
+Repeat rejected two wrong-store responses and four without local pickup; it continued without
+retrying them. Every accepted row independently passed source/store/Pickup/price checks.
+468 IDs overlap; all 433 comparable nonblank effective prices match. One common product became
+locally unavailable and its current local price remains blank. Each sample retained 35 unavailable
+products. Sample-only IDs are not proof of new/deleted products.
 
-This meets the bounded500+sample goal, **not full uncapped category coverage**. Genuine deals,
-repeated complete collection, recovery for this new wrapper and Azure remain open. Historical500,
-33and failed79/68datasets stay separate. Earlier frozen ZIP/tag is historical and needs refreshing
-before representing the latest implementation. No client message/submission or Azure execution.
+- [Repeat actual JSON](evidence/controlled-skip-invalid-repeat-20261025/products.json)
+- [First actual JSON](evidence/controlled-skip-invalid-20261025/products.json)
+- [Comparison](evidence/controlled-skip-invalid-repeat-20261025/COMPARISON.md)
+- [Repeat source/hash audit](evidence/controlled-skip-invalid-repeat-20261025/summary.json)
+- [Run/audit instructions](docs/CONTROLLED_COLLECTION.md)
+- [Review status and remaining gaps](docs/REVIEW_STATUS.md)
+
+Producer source commits:e90c5f0 (first),2ff5e20 (repeat); commit IDs differ as evidence/docs advanced,
+while producer bytes match. Raw bodies/native DOM/private pair originals remain local; safe review
+JSON/audits are public. No upstream store-drift remedy claimed.
+
+This proves bounded-sample repetition, **not full uncapped category coverage/repeated full catalog**.
+Offers, current-wrapper live recovery, Azure and reviewed private-pair sharing remain open. Earlier
+samples/failed runs stay separate; older frozen ZIP is historical. Nothing sent/submitted to client.
 
 ## Local setup
 

@@ -119,10 +119,19 @@ Response pair/offers remain OPEN; nothing sent to client.
 
 ## User-approved reject-and-continue run: fresh506goal achieved
 
-One sourcee90c5f0run completed2063.272seconds:506distinct source-validated records,all11categories,
-11rejections (4no pickup,7price validation mismatches),0processing errors/duplicates.35local
-unavailable products retained with blank local prices. All506source replays,537Fetch body hashes
+One source e90c5f0run completed2063.272 seconds:506distinct source-validated records,all 11categories,
+11rejections (4 no pickup,7price validation mismatches),0 processing errors/duplicates.35local
+unavailable products retained with blank local prices. All506 source replays,537Fetch body hashes
 and18native snapshot hashes passed. No historical rows reused. No wrong-store response occurred in
 this run; no drift remedy claimed. Full uncapped coverage/offers/repeat complete collection/new-mode
 recovery/Azure/private-pair sharing remain open. Nothing sent to client; no new collection queued.
 Actual JSON/audit: evidence/controlled-skip-invalid-20261025/.
+
+## Step7 bounded repeat result
+
+Repeated identical producer/settings/plan once:506 valid acrossall 11categories again,2048.379 seconds.
+Rejected2 wrong-store/4 no-pickup responses and continued,0 processing errors or duplicates.35local
+unavailable retained. Independent506 replays/533original-body/19native hashes passed.468 common IDs;
+433 known-price pairs unchanged,1 matched item now unavailable.38 sample-only IDs each side.
+Bounded repetition passed; full uncapped repeated collection remains open. No new run or client
+contact. Evidence/side-by-side comparison: evidence/controlled-skip-invalid-repeat-20261025/.

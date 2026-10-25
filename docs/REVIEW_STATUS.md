@@ -1,6 +1,39 @@
 # Current review status
 
-## Fresh controlled sample
+## Step 7 bounded repeat — completed
+
+Same producer hashes, plan bytes, store/category/dependency settings and observed versions as first
+run. Repeat source commit2ff5e20; first source e90c5f0. No collection code changed during either run.
+
+|Measure|First run|Repeat|
+|---|---:|---:|
+|Accepted distinct records|506|506|
+|Required categories represented|11|11|
+|Rejected responses|11|6|
+|Wrong-store responses excluded|0|2|
+|Processing errors / duplicate IDs|0 / 0|0 / 0|
+|Unavailable retained|35|35|
+|Runtime seconds|2063.272|2048.379|
+|Original body hashes verified|537|533|
+|Native snapshot hashes verified|18|19|
+|Accepted-record source replays|506|506|
+
+Repeat rejections:2 wrong store,4 no local pickup. It continued without re-fetching; rejected values
+never entered accepted JSON. Both initial/final controls passed. All accepted source replays and
+schema/category/price/store checks passed. Effective runtime 0.72% shorter; this is an observation,
+not a performance-improvement claim from unchanged code.
+
+468 common IDs;433 comparable nonblank effective-price pairs unchanged. One common SKU 14898365
+changed from available with local price 12.78 to locally unavailable with blank current local price.
+38 IDs appear only in each sample; bounded sample membership is not product additions/deletions.
+Field availability/count differences and item-level changes are in comparison.json.
+
+Current repeat JSON/audit/comparison: evidence/controlled-skip-invalid-repeat-20261025/.
+Previous baseline remains byte-identical to its frozen SHA. Native bodies/private session details
+remain unshared. This satisfies the requested bounded repeat, not repeated uncapped full-category
+collection. Full scope, offers, new-wrapper recovery, Azure and private-pair sharing remain open.
+
+## First controlled sample (baseline)
 
 Authoritative live source:e90c5f0. Entry point:controlled_collection.py, reject-and-continue mode.
 Plan/instructions:docs/CONTROLLED_COLLECTION.md. This mode writes review evidence only, not a
@@ -67,7 +100,7 @@ One or two corrected re-fetches are not a demonstrated remedy.
   URLs remain uncertain; ArtAprons empty HTTP200category route remains unresolved. ArtSets is valid
   but does not replace ArtAprons coverage. Pending queue counts remain in the fresh sample report.
 - Genuine volume/digital deal examples:zero verified. New dataset has no deal examples.
-- Repeated complete collection and sustained reliability.
+- Repeated full uncapped collection and sustained reliability beyond the two bounded samples.
 - Final-version interruption/resume for this controlled wrapper. Existing production-core3-product
   SIGKILL/resume proof applies only to its recorded source/config/scope, not this new wrapper.
 - Raw-pair reviewed sharing copies/access and refreshed full package/manifest/unsent client draft.
