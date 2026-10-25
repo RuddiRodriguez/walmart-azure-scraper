@@ -16,15 +16,17 @@
       "status": "Verified within existing bounded captures",
       "evidence": [
         "evidence/diagnostic-20261025/step3-results/source-contexts.json",
-        "evidence/diagnostic-20261025/step4-offers/source-contexts.json"
+        "evidence/diagnostic-20261025/step4-offers/source-contexts.json",
+        "evidence/corrected-plan-20261025/step2-results/source-contexts.json"
       ],
       "completion_gate": "Actual response identity/store/ZIP/fulfillment and local price association; banner alone insufficient"
     },
     {
       "request": "Paired complete wrong-store response and corrected re-fetch",
-      "status": "Open",
+      "status": "Open: latest bounded attempt finished without reproducing drift",
       "evidence": [
-        "docs/STEP1_BASELINE_20261025.md"
+        "docs/STEP1_BASELINE_20261025.md",
+        "evidence/corrected-plan-20261025/step2-results/summary.json"
       ],
       "completion_gate": "Actual complete wrong and corrected bodies from documented sequence; reviewed redacted copies; hashes; no reconstructed data"
     },

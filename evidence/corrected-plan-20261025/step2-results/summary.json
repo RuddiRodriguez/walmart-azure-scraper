@@ -1,0 +1,63 @@
+{
+  "started_utc": "2026-10-25T18:58:14.122802+00:00",
+  "completed": true,
+  "pair_captured": false,
+  "category_visits": 4,
+  "limits": {
+    "product_requests": 60,
+    "listing_requests": 4,
+    "seconds": 1200
+  },
+  "counts": {
+    "product_requests": 17,
+    "listing_requests": 4,
+    "sequence": 21,
+    "body_bytes": 14840667
+  },
+  "seconds": 120.933,
+  "source_hashes": {
+    "capture_store_drift.py": "aea8a08691f3ec28440aec2f69e41f7ed5ff016e2258b8e26da3ce9463709f80",
+    "browser.py": "2b46d80e5b5edd1b75c7cbf36d460d96da91cfd218e0b1dfa309dcc3459cec24",
+    "extract.py": "e252ee14a9e66c9be33220a014984e161192651759c9619202ecf73c39242605",
+    "diagnostic_capture.py": "617b898e43770eda6ed0650eeb2e51611e8e2569f1328075c1169ef73172eea5"
+  },
+  "source_commit": "f7c535d",
+  "accepted_distinct_products": 17,
+  "body_hashes_verified": 21,
+  "categories": [
+    {
+      "store": "100",
+      "facet": "fulfillment_method:Pickup",
+      "candidates": 6,
+      "excluded": 46
+    },
+    {
+      "store": "100",
+      "facet": "fulfillment_method:Pickup",
+      "candidates": 5,
+      "excluded": 55
+    },
+    {
+      "store": "100",
+      "facet": "fulfillment_method:Pickup",
+      "candidates": 2,
+      "excluded": 31
+    },
+    {
+      "store": "100",
+      "facet": "fulfillment_method:Pickup",
+      "candidates": 5,
+      "excluded": 54
+    }
+  ],
+  "verdict": "Bounded attempt finished; requested wrong/correct raw pair remains OPEN. No drift reproduced.",
+  "limitations": [
+    "Only first listing page per category; 17 products, not 57 or 60 actual requests.",
+    "Previously failing item 857115210 was not requested; its failure was not reproduced.",
+    "No retry occurred; no evidence that re-fetch fixes drift.",
+    "No mature 64-product session reproduced; no full coverage, repeat reliability, offers or Azure proof.",
+    "Complete originals and unreviewed redaction drafts remain private; no production output published."
+  ],
+  "step3": "Can start proposal/evidence review only. No supported new transport remedy established; live remedy validation still blocked by missing reproducible drift.",
+  "costs": "No paid scraping service or Azure; local browser/network use only. Browser asset/UI requests additional to recorded Fetch counters."
+}
