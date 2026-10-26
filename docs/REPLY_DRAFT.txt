@@ -1,26 +1,12 @@
 UNSENT DRAFT — 26 October 2026
 
-Hi,
+Hi, thanks for the feedback. I’ve updated the [repo with the code, datasets, instructions and test results](https://github.com/RuddiRodriguez/walmart-azure-scraper/tree/review-20261026-step9).
 
-Thanks for the clear feedback. The updated review package is here:
-https://github.com/RuddiRodriguez/walmart-azure-scraper/tree/review-20261026-step9
-Download: https://github.com/RuddiRodriguez/walmart-azure-scraper/archive/refs/tags/review-20261026-step9.zip
+We now have two separate runs with 506 distinct products each across all 11 main categories. The checks excluded wrong-store responses, kept unavailable products with blank prices and left the earlier datasets unchanged. A small live restart test also passed without losing saved products or creating duplicates.
 
-It includes versioned code, running instructions, actual JSON, logs, source checks and file hashes. Package verification is in docs/VERIFY_PACKAGE.md.
+This is progress, but it doesn’t mean everything is finished. We still need to cover every required category and page, collect real promotional offers, and repeat a complete collection, including stopping and restarting it. We also captured two examples showing a wrong-store response followed by a corrected response, but these need a privacy check before sharing. Azure testing is still waiting for approved access.
 
-Two separate live runs each collected 506 genuine, distinct products across all 11 required parent categories, using identical collection code/settings. Each retained 35 locally unavailable products with blank prices. The repeat excluded two wrong-store responses and continued safely; no duplicates or processing errors occurred. All accepted records passed independent source checks. These datasets remain separate from the earlier 500-product demonstration and two 33-product samples.
-
-Checks use listing/product identifiers, store 100, ZIP 72712, PICKUP and price evidence, rather than trusting the banner. Invalid responses stay out of local-price output. Review runs preserve earlier datasets without publishing over them; last-good publication safeguards were tested separately offline.
-
-The smallest change is a listing/product validation gate, not a claimed transport cure. A fresh session after detected drift is a possible next bounded comparison. The current recovery version, 45ba7c47c0415981c330e911abefa40d0a183be5, passed a separate live three-product hard-stop/resume test: saved data survived, unfinished work resumed once, no duplicate saves. The two 506-product runs used the earlier producer version; they do not prove large-run recovery with this change.
-
-Two genuine wrong-store/corrected re-fetch pairs are retained privately, with hashes, price context, redacted request settings and sequence/retry metadata in the package. Complete sharing copies still need privacy review. Browser-generated cookies/headers were not recorded. A successful re-fetch is not proof of a remedy.
-
-Remaining work: review and share those pairs; resolve uncertain/empty category routes and exhaust all required pages; capture genuine volume/digital offers; test full-coverage repetition/recovery; then test Azure once access is approved. Store drift prevention remains unproven. These need bounded follow-up tests, not invented or inferred results.
-
-Tests used local Python/Chrome, no paid service. Each 506 run was capped at 750 product/control requests, 80 listing requests and 60 minutes; observed times were about 34 minutes. Recovery used 7 product/control requests and 1 listing request in 90 seconds, within its 10-minute cap. Browser/UI assets are additional requests. Exact environment and storage limits are documented. Azure has not been run; no access was granted.
-
-This diagnostic package is ready for review. Proposed next diagnostic update: 26 October, 18:00 CET (UTC+1), covering remaining evidence gaps and a bounded next test. A responsible full-completion date depends on coverage, offer evidence and approved Azure access. No further test is scheduled by this draft.
+The current checks protect the results from incorrect store data, although they don’t prevent Walmart from switching stores. My proposed next update is 26 October at 18:00 Amsterdam time (CET, UTC+1), with a clearer assessment of the remaining work.
 
 Thanks,
 Ruddi

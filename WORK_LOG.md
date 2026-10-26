@@ -634,3 +634,6 @@ Source45ba7c4, one Art Supplies sample: SIGKILL after one committed record durin
 Frozen tagreview-20261026-step9 atc433dce631ba17ffb10624e3c4765a89de51b6fe. LocalZIP118,221,404bytes; SHA25698b6e3740afa7fc066f3a0253b21c46eefbb0a340bdb43390c3d7425c9148614. ZIPCRC/fullinventory/954file hashes passed. Separate actual506/506/3JSON exports validated against stored source-audit reports and11recoverychecks; current collector producer files match live45ba7c4hashes. No new private-body replay or live request. Receipt separately committed afterfreeze; GitHubautoZIPmaydifferouterhash. No client contact/submission/release/Azure.
 
 - Pushed main0d573d9and frozen review-20261026-step9. Unauthenticated GitHubAPI confirmed repository public and tag points toc433dce631ba17ffb10624e3c4765a89de51b6fe. No client sending/submission. Clean checkout before recording this receipt follow-up.
+
+## Client draft wording update
+- Replaced docs/REPLY_DRAFT.txt with the exact user-approved conversational version, including repo link, completed results, remaining gaps and proposed26October18:00Amsterdam time(CET,UTC+1). Retained UNSENT label. No client contact, submission, collection or deployment. Frozen review-20261026-step9 tag/ZIP remain unchanged; revised draft is on main. Refreshed current file manifest.
