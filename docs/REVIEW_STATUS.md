@@ -31,7 +31,9 @@ Field availability/count differences and item-level changes are in comparison.js
 Current repeat JSON/audit/comparison: evidence/controlled-skip-invalid-repeat-20261025/.
 Previous baseline remains byte-identical to its frozen SHA. Native bodies/private session details
 remain unshared. This satisfies the requested bounded repeat, not repeated uncapped full-category
-collection. Full scope, offers, new-wrapper recovery, Azure and private-pair sharing remain open.
+collection. Current-wrapper recovery subsequently passed one three-product live SIGKILL/resume
+test at45ba7c4 (evidence/step8-controlled-recovery-20261026/RESULTS.md). Full-catalog recovery
+remains unproven. Full scope, offers, Azure and private-pair sharing remain open.
 
 ## First controlled sample (baseline)
 

@@ -37,7 +37,9 @@ while producer bytes match. Raw bodies/native DOM/private pair originals remain 
 JSON/audits are public. No upstream store-drift remedy claimed.
 
 This proves bounded-sample repetition, **not full uncapped category coverage/repeated full catalog**.
-Offers, current-wrapper live recovery, Azure and reviewed private-pair sharing remain open. Earlier
+Current-wrapper recovery passed a separate three-product live SIGKILL/resume test at 45ba7c4;
+see [step8 results](evidence/step8-controlled-recovery-20261026/RESULTS.md). Full-catalog recovery remains unproven.
+Offers, Azure and reviewed private-pair sharing remain open. Earlier
 samples/failed runs stay separate; older frozen ZIP is historical. Nothing sent/submitted to client.
 
 ## Local setup

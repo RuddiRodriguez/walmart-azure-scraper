@@ -1,0 +1,132 @@
+{
+  "mode": "Offline audit of this fresh controlled live run; not uncapped coverage",
+  "source_commit": "45ba7c47c0415981c330e911abefa40d0a183be5",
+  "source_hashes": {
+    "controlled_collection.py": "c4f00c4140ba45012105d7d34e259a5735dfabc1f7d4a37927849375b6af65cb",
+    "diagnostic_capture.py": "7aae043eed5e95efb2a1bf6de58af0dc93c1473d37ad4cfbe2748aa8c0268e65",
+    "capture_store_drift.py": "9ce534bfb7b887af0776fa18843dc19e162c397e3a6e7f844ffb97f5aa5bf6f7",
+    "scrape.py": "ac43589987b1811f0b707f24eb1c1556d978b72f12a630caee784e7e50740e47",
+    "browser.py": "2b46d80e5b5edd1b75c7cbf36d460d96da91cfd218e0b1dfa309dcc3459cec24",
+    "extract.py": "e252ee14a9e66c9be33220a014984e161192651759c9619202ecf73c39242605",
+    "storage.py": "2453aa318e9e59b37bcc85dd3a6b9c5d8b4cc7616368e4cbf01f41b054385c90",
+    "validate.py": "d316b2e14887bbc02b08a5b54af6fe7c5d340d1ad9b1f5819e242de39ec53ada"
+  },
+  "started_utc": "2026-10-26T00:06:37.450394+00:00",
+  "seconds": 89.251,
+  "counts": {
+    "product_requests": 7,
+    "listing_requests": 1,
+    "sequence": 8,
+    "body_bytes": 4348416
+  },
+  "accepted_records": 3,
+  "category_counts": {
+    "Art Supplies": 3
+  },
+  "page_successes": 1,
+  "page_failures": 0,
+  "rejected_product_reasons": {},
+  "request_error_types": {},
+  "identity_mismatch_observations": 0,
+  "wrong_store_observations": 0,
+  "diagnostic_refetches": 0,
+  "controls": [
+    {
+      "stage": "initial",
+      "sequence": 1,
+      "passed": true,
+      "product_id": "47428850",
+      "store_id": "100",
+      "zip": "72712",
+      "intent": "PICKUP",
+      "store_matches": true
+    },
+    {
+      "stage": "resume",
+      "sequence": 5,
+      "passed": true,
+      "product_id": "47428850",
+      "store_id": "100",
+      "zip": "72712",
+      "intent": "PICKUP",
+      "store_matches": true
+    },
+    {
+      "stage": "final",
+      "sequence": 8,
+      "passed": true,
+      "product_id": "47428850",
+      "store_id": "100",
+      "zip": "72712",
+      "intent": "PICKUP",
+      "store_matches": true
+    }
+  ],
+  "initial_control_passed": true,
+  "final_control_passed": true,
+  "rejection_ledger_count": 0,
+  "rejected_product_details": {},
+  "unavailable_successes": 0,
+  "handled_failures": [],
+  "excluded_listing_or_product_reasons": {
+    "sponsored": 3,
+    "outside_category": 8,
+    "marketplace": 5
+  },
+  "target_reached": true,
+  "completed_attempt": true,
+  "stop_reason": null,
+  "captured_bodies_hash_verified": 7,
+  "native_snapshots_hash_verified": 1,
+  "source_replays": 3,
+  "accepted_evidence_passed": true,
+  "audit_errors": [],
+  "sample_validation": {
+    "passed": true,
+    "records": 3,
+    "errors": [],
+    "category_counts": {
+      "Art Supplies": 3
+    },
+    "duplicate_urls": 0,
+    "duplicate_product_ids": 0,
+    "field_nonempty_counts": {
+      "zipcode": 3,
+      "store_name": 3,
+      "store_location": 3,
+      "store_logo": 3,
+      "store_brand": 3,
+      "category": 3,
+      "sub_category": 3,
+      "product_title": 3,
+      "weight": 2,
+      "regular_price": 3,
+      "sale_price": 2,
+      "volume_deals_description": 0,
+      "volume_deals_price": 0,
+      "digital_deals_description": 0,
+      "digital_deals_price": 0,
+      "image_url": 3,
+      "url": 3,
+      "upc": 3,
+      "gupc": 0,
+      "ppm": 0,
+      "unit_price": 0,
+      "crawl_date": 3
+    },
+    "pending_pages": 0,
+    "pending_products": 0,
+    "products_needing_review": 0,
+    "retained_unavailable_records": 0
+  },
+  "sample_accepted": true,
+  "pair_captured_private": false,
+  "full_coverage_complete": false,
+  "pending_pages": {
+    "Art Supplies": 13
+  },
+  "unattempted_candidate_count": 34,
+  "genuine_offers_requirement": "Open; this collection does not substitute for verified offer examples",
+  "raw_pair_requirement": "Open unless actual pair exists and privacy-reviewed evidence is prepared",
+  "scope_note": "Source-valid partial rows remain partial if run stopped. No historical data merged. No production pointer or client submission."
+}

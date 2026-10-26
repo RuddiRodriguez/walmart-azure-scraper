@@ -1,0 +1,65 @@
+{
+  "scope": "One category, three products; current collector live hard interruption/resume only",
+  "command": [
+    "python",
+    "run_controlled_recovery.py",
+    "--output",
+    "data/new-recovery-run",
+    "--plan",
+    "evidence/step8-controlled-recovery-20261026/plan.json"
+  ],
+  "interruption": "SIGKILL after one committed record, during next product processing; request metadata confirms second request began",
+  "checks": {
+    "changed_settings_rejected": true,
+    "original_records_unchanged": true,
+    "completed_target": true,
+    "no_duplicate_commits": true,
+    "committed_records_not_refetched": true,
+    "interrupted_product_retried_once": true,
+    "original_evidence_unchanged": true,
+    "cumulative_counters": true,
+    "source_count_matches": true,
+    "fresh_resume_control_passed": true,
+    "interrupted_request_recorded": true
+  },
+  "interrupted_product": "878215686",
+  "saved_ids": [
+    "19476757527"
+  ],
+  "before_counts": {
+    "product_requests": 2,
+    "listing_requests": 1,
+    "sequence": 3,
+    "body_bytes": 2196116
+  },
+  "passed": true,
+  "after_counts": {
+    "product_requests": 7,
+    "listing_requests": 1,
+    "sequence": 8,
+    "body_bytes": 4348416
+  },
+  "seconds": 90.378,
+  "accepted_records": 3,
+  "error": null,
+  "source_commit": "45ba7c47c0415981c330e911abefa40d0a183be5",
+  "interrupted_request_evidence": {
+    "id": "collection-004",
+    "sequence": 4,
+    "kind": "product",
+    "request": {
+      "url": "https://www.walmart.com/ip/Crayola-Imagination-Art-Coloring-Set-115-Pcs-Easter-Basket-Stuffers-Art-Craft-Kit-Coloring-Supplies-Easter-Gifts-for-Kids/878215686?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-26T00:07:26.585371+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    }
+  }
+}

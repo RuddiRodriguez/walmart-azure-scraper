@@ -18,7 +18,7 @@ Earlier reports retain their original dates, versions and scopes.
 | Transport/session prevention remedy | Rejection/filtering mitigation works; cause/prevention unproven | Open |
 | Genuine volume/digital offers | Zero verified examples | Open |
 | Full uncapped category coverage | Uncertain landing links/ArtAprons and pending queues remain | Open |
-| Final-wrapper live recovery | Earlier three-product production-core proof is a separate scope | Open for this wrapper/scope |
+| Current-wrapper live recovery | Source45ba7c4: three genuine records, SIGKILL/resume,11checks plus3source replays passed | Passed bounded one-category case; full-catalog recovery unproven |
 | Version/instructions/package | Current source/JSON/audits/plan/comparison in repo; older frozen ZIP historical | Repo evidence current; refreshed package pending |
 | Request/runtime/cost bounds | Both bounded runs within identical caps; no paid service, assets additional | Documented |
 | Azure | No approved access or execution | Open |

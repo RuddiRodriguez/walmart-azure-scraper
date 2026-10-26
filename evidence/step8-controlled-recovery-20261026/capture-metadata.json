@@ -1,0 +1,282 @@
+[
+  {
+    "id": "collection-001",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 1,
+    "request": {
+      "url": "https://www.walmart.com/ip/Carving-Pumpkin-Each/47428850?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-26T00:07:04.129933+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Carving-Pumpkin-Each/47428850?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 00:07:05 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T00:07:05.381692+00:00",
+      "elapsed_seconds": 1.252
+    },
+    "body_bytes": 532302,
+    "body_sha256": "484dc7d3e5436c4c7b244e89b743ae7c7dd4e522d8f3233b1f64e2d33f8a7573",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-002",
+    "session": "collection",
+    "kind": "listing",
+    "sequence": 2,
+    "request": {
+      "url": "https://www.walmart.com/browse/arts-crafts-sewing/art-sets/1334134_5899871_7148292",
+      "attempt": 1,
+      "started_utc": "2026-10-26T00:07:22.030217+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/arts-crafts-sewing/art-sets/1334134_5899871_7148292",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 00:07:22 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T00:07:22.256785+00:00",
+      "elapsed_seconds": 0.227
+    },
+    "body_bytes": 1107317,
+    "body_sha256": "080f5ea0a85726da13e20fcb63c81e37ca78da12af20254039d67faf08a5daae",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-003",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 3,
+    "request": {
+      "url": "https://www.walmart.com/ip/FlowArt-Dot-By-Letter-Into-the-Galaxy-Metallic-ink/19476757527?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-26T00:07:23.086868+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/FlowArt-Dot-By-Letter-Into-the-Galaxy-Metallic-ink/19476757527?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 00:07:24 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T00:07:24.358983+00:00",
+      "elapsed_seconds": 1.272
+    },
+    "body_bytes": 556497,
+    "body_sha256": "dd3d9e91234041cad783eb6bbcacd6f3e63056db7f4648d1fda4a67f59a6340a",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-004",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 4,
+    "request": {
+      "url": "https://www.walmart.com/ip/Crayola-Imagination-Art-Coloring-Set-115-Pcs-Easter-Basket-Stuffers-Art-Craft-Kit-Coloring-Supplies-Easter-Gifts-for-Kids/878215686?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-26T00:07:26.585371+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-005",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 5,
+    "request": {
+      "url": "https://www.walmart.com/ip/Carving-Pumpkin-Each/47428850?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-26T00:07:57.006645+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Carving-Pumpkin-Each/47428850?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 00:07:57 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T00:07:58.126108+00:00",
+      "elapsed_seconds": 1.119
+    },
+    "body_bytes": 530621,
+    "body_sha256": "282cf45d1cf5ffc9bbbb78d3ed9f8992ce0ac558f99e3de416e7b989fb17842e",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-006",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 6,
+    "request": {
+      "url": "https://www.walmart.com/ip/Crayola-Imagination-Art-Coloring-Set-115-Pcs-Easter-Basket-Stuffers-Art-Craft-Kit-Coloring-Supplies-Easter-Gifts-for-Kids/878215686?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-26T00:07:58.210167+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Crayola-Imagination-Art-Coloring-Set-115-Pcs-Easter-Basket-Stuffers-Art-Craft-Kit-Coloring-Supplies-Easter-Gifts-for-Kids/878215686?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 00:07:59 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T00:07:59.295059+00:00",
+      "elapsed_seconds": 1.085
+    },
+    "body_bytes": 561216,
+    "body_sha256": "ec34d38e9d66b605096c99f8afdff0d5573c23d7bb9a0eade72303c9238a8701",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-007",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 7,
+    "request": {
+      "url": "https://www.walmart.com/ip/Art-101-Glow-and-Neon-Drawing-and-Painting-Art-Set-for-Children-and-Adults-61-Pieces-Multifunctional-Set/869972509?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR",
+      "attempt": 1,
+      "started_utc": "2026-10-26T00:08:01.435801+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Art-101-Glow-and-Neon-Drawing-and-Painting-Art-Set-for-Children-and-Adults-61-Pieces-Multifunctional-Set/869972509?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 00:08:02 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T00:08:02.969005+00:00",
+      "elapsed_seconds": 1.533
+    },
+    "body_bytes": 529775,
+    "body_sha256": "676b62c4b3c36140ed3a36e882f073be90f90875ce3b6920dfcbd79f125a6fad",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "collection-008",
+    "session": "collection",
+    "kind": "product",
+    "sequence": 8,
+    "request": {
+      "url": "https://www.walmart.com/ip/Carving-Pumpkin-Each/47428850?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-26T00:08:05.191122+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Carving-Pumpkin-Each/47428850?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 00:08:05 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T00:08:06.066001+00:00",
+      "elapsed_seconds": 0.875
+    },
+    "body_bytes": 530688,
+    "body_sha256": "73f8cb9c038b4f233e3676d177e1085be9ba806d70d8298ccfba67d1d7d8da14",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  }
+]
