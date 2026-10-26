@@ -21,6 +21,7 @@ def check():
             target.parent.mkdir(parents=True, exist_ok=True)
             shutil.copyfile(name, target)
         (root / 'evidence').mkdir()
+        (root / 'evidence/SHA256SUMS.json').write_text('{}\n')
         for name in ['baseline', 'wrong source ZIP', 'wrong output ZIP', 'sale above regular price']:
             changed_rows, changed_sources = copy.deepcopy(rows), copy.deepcopy(sources)
             if name == 'wrong source ZIP':

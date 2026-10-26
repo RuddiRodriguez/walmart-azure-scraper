@@ -31,7 +31,13 @@ def build(version, output):
         if files != set(manifest) | {'evidence/SHA256SUMS.json'}:
             raise ValueError('Archive inventory differs from manifest')
         datasets = []
-        for folder in ['controlled-skip-invalid-20261025', 'controlled-skip-invalid-repeat-20261025', 'step8-controlled-recovery-20261026']:
+        for folder in [
+            'controlled-skip-invalid-20261025',
+            'controlled-skip-invalid-repeat-20261025',
+            'step8-controlled-recovery-20261026',
+            'point3-20261026/recovery-506',
+            'point3-20261026/repeat-506',
+        ]:
             base = 'evidence/' + folder + '/'
             rows = json.loads(archive.read(base + 'products.json'))
             summary = json.loads(archive.read(base + 'summary.json'))
@@ -42,10 +48,26 @@ def build(version, output):
         recovery = json.loads(archive.read('evidence/step8-controlled-recovery-20261026/recovery-result.json'))
         if not recovery['passed'] or not all(recovery['checks'].values()):
             raise ValueError('Recovery evidence failed')
+        pairs = json.loads(archive.read('evidence/response-pairs-reviewed-20261026/reviewed-pairs.json'))
+        if len(pairs['pairs']) != 2 or pairs['client_sent'] or pairs['transport_remedy_proven']:
+            raise ValueError('Reviewed response-pair scope mismatch')
+        retention = json.loads(archive.read('evidence/retention-step2-20261026/summary.json'))
+        if (retention['traced_rejection_events'] != 15
+                or retention['distinct_traced_products'] != 12
+                or not retention['every_requested_rejection_accounted_for']
+                or not retention['eligible_products_retained']
+                or not retention['all_unsupported_current_prices_blank']):
+            raise ValueError('Retention trace mismatch')
+        larger_recovery = json.loads(archive.read('evidence/point3-20261026/recovery-reevaluation.json'))
+        if (not larger_recovery['passed'] or larger_recovery['accepted_records'] != 506
+                or not all(larger_recovery['checks'].values())):
+            raise ValueError('Larger recovery evidence failed')
     result = dict(version=version, source_commit=commit, filename=output.name, bytes=output.stat().st_size,
                   sha256=hashlib.sha256(output.read_bytes()).hexdigest(), zip_crc_passed=True,
                   file_manifest_verified=len(manifest), archive_inventory_verified=True,
                   private_runtime_files_excluded=True, datasets=datasets, recovery_checks=len(recovery['checks']),
+                  reviewed_response_pairs=len(pairs['pairs']), retention_events=retention['traced_rejection_events'],
+                  larger_recovery_checks=len(larger_recovery['checks']),
                   scope='Offline archive/manifest/export verification; no new live collection or raw-body replay',
                   client_message_sent=False, contest_submitted=False, azure_executed=False)
     output.with_suffix('.receipt.json').write_text(json.dumps(result, indent=2) + '\n')

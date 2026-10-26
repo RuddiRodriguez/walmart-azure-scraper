@@ -1,19 +1,48 @@
-# Verify updated review package
+# Verify corrected evidence package
 
-Frozen version: `review-20261026-step9`.
+Frozen version: `review-20261027-evidence-correction`.
 
-- Source/evidence: https://github.com/RuddiRodriguez/walmart-azure-scraper/tree/review-20261026-step9
-- Download: https://github.com/RuddiRodriguez/walmart-azure-scraper/archive/refs/tags/review-20261026-step9.zip
-- Authoritative commit: `git rev-parse review-20261026-step9^{commit}` after cloning/fetching tags.
-- Local prepared ZIP receipt: `evidence/review-package-20261026/receipt.json` on main, recorded after freezing.
-  That receipt is deliberately outside its own frozen archive. It records tag/commit and ZIP hash.
+Source and evidence:
+https://github.com/RuddiRodriguez/walmart-azure-scraper/tree/review-20261027-evidence-correction
 
-The tag freezes current code, instructions, separate actual datasets, logs, safe response/source
-metadata, source audit reports and unsent client draft. No release/client message is published.
-Current collector matches live recovery source45ba7c4 byte-for-byte. Earlier two506runs used
-byte-identical producers e90c5f0/2ff5e20, before recovery support. Scope cannot be transferred.
+Download:
+https://github.com/RuddiRodriguez/walmart-azure-scraper/archive/refs/tags/review-20261027-evidence-correction.zip
 
-Extract downloaded ZIP, enter its root, then verify BEFORE regenerating reports:
+Resolve the authoritative commit after cloning or fetching tags:
+
+```sh
+git rev-parse review-20261027-evidence-correction^{commit}
+```
+
+## Evidence requested after the previous frozen package
+
+Reviewed wrong-store/corrected-response pairs:
+https://github.com/RuddiRodriguez/walmart-azure-scraper/tree/review-20261027-evidence-correction/evidence/response-pairs-reviewed-20261026
+
+Fifteen-event retention trace:
+https://github.com/RuddiRodriguez/walmart-azure-scraper/tree/review-20261027-evidence-correction/evidence/retention-step2-20261026
+
+Bounded506-product interruption/resume:
+https://github.com/RuddiRodriguez/walmart-azure-scraper/tree/review-20261027-evidence-correction/evidence/point3-20261026/recovery-506
+
+Matching bounded506-product repeat:
+https://github.com/RuddiRodriguez/walmart-azure-scraper/tree/review-20261027-evidence-correction/evidence/point3-20261026/repeat-506
+
+The pair folder contains privacy-reviewed redacted response copies and exact preserved product,
+store,fulfillment and price fields. Complete original decoded bodies remain private with their hashes
+and lengths recorded. No credentials,cookies or browser sessions are included.
+
+The retention work is an offline replay of saved live observations:15 rejection events covering12
+products. It keeps eligible unavailable products and dated observations,leaves unsupported current
+values blank and separates unknown assortment from confirmed unavailability.
+
+The larger recovery used a SIGKILL after100 saved products,then resumed to506. A second independent
+bounded run also reached506 with identical producer bytes and settings. Both remain bounded samples,
+not full category/subcategory/pagination coverage.
+
+## Verify every file
+
+Run before regenerating reports:
 
 ```sh
 python3 - <<'PY_VERIFY'
@@ -26,35 +55,17 @@ print(len(manifest), 'files verified')
 PY_VERIFY
 ```
 
-GitHub ZIP may have a different outer hash/root directory from the locally prepared `git archive`.
-Verify its frozen commit and individual file hashes; local ZIP hash applies only to that ZIP.
-
-Dataset/evidence index:
-
-| Evidence | Location | Proven scope |
-|---|---|---|
-| First fresh506 | evidence/controlled-skip-invalid-20261025/ | 11parent categories, independent source checks |
-| Repeat fresh506 | evidence/controlled-skip-invalid-repeat-20261025/ | Same-code/settings bounded repetition, comparison |
-| Current-source recovery3 | evidence/step8-controlled-recovery-20261026/ | One live SIGKILL/resume, one category |
-| Earlier500 | evidence/products-500.json | Historical; never merged with new samples |
-| Earlier33samples | evidence/final-session-20261024/diagnostic-c/ and repeat-d/ | Separate earlier samples |
-| Wrong/correct pair metadata | evidence/controlled-500-20261025/raw-pair-metadata.json and evidence/controlled-500-continuation-20261025/raw-pair-metadata.json | Complete originals private; reviewed sharing pending |
-
-Run/setup/resume: README.md and docs/CONTROLLED_COLLECTION.md. Current status/open requirements:
-docs/REVIEW_STATUS.md, docs/ACCEPTANCE.md and evidence/corrected-plan-20261025/requirements-register.json.
-Environment for large samples: environment.json/preflight.json in their evidence folders. Recovery
-ran in same local project runtime; source hashes/plan and observed controls are recorded separately.
-
-Source audit reports replayed private captured bodies locally before export. Public ZIP contains safe
-fields/hashes, not full raw originals or browser sessions. Running audit_controlled_collection.py
-requires a matching private run folder: public archive alone cannot repeat raw-body replay.
-`review_package.py` audits only historical500; it does not audit the new506datasets.
-
-Rebuild and verify a separate local archive from a Git checkout:
+Build and verify a local archive:
 
 ```sh
-python freeze_review_package.py --version review-20261026-step9 --output data/new-review-package.zip
+python freeze_review_package.py \
+  --version review-20261027-evidence-correction \
+  --output data/review-20261027-evidence-correction.zip
 ```
 
-Archive checker runs offline: ZIP CRC, complete inventory, file hashes, dataset/export consistency
-and stored recovery result. This is not fresh live scraping, new source replay or Azure proof.
+The checker verifies ZIP integrity,full file inventory,global and evidence manifests,separate
+datasets,reviewed pair count,retention event count and both recovery samples. It performs no live
+collection,Azure execution,client message or submission.
+
+Still open:complete category/subcategory/pagination reconciliation,genuine volume/digital offers,
+full-catalog recovery/repetition and Azure execution.

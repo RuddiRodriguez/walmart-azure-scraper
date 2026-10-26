@@ -39,14 +39,17 @@ JSON/audits are public. No upstream store-drift remedy claimed.
 This proves bounded-sample repetition, **not full uncapped category coverage/repeated full catalog**.
 Current-wrapper recovery passed a separate three-product live SIGKILL/resume test at 45ba7c4;
 see [step8 results](evidence/step8-controlled-recovery-20261026/RESULTS.md). Full-catalog recovery remains unproven.
-Offers, Azure and reviewed private-pair sharing remain open. Earlier
+Offers and Azure remain open. Privacy-reviewed wrong/correct sharing copies are included under
+`evidence/response-pairs-reviewed-20261026/`; complete originals remain private and hash-recorded. Earlier
 samples/failed runs stay separate; earlier frozen ZIPs are historical. Nothing sent/submitted to client.
 
 ## Updated review package
 
-Frozen version: `review-20261026-step9`. [Download source/evidence ZIP](https://github.com/RuddiRodriguez/walmart-azure-scraper/archive/refs/tags/review-20261026-step9.zip).
+Frozen version: `review-20261027-evidence-correction`. [Download source/evidence ZIP](https://github.com/RuddiRodriguez/walmart-azure-scraper/archive/refs/tags/review-20261027-evidence-correction.zip).
 [Verify package](docs/VERIFY_PACKAGE.md); [unsent client draft](docs/REPLY_DRAFT.txt).
-Earlier tags/ZIP receipts remain historical. New package does not prove open requirements complete.
+This corrected package adds the reviewed response pairs,15-event retention trace and bounded506-product
+interruption/resume plus matching506-product repeat. Earlier tags/ZIP receipts remain historical.
+The package does not prove full coverage,genuine offers or Azure execution.
 
 ## Retention update after client feedback
 

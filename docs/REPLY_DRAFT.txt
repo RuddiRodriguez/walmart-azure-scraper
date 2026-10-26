@@ -1,12 +1,35 @@
-UNSENT DRAFT — 26 October 2026
+UNSENT EVIDENCE CORRECTION DRAFT — 27 October 2026
 
-Hi, thanks for the feedback. I’ve updated the [repo with the code, datasets, instructions and test results](https://github.com/RuddiRodriguez/walmart-azure-scraper/tree/review-20261026-step9).
+Hi,
 
-We now have two separate runs with 506 distinct products each across all 11 main categories. The checks excluded wrong-store responses, kept unavailable products with blank prices and left the earlier datasets unchanged. A small live restart test also passed without losing saved products or creating duplicates.
+The link in my previous message was incomplete and pointed to the older frozen package. The corrected
+evidence package is:
+https://github.com/RuddiRodriguez/walmart-azure-scraper/tree/review-20261027-evidence-correction
 
-We still need to cover every required category and page, collect real promotional offers, and repeat a complete collection, including stopping and restarting it. We also captured two examples showing a wrong-store response followed by a corrected response, but these need a privacy check before sharing. We haven’t tested on Azure yet because we still need to agree with you on how you’d like that test carried out.
+Download:
+https://github.com/RuddiRodriguez/walmart-azure-scraper/archive/refs/tags/review-20261027-evidence-correction.zip
 
-The current checks protect the results from incorrect store data, although they don’t prevent Walmart from switching stores. My proposed next update is 28 October at 18:00 Amsterdam time (CET, UTC+1), with a clearer assessment of the remaining work.
+Reviewed wrong-store/corrected-response pairs:
+https://github.com/RuddiRodriguez/walmart-azure-scraper/tree/review-20261027-evidence-correction/evidence/response-pairs-reviewed-20261026
+
+Fifteen-event retention trace:
+https://github.com/RuddiRodriguez/walmart-azure-scraper/tree/review-20261027-evidence-correction/evidence/retention-step2-20261026
+
+Larger interruption/resume and repeat evidence:
+https://github.com/RuddiRodriguez/walmart-azure-scraper/tree/review-20261027-evidence-correction/evidence/point3-20261026/recovery-506
+https://github.com/RuddiRodriguez/walmart-azure-scraper/tree/review-20261027-evidence-correction/evidence/point3-20261026/repeat-506
+
+The reviewed response copies preserve the product,store,fulfillment and price fields requested.
+Credentials,cookies and private session state are excluded. Complete originals remain private with
+their hashes recorded.
+
+The retention trace accounts for all15 rejection events. The larger recovery test was interrupted
+after100 saved products and resumed to506; a matching bounded repeat also reached506. These remain
+bounded tests. Full coverage,genuine offers,full-catalog recovery/repetition and Azure execution are
+still open. I will keep the28 October,18:00 Amsterdam checkpoint for those items.
+
+This draft does not yet include the exact Azure diagnostic plan requested in the latest feedback.
+Nothing has been sent.
 
 Thanks,
 Ruddi

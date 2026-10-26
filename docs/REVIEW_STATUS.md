@@ -1,5 +1,12 @@
 # Current review status
 
+## Corrected evidence package
+
+Frozen version:`review-20261027-evidence-correction`. It adds the privacy-reviewed response-pair
+copies,the15-event retention trace and the bounded506-product interruption/resume plus matching
+506-product repeat. Direct links and verification instructions:docs/VERIFY_PACKAGE.md. Complete
+coverage,genuine offers,full-catalog recovery/repeat and Azure execution remain open.
+
 ## Latest client feedback: step2 retention addressed locally
 
 Implementation4a68607 and offline trace: evidence/retention-step2-20261026/README.md.
@@ -54,7 +61,7 @@ Previous baseline remains byte-identical to its frozen SHA. Native bodies/privat
 remain unshared. This satisfies the requested bounded repeat, not repeated uncapped full-category
 collection. Current-wrapper recovery subsequently passed one three-product live SIGKILL/resume
 test at45ba7c4 (evidence/step8-controlled-recovery-20261026/RESULTS.md). Full-catalog recovery
-remains unproven. Full scope, offers, Azure and private-pair sharing remain open.
+remains unproven. Full scope,offers,Azure and client acceptance of the reviewed pair copies remain open.
 
 ## First controlled sample (baseline)
 
@@ -114,7 +121,8 @@ Historical500, fresh33samples,67-product diagnostic and failed79/68controlled at
 Do not combine their overlapping counts with this fresh506dataset. The failed79/68attempts captured
 two actual complete private wrong-store/corrected same-session Fetch pairs, for14898365and51237368.
 Safe hashes/settings/context/price metadata are in evidence/controlled-500-20261025/ and
-evidence/controlled-500-continuation-20261025/. Privacy-reviewed sharing bodies/access remain pending.
+evidence/controlled-500-continuation-20261025/. Privacy-reviewed sharing copies are now available in
+evidence/response-pairs-reviewed-20261026/; complete originals remain private and hash-recorded.
 One or two corrected re-fetches are not a demonstrated remedy.
 
 ## Open requirements
@@ -126,15 +134,17 @@ One or two corrected re-fetches are not a demonstrated remedy.
 - Repeated full uncapped collection and sustained reliability beyond the two bounded samples.
 - Full-catalog recovery/every interruption point remains unproven. Current collector passed the
   separately scoped three-product live SIGKILL/resume at45ba7c4; no large run after recovery change.
-- Raw-pair reviewed sharing copies/access remain pending. Updated public package and unsent draft
-  frozen as review-20261026-step9; verification instructions in docs/VERIFY_PACKAGE.md.
+- Reviewed redacted pair copies are prepared; client delivery and acceptance remain pending.
+  Corrected public package:`review-20261027-evidence-correction`; verification instructions in
+  docs/VERIFY_PACKAGE.md.
 - Azure:no access granted, no deployment/test executed.
 
 No production acceptance or full project completion claimed. Nothing sent/submitted to client.
 
-## Step9 review package
+## Historical step9 review package
 
 Frozen source/evidence version:review-20261026-step9. Includes separate two506datasets, current-source
 recovery3, historical samples, source checks, safe logs/metadata, manifest and unsent client draft.
 No new collection or Azure test during packaging. Exact tagged commit/local ZIP receipt recorded
 after freeze in evidence/review-package-20261026/receipt.json on main. Raw originals remain private.
+It predates the corrected evidence package and must not be used as the authoritative current version.
