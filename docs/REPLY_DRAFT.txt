@@ -9,6 +9,15 @@ https://github.com/RuddiRodriguez/walmart-azure-scraper/tree/review-20261027-evi
 Download:
 https://github.com/RuddiRodriguez/walmart-azure-scraper/archive/refs/tags/review-20261027-evidence-correction.zip
 
+Frozen evidence commit:
+https://github.com/RuddiRodriguez/walmart-azure-scraper/commit/f251aa0fbd8c2a3b9f3ba889a3f3780f19a6865b
+
+Latest organized source commit:
+https://github.com/RuddiRodriguez/walmart-azure-scraper/commit/d696e9ce937da1e1d84a7098b3be79d6ef77f117
+
+The later commit only organizes tests, diagnostics and review utilities under `tools/`. It does not
+change the frozen datasets or evidence claims.
+
 Reviewed wrong-store/corrected-response pairs:
 https://github.com/RuddiRodriguez/walmart-azure-scraper/tree/review-20261027-evidence-correction/evidence/response-pairs-reviewed-20261026
 

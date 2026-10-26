@@ -5,7 +5,8 @@
 This is one three-product Store 100 / ZIP 72712 / PICKUP interruption-and-resume diagnostic. It does not publish production output.
 
 - Repository: https://github.com/RuddiRodriguez/walmart-azure-scraper
-- Source commit: `f251aa0fbd8c2a3b9f3ba889a3f3780f19a6865b`
+- Current organized source commit: `d696e9ce937da1e1d84a7098b3be79d6ef77f117`
+- Frozen evidence commit: `f251aa0fbd8c2a3b9f3ba889a3f3780f19a6865b`
 - Review tag: `review-20261027-evidence-correction`
 - Plan: `evidence/step8-controlled-recovery-20261026/plan.json`
 - Product/listing request ceiling: 12 product + 2 listing requests = 14 total.
@@ -110,8 +111,8 @@ set -euo pipefail
 sudo install -d -o "$USER" -g "$USER" /opt/walmart-scraper
 git clone https://github.com/RuddiRodriguez/walmart-azure-scraper.git /opt/walmart-scraper
 cd /opt/walmart-scraper
-git checkout --detach f251aa0fbd8c2a3b9f3ba889a3f3780f19a6865b
-test "$(git rev-parse HEAD)" = 'f251aa0fbd8c2a3b9f3ba889a3f3780f19a6865b'
+git checkout --detach d696e9ce937da1e1d84a7098b3be79d6ef77f117
+test "$(git rev-parse HEAD)" = 'd696e9ce937da1e1d84a7098b3be79d6ef77f117'
 sudo ./deploy/install-ubuntu.sh
 ```
 
@@ -129,7 +130,7 @@ RUN="data/azure-diagnostic-$(date -u +%Y%m%dT%H%M%SZ)"
 printf '%s\n' "$RUN" > /tmp/walmart-diagnostic-run-path
 
 timeout --signal=TERM 620s xvfb-run -a \
-  .venv/bin/python run_controlled_recovery.py \
+  .venv/bin/python -m tools.run_controlled_recovery \
   --output "$RUN" \
   --plan evidence/step8-controlled-recovery-20261026/plan.json
 ```
