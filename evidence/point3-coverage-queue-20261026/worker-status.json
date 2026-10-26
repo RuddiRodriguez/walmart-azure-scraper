@@ -1,25 +1,25 @@
 {
   "phase": "walking",
-  "batches": 6,
-  "pages_attempted": 480,
+  "batches": 7,
+  "pages_attempted": 560,
   "finished": false,
   "max_seconds": 43200,
   "max_pages": 2000,
   "queue_counts": {
-    "failed": 20,
+    "failed": 25,
     "navigation_scope_unverified": 9,
     "outside_scope": 1,
-    "pending": 1905,
-    "reviewed": 527
+    "pending": 1941,
+    "reviewed": 602
   },
   "scope_counts": {
     "brief_exclusion": 2,
     "outside_required_ancestry": 2,
-    "parent_scope_unverified": 125,
-    "scope_confirmed_by_response": 3317,
-    "scope_unverified": 296,
-    "scoped_queue": 4260
+    "parent_scope_unverified": 123,
+    "scope_confirmed_by_response": 3920,
+    "scope_unverified": 297,
+    "scoped_queue": 4516
   },
-  "latest_batch": "batch-00477-1793032152",
-  "seconds": 8221.2
+  "latest_batch": "batch-00557-1793033638",
+  "seconds": 9645.3
 }
