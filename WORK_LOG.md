@@ -699,3 +699,7 @@ Listing/category review only. Pending/failed/scope-unverified remain open. Raw b
 ## Coverage continuation result
 {"phase": "walking", "batches": 3, "pages_attempted": 240, "finished": false, "max_seconds": 43200, "max_pages": 2000, "queue_counts": {"failed": 11, "pending": 1672, "reviewed": 306}, "scope_counts": {"brief_exclusion": 2, "scope_confirmed_by_response": 1621, "scope_unverified": 297, "scoped_queue": 3522}, "latest_batch": "batch-00237-1793028144", "seconds": 4093.0}
 Listing/category review only. Pending/failed/scope-unverified remain open. Raw bodies/native pages private. Offer candidates require source/terms review; no invented examples or full-catalog claim.
+
+## Coverage continuation result
+{"phase": "walking", "batches": 4, "pages_attempted": 320, "finished": false, "max_seconds": 43200, "max_pages": 2000, "queue_counts": {"failed": 13, "pending": 1703, "reviewed": 384}, "scope_counts": {"brief_exclusion": 2, "scope_confirmed_by_response": 2262, "scope_unverified": 297, "scoped_queue": 3705}, "latest_batch": "batch-00317-1793029509", "seconds": 5411.4}
+Listing/category review only. Pending/failed/scope-unverified remain open. Raw bodies/native pages private. Offer candidates require source/terms review; no invented examples or full-catalog claim.

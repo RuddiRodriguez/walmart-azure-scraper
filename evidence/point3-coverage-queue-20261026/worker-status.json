@@ -1,21 +1,21 @@
 {
   "phase": "walking",
-  "batches": 3,
-  "pages_attempted": 240,
+  "batches": 4,
+  "pages_attempted": 320,
   "finished": false,
   "max_seconds": 43200,
   "max_pages": 2000,
   "queue_counts": {
-    "failed": 11,
-    "pending": 1672,
-    "reviewed": 306
+    "failed": 13,
+    "pending": 1703,
+    "reviewed": 384
   },
   "scope_counts": {
     "brief_exclusion": 2,
-    "scope_confirmed_by_response": 1621,
+    "scope_confirmed_by_response": 2262,
     "scope_unverified": 297,
-    "scoped_queue": 3522
+    "scoped_queue": 3705
   },
-  "latest_batch": "batch-00237-1793028144",
-  "seconds": 4093.0
+  "latest_batch": "batch-00317-1793029509",
+  "seconds": 5411.4
 }
