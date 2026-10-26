@@ -25,10 +25,23 @@ their hashes recorded.
 
 The retention trace accounts for all15 rejection events. The larger recovery test was interrupted
 after100 saved products and resumed to506; a matching bounded repeat also reached506. These remain
-bounded tests. Full coverage,genuine offers,full-catalog recovery/repetition and Azure execution are
-still open. I will keep the28 October,18:00 Amsterdam checkpoint for those items.
+bounded tests. Full coverage, genuine offers and full-catalog recovery/repetition are still open.
+I will keep the 28 October, 18:00 Amsterdam checkpoint for those items.
 
-This draft does not yet include the exact Azure diagnostic plan requested in the latest feedback.
+The exact proposed Azure diagnostic is documented at:
+https://github.com/RuddiRodriguez/walmart-azure-scraper/blob/main/docs/AZURE_DIAGNOSTIC_PROPOSAL.md
+
+It uses one temporary Central US Standard_B2ls_v2 VM with Ubuntu 24.04, 2 vCPU, 4 GiB RAM,
+a 32 GiB Standard SSD and one IP restricted to my current address. The client owns the separate
+resource group, so I need no Azure account role. The plan includes my dedicated public SSH key
+and the exact creation, installation, run, resume, export, hash and cleanup commands.
+
+The diagnostic is limited to three products, 12 product requests plus 2 listing requests, and one
+shared 10-minute deadline across the interruption and restart. The VM, disk and IP have a maximum
+60-minute lifetime. Estimated total cost is below $0.10, with a hard $1 stop. Any store mismatch,
+blocked request, limit, hash failure or cleanup problem stops the test without publishing data.
+Azure access and spending are not approved yet, and this plan does not claim an Azure run.
+
 Nothing has been sent.
 
 Thanks,
