@@ -637,3 +637,6 @@ Frozen tagreview-20261026-step9 atc433dce631ba17ffb10624e3c4765a89de51b6fe. Loca
 
 ## Client draft wording update
 - Replaced docs/REPLY_DRAFT.txt with the exact user-approved conversational version, including repo link, completed results, remaining gaps and proposed26October18:00Amsterdam time(CET,UTC+1). Retained UNSENT label. No client contact, submission, collection or deployment. Frozen review-20261026-step9 tag/ZIP remain unchanged; revised draft is on main. Refreshed current file manifest.
+
+## Client draft date and Azure explanation update
+- Updated docs/REPLY_DRAFT.txt to the user-approved version: next proposed update28October2026 at18:00Amsterdam time(CET,UTC+1). Azure remains untested because the test approach still needs agreement with the client; removed the access-waiting explanation from this draft. Retained UNSENT label and existing results/gaps. Refreshed current manifest; frozen package/tag unchanged. No client contact, submission, Azure test or scheduled follow-up.
