@@ -6,7 +6,7 @@ from urllib.parse import urlsplit,parse_qs
 from bs4 import BeautifulSoup
 from browser import open_browser,select_store,navigate,verify_banner,fetch_product
 from diagnostic_capture import make_capture,safe_url
-from extract import category_id,discover,next_data
+from extract import category_id,discover,next_data,product_record,promotion_fields,FINANCE
 from capture_store_drift import listing_from_rendered
 from scrape import next_page_url,verify_listing_store
 from storage import atomic_json,page_url
@@ -24,13 +24,21 @@ def run(folder,maximum,seconds):
     lock=(folder/'run.lock').open('w');fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
     db=sqlite3.connect(folder/'queue.sqlite')
     db.executescript('CREATE TABLE IF NOT EXISTS pages(category TEXT,key TEXT,url TEXT,status TEXT,reason TEXT,PRIMARY KEY(category,key)); CREATE TABLE IF NOT EXISTS links(category TEXT,url TEXT,parent TEXT,decision TEXT,PRIMARY KEY(category,url,parent));')
+    db.execute('CREATE TABLE IF NOT EXISTS scope_proofs(category TEXT,leaf TEXT,decision TEXT,actual_id TEXT,breadcrumb TEXT,source TEXT,PRIMARY KEY(category,leaf))')
+    if 'scope_review' not in {r[1] for r in db.execute('PRAGMA table_info(pages)')}:db.execute('ALTER TABLE pages ADD COLUMN scope_review INTEGER DEFAULT 0')
     roots={r['Category (Auto)']:page_url(r['URL']) for r in csv.DictReader(Path('config/categories.csv').open())}
     def add(category,url,parent):
         ids=category_id(url).split('_');scope=bool(re.search(r'(?:^|_)'+re.escape(category_id(roots[category]))+r'(?:_|$)',category_id(url)))
         excluded=bool(re.search(r'/recipes(?:/|$)|shop-all-foods|farm-animals',url,re.I))
-        decision='brief_exclusion' if excluded else 'scoped_queue' if scope else 'scope_unverified'
+        proof=db.execute('SELECT decision FROM scope_proofs WHERE category=? AND leaf=?',(category,category_id(url).split('_')[-1])).fetchone()
+        decision='brief_exclusion' if excluded else proof[0] if proof else 'scoped_queue' if scope else 'scope_unverified'
         db.execute('INSERT OR IGNORE INTO links VALUES (?,?,?,?)',(category,page_url(url),parent,decision))
-        if scope and not excluded:db.execute("INSERT OR IGNORE INTO pages VALUES (?,?,?,'pending','')",(category,key(url),page_url(url)))
+        if not excluded and category_id(url) and decision!='outside_required_ancestry':db.execute("INSERT OR IGNORE INTO pages(category,key,url,status,reason,scope_review) VALUES (?,?,?,'pending','',?)",(category,key(url),page_url(url),int(not scope)))
+    def prove(category,url,decision,actual,breadcrumb,source):
+        leaf=category_id(url).split('_')[-1]
+        db.execute('INSERT OR REPLACE INTO scope_proofs VALUES (?,?,?,?,?,?)',(category,leaf,decision,actual,json.dumps(breadcrumb),source))
+        for link, in db.execute('SELECT DISTINCT url FROM links WHERE category=?',(category,)).fetchall():
+            if category_id(link).split('_')[-1]==leaf:db.execute('UPDATE links SET decision=? WHERE category=? AND url=? AND decision!='brief_exclusion'',(decision,category,link))
     for c,u in roots.items():add(c,u,'required_csv')
     ledger=json.loads(Path('evidence/point3-20261026/coverage-ledger.json').read_text())
     for n in ledger:add(n['category'],n['url'],'historically_observed_link')
@@ -39,9 +47,9 @@ def run(folder,maximum,seconds):
     output=folder/f'batch-{batch:05}-{int(time.time())}';output.mkdir()
     settings=json.loads(Path('config/stores.json').read_text());settings.update(retries=1,max_page_seconds=25)
     store=settings['stores'][0]
-    state=dict(started=time.monotonic(),limits=dict(product_requests=1,listing_requests=maximum,seconds=seconds),product_requests=0,listing_requests=0,sequence=0,body_bytes=0,body_limit_bytes=1024*2**20)
+    state=dict(started=time.monotonic(),limits=dict(product_requests=10,listing_requests=maximum,seconds=seconds),product_requests=0,listing_requests=0,sequence=0,body_bytes=0,body_limit_bytes=1024*2**20)
     from datetime import datetime,timezone
-    result=dict(started_utc=datetime.now(timezone.utc).isoformat(),source_commit=subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip(),scope='Listing/category coverage review only; no full product/PDP collection',pages=[],limits=state['limits'],full_coverage_complete=False)
+    result=dict(started_utc=datetime.now(timezone.utc).isoformat(),source_commit=subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip(),scope='Listing/category coverage review only; no full product/PDP collection',pages=[],offer_observations=[],limits=state['limits'],full_coverage_complete=False)
     sb=None
     def log(event,**values):
         with (output/'events.jsonl').open('a') as f:f.write(json.dumps(dict(event=event,**values))+'\n')
@@ -54,9 +62,9 @@ def run(folder,maximum,seconds):
         sb=open_browser();select_store(sb,store,settings,log,output)
         for _ in range(maximum):
             # Breadth first: next pending page from category with fewest completed pages.
-            pending=db.execute("SELECT p.category,p.key,p.url FROM pages p WHERE p.status='pending' ORDER BY (SELECT count(*) FROM pages d WHERE d.category=p.category AND d.status!='pending'),p.rowid LIMIT 1").fetchone()
+            pending=db.execute("SELECT p.category,p.key,p.url,p.scope_review FROM pages p WHERE p.status='pending' ORDER BY (SELECT count(*) FROM pages d WHERE d.category=p.category AND d.status!='pending'),p.rowid LIMIT 1").fetchone()
             if not pending:break
-            category,identity,url=pending;entry=dict(category=category,url=safe_url(url),status='started')
+            category,identity,url,scope_review=pending;entry=dict(category=category,url=safe_url(url),status='started')
             result['pages'].append(entry);save()
             try:
                 native=navigate(sb,url,settings,log);verify_banner(native,store)
@@ -71,22 +79,64 @@ def run(folder,maximum,seconds):
                 native_search=next_data(native).get('searchResult');following_native=next_page_url(native,url,native_search);native.decompose()
                 fetched=fetch_product(sb,url,settings,capture=make_capture(output/'captures','coverage',state,'listing'))
                 try:
+                    entry['listing_sequence']=state['sequence']
                     search=next_data(fetched).get('searchResult');following=None;candidate_count=0
                     if search:
+                        actual=str((search.get('catInfo') or {}).get('catId') or ((search.get('paginationV2') or {}).get('pageProperties') or {}).get('cat_id') or '')
+                        if not actual or actual.split('_')[-1]!=category_id(url).split('_')[-1]:raise ValueError('Response category identifier mismatch or missing')
+                        breadcrumbs=search.get('breadCrumb') or []
+                        ancestry=any(re.search(r'(?:^|_)'+re.escape(category_id(roots[category]))+r'(?:_|$)',str(value)) for value in [actual,*[b.get('id','') for b in breadcrumbs]])
+                        if scope_review and not ancestry and len(breadcrumbs)<2:raise ValueError('Insufficient response ancestry to decide category scope')
+                        entry.update(response_category_id=actual,breadcrumb=[{k:b[k] for k in ['id','name','url'] if k in b} for b in search.get('breadCrumb') or []])
+                        if not ancestry:
+                            if scope_review:
+                                with db:
+                                    db.execute("UPDATE pages SET status='outside_scope',reason='Retailer response ancestry outside required root' WHERE category=? AND key=?",(category,identity))
+                                    prove(category,url,'outside_required_ancestry',actual,entry['breadcrumb'],str(output))
+                                entry.update(status='outside_scope');save();continue
+                            raise ValueError('Response category ancestry differs from required root')
                         verify_listing_store(search,store)
                         candidates,rejections,search=listing_from_rendered(snapshot,fetched,category,store);candidate_count=len(candidates)
+                        for candidate in candidates:
+                            text=candidate.get('text','')+' '+json.dumps(candidate['item'].get('promoData') or [])
+                            signal_found=bool(re.search(r'buy\s+\d|\b\d+\s+for\s+\$|clip\s+(?:coupon|offer)|digital coupon|mix.{0,12}match',text,re.I))
+                            if not signal_found or state['product_requests']>=10:continue
+                            detail=fetch_product(sb,candidate['url'],settings,capture=make_capture(output/'captures','coverage',state,'product'))
+                            try:
+                                row,reason,product=product_record(candidate,detail,store,settings['private_labels'],'',retain_missing=True)
+                                fields,unknown=promotion_fields(product)
+                                visible=' '.join(detail.get_text(' ',strip=True).split())
+                                descriptions=[fields[k] for k in ['volume_deals_description','digital_deals_description'] if fields[k]]
+                                qualified=bool(row and not reason and not unknown and descriptions and all(' '.join(d.split()) in visible for d in descriptions))
+                                result['offer_observations'].append(dict(product_id=candidate['item_id'],sequence=state['sequence'],qualified_candidate=qualified,fields=fields,reason=reason,unknown_count=len(unknown)))
+                            except Exception as offer_error:
+                                result['offer_observations'].append(dict(product_id=candidate['item_id'],sequence=state['sequence'],qualified_candidate=False,error_type=type(offer_error).__name__))
+                                if any(w in str(offer_error).lower() for w in ['challenge','access blocked','disk reserve']):raise
+                            finally:detail.decompose()
                         following=next_page_url(fetched,url,search) or following_native
                         pagination=search.get('paginationV2') or {};page=int((pagination.get('pageProperties') or {}).get('page') or 1);last=int(pagination.get('maxPage') or 1)
+                        if page!=int((parse_qs(urlsplit(url).query).get('page') or ['1'])[0]):raise ValueError('Pagination response page mismatch')
                         if page<last and not following:raise ValueError('Missing observed next-page control')
                         entry.update(page=page,reported_last_page=last,listing_rejections=dict(Counter(r['reason'] for r in rejections)))
                     elif not links:raise ValueError('Neither verified product listing nor child navigation; not legitimate empty category')
                 finally:fetched.decompose()
                 with db:
-                    for link in links:add(category,link,url)
+                    for link in links:
+                        if scope_review and not search:
+                            db.execute('INSERT OR IGNORE INTO links VALUES (?,?,?,?)',(category,page_url(link),url,'parent_scope_unverified'))
+                        else:add(category,link,url)
                     if following:add(category,following,url)
-                    db.execute("UPDATE pages SET status='reviewed',reason='' WHERE category=? AND key=?",(category,identity))
-                entry.update(status='reviewed',candidate_count=candidate_count,next_page=safe_url(following) if following else None,snapshot_sha256=hashlib.sha256(snapshot.read_bytes()).hexdigest(),decisions=[{**d,'url':safe_url(d['url'])} for d in decisions])
+                    db.execute("UPDATE pages SET status=?,reason='' WHERE category=? AND key=?",('navigation_scope_unverified' if scope_review and not search else 'reviewed',category,identity))
+                    if search:prove(category,url,'scope_confirmed_by_response',actual,entry['breadcrumb'],str(output))
+                entry.update(status='navigation_scope_unverified' if scope_review and not search else 'reviewed',candidate_count=candidate_count,next_page=safe_url(following) if following else None,snapshot_sha256=hashlib.sha256(snapshot.read_bytes()).hexdigest(),decisions=[{**d,'url':safe_url(d['url'])} for d in decisions])
             except Exception as error:
+                if 'empty page title' in str(error).lower() and state['listing_requests']<maximum:
+                    try:
+                        probe=fetch_product(sb,url,settings,capture=make_capture(output/'captures','coverage',state,'listing'));probe.decompose()
+                        entry['failure_body_probe']='Captured once; native rendering still failed, not accepted as empty'
+                    except Exception as probe_error:
+                        entry['failure_probe_error_type']=type(probe_error).__name__
+                        if any(w in str(probe_error).lower() for w in ['challenge','access blocked','disk reserve']):raise
                 entry.update(status='failed',reason=str(error),error_type=type(error).__name__)
                 with db:db.execute("UPDATE pages SET status='failed',reason=? WHERE category=? AND key=?",(str(error),category,identity))
                 if any(w in str(error).lower() for w in ['challenge','access blocked','disk reserve','body budget','runtime','budget reached']):raise
