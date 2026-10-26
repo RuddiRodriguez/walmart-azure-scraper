@@ -89,7 +89,9 @@ def run(root, plan):
         after = json.loads((output / 'checkpoint.json').read_text())
         report = after['report']
         events = [json.loads(line) for line in (output / 'events.jsonl').read_text().splitlines()]
-        commits = [e['product_id'] for e in events if e['event'] == 'product_committed']
+        # Queue duplicate skips also emit product_committed; count actual saved source records.
+        committed_sources=json.loads((output/'source-records.json').read_text())
+        commits=[s['candidate']['item_id'] for s in committed_sources]
         starts = [e['product_id'] for e in events if e['event'] == 'product_started']
         checks = result['checks']
         checks['original_records_unchanged'] = all(after['accepted'].get(k) == v for k, v in before['accepted'].items())

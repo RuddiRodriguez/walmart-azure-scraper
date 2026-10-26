@@ -1,0 +1,15 @@
+{
+  "baseline_dataset_sha256": "5e75b8098680a4434c676e15b9bbc3e9207d5fd46b49056468b1746a5028dd60",
+  "producer_hashes": {
+    "controlled_collection.py": "ae3e18532b4f838d081107e8441970acd83cc1b568b1a263a6c8c803280fb9f8",
+    "diagnostic_capture.py": "7aae043eed5e95efb2a1bf6de58af0dc93c1473d37ad4cfbe2748aa8c0268e65",
+    "capture_store_drift.py": "9ce534bfb7b887af0776fa18843dc19e162c397e3a6e7f844ffb97f5aa5bf6f7",
+    "scrape.py": "b9d0d5814aa013ac0ca4a33fd36b991944a94ccd2e79bbcfee72c545618d8611",
+    "browser.py": "2b46d80e5b5edd1b75c7cbf36d460d96da91cfd218e0b1dfa309dcc3459cec24",
+    "extract.py": "5d7dca9180052e97b66753921d2b8d9a73cdacf4be2d2949a03aed03c79c0d6e",
+    "storage.py": "2453aa318e9e59b37bcc85dd3a6b9c5d8b4cc7616368e4cbf01f41b054385c90",
+    "validate.py": "fef75a52c01bc2d56b99caab4dac2ac4d57e4c19396170d8975ffc8fdce5e02e",
+    "retention.py": "2edf454df2a64b5ff827fbe9c8787bbaf5cb8c32e4ddc0082c4cd8b79359028b"
+  },
+  "scope": "Same producer bytes/settings; Git HEAD advanced only for earlier evidence publication"
+}
