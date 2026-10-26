@@ -22,6 +22,12 @@ from storage import atomic_json
 from trace_store_context import product_context
 
 
+def qualifying_example(record, reason, unknown, description_visible, fields):
+    # Brief permits genuine BOGO/digital offers with blank undisplayed final price.
+    return bool(record is not None and not reason and not unknown and description_visible
+                and (fields['volume_deals_description'] or fields['digital_deals_description']))
+
+
 def review(output, expanded=False):
     output = Path(output).resolve()
     if not output.is_relative_to(Path('data').resolve()):
@@ -32,7 +38,7 @@ def review(output, expanded=False):
     store = settings['stores'][0]
     with Path('config/categories.csv').open() as source:
         categories = [r['Category (Auto)'] for r in csv.DictReader(source)]
-    queries = ['buy 2 save', '2 for', 'digital coupon', 'clip coupon'] if expanded else ['buy 2 save', 'digital coupon']
+    queries = ['mix or match', 'buy 1 get 1 free', 'digital coupon', 'clip coupon'] if expanded else ['buy 2 save', 'digital coupon']
     per_query = 4 if expanded else 3
     seen = set()
     state = {'started': time.monotonic(), 'limits': {'product_requests': len(queries) * per_query + 2, 'listing_requests': len(queries), 'seconds': 600},
@@ -109,7 +115,7 @@ def review(output, expanded=False):
                 seen.add(candidate['item_id'])
                 page = fetch_product(sb, candidate['url'], settings, capture=make_capture(output / 'captures', 'offers', state))
                 try:
-                    record, reason, product = product_record(candidate, page, store, settings['private_labels'], logo)
+                    record, reason, product = product_record(candidate, page, store, settings['private_labels'], logo, retain_missing=True)
                     fields, unknown = promotion_fields(product)
                     visible = ' '.join(page.get_text(' ', strip=True).split())
                     descriptions = [fields[k] for k in ['volume_deals_description', 'digital_deals_description'] if fields[k]]
@@ -122,7 +128,7 @@ def review(output, expanded=False):
                            'current_local_price': (record['sale_price'] or record['regular_price']) if record else ''}
                     result['products'].append(row)
                     entry['inspected'] += 1
-                    if record and reason != 'retained_unavailable' and not unknown and description_visible and row['explicit_offer_price']:
+                    if qualifying_example(record, reason, unknown, description_visible, fields):
                         result['verified_examples'].append(row)
                     save()
                 finally:

@@ -52,8 +52,18 @@ def review(output, plan=None, seconds=600):
                          and proof_parts.path.startswith('/browse/')
                          and category_id(required['URL']) in ids[:-1]
                          and category_id(case['url']).split('_')[-1] == ids[-1])
+            if case.get('scope_review_only'):
+                # Inspect an unresolved link actually observed on its required root; do not assume descendant scope.
+                references=json.loads(Path(case['source_evidence']).read_text())
+                assert any(r['category']==case['category'] and r['url']==case['url'] and r['source_snapshot_sha256']==case['source_snapshot_sha256'] for r in references)
+                snapshots=Path('data/corrected-plan-20261025/step6-category-review').glob('root-*.html')
+                original=next(p for p in snapshots if hashlib.sha256(p.read_bytes()).hexdigest()==case['source_snapshot_sha256'])
+                from urllib.parse import urljoin
+                page=BeautifulSoup(original.read_bytes(),'html.parser')
+                assert any(urlsplit(urljoin('https://www.walmart.com',a['href'])).path==parts.path for a in (page.select_one('main') or page).select('a[href]'))
+                supported=parts.scheme=='https' and parts.netloc=='www.walmart.com' and parts.path.startswith(('/cp/','/browse/'))
             if not supported:
-                raise ValueError('Selected page requires matching observed descendant ID evidence')
+                raise ValueError('Selected page requires observed scope evidence')
     state = dict(started=time.monotonic(), limits=dict(product_requests=2, listing_requests=len(cases), seconds=seconds),
                  product_requests=0, listing_requests=0, sequence=0, body_bytes=0)
     result = dict(mode='Live bounded category-root discovery only; no child crawl or publication',
@@ -128,7 +138,9 @@ def review(output, plan=None, seconds=600):
                 entry['rejected_candidate_reasons'] = dict(Counter(c['reason'] for c in rejected))
                 links = discover(native, page_url(root['URL']), ['recipes', r'shop[- ]all[- ]foods?$', 'farm[- ]animals'],
                                  current_url=url, decisions=entry['decisions'])
-                entry.update(visible_candidates=len(candidates), excluded_candidates=len(rejected),
+                entry.update(scope_review_only=case.get('scope_review_only',False), page_title=native.title.get_text(' ',strip=True) if native.title else '',
+                             observed_product_category_paths=sorted({(c['item'].get('category') or {}).get('categoryPath','') for c in candidates}),
+                             visible_candidates=len(candidates), excluded_candidates=len(rejected),
                              discovered_child_urls=list(links), child_urls_not_visited=len(links))
             finally:
                 native.decompose()

@@ -45,8 +45,8 @@ def compare(baseline, repeat):
     preflight = json.loads((repeat / 'preflight.json').read_text())
     if hashlib.sha256((baseline / 'products.json').read_bytes()).hexdigest() != preflight['baseline_dataset_sha256']:
         raise ValueError('Frozen baseline dataset changed; comparison stopped')
-    ua = {r['product_id'] for r in json.loads((baseline / 'accepted-source-audit.json').read_text()) if r['acceptance_reason'] == 'retained_unavailable'}
-    ub = {r['product_id'] for r in json.loads((repeat / 'accepted-source-audit.json').read_text()) if r['acceptance_reason'] == 'retained_unavailable'}
+    ua = {r['product_id'] for r in json.loads((baseline / 'accepted-source-audit.json').read_text()) if r['acceptance_reason'] in ['retained_unavailable','retained_no_pickup_offer']}
+    ub = {r['product_id'] for r in json.loads((repeat / 'accepted-source-audit.json').read_text()) if r['acceptance_reason'] in ['retained_unavailable','retained_no_pickup_offer']}
     matches = a['source_hashes'] == b['source_hashes']
     plan_matches = (baseline / 'plan.json').read_bytes() == (repeat / 'plan.json').read_bytes()
     result = dict(mode='Offline comparison of independently audited bounded live samples, not full-catalog proof',
@@ -92,8 +92,7 @@ Observed effective-price changes: {len(result['effective_price_changes'])}. Sour
 were created/deleted. Blank prices are not zero. Individual differences are in comparison.json.
 
 This is bounded-sample repeatability evidence, not full uncapped collection or a proven store-drift
-remedy. Offers, full scope, current-wrapper live recovery, Azure and private-pair reviewed sharing
-remain separate open requirements. No client contact or submission.
+remedy. See current review status for separately scoped coverage,offers,recovery and Azure evidence.
 '''
     (repeat / 'COMPARISON.md').write_text(text)
     print(json.dumps({k: result[k] for k in ['both_samples_accepted', 'identical_collection_source', 'identical_plan_bytes', 'baseline_records', 'repeat_records', 'common_product_ids', 'runtime_difference_percent']}))

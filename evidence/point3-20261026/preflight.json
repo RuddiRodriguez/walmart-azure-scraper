@@ -1,0 +1,26 @@
+{
+  "mode": "Preflight only; live batch not yet started",
+  "observed_utc": "2026-10-26T10:15:14.970416+00:00",
+  "python": "3.14.5",
+  "system": "Darwin",
+  "machine": "arm64",
+  "packages": {
+    "seleniumbase": "4.56.3",
+    "beautifulsoup4": "4.15.0",
+    "psutil": "7.2.2"
+  },
+  "source_hashes": {
+    "controlled_collection.py": "ae3e18532b4f838d081107e8441970acd83cc1b568b1a263a6c8c803280fb9f8",
+    "retention.py": "2edf454df2a64b5ff827fbe9c8787bbaf5cb8c32e4ddc0082c4cd8b79359028b",
+    "extract.py": "5d7dca9180052e97b66753921d2b8d9a73cdacf4be2d2949a03aed03c79c0d6e",
+    "browser.py": "2b46d80e5b5edd1b75c7cbf36d460d96da91cfd218e0b1dfa309dcc3459cec24",
+    "scrape.py": "b9d0d5814aa013ac0ca4a33fd36b991944a94ccd2e79bbcfee72c545618d8611",
+    "storage.py": "2453aa318e9e59b37bcc85dd3a6b9c5d8b4cc7616368e4cbf01f41b054385c90",
+    "validate.py": "fef75a52c01bc2d56b99caab4dac2ac4d57e4c19396170d8975ffc8fdce5e02e",
+    "diagnostic_capture.py": "7aae043eed5e95efb2a1bf6de58af0dc93c1473d37ad4cfbe2748aa8c0268e65",
+    "capture_store_drift.py": "9ce534bfb7b887af0776fa18843dc19e162c397e3a6e7f844ffb97f5aa5bf6f7"
+  },
+  "plan_sha256": "824cca33cf79424154d21e3c13fd6ff4317af32130b9d50d3ac978fc041b7ea8",
+  "paid_services": false,
+  "azure_execution": false
+}

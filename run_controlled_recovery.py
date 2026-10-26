@@ -18,9 +18,14 @@ def run(root, plan):
     output = root / 'collection'
     command = [sys.executable, 'controlled_collection.py', '--plan', str(plan), '--output', str(output)]
     started = time.monotonic()
-    budget = json.loads(plan.read_text())['limits']['seconds']
-    result = dict(scope='One category, three products; current collector live hard interruption/resume only',
-                  command=command, interruption='SIGKILL during product request after one saved accepted record', checks={})
+    settings = json.loads(plan.read_text())
+    budget = settings['limits']['seconds']
+    target = settings['target']
+    interrupt_after = settings.get('interrupt_after', 1)
+    if not 1 <= interrupt_after < target:
+        raise ValueError('Interruption point must precede target')
+    result = dict(scope=f"Bounded{target}product/{len(settings['categories'])}category sample, interruption after{interrupt_after}; not full-catalog proof",
+                  command=command, interruption=f'SIGKILL during next product processing after at least{interrupt_after}saved accepted records', checks={})
     with (root / 'process.log').open('w') as log:
         process = subprocess.Popen(command, stdout=log, stderr=subprocess.STDOUT)
         interrupted = False
@@ -31,7 +36,7 @@ def run(root, plan):
                 saved = json.loads(checkpoint.read_text())
                 lines = events.read_text().splitlines()
                 event = json.loads(lines[-1]) if lines else {}
-                if len(saved['accepted']) >= 1 and event.get('event') == 'product_started':
+                if len(saved['accepted']) >= interrupt_after and event.get('event') == 'product_started':
                     children = psutil.Process(process.pid).children(recursive=True)
                     process.kill()
                     process.wait()
@@ -88,7 +93,7 @@ def run(root, plan):
         starts = [e['product_id'] for e in events if e['event'] == 'product_started']
         checks = result['checks']
         checks['original_records_unchanged'] = all(after['accepted'].get(k) == v for k, v in before['accepted'].items())
-        checks['completed_target'] = bool(report['completed_attempt'] and report['target_reached'] and len(after['accepted']) == 3)
+        checks['completed_target'] = bool(report['completed_attempt'] and report['target_reached'] and len(after['accepted']) == target)
         checks['no_duplicate_commits'] = len(commits) == len(set(commits))
         checks['committed_records_not_refetched'] = all(starts.count(k) == 1 for k in before['accepted'])
         checks['interrupted_product_retried_once'] = starts.count(event['product_id']) == 2 and commits.count(event['product_id']) == 1

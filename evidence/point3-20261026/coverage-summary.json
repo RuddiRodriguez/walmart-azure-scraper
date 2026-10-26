@@ -1,0 +1,67 @@
+{
+  "mode": "Offline reconciliation of known observed links and dated page evidence; not complete retailer taxonomy",
+  "source_files": 10,
+  "observed_category_url_associations": 1289,
+  "unique_urls": 1282,
+  "scope_counts": {
+    "observed_descendant_id": 1078,
+    "unresolved_scope": 169,
+    "required_root": 27,
+    "observed_leaf_alias_contents_unverified": 15
+  },
+  "visit_counts": {
+    "not_visited": 1253,
+    "attempted_not_verified": 1,
+    "reviewed_page_only": 35
+  },
+  "per_category": {
+    "Food": {
+      "not_visited": 240,
+      "reviewed_page_only": 4
+    },
+    "Household Essentials": {
+      "not_visited": 123,
+      "reviewed_page_only": 3
+    },
+    "Personal Care": {
+      "not_visited": 137,
+      "reviewed_page_only": 4
+    },
+    "Beauty": {
+      "reviewed_page_only": 4,
+      "not_visited": 167
+    },
+    "Diapering": {
+      "not_visited": 13,
+      "reviewed_page_only": 2
+    },
+    "Feeding": {
+      "not_visited": 40,
+      "reviewed_page_only": 3
+    },
+    "Health & Wellness": {
+      "not_visited": 92,
+      "reviewed_page_only": 4
+    },
+    "Pets": {
+      "not_visited": 115,
+      "reviewed_page_only": 5
+    },
+    "Balloons": {
+      "not_visited": 11,
+      "reviewed_page_only": 1
+    },
+    "Art Supplies": {
+      "not_visited": 19,
+      "attempted_not_verified": 1,
+      "reviewed_page_only": 2
+    },
+    "Office Supplies": {
+      "not_visited": 296,
+      "reviewed_page_only": 3
+    }
+  },
+  "full_coverage_complete": false,
+  "live_requests": 0,
+  "limitation": "Visited page does not prove its descendants or pagination exhausted; failed/empty pages remain unresolved. Aliases retain distinct records. Newly undiscovered pages are unknown."
+}
