@@ -1,0 +1,29 @@
+{
+  "mode": "bounded live offer inspection; not a catalog run",
+  "source_commit": "deaec35c4b5d58e3a3374bdb89ddb3330f97eb76",
+  "source_sha256": {
+    "review_live_offers.py": "4894c61031e379b97162f683ec1c217a23ca5212cac8ac7f085ddf91445fde3f",
+    "extract.py": "5d7dca9180052e97b66753921d2b8d9a73cdacf4be2d2949a03aed03c79c0d6e",
+    "scrape.py": "b9d0d5814aa013ac0ca4a33fd36b991944a94ccd2e79bbcfee72c545618d8611",
+    "capture_store_drift.py": "9ce534bfb7b887af0776fa18843dc19e162c397e3a6e7f844ffb97f5aa5bf6f7"
+  },
+  "started_utc": "2026-10-26T10:17:07.218271+00:00",
+  "completed": true,
+  "seconds": 173.031,
+  "limits": {
+    "product_requests": 18,
+    "listing_requests": 4,
+    "seconds": 600
+  },
+  "counts": {
+    "product_requests": 16,
+    "listing_requests": 4,
+    "sequence": 20,
+    "body_bytes": 12833053
+  },
+  "original_body_hashes_verified": 20,
+  "source_scope": "Bounded live attempt with offline body integrity checks; not exhaustive coverage or independent offer-terms acceptance",
+  "distinct_products_inspected": 14,
+  "offer_candidates_passing_helper": 0,
+  "complete_offer_terms_review": "Pending agent source review if any candidate exists; no invented examples"
+}

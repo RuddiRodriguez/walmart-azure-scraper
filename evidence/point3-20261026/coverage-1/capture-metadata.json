@@ -1,0 +1,113 @@
+[
+  {
+    "id": "coverage-001",
+    "kind": "product",
+    "session": "coverage",
+    "sequence": 1,
+    "request": {
+      "url": "https://www.walmart.com/ip/Carving-Pumpkin-Each/47428850?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-26T10:15:47.268296+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Carving-Pumpkin-Each/47428850?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 10:15:48 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T10:15:48.135256+00:00",
+      "elapsed_seconds": 0.867
+    },
+    "body_bytes": 500919,
+    "body_sha256": "e74b3a6993269975f2b4f09a0d4c33ffadce4162b1db6f96c8318fa63313e7c5",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-002",
+    "kind": "listing",
+    "session": "coverage",
+    "sequence": 2,
+    "request": {
+      "url": "https://www.walmart.com/cp/electric-toothbrushes/5756015",
+      "attempt": 1,
+      "started_utc": "2026-10-26T10:16:08.055532+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/personal-care/electric-toothbrushes/1005862_1007221_5756015",
+      "redirected": true,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 10:16:08 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T10:16:10.006865+00:00",
+      "elapsed_seconds": 1.951
+    },
+    "body_bytes": 1350510,
+    "body_sha256": "3ddb4a33a5df744ae9d010f1f6cc43fbef1b5ecc1ca4c838929157714968d9c9",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-003",
+    "kind": "product",
+    "session": "coverage",
+    "sequence": 3,
+    "request": {
+      "url": "https://www.walmart.com/ip/Carving-Pumpkin-Each/47428850?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-26T10:16:10.880264+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Carving-Pumpkin-Each/47428850?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 10:16:11 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T10:16:11.676083+00:00",
+      "elapsed_seconds": 0.796
+    },
+    "body_bytes": 501145,
+    "body_sha256": "11e2f0dbe4613bdc6d1e38314f6efa5a89459363231e87be6db9e957e02e8db1",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  }
+]

@@ -1,0 +1,742 @@
+[
+  {
+    "id": "offers-001",
+    "kind": "product",
+    "session": "offers",
+    "sequence": 1,
+    "request": {
+      "url": "https://www.walmart.com/ip/Carving-Pumpkin-Each/47428850?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-26T10:17:35.046138+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Carving-Pumpkin-Each/47428850?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 10:17:35 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T10:17:36.073241+00:00",
+      "elapsed_seconds": 1.027
+    },
+    "body_bytes": 500730,
+    "body_sha256": "9388e0a7cd0196912178b199af9ff4440e8a999b63f2c44691514ad01384941b",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "offers-002",
+    "kind": "listing",
+    "session": "offers",
+    "sequence": 2,
+    "request": {
+      "url": "https://www.walmart.com/search?q=%5Bredacted%5D&stores=100&facet=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-26T10:17:42.998456+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/search?q=%5Bredacted%5D&stores=100&facet=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 10:17:44 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T10:17:44.727268+00:00",
+      "elapsed_seconds": 1.729
+    },
+    "body_bytes": 1167466,
+    "body_sha256": "fa31afe0ee31071fe9ef4482eb766f023edc28804955991a20dd42838cca19b4",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "offers-003",
+    "kind": "product",
+    "session": "offers",
+    "sequence": 3,
+    "request": {
+      "url": "https://www.walmart.com/ip/essie-Expressie-Quick-Dry-Nail-Polish-05-Left-on-Shred-Navy-Blue-0-33-fl-oz-Bottle/406559841?athAsset=%5Bredacted%5D&fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D&from=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-26T10:17:47.225198+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/essie-Expressie-Quick-Dry-Nail-Polish-05-Left-on-Shred-Navy-Blue-0-33-fl-oz-Bottle/406559841?athAsset=%5Bredacted%5D&fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D&from=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 10:17:48 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T10:17:48.984542+00:00",
+      "elapsed_seconds": 1.759
+    },
+    "body_bytes": 744683,
+    "body_sha256": "65647da08a5054726448f841f482d84cc674bfd509782b10323f53485fc91173",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "offers-004",
+    "kind": "product",
+    "session": "offers",
+    "sequence": 4,
+    "request": {
+      "url": "https://www.walmart.com/ip/Revlon-Glimmer-Super-Balm-Multi-Use-Makeup-Highlighter-Bronzer-Blush-002-Cocktail-Hour-0-85-oz/19252864736?athAsset=%5Bredacted%5D&fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&from=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-26T10:17:51.103425+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Revlon-Glimmer-Super-Balm-Multi-Use-Makeup-Highlighter-Bronzer-Blush-002-Cocktail-Hour-0-85-oz/19252864736?athAsset=%5Bredacted%5D&fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&from=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 10:17:53 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T10:17:53.287619+00:00",
+      "elapsed_seconds": 2.184
+    },
+    "body_bytes": 591893,
+    "body_sha256": "3576b25e9a77af493e5b485bf840b0dfd517f1d4b42df995d8d444abf942aafb",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "offers-005",
+    "kind": "listing",
+    "session": "offers",
+    "sequence": 5,
+    "request": {
+      "url": "https://www.walmart.com/search?q=%5Bredacted%5D&stores=100&facet=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-26T10:18:04.192099+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/search?q=%5Bredacted%5D&stores=100&facet=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 10:18:05 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T10:18:06.249028+00:00",
+      "elapsed_seconds": 2.057
+    },
+    "body_bytes": 1083892,
+    "body_sha256": "ddde45fe1c9abe8ad509d929147eb0139e67ca82b02477c12bbfbe6836d4d4d7",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "offers-006",
+    "kind": "product",
+    "session": "offers",
+    "sequence": 6,
+    "request": {
+      "url": "https://www.walmart.com/ip/Equate-Sensitive-Fragrance-and-Dye-Free-Wipes-72-Count/512147999?athAsset=%5Bredacted%5D&fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D&from=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-26T10:18:10.003455+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Equate-Sensitive-Fragrance-and-Dye-Free-Wipes-72-Count/512147999?athAsset=%5Bredacted%5D&fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D&from=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 10:18:10 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T10:18:11.022816+00:00",
+      "elapsed_seconds": 1.019
+    },
+    "body_bytes": 537660,
+    "body_sha256": "3dc62456a9af2f1fbac2c74755a794d2acb8a75bc4b795d040a8f5a43feb1e2b",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "offers-007",
+    "kind": "product",
+    "session": "offers",
+    "sequence": 7,
+    "request": {
+      "url": "https://www.walmart.com/ip/ONYX-Professional-100-Pure-Acetone-Nail-Polish-Remover-4-fl-oz/11047146?athAsset=%5Bredacted%5D&fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D&from=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-26T10:18:13.136346+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/ONYX-Professional-100-Pure-Acetone-Nail-Polish-Remover-4-fl-oz/11047146?athAsset=%5Bredacted%5D&fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D&from=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 10:18:13 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T10:18:14.157611+00:00",
+      "elapsed_seconds": 1.021
+    },
+    "body_bytes": 543442,
+    "body_sha256": "f34f11058eb0ec8bbb36caad5fd77200772d9f5ccafb8590c97ae8c7784cdaee",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "offers-008",
+    "kind": "product",
+    "session": "offers",
+    "sequence": 8,
+    "request": {
+      "url": "https://www.walmart.com/ip/e-l-f-Squeeze-Me-Lip-Balm-Strawberry-0-21oz/1863926764?athAsset=%5Bredacted%5D&fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&from=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-26T10:18:16.262278+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/e-l-f-Squeeze-Me-Lip-Balm-Strawberry-0-21oz/1863926764?athAsset=%5Bredacted%5D&fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&from=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 10:18:17 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T10:18:17.235601+00:00",
+      "elapsed_seconds": 0.973
+    },
+    "body_bytes": 612545,
+    "body_sha256": "3e7193f0b3093ba3151f4c2e5036b5e003c4255a255e35588becfead5375d25a",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "offers-009",
+    "kind": "product",
+    "session": "offers",
+    "sequence": 9,
+    "request": {
+      "url": "https://www.walmart.com/ip/Advanced-Clinicals-Vitamin-C-Face-Serum-1-75-fl-oz/645086785?athAsset=%5Bredacted%5D&fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&from=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-26T10:18:19.354566+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Advanced-Clinicals-Vitamin-C-Face-Serum-1-75-fl-oz/645086785?athAsset=%5Bredacted%5D&fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&from=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 10:18:20 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T10:18:20.650834+00:00",
+      "elapsed_seconds": 1.296
+    },
+    "body_bytes": 580049,
+    "body_sha256": "f30a14b073b7be7a2e2ac1ea2aaf1e771a592cdecc9905159e2480f17608a7be",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "offers-010",
+    "kind": "listing",
+    "session": "offers",
+    "sequence": 10,
+    "request": {
+      "url": "https://www.walmart.com/search?q=%5Bredacted%5D&stores=100&facet=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-26T10:19:18.174996+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/search?q=%5Bredacted%5D&stores=100&facet=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 10:19:19 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T10:19:19.375349+00:00",
+      "elapsed_seconds": 1.2
+    },
+    "body_bytes": 710892,
+    "body_sha256": "2af43c6b542bcdc141a84c7376b3363974cf79b043fbcb1fbc9ba32366547efd",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "offers-011",
+    "kind": "product",
+    "session": "offers",
+    "sequence": 11,
+    "request": {
+      "url": "https://www.walmart.com/ip/Great-Value-Milk-Whole-Vitamin-D-Half-Gallon-Plastic-Jug-64oz/10450118?athAsset=%5Bredacted%5D&fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D&from=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-26T10:19:21.775738+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Great-Value-Milk-Whole-Vitamin-D-Half-Gallon-Plastic-Jug-64oz/10450118?athAsset=%5Bredacted%5D&fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D&from=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 10:19:23 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T10:19:23.786914+00:00",
+      "elapsed_seconds": 2.011
+    },
+    "body_bytes": 508212,
+    "body_sha256": "79e3665c82c7bae8c763248eac8d44e397ace11e0ad32d58f6933e160769b402",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "offers-012",
+    "kind": "product",
+    "session": "offers",
+    "sequence": 12,
+    "request": {
+      "url": "https://www.walmart.com/ip/Great-Value-Milk-2-Reduced-Fat-Half-Gallon-64-fl-oz-Jug/10450119?athAsset=%5Bredacted%5D&fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D&from=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-26T10:19:26.070598+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Great-Value-Milk-2-Reduced-Fat-Half-Gallon-64-fl-oz-Jug/10450119?athAsset=%5Bredacted%5D&fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D&from=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 10:19:26 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T10:19:27.130443+00:00",
+      "elapsed_seconds": 1.06
+    },
+    "body_bytes": 544400,
+    "body_sha256": "da72d5ae38597f6f1458b47fb217fb1525a7d563a7a2e1c2356c9c95cb7519eb",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "offers-013",
+    "kind": "product",
+    "session": "offers",
+    "sequence": 13,
+    "request": {
+      "url": "https://www.walmart.com/ip/Canada-Dry-Caffeine-Free-Ginger-Ale-Soda-Pop-7-5-fl-oz-10-Pack-Cans/946464399?athAsset=%5Bredacted%5D&fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D&from=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-26T10:19:29.672751+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Canada-Dry-Caffeine-Free-Ginger-Ale-Soda-Pop-7-5-fl-oz-10-Pack-Cans/946464399?athAsset=%5Bredacted%5D&fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT&athbdg=%5Bredacted%5D&from=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 10:19:30 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T10:19:30.686900+00:00",
+      "elapsed_seconds": 1.014
+    },
+    "body_bytes": 521066,
+    "body_sha256": "5488942ebe3588fb61f1d09e3f85bb60e670d0fc753048004665584ceb094710",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "offers-014",
+    "kind": "product",
+    "session": "offers",
+    "sequence": 14,
+    "request": {
+      "url": "https://www.walmart.com/ip/Fresh-Mandarin-Oranges-3-lb-Bag-Naturally-Ripened-Citrus-Fruit/11025598?athAsset=%5Bredacted%5D&fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D&from=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-26T10:19:32.939502+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Fresh-Mandarin-Oranges-3-lb-Bag-Naturally-Ripened-Citrus-Fruit/11025598?athAsset=%5Bredacted%5D&fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D&from=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 10:19:33 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T10:19:33.920603+00:00",
+      "elapsed_seconds": 0.981
+    },
+    "body_bytes": 540675,
+    "body_sha256": "f1866cdbf7e20a707bc6612ed17e5a73c3b3b89bc2d7221c61a4c97648e2f4f0",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "offers-015",
+    "kind": "listing",
+    "session": "offers",
+    "sequence": 15,
+    "request": {
+      "url": "https://www.walmart.com/search?q=%5Bredacted%5D&stores=100&facet=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-26T10:19:42.229283+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/search?q=%5Bredacted%5D&stores=100&facet=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 10:19:43 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T10:19:43.480393+00:00",
+      "elapsed_seconds": 1.251
+    },
+    "body_bytes": 1042802,
+    "body_sha256": "fbfbac443cd24b45bd19b156db13304411e7aad4b7f48cd697f2a74bd787d0d4",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "offers-016",
+    "kind": "product",
+    "session": "offers",
+    "sequence": 16,
+    "request": {
+      "url": "https://www.walmart.com/ip/The-Hair-Edit-Gilded-Contour-Claw-Clip/18710854343?athAsset=%5Bredacted%5D&fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&from=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-26T10:19:46.247643+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/The-Hair-Edit-Gilded-Contour-Claw-Clip/18710854343?athAsset=%5Bredacted%5D&fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&from=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 10:19:47 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T10:19:47.339333+00:00",
+      "elapsed_seconds": 1.092
+    },
+    "body_bytes": 553596,
+    "body_sha256": "e45f08e79dedb882b69ce3d563dab3ffaa8ca694b4412f3b9029614f67ece3bf",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "offers-017",
+    "kind": "product",
+    "session": "offers",
+    "sequence": 17,
+    "request": {
+      "url": "https://www.walmart.com/ip/TELETIES-Women-s-Flat-Round-Hair-Claw-Clip-Shimmering-Taupe-Medium/18704105080?athAsset=%5Bredacted%5D&fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&from=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-26T10:19:49.474075+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/TELETIES-Women-s-Flat-Round-Hair-Claw-Clip-Shimmering-Taupe-Medium/18704105080?athAsset=%5Bredacted%5D&fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&from=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 10:19:50 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T10:19:50.409468+00:00",
+      "elapsed_seconds": 0.935
+    },
+    "body_bytes": 527025,
+    "body_sha256": "aa868846cf4220e21eccde80633bdff672f81d0d328526465973f3333a24bb18",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "offers-018",
+    "kind": "product",
+    "session": "offers",
+    "sequence": 18,
+    "request": {
+      "url": "https://www.walmart.com/ip/TELETIES-Women-s-Hair-Claw-Clip-Tortoise-Medium/10288008026?athAsset=%5Bredacted%5D&fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&from=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-26T10:19:52.505800+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/TELETIES-Women-s-Hair-Claw-Clip-Tortoise-Medium/10288008026?athAsset=%5Bredacted%5D&fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&from=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 10:19:53 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T10:19:53.561397+00:00",
+      "elapsed_seconds": 1.056
+    },
+    "body_bytes": 524928,
+    "body_sha256": "46bb1c2b1641f68bfa7da1dc55a6c2043aaddef30982df7a385a1349bb59a7b3",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "offers-019",
+    "kind": "product",
+    "session": "offers",
+    "sequence": 19,
+    "request": {
+      "url": "https://www.walmart.com/ip/Scenerio-Women-s-Metal-Hair-Claw-Clip-One-size-Gold/19994066493?athAsset=%5Bredacted%5D&fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&from=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-26T10:19:55.821068+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Scenerio-Women-s-Metal-Hair-Claw-Clip-One-size-Gold/19994066493?athAsset=%5Bredacted%5D&fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&from=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 10:19:56 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T10:19:56.883211+00:00",
+      "elapsed_seconds": 1.062
+    },
+    "body_bytes": 496514,
+    "body_sha256": "231a5222b4fefa9bd535a85a90a4ff4f9bbd18c6011f7729a38a99470e2d8a3b",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "offers-020",
+    "kind": "product",
+    "session": "offers",
+    "sequence": 20,
+    "request": {
+      "url": "https://www.walmart.com/ip/Carving-Pumpkin-Each/47428850?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D",
+      "attempt": 1,
+      "started_utc": "2026-10-26T10:19:59.003395+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/ip/Carving-Pumpkin-Each/47428850?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 10:19:59 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T10:19:59.817167+00:00",
+      "elapsed_seconds": 0.814
+    },
+    "body_bytes": 500583,
+    "body_sha256": "4b721c46f0439b55bfcf24ac1e0751083cfc4d47f0651e53e5d99859afc9f3b0",
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  }
+]

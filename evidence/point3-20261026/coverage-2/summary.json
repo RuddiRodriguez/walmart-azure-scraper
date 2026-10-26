@@ -1,0 +1,29 @@
+{
+  "mode": "Live bounded category-root discovery only; no child crawl or publication",
+  "source_commit": "deaec35c4b5d58e3a3374bdb89ddb3330f97eb76",
+  "source_hashes": {
+    "review_category_coverage.py": "e81e71e4818f7094b270c2ad3defc173b55562c78d5d8d6d8eced3ef568f8fc5",
+    "scrape.py": "b9d0d5814aa013ac0ca4a33fd36b991944a94ccd2e79bbcfee72c545618d8611",
+    "extract.py": "5d7dca9180052e97b66753921d2b8d9a73cdacf4be2d2949a03aed03c79c0d6e",
+    "browser.py": "2b46d80e5b5edd1b75c7cbf36d460d96da91cfd218e0b1dfa309dcc3459cec24",
+    "config/categories.csv": "65127cf3cd48f967ea3db0c4dd2be67de3f2ac1f6b60aef406c0778c999f3640"
+  },
+  "started_utc": "2026-10-26T10:16:16.357549+00:00",
+  "completed": true,
+  "seconds": 48.523,
+  "limits": {
+    "product_requests": 2,
+    "listing_requests": 1,
+    "seconds": 180
+  },
+  "counts": {
+    "product_requests": 2,
+    "listing_requests": 1,
+    "sequence": 3,
+    "body_bytes": 2165810
+  },
+  "full_coverage_complete": false,
+  "original_body_hashes_verified": 3,
+  "source_scope": "Bounded live attempt with offline body integrity checks; not exhaustive coverage or independent offer-terms acceptance",
+  "pages_reviewed": 1
+}

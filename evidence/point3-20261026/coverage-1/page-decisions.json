@@ -1,0 +1,101 @@
+[
+  {
+    "category": "Personal Care",
+    "status": "root_reviewed_children_not_crawled",
+    "scope_review_only": true,
+    "page_title": "Electric Toothbrushes for Oral Care - Walmart.com",
+    "observed_product_category_paths": [
+      "Home Page/Beauty/College Beauty & Personal Care/College Beauty",
+      "Home Page/Beauty/College Beauty & Personal Care/College Personal Care",
+      "Home Page/Personal Care/Equate Personal Care/All Equate Personal Care",
+      "Home Page/Personal Care/Oral Care/Toothbrushes/Electric Toothbrushes/All Electric Toothbrushes",
+      "Home Page/Personal Care/Oral Care/Toothbrushes/Electric Toothbrushes/Electric Toothbrush Heads/All Toothbrush Replacement Heads",
+      "Home Page/Personal Care/Oral Care/Toothbrushes/Electric Toothbrushes/Gleem Electric Toothbrushes",
+      "Home Page/Personal Care/Oral Care/Toothbrushes/Electric Toothbrushes/Oral-B Electric Toothbrushes",
+      "Home Page/Personal Care/Oral Care/Toothbrushes/Electric Toothbrushes/Sonicare Toothbrushes",
+      "Home Page/Personal Care/Personal Care Gifts for Him"
+    ],
+    "visible_candidates": 42,
+    "excluded_candidates": 17,
+    "native_snapshot_sha256": "c565c4c03cc0866b151daa935a082010e3744569ec0e7f5afdb4eb3af0edb953",
+    "fetch_context_verified": true,
+    "fetch_context": {
+      "stores": "100",
+      "facet": "fulfillment_method:Pickup",
+      "page": 1
+    },
+    "fetch_sequence": 2,
+    "url": "https://www.walmart.com/cp/electric-toothbrushes/5756015",
+    "discovered_child_urls": [
+      "https://www.walmart.com/cp/1005862",
+      "https://www.walmart.com/browse/personal-care/oral-care/1005862_1007221",
+      "https://www.walmart.com/browse/toothbrushes/electric-toothbrushes/1005862_1007221_2709578_5756015",
+      "https://www.walmart.com/browse/personal-care/all-electric-toothbrushes/1005862_1007221_2709578_5756015_7057335",
+      "https://www.walmart.com/browse/personal-care/all-toothbrush-replacement-heads/1005862_1007221_2709578_5756015_1225307_1835221",
+      "https://www.walmart.com/cp/pg-gameday/5626954",
+      "https://www.walmart.com/browse/personal-care/shop-all-personal-care/1005862_2554774"
+    ],
+    "decisions": [
+      {
+        "action": "queued",
+        "reason": "category_link",
+        "name": "Personal Care",
+        "url": "https://www.walmart.com/cp/1005862"
+      },
+      {
+        "action": "queued",
+        "reason": "category_link",
+        "name": "Oral Care",
+        "url": "https://www.walmart.com/browse/personal-care/oral-care/1005862_1007221"
+      },
+      {
+        "action": "queued",
+        "reason": "category_link",
+        "name": "Electric Toothbrushes",
+        "url": "https://www.walmart.com/browse/toothbrushes/electric-toothbrushes/1005862_1007221_2709578_5756015"
+      },
+      {
+        "action": "queued",
+        "reason": "category_link",
+        "name": "Electric Toothbrushes Under $60",
+        "url": "https://www.walmart.com/browse/personal-care/all-electric-toothbrushes/1005862_1007221_2709578_5756015_7057335"
+      },
+      {
+        "action": "queued",
+        "reason": "category_link",
+        "name": "Electric Toothbrush Replacement Heads",
+        "url": "https://www.walmart.com/browse/personal-care/all-toothbrush-replacement-heads/1005862_1007221_2709578_5756015_1225307_1835221"
+      },
+      {
+        "action": "queued",
+        "reason": "category_link",
+        "name": "Electric Toothbrushes Under $60",
+        "url": "https://www.walmart.com/browse/personal-care/all-electric-toothbrushes/1005862_1007221_2709578_5756015_7057335"
+      },
+      {
+        "action": "queued",
+        "reason": "category_link",
+        "name": "Electric Toothbrush Replacement Heads",
+        "url": "https://www.walmart.com/browse/personal-care/all-toothbrush-replacement-heads/1005862_1007221_2709578_5756015_1225307_1835221"
+      },
+      {
+        "action": "queued",
+        "reason": "category_link",
+        "name": "View details for Personal care MVPs",
+        "url": "https://www.walmart.com/cp/pg-gameday/5626954"
+      },
+      {
+        "action": "queued",
+        "reason": "category_link",
+        "name": "View details for Save on personal care",
+        "url": "https://www.walmart.com/browse/personal-care/shop-all-personal-care/1005862_2554774"
+      },
+      {
+        "action": "queued",
+        "reason": "category_link",
+        "name": "View details for Save on oral care",
+        "url": "https://www.walmart.com/browse/personal-care/oral-care/1005862_1007221"
+      }
+    ]
+  }
+]
