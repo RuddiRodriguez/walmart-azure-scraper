@@ -1,0 +1,26 @@
+{
+  "batches": [
+    {
+      "source_commit": "2b684e844f2def40c1eb98c4e453c3f8521ffa09",
+      "queue_counts": {
+        "failed": 3,
+        "pending": 1217,
+        "reviewed": 77
+      },
+      "scope_counts": {
+        "brief_exclusion": 2,
+        "scope_unverified": 296,
+        "scoped_queue": 2696
+      },
+      "seconds": 1505.06,
+      "counts": {
+        "product_requests": 0,
+        "listing_requests": 77,
+        "sequence": 77,
+        "body_bytes": 85517488
+      }
+    }
+  ],
+  "full_coverage_complete": false,
+  "scope": "Persistent listing/category review only; unresolved/failed/pending remain open; no full PDP collection or offer proof"
+}
