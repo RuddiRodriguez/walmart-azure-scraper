@@ -155,7 +155,7 @@
     "category": "Art Supplies",
     "key": "3396583#1",
     "url": "https://www.walmart.com/browse/arts-crafts-sewing/oil-paints/1334134_5899871_7445675_5577403_3396583",
-    "status": "pending",
+    "status": "reviewed",
     "reason": "",
     "scope_review": 0
   },
@@ -211,7 +211,7 @@
     "category": "Art Supplies",
     "key": "3640794#1",
     "url": "https://www.walmart.com/browse/arts-crafts-sewing/tempera-paints/1334134_5899871_7445675_5577403_3640794",
-    "status": "pending",
+    "status": "reviewed",
     "reason": "",
     "scope_review": 0
   },
@@ -227,7 +227,7 @@
     "category": "Art Supplies",
     "key": "3720257#1",
     "url": "https://www.walmart.com/browse/arts-crafts-sewing/gesso/1334134_5899871_7445675_5577403_3720257",
-    "status": "pending",
+    "status": "reviewed",
     "reason": "",
     "scope_review": 0
   },
@@ -283,7 +283,7 @@
     "category": "Art Supplies",
     "key": "5207225#1",
     "url": "https://www.walmart.com/browse/arts-crafts-sewing/tracing-paper/1334134_5899871_9677556_5207225",
-    "status": "pending",
+    "status": "reviewed",
     "reason": "",
     "scope_review": 0
   },
@@ -323,6 +323,14 @@
     "category": "Art Supplies",
     "key": "5577403#2",
     "url": "https://www.walmart.com/browse/art-painting-supplies/art-paints/1334134_5899871_7445675_5577403?page=2",
+    "status": "reviewed",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Art Supplies",
+    "key": "5577403#3",
+    "url": "https://www.walmart.com/browse/art-painting-supplies/art-paints/1334134_5899871_7445675_5577403?page=3",
     "status": "pending",
     "reason": "",
     "scope_review": 0
@@ -395,7 +403,7 @@
     "category": "Art Supplies",
     "key": "6301642#1",
     "url": "https://www.walmart.com/browse/arts-crafts-sewing/gouache-paints/1334134_5899871_7445675_5577403_6301642",
-    "status": "pending",
+    "status": "reviewed",
     "reason": "",
     "scope_review": 0
   },
@@ -547,8 +555,8 @@
     "category": "Art Supplies",
     "key": "8181267#1",
     "url": "https://www.walmart.com/browse/arts-crafts-sewing/transfer-papers/1334134_5899871_9677556_8181267",
-    "status": "pending",
-    "reason": "",
+    "status": "failed",
+    "reason": "Response category ancestry differs from required root",
     "scope_review": 0
   },
   {
@@ -635,7 +643,7 @@
     "category": "Art Supplies",
     "key": "9471888#1",
     "url": "https://www.walmart.com/browse/arts-crafts-sewing/vellum-paper/1334134_5899871_9677556_9471888",
-    "status": "pending",
+    "status": "reviewed",
     "reason": "",
     "scope_review": 0
   },
@@ -667,7 +675,7 @@
     "category": "Art Supplies",
     "key": "9677556#2",
     "url": "https://www.walmart.com/browse/arts-crafts-sewing/sketchbooks-art-paper/1334134_5899871_9677556?page=2",
-    "status": "pending",
+    "status": "reviewed",
     "reason": "",
     "scope_review": 0
   },
@@ -1307,8 +1315,8 @@
     "category": "Beauty",
     "key": "1620920#1",
     "url": "https://www.walmart.com/browse/beauty/kids-baby-sunscreen/1085666_1007039_1001508_1620920",
-    "status": "pending",
-    "reason": "",
+    "status": "failed",
+    "reason": "Response category ancestry differs from required root",
     "scope_review": 0
   },
   {
@@ -1507,7 +1515,7 @@
     "category": "Beauty",
     "key": "2603772#1",
     "url": "https://www.walmart.com/browse/beauty/hispanic-led-beauty/1085666_9047609_2603772",
-    "status": "pending",
+    "status": "reviewed",
     "reason": "",
     "scope_review": 0
   },
@@ -1555,7 +1563,7 @@
     "category": "Beauty",
     "key": "3000366#1",
     "url": "https://www.walmart.com/browse/beauty/kitsch/1085666_3316357_3000366",
-    "status": "pending",
+    "status": "reviewed",
     "reason": "",
     "scope_review": 0
   },
@@ -1691,8 +1699,8 @@
     "category": "Beauty",
     "key": "3446310#1",
     "url": "https://www.walmart.com/browse/beauty/kinlo-by-naomi-osaka/1085666_3316357_3446310",
-    "status": "pending",
-    "reason": "",
+    "status": "failed",
+    "reason": "Empty page title; page may still be loading",
     "scope_review": 0
   },
   {
@@ -1713,6 +1721,14 @@
   },
   {
     "category": "Beauty",
+    "key": "3557391#1",
+    "url": "https://www.walmart.com/browse/beauty/new-hair-care/1085666_4427759_3557391",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Beauty",
     "key": "3592123#1",
     "url": "https://www.walmart.com/cp/nailcare/3592123",
     "status": "pending",
@@ -1723,6 +1739,14 @@
     "category": "Beauty",
     "key": "3625854#1",
     "url": "https://www.walmart.com/browse/beauty/l-oreal/1085666_3316357_3625854",
+    "status": "reviewed",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Beauty",
+    "key": "3625854#2",
+    "url": "https://www.walmart.com/browse/beauty/l-oreal/1085666_3316357_3625854?page=2",
     "status": "pending",
     "reason": "",
     "scope_review": 0
@@ -1851,7 +1875,7 @@
     "category": "Beauty",
     "key": "4267767#1",
     "url": "https://www.walmart.com/browse/beauty/lange/1085666_3316357_4267767",
-    "status": "pending",
+    "status": "reviewed",
     "reason": "",
     "scope_review": 0
   },
@@ -2131,7 +2155,7 @@
     "category": "Beauty",
     "key": "5625401#1",
     "url": "https://www.walmart.com/browse/beauty/itk-skincare/1085666_3316357_5625401",
-    "status": "pending",
+    "status": "reviewed",
     "reason": "",
     "scope_review": 0
   },
@@ -2779,7 +2803,7 @@
     "category": "Beauty",
     "key": "8056839#1",
     "url": "https://www.walmart.com/browse/beauty/inkbox/1085666_3316357_8056839",
-    "status": "pending",
+    "status": "reviewed",
     "reason": "",
     "scope_review": 0
   },
@@ -2787,7 +2811,7 @@
     "category": "Beauty",
     "key": "8069561#1",
     "url": "https://www.walmart.com/browse/beauty/lgbtqia-led-beauty/1085666_9047609_8069561",
-    "status": "pending",
+    "status": "reviewed",
     "reason": "",
     "scope_review": 0
   },
@@ -3529,6 +3553,22 @@
   },
   {
     "category": "Diapering",
+    "key": "486190#10",
+    "url": "https://www.walmart.com/browse/diapering/5427_486190?page=10",
+    "status": "reviewed",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Diapering",
+    "key": "486190#11",
+    "url": "https://www.walmart.com/browse/diapering/5427_486190?page=11",
+    "status": "failed",
+    "reason": "Empty page title; page may still be loading",
+    "scope_review": 0
+  },
+  {
+    "category": "Diapering",
     "key": "486190#2",
     "url": "https://www.walmart.com/browse/diapering/5427_486190?page=2",
     "status": "reviewed",
@@ -3571,7 +3611,23 @@
     "category": "Diapering",
     "key": "486190#7",
     "url": "https://www.walmart.com/browse/diapering/5427_486190?page=7",
-    "status": "pending",
+    "status": "reviewed",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Diapering",
+    "key": "486190#8",
+    "url": "https://www.walmart.com/browse/diapering/5427_486190?page=8",
+    "status": "reviewed",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Diapering",
+    "key": "486190#9",
+    "url": "https://www.walmart.com/browse/diapering/5427_486190?page=9",
+    "status": "reviewed",
     "reason": "",
     "scope_review": 0
   },
@@ -3947,7 +4003,7 @@
     "category": "Feeding",
     "key": "164196#2",
     "url": "https://www.walmart.com/browse/baby/breastfeeding/5427_133283_164196?page=2",
-    "status": "pending",
+    "status": "reviewed",
     "reason": "",
     "scope_review": 0
   },
@@ -3955,7 +4011,7 @@
     "category": "Feeding",
     "key": "1991460#1",
     "url": "https://www.walmart.com/browse/baby/electric-breast-pumps/5427_133283_1991460",
-    "status": "pending",
+    "status": "reviewed",
     "reason": "",
     "scope_review": 0
   },
@@ -4041,6 +4097,14 @@
   },
   {
     "category": "Feeding",
+    "key": "3097256#1",
+    "url": "https://www.walmart.com/browse/feeding/pumping-bras/5427_133283_3097256",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Feeding",
     "key": "3179208#1",
     "url": "https://www.walmart.com/cp/tommee-tippee/3179208",
     "status": "failed",
@@ -4067,6 +4131,14 @@
     "category": "Feeding",
     "key": "3609934#2",
     "url": "https://www.walmart.com/browse/baby/organic-baby-food/5427_133283_1001448_3609934?page=2",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Feeding",
+    "key": "3671761#1",
+    "url": "https://www.walmart.com/browse/feeding/lansinoh-accessories/5427_133283_3671761",
     "status": "pending",
     "reason": "",
     "scope_review": 0
@@ -4123,6 +4195,14 @@
     "category": "Feeding",
     "key": "4183397#1",
     "url": "https://www.walmart.com/browse/baby/breastfeeding-support/5427_133283_4183397",
+    "status": "reviewed",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Feeding",
+    "key": "4183397#2",
+    "url": "https://www.walmart.com/browse/baby/breastfeeding-support/5427_133283_4183397?page=2",
     "status": "pending",
     "reason": "",
     "scope_review": 0
@@ -4289,9 +4369,33 @@
   },
   {
     "category": "Feeding",
+    "key": "5942963#1",
+    "url": "https://www.walmart.com/browse/baby/medela-accessories/5427_133283_5942963",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Feeding",
+    "key": "5962401#1",
+    "url": "https://www.walmart.com/browse/feeding/nursing-pads/5427_133283_5962401",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Feeding",
     "key": "610519#1",
     "url": "https://www.walmart.com/browse/baby/high-chairs-booster-seats/5427_133283_610519",
     "status": "reviewed",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Feeding",
+    "key": "6162108#1",
+    "url": "https://www.walmart.com/browse/baby/nursing-pillows/5427_133283_6162108",
+    "status": "pending",
     "reason": "",
     "scope_review": 0
   },
@@ -4353,6 +4457,14 @@
   },
   {
     "category": "Feeding",
+    "key": "6479974#1",
+    "url": "https://www.walmart.com/browse/baby/breast-milk-storage/5427_133283_6479974",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Feeding",
     "key": "6591721#1",
     "url": "https://www.walmart.com/browse/baby/baby-food-makers/5427_133283_6591721",
     "status": "reviewed",
@@ -4387,7 +4499,7 @@
     "category": "Feeding",
     "key": "7217340#1",
     "url": "https://www.walmart.com/browse/baby/breast-care/5427_133283_7217340",
-    "status": "pending",
+    "status": "reviewed",
     "reason": "",
     "scope_review": 0
   },
@@ -4395,7 +4507,7 @@
     "category": "Feeding",
     "key": "7660894#1",
     "url": "https://www.walmart.com/browse/baby/manual-breast-pumps/5427_133283_7660894",
-    "status": "pending",
+    "status": "reviewed",
     "reason": "",
     "scope_review": 0
   },
@@ -4417,6 +4529,14 @@
   },
   {
     "category": "Feeding",
+    "key": "8210105#1",
+    "url": "https://www.walmart.com/browse/baby/nursing-covers/5427_133283_8210105",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Feeding",
     "key": "8624446#1",
     "url": "https://www.walmart.com/browse/feeding/sippy-cups-straw-cups/5427_133283_8624446",
     "status": "pending",
@@ -4435,7 +4555,7 @@
     "category": "Feeding",
     "key": "9235587#1",
     "url": "https://www.walmart.com/browse/feeding/lactation-supplements/5427_133283_9235587",
-    "status": "pending",
+    "status": "reviewed",
     "reason": "",
     "scope_review": 0
   },
@@ -4467,7 +4587,7 @@
     "category": "Feeding",
     "key": "9618341#1",
     "url": "https://www.walmart.com/browse/baby/breast-pumps/5427_133283_9618341",
-    "status": "pending",
+    "status": "reviewed",
     "reason": "",
     "scope_review": 0
   },
@@ -4491,7 +4611,7 @@
     "category": "Feeding",
     "key": "9663060#1",
     "url": "https://www.walmart.com/browse/baby/breast-pump-accessories/5427_133283_9663060",
-    "status": "pending",
+    "status": "reviewed",
     "reason": "",
     "scope_review": 0
   },
@@ -5033,6 +5153,14 @@
   },
   {
     "category": "Food",
+    "key": "1476086#1",
+    "url": "https://www.walmart.com/browse/food/thyme/976759_976794_3029941_5597656_1476086",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Food",
     "key": "1478350#1",
     "url": "https://www.walmart.com/browse/food/private-label-beverages/976759_7128585_1478350",
     "status": "pending",
@@ -5059,6 +5187,22 @@
     "category": "Food",
     "key": "1559546#1",
     "url": "https://www.walmart.com/browse/food/aloe-vera-juice/976759_976782_1001321_1559546",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Food",
+    "key": "1567409#1",
+    "url": "https://www.walmart.com/browse/food/seasonal-grocery/976759_1567409",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Food",
+    "key": "1643058#1",
+    "url": "https://www.walmart.com/browse/food/berries/976759_976793_9756351_1643058",
     "status": "pending",
     "reason": "",
     "scope_review": 0
@@ -5097,6 +5241,14 @@
   },
   {
     "category": "Food",
+    "key": "1703615#1",
+    "url": "https://www.walmart.com/browse/food/organic-fruit/976759_976793_1913529_1703615",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Food",
     "key": "1730435#1",
     "url": "https://www.walmart.com/browse/food/beef-lamb/976759_9569500_1730435",
     "status": "reviewed",
@@ -5113,6 +5265,22 @@
   },
   {
     "category": "Food",
+    "key": "1740611#1",
+    "url": "https://www.walmart.com/browse/food/lettuce-whole-greens/976759_976793_8910423_1740611",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Food",
+    "key": "1766912#1",
+    "url": "https://www.walmart.com/browse/food/all-fresh-herbs/976759_976793_3513831_1766912",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Food",
     "key": "1771520#1",
     "url": "https://www.walmart.com/browse/food/land-olakes-butter/976759_9176907_1001467_1771520",
     "status": "pending",
@@ -5121,8 +5289,32 @@
   },
   {
     "category": "Food",
+    "key": "1775981#1",
+    "url": "https://www.walmart.com/browse/food/oregano/976759_976794_3029941_5597656_1775981",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Food",
     "key": "1814126#1",
     "url": "https://www.walmart.com/browse/food/all-fresh-vegetables/976759_976793_8910423_1814126",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Food",
+    "key": "1815247#1",
+    "url": "https://www.walmart.com/browse/food/tropical-fruits/976759_976793_9756351_1815247",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Food",
+    "key": "1819145#1",
+    "url": "https://www.walmart.com/browse/food/tomatoes/976759_976793_8910423_1819145",
     "status": "pending",
     "reason": "",
     "scope_review": 0
@@ -5257,6 +5449,14 @@
   },
   {
     "category": "Food",
+    "key": "2098775#1",
+    "url": "https://www.walmart.com/browse/food/avocados/976759_976793_9756351_2098775",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Food",
     "key": "2105015#1",
     "url": "https://www.walmart.com/browse/food/get-your-grill-on/976759_9569500_2105015",
     "status": "pending",
@@ -5289,6 +5489,14 @@
   },
   {
     "category": "Food",
+    "key": "2153677#1",
+    "url": "https://www.walmart.com/browse/food/basil/976759_976794_3029941_5597656_2153677",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Food",
     "key": "2174088#1",
     "url": "https://www.walmart.com/browse/food/ground-coffee/976759_1086446_2174088",
     "status": "pending",
@@ -5300,6 +5508,22 @@
     "key": "2176019#1",
     "url": "https://www.walmart.com/browse/browse/food/canned-corn/976759_976794_7433209_9025162_2176019",
     "status": "reviewed",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Food",
+    "key": "2177911#1",
+    "url": "https://www.walmart.com/browse/food/all-citrus/976759_976793_9756351_4914029_2177911",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Food",
+    "key": "2186600#1",
+    "url": "https://www.walmart.com/browse/food/flower-bouquets/976759_5098771_6211901_2186600",
+    "status": "pending",
     "reason": "",
     "scope_review": 0
   },
@@ -5363,7 +5587,7 @@
     "category": "Food",
     "key": "2424807#1",
     "url": "https://www.walmart.com/browse/food/flowers/976759_1089004_2424807",
-    "status": "pending",
+    "status": "reviewed",
     "reason": "",
     "scope_review": 0
   },
@@ -5441,6 +5665,14 @@
   },
   {
     "category": "Food",
+    "key": "2544553#1",
+    "url": "https://www.walmart.com/browse/food/green-mountain-coffee-pods/976759_1086446_6490624_2544553",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Food",
     "key": "2636806#1",
     "url": "https://www.walmart.com/browse/food/kit-kat/976759_1096070_1241359_2636806",
     "status": "pending",
@@ -5489,6 +5721,14 @@
   },
   {
     "category": "Food",
+    "key": "2740006#1",
+    "url": "https://www.walmart.com/browse/food/folgers-coffee-pods/976759_1086446_3100047_2740006",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Food",
     "key": "2741843#1",
     "url": "https://www.walmart.com/browse/food/feel-good-produce/976759_976793_2741843",
     "status": "pending",
@@ -5505,6 +5745,14 @@
   },
   {
     "category": "Food",
+    "key": "2787146#1",
+    "url": "https://www.walmart.com/browse/food/bananas/976759_976793_9756351_2787146",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Food",
     "key": "2788900#1",
     "url": "https://www.walmart.com/browse/food/single-serve-candy-bars/976759_3701649_9074834_2788900",
     "status": "pending",
@@ -5513,8 +5761,24 @@
   },
   {
     "category": "Food",
+    "key": "2816181#1",
+    "url": "https://www.walmart.com/browse/halloween-food/halloween-party-food/976759_1567409_2107086_2816181",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Food",
     "key": "2833192#1",
     "url": "https://www.walmart.com/browse/food/multipack-coffee-tea/976759_976782_8167813_2833192",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Food",
+    "key": "2835097#1",
+    "url": "https://www.walmart.com/browse/food/fresh-pre-cut-vegetables/976759_976793_8910423_2835097",
     "status": "pending",
     "reason": "",
     "scope_review": 0
@@ -5582,6 +5846,14 @@
     "status": "pending",
     "reason": "",
     "scope_review": 1
+  },
+  {
+    "category": "Food",
+    "key": "2917960#1",
+    "url": "https://www.walmart.com/browse/food/salad-toppings/976759_976794_5580286_2917960",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
   },
   {
     "category": "Food",
@@ -5851,6 +6123,14 @@
     "category": "Food",
     "key": "3513831#1",
     "url": "https://www.walmart.com/browse/food/fresh-herbs/976759_976793_3513831",
+    "status": "reviewed",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Food",
+    "key": "3527553#1",
+    "url": "https://www.walmart.com/browse/food/indoor-grown-produce/976759_976793_3527553",
     "status": "pending",
     "reason": "",
     "scope_review": 0
@@ -5891,6 +6171,14 @@
     "category": "Food",
     "key": "3637233#1",
     "url": "https://www.walmart.com/browse/food/bakery-chocolate-chip-cookies/976759_976779_1951361_3637233",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Food",
+    "key": "3666751#1",
+    "url": "https://www.walmart.com/browse/food/grapes-cherries/976759_976793_9756351_3666751",
     "status": "pending",
     "reason": "",
     "scope_review": 0
@@ -6113,8 +6401,24 @@
   },
   {
     "category": "Food",
+    "key": "4424068#1",
+    "url": "https://www.walmart.com/browse/food/sympathy-flowers/976759_5098771_6211901_4424068",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Food",
     "key": "4441131#1",
     "url": "https://www.walmart.com/browse/food/modern-soda/976759_976782_1001680_4441131",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Food",
+    "key": "4469929#1",
+    "url": "https://www.walmart.com/browse/food/tulips/976759_5098771_6211901_4469929",
     "status": "pending",
     "reason": "",
     "scope_review": 0
@@ -6137,8 +6441,24 @@
   },
   {
     "category": "Food",
+    "key": "4550804#1",
+    "url": "https://www.walmart.com/browse/food/1800-flowers/976759_1089004_2424807_4550804",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Food",
     "key": "4574987#1",
     "url": "https://www.walmart.com/browse/food/brown-eggs/976759_9176907_1001469_4574987",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Food",
+    "key": "4615343#1",
+    "url": "https://www.walmart.com/browse/food/salad-bowls-trays/976759_976789_7419699_4615343",
     "status": "pending",
     "reason": "",
     "scope_review": 0
@@ -6233,6 +6553,14 @@
   },
   {
     "category": "Food",
+    "key": "4802369#1",
+    "url": "https://www.walmart.com/browse/food/spices/976759_976794_3029941_3576286_4802369",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Food",
     "key": "4806887#1",
     "url": "https://www.walmart.com/browse/food/monster-energy/976759_976782_9357528_4806887",
     "status": "pending",
@@ -6259,6 +6587,14 @@
     "category": "Food",
     "key": "4879413#1",
     "url": "https://www.walmart.com/browse/food/shop-top-brands/976759_976780_4879413",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Food",
+    "key": "4914029#1",
+    "url": "https://www.walmart.com/browse/food/citrus/976759_976793_9756351_4914029",
     "status": "pending",
     "reason": "",
     "scope_review": 0
@@ -6425,6 +6761,14 @@
   },
   {
     "category": "Food",
+    "key": "5306187#1",
+    "url": "https://www.walmart.com/browse/food/bay-leaf/976759_976794_3029941_5597656_5306187",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Food",
     "key": "5403011#1",
     "url": "https://www.walmart.com/browse/food/pasta-pizza/976759_976794_5403011",
     "status": "pending",
@@ -6459,6 +6803,14 @@
     "category": "Food",
     "key": "5476285#1",
     "url": "https://www.walmart.com/browse/food/loose-leaf-tea/976759_976782_1001320_5476285",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Food",
+    "key": "5526945#1",
+    "url": "https://www.walmart.com/browse/food/melons/976759_976793_9756351_5526945",
     "status": "pending",
     "reason": "",
     "scope_review": 0
@@ -6513,6 +6865,14 @@
   },
   {
     "category": "Food",
+    "key": "5597656#1",
+    "url": "https://www.walmart.com/browse/food/herbs/976759_976794_3029941_5597656",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Food",
     "key": "5614446#1",
     "url": "https://www.walmart.com/browse/food/packaged-meals-side-dishes/976759_976794_5614446",
     "status": "pending",
@@ -6553,6 +6913,14 @@
   },
   {
     "category": "Food",
+    "key": "5654475#1",
+    "url": "https://www.walmart.com/browse/food/happy-birthday-flowers/976759_5098771_6211901_5654475",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Food",
     "key": "5668749#1",
     "url": "https://www.walmart.com/browse/food/whipped-creams-toppings/976759_9176907_9550303_5668749",
     "status": "pending",
@@ -6585,8 +6953,24 @@
   },
   {
     "category": "Food",
+    "key": "5730644#1",
+    "url": "https://www.walmart.com/browse/food/salad-dressings/976759_976794_5580286_5730644",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Food",
     "key": "5739090#1",
     "url": "https://www.walmart.com/browse/food/coconut-water/976759_976782_1001659_5739090",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Food",
+    "key": "5780091#1",
+    "url": "https://www.walmart.com/browse/food/nespresso-pods/976759_1086446_1801480_5780091",
     "status": "pending",
     "reason": "",
     "scope_review": 0
@@ -6641,6 +7025,14 @@
   },
   {
     "category": "Food",
+    "key": "5875478#1",
+    "url": "https://www.walmart.com/browse/food/great-value-coffee-pods/976759_1086446_5875478",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Food",
     "key": "5912172#1",
     "url": "https://www.walmart.com/browse/food/bottled-water/976759_976782_1001659_5912172",
     "status": "pending",
@@ -6651,7 +7043,7 @@
     "category": "Food",
     "key": "5920602#1",
     "url": "https://www.walmart.com/browse/food/fresh-dressings/976759_976793_9538337_5920602",
-    "status": "pending",
+    "status": "reviewed",
     "reason": "",
     "scope_review": 0
   },
@@ -6667,6 +7059,22 @@
     "category": "Food",
     "key": "5936524#1",
     "url": "https://www.walmart.com/browse/food/canned-carrots/976759_976794_7433209_9025162_5936524",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Food",
+    "key": "5965708#1",
+    "url": "https://www.walmart.com/browse/food/sunflowers/976759_5098771_6211901_5965708",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Food",
+    "key": "5976503#1",
+    "url": "https://www.walmart.com/browse/food/babys-breath/976759_5098771_6211901_5976503",
     "status": "pending",
     "reason": "",
     "scope_review": 0
@@ -6715,6 +7123,14 @@
     "category": "Food",
     "key": "6048965#1",
     "url": "https://www.walmart.com/browse/food/plant-based-butter/976759_9176907_1001467_6048965",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Food",
+    "key": "6049263#1",
+    "url": "https://www.walmart.com/browse/food/rosemary/976759_976794_3029941_5597656_6049263",
     "status": "pending",
     "reason": "",
     "scope_review": 0
@@ -6779,6 +7195,14 @@
     "category": "Food",
     "key": "6191561#1",
     "url": "https://www.walmart.com/browse/food/celsius-energy-drinks/976759_976782_9357528_6191561",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Food",
+    "key": "6211901#1",
+    "url": "https://www.walmart.com/browse/food/all-flowers/976759_5098771_6211901",
     "status": "pending",
     "reason": "",
     "scope_review": 0
@@ -6873,8 +7297,40 @@
   },
   {
     "category": "Food",
+    "key": "6404194#1",
+    "url": "https://www.walmart.com/browse/food/alstroemerias/976759_5098771_6211901_6404194",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Food",
     "key": "6433706#1",
     "url": "https://www.walmart.com/browse/food/java-monster/976759_1086446_1229654_6433706",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Food",
+    "key": "6480514#1",
+    "url": "https://www.walmart.com/browse/food/chives/976759_976794_3029941_5597656_6480514",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Food",
+    "key": "6537775#1",
+    "url": "https://www.walmart.com/browse/food/pears/976759_976793_9756351_6537775",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Food",
+    "key": "6541145#1",
+    "url": "https://www.walmart.com/browse/food/mint/976759_976794_3029941_5597656_6541145",
     "status": "pending",
     "reason": "",
     "scope_review": 0
@@ -6947,6 +7403,14 @@
     "category": "Food",
     "key": "6757439#1",
     "url": "https://www.walmart.com/browse/food/shop-all-bbq-sauces/976759_976794_7981173_4500997_6757439",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Food",
+    "key": "6796782#1",
+    "url": "https://www.walmart.com/browse/food/dill/976759_976794_3029941_5597656_6796782",
     "status": "pending",
     "reason": "",
     "scope_review": 0
@@ -7033,8 +7497,24 @@
   },
   {
     "category": "Food",
+    "key": "7217868#1",
+    "url": "https://www.walmart.com/browse/food/love-romance-flowers/976759_5098771_6211901_7217868",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Food",
     "key": "7236134#1",
     "url": "https://www.walmart.com/browse/food/sausages/976759_9569500_2941132_7236134",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Food",
+    "key": "7260268#1",
+    "url": "https://www.walmart.com/browse/food/parsley/976759_976794_3029941_5597656_7260268",
     "status": "pending",
     "reason": "",
     "scope_review": 0
@@ -7161,6 +7641,14 @@
   },
   {
     "category": "Food",
+    "key": "7474385#1",
+    "url": "https://www.walmart.com/browse/food/sage/976759_976794_3029941_5597656_7474385",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Food",
     "key": "7482537#1",
     "url": "https://www.walmart.com/browse/food/single-serve-jerky/976759_3701649_8653665_7482537",
     "status": "pending",
@@ -7174,6 +7662,14 @@
     "status": "pending",
     "reason": "",
     "scope_review": 1
+  },
+  {
+    "category": "Food",
+    "key": "7513516#1",
+    "url": "https://www.walmart.com/browse/food/starbucks-coffee-pods/976759_1086446_2986178_7513516",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
   },
   {
     "category": "Food",
@@ -7257,8 +7753,24 @@
   },
   {
     "category": "Food",
+    "key": "7635722#1",
+    "url": "https://www.walmart.com/browse/food/celery-cucumbers/976759_976793_8910423_7635722",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Food",
     "key": "7656106#1",
     "url": "https://www.walmart.com/browse/food/cereal-cups/976759_976783_1231208_4423991_9877415_7656106",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Food",
+    "key": "7664744#1",
+    "url": "https://www.walmart.com/browse/food/chrysanthemum-mums/976759_5098771_6211901_7664744",
     "status": "pending",
     "reason": "",
     "scope_review": 0
@@ -7315,7 +7827,7 @@
     "category": "Food",
     "key": "7775574#1",
     "url": "https://www.walmart.com/browse/food/espresso-pods-capsules/976759_1086446_7775574",
-    "status": "pending",
+    "status": "reviewed",
     "reason": "",
     "scope_review": 0
   },
@@ -7323,6 +7835,14 @@
     "category": "Food",
     "key": "7789914#1",
     "url": "https://www.walmart.com/browse/food/international-delight-iced-coffee/976759_1086446_1229654_7789914",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Food",
+    "key": "7796396#1",
+    "url": "https://www.walmart.com/browse/food/apples/976759_976793_9756351_7796396",
     "status": "pending",
     "reason": "",
     "scope_review": 0
@@ -7473,6 +7993,14 @@
   },
   {
     "category": "Food",
+    "key": "8135897#1",
+    "url": "https://www.walmart.com/browse/food/keurig-k-cups-coffee-pods/976759_1086446_8135897",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Food",
     "key": "8155117#1",
     "url": "https://www.walmart.com/browse/food/evaporated-milk/976759_976780_9959366_5832492_8155117",
     "status": "pending",
@@ -7555,6 +8083,14 @@
     "category": "Food",
     "key": "8302441#1",
     "url": "https://www.walmart.com/browse/food/fresh-halloween-bakery/976759_1567409_2107086_2816181_8302441",
+    "status": "reviewed",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Food",
+    "key": "8302441#2",
+    "url": "https://www.walmart.com/browse/food/fresh-halloween-bakery/976759_1567409_2107086_2816181_8302441?page=2",
     "status": "pending",
     "reason": "",
     "scope_review": 0
@@ -7641,6 +8177,14 @@
   },
   {
     "category": "Food",
+    "key": "8461295#1",
+    "url": "https://www.walmart.com/browse/food/roses/976759_5098771_6211901_8461295",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Food",
     "key": "8471931#1",
     "url": "https://www.walmart.com/browse/food/butter-spreads/976759_9176907_1001467_8471931",
     "status": "pending",
@@ -7691,6 +8235,14 @@
     "category": "Food",
     "key": "8739812#1",
     "url": "https://www.walmart.com/browse/food/porch-pumpkins/976759_976793_8739812",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Food",
+    "key": "8753286#1",
+    "url": "https://www.walmart.com/browse/food/coffee/976759_1086446_8753286",
     "status": "pending",
     "reason": "",
     "scope_review": 0
@@ -7809,6 +8361,14 @@
   },
   {
     "category": "Food",
+    "key": "8996022#1",
+    "url": "https://www.walmart.com/browse/food/the-original-donut-shop-coffee-pods/976759_1086446_1587610_8996022",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Food",
     "key": "8999626#1",
     "url": "https://www.walmart.com/browse/food/all-ritz-crackers/976759_976787_1001392_8713132_8999626",
     "status": "pending",
@@ -7827,6 +8387,14 @@
     "category": "Food",
     "key": "9025162#1",
     "url": "https://www.walmart.com/browse/canned-goods/canned-vegetables/976759_976794_7433209_9025162",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Food",
+    "key": "9043545#1",
+    "url": "https://www.walmart.com/browse/food/fresh-pre-cut-fruits/976759_976793_8402496_9043545",
     "status": "pending",
     "reason": "",
     "scope_review": 0
@@ -7859,6 +8427,14 @@
     "category": "Food",
     "key": "9084673#1",
     "url": "https://www.walmart.com/browse/food/flours-meals/976759_976780_9959366_9084673",
+    "status": "reviewed",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Food",
+    "key": "9084673#2",
+    "url": "https://www.walmart.com/browse/food/flours-meals/976759_976780_9959366_9084673?page=2",
     "status": "pending",
     "reason": "",
     "scope_review": 0
@@ -7870,6 +8446,14 @@
     "status": "pending",
     "reason": "",
     "scope_review": 1
+  },
+  {
+    "category": "Food",
+    "key": "9100785#1",
+    "url": "https://www.walmart.com/browse/food/carnations/976759_5098771_6211901_9100785",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
   },
   {
     "category": "Food",
@@ -7899,6 +8483,22 @@
     "category": "Food",
     "key": "9157112#1",
     "url": "https://www.walmart.com/browse/food/fresh-dips-salsa/976759_976793_9538337_9157112",
+    "status": "failed",
+    "reason": "Response category identifier mismatch or missing",
+    "scope_review": 0
+  },
+  {
+    "category": "Food",
+    "key": "9157552#1",
+    "url": "https://www.walmart.com/browse/food/peppers-chilis/976759_976793_8910423_9157552",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Food",
+    "key": "9158188#1",
+    "url": "https://www.walmart.com/browse/food/dunkin-coffee-pods/976759_1086446_7630289_9158188",
     "status": "pending",
     "reason": "",
     "scope_review": 0
@@ -7987,6 +8587,14 @@
     "category": "Food",
     "key": "9357528#2",
     "url": "https://www.walmart.com/browse/food/energy-drinks/976759_976782_9357528?page=2",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Food",
+    "key": "9373860#1",
+    "url": "https://www.walmart.com/browse/food/cilantro/976759_976794_3029941_5597656_9373860",
     "status": "pending",
     "reason": "",
     "scope_review": 0
@@ -8155,6 +8763,14 @@
     "category": "Food",
     "key": "9756351#1",
     "url": "https://www.walmart.com/browse/food/fresh-fruits/976759_976793_9756351",
+    "status": "reviewed",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Food",
+    "key": "9756351#2",
+    "url": "https://www.walmart.com/browse/food/fresh-fruits/976759_976793_9756351?page=2",
     "status": "pending",
     "reason": "",
     "scope_review": 0
@@ -8227,6 +8843,14 @@
     "category": "Food",
     "key": "976793#1",
     "url": "https://www.walmart.com/browse/food/fresh-produce/976759_976793",
+    "status": "reviewed",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Food",
+    "key": "976793#2",
+    "url": "https://www.walmart.com/browse/food/fresh-produce/976759_976793?page=2",
     "status": "pending",
     "reason": "",
     "scope_review": 0
@@ -8235,6 +8859,22 @@
     "category": "Food",
     "key": "976794#1",
     "url": "https://www.walmart.com/browse/food/pantry/976759_976794",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Food",
+    "key": "9788610#1",
+    "url": "https://www.walmart.com/browse/food/fennel/976759_976794_3029941_5597656_9788610",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Food",
+    "key": "9788876#1",
+    "url": "https://www.walmart.com/browse/food/lilies/976759_5098771_6211901_9788876",
     "status": "pending",
     "reason": "",
     "scope_review": 0
@@ -8515,7 +9155,7 @@
     "category": "Health & Wellness",
     "key": "1740853#1",
     "url": "https://www.walmart.com/browse/health/midol/976760_6972993_1740853",
-    "status": "pending",
+    "status": "reviewed",
     "reason": "",
     "scope_review": 0
   },
@@ -8731,6 +9371,14 @@
     "category": "Health & Wellness",
     "key": "2848108#1",
     "url": "https://www.walmart.com/browse/health-medicine/advil-pm/976760_6972993_9763276_2848108",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Health & Wellness",
+    "key": "2877431#1",
+    "url": "https://www.walmart.com/browse/braces-and-supports/hand-and-wrist-support/976760_1005860_4157476_2877431",
     "status": "pending",
     "reason": "",
     "scope_review": 0
@@ -9475,8 +10123,8 @@
     "category": "Health & Wellness",
     "key": "6081900#1",
     "url": "https://www.walmart.com/browse/health/shop-all-fsa-hsa-eligible-pain-relievers/976760_6120851_5513357_6081900",
-    "status": "pending",
-    "reason": "",
+    "status": "failed",
+    "reason": "Response category identifier mismatch or missing",
     "scope_review": 0
   },
   {
@@ -9563,7 +10211,7 @@
     "category": "Health & Wellness",
     "key": "648199#1",
     "url": "https://www.walmart.com/browse/health/massage-chairs/976760_36290_648199",
-    "status": "pending",
+    "status": "reviewed",
     "reason": "",
     "scope_review": 0
   },
@@ -9603,7 +10251,7 @@
     "category": "Health & Wellness",
     "key": "6550815#1",
     "url": "https://www.walmart.com/browse/massage/massage-guns/976760_36290_6550815",
-    "status": "pending",
+    "status": "reviewed",
     "reason": "",
     "scope_review": 0
   },
@@ -9659,6 +10307,14 @@
     "category": "Health & Wellness",
     "key": "6972993#1",
     "url": "https://www.walmart.com/browse/health/pain-relievers/976760_6972993",
+    "status": "reviewed",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Health & Wellness",
+    "key": "6972993#2",
+    "url": "https://www.walmart.com/browse/health/pain-relievers/976760_6972993?page=2",
     "status": "pending",
     "reason": "",
     "scope_review": 0
@@ -9707,6 +10363,14 @@
     "category": "Health & Wellness",
     "key": "7163636#1",
     "url": "https://www.walmart.com/browse/health-medicine/fsa-hsa-eligible-skin-care/976760_6120851_6937361_7163636",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Health & Wellness",
+    "key": "7164365#1",
+    "url": "https://www.walmart.com/browse/health/cough-sore-throat-remedies/976760_4661388_6244277_7164365",
     "status": "pending",
     "reason": "",
     "scope_review": 0
@@ -9795,6 +10459,14 @@
     "category": "Health & Wellness",
     "key": "7476811#1",
     "url": "https://www.walmart.com/browse/health-medicine/melatonin/976760_1005863_7476811",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Health & Wellness",
+    "key": "7496750#1",
+    "url": "https://www.walmart.com/browse/health-medicine/zero-gravity-massage-chairs/976760_36290_7496750",
     "status": "pending",
     "reason": "",
     "scope_review": 0
@@ -9907,8 +10579,8 @@
     "category": "Health & Wellness",
     "key": "8273605#1",
     "url": "https://www.walmart.com/browse/health/nervive/976760_8273605",
-    "status": "pending",
-    "reason": "",
+    "status": "failed",
+    "reason": "Empty page title; page may still be loading",
     "scope_review": 0
   },
   {
@@ -9971,6 +10643,14 @@
     "category": "Health & Wellness",
     "key": "8538506#1",
     "url": "https://www.walmart.com/browse/health/mucinex/976760_4661388_6244277_8538506",
+    "status": "reviewed",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Health & Wellness",
+    "key": "8538506#2",
+    "url": "https://www.walmart.com/browse/health/mucinex/976760_4661388_6244277_8538506?page=2",
     "status": "pending",
     "reason": "",
     "scope_review": 0
@@ -9979,7 +10659,7 @@
     "category": "Health & Wellness",
     "key": "8543176#1",
     "url": "https://www.walmart.com/browse/health/wrist-braces/976760_1005860_4157476_2877431_8543176",
-    "status": "pending",
+    "status": "reviewed",
     "reason": "",
     "scope_review": 0
   },
@@ -10283,8 +10963,8 @@
     "category": "Household Essentials",
     "key": "1001719#1",
     "url": "https://www.walmart.com/browse/household-essentials/hand-soaps/1115193_1071965_1001719",
-    "status": "pending",
-    "reason": "",
+    "status": "failed",
+    "reason": "Empty page title; page may still be loading",
     "scope_review": 0
   },
   {
@@ -10507,6 +11187,14 @@
     "category": "Household Essentials",
     "key": "1149386#1",
     "url": "https://www.walmart.com/browse/household-essentials/food-storage-bags/1115193_1073264_1149386",
+    "status": "reviewed",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Household Essentials",
+    "key": "1149386#2",
+    "url": "https://www.walmart.com/browse/household-essentials/food-storage-bags/1115193_1073264_1149386?page=2",
     "status": "pending",
     "reason": "",
     "scope_review": 0
@@ -10545,6 +11233,14 @@
   },
   {
     "category": "Household Essentials",
+    "key": "1259201#1",
+    "url": "https://www.walmart.com/browse/household-essentials/freezer-bags/1115193_1073264_1149386_1259201",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Household Essentials",
     "key": "1279160#1",
     "url": "https://www.walmart.com/browse/household-essentials/multipack-air-fresheners/1115193_1025739_1279160",
     "status": "pending",
@@ -10563,6 +11259,14 @@
     "category": "Household Essentials",
     "key": "1302612#1",
     "url": "https://www.walmart.com/browse/household-essentials/gain/1115193_8250903_1302612",
+    "status": "reviewed",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Household Essentials",
+    "key": "1302612#2",
+    "url": "https://www.walmart.com/browse/household-essentials/gain/1115193_8250903_1302612?page=2",
     "status": "pending",
     "reason": "",
     "scope_review": 0
@@ -10649,6 +11353,14 @@
   },
   {
     "category": "Household Essentials",
+    "key": "1677216#1",
+    "url": "https://www.walmart.com/browse/household-essentials/leather-cleaners/1115193_1071966_4836020_7108494_1677216",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Household Essentials",
     "key": "1683109#1",
     "url": "https://www.walmart.com/browse/household-essentials/febreze-car-air-fresheners/1115193_1025739_7032476_2346414_1683109",
     "status": "pending",
@@ -10697,6 +11409,14 @@
   },
   {
     "category": "Household Essentials",
+    "key": "2133702#1",
+    "url": "https://www.walmart.com/browse/household-essentials/fly-trap/1115193_1025745_2328979_2133702",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Household Essentials",
     "key": "2262803#1",
     "url": "https://www.walmart.com/browse/household-essentials/dawn-dish-soap/1115193_1071966_7583868_1661720_2262803",
     "status": "reviewed",
@@ -10731,6 +11451,14 @@
     "category": "Household Essentials",
     "key": "2328979#1",
     "url": "https://www.walmart.com/browse/household-essentials/fly/1115193_1025745_2328979",
+    "status": "reviewed",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Household Essentials",
+    "key": "2328979#2",
+    "url": "https://www.walmart.com/browse/household-essentials/fly/1115193_1025745_2328979?page=2",
     "status": "pending",
     "reason": "",
     "scope_review": 0
@@ -10795,7 +11523,7 @@
     "category": "Household Essentials",
     "key": "2424890#1",
     "url": "https://www.walmart.com/browse/household-essentials/garbage-disposal-cleaners/1115193_1071966_4986682_2424890",
-    "status": "pending",
+    "status": "reviewed",
     "reason": "",
     "scope_review": 0
   },
@@ -10851,6 +11579,14 @@
     "category": "Household Essentials",
     "key": "2690021#1",
     "url": "https://www.walmart.com/browse/household-essentials/carpet-powder/1115193_1071966_1073104_8116517_2690021",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Household Essentials",
+    "key": "2730812#1",
+    "url": "https://www.walmart.com/browse/household-essentials/sandwich-bags/1115193_1073264_1149386_2730812",
     "status": "pending",
     "reason": "",
     "scope_review": 0
@@ -11089,8 +11825,24 @@
   },
   {
     "category": "Household Essentials",
+    "key": "3667118#1",
+    "url": "https://www.walmart.com/browse/household-essentials/fruit-fly-gnat-traps/1115193_1025745_2328979_3667118",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Household Essentials",
     "key": "3752966#1",
     "url": "https://www.walmart.com/browse/household-essentials/quick-shine-floor-finish/1115193_1071966_1073104_7081630_3752966",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Household Essentials",
+    "key": "3808837#1",
+    "url": "https://www.walmart.com/browse/household-essentials/gain-flings/1115193_1071967_1149379_9053212_3808837",
     "status": "pending",
     "reason": "",
     "scope_review": 0
@@ -11307,7 +12059,7 @@
     "category": "Household Essentials",
     "key": "4836020#1",
     "url": "https://www.walmart.com/browse/household-essentials/furniture-cleaners/1115193_1071966_4836020",
-    "status": "pending",
+    "status": "reviewed",
     "reason": "",
     "scope_review": 0
   },
@@ -11315,6 +12067,14 @@
     "category": "Household Essentials",
     "key": "4846110#1",
     "url": "https://www.walmart.com/browse/household-essentials/cascade-dishwasher-pods/1115193_8250903_2742941_4846110",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Household Essentials",
+    "key": "4862124#1",
+    "url": "https://www.walmart.com/browse/household-essentials/wood-cleaners/1115193_1071966_4836020_4862124",
     "status": "pending",
     "reason": "",
     "scope_review": 0
@@ -11331,6 +12091,14 @@
     "category": "Household Essentials",
     "key": "4879305#1",
     "url": "https://www.walmart.com/browse/household-essentials/bleach-tablets/1115193_1071967_1149380_4879305",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Household Essentials",
+    "key": "4880865#1",
+    "url": "https://www.walmart.com/browse/household-essentials/wood-polish/1115193_1071966_4836020_4880865",
     "status": "pending",
     "reason": "",
     "scope_review": 0
@@ -11385,6 +12153,14 @@
   },
   {
     "category": "Household Essentials",
+    "key": "5234599#1",
+    "url": "https://www.walmart.com/browse/household-essentials/gallon-bags/1115193_1073264_1149386_5234599",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Household Essentials",
     "key": "5244758#1",
     "url": "https://www.walmart.com/browse/household-essentials/laundry-scent-boosters/1115193_1071967_5244758",
     "status": "pending",
@@ -11419,6 +12195,14 @@
     "category": "Household Essentials",
     "key": "5397101#1",
     "url": "https://www.walmart.com/browse/household-essentials/gain-grinchmas/1115193_8250903_1302612_5397101",
+    "status": "reviewed",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Household Essentials",
+    "key": "5406007#1",
+    "url": "https://www.walmart.com/browse/household-essentials/fly-spray/1115193_1025745_2328979_5406007",
     "status": "pending",
     "reason": "",
     "scope_review": 0
@@ -11452,6 +12236,14 @@
     "key": "5520663#1",
     "url": "https://www.walmart.com/browse/household-essentials/clorox-sprays/1115193_8250903_7784444_5520663",
     "status": "reviewed",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Household Essentials",
+    "key": "5621400#1",
+    "url": "https://www.walmart.com/browse/household-essentials/fly-light-traps/1115193_1025745_5621400",
+    "status": "pending",
     "reason": "",
     "scope_review": 0
   },
@@ -11825,6 +12617,14 @@
   },
   {
     "category": "Household Essentials",
+    "key": "7108494#1",
+    "url": "https://www.walmart.com/browse/household-essentials/upholstery-cleaners/1115193_1071966_4836020_7108494",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Household Essentials",
     "key": "7150063#1",
     "url": "https://www.walmart.com/browse/household-essentials/car-vent-freshener/1115193_1025739_7032476_7150063",
     "status": "pending",
@@ -11899,8 +12699,8 @@
     "category": "Household Essentials",
     "key": "7630260#1",
     "url": "https://www.walmart.com/browse/household-essentials/flushable-wipes/1115193_1071965_7630260",
-    "status": "pending",
-    "reason": "",
+    "status": "failed",
+    "reason": "Empty page title; page may still be loading",
     "scope_review": 0
   },
   {
@@ -11953,11 +12753,27 @@
   },
   {
     "category": "Household Essentials",
+    "key": "7788864#1",
+    "url": "https://www.walmart.com/browse/household-essentials/quart-bags/1115193_1073264_1149386_7788864",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Household Essentials",
     "key": "7810722#1",
     "url": "https://www.walmart.com/cp/walmart-business/7810722",
     "status": "pending",
     "reason": "",
     "scope_review": 1
+  },
+  {
+    "category": "Household Essentials",
+    "key": "7819580#1",
+    "url": "https://www.walmart.com/browse/household-essentials/snack-bags/1115193_1073264_1149386_7819580",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
   },
   {
     "category": "Household Essentials",
@@ -12241,6 +13057,14 @@
   },
   {
     "category": "Household Essentials",
+    "key": "8507498#1",
+    "url": "https://www.walmart.com/browse/household-essentials/fly-swatter/1115193_1025745_8507498",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Household Essentials",
     "key": "8511422#1",
     "url": "https://www.walmart.com/browse/household-essentials/dishwasher-detergent/1115193_1071966_7583868_8511422",
     "status": "reviewed",
@@ -12299,6 +13123,14 @@
     "category": "Household Essentials",
     "key": "8928193#1",
     "url": "https://www.walmart.com/browse/household-essentials/little-trees-air-fresheners/1115193_1025739_7032476_2346414_8928193",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Household Essentials",
+    "key": "9053212#1",
+    "url": "https://www.walmart.com/browse/household-essentials/gain-laundry-detergent/1115193_1071967_1149379_9053212",
     "status": "pending",
     "reason": "",
     "scope_review": 0
@@ -12377,6 +13209,14 @@
   },
   {
     "category": "Household Essentials",
+    "key": "9276914#1",
+    "url": "https://www.walmart.com/browse/household-essentials/bug-zappers/1115193_1025745_9276914",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Household Essentials",
     "key": "9345013#1",
     "url": "https://www.walmart.com/browse/household-essentials/febreze-refills/1115193_8250903_5439019_9345013",
     "status": "pending",
@@ -12387,6 +13227,14 @@
     "category": "Household Essentials",
     "key": "9346835#1",
     "url": "https://www.walmart.com/browse/household-essentials/refresh-your-car/1115193_1025739_7032476_2346414_9346835",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Household Essentials",
+    "key": "9366181#1",
+    "url": "https://www.walmart.com/browse/household-essentials/gain-scent-boosters/1115193_1071967_5244758_9366181",
     "status": "pending",
     "reason": "",
     "scope_review": 0
@@ -12435,6 +13283,14 @@
     "category": "Household Essentials",
     "key": "9610242#1",
     "url": "https://www.walmart.com/browse/household-essentials/plastic-plates/1115193_1073264_1149388_9610242",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Household Essentials",
+    "key": "9703633#1",
+    "url": "https://www.walmart.com/browse/household-essentials/paper-lunch-bags/1115193_1073264_1149386_9703633",
     "status": "pending",
     "reason": "",
     "scope_review": 0
@@ -12817,6 +13673,14 @@
   },
   {
     "category": "Office Supplies",
+    "key": "2459886#1",
+    "url": "https://www.walmart.com/browse/office-supplies/all-clipboards/1229749_2447475_9346256_2459886",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Office Supplies",
     "key": "2475708#1",
     "url": "https://www.walmart.com/browse/office-supplies/rubber-bands/1229749_9234438_3417460_2475708",
     "status": "pending",
@@ -13041,6 +13905,14 @@
   },
   {
     "category": "Office Supplies",
+    "key": "3078521#1",
+    "url": "https://www.walmart.com/browse/office-supplies/clear-clipboards/1229749_2447475_9346256_3078521",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Office Supplies",
     "key": "3115238#1",
     "url": "https://www.walmart.com/browse/office-supplies/dry-erase-markers/1229749_9081741_3115238",
     "status": "pending",
@@ -13123,7 +13995,7 @@
     "category": "Office Supplies",
     "key": "3241605#1",
     "url": "https://www.walmart.com/browse/office-supplies/color-coding-labels/1229749_4339346_3160248_3241605",
-    "status": "pending",
+    "status": "reviewed",
     "reason": "",
     "scope_review": 0
   },
@@ -13299,6 +14171,14 @@
     "category": "Office Supplies",
     "key": "3725194#1",
     "url": "https://www.walmart.com/browse/office-supplies/color-markers/1229749_9081741_3725194",
+    "status": "reviewed",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Office Supplies",
+    "key": "3725194#2",
+    "url": "https://www.walmart.com/browse/office-supplies/color-markers/1229749_9081741_3725194?page=2",
     "status": "pending",
     "reason": "",
     "scope_review": 0
@@ -13507,7 +14387,7 @@
     "category": "Office Supplies",
     "key": "4437002#1",
     "url": "https://www.walmart.com/browse/office-supplies/coin-roll-wrappers/1229749_2447475_6494636_4437002",
-    "status": "pending",
+    "status": "reviewed",
     "reason": "",
     "scope_review": 0
   },
@@ -13667,7 +14547,7 @@
     "category": "Office Supplies",
     "key": "4972852#1",
     "url": "https://www.walmart.com/browse/office-supplies/clear-sticky-notes/1229749_6562796_4972852",
-    "status": "pending",
+    "status": "reviewed",
     "reason": "",
     "scope_review": 0
   },
@@ -14203,6 +15083,14 @@
     "category": "Office Supplies",
     "key": "6454568#1",
     "url": "https://www.walmart.com/browse/office-supplies/clear-tape/1229749_7234959_6454568",
+    "status": "reviewed",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Office Supplies",
+    "key": "6454568#2",
+    "url": "https://www.walmart.com/browse/office-supplies/clear-tape/1229749_7234959_6454568?page=2",
     "status": "pending",
     "reason": "",
     "scope_review": 0
@@ -14347,8 +15235,8 @@
     "category": "Office Supplies",
     "key": "6856272#1",
     "url": "https://www.walmart.com/browse/office-supplies/color-gel-pens/1229749_1988510_6856272",
-    "status": "pending",
-    "reason": "",
+    "status": "failed",
+    "reason": "Empty page title; page may still be loading",
     "scope_review": 0
   },
   {
@@ -14473,6 +15361,14 @@
   },
   {
     "category": "Office Supplies",
+    "key": "7135661#1",
+    "url": "https://www.walmart.com/browse/office-supplies/plastic-clipboards/1229749_2447475_9346256_7135661",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Office Supplies",
     "key": "7175233#1",
     "url": "https://www.walmart.com/browse/office-supplies/wall-calendars/1229749_8412191_2274527_7175233",
     "status": "pending",
@@ -14500,6 +15396,14 @@
     "key": "7232305#1",
     "url": "https://www.walmart.com/browse/office-supplies/1-subject-spiral-notebooks/1229749_4796182_2714026_7232305",
     "status": "reviewed",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Office Supplies",
+    "key": "7234959#1",
+    "url": "https://www.walmart.com/browse/office-supplies/tape/1229749_7234959",
+    "status": "pending",
     "reason": "",
     "scope_review": 0
   },
@@ -14603,6 +15507,14 @@
     "category": "Office Supplies",
     "key": "7542947#1",
     "url": "https://www.walmart.com/browse/office-supplies/2026-calendars/1229749_8412191_2274527_4664432_7542947",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Office Supplies",
+    "key": "7804382#1",
+    "url": "https://www.walmart.com/browse/office-supplies/storage-clipboards/1229749_2447475_9346256_7804382",
     "status": "pending",
     "reason": "",
     "scope_review": 0
@@ -14867,7 +15779,7 @@
     "category": "Office Supplies",
     "key": "8570924#1",
     "url": "https://www.walmart.com/browse/office-supplies/coin-counters-sorters-changers/1229749_2447475_6494636_8570924",
-    "status": "pending",
+    "status": "reviewed",
     "reason": "",
     "scope_review": 0
   },
@@ -15171,7 +16083,7 @@
     "category": "Office Supplies",
     "key": "9346256#1",
     "url": "https://www.walmart.com/browse/office-supplies/clipboards/1229749_2447475_9346256",
-    "status": "pending",
+    "status": "reviewed",
     "reason": "",
     "scope_review": 0
   },
@@ -15387,6 +16299,14 @@
     "category": "Personal Care",
     "key": "1001719#1",
     "url": "https://www.walmart.com/browse/personal-care/hand-soap/1005862_1001719",
+    "status": "reviewed",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Personal Care",
+    "key": "1001719#2",
+    "url": "https://www.walmart.com/browse/personal-care/hand-soap/1005862_1001719?page=2",
     "status": "pending",
     "reason": "",
     "scope_review": 0
@@ -15683,6 +16603,14 @@
     "category": "Personal Care",
     "key": "1225655#1",
     "url": "https://www.walmart.com/browse/personal-care/incontinence/1005862_1225655",
+    "status": "reviewed",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Personal Care",
+    "key": "1225655#2",
+    "url": "https://www.walmart.com/browse/personal-care/incontinence/1005862_1225655?page=2",
     "status": "pending",
     "reason": "",
     "scope_review": 0
@@ -15787,7 +16715,7 @@
     "category": "Personal Care",
     "key": "1620920#1",
     "url": "https://www.walmart.com/browse/personal-care/kids-baby-sunscreen/1005862_1001508_1620920",
-    "status": "pending",
+    "status": "reviewed",
     "reason": "",
     "scope_review": 0
   },
@@ -16195,7 +17123,7 @@
     "category": "Personal Care",
     "key": "2999240#1",
     "url": "https://www.walmart.com/browse/personal-care/incontinence-underpads/1005862_1225655_2999240",
-    "status": "pending",
+    "status": "reviewed",
     "reason": "",
     "scope_review": 0
   },
@@ -16235,7 +17163,7 @@
     "category": "Personal Care",
     "key": "3232231#1",
     "url": "https://www.walmart.com/browse/personal-care/incontinence-underwear/1005862_1225655_3232231",
-    "status": "pending",
+    "status": "reviewed",
     "reason": "",
     "scope_review": 0
   },
@@ -16291,7 +17219,7 @@
     "category": "Personal Care",
     "key": "3599635#1",
     "url": "https://www.walmart.com/browse/personal-care/kids-body-wash/1005862_1071969_3599635",
-    "status": "pending",
+    "status": "reviewed",
     "reason": "",
     "scope_review": 0
   },
@@ -16907,7 +17835,7 @@
     "category": "Personal Care",
     "key": "6497835#1",
     "url": "https://www.walmart.com/browse/personal-care/harrys/1005862_9157053_6497835",
-    "status": "pending",
+    "status": "reviewed",
     "reason": "",
     "scope_review": 0
   },
@@ -17065,8 +17993,24 @@
   },
   {
     "category": "Personal Care",
+    "key": "7585266#1",
+    "url": "https://www.walmart.com/browse/personal-care/hand-soap-refill/1005862_7585266",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Personal Care",
     "key": "7599028#1",
     "url": "https://www.walmart.com/browse/personal-care/incontinence-pads/1005862_1225655_7599028",
+    "status": "reviewed",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Personal Care",
+    "key": "7599028#2",
+    "url": "https://www.walmart.com/browse/personal-care/incontinence-pads/1005862_1225655_7599028?page=2",
     "status": "pending",
     "reason": "",
     "scope_review": 0
@@ -17121,6 +18065,14 @@
   },
   {
     "category": "Personal Care",
+    "key": "7892672#1",
+    "url": "https://www.walmart.com/browse/personal-care/hand-soap-pump/1005862_1071969_7892672",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Personal Care",
     "key": "7905976#1",
     "url": "https://www.walmart.com/browse/personal-care/philips-norelco-electric-shavers/1005862_1007220_133146_7905976",
     "status": "pending",
@@ -17155,6 +18107,14 @@
     "category": "Personal Care",
     "key": "7994182#1",
     "url": "https://www.walmart.com/browse/personal-care/womens-razors/1005862_1007220_1007399_7994182",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Personal Care",
+    "key": "8009681#1",
+    "url": "https://www.walmart.com/browse/personal-care/kids-bubble-baths/1005862_1071969_1694681_8009681",
     "status": "pending",
     "reason": "",
     "scope_review": 0
@@ -17713,6 +18673,14 @@
   },
   {
     "category": "Pets",
+    "key": "1273105#1",
+    "url": "https://www.walmart.com/browse/pets/hermit-crab-food/5440_6833286_5246025_1273105",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Pets",
     "key": "1302061#1",
     "url": "https://www.walmart.com/browse/pets/cat-laser-toys/5440_202073_2584809_1302061",
     "status": "pending",
@@ -17769,6 +18737,14 @@
   },
   {
     "category": "Pets",
+    "key": "1405579#1",
+    "url": "https://www.walmart.com/browse/pets/guinea-pig-food/5440_2765646_1405579",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Pets",
     "key": "1406554#1",
     "url": "https://www.walmart.com/browse/pets/dog-cones/5440_202072_9405258_1406554",
     "status": "pending",
@@ -17787,6 +18763,14 @@
     "category": "Pets",
     "key": "1416135#2",
     "url": "https://www.walmart.com/browse/pets/dog-potty-training/5440_202072_1416135?page=2",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Pets",
+    "key": "1422427#1",
+    "url": "https://www.walmart.com/browse/pets/hamster-cages/5440_9808177_1422427",
     "status": "pending",
     "reason": "",
     "scope_review": 0
@@ -18193,6 +19177,14 @@
   },
   {
     "category": "Pets",
+    "key": "2259683#1",
+    "url": "https://www.walmart.com/browse/hamsters/hamster-toys/5440_9808177_2259683",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Pets",
     "key": "2263524#1",
     "url": "https://www.walmart.com/browse/pets/friskies-complements/5440_5285960_6581090_2263524",
     "status": "pending",
@@ -18315,6 +19307,14 @@
     "category": "Pets",
     "key": "2483056#1",
     "url": "https://www.walmart.com/browse/pets/blue-buffalo-dog-food/5440_5285960_1311249_2483056",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Pets",
+    "key": "2533062#1",
+    "url": "https://www.walmart.com/browse/pets/hermit-crab-shells/5440_6833286_5246025_2533062",
     "status": "pending",
     "reason": "",
     "scope_review": 0
@@ -18467,7 +19467,7 @@
     "category": "Pets",
     "key": "2765646#1",
     "url": "https://www.walmart.com/browse/pets/guinea-pigs/5440_2765646",
-    "status": "pending",
+    "status": "reviewed",
     "reason": "",
     "scope_review": 0
   },
@@ -18561,6 +19561,14 @@
   },
   {
     "category": "Pets",
+    "key": "3005138#1",
+    "url": "https://www.walmart.com/browse/pets/hedgehog-food/5440_3014901_3005138",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Pets",
     "key": "3053202#1",
     "url": "https://www.walmart.com/browse/pets/dry-cat-food/5440_202073_1749780_3053202",
     "status": "reviewed",
@@ -18579,6 +19587,14 @@
     "category": "Pets",
     "key": "3078952#1",
     "url": "https://www.walmart.com/browse/pets/dog-poop-bags/5440_202072_1416135_3078952",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Pets",
+    "key": "3101759#1",
+    "url": "https://www.walmart.com/browse/reptiles/zoo-med-reptile-fish-supplies/5440_6833286_3101759",
     "status": "pending",
     "reason": "",
     "scope_review": 0
@@ -18617,6 +19633,14 @@
   },
   {
     "category": "Pets",
+    "key": "3214614#1",
+    "url": "https://www.walmart.com/browse/pets/rat-cages/5440_4046206_3214614",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Pets",
     "key": "3229642#1",
     "url": "https://www.walmart.com/browse/pets/dog-treat-dispenser-toys/5440_202072_2243339_3229642",
     "status": "pending",
@@ -18643,6 +19667,14 @@
     "category": "Pets",
     "key": "3260719#1",
     "url": "https://www.walmart.com/browse/pets/cat-grass/5440_202073_2584809_3260719",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Pets",
+    "key": "3301568#1",
+    "url": "https://www.walmart.com/browse/pets/cattle/5440_4024509_3301568",
     "status": "pending",
     "reason": "",
     "scope_review": 0
@@ -18697,6 +19729,14 @@
   },
   {
     "category": "Pets",
+    "key": "3521727#1",
+    "url": "https://www.walmart.com/browse/pets/exo-terra/5440_5285960_3521727",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Pets",
     "key": "3530725#1",
     "url": "https://www.walmart.com/browse/pets/vibrant-life-pet-supplies/5440_3530725",
     "status": "pending",
@@ -18737,6 +19777,14 @@
   },
   {
     "category": "Pets",
+    "key": "3747784#1",
+    "url": "https://www.walmart.com/browse/pets/hamster-food/5440_9808177_3747784",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Pets",
     "key": "3763320#1",
     "url": "https://www.walmart.com/browse/pets/live-aquarium-fish/5440_202074_3763320",
     "status": "pending",
@@ -18771,7 +19819,7 @@
     "category": "Pets",
     "key": "3885453#1",
     "url": "https://www.walmart.com/browse/pets/gerbils/5440_3885453",
-    "status": "pending",
+    "status": "reviewed",
     "reason": "",
     "scope_review": 0
   },
@@ -18819,6 +19867,14 @@
     "category": "Pets",
     "key": "4039016#2",
     "url": "https://www.walmart.com/browse/pets/dog-clothes-and-costumes/5440_202072_4039016?page=2",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Pets",
+    "key": "4046206#1",
+    "url": "https://www.walmart.com/browse/pets/rats/5440_4046206",
     "status": "pending",
     "reason": "",
     "scope_review": 0
@@ -18883,7 +19939,7 @@
     "category": "Pets",
     "key": "4224682#1",
     "url": "https://www.walmart.com/browse/pets/goat-supplies/5440_4024509_4224682",
-    "status": "pending",
+    "status": "reviewed",
     "reason": "",
     "scope_review": 0
   },
@@ -19001,6 +20057,14 @@
   },
   {
     "category": "Pets",
+    "key": "4654317#1",
+    "url": "https://www.walmart.com/browse/pets/cattle-ear-taggers/5440_4024509_3301568_4654317",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Pets",
     "key": "4656364#1",
     "url": "https://www.walmart.com/browse/pets/interactive-cat-toys/5440_202073_2584809_4656364",
     "status": "pending",
@@ -19043,6 +20107,14 @@
     "category": "Pets",
     "key": "4774575#1",
     "url": "https://www.walmart.com/browse/pets/cat-litter-box-accessories/5440_202073_202098_4774575",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Pets",
+    "key": "4776811#1",
+    "url": "https://www.walmart.com/browse/pets/sheep-shears/5440_4024509_4776811",
     "status": "pending",
     "reason": "",
     "scope_review": 0
@@ -19161,6 +20233,14 @@
   },
   {
     "category": "Pets",
+    "key": "5187599#1",
+    "url": "https://www.walmart.com/browse/pets/rat-food/5440_4046206_5187599",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Pets",
     "key": "5202216#1",
     "url": "https://www.walmart.com/browse/pets/parrot-cages/5440_228734_7047090_5202216",
     "status": "pending",
@@ -19171,7 +20251,7 @@
     "category": "Pets",
     "key": "5246025#1",
     "url": "https://www.walmart.com/browse/pets/hermit-crabs/5440_6833286_5246025",
-    "status": "pending",
+    "status": "reviewed",
     "reason": "",
     "scope_review": 0
   },
@@ -19195,6 +20275,14 @@
     "category": "Pets",
     "key": "5358273#1",
     "url": "https://www.walmart.com/browse/pets/horse-dewormers/5440_1092244_5358273",
+    "status": "reviewed",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Pets",
+    "key": "5358301#1",
+    "url": "https://www.walmart.com/browse/pets/flukers/5440_5285960_5358301",
     "status": "pending",
     "reason": "",
     "scope_review": 0
@@ -19361,6 +20449,14 @@
   },
   {
     "category": "Pets",
+    "key": "5904113#1",
+    "url": "https://www.walmart.com/browse/pets/cattle-ear-tags/5440_4024509_3301568_5904113",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Pets",
     "key": "5909610#1",
     "url": "https://www.walmart.com/browse/pets/medium-cat-tree/5440_202073_7793759_6461028_5909610",
     "status": "pending",
@@ -19379,6 +20475,14 @@
     "category": "Pets",
     "key": "5921446#1",
     "url": "https://www.walmart.com/browse/pets/5440_202072_6432755_5921446",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Pets",
+    "key": "5925506#1",
+    "url": "https://www.walmart.com/browse/pets/cattle-prods/5440_4024509_3301568_5925506",
     "status": "pending",
     "reason": "",
     "scope_review": 0
@@ -19475,7 +20579,7 @@
     "category": "Pets",
     "key": "6111830#1",
     "url": "https://www.walmart.com/browse/pets/hills-science-diet/5440_5285960_6111830",
-    "status": "pending",
+    "status": "reviewed",
     "reason": "",
     "scope_review": 0
   },
@@ -19641,6 +20745,22 @@
   },
   {
     "category": "Pets",
+    "key": "6656489#1",
+    "url": "https://www.walmart.com/browse/pets/hedgehog-cages/5440_3014901_6656489",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Pets",
+    "key": "6686106#1",
+    "url": "https://www.walmart.com/browse/pets/hills-science-diet-wet-dog-food/5440_202072_6432755_2719458_6686106",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Pets",
     "key": "6695584#1",
     "url": "https://www.walmart.com/browse/pets/large-cat-trees/5440_202073_7793759_6461028_6695584",
     "status": "pending",
@@ -19675,6 +20795,14 @@
     "category": "Pets",
     "key": "6784783#1",
     "url": "https://www.walmart.com/browse/pets/donut-dog-beds/5440_202072_7135140_6784783",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Pets",
+    "key": "6802188#1",
+    "url": "https://www.walmart.com/browse/pets/mouse-cages/5440_3014901_6802188",
     "status": "pending",
     "reason": "",
     "scope_review": 0
@@ -19745,6 +20873,14 @@
   },
   {
     "category": "Pets",
+    "key": "6947322#1",
+    "url": "https://www.walmart.com/browse/pets/hermit-crab-habitats/5440_6833286_5246025_6947322",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Pets",
     "key": "6964126#1",
     "url": "https://www.walmart.com/browse/pets/cat-flea-combs/5440_202073_3304805_6964126",
     "status": "pending",
@@ -19787,6 +20923,14 @@
     "category": "Pets",
     "key": "7075314#1",
     "url": "https://www.walmart.com/browse/pets/dog-grooming-vacuum/5440_202072_1980811_7075314",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Pets",
+    "key": "7078343#1",
+    "url": "https://www.walmart.com/browse/pets/guinea-pig-costumes/5440_2765646_7078343",
     "status": "pending",
     "reason": "",
     "scope_review": 0
@@ -19947,6 +21091,14 @@
     "category": "Pets",
     "key": "7520899#1",
     "url": "https://www.walmart.com/browse/pets/pedigree-dog-food/5440_5285960_7520899",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Pets",
+    "key": "7538781#1",
+    "url": "https://www.walmart.com/browse/pets/rat-toys/5440_4046206_7538781",
     "status": "pending",
     "reason": "",
     "scope_review": 0
@@ -20177,6 +21329,14 @@
   },
   {
     "category": "Pets",
+    "key": "8284791#1",
+    "url": "https://www.walmart.com/browse/pets/hills-science-diet-dog-food/5440_202072_6432755_5931883_8284791",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Pets",
     "key": "8334551#1",
     "url": "https://www.walmart.com/browse/pets/teaser-cat-toys/5440_202073_2584809_8334551",
     "status": "pending",
@@ -20235,7 +21395,7 @@
     "category": "Pets",
     "key": "8458129#1",
     "url": "https://www.walmart.com/browse/pets/horse-brushes/5440_1092244_8458129",
-    "status": "pending",
+    "status": "reviewed",
     "reason": "",
     "scope_review": 0
   },
@@ -20297,6 +21457,14 @@
   },
   {
     "category": "Pets",
+    "key": "8894778#1",
+    "url": "https://www.walmart.com/browse/pets/guinea-pig-toys/5440_2765646_8894778",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Pets",
     "key": "8902839#1",
     "url": "https://www.walmart.com/browse/pets/aquarium-air-pump/5440_202074_2825584_8902839",
     "status": "pending",
@@ -20307,6 +21475,14 @@
     "category": "Pets",
     "key": "8934441#1",
     "url": "https://www.walmart.com/browse/pets/all-blue-buffalo-veterinary-diet/5440_8328098_5777749_9705831_8934441",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Pets",
+    "key": "8984749#1",
+    "url": "https://www.walmart.com/browse/pets/timothy-hay/5440_3014901_8984749",
     "status": "pending",
     "reason": "",
     "scope_review": 0
@@ -20425,6 +21601,14 @@
   },
   {
     "category": "Pets",
+    "key": "9362702#1",
+    "url": "https://www.walmart.com/browse/pets/all-reptiles/5440_6833286_9362702",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Pets",
     "key": "9386718#1",
     "url": "https://www.walmart.com/browse/pets/dog-crate-furniture/5440_202072_2202003_9386718",
     "status": "pending",
@@ -20459,6 +21643,22 @@
     "category": "Pets",
     "key": "9405258#2",
     "url": "https://www.walmart.com/browse/dogs/dog-health-wellbeing/5440_202072_9405258?page=2",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Pets",
+    "key": "9420692#1",
+    "url": "https://www.walmart.com/browse/pets/hills-science-diet-dry-cat-food/5440_202073_1749780_4193856_9420692",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Pets",
+    "key": "9446205#1",
+    "url": "https://www.walmart.com/browse/pets/gerbil-cages/5440_3885453_9446205",
     "status": "pending",
     "reason": "",
     "scope_review": 0
@@ -20545,9 +21745,17 @@
   },
   {
     "category": "Pets",
+    "key": "9776218#1",
+    "url": "https://www.walmart.com/browse/pets/guinea-pig-bedding/5440_2765646_9776218",
+    "status": "pending",
+    "reason": "",
+    "scope_review": 0
+  },
+  {
+    "category": "Pets",
     "key": "9808177#1",
     "url": "https://www.walmart.com/browse/pets/hamsters/5440_9808177",
-    "status": "pending",
+    "status": "reviewed",
     "reason": "",
     "scope_review": 0
   },
