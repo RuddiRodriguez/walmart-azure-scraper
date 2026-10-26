@@ -719,3 +719,7 @@ Listing/category review only. Pending/failed/scope-unverified remain open. Raw b
 ## Coverage continuation result
 {"phase": "walking", "batches": 8, "pages_attempted": 640, "finished": false, "max_seconds": 43200, "max_pages": 2000, "queue_counts": {"failed": 35, "navigation_scope_unverified": 9, "outside_scope": 1, "pending": 2012, "reviewed": 672}, "scope_counts": {"brief_exclusion": 2, "outside_required_ancestry": 2, "parent_scope_unverified": 113, "scope_confirmed_by_response": 4475, "scope_unverified": 295, "scoped_queue": 4685}, "latest_batch": "batch-00637-1793035060", "seconds": 11030.5}
 Listing/category review only. Pending/failed/scope-unverified remain open. Raw bodies/native pages private. Offer candidates require source/terms review; no invented examples or full-catalog claim.
+
+## Coverage continuation result
+{"phase": "walking", "batches": 9, "pages_attempted": 720, "finished": false, "max_seconds": 43200, "max_pages": 2000, "queue_counts": {"failed": 39, "navigation_scope_unverified": 9, "outside_scope": 1, "pending": 2069, "reviewed": 748}, "scope_counts": {"brief_exclusion": 2, "outside_required_ancestry": 2, "parent_scope_unverified": 111, "scope_confirmed_by_response": 5130, "scope_unverified": 297, "scoped_queue": 4846}, "latest_batch": "batch-00717-1793036448", "seconds": 12473.3}
+Listing/category review only. Pending/failed/scope-unverified remain open. Raw bodies/native pages private. Offer candidates require source/terms review; no invented examples or full-catalog claim.
