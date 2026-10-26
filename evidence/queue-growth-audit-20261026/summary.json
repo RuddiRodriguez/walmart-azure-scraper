@@ -1,24 +1,24 @@
 {
   "mode": "Offline audit of stored real coverage responses and queue",
   "queue_counts": {
-    "reviewed": 844,
-    "failed": 43,
-    "pending": 2159,
+    "reviewed": 901,
+    "failed": 46,
+    "pending": 2202,
     "navigation_scope_unverified": 9,
     "outside_scope": 1
   },
   "page_identity_duplicates": 0,
   "url_types": {
-    "category_first_page": 2696,
-    "pagination": 360,
-    "pending_first_page": 1864,
-    "pending_pagination": 295
+    "category_first_page": 2772,
+    "pagination": 387,
+    "pending_first_page": 1889,
+    "pending_pagination": 313
   },
   "page_number_range": [
     1,
     11
   ],
-  "captured_listing_bodies_hash_verified": 900,
+  "captured_listing_bodies_hash_verified": 901,
   "repeated_product_sets_across_different_pages": 0,
   "batch_progress": [
     {
@@ -135,13 +135,13 @@
     {
       "batch": "batch-00877-1793039393",
       "queue_counts": {
-        "failed": 43,
+        "failed": 46,
         "navigation_scope_unverified": 9,
         "outside_scope": 1,
-        "pending": 2159,
-        "reviewed": 847
+        "pending": 2202,
+        "reviewed": 901
       },
-      "pages_attempted": 24
+      "pages_attempted": 80
     }
   ],
   "full_coverage_complete": false,

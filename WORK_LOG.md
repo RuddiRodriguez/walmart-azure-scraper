@@ -736,3 +736,5 @@ Listing/category review only. Pending/failed/scope-unverified remain open. Raw b
 
 ## Step3 continuation instruction confirmed
 Existing preserved coveragebatch and audit/resume handoff confirmed alive; no duplicatejob or newtest launched. Continuecoverage/actualoffersearch underoriginalbounds; logs andsafeexports pushed perbatch. Userrequestedquietexecution andnotificationonlyforrealblocker requiringattention. No constantprogresspolling or resetoflimits.
+
+- Preserved in-flight batch finished; final historyaudit and891historical listing fingerprints loaded before newguardedrequests. Existing originaldeadline/pagecounts unchanged. Coordinator willadopt orphanbatch once andcontinue.
