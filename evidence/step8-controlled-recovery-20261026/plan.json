@@ -1,0 +1,23 @@
+{
+  "target": 3,
+  "minimum_per_category": 1,
+  "limits": {
+    "product_requests": 12,
+    "listing_requests": 2,
+    "seconds": 600
+  },
+  "body_limit_mib": 1024,
+  "categories": [
+    {
+      "category": "Art Supplies",
+      "required_root": "https://www.walmart.com/cp/art-supplies/5899871",
+      "urls": [
+        "https://www.walmart.com/browse/arts-crafts-sewing/art-sets/1334134_5899871_7148292"
+      ]
+    }
+  ],
+  "scope": "One bounded current-collector SIGKILL/resume check; three products, one category",
+  "maximum_ordinary_failures": 10,
+  "body_limit_bytes": 1073741824,
+  "invalid_response_policy": "Reject and log each wrong-store, wrong-identity or invalid-price response; continue other candidates without refetch. One bounded run, no automatic restart."
+}

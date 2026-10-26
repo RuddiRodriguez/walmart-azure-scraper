@@ -1,6 +1,7 @@
 """One bounded cross-category collection. Review output only; never production publication."""
 import argparse
 import csv
+import fcntl
 import hashlib
 import json
 import os
@@ -26,7 +27,8 @@ from validate import validate
 LIMITS = dict(product_requests=750, listing_requests=80, seconds=3600)
 
 
-def run(output, plan):
+def run(output, plan, resume=False):
+    requested_plan = json.loads(json.dumps(plan))
     plan = {**plan, 'limits': dict(plan['limits'])}
     if plan.get('deadline_utc'):
         remaining = int(datetime.fromisoformat(plan['deadline_utc']).timestamp() - time.time())
@@ -40,7 +42,13 @@ def run(output, plan):
     output = Path(output).absolute()
     if not output.resolve().is_relative_to(Path('data').resolve()):
         raise ValueError('Evidence must stay under ignored data/')
-    output.mkdir(parents=True, exist_ok=False, mode=0o700)
+    output.mkdir(parents=True, exist_ok=resume, mode=0o700)
+    lock = (output / "run.lock").open("w")
+    try:
+        fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
+    except Exception:
+        lock.close()
+        raise
     settings = json.loads(Path('config/stores.json').read_text())
     settings.update(retries=1, max_page_seconds=25)
     store = settings['stores'][0]
@@ -52,12 +60,62 @@ def run(output, plan):
     seen_pages, seen_products = set(), set()
     accepted, sources = {}, []
     counts = Counter()
+    pending_products = deque()
+    active_page = None
     report = dict(mode='One bounded live cross-category review collection; not full uncapped coverage',
                   started_utc=datetime.now(timezone.utc).isoformat(), source_commit=subprocess.check_output(['git', 'rev-parse', 'HEAD'], text=True).strip(),
                   source_hashes={p: hashlib.sha256(Path(p).read_bytes()).hexdigest() for p in
                                  ['controlled_collection.py', 'diagnostic_capture.py', 'capture_store_drift.py', 'scrape.py', 'browser.py', 'extract.py', 'storage.py', 'validate.py']},
                   plan=plan, pages=[], observations=[], controls=[], failures=[], exclusions={}, completed_attempt=False,
                   target_reached=False, pair_captured=False, full_coverage_complete=False)
+    signature = hashlib.sha256(json.dumps(dict(plan=requested_plan, source=report['source_hashes'],
+        stores=Path('config/stores.json').read_text(), categories=Path('config/categories.csv').read_text(),
+        requirements=Path('requirements.txt').read_text()), sort_keys=True).encode()).hexdigest()
+    try:
+        if resume:
+            checkpoint = json.loads((output / 'checkpoint.json').read_text())
+            if checkpoint['signature'] != signature:
+                raise ValueError('Code or settings changed; start a fresh run')
+            report = checkpoint['report']
+            if report['completed_attempt']:
+                raise ValueError('Bounded attempt already completed; no resume work')
+            elapsed = time.time() - datetime.fromisoformat(report['started_utc']).timestamp()
+            plan = report['plan']
+            if elapsed >= plan['limits']['seconds']:
+                raise ValueError('Original collection deadline expired')
+            state.update(started=time.monotonic() - elapsed, limits=plan['limits'])
+            queues = {name: deque(values) for name, values in checkpoint['queues'].items()}
+            seen_pages = {tuple(value) for value in checkpoint['seen_pages']}
+            seen_products = set(checkpoint['seen_products'])
+            accepted = checkpoint['accepted']
+            counts = Counter(row['category'] for row in accepted.values())
+            pending_products = deque(checkpoint['pending_products'])
+            lines = (output / 'source-records.jsonl').read_text().splitlines() if (output / 'source-records.jsonl').exists() else []
+            sources = [json.loads(line) for line in lines[:checkpoint['source_count']]]
+            if len(sources) != len(accepted):
+                raise ValueError('Committed source/record count mismatch')
+            with (output / 'source-records.jsonl').open('w') as stream:
+                stream.write(''.join(json.dumps(source) + '\n' for source in sources))
+                stream.flush()
+                os.fsync(stream.fileno())
+            active_page = checkpoint['active_page']
+            if active_page:
+                name, url = active_page['category'], active_page['url']
+                queues[name].appendleft(url)
+                seen_pages.discard((name, url))
+                report['pages'][-1]['status'] = 'interrupted_uncommitted'
+                active_page = None
+            captures = [json.loads(path.read_text()) for path in (output / 'captures').glob('*.json')]
+            state['product_requests'] = sum(c['kind'] == 'product' for c in captures)
+            state['listing_requests'] = sum(c['kind'] == 'listing' for c in captures)
+            state['sequence'] = max((c['sequence'] for c in captures), default=0)
+            state['body_bytes'] = sum(p.stat().st_size for p in (output / 'captures').glob('*.body'))
+            report['resume_count'] = report.get('resume_count', 0) + 1
+            report.pop('error', None)
+            report.pop('error_type', None)
+    except Exception:
+        lock.close()
+        raise
     sb = None
 
     def save():
@@ -72,6 +130,10 @@ def run(output, plan):
         atomic_json(output / 'products.json', list(accepted.values()))
         report['unattempted_candidate_count'] = len({key for page in report['pages'] for key in page.get('candidate_ids', [])} - seen_products)
         atomic_json(output / 'report.json', report)
+        atomic_json(output / 'checkpoint.json', dict(signature=signature, report=report,
+            queues={name: list(queue) for name, queue in queues.items()},
+            seen_pages=sorted(seen_pages), seen_products=sorted(seen_products),
+            accepted=accepted, source_count=len(sources), pending_products=list(pending_products), active_page=active_page))
 
     def log(event, **values):
         with (output / 'events.jsonl').open('a') as stream:
@@ -108,7 +170,6 @@ def run(output, plan):
                 observation['acceptance_reason'] = reason
                 exclude(reason)
                 log('response_rejected', product_id=candidate['item_id'], sequence=state['sequence'], reason=reason)
-                save()
                 time.sleep(settings['delay_seconds'])
                 return
             row, reason, _ = product_record(candidate, page, store, settings['private_labels'], logo)
@@ -122,12 +183,38 @@ def run(output, plan):
                 sources.append(source)
                 with (output / 'source-records.jsonl').open('a') as stream:
                     stream.write(json.dumps(source) + '\n')
+                    stream.flush()
+                    os.fsync(stream.fileno())
             else:
                 exclude(reason)
-            save()
             time.sleep(settings['delay_seconds'])
         finally:
             page.decompose()
+
+    def collect_pending():
+        while pending_products:
+            if len(accepted) >= plan['target'] and all(counts[n] >= plan['minimum_per_category'] for n in names):
+                break
+            job = pending_products[0]
+            candidate, listing_sequence = job['candidate'], job['listing_sequence']
+            key = candidate['item_id']
+            if key in seen_products:
+                exclude('duplicate_product_id')
+            elif key in plan.get('quarantined_product_ids', []):
+                exclude('prior_wrong_store_product_quarantined')
+            else:
+                if state['product_requests'] >= plan['limits']['product_requests'] - 2:
+                    raise RuntimeError('Product budget reached')
+                log('product_started', product_id=key, category=candidate['category'])
+                try:
+                    observe(candidate, listing_sequence)
+                except Exception as error:
+                    failure('product', error, product_id=key, category=candidate['category'])
+                    exclude('product_exception')
+            seen_products.add(key)
+            pending_products.popleft()
+            save()
+            log('product_committed', product_id=key, accepted=key in accepted)
 
     def control(stage):
         url = store['canary_urls'][0]
@@ -155,25 +242,32 @@ def run(output, plan):
         raise TimeoutError('Controlled collection runtime limit')
 
     previous = signal.signal(signal.SIGALRM, timeout)
-    signal.alarm(plan['limits']['seconds'])
+    remaining_seconds = int(plan['limits']['seconds'] - (time.monotonic() - state['started']))
+    signal.alarm(max(1, remaining_seconds))
     save()
     try:
         sb = open_browser()
         logo = select_store(sb, store, settings, log, output)
-        report['initial_control_passed'] = control('initial')
+        log('session_started', resume=resume, committed_records=len(accepted))
+        if resume:
+            report['resume_control_passed'] = control('resume')
+        else:
+            report['initial_control_passed'] = control('initial')
+        collect_pending()
         while any(queues.values()) and not (len(accepted) >= plan['target'] and all(counts[n] >= plan['minimum_per_category'] for n in names)):
             for name in names:
                 if len(accepted) >= plan['target'] and all(counts[n] >= plan['minimum_per_category'] for n in names):
                     break
                 if not queues[name]:
                     continue
-                if state['listing_requests'] >= plan['limits']['listing_requests']:
+                if state['listing_requests'] >= plan['limits']['listing_requests'] or len(report['pages']) >= plan['limits']['listing_requests']:
                     raise RuntimeError('Listing budget reached')
                 url = page_url(queues[name].popleft())
                 if (name, url) in seen_pages:
                     log('page_skipped', category=name, url=safe_url(url), reason='already_visited')
                     continue
                 seen_pages.add((name, url))
+                active_page = dict(category=name, url=url)
                 entry = dict(category=name, url=safe_url(url), status='started', decisions=[])
                 report['pages'].append(entry)
                 save()
@@ -238,31 +332,15 @@ def run(output, plan):
                             for decision in entry['decisions']:
                                 if decision['url'] == link and decision['action'] == 'queued':
                                     decision.update(action='not_crawled', reason='scope_unverified_or_known_empty_route')
-                    for candidate in candidates:
-                        if candidate['item_id'] in plan.get('quarantined_product_ids', []):
-                            seen_products.add(candidate['item_id'])
-                            exclude('prior_wrong_store_product_quarantined')
-                            continue
-                        if len(accepted) >= plan['target'] and all(counts[n] >= plan['minimum_per_category'] for n in names):
-                            break
-                        if candidate['item_id'] in seen_products:
-                            exclude('duplicate_product_id')
-                            continue
-                        # Reserve control headroom within the fixed request budget.
-                        if state['product_requests'] >= plan['limits']['product_requests'] - 2:
-                            raise RuntimeError('Product budget reached')
-                        seen_products.add(candidate['item_id'])
-                        try:
-                            observe(candidate, listing_sequence)
-                        except Exception as error:
-                            failure('product', error, product_id=candidate['item_id'], category=name)
-                            exclude('product_exception')
-                            save()
-                    save()
+                    pending_products.extend(dict(candidate=c, listing_sequence=listing_sequence) for c in candidates)
+                    active_page = None
+                    save()  # Commit page discovery and pending work together before product requests.
+                    collect_pending()
                 except Exception as error:
                     if entry['status'] == 'started':
                         entry.update(status='failed', error=str(error))
                         failure('page', error, category=name, url=safe_url(url))
+                        active_page = None
                         save()
                     else:
                         if fatal(error):
@@ -289,6 +367,7 @@ def run(output, plan):
             unavailable_urls=unavailable)
         report['unvisited_categories'] = [n for n in names if not counts[n]]
         save()
+        lock.close()
     print(json.dumps({k: report.get(k) for k in ['target_reached', 'accepted_records', 'category_counts', 'seconds', 'error']}))
 
 
@@ -296,6 +375,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output', type=Path, required=True)
     parser.add_argument('--plan', type=Path, required=True)
+    parser.add_argument('--resume', action='store_true')
     args = parser.parse_args()
     os.umask(0o077)
-    run(args.output, json.loads(args.plan.read_text()))
+    run(args.output, json.loads(args.plan.read_text()), args.resume)
