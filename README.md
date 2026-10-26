@@ -48,6 +48,14 @@ Frozen version: `review-20261026-step9`. [Download source/evidence ZIP](https://
 [Verify package](docs/VERIFY_PACKAGE.md); [unsent client draft](docs/REPLY_DRAFT.txt).
 Earlier tags/ZIP receipts remain historical. New package does not prove open requirements complete.
 
+## Retention update after client feedback
+
+[Step2 trace and results](evidence/retention-step2-20261026/README.md): eligible products now remain
+recorded without a current pickup offer or verified price; unsupported values blank, original dated
+history kept without expiry. Unproven assortment stays separate. [Retention behavior](docs/RETENTION.md).
+Current retention implementation4a68607 has offline real-capture replay and caller tests, not new
+large live/recovery proof. Earlier frozen package/source claims keep their recorded scope.
+
 ## Local setup
 
 Install Chrome and Python 3.11+. macOS or Linux supported; Windows requires adapting the file lock.

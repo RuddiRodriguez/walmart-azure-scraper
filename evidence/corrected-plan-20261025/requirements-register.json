@@ -176,6 +176,19 @@
         "evidence/corrected-plan-20261025/step1-baseline.json"
       ],
       "completion_gate": "Every claim identifies source/scope. Azure not executed; latest message grants no access. No client sending authorized"
+    },
+    {
+      "request": "New feedback step2: trace no-pickup/missing-price rejections; retain eligible unavailable indefinitely and preserve original dated observations",
+      "status": "Addressed locally in4a68607:15events/12products traced; eligible missing-price/unavailable retained, unknown assortment separate, marketplace exclusions explicit;29retention/13collector/16production tests and real-source replay passed. No new live run/client acceptance; two assortment cases unresolved but retained.",
+      "evidence": [
+        "docs/RETENTION.md",
+        "evidence/retention-step2-20261026/README.md",
+        "evidence/retention-step2-20261026/rejection-trace.json",
+        "evidence/retention-step2-20261026/retention-checks.json",
+        "evidence/retention-step2-20261026/collector-checks.json",
+        "evidence/retention-step2-20261026/production-flow-checks.json"
+      ],
+      "completion_gate": "Eligible products never removed solely for no current price/pickup. Current unsupported values blank; carried observations keep original dates; no expiry; explicit unknown evidence distinct from confirmed unavailable. Client verification separate."
     }
   ]
 }

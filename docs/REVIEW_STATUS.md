@@ -1,5 +1,17 @@
 # Current review status
 
+## Latest client feedback: step2 retention addressed locally
+
+Implementation4a68607 and offline trace: evidence/retention-step2-20261026/README.md.
+All15rejected responses/12products accounted for:7missing-price,2confirmed-unavailable,
+4unproven-assortment,2explicitmarketplace events. Eligible rows retained with blank unsupported
+values; dates/history preserved indefinitely. Unknown assortment kept separately. Full output
+carries prior eligible products; fresh review samples remain separate. 29retention/13collector/
+16production-flow checks plus existing safeguard checks passed; no new live/full/recovery proof.
+Historical accumulated catalog545eligible+2unverified/1027observations is not a new fresh collection.
+Original506files unchanged. Other feedback steps and independent client acceptance remain open.
+
+
 ## Latest client feedback: step1 response-pair sharing preparation
 
 Four source-verified redacted response copies and exact capture commits/module hashes are ready in

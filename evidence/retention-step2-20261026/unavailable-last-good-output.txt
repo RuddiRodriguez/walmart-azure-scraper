@@ -1,0 +1,11 @@
+{"time": "2026-10-26T09:58:15.194462+00:00", "event": "run_started", "store": "100", "run_id": "20261026T095815189789Z", "resume": false, "unclean_resume": false, "signature": "ae34133d598f95062147aed52e82208509d3683c619943c413a15402abe25fe5"}
+{"time": "2026-10-26T09:58:15.197519+00:00", "event": "stopped", "store": "100", "error": "Offline simulated access block", "error_type": "ValueError", "current_work": {"kind": "store_selection"}}
+[
+  "Synthetic unavailable item with explicit local pickup and matching displayed price retained",
+  "Missing price retained only with unavailable evidence; normal missing-price record rejected",
+  "Explicit store-specific out-of-stock status retained without copying shipping prices or PPM",
+  "Different-store and not-available pickup options do not prove local out-of-stock inventory",
+  "Synthetic wrong-store detail rejected",
+  "Offline checkpoint close/reopen keeps completed product and pending next page",
+  "Offline simulated access failure exports partial evidence and leaves prior publication byte-identical"
+]

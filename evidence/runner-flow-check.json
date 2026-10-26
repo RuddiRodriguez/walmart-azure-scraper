@@ -16,6 +16,7 @@
     "Real pagination URL and real loop targets preserved for validation",
     "Explicit next-page metadata preserves functional filters",
     "Unexpected page jumps rejected",
-    "Explicit wrong-store primary listing rejected"
+    "Explicit wrong-store primary listing rejected",
+    "New full run carries unseen unavailable product without changing original date or prices"
   ]
 }

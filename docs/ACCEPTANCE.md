@@ -25,3 +25,14 @@ Earlier reports retain their original dates, versions and scopes.
 
 No full production acceptance claimed. Complete original bodies, native DOM and unreviewed redaction
 copies remain private. No client messages or submissions sent.
+
+
+## New client feedback step2 — local code/evidence result
+
+Source4a68607: eligible missing-offer/price retention, permanent dated history and unseen-product
+carry-over implemented in both current entrypoints. Every15targeted rejection event traced; unknown
+assortment/explicit marketplace distinguished from confirmed unavailability.29retention,13collector,
+16full-flow synthetic checks and actual historical15response replay passed.545derived historical
+eligible rows pass schema/date/duplicate validation; this is not fresh545collection. Two assortment
+eligibility cases remain unconfirmed but retained for review. Independent client acceptance and
+new-source large live/recovery verification not claimed. Evidence:retention-step2-20261026/.

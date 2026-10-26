@@ -1,0 +1,38 @@
+{
+  "eligible_records": 545,
+  "assortment_unverified": 2,
+  "observations": 1027,
+  "expiration_policy": "No expiry or automatic deletion; dates never refreshed by export",
+  "replay_source_commit": "4a68607d1f7581740a3403e1ba9d8c852fa08214",
+  "replay_source_hashes": {
+    "retention.py": "2edf454df2a64b5ff827fbe9c8787bbaf5cb8c32e4ddc0082c4cd8b79359028b",
+    "extract.py": "5d7dca9180052e97b66753921d2b8d9a73cdacf4be2d2949a03aed03c79c0d6e",
+    "audit_rejected_retention.py": "6d2c6936accfdf5c5ba482e0006d678aafa6ea57f4e35d4102f083748698738d",
+    "validate.py": "fef75a52c01bc2d56b99caab4dac2ac4d57e4c19396170d8975ffc8fdce5e02e"
+  },
+  "mode": "Offline replay/repair of existing captured live observations, NOT new live collection or merged fresh500claim",
+  "traced_rejection_events": 15,
+  "distinct_traced_products": 12,
+  "old_reasons": {
+    "no_local_pickup": 8,
+    "price_changed": 7
+  },
+  "new_states": {
+    "excluded_marketplace": 2,
+    "confirmed_unavailable": 2,
+    "assortment_unverified": 4,
+    "price_evidence_missing": 7
+  },
+  "every_requested_rejection_accounted_for": true,
+  "eligible_products_retained": true,
+  "noneligible_marketplace_exclusions_documented": true,
+  "all_unsupported_current_prices_blank": true,
+  "observation_dates_from_original_sources": true,
+  "original_datasets_unchanged": {
+    "evidence/controlled-skip-invalid-20261025/products.json": "eb54f4bd0e123b88f9fe6a6442b10cc67a917d9df390304116d6cf9a933b8268",
+    "evidence/controlled-skip-invalid-repeat-20261025/products.json": "2c5b51df299bfdac87a015d7b8d3e286acf483a1ac3cf72777d60ba813df80d1"
+  },
+  "unavailability_vs_missing_evidence_distinguished": true,
+  "live_requests": 0,
+  "client_sent": false
+}

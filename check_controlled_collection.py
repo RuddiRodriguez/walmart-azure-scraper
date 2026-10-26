@@ -124,8 +124,8 @@ def check():
             else:
                 assert allowed
             checks.append('Synthetic original-body budget ' + label + ' enforced without large allocation')
-    out = Path('evidence/controlled-skip-invalid-20261025');out.mkdir(exist_ok=True)
-    (out/'offline-checks.json').write_text(json.dumps({'mode':'Offline synthetic transport, zero live requests','passed':True,'checks':checks},indent=2)+'\n')
+    out = Path('evidence/retention-step2-20261026');out.mkdir(exist_ok=True)
+    (out/'collector-checks.json').write_text(json.dumps({'mode':'Offline synthetic transport, zero live requests','passed':True,'checks':checks},indent=2)+'\n')
     print(json.dumps({'passed':True,'checks':len(checks),'live_requests':0}))
 
 
