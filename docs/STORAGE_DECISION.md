@@ -43,6 +43,6 @@ external-space reserve remains enforced. No promise of unlimited storage or auto
 
 ## Verification
 
-`check_archive_evidence.py` uses synthetic files and mocked mount availability. It verifies hash
+`tools/check_archive_evidence.py` uses synthetic files and mocked mount availability. It verifies hash
 preservation,path links,receipts,idempotency,failed-copy preservation and missing-drive/space guards.
 Actual data-copy verification remains separately recorded. Existing backup jobs are untouched.

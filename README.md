@@ -90,6 +90,11 @@ Resume the same mode and configuration after interruption:
 
 ## Files and flow
 
+Runtime scraper files stay at the repository root. Tests, diagnostics, evidence builders and
+review helpers live under `tools/` and run with `python -m tools.<name>`. Keep this split when
+adding new files: production collection logic belongs at the root; supporting utilities belong
+under `tools/`.
+
 1. `config/categories.csv` supplies every requested parent category.
 2. `config/stores.json` supplies store number, ZIP, expected name/address, canary URLs and thresholds.
 3. `browser.py` selects pickup, checks the location, loads pages and detects blocking.
@@ -124,7 +129,7 @@ See `docs/OPERATIONS.md`, `docs/ACCEPTANCE.md` and `evidence/FINAL_REPORT.md`.
 
 ## Entry image tooling
 
-`make_entry_image.py` is optional presentation tooling, not required by the scraper. It uses Pillow
+`tools/make_entry_image.py` is optional presentation tooling, not required by the scraper. It uses Pillow
 12.3.0 and macOS Arial fonts. On Linux, change the two font paths to installed fonts.
 
 ## Local review commands
@@ -132,16 +137,16 @@ See `docs/OPERATIONS.md`, `docs/ACCEPTANCE.md` and `evidence/FINAL_REPORT.md`.
 These checks are offline unless explicitly marked live:
 
 ```bash
-python check_page_urls.py
-python check_package_audit.py
-python check_requirements.py
-python check_review_changes.py
-python check_storage_recovery.py
-python check_runner_flow.py
-python report_local_runs.py
-python export_run_evidence.py data/<output>/<store>/runs/<run-id> evidence/<review-name>
-python audit_run.py evidence/<review-name>
-python compare_runs.py evidence/<first> evidence/<second> evidence/repeat-comparison.json
+python -m tools.check_page_urls
+python -m tools.check_package_audit
+python -m tools.check_requirements
+python -m tools.check_review_changes
+python -m tools.check_storage_recovery
+python -m tools.check_runner_flow
+python -m tools.report_local_runs
+python -m tools.export_run_evidence data/<output>/<store>/runs/<run-id> evidence/<review-name>
+python -m tools.audit_run evidence/<review-name>
+python -m tools.compare_runs evidence/<first> evidence/<second> evidence/repeat-comparison.json
 ```
 
 The exporter includes page and candidate states, rejection reasons, skipped-link decisions, source
@@ -149,19 +154,19 @@ responses and HTML hashes. Full HTML and browser/session state stay local under 
 run exports partial products; it does not replace `latest.json`. Offline tests using constructed
 offers or simulated navigation are labeled explicitly in their JSON reports.
 
-`hard_stop_review.py` intentionally kills an explicitly selected scraper process for recovery
+`tools/hard_stop_review.py` intentionally kills an explicitly selected scraper process for recovery
 testing. It needs `requirements-review.txt`; use only on a disposable review run.
-`verify_hard_recovery.py` checks the later live continuation against the captured committed state.
+`tools/verify_hard_recovery.py` checks the later live continuation against the captured committed state.
 After a hard kill, `active_time_complete=false` indicates missing active-runtime accounting; use
 elapsed time with its interruption caveat.
 
-`spot_check.py` is live: it opens a fresh browser, selects the configured store, and compares one
+`tools/spot_check.py` is live: it opens a fresh browser, selects the configured store, and compares one
 randomly chosen record per represented category against visible product-page prices.
-`probe_unavailable.py` is a bounded live investigation of previously observed unavailable items.
+`tools/probe_unavailable.py` is a bounded live investigation of previously observed unavailable items.
 Neither is a full catalog acceptance run.
 
-`record_walkthrough.py` records actual offline command output to an asciicast and text transcript.
-`render_walkthrough.py` optionally renders that recording with Pillow, ffmpeg and a supplied font.
+`tools/record_walkthrough.py` records actual offline command output to an asciicast and text transcript.
+`tools/render_walkthrough.py` optionally renders that recording with Pillow, ffmpeg and a supplied font.
 The video is a local review walkthrough, not footage of an Azure deployment or a full live crawl.
 
 ### Browser visibility and memory checks
@@ -171,7 +176,7 @@ Set `"headless": true` in the store configuration to request Chrome without a vi
 omit it or use `false` for a visible window. Verify retailer access in the selected mode before
 unattended use. Headless mode alone is not a memory guarantee.
 
-`python check_parse_memory.py` compares synthetic HTML parsing allocations with and without
+`python -m tools.check_parse_memory` compares synthetic HTML parsing allocations with and without
 explicit descendant cleanup. It does not measure Chrome or prove long-run resource stability.
 Product fetches now have browser-side cancellation timers as well as Python timeouts,
 and store canaries check ZIP in addition to store ID and pickup context.
@@ -213,12 +218,12 @@ error. Product response logs include status, final URL without query values, red
 an allowlist of cache/date headers. These observations do not establish the cause of store drift.
 Start a fresh run after code/configuration changes.
 
-`probe_collection_context.py` is review-only: on a location rejection it records immediate visible
+`tools/probe_collection_context.py` is review-only: on a location rejection it records immediate visible
 store state, makes at most one same-page re-fetch and one visible navigation, then re-raises the
 original rejection. A probe never repairs or publishes the failed run. Stop after a challenge.
 Use a fresh private output folder and the same normal collection configuration.
 
-`guard_review_disk.py` accepts `--stop-at 2026-10-24T14:36:31+00:00` to enforce a review cutoff
+`tools/guard_review_disk.py` accepts `--stop-at 2026-10-24T14:36:31+00:00` to enforce a review cutoff
 with SIGINT. It targets only the selected collector PID and also retains its disk-reserve check.
 
 Primary listing pagination supports ordinary hrefs and observed JavaScript controls carrying an

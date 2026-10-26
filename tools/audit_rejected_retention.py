@@ -79,7 +79,7 @@ def audit():
     summary=retention.export(db,output);db.close()
     for name,digest in original_hashes.items():assert hashlib.sha256(Path(name).read_bytes()).hexdigest()==digest
     summary.update(replay_source_commit=subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip(),
-                   replay_source_hashes={n:hashlib.sha256(Path(n).read_bytes()).hexdigest() for n in ['retention.py','extract.py','audit_rejected_retention.py','validate.py']},mode='Offline replay/repair of existing captured live observations, NOT new live collection or merged fresh500claim',
+                   replay_source_hashes={n:hashlib.sha256(Path(n).read_bytes()).hexdigest() for n in ['retention.py','extract.py','tools/audit_rejected_retention.py','validate.py']},mode='Offline replay/repair of existing captured live observations, NOT new live collection or merged fresh500claim',
                    traced_rejection_events=len(traces),distinct_traced_products=len({t['product_id'] for t in traces}),
                    old_reasons=dict(Counter(t['old_reason'] for t in traces)),new_states=dict(Counter(t['new_state'] for t in traces)),
                    every_requested_rejection_accounted_for=True,eligible_products_retained=True,noneligible_marketplace_exclusions_documented=True,all_unsupported_current_prices_blank=True,

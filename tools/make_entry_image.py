@@ -2,7 +2,7 @@ from pathlib import Path
 import json
 from PIL import Image, ImageDraw, ImageFont
 
-root = Path(__file__).parent
+root = Path(__file__).resolve().parents[1]
 report = json.loads((root / 'evidence/validation-500.json').read_text())
 image = Image.new('RGB', (1600, 1250), '#101c2e')
 draw = ImageDraw.Draw(image)

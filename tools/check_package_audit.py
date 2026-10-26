@@ -6,7 +6,7 @@ import tempfile
 from pathlib import Path
 from unittest.mock import patch
 
-import review_package
+from tools import review_package
 
 
 def check():
@@ -33,8 +33,8 @@ def check():
             (root / 'evidence/products-500.json').write_text(json.dumps(changed_rows))
             (root / 'evidence/source-records.json').write_text(json.dumps(changed_sources))
             # Git labels are simulated; source and audit outputs stay in the temporary folder.
-            with patch.object(review_package, '__file__', str(root / 'review_package.py')), \
-                    patch('review_package.subprocess.check_output', side_effect=['offline-fixture\n', '']):
+            with patch.object(review_package, '__file__', str(root / 'tools/review_package.py')), \
+                    patch('tools.review_package.subprocess.check_output', side_effect=['offline-fixture\n', '']):
                 try:
                     review_package.build()
                 except SystemExit as error:

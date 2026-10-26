@@ -51,7 +51,7 @@ def run(plan, output):
               'observations': [], 'completed': False, 'store_mismatch_seen': False,
               'plan': plan, 'started_utc': datetime.now(timezone.utc).isoformat(),
               'code_sha256': {p: hashlib.sha256(Path(p).read_bytes()).hexdigest()
-                              for p in ['browser.py', 'diagnostic_capture.py', 'bounded_store_review.py',
+                              for p in ['browser.py', 'diagnostic_capture.py', 'tools/bounded_store_review.py',
                                         'extract.py', 'scrape.py', 'config/stores.json']}}
     sb = None
     active = None

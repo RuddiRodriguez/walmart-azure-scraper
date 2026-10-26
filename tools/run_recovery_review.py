@@ -79,7 +79,7 @@ def review(output):
             run = pointer.parent / 'runs' / json.loads(pointer.read_text())['run_id']
             result['run'] = str(run.relative_to(Path.cwd()))
             with (output / 'hard-stop.log').open('w') as evidence:
-                stopper = subprocess.Popen([sys.executable, 'hard_stop_review.py', str(worker.pid), str(run),
+                stopper = subprocess.Popen([sys.executable, '-m', 'tools.hard_stop_review', str(worker.pid), str(run),
                                             '--event', 'product_started', '--minimum-products', '1', '--timeout', '240'],
                                            stdout=evidence, stderr=subprocess.STDOUT)
                 while stopper.poll() is None and worker.poll() is None:
@@ -108,7 +108,7 @@ def review(output):
             result['resume_exit'] = worker.returncode
         if worker.returncode == 0:
             with (output / 'verification.log').open('w') as log:
-                checked = subprocess.run([sys.executable, 'verify_hard_recovery.py', str(run)], stdout=log, stderr=subprocess.STDOUT)
+                checked = subprocess.run([sys.executable, '-m', 'tools.verify_hard_recovery', str(run)], stdout=log, stderr=subprocess.STDOUT)
             result['recovery_passed'] = checked.returncode == 0
     except Exception as error:
         result['error'] = str(error)

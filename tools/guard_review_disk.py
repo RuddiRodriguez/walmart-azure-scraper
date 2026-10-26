@@ -8,7 +8,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 import psutil
 
-RUNNERS = ['scrape.py', 'probe_collection_context.py']
+RUNNERS = ['scrape.py', 'probe_collection_context.py', 'tools.probe_collection_context']
 
 
 if __name__ == '__main__':

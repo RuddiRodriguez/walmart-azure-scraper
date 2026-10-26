@@ -9,7 +9,7 @@ from pathlib import Path
 from bs4 import BeautifulSoup
 from urllib.parse import urljoin, urlsplit
 from extract import category_id
-from review_discovered_scope import classify
+from tools.review_discovered_scope import classify
 from storage import page_url
 
 

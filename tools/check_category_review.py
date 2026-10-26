@@ -6,7 +6,7 @@ from types import SimpleNamespace
 from unittest.mock import patch
 
 from bs4 import BeautifulSoup
-import review_category_coverage as coverage
+from tools import review_category_coverage as coverage
 
 
 def check():
@@ -65,7 +65,7 @@ def check():
         try:
             coverage.review(Path(folder) / 'run', plan)
         except ValueError as error:
-            assert 'matching observed' in str(error)
+            assert 'observed scope evidence' in str(error)
         else:
             raise AssertionError('Mismatched landing alias admitted')
         checks.append('Landing ID differing from supported descendant rejected before browser launch')

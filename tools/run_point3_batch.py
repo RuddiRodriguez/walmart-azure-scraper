@@ -39,21 +39,21 @@ def run():
     try:
         for index in [1,2]:
             directory=root/f'coverage-{index}'
-            code=command(f'coverage-{index}',['review_category_coverage.py','--output',str(directory),'--plan',str(public/f'coverage-case-{index}.json'),'--seconds','180'],210)
+            code=command(f'coverage-{index}',['-m','tools.review_category_coverage','--output',str(directory),'--plan',str(public/f'coverage-case-{index}.json'),'--seconds','180'],210)
             report=json.loads((directory/'report.json').read_text());safety(report)
             status['results'].append(dict(phase=f'coverage-{index}',completed=report['completed'],error=report.get('error'),exit_code=code));save()
         directory=root/'offers'
-        code=command('offers',['review_live_offers.py','--output',str(directory),'--expanded'],630)
+        code=command('offers',['-m','tools.review_live_offers','--output',str(directory),'--expanded'],630)
         report=json.loads((directory/'report.json').read_text());safety(report)
         status['results'].append(dict(phase='offers',completed=report['completed'],genuine_examples=len(report['verified_examples']),error=report.get('error'),exit_code=code));save()
         plan=public/'collection-plan.json'
         baseline=root/'recovery';first=baseline/'collection';first_public=public/'recovery-506'
-        command('recovery-506',['run_controlled_recovery.py','--output',str(baseline),'--plan',str(plan)],3630)
+        command('recovery-506',['-m','tools.run_controlled_recovery','--output',str(baseline),'--plan',str(plan)],3630)
         recovery=json.loads((baseline/'recovery-result.json').read_text())
         safe={k:v for k,v in recovery.items() if k!='command'}
         atomic_json(public/'recovery-result.json',safe)
         if not recovery['passed']:raise RuntimeError('Recovery did not pass; no repeated large collection queued')
-        command('audit-recovery',['audit_controlled_collection.py','--run',str(first),'--evidence',str(first_public)],180)
+        command('audit-recovery',['-m','tools.audit_controlled_collection','--run',str(first),'--evidence',str(first_public)],180)
         summary=json.loads((first_public/'summary.json').read_text())
         if not summary['sample_accepted']:raise RuntimeError('First sample audit failed; repeat cancelled')
         shutil.copyfile(plan,first_public/'plan.json')
@@ -62,10 +62,10 @@ def run():
         shutil.copyfile(plan,repeat_public/'plan.json')
         atomic_json(repeat_public/'preflight.json',dict(baseline_dataset_sha256=hashlib.sha256((first_public/'products.json').read_bytes()).hexdigest(),source_commit=version,producer_hashes=hashes))
         command('repeat-506',['controlled_collection.py','--output',str(repeat),'--plan',str(plan)],3630)
-        command('audit-repeat',['audit_controlled_collection.py','--run',str(repeat),'--evidence',str(repeat_public)],180)
+        command('audit-repeat',['-m','tools.audit_controlled_collection','--run',str(repeat),'--evidence',str(repeat_public)],180)
         summary=json.loads((repeat_public/'summary.json').read_text())
         if not summary['sample_accepted']:raise RuntimeError('Repeat did not pass source audit')
-        command('compare',['compare_controlled_collections.py','--baseline',str(first_public),'--repeat',str(repeat_public)],60)
+        command('compare',['-m','tools.compare_controlled_collections','--baseline',str(first_public),'--repeat',str(repeat_public)],60)
         status['results'].append(dict(phase='repeat-506',completed=True,records=summary['accepted_records'],seconds=summary['seconds'],source_audit_passed=True))
         status['phase']='bounded_batch_complete'
     except Exception as error:

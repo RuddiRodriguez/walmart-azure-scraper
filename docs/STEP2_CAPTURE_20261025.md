@@ -25,7 +25,7 @@ store evidence and unavailable-product retention. Seven existing offline regress
 compilation passed. No live acceptance is claimed by those checks.
 
 Plan-only command:
-python bounded_store_review.py --output data/diagnostic-20261025/proposed
+python -m tools.bounded_store_review --output data/diagnostic-20261025/proposed
 
 Live execution requires --live and a new private output directory. Source and results must remain
 versioned separately from the historical500-product demonstration. Azure access remains ungranted.

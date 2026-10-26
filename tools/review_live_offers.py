@@ -48,7 +48,7 @@ def review(output, expanded=False):
               'verified_examples': [], 'completed': False, 'paid_services_used': False,
               'expanded_rendered_search': expanded, 'limits': state['limits'],
               'source_commit': subprocess.check_output(['git', 'rev-parse', 'HEAD'], text=True).strip(),
-              'source_sha256': {p: hashlib.sha256(Path(p).read_bytes()).hexdigest() for p in ['review_live_offers.py', 'extract.py', 'scrape.py', 'capture_store_drift.py']}}
+              'source_sha256': {p: hashlib.sha256(Path(p).read_bytes()).hexdigest() for p in ['tools/review_live_offers.py', 'extract.py', 'scrape.py', 'capture_store_drift.py']}}
     sb = None
 
     def save():

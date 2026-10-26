@@ -4,7 +4,7 @@ import json
 import shutil
 import sqlite3
 from pathlib import Path
-from export_run_evidence import PRODUCT_FIELDS
+from tools.export_run_evidence import PRODUCT_FIELDS
 
 
 def export(run, destination):

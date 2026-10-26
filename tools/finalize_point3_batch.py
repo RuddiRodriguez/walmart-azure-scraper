@@ -56,14 +56,14 @@ def finish():
                 summary.update(distinct_products_inspected=len({p['candidate_id'] for p in report.get('products',[])}),offer_candidates_passing_helper=len(report.get('verified_examples',[])),complete_offer_terms_review='Pending agent source review if any candidate exists; no invented examples')
                 atomic_json(destination/'offer-candidates.json',[{k:p[k] for k in ['sequence','candidate_id','store_id','zip','intent','accepted','reason','description_visible_in_response','explicit_offer_price','current_local_price'] if k in p} for p in report.get('products',[])])
             atomic_json(destination/'summary.json',summary);audits.append(dict(phase=name,**summary))
-        subprocess.run([__import__('sys').executable,'reconcile_coverage.py'],check=True,stdout=subprocess.DEVNULL)
+        subprocess.run([__import__('sys').executable,'-m','tools.reconcile_coverage'],check=True,stdout=subprocess.DEVNULL)
         outcome=dict(source_commit=status['source_commit'],phase=status['phase'],finished_utc=status['finished_utc'],results=status['results'],error=status.get('error'),full_category_coverage_complete=False,genuine_offers_complete=False,large_sample_checks='See recovery-result and source-audited sample summaries where present; stopped attempts not complete',scope='Bounded requested milestones only. No full-catalog completion or live Azure claim.')
         atomic_json(public/'batch-outcome.json',outcome)
         for folder in [public,*[p for p in public.iterdir() if p.is_dir()]]:
             atomic_json(folder/'SHA256SUMS.json',{p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(folder.iterdir()) if p.is_file() and p.name!='SHA256SUMS.json'})
         with Path('WORK_LOG.md').open('a') as stream:
             stream.write('\n## Point3 bounded batch completed/stopped\n'+json.dumps(outcome)+'\nSafe coverage/offer metadata/bodyhash checks exported;raw/native bodies private. Offerterms require source review if candidate exists. Fulltaxonomy/queuecoverage remains incomplete. Large sample completion only if recovery/independent source audits passed; failed attempt not labelled complete. Frozen producer untouched by finalizer.\n')
-        subprocess.run(['git','add','WORK_LOG.md','evidence/point3-20261026','finalize_point3_batch.py'],check=True)
+        subprocess.run(['git','add','WORK_LOG.md','evidence/point3-20261026','tools/finalize_point3_batch.py'],check=True)
         manifest=Path('evidence/SHA256SUMS.json')
         names=subprocess.check_output(['git','ls-files'],text=True).splitlines()
         atomic_json(manifest,{n:hashlib.sha256(Path(n).read_bytes()).hexdigest() for n in names if n!=str(manifest) and Path(n).is_file()})

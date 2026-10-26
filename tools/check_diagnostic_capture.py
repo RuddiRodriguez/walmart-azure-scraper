@@ -14,7 +14,7 @@ from unittest.mock import patch
 
 from bs4 import BeautifulSoup
 
-import bounded_store_review as review
+from tools import bounded_store_review as review
 from browser import fetch_product
 from diagnostic_capture import make_capture, redact_body, safe_url
 from storage import atomic_json

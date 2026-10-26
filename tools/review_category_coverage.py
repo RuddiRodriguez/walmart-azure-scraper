@@ -70,7 +70,7 @@ def review(output, plan=None, seconds=600):
                   started_utc=datetime.now(timezone.utc).isoformat(), completed=False, categories=[],
                   source_commit=subprocess.check_output(['git', 'rev-parse', 'HEAD'], text=True).strip(),
                   source_hashes={p: hashlib.sha256(Path(p).read_bytes()).hexdigest() for p in
-                                 ['review_category_coverage.py', 'scrape.py', 'extract.py', 'browser.py', 'config/categories.csv']},
+                                 ['tools/review_category_coverage.py', 'scrape.py', 'extract.py', 'browser.py', 'config/categories.csv']},
                   limits=state['limits'], selected_plan=cases)
     sb = None
 

@@ -58,7 +58,7 @@ PY_VERIFY
 Build and verify a local archive:
 
 ```sh
-python freeze_review_package.py \
+python -m tools.freeze_review_package \
   --version review-20261027-evidence-correction \
   --output data/review-20261027-evidence-correction.zip
 ```

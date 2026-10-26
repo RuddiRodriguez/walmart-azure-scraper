@@ -10,7 +10,7 @@ from curl_cffi import requests
 from browser import open_browser, select_store, fetch_product, check_html
 from extract import next_data, pickup
 from storage import atomic_json
-from export_run_evidence import PRODUCT_FIELDS
+from tools.export_run_evidence import PRODUCT_FIELDS
 
 
 def compare(output, repeats=3, chrome_profile=False):

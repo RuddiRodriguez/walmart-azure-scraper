@@ -13,7 +13,7 @@ from validate import validate
 
 
 def build():
-    root = Path(__file__).parent
+    root = Path(__file__).resolve().parents[1]
     evidence = root / 'evidence'
     checkout = (root / '.git').exists()
     rows = json.loads((evidence / 'products-500.json').read_text())

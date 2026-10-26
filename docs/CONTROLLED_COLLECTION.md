@@ -20,7 +20,7 @@ Products/report checkpoint under data/. Original response bodies, native DOM and
 stay private. After completion, audit/export only safe review evidence:
 
 ```sh
-python audit_controlled_collection.py --run data/new-review-run --evidence evidence/new-review-run
+python -m tools.audit_controlled_collection --run data/new-review-run --evidence evidence/new-review-run
 ```
 
 Report accepted products, rejected responses, exceptions and excluded listing cards separately.
@@ -46,7 +46,7 @@ writers. Original runtime includes downtime; this bounded tool does not resume e
 Reproduce the small live recovery check once with a fresh output folder:
 
 ```sh
-python run_controlled_recovery.py --plan evidence/step8-controlled-recovery-20261026/plan.json --output data/new-recovery-run
+python -m tools.run_controlled_recovery --plan evidence/step8-controlled-recovery-20261026/plan.json --output data/new-recovery-run
 ```
 
 This intentionally kills only its selected collector and browser children. Target3, one category,

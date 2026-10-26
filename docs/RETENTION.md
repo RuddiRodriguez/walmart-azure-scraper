@@ -56,10 +56,10 @@ version/hashes appear in summary.json.
 Run offline checks:
 
 ```sh
-python check_retention.py
-python check_controlled_collection.py
-python check_runner_flow.py
-python check_review_changes.py
+python -m tools.check_retention
+python -m tools.check_controlled_collection
+python -m tools.check_runner_flow
+python -m tools.check_review_changes
 ```
 
 Retention tests cover missing price/conflict, unavailable/missing pickup, seller evidence,
