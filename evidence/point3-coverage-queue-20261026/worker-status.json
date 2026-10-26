@@ -1,25 +1,31 @@
 {
-  "phase": "walking",
-  "batches": 10,
-  "pages_attempted": 800,
+  "phase": "resuming",
+  "batches": 11,
+  "pages_attempted": 880,
   "finished": false,
   "max_seconds": 43200,
   "max_pages": 2000,
   "queue_counts": {
-    "failed": 43,
+    "failed": 46,
     "navigation_scope_unverified": 9,
     "outside_scope": 1,
-    "pending": 2152,
-    "reviewed": 824
+    "pending": 2202,
+    "reviewed": 901
   },
   "scope_counts": {
     "brief_exclusion": 2,
     "outside_required_ancestry": 2,
-    "parent_scope_unverified": 107,
-    "scope_confirmed_by_response": 5670,
-    "scope_unverified": 299,
-    "scoped_queue": 5094
+    "parent_scope_unverified": 105,
+    "scope_confirmed_by_response": 6336,
+    "scope_unverified": 295,
+    "scoped_queue": 5204
   },
-  "latest_batch": "batch-00797-1793037889",
-  "seconds": 13967.6
+  "latest_batch": "batch-00877-1793039393",
+  "seconds": 16267.7,
+  "deadline_unix": 1793068609.162635,
+  "audit_started_unix": 1793039861.047031,
+  "accounted_batches": [
+    "batch-00797-1793037889",
+    "batch-00877-1793039393"
+  ]
 }

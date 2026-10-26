@@ -738,3 +738,7 @@ Listing/category review only. Pending/failed/scope-unverified remain open. Raw b
 Existing preserved coveragebatch and audit/resume handoff confirmed alive; no duplicatejob or newtest launched. Continuecoverage/actualoffersearch underoriginalbounds; logs andsafeexports pushed perbatch. Userrequestedquietexecution andnotificationonlyforrealblocker requiringattention. No constantprogresspolling or resetoflimits.
 
 - Preserved in-flight batch finished; final historyaudit and891historical listing fingerprints loaded before newguardedrequests. Existing originaldeadline/pagecounts unchanged. Coordinator willadopt orphanbatch once andcontinue.
+
+## Coverage continuation result
+{"phase": "resuming", "batches": 11, "pages_attempted": 880, "finished": false, "max_seconds": 43200, "max_pages": 2000, "queue_counts": {"failed": 46, "navigation_scope_unverified": 9, "outside_scope": 1, "pending": 2202, "reviewed": 901}, "scope_counts": {"brief_exclusion": 2, "outside_required_ancestry": 2, "parent_scope_unverified": 105, "scope_confirmed_by_response": 6336, "scope_unverified": 295, "scoped_queue": 5204}, "latest_batch": "batch-00877-1793039393", "seconds": 16267.7, "deadline_unix": 1793068609.162635, "audit_started_unix": 1793039861.047031, "accounted_batches": ["batch-00797-1793037889", "batch-00877-1793039393"]}
+Listing/category review only. Pending/failed/scope-unverified remain open. Raw bodies/native pages private.
