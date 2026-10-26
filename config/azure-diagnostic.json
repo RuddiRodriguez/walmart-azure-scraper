@@ -1,0 +1,23 @@
+{
+  "target": 3,
+  "minimum_per_category": 1,
+  "limits": {
+    "product_requests": 12,
+    "listing_requests": 2,
+    "seconds": 600
+  },
+  "categories": [
+    {
+      "category": "Art Supplies",
+      "required_root": "https://www.walmart.com/cp/art-supplies/5899871",
+      "urls": [
+        "https://www.walmart.com/browse/arts-crafts-sewing/art-sets/1334134_5899871_7148292"
+      ]
+    }
+  ],
+  "scope": "Approved-only Azure diagnostic for Store 100, ZIP 72712, PICKUP; three products with one interruption and resume",
+  "interrupt_after": 1,
+  "maximum_ordinary_failures": 4,
+  "body_limit_bytes": 268435456,
+  "invalid_response_policy": "Reject and log wrong-store, wrong-identity or unsupported local-price responses. Never publish diagnostic output. Preserve last good and unavailable history."
+}
