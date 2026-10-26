@@ -38,7 +38,7 @@ def run(folder,maximum,seconds):
         leaf=category_id(url).split('_')[-1]
         db.execute('INSERT OR REPLACE INTO scope_proofs VALUES (?,?,?,?,?,?)',(category,leaf,decision,actual,json.dumps(breadcrumb),source))
         for link, in db.execute('SELECT DISTINCT url FROM links WHERE category=?',(category,)).fetchall():
-            if category_id(link).split('_')[-1]==leaf:db.execute('UPDATE links SET decision=? WHERE category=? AND url=? AND decision!='brief_exclusion'',(decision,category,link))
+            if category_id(link).split('_')[-1]==leaf:db.execute("UPDATE links SET decision=? WHERE category=? AND url=? AND decision!='brief_exclusion'",(decision,category,link))
     for c,u in roots.items():add(c,u,'required_csv')
     ledger=json.loads(Path('evidence/point3-20261026/coverage-ledger.json').read_text())
     for n in ledger:add(n['category'],n['url'],'historically_observed_link')
