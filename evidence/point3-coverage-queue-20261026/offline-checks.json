@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "checks": [
+    "Composite required roots queued",
+    "Observed next page persisted",
+    "Two-page limit respected",
+    "Continuation advances without redoing committed pages",
+    "Bad pages logged once then next page attempted",
+    "Failed pages not counted as legitimate empty/reviewed"
+  ],
+  "live_requests": 0
+}
