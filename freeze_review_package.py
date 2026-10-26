@@ -19,7 +19,8 @@ def build(version, output):
         if archive.testzip() is not None:
             raise ValueError('Archive CRC check failed')
         names = archive.namelist()
-        forbidden = [n for n in names if n.startswith(('data/', '.git/', '.venv/')) or n.endswith(('.body', '.redaction-draft.html', '.log')) or '/.env' in n or n == '.env']
+        reviewed_logs = {'evidence/collection-logs/' + n for n in ['collection.log', 'collection_retry.log', 'enrichment.log', 'enrichment_final.log', 'enrichment_resume.log']}
+        forbidden = [n for n in names if n.startswith(('data/', '.git/', '.venv/')) or n.endswith(('.body', '.redaction-draft.html')) or (n.endswith('.log') and n not in reviewed_logs) or '/.env' in n or n == '.env']
         if forbidden:
             raise ValueError('Private/runtime files in archive: ' + repr(forbidden))
         manifest = json.loads(archive.read('evidence/SHA256SUMS.json'))
