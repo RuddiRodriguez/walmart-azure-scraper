@@ -691,3 +691,7 @@ Safe page/discovery ledgers andresponse metadata/hash checks exported. Raw/nativ
 ## Coverage continuation result
 {"phase": "walking", "batches": 1, "pages_attempted": 80, "finished": false, "max_seconds": 43200, "max_pages": 2000, "queue_counts": {"failed": 8, "pending": 1450, "reviewed": 149}, "scope_counts": {"brief_exclusion": 2, "scope_confirmed_by_response": 437, "scope_unverified": 293, "scoped_queue": 2946}, "latest_batch": "batch-00077-1793025412", "seconds": 1422.5}
 Listing/category review only. Pending/failed/scope-unverified remain open. Raw bodies/native pages private. Offer candidates require source/terms review; no invented examples or full-catalog claim.
+
+## Coverage continuation result
+{"phase": "walking", "batches": 2, "pages_attempted": 160, "finished": false, "max_seconds": 43200, "max_pages": 2000, "queue_counts": {"failed": 10, "pending": 1562, "reviewed": 227}, "scope_counts": {"brief_exclusion": 2, "scope_confirmed_by_response": 953, "scope_unverified": 294, "scoped_queue": 3326}, "latest_batch": "batch-00157-1793026838", "seconds": 2729.5}
+Listing/category review only. Pending/failed/scope-unverified remain open. Raw bodies/native pages private. Offer candidates require source/terms review; no invented examples or full-catalog claim.
