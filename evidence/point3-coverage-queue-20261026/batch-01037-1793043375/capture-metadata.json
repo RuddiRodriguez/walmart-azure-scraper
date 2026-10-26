@@ -1,0 +1,2962 @@
+[
+  {
+    "id": "coverage-057",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 57,
+    "request": {
+      "url": "https://www.walmart.com/browse/beauty/new-makeup/1085666_4427759_2945704",
+      "attempt": 1,
+      "started_utc": "2026-10-26T19:54:03.202586+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/shop/beauty/makeup-new-arrivals",
+      "redirected": true,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 19:54:04 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T19:54:04.773670+00:00",
+      "elapsed_seconds": 1.571
+    },
+    "body_sha256": "2be5b1c726e9e9a08a1e5b969df4b1277f03d74efca780a01070fe0dab6f87b5",
+    "body_bytes": 810193,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-016",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 16,
+    "request": {
+      "url": "https://www.walmart.com/browse/personal-care/trimmers-groomers/1005862_1007220_641039",
+      "attempt": 1,
+      "started_utc": "2026-10-26T19:42:16.132817+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/personal-care/trimmers-groomers/1005862_1007220_641039",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 19:42:16 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T19:42:16.431968+00:00",
+      "elapsed_seconds": 0.299
+    },
+    "body_sha256": "f113e77442e96a64cb27ee39b84ab590b25ee68970a6b537b63fc81d771a6e4f",
+    "body_bytes": 1259747,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-041",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 41,
+    "request": {
+      "url": "https://www.walmart.com/browse/household-essentials/stovetop-cleaners/1115193_1071966_4986682_3866786",
+      "attempt": 1,
+      "started_utc": "2026-10-26T19:49:26.445387+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/household-essentials/stovetop-cleaners/1115193_1071966_4986682_3866786",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 19:49:26 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T19:49:26.626080+00:00",
+      "elapsed_seconds": 0.181
+    },
+    "body_sha256": "d821e274ae0c2d9c0e90901a7eb9a79f6d1c951c6e1f463aae2643b8b3e05d24",
+    "body_bytes": 677239,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-036",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 36,
+    "request": {
+      "url": "https://www.walmart.com/browse/health-medicine/magnesium/976760_1005863_6070710_5948405",
+      "attempt": 1,
+      "started_utc": "2026-10-26T19:47:55.896227+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/health-medicine/magnesium/976760_1005863_6070710_5948405",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 19:47:55 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T19:47:56.085045+00:00",
+      "elapsed_seconds": 0.189
+    },
+    "body_sha256": "3ecb76889695fbe3b733ae7a99d609e049f3558c27551950088efe4dee2ebec9",
+    "body_bytes": 997267,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-061",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 61,
+    "request": {
+      "url": "https://www.walmart.com/browse/personal-care/womens-incontinence/1005862_1225655_8790411",
+      "attempt": 1,
+      "started_utc": "2026-10-26T19:55:15.527051+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/personal-care/womens-incontinence/1005862_1225655_8790411",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 19:55:15 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T19:55:15.819672+00:00",
+      "elapsed_seconds": 0.293
+    },
+    "body_sha256": "293b17a0afff6d45a5229acf455c129014905bfe4a0ad4e9412434f5c2195217",
+    "body_bytes": 1287649,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-077",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 77,
+    "request": {
+      "url": "https://www.walmart.com/browse/personal-care/yeast-infection-treatments/1005862_1091866_1224835",
+      "attempt": 1,
+      "started_utc": "2026-10-26T20:00:12.950420+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/personal-care/yeast-infection-treatments/1005862_1091866_1224835",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 20:00:13 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T20:00:13.163000+00:00",
+      "elapsed_seconds": 0.213
+    },
+    "body_sha256": "5870be0f667f51ff90c034155bc8308e0500d4e6144be5834c5719550ecc0ec7",
+    "body_bytes": 1229067,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-020",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 20,
+    "request": {
+      "url": "https://www.walmart.com/browse/arts-crafts-sewing/art-painting-supplies/1334134_5899871_7445675?page=6",
+      "attempt": 1,
+      "started_utc": "2026-10-26T19:43:25.842037+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/arts-crafts-sewing/art-painting-supplies/1334134_5899871_7445675?page=6",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 19:43:25 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T19:43:26.019845+00:00",
+      "elapsed_seconds": 0.178
+    },
+    "body_sha256": "d5a992550fc8a8ebe6a7fba2cef323d8c7370dd425e34444ea5878fe23bb705e",
+    "body_bytes": 1092069,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-021",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 21,
+    "request": {
+      "url": "https://www.walmart.com/browse/beauty/nails-inc/1085666_3316357_1891027",
+      "attempt": 1,
+      "started_utc": "2026-10-26T19:43:41.400248+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/beauty/nails-inc/1085666_3316357_1891027",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 19:43:41 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T19:43:41.583151+00:00",
+      "elapsed_seconds": 0.183
+    },
+    "body_sha256": "ffd97e7e5287171fd8dbdd5991887b7bd2471f506369e47d3bc947bcc6c539c2",
+    "body_bytes": 808785,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-076",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 76,
+    "request": {
+      "url": "https://www.walmart.com/browse/office-supplies/gel-pens/1229749_1988510_6068981",
+      "attempt": 1,
+      "started_utc": "2026-10-26T19:59:55.433851+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/office-supplies/gel-pens/1229749_8843226_1988510_6068981",
+      "redirected": true,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 19:59:55 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T19:59:55.866327+00:00",
+      "elapsed_seconds": 0.432
+    },
+    "body_sha256": "33f339209b5c2786fcf64f2036d47b6d300f2be5526012cf25c7139d333865d2",
+    "body_bytes": 1213071,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-060",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 60,
+    "request": {
+      "url": "https://www.walmart.com/browse/office-supplies/five-star-notebooks/1229749_4796182_6487690",
+      "attempt": 1,
+      "started_utc": "2026-10-26T19:54:57.102345+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/office-supplies/five-star-notebooks/1229749_4796182_6487690",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 19:54:57 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T19:54:57.354570+00:00",
+      "elapsed_seconds": 0.252
+    },
+    "body_sha256": "bfea8cc423c834371bb72bc5f4fd093f9bc4371369307b29c02fcbdb598eb642",
+    "body_bytes": 862531,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-037",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 37,
+    "request": {
+      "url": "https://www.walmart.com/browse/feeding/baby-drinks/5427_133283_7172091?page=3",
+      "attempt": 1,
+      "started_utc": "2026-10-26T19:48:13.609920+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/feeding/baby-drinks/5427_133283_7172091?page=3",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 19:48:13 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T19:48:13.950840+00:00",
+      "elapsed_seconds": 0.341
+    },
+    "body_sha256": "a2a2a4778d09c63e8ce0ca2e89abb9c8d465b82b727facf3ca6afd560ec1fe6d",
+    "body_bytes": 1391626,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-040",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 40,
+    "request": {
+      "url": "https://www.walmart.com/browse/food/instant-coffee/976759_1086446_1229650",
+      "attempt": 1,
+      "started_utc": "2026-10-26T19:49:09.785294+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/food/instant-coffee/976759_1086446_1229650",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 19:49:09 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T19:49:10.142423+00:00",
+      "elapsed_seconds": 0.357
+    },
+    "body_sha256": "64fb6ac576a4d2f7ba6db0eddd50e3dbd0d6359532fdd730c2e6cf5be2050355",
+    "body_bytes": 1223863,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-017",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 17,
+    "request": {
+      "url": "https://www.walmart.com/browse/pets/dog-strollers/5440_202072_4643923_5747577",
+      "attempt": 1,
+      "started_utc": "2026-10-26T19:42:32.532006+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/pets/dog-strollers/5440_202072_4643923_5747577",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 19:42:32 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T19:42:32.661266+00:00",
+      "elapsed_seconds": 0.129
+    },
+    "body_sha256": "3c3bf5b8ba5b0d003961ca3dd9f7c2b92dd729de1b43d628751c3569fcf1cd46",
+    "body_bytes": 586724,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-001",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 1,
+    "request": {
+      "url": "https://www.walmart.com/browse/baby/sippy-cups/5427_133283_5152738?page=3",
+      "attempt": 1,
+      "started_utc": "2026-10-26T19:37:06.041798+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/baby/sippy-cups/5427_133283_5152738?page=3",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 19:37:06 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T19:37:06.257404+00:00",
+      "elapsed_seconds": 0.216
+    },
+    "body_sha256": "63e5ac131b66fe756184be260f8558143bc345b199054fdcdc743da61c973348",
+    "body_bytes": 726645,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-056",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 56,
+    "request": {
+      "url": "https://www.walmart.com/browse/arts-crafts-sewing/art-painting-supplies/1334134_5899871_7445675?page=7",
+      "attempt": 1,
+      "started_utc": "2026-10-26T19:53:47.664089+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/arts-crafts-sewing/art-painting-supplies/1334134_5899871_7445675?page=7",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 19:53:47 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T19:53:47.841866+00:00",
+      "elapsed_seconds": 0.178
+    },
+    "body_sha256": "8a696278b36074a0ae767d345e5b56869ecd02d873421357d2d0dd5251e972d0",
+    "body_bytes": 914022,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-030",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 30,
+    "request": {
+      "url": "https://www.walmart.com/browse/beauty/nailtopia/1085666_3316357_3087866",
+      "attempt": 1,
+      "started_utc": "2026-10-26T19:46:18.818869+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/beauty/nailtopia/1085666_3316357_3087866",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 19:46:18 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T19:46:18.950867+00:00",
+      "elapsed_seconds": 0.132
+    },
+    "body_sha256": "cf9760b15478b151e2c30f7756a33c4f274276f4cbb367f7def246d69a1b9154",
+    "body_bytes": 542087,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-067",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 67,
+    "request": {
+      "url": "https://www.walmart.com/browse/household-essentials/toilet-paper/1115193_1073264_1149384",
+      "attempt": 1,
+      "started_utc": "2026-10-26T19:57:09.280496+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/household-essentials/toilet-paper/1115193_1073264_1149384",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 19:57:09 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T19:57:09.525246+00:00",
+      "elapsed_seconds": 0.245
+    },
+    "body_sha256": "69df15114cc96638b445723f8b36a0f4e5377c9726f9d875ac472004f3f5473c",
+    "body_bytes": 1304989,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-071",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 71,
+    "request": {
+      "url": "https://www.walmart.com/browse/health-medicine/acetaminophen/976760_6972993_8401381?page=2",
+      "attempt": 1,
+      "started_utc": "2026-10-26T19:58:24.489106+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/health-medicine/acetaminophen/976760_6972993_8401381?page=2",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 19:58:24 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T19:58:24.672715+00:00",
+      "elapsed_seconds": 0.184
+    },
+    "body_sha256": "6602e6ceac364770f2a0f3edbf7f5cb95336cb3e3bc00575d10fba944d613a50",
+    "body_bytes": 962132,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-026",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 26,
+    "request": {
+      "url": "https://www.walmart.com/browse/pets/dog-backpacks/5440_202072_4643923_2686312",
+      "attempt": 1,
+      "started_utc": "2026-10-26T19:45:14.013443+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/pets/dog-backpacks/5440_202072_4643923_2686312",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 19:45:14 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T19:45:14.165030+00:00",
+      "elapsed_seconds": 0.152
+    },
+    "body_sha256": "2dc57dcd59451c12832b0450efe384e75a5f8b5c3f45851e2e02d68245a8e53c",
+    "body_bytes": 556127,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-051",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 51,
+    "request": {
+      "url": "https://www.walmart.com/browse/office-supplies/fitness-journals/1229749_4922227_7126892",
+      "attempt": 1,
+      "started_utc": "2026-10-26T19:52:23.517938+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/office-supplies/fitness-journals/1229749_4922227_7126892",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 19:52:23 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T19:52:23.655768+00:00",
+      "elapsed_seconds": 0.138
+    },
+    "body_sha256": "42d44abb941e01ee2737a5907d1c19197ef2b477cba9dc60b095b1af364a269a",
+    "body_bytes": 496756,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-006",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 6,
+    "request": {
+      "url": "https://www.walmart.com/browse/office-supplies/fellowes-paper-shredders/1229749_1431586_2873910",
+      "attempt": 1,
+      "started_utc": "2026-10-26T19:38:58.794298+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/office-supplies/fellowes-paper-shredders/1229749_1431586_2873910",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 19:38:58 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T19:38:58.981465+00:00",
+      "elapsed_seconds": 0.187
+    },
+    "body_sha256": "059f225cbd9214d6a2930ed786c5350480774e1040f483d3b3dcaa490180dc68",
+    "body_bytes": 513220,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-010",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 10,
+    "request": {
+      "url": "https://www.walmart.com/browse/baby/toddler-food-drinks/5427_133283_7172091_2649578?page=3",
+      "attempt": 1,
+      "started_utc": "2026-10-26T19:40:25.485132+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/baby/toddler-food-drinks/5427_133283_7172091_2649578?page=3",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 19:40:25 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T19:40:25.765673+00:00",
+      "elapsed_seconds": 0.281
+    },
+    "body_sha256": "5f8e2fc0ec3b0d530f7d0d71dd98b8d27d64d3fe573cfefc25d214a8b8450446",
+    "body_bytes": 1364731,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-047",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 47,
+    "request": {
+      "url": "https://www.walmart.com/browse/arts-crafts-sewing/shop-art-painting-supplies/1334134_5899871_7445675_2778920?page=6",
+      "attempt": 1,
+      "started_utc": "2026-10-26T19:51:10.951020+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/arts-crafts-sewing/shop-art-painting-supplies/1334134_5899871_7445675_2778920?page=6",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 19:51:11 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T19:51:11.140856+00:00",
+      "elapsed_seconds": 0.19
+    },
+    "body_sha256": "9f94a04331114d4d2406db5211da5261d2c7d152637397d11476342cfca5ad46",
+    "body_bytes": 1013009,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-046",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 46,
+    "request": {
+      "url": "https://www.walmart.com/browse/baby/baby-snack-foods/5427_133283_1001448_6373549?page=3",
+      "attempt": 1,
+      "started_utc": "2026-10-26T19:50:53.945434+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/baby/baby-snack-foods/5427_133283_1001448_6373549?page=3",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 19:50:54 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T19:50:54.392090+00:00",
+      "elapsed_seconds": 0.447
+    },
+    "body_sha256": "342fa1767ed3032a7b20bf34024e28574f61b01c744d5519eea46aa7d10620ce",
+    "body_bytes": 1226166,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-011",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 11,
+    "request": {
+      "url": "https://www.walmart.com/browse/art-painting-supplies/art-paints/1334134_5899871_7445675_5577403?page=5",
+      "attempt": 1,
+      "started_utc": "2026-10-26T19:40:43.360666+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/art-painting-supplies/art-paints/1334134_5899871_7445675_5577403?page=5",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 19:40:43 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T19:40:43.542920+00:00",
+      "elapsed_seconds": 0.182
+    },
+    "body_sha256": "5aaf664ed2a2f25c71ef547ddab053b2c9e419c800bd5abe203d7f5b665b9bc2",
+    "body_bytes": 842392,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-007",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 7,
+    "request": {
+      "url": "https://www.walmart.com/browse/personal-care/travel-size-toiletries/1005862_2934243_2802339",
+      "attempt": 1,
+      "started_utc": "2026-10-26T19:39:20.156289+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/personal-care/travel-size-toiletries/1005862_2934243_2802339",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 19:39:20 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T19:39:20.490120+00:00",
+      "elapsed_seconds": 0.334
+    },
+    "body_sha256": "fbf89e08fe670cb843eb38eee5887ba13172a47ddd91c53c62c15c61b9289204",
+    "body_bytes": 1353543,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-050",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 50,
+    "request": {
+      "url": "https://www.walmart.com/browse/household-essentials/tide-laundry-detergent/1115193_1071967_1149379_3978991",
+      "attempt": 1,
+      "started_utc": "2026-10-26T19:52:08.035943+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/household-essentials/tide-laundry-detergent/1115193_1071967_1149379_3978991",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 19:52:08 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T19:52:08.292166+00:00",
+      "elapsed_seconds": 0.256
+    },
+    "body_sha256": "27b8fdbb47aee8e1cf0f5db2f812902a0e8a289c9dc31f09e044232e24c55d2d",
+    "body_bytes": 1215159,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-027",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 27,
+    "request": {
+      "url": "https://www.walmart.com/browse/health-medicine/magnesium-citrate/976760_1005863_6070710_5948405_8723301",
+      "attempt": 1,
+      "started_utc": "2026-10-26T19:45:29.475143+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/health-medicine/magnesium-citrate/976760_1005863_6070710_5948405_8723301",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 19:45:29 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T19:45:29.649366+00:00",
+      "elapsed_seconds": 0.174
+    },
+    "body_sha256": "895a0e414f1e4ead550a4ea876617a42672a22d1e2ee715ff03455c4d8d52453",
+    "body_bytes": 686654,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-070",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 70,
+    "request": {
+      "url": "https://www.walmart.com/browse/dog-health-wellbeing/dog-stress-anxiety/5440_202072_9405258_6003662",
+      "attempt": 1,
+      "started_utc": "2026-10-26T19:58:06.217996+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/dog-health-wellbeing/dog-stress-anxiety/5440_202072_9405258_6003662",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 19:58:06 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T19:58:06.642093+00:00",
+      "elapsed_seconds": 0.424
+    },
+    "body_sha256": "15cb0ad71ef2600b63cf4042f0279b94ce7f5e4b9b5f4cf559f6b119610ae07e",
+    "body_bytes": 1190549,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-066",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 66,
+    "request": {
+      "url": "https://www.walmart.com/browse/food/kids-halloween-snacks/976759_1567409_2107086_3763117",
+      "attempt": 1,
+      "started_utc": "2026-10-26T19:56:48.247516+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/food/kids-halloween-snacks/976759_1567409_2107086_3763117",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 19:56:48 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T19:56:48.517692+00:00",
+      "elapsed_seconds": 0.27
+    },
+    "body_sha256": "ed6f59af4f3319214c8606994e392a8e8e64ecb6de46be22ec146a75c563aef9",
+    "body_bytes": 1175550,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-031",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 31,
+    "request": {
+      "url": "https://www.walmart.com/browse/food/immune-support-tea/976759_976782_1001320_8178988",
+      "attempt": 1,
+      "started_utc": "2026-10-26T19:46:34.958059+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/food/immune-support-tea/976759_976782_1001320_8178988",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 19:46:35 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T19:46:35.136933+00:00",
+      "elapsed_seconds": 0.179
+    },
+    "body_sha256": "f1cc0f6d2169a3e330334f55a5beaf80b6a75abe8292e23483b1258b1cb087e4",
+    "body_bytes": 822318,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-024",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 24,
+    "request": {
+      "url": "https://www.walmart.com/browse/office-supplies/file-cabinets/1229749_7431192_2900918",
+      "attempt": 1,
+      "started_utc": "2026-10-26T19:44:37.574691+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/home/file-cabinets/4044_103150_97116_132967",
+      "redirected": true,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 19:44:38 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T19:44:38.569940+00:00",
+      "elapsed_seconds": 0.996
+    },
+    "body_sha256": "d667b484b5e53065112d1743890bf2b67076b862dd6025c4b9d5272fdcc57dc6",
+    "body_bytes": 728000,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-073",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 73,
+    "request": {
+      "url": "https://www.walmart.com/browse/beauty/ohora/1085666_3316357_1846947",
+      "attempt": 1,
+      "started_utc": "2026-10-26T19:58:57.892303+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/beauty/ohora/1085666_3316357_1846947",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 19:58:57 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T19:58:58.039711+00:00",
+      "elapsed_seconds": 0.147
+    },
+    "body_sha256": "47e52fdd220aef8490b20eac3279024d0cd51257426db00e0c67ceb42b6c50a2",
+    "body_bytes": 589922,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-065",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 65,
+    "request": {
+      "url": "https://www.walmart.com/browse/beauty/nyx-professional-makeup/1085666_3316357_1551168",
+      "attempt": 1,
+      "started_utc": "2026-10-26T19:56:27.125143+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/beauty/nyx-professional-makeup/1085666_3316357_1551168",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 19:56:27 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T19:56:27.494153+00:00",
+      "elapsed_seconds": 0.369
+    },
+    "body_sha256": "1a8df3f9b09c0d7b7e482ea974d8c4d0109d6fa45a1509e8521381754788fdea",
+    "body_bytes": 1818995,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-032",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 32,
+    "request": {
+      "url": "https://www.walmart.com/browse/household-essentials/stainless-steel-cleaners/1115193_1071966_4986682_8850806",
+      "attempt": 1,
+      "started_utc": "2026-10-26T19:46:51.528450+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/household-essentials/stainless-steel-cleaners/1115193_1071966_4986682_8850806",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 19:46:51 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T19:46:51.723732+00:00",
+      "elapsed_seconds": 0.195
+    },
+    "body_sha256": "bf267e9d31849fac7c0e52b9fb6b07897a4d338050d08b3e8f893509f1d3a642",
+    "body_bytes": 717605,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-049",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 49,
+    "request": {
+      "url": "https://www.walmart.com/browse/food/international-foods/976759_976794_3854465",
+      "attempt": 1,
+      "started_utc": "2026-10-26T19:51:47.090536+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/food/international-foods/976759_976794_3854465",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 19:51:47 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T19:51:47.454798+00:00",
+      "elapsed_seconds": 0.364
+    },
+    "body_sha256": "180a422a8c85c906eef5966a788dd601087f8d2ca5b7fce785761ede63249c7b",
+    "body_bytes": 1478043,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-008",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 8,
+    "request": {
+      "url": "https://www.walmart.com/browse/pets/airline-approved-dog-carriers/5440_202072_4643923_4637350",
+      "attempt": 1,
+      "started_utc": "2026-10-26T19:39:40.497758+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/pets/airline-approved-dog-carriers/5440_202072_4643923_4637350",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 19:39:40 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T19:39:40.682997+00:00",
+      "elapsed_seconds": 0.185
+    },
+    "body_sha256": "4d6cb5e3bd0a2c6b2b3d30f543fe53ad784eb7477bbaaff7360051b4ad538146",
+    "body_bytes": 631393,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-028",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 28,
+    "request": {
+      "url": "https://www.walmart.com/browse/feeding/baby-formula/5427_133283_4720344?page=3",
+      "attempt": 1,
+      "started_utc": "2026-10-26T19:45:46.360539+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/feeding/baby-formula/5427_133283_4720344?page=3",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 19:45:46 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T19:45:46.577886+00:00",
+      "elapsed_seconds": 0.217
+    },
+    "body_sha256": "8acd14845aa1c55202333a15c54ea321d04f426c0d2706004bf00e93e2fe2479",
+    "body_bytes": 982878,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-069",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 69,
+    "request": {
+      "url": "https://www.walmart.com/browse/personal-care/womens-razors/1005862_1007220_1007399_7994182",
+      "attempt": 1,
+      "started_utc": "2026-10-26T19:57:48.050766+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/personal-care/womens-razors/1005862_1007220_1007399_7994182",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 19:57:48 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T19:57:48.428847+00:00",
+      "elapsed_seconds": 0.378
+    },
+    "body_sha256": "c103b5420945d477ef1ecca2cfc87b5dcc8efdfbe549733e2d1bf1db96570cef",
+    "body_bytes": 1233485,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-045",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 45,
+    "request": {
+      "url": "https://www.walmart.com/browse/health-and-medicine/sleep-support-supplements/976760_1005863_2780146?page=2",
+      "attempt": 1,
+      "started_utc": "2026-10-26T19:50:33.942596+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/health-and-medicine/sleep-support-supplements/976760_1005863_2780146?page=2",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 19:50:34 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T19:50:34.408142+00:00",
+      "elapsed_seconds": 0.466
+    },
+    "body_sha256": "396ad2dfac27c2b6b6651df7cc920f1e1b18fcf1c2f961ea0495530d89ca8e9b",
+    "body_bytes": 1200147,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-012",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 12,
+    "request": {
+      "url": "https://www.walmart.com/browse/beauty/nail-treatments/1085666_3592123_5454352",
+      "attempt": 1,
+      "started_utc": "2026-10-26T19:41:01.629750+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/beauty/nail-treatments/1085666_3592123_5454352",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 19:41:01 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T19:41:02.003295+00:00",
+      "elapsed_seconds": 0.374
+    },
+    "body_sha256": "ef3ddc46d6da2b1ec313e70d18498463dcfe338a8cf1843951378c885bff4da8",
+    "body_bytes": 1142125,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-004",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 4,
+    "request": {
+      "url": "https://www.walmart.com/browse/food/ice-cream-novelties/976759_976791_1518625",
+      "attempt": 1,
+      "started_utc": "2026-10-26T19:38:18.199211+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/food/ice-cream-novelties/976759_976791_1518625",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 19:38:18 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T19:38:18.512572+00:00",
+      "elapsed_seconds": 0.313
+    },
+    "body_sha256": "59778bce5113ef076a3c7554e8f409a711c2d94863f7d79a685a06f11343b1bf",
+    "body_bytes": 1293129,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-053",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 53,
+    "request": {
+      "url": "https://www.walmart.com/browse/pets/dog-sling-carriers/5440_202072_4643923_5832055",
+      "attempt": 1,
+      "started_utc": "2026-10-26T19:52:55.856207+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/pets/dog-sling-carriers/5440_202072_4643923_5832055",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 19:52:55 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T19:52:55.995150+00:00",
+      "elapsed_seconds": 0.139
+    },
+    "body_sha256": "380f42d90081d5aa545e91bd2e858e11f3cda5b04e21fea296f21cd1621160b1",
+    "body_bytes": 596011,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-052",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 52,
+    "request": {
+      "url": "https://www.walmart.com/browse/personal-care/womens-body-wash/1005862_1071969_1074364_4894005",
+      "attempt": 1,
+      "started_utc": "2026-10-26T19:52:40.120290+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/personal-care/womens-body-wash/1005862_1071969_1074364_4894005",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 19:52:40 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T19:52:40.332428+00:00",
+      "elapsed_seconds": 0.212
+    },
+    "body_sha256": "5e229551b993eaa243f9a41d2d212944a942d7fe73fdd372814302afa5981066",
+    "body_bytes": 1295949,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-005",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 5,
+    "request": {
+      "url": "https://www.walmart.com/browse/household-essentials/sponges-and-scrubbers/1115193_1071966_1025741_3990620",
+      "attempt": 1,
+      "started_utc": "2026-10-26T19:38:40.688101+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/household-essentials/sponges-and-scrubbers/1115193_1071966_1025741_3990620",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 19:38:40 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T19:38:41.011050+00:00",
+      "elapsed_seconds": 0.323
+    },
+    "body_sha256": "2a966208070e3a23cceda1aef2b28dadfe96a69bea5a5412acec8e376d1e9f97",
+    "body_bytes": 1300117,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-013",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 13,
+    "request": {
+      "url": "https://www.walmart.com/browse/food/iced-coffee-cold-brew/976759_1086446_1229654_6840303",
+      "attempt": 1,
+      "started_utc": "2026-10-26T19:41:20.410640+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/food/iced-coffee-cold-brew/976759_1086446_1229654_6840303",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 19:41:20 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T19:41:20.630126+00:00",
+      "elapsed_seconds": 0.219
+    },
+    "body_sha256": "413535b7364ea70118731faa895df1a9d604ccbadc57117514b322719b34d20e",
+    "body_bytes": 1179909,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-044",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 44,
+    "request": {
+      "url": "https://www.walmart.com/browse/pets/dog-car-seat-covers-harnesses/5440_202072_4643923_9501117",
+      "attempt": 1,
+      "started_utc": "2026-10-26T19:50:15.618707+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/pets/dog-car-seat-covers-harnesses/5440_202072_4643923_9501117",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 19:50:15 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T19:50:15.786748+00:00",
+      "elapsed_seconds": 0.168
+    },
+    "body_sha256": "0a6d1ff78da68dea3839037938a220214fe78c4a2e3bf234543bf470cf990c5f",
+    "body_bytes": 576304,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-068",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 68,
+    "request": {
+      "url": "https://www.walmart.com/browse/office-supplies/food-journals/1229749_4922227_3236670",
+      "attempt": 1,
+      "started_utc": "2026-10-26T19:57:26.693565+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/office-supplies/food-journals/1229749_4922227_3236670",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 19:57:26 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T19:57:26.909223+00:00",
+      "elapsed_seconds": 0.216
+    },
+    "body_sha256": "294123d759c01fa15f27d4f669e748b496c0007840326bb8cfae91f975afeb52",
+    "body_bytes": 557332,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-029",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 29,
+    "request": {
+      "url": "https://www.walmart.com/browse/arts-crafts-sewing/drawing-supplies/1334134_5899871_1350721?page=6",
+      "attempt": 1,
+      "started_utc": "2026-10-26T19:46:03.434122+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/arts-crafts-sewing/drawing-supplies/1334134_5899871_1350721?page=6",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 19:46:03 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T19:46:03.600345+00:00",
+      "elapsed_seconds": 0.166
+    },
+    "body_sha256": "63f89b2d00634ef4be7f2c96445442523fd2760fd80de19dbb54240fab31852b",
+    "body_bytes": 866670,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-009",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 9,
+    "request": {
+      "url": "https://www.walmart.com/browse/health-and-medicine/foot-care/976760_1588421?page=2",
+      "attempt": 1,
+      "started_utc": "2026-10-26T19:40:02.351356+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/health-and-medicine/foot-care/976760_1588421?page=2",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 19:40:02 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T19:40:02.671403+00:00",
+      "elapsed_seconds": 0.32
+    },
+    "body_sha256": "e2e67bcaabfa75070325f5911d0413d4f098fd8e51af264ba5a78101bf9897e1",
+    "body_bytes": 1182587,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-048",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 48,
+    "request": {
+      "url": "https://www.walmart.com/browse/beauty/new-arrivals/1085666_4427759",
+      "attempt": 1,
+      "started_utc": "2026-10-26T19:51:28.067338+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/shop/beauty/new-arrivals",
+      "redirected": true,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 19:51:30 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T19:51:30.472076+00:00",
+      "elapsed_seconds": 2.405
+    },
+    "body_sha256": "335da9fef0693be5a0809fb30d68f551604acae0a34dbcfe95c56ea3ba5226c0",
+    "body_bytes": 873850,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-033",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 33,
+    "request": {
+      "url": "https://www.walmart.com/browse/office-supplies/file-organizers/1229749_7431192_3406177",
+      "attempt": 1,
+      "started_utc": "2026-10-26T19:47:07.864754+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/office-supplies/file-organizers/1229749_7431192_3406177",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 19:47:07 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T19:47:08.012039+00:00",
+      "elapsed_seconds": 0.147
+    },
+    "body_sha256": "e47bfe41e243363209d858dd8c875e1e00a119bc01224158e89d6078eba3015d",
+    "body_bytes": 701802,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-064",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 64,
+    "request": {
+      "url": "https://www.walmart.com/browse/baby/baby-beverages/5427_133283_1001699?page=4",
+      "attempt": 1,
+      "started_utc": "2026-10-26T19:56:06.724454+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/baby/baby-beverages/5427_133283_1001699?page=4",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 19:56:06 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T19:56:06.886031+00:00",
+      "elapsed_seconds": 0.162
+    },
+    "body_sha256": "478564340594b2c6a616e5f69ff80c0800724a4d0914ef4a3f77a8aa2718dd32",
+    "body_bytes": 468732,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-072",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 72,
+    "request": {
+      "url": "https://www.walmart.com/browse/baby/baby-food-pouches/5427_133283_1001448_2047143?page=2",
+      "attempt": 1,
+      "started_utc": "2026-10-26T19:58:42.404225+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/baby/baby-food-pouches/5427_133283_1001448_2047143?page=2",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 19:58:42 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T19:58:42.641762+00:00",
+      "elapsed_seconds": 0.238
+    },
+    "body_sha256": "75b26c8ae9933d9291e2521663d83839c2b95c2094e2dd2b87c18e17b1006c31",
+    "body_bytes": 1311272,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-025",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 25,
+    "request": {
+      "url": "https://www.walmart.com/browse/personal-care/vaginal-moisturizers/1005862_1091866_1479495",
+      "attempt": 1,
+      "started_utc": "2026-10-26T19:44:57.238242+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/personal-care/vaginal-moisturizers/1005862_1091866_1479495",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 19:44:57 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T19:44:57.464082+00:00",
+      "elapsed_seconds": 0.226
+    },
+    "body_sha256": "6f49697f9d384080a7a65ab65ca44e5676e76dd6ffa9681e207f808b65002b66",
+    "body_bytes": 1035715,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-079",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 79,
+    "request": {
+      "url": "https://www.walmart.com/browse/health-medicine/advil-liqui-gels/976760_6972993_9763276_6099382",
+      "attempt": 1,
+      "started_utc": "2026-10-26T20:00:50.742387+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/health-medicine/advil-liqui-gels/976760_6972993_9763276_6099382",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 20:00:50 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T20:00:51.069155+00:00",
+      "elapsed_seconds": 0.327
+    },
+    "body_sha256": "9c45728333ef7e85b34bde883c92c04207996c5ad883aa496f995fb47a0e2691",
+    "body_bytes": 837287,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-080",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 80,
+    "request": {
+      "url": "https://www.walmart.com/browse/baby/organic-baby-food/5427_133283_1001448_3609934?page=3",
+      "attempt": 1,
+      "started_utc": "2026-10-26T20:01:09.119623+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/baby/organic-baby-food/5427_133283_1001448_3609934?page=3",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 20:01:09 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T20:01:09.377981+00:00",
+      "elapsed_seconds": 0.258
+    },
+    "body_sha256": "1e0bcffb2d81df25b04f305f22b2cc3c1f76cdab08e4798e46b4c9880feff9de",
+    "body_bytes": 1255831,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-038",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 38,
+    "request": {
+      "url": "https://www.walmart.com/browse/drawing-supplies/art-markers-pens/1334134_5899871_1350721_9862357?page=5",
+      "attempt": 1,
+      "started_utc": "2026-10-26T19:48:30.210536+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/drawing-supplies/art-markers-pens/1334134_5899871_1350721_9862357?page=5",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 19:48:30 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T19:48:30.428119+00:00",
+      "elapsed_seconds": 0.218
+    },
+    "body_sha256": "cfa203032c5db405ce26b73de66d20f7042eefc3d1244793389e2e5b3a19907c",
+    "body_bytes": 926717,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-043",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 43,
+    "request": {
+      "url": "https://www.walmart.com/browse/personal-care/waxing/1005862_1007220_1001518_2647317",
+      "attempt": 1,
+      "started_utc": "2026-10-26T19:50:00.151108+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/personal-care/waxing/1005862_1007220_1001518_2647317",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 19:50:00 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T19:50:00.326026+00:00",
+      "elapsed_seconds": 0.175
+    },
+    "body_sha256": "1a65b2c3b886f605a468d8d0d389ce8a488c1bed8b633280f31520dd2303a030",
+    "body_bytes": 957189,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-014",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 14,
+    "request": {
+      "url": "https://www.walmart.com/browse/household-essentials/spray-air-fresheners/1115193_1025739_3653204",
+      "attempt": 1,
+      "started_utc": "2026-10-26T19:41:41.979041+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/household-essentials/spray-air-fresheners/1115193_1025739_3653204",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 19:41:42 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T19:41:42.212860+00:00",
+      "elapsed_seconds": 0.234
+    },
+    "body_sha256": "9ebfd2b7bf836dbf926f7f7eebce3c1db09d11bc48f38d8ff188ec3ca10fccc8",
+    "body_bytes": 1256515,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-002",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 2,
+    "request": {
+      "url": "https://www.walmart.com/browse/arts-crafts-sewing/shop-art-painting-supplies/1334134_5899871_7445675_2778920?page=5",
+      "attempt": 1,
+      "started_utc": "2026-10-26T19:37:27.849011+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/arts-crafts-sewing/shop-art-painting-supplies/1334134_5899871_7445675_2778920?page=5",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 19:37:27 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T19:37:28.177377+00:00",
+      "elapsed_seconds": 0.328
+    },
+    "body_sha256": "eacf2a7ad2991066e4326209bc7dba209ae92e40f0ab181b41feb306853d3a0b",
+    "body_bytes": 1075575,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-055",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 55,
+    "request": {
+      "url": "https://www.walmart.com/browse/baby-food/baby-food-stages/5427_133283_1001448_1224824?page=3",
+      "attempt": 1,
+      "started_utc": "2026-10-26T19:53:32.347871+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/baby-food/baby-food-stages/5427_133283_1001448_1224824?page=3",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 19:53:32 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T19:53:32.586865+00:00",
+      "elapsed_seconds": 0.239
+    },
+    "body_sha256": "f389ad16db0a8aedc66bb143d90b4134603742a348ff4dfd624d8a2d5690187d",
+    "body_bytes": 1285791,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-022",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 22,
+    "request": {
+      "url": "https://www.walmart.com/browse/food/iced-tea-mixes/976759_976782_1001320_9427409",
+      "attempt": 1,
+      "started_utc": "2026-10-26T19:43:58.597262+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/food/iced-tea-mixes/976759_976782_1001320_9427409",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 19:43:58 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T19:43:58.759067+00:00",
+      "elapsed_seconds": 0.162
+    },
+    "body_sha256": "6dbca9e3d90a6a756d052df1a4ce6db0d0eecbea330b1b5df7d09cba07f230d6",
+    "body_bytes": 1007663,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-075",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 75,
+    "request": {
+      "url": "https://www.walmart.com/browse/household-essentials/trash-bags/1115193_1073264_1149385",
+      "attempt": 1,
+      "started_utc": "2026-10-26T19:59:37.377855+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/household-essentials/trash-bags/1115193_1073264_1149385",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 19:59:37 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T19:59:37.592570+00:00",
+      "elapsed_seconds": 0.215
+    },
+    "body_sha256": "5ac3bc28e1c650676921ab7cfb8f566307ffd7cd92b1e9d3f83f561012b12c2d",
+    "body_bytes": 1303346,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-063",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 63,
+    "request": {
+      "url": "https://www.walmart.com/browse/health-medicine/tylenol-pm/976760_6972993_6928495",
+      "attempt": 1,
+      "started_utc": "2026-10-26T19:55:48.014746+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/health-medicine/tylenol-pm/976760_6972993_6928495",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 19:55:48 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T19:55:48.375259+00:00",
+      "elapsed_seconds": 0.355
+    },
+    "body_sha256": "bab1760c56f0e3370867824bab421c3d509a95d34dd80550fdca45b21d7ac144",
+    "body_bytes": 590414,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-034",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 34,
+    "request": {
+      "url": "https://www.walmart.com/browse/personal-care/water-flossers/1005862_1007221_1024682",
+      "attempt": 1,
+      "started_utc": "2026-10-26T19:47:24.595684+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/personal-care/water-flossers/1005862_1007221_1024682",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 19:47:24 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T19:47:24.774732+00:00",
+      "elapsed_seconds": 0.179
+    },
+    "body_sha256": "60ce75edf28f58b71d0589b542181c84b4e75a9aa5f65b546dad473ca0685d16",
+    "body_bytes": 921536,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-018",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 18,
+    "request": {
+      "url": "https://www.walmart.com/browse/health-medicine/magnesium-glycinate/976760_1005863_6070710_5948405_7335365",
+      "attempt": 1,
+      "started_utc": "2026-10-26T19:42:51.587763+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/health-medicine/magnesium-glycinate/976760_1005863_6070710_5948405_7335365",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 19:42:51 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T19:42:51.937678+00:00",
+      "elapsed_seconds": 0.35
+    },
+    "body_sha256": "42784fbbcce1e517c159da0f6092d36b359721d09d96683faf11dbe7e77bcbcb",
+    "body_bytes": 945334,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-059",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 59,
+    "request": {
+      "url": "https://www.walmart.com/browse/household-essentials/toilet-bowl-cleaners/1115193_1071966_2600011",
+      "attempt": 1,
+      "started_utc": "2026-10-26T19:54:38.352650+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/household-essentials/toilet-bowl-cleaners/1115193_1071965_2600011",
+      "redirected": true,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 19:54:38 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T19:54:38.771780+00:00",
+      "elapsed_seconds": 0.419
+    },
+    "body_sha256": "aa0bd189eb6742a1b840e6fac7ba65c5fe5df953f1425ef8ab934974578add27",
+    "body_bytes": 1281252,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-058",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 58,
+    "request": {
+      "url": "https://www.walmart.com/browse/food/jerky-dried-meats/976759_976787_1001405",
+      "attempt": 1,
+      "started_utc": "2026-10-26T19:54:21.368468+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/food/jerky-dried-meats/976759_976787_1001405",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 19:54:21 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T19:54:21.643305+00:00",
+      "elapsed_seconds": 0.275
+    },
+    "body_sha256": "7d1eb20bfc62d3a564d75b82792c63aaa5ddf975d7a258782ad98201fad4d434",
+    "body_bytes": 1274303,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-019",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 19,
+    "request": {
+      "url": "https://www.walmart.com/browse/feeding/baby-formula-dispensers-mixers/5427_133283_9286278",
+      "attempt": 1,
+      "started_utc": "2026-10-26T19:43:09.126845+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/feeding/baby-formula-dispensers-mixers/5427_133283_9286278",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 19:43:09 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T19:43:09.275794+00:00",
+      "elapsed_seconds": 0.149
+    },
+    "body_sha256": "3790c85c23c387c91e32ee797f218ebbba71e3f7f9a45eab4322ccd14e4bc178",
+    "body_bytes": 714437,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-035",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 35,
+    "request": {
+      "url": "https://www.walmart.com/browse/pets/dog-car-seats/5440_202072_4643923_2168482",
+      "attempt": 1,
+      "started_utc": "2026-10-26T19:47:39.852595+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/pets/dog-car-seats/5440_202072_4643923_2168482",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 19:47:39 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T19:47:39.977199+00:00",
+      "elapsed_seconds": 0.125
+    },
+    "body_sha256": "ea04b057457f77a6ee1c804e4d7fa18f332a24f14b5bc51f18b9da738dcbfe39",
+    "body_bytes": 618300,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-062",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 62,
+    "request": {
+      "url": "https://www.walmart.com/browse/pets/dog-ramps/5440_202072_5375056",
+      "attempt": 1,
+      "started_utc": "2026-10-26T19:55:32.533750+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/pets/dog-ramps/5440_202072_5375056",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 19:55:32 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T19:55:32.647240+00:00",
+      "elapsed_seconds": 0.113
+    },
+    "body_sha256": "38cdb7f556054a207b010ed5e094fd7c0f4f8a972bb9f33afd21530b483d7de1",
+    "body_bytes": 571139,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-074",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 74,
+    "request": {
+      "url": "https://www.walmart.com/browse/food/kids-multipack-juices/976759_976782_1001321_1973403",
+      "attempt": 1,
+      "started_utc": "2026-10-26T19:59:17.139938+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/food/kids-multipack-juices/976759_976782_1001321_1973403",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 19:59:17 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T19:59:17.358540+00:00",
+      "elapsed_seconds": 0.219
+    },
+    "body_sha256": "72c61213dfb2fc7a946dc919837e3f8a19f306769b3eb003b7c845a306c57181",
+    "body_bytes": 1222873,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-023",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 23,
+    "request": {
+      "url": "https://www.walmart.com/browse/household-essentials/stain-removers/1115193_1071967_1149381",
+      "attempt": 1,
+      "started_utc": "2026-10-26T19:44:19.490906+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/household-essentials/stain-removers/1115193_1071967_1149381",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 19:44:19 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T19:44:19.804807+00:00",
+      "elapsed_seconds": 0.314
+    },
+    "body_sha256": "992189e3fe456d866f1f5df13f147964916d8497f0fc12f97be6f7e59f107cb9",
+    "body_bytes": 1312695,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-054",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 54,
+    "request": {
+      "url": "https://www.walmart.com/browse/health-medicine/childrens-tylenol/976760_6972993_7951604",
+      "attempt": 1,
+      "started_utc": "2026-10-26T19:53:13.352665+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/health-medicine/childrens-tylenol/976760_6972993_7951604",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 19:53:13 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T19:53:13.510276+00:00",
+      "elapsed_seconds": 0.158
+    },
+    "body_sha256": "0b916a42b27035f0ebe0feb680c0026291455b4de4361fd732358239c8305018",
+    "body_bytes": 937801,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-003",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 3,
+    "request": {
+      "url": "https://www.walmart.com/browse/beauty/nail-tools/1085666_3592123_2668890",
+      "attempt": 1,
+      "started_utc": "2026-10-26T19:37:51.864221+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/beauty/nail-tools/1085666_3592123_2668890",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 19:37:51 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T19:37:52.224121+00:00",
+      "elapsed_seconds": 0.36
+    },
+    "body_sha256": "90f88640eb79554c3d0db3ad8ff3ecd491fa9ff08c61caf431e2170c45fffe73",
+    "body_bytes": 1256986,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-015",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 15,
+    "request": {
+      "url": "https://www.walmart.com/browse/office-supplies/felt-tip-pens/1229749_1988510_9603975",
+      "attempt": 1,
+      "started_utc": "2026-10-26T19:41:58.451768+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/office-supplies/felt-tip-pens/1229749_8843226_1988510_9603975",
+      "redirected": true,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 19:41:58 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T19:41:58.880921+00:00",
+      "elapsed_seconds": 0.429
+    },
+    "body_sha256": "fc27e03d64b014659401f98c265320f98eea52a90cdf32ba633af4502ca24ad2",
+    "body_bytes": 851295,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-042",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 42,
+    "request": {
+      "url": "https://www.walmart.com/browse/office-supplies/fiskars-scissors/1229749_2752789_8660263",
+      "attempt": 1,
+      "started_utc": "2026-10-26T19:49:42.947700+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/office-supplies/fiskars-scissors/1229749_2752789_8660263",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 19:49:42 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T19:49:43.115688+00:00",
+      "elapsed_seconds": 0.168
+    },
+    "body_sha256": "36d19973e9a0385507388879bfa65af4a998f8164fc89c591c4794de634710c3",
+    "body_bytes": 1005628,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-039",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 39,
+    "request": {
+      "url": "https://www.walmart.com/browse/beauty/neutrogena/1085666_3316357_3524523",
+      "attempt": 1,
+      "started_utc": "2026-10-26T19:48:50.631106+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/beauty/neutrogena/1085666_3316357_3524523",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 19:48:50 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T19:48:50.986058+00:00",
+      "elapsed_seconds": 0.355
+    },
+    "body_sha256": "d4a617f063912ddc3cc027f43bcaa5bd6a2ec879f2ef074a38e3aef127aaf165",
+    "body_bytes": 1219174,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-078",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 78,
+    "request": {
+      "url": "https://www.walmart.com/browse/pets-shop-by-brand/temptations/5440_5285960_5549847",
+      "attempt": 1,
+      "started_utc": "2026-10-26T20:00:30.876100+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/pets-shop-by-brand/temptations/5440_5285960_5549847",
+      "redirected": false,
+      "headers": {
+        "date": "Mon, 26 Oct 2026 20:00:30 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-26T20:00:31.171813+00:00",
+      "elapsed_seconds": 0.296
+    },
+    "body_sha256": "6a258af03dd06423a3dab617fefe743dfeb3da1760c2d8ad8f35d9e41c928328",
+    "body_bytes": 1177934,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  }
+]
