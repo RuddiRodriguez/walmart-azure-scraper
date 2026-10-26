@@ -23,6 +23,7 @@ def key(url):
 def run(folder,maximum,seconds):
     if not 1<=maximum<=80 or not 0<seconds<=5400:raise ValueError('Use at most80pages/90minutes per continuation')
     folder=Path(folder);folder.mkdir(parents=True,exist_ok=True)
+    if (folder/'USER_PAUSED').exists():raise RuntimeError('Point3 paused by user; explicit resume required')
     import fcntl
     lock=(folder/'run.lock').open('w');fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
     db=sqlite3.connect(folder/'queue.sqlite')

@@ -51,6 +51,7 @@ def run():
   if not report['pages']:raise RuntimeError('No page progress')
   return any(o.get('qualified_candidate') for o in report.get('offer_observations',[]))
  try:
+  if (ROOT/'USER_PAUSED').exists():status['phase']='paused_by_user_storage_cleanup';return
   # An audit may stop only the coordinator while its current child finishes safely.
   running=[p for p in psutil.process_iter(['cmdline']) if 'coverage_queue.py' in (p.info['cmdline'] or [])]
   if len(running)>1:raise RuntimeError('Multiple walkers; refuse duplicate work')

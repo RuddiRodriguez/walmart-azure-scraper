@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "checks": [
+    "Walker refuses browser startup while user pause marker exists",
+    "Coordinator refuses job startup while user pause marker exists",
+    "Original consumed attempts preserved"
+  ],
+  "live_requests": 0
+}
