@@ -66,7 +66,7 @@ def listing_candidates(soup, category, store):
             image = card.select_one('img[data-testid="productTileImage"]')
             price = card.select_one('[data-testid="unified-global-product-price-a11y-text"]')
             unavailable = item.get('availabilityStatus') in ['OUT_OF_STOCK', 'UNAVAILABLE']
-            if not key.isdigit() or not link or not image or (not price and not unavailable):
+            if not key.isdigit() or not link or not image:
                 rejected.append({'item_id': key, 'reason': 'missing_listing_fields'})
                 continue
             product_url = urljoin('https://www.walmart.com', link['href'])
@@ -121,7 +121,7 @@ def promotion_fields(product):
     return fields, unknown
 
 
-def product_record(candidate, soup, store, private_labels, logo):
+def product_record(candidate, soup, store, private_labels, logo, retain_missing=False, known_store_assortment=False):
     product = next_data(soup).get('data', {}).get('product')
     if not product or str(product.get('usItemId')) != candidate['item_id']:
         raise ValueError('Product identity mismatch or missing response')
@@ -135,24 +135,33 @@ def product_record(candidate, soup, store, private_labels, logo):
                              and option.get('locationText') == store['name']
                              and option.get('availabilityStatus') == 'OUT_OF_STOCK'
                              for option in product.get('fulfillmentOptions') or [])
-    if not has_pickup_offer and not local_out_of_stock:
+    from retention import product_state
+    state = product_state(candidate, product, store, known_store_assortment) if retain_missing else None
+    if not retain_missing and not has_pickup_offer and not local_out_of_stock:
         return None, 'no_local_pickup', product
-    if (product.get('sellerName') or product.get('sellerDisplayName')) not in ['Walmart.com', 'Walmart']:
+    seller = product.get('sellerName') or product.get('sellerDisplayName')
+    if retain_missing and not seller:
+        seller = candidate['item'].get('sellerName')  # Retain listing-proven retailer items when unavailable PDP omits seller.
+    if seller not in ['Walmart.com', 'Walmart']:
         return None, 'marketplace', product
     unavailable = local_out_of_stock or product.get('availabilityStatus') in ['OUT_OF_STOCK', 'UNAVAILABLE']
-    if not local_out_of_stock and product.get('availabilityStatus') not in ['IN_STOCK', 'AVAILABLE', 'OUT_OF_STOCK', 'UNAVAILABLE']:
+    if not retain_missing and not local_out_of_stock and product.get('availabilityStatus') not in ['IN_STOCK', 'AVAILABLE', 'OUT_OF_STOCK', 'UNAVAILABLE']:
         return None, 'unknown_availability', product
     info = product.get('priceInfo') or {}
     title = product.get('name') or candidate['item'].get('name', '')
     if APPROX.search(title) or (info.get('priceDisplayCodes') or {}).get('finalCostByWeight'):
         return None, 'approximate_weight', product
     # No local offer means any displayed shipping price must not enter the local export.
-    local_price_unknown = local_out_of_stock and not has_pickup_offer
+    local_price_unknown = state != 'available' if retain_missing else local_out_of_stock and not has_pickup_offer
     current = None if local_price_unknown else (info.get('currentPrice') or {}).get('price')
     displayed = None if local_price_unknown else re.search(r'(?:Price Now|Price) \$(\d+(?:\.\d{1,2})?)', candidate['price_text'])
     missing_unavailable_price = unavailable and current is None and not displayed
-    if not missing_unavailable_price and (current is None or not displayed or money(current) != money(displayed.group(1))):
-        return None, 'price_changed', product
+    price_unverified = not missing_unavailable_price and (current is None or not displayed or money(current) != money(displayed.group(1)))
+    if price_unverified:
+        if not retain_missing:
+            return None, 'price_changed', product
+        local_price_unknown = True
+        current = displayed = None
     promos, unknown = promotion_fields({} if local_price_unknown else product)
     if unknown:
         return None, 'promotion_review_required', product
@@ -177,6 +186,15 @@ def product_record(candidate, soup, store, private_labels, logo):
                image_url=candidate['image_url'], url=candidate['url'], upc=str(product.get('upc') or ''),
                ppm=ppm.group() if ppm else '', crawl_date=datetime.now(timezone.utc).isoformat())
     row.update(promos)
+    if retain_missing:
+        reason = {'assortment_unverified':'retained_assortment_unverified',
+                  'confirmed_unavailable':'retained_unavailable',
+                  'confirmed_no_pickup_offer':'retained_no_pickup_offer',
+                  'pickup_evidence_missing':'retained_pickup_evidence_missing',
+                  'availability_evidence_missing':'retained_availability_evidence_missing'}.get(state, '')
+        if not reason and price_unverified:
+            reason = 'retained_price_evidence_missing'
+        return row, reason, product
     return row, 'retained_unavailable' if unavailable else '', product
 
 

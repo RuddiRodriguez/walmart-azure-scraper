@@ -9,6 +9,7 @@ import re
 import signal
 import subprocess
 import time
+import retention
 from collections import Counter, deque
 from datetime import datetime, timezone
 from pathlib import Path
@@ -65,7 +66,7 @@ def run(output, plan, resume=False):
     report = dict(mode='One bounded live cross-category review collection; not full uncapped coverage',
                   started_utc=datetime.now(timezone.utc).isoformat(), source_commit=subprocess.check_output(['git', 'rev-parse', 'HEAD'], text=True).strip(),
                   source_hashes={p: hashlib.sha256(Path(p).read_bytes()).hexdigest() for p in
-                                 ['controlled_collection.py', 'diagnostic_capture.py', 'capture_store_drift.py', 'scrape.py', 'browser.py', 'extract.py', 'storage.py', 'validate.py']},
+                                 ['controlled_collection.py', 'diagnostic_capture.py', 'capture_store_drift.py', 'scrape.py', 'browser.py', 'extract.py', 'storage.py', 'validate.py', 'retention.py']},
                   plan=plan, pages=[], observations=[], controls=[], failures=[], exclusions={}, completed_attempt=False,
                   target_reached=False, pair_captured=False, full_coverage_complete=False)
     signature = hashlib.sha256(json.dumps(dict(plan=requested_plan, source=report['source_hashes'],
@@ -116,12 +117,15 @@ def run(output, plan, resume=False):
     except Exception:
         lock.close()
         raise
+    catalog = retention.connect(plan.get('catalog_path', f"data/catalog/store-{store['id']}.sqlite"), store)
+    report['retention_mode'] = 'store-history-v1'
     sb = None
 
     def save():
         report['counts'] = {k: state[k] for k in ['product_requests', 'listing_requests', 'sequence', 'body_bytes']}
         report['accepted_records'] = len(accepted)
-        report['rejected_product_responses'] = sum(o.get('acceptance_reason') not in [None, '', 'retained_unavailable'] for o in report['observations'])
+        report['rejected_product_responses'] = sum(bool(o.get('acceptance_reason')) and not o['acceptance_reason'].startswith('retained_') for o in report['observations'])
+        report['retained_response_reasons'] = dict(Counter(o['acceptance_reason'] for o in report['observations'] if str(o.get('acceptance_reason', '')).startswith('retained_')))
         report['product_errors'] = sum(f['kind'] == 'product' for f in report['failures'])
         report['page_errors'] = sum(f['kind'] in ['page', 'page_processing'] for f in report['failures'])
         report['category_counts'] = dict(counts)
@@ -166,20 +170,29 @@ def run(output, plan, resume=False):
             report['observations'].append(observation)
             reason = ('wrong_store_context' if not context['store_matches'] else
                       'product_identity_mismatch' if not observation['identity_matches'] else '')
+            capture_path = output / 'captures' / f"collection-{state['sequence']:03}.json"
+            capture_meta = json.loads(capture_path.read_text()) if capture_path.exists() else {}
+            observed_utc = (capture_meta.get('response') or {}).get('received_utc') or (capture_meta.get('request') or {}).get('started_utc') or datetime.now(timezone.utc).isoformat()
+            source_key = str(output.relative_to(Path.cwd())) + '#' + str(state['sequence'])
             if reason:
+                retention.observe(catalog, candidate['item_id'], None, reason, source_key, observed_utc, False)
                 observation['acceptance_reason'] = reason
                 exclude(reason)
                 log('response_rejected', product_id=candidate['item_id'], sequence=state['sequence'], reason=reason)
                 time.sleep(settings['delay_seconds'])
                 return
-            row, reason, _ = product_record(candidate, page, store, settings['private_labels'], logo)
+            known = retention.known_assortment(catalog, candidate['item_id'])
+            row, reason, _ = product_record(candidate, page, store, settings['private_labels'], logo, retain_missing=True, known_store_assortment=known)
+            eligibility = reason != 'retained_assortment_unverified'
+            state_name = retention.product_state(candidate, product, store, known, reason) if row else reason
+            row = retention.observe(catalog, candidate['item_id'], row, state_name, source_key, observed_utc, eligibility if row else False)
             observation['acceptance_reason'] = reason
-            if row:
+            if row and eligibility:
                 accepted[candidate['item_id']] = row
                 counts[candidate['category']] += 1
                 source = dict(candidate=candidate, product=product,
                               specifications=(data.get('data', {}).get('idml') or {}).get('specifications'),
-                              reason=reason, product_sequence=state['sequence'], listing_sequence=listing_sequence)
+                              reason=reason, product_sequence=state['sequence'], listing_sequence=listing_sequence, known_store_assortment=known)
                 sources.append(source)
                 with (output / 'source-records.jsonl').open('a') as stream:
                     stream.write(json.dumps(source) + '\n')
@@ -361,11 +374,14 @@ def run(output, plan, resume=False):
         if sb:
             sb.quit()
         atomic_json(output / 'source-records.json', sources)
-        unavailable = {s['candidate']['url'] for s in sources if s['reason'] == 'retained_unavailable'}
+        unavailable = {s['candidate']['url'] for s in sources if s['reason'] in ['retained_unavailable', 'retained_no_pickup_offer']}
+        unknown_prices = {s['candidate']['url'] for s in sources if s['reason'].startswith('retained_') and s['candidate']['url'] not in unavailable}
         report['sample_validation'] = validate(list(accepted.values()), names, store,
             {**settings, 'minimum_records': plan['target'], 'minimum_category_records': plan['minimum_per_category']}, 0, 0, 0,
-            unavailable_urls=unavailable)
+            unavailable_urls=unavailable, unknown_price_urls=unknown_prices)
         report['unvisited_categories'] = [n for n in names if not counts[n]]
+        report['retention_catalog'] = retention.export(catalog, output)
+        catalog.close()
         save()
         lock.close()
     print(json.dumps({k: report.get(k) for k in ['target_reached', 'accepted_records', 'category_counts', 'seconds', 'error']}))

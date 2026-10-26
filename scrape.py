@@ -7,6 +7,7 @@ import hashlib
 import json
 import re
 import time
+import retention
 from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urljoin, urlsplit, urlunsplit, parse_qsl, urlencode
@@ -75,7 +76,7 @@ def run(args):
     output.mkdir(parents=True, exist_ok=True)
     (output / 'sources').mkdir(exist_ok=True)
     db = connect(output / 'checkpoint.sqlite')
-    code = ''.join((Path(__file__).parent / name).read_text() for name in ['scrape.py', 'browser.py', 'extract.py', 'storage.py', 'validate.py'])
+    code = ''.join((Path(__file__).parent / name).read_text() for name in ['scrape.py', 'browser.py', 'extract.py', 'storage.py', 'validate.py', 'retention.py'])
     signature = hashlib.sha256((Path(args.config).read_text() + Path(args.categories).read_text() + str(args.sample) + code).encode()).hexdigest()
     if args.resume and metadata(db, 'signature') != signature:
         raise ValueError('Configuration or code changed; start a fresh run')
@@ -102,6 +103,12 @@ def run(args):
     sb = None
     current_work = {}
     sample_counts = Counter(row['category'] for row in records(db))
+    catalog = retention.connect(base / 'catalog.sqlite', store)
+    if (base / 'latest.json').exists():
+        previous_pointer = json.loads((base / 'latest.json').read_text())
+        if previous_pointer.get('products'):
+            previous_products = base / previous_pointer['products']
+            retention.seed_previous(catalog, json.loads(previous_products.read_text()), store, str(previous_products.relative_to(base)))
     prior_store_cookies = None
 
     def trace_context(stage):
@@ -125,8 +132,13 @@ def run(args):
                            'specifications': (data.get('idml') or {}).get('specifications'), 'reason': 'not_validated'}
             atomic_json(output / 'sources' / (key + '.json'), source_data)
             try:
-                row, reason, product = product_record(candidate, soup, store, settings['private_labels'], logo)
+                known = retention.known_assortment(catalog, key)
+                row, reason, product = product_record(candidate, soup, store, settings['private_labels'], logo, retain_missing=True, known_store_assortment=known)
+                observed_utc = datetime.now(timezone.utc).isoformat()
+                row = retention.observe(catalog, key, row, retention.product_state(candidate, product, store, known, reason) if row else reason, run_id, observed_utc, bool(row and reason != 'retained_assortment_unverified'))
+                source_data['known_store_assortment'] = known
             except Exception as error:
+                retention.observe(catalog, key, None, 'validation_error', run_id, datetime.now(timezone.utc).isoformat(), False)
                 source_data.update(reason='validation_error', error=str(error))
                 stamp = datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%S%fZ')
                 atomic_json(output / 'sources' / 'rejected' / (key + '-' + stamp + '.json'), source_data)
@@ -140,8 +152,9 @@ def run(args):
                 soup.decompose()
             source_data['reason'] = reason
             atomic_json(output / 'sources' / (key + '.json'), source_data)
-            save_product(db, candidate, row, reason)
-            if row:
+            eligible_row = row if reason != 'retained_assortment_unverified' else None
+            save_product(db, candidate, eligible_row, reason)
+            if eligible_row:
                 sample_counts[candidate['category']] += 1
             log('product', id=key, accepted=bool(row), reason=reason, category=candidate['category'])
             time.sleep(settings['delay_seconds'])
@@ -249,7 +262,14 @@ def run(args):
                 break
         canary_check(sb, store, settings)
         rows = records(db)
-        unavailable_urls = {json.loads(data)['url'] for data, in db.execute("SELECT data FROM candidates WHERE reason='retained_unavailable'")}
+        report_retention = retention.export(catalog, output)
+        catalog_rows = json.loads((output / 'retained-products.json').read_text())
+        catalog_states = {v['product_id']:v for v in json.loads((output / 'retention-status.json').read_text())}
+        if not args.sample:
+            rows = catalog_rows
+        blank_price_urls = {r['url'] for r in rows if not r['regular_price']}
+        unavailable_urls = {r['url'] for r in rows if catalog_states.get(r['url'].split('?')[0].rsplit('/',1)[-1], {}).get('state') in ['confirmed_unavailable','confirmed_no_pickup_offer']}
+        unknown_price_urls = blank_price_urls - unavailable_urls
         pending_pages = db.execute("SELECT count(*) FROM pages WHERE status!='done'").fetchone()[0]
         pending_products = db.execute("SELECT count(*) FROM candidates WHERE status!='done'").fetchone()[0]
         review = db.execute("SELECT count(*) FROM candidates WHERE reason IN ('promotion_review_required','price_changed','unknown_availability')").fetchone()[0]
@@ -257,15 +277,15 @@ def run(args):
         if (base / 'latest.json').exists():
             pointer = json.loads((base / 'latest.json').read_text())
             previous = json.loads((base / pointer['report']).read_text())
-        report = validate(rows, list(categories), store, settings, pending_pages, pending_products, review, previous, unavailable_urls)
+        report = validate(rows, list(categories), store, settings, pending_pages, pending_products, review, previous, unavailable_urls, unknown_price_urls)
         if args.sample:
             sample_settings = {**settings, 'minimum_records': args.sample * len(categories), 'minimum_category_records': args.sample}
-            report['sample_validation'] = validate(rows, list(categories), store, sample_settings, 0, 0, review, unavailable_urls=unavailable_urls)
+            report['sample_validation'] = validate(rows, list(categories), store, sample_settings, 0, 0, review, unavailable_urls=unavailable_urls, unknown_price_urls=unknown_price_urls)
         if metadata(db, 'location_mismatch_seen'):
             for validation in [report] + ([report['sample_validation']] if args.sample else []):
                 validation['passed'] = False
                 validation['errors'].append('Location mismatch occurred in this run; fresh run required for publication')
-        report.update(location_mismatch_seen=bool(metadata(db, 'location_mismatch_seen')), mode='sample' if args.sample else 'full', store=store,
+        report.update(retention_catalog=report_retention, carried_observations=sum(v['source'] != run_id and v['assortment_confirmed'] for v in catalog_states.values()) if not args.sample else 0, location_mismatch_seen=bool(metadata(db, 'location_mismatch_seen')), mode='sample' if args.sample else 'full', store=store,
                       active_seconds=round(metadata(db, 'active_seconds') + time.monotonic() - started, 2),
                       elapsed_seconds=round(time.time() - metadata(db, 'started'), 2),
                       active_time_complete=not bool(metadata(db, 'active_time_incomplete')),
@@ -312,6 +332,8 @@ def run(args):
         metadata(db, 'status', 'interrupted_or_failed')
         raise
     finally:
+        retention.export(catalog, output)
+        catalog.close()
         metadata(db, 'active_seconds', metadata(db, 'active_seconds') + time.monotonic() - started)
         metadata(db, 'session_open', False)
         db.close()

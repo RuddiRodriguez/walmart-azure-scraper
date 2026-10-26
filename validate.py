@@ -6,7 +6,7 @@ from urllib.parse import urlsplit
 from extract import FIELDS, APPROX
 
 
-def validate(rows, categories, store, settings, pending_pages, pending_products, review_count, previous=None, unavailable_urls=()):
+def validate(rows, categories, store, settings, pending_pages, pending_products, review_count, previous=None, unavailable_urls=(), unknown_price_urls=()):
     errors = []
     counts = Counter(row.get('category', '') for row in rows if isinstance(row, dict) and isinstance(row.get('category', ''), str))
     urls = [r.get('url', '') for r in rows if isinstance(r, dict) and isinstance(r.get('url', ''), str)]
@@ -35,7 +35,7 @@ def validate(rows, categories, store, settings, pending_pages, pending_products,
         if row['category'] not in categories:
             errors.append(f'Record {index}: unknown category')
         required = ['product_title', 'url', 'image_url', 'category', 'crawl_date']
-        if row['url'] not in unavailable_urls:
+        if row['url'] not in unavailable_urls and row['url'] not in unknown_price_urls:
             required.append('regular_price')
         for field in required:
             if not row[field]:
@@ -67,4 +67,5 @@ def validate(rows, categories, store, settings, pending_pages, pending_products,
             'field_nonempty_counts': {f: sum(bool(r.get(f)) for r in rows if isinstance(r, dict)) for f in FIELDS},
             'pending_pages': pending_pages, 'pending_products': pending_products,
             'products_needing_review': review_count,
-            'retained_unavailable_records': sum(url in unavailable_urls for url in urls)}
+            'retained_unavailable_records': sum(url in unavailable_urls for url in urls),
+            'retained_unknown_price_records': sum(url in unknown_price_urls for url in urls)}

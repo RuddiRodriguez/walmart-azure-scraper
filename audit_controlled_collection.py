@@ -72,7 +72,7 @@ def audit(run, evidence):
         context = product_context(product, store)
         identity = str(product.get('usItemId')) == candidate['item_id']
         native_match = derived.get((source['listing_sequence'], candidate['item_id'])) == candidate
-        parsed, reason, _ = product_record(candidate, page, store, settings['private_labels'], row['store_logo'])
+        parsed, reason, _ = product_record(candidate, page, store, settings['private_labels'], row['store_logo'], retain_missing=bool(report.get('retention_mode')), known_store_assortment=source.get('known_store_assortment', False))
         fields_match = bool(parsed) and all(parsed[k] == row[k] for k in row if k != 'crawl_date')
         passed = context['store_matches'] and identity and native_match and fields_match and reason == source['reason'] and product == source['product']
         if not passed:
@@ -95,7 +95,7 @@ def audit(run, evidence):
             contexts.append(dict(sequence=sequence, **context))
             observation = observations.get(sequence, {})
             reason = observation.get('acceptance_reason')
-            if reason not in [None, '', 'retained_unavailable']:
+            if reason and not reason.startswith('retained_'):
                 expected = urlsplit(item['request']['url']).path.rsplit('/', 1)[-1]
                 candidate = derived.get((observation.get('listing_sequence'), expected))
                 rejections.append(dict(sequence=sequence, expected_product_id=expected, actual_product_id=context['product_id'],
@@ -107,10 +107,11 @@ def audit(run, evidence):
                                  response_status=item.get('response', {}).get('status')))
         page.decompose()
     names = [c['category'] for c in report['plan']['categories']]
-    unavailable = {s['candidate']['url'] for s in sources if s['reason'] == 'retained_unavailable'}
+    unavailable = {s['candidate']['url'] for s in sources if s['reason'] in ['retained_unavailable', 'retained_no_pickup_offer']}
+    unknown_prices = {s['candidate']['url'] for s in sources if s['reason'].startswith('retained_') and s['candidate']['url'] not in unavailable}
     checked = validate(rows, names, store, {**settings, 'minimum_records': report['plan']['target'],
                        'minimum_category_records': report['plan']['minimum_per_category']}, 0, 0, 0,
-                       unavailable_urls=unavailable)
+                       unavailable_urls=unavailable, unknown_price_urls=unknown_prices)
     if len(rows) != len(sources):
         errors.append('Accepted record/source count mismatch')
     result = dict(mode='Offline audit of this fresh controlled live run; not uncapped coverage',
@@ -120,7 +121,8 @@ def audit(run, evidence):
                   page_successes=sum(p['status'] == 'reviewed' for p in report['pages']),
                   page_failures=sum(p['status'] == 'failed' for p in report['pages']),
                   rejected_product_reasons=dict(Counter(o.get('acceptance_reason') for o in report['observations']
-                      if o.get('acceptance_reason') not in [None, '', 'retained_unavailable'])),
+                      if o.get('acceptance_reason') and not o['acceptance_reason'].startswith('retained_'))),
+                  retained_response_reasons=dict(Counter(o['acceptance_reason'] for o in report['observations'] if str(o.get('acceptance_reason','')).startswith('retained_'))),
                   request_error_types=dict(Counter(m.get('error_type') for m in metadata if m.get('error_type'))),
                   identity_mismatch_observations=sum(not o['identity_matches'] for o in report['observations'] if not o['diagnostic_only']),
                   wrong_store_observations=sum(not o['store_matches'] for o in report['observations'] if not o['diagnostic_only']),

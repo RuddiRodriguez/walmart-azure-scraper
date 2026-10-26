@@ -78,6 +78,19 @@ def check():
             args.resume = True
             run(args)
             assert fetch.call_count == 1
+            import retention
+            catalog=retention.connect(folder/'data/100/catalog.sqlite', settings['stores'][0])
+            retained=json.loads((folder/'data/100'/pointer['products']).read_text())[0]
+            retained.update(url='https://www.walmart.com/ip/9999942',regular_price='',sale_price='',crawl_date='2020-01-01T10:00:00+00:00')
+            retention.observe(catalog,'9999942',retained,'confirmed_unavailable','historical-test','2020-01-01T10:00:00+00:00',True)
+            catalog.close()
+            args.resume=False
+            run(args)
+            next_pointer=json.loads((folder/'data/100/latest.json').read_text())
+            carried=json.loads((folder/'data/100'/next_pointer['products']).read_text())
+            assert len(carried)==2 and next(r for r in carried if r['url'].endswith('9999942'))==retained
+            next_report=json.loads((folder/'data/100'/next_pointer['report']).read_text())
+            assert next_report['carried_observations']==1 and next_report['passed']
         original_output = args.output
         args.output = str(folder / 'location-failure'); args.resume = False
         bad_data = copy.deepcopy(source['product']); bad_data['location']['intent'] = 'SHIPPING'
@@ -123,7 +136,7 @@ def check():
             raise AssertionError('Cross-mode resume accepted')
     result = {'mode': 'offline simulated navigation; captured product fixture; no live browser or network',
               'passed': True, 'checks': ['Two pages traversed', 'Repeated product ID deduplicated',
-              'Complete valid full-mode result publishes atomically', 'Resume does not repeat committed product', 'Cross-mode resume rejected', 'Rejected location response saved before validation failure', 'Location mismatch permanently prevents publication even after resume', 'Previously mismatched run rejected before browser launch or product request', 'Early resume failure records the failed validation stage', 'Diagnostic snapshot failure cannot mask a location mismatch or its publication block', 'Placeholder and JavaScript next-page controls do not become URL loops', 'Real pagination URL and real loop targets preserved for validation', 'Explicit next-page metadata preserves functional filters', 'Unexpected page jumps rejected', 'Explicit wrong-store primary listing rejected']}
+              'Complete valid full-mode result publishes atomically', 'Resume does not repeat committed product', 'Cross-mode resume rejected', 'Rejected location response saved before validation failure', 'Location mismatch permanently prevents publication even after resume', 'Previously mismatched run rejected before browser launch or product request', 'Early resume failure records the failed validation stage', 'Diagnostic snapshot failure cannot mask a location mismatch or its publication block', 'Placeholder and JavaScript next-page controls do not become URL loops', 'Real pagination URL and real loop targets preserved for validation', 'Explicit next-page metadata preserves functional filters', 'Unexpected page jumps rejected', 'Explicit wrong-store primary listing rejected', 'New full run carries unseen unavailable product without changing original date or prices']}
     Path('evidence/runner-flow-check.json').write_text(json.dumps(result, indent=2) + '\n')
     print(json.dumps(result))
 

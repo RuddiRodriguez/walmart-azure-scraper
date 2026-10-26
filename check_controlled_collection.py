@@ -17,7 +17,7 @@ def check():
     search = {'paginationV2': {'pageProperties': {'stores': '100', 'facet': 'fulfillment_method:Pickup', 'page': 1}, 'maxPage': 1}}
     html = '<title>Fixture</title><script id="__NEXT_DATA__">' + json.dumps({'props': {'pageProps': {'initialData': {'searchResult': search}}}}) + '</script>'
     checks = []
-    for mode in ['success', 'wrong_store', 'wrong_identity', 'control_wrong', 'blocked', 'empty_page', 'budget', 'product_error']:
+    for mode in ['success', 'wrong_store', 'wrong_identity', 'control_wrong', 'blocked', 'empty_page', 'budget', 'product_error', 'missing_price', 'unavailable']:
         calls = {'product': 0}
         def fetch(sb, url, settings, capture=None):
             capture('request', url=url, attempt=1)
@@ -34,6 +34,11 @@ def check():
                 product['location']['pickupLocation']['storeId'] = '3081'
             if mode == 'wrong_identity' and calls['product'] == 2:
                 product['usItemId'] = '999999'
+            if mode == 'unavailable' and calls['product'] == 2:
+                product['availabilityStatus']='OUT_OF_STOCK'
+                product['fulfillmentSummary']=[]
+                product['fulfillmentOptions']=[dict(type='PICKUP',locationText=json.loads(Path('config/stores.json').read_text())['stores'][0]['name'],availabilityStatus='NOT_AVAILABLE')]
+                product['sellerName']=product['sellerDisplayName']=None
             page = BeautifulSoup('<title>Fixture</title><script id="__NEXT_DATA__"></script>', 'html.parser')
             page.script.string = json.dumps({'props': {'pageProps': {'initialData': {'data': {'product': product}}}}})
             return page
@@ -42,6 +47,8 @@ def check():
             for key in ['5001', '5002'] if category == 'Food' else ['5002', '6001']:
                 candidate = copy.deepcopy(source['candidate'])
                 candidate.update(item_id=key, category=category, url='https://www.walmart.com/ip/' + key)
+                if mode=='missing_price' and key=='5001':
+                    candidate['price_text']=''
                 items.append(candidate)
             return items, [], search
         def navigation(*_):
@@ -52,13 +59,21 @@ def check():
                     categories=[dict(category=n, required_root='https://www.walmart.com/browse/' + path, urls=['https://www.walmart.com/browse/' + path]) for n, path in [('Food', 'food/976759'), ('Art Supplies', 'art/5899871')]])
         browser = SimpleNamespace(scroll_down=lambda _: None, sleep=lambda _: None, get_page_source=lambda: html, quit=lambda: None)
         with tempfile.TemporaryDirectory(dir='data') as folder:
+            plan['catalog_path'] = str(Path(folder) / 'catalog.sqlite')
             with patch.object(collector, 'open_browser', return_value=browser), patch.object(collector, 'select_store', return_value='logo'), \
                  patch.object(collector, 'verify_banner'), patch.object(collector, 'navigate', side_effect=navigation), \
                  patch.object(collector, 'fetch_product', side_effect=fetch), patch.object(collector, 'listing_from_rendered', side_effect=candidates), \
                  patch.object(collector, 'discover', return_value={}), patch.object(collector.time, 'sleep'):
                 collector.run(Path(folder) / 'run', plan)
             result = json.loads((Path(folder) / 'run/report.json').read_text())
-            if mode == 'success':
+            if mode in ['missing_price','unavailable']:
+                assert result['target_reached'] and result['accepted_records']==3 and result['sample_validation']['passed']
+                rows=json.loads((Path(folder)/'run/products.json').read_text())
+                assert rows[0]['regular_price']=='' and rows[0]['sale_price']==''
+                history=json.loads((Path(folder)/'run/observation-history.json').read_text())
+                assert len(history)==3 and history[0]['record']['crawl_date']==rows[0]['crawl_date']
+                checks.append(mode+' retained by actual collector with blank prices and durable dated history')
+            elif mode == 'success':
                 assert result['target_reached'] and result['accepted_records'] == 3 and result['sample_validation']['passed']
                 assert result['exclusions']['duplicate_product_id'] == 1
                 checks.append('Cross-category target reached; duplicate excluded; actual schema validation passed')
@@ -93,6 +108,7 @@ def check():
                                           ('controlled', 260 * 2**20, 1024 * 2**20, True),
                                           ('clamped', 1024 * 2**20, 2048 * 2**20, False)]:
         with tempfile.TemporaryDirectory(dir='data') as folder:
+            plan['catalog_path'] = str(Path(folder) / 'catalog.sqlite')
             state = dict(started=time.monotonic(), limits=dict(product_requests=1, listing_requests=1, seconds=10),
                          product_requests=0, listing_requests=0, sequence=0, body_bytes=total)
             if limit:
