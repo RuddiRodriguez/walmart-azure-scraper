@@ -1,44 +1,34 @@
-# Current delivery checkpoint
+# Current delivery checkpoint — 26 October 2026
 
-Goal: reviewable source and evidence against client requirements. More reviews expected; no
-additional exploratory collection/restart is queued. No client sending/submission authorized.
+Review package: review-20261026-step9. Source/ZIP/hash instructions: VERIFY_PACKAGE.md.
+Unsent client draft: REPLY_DRAFT.txt. No client sending/submission authorized or performed.
 
-## First controlled sample (baseline)
+## Completed evidence
 
-Fresh506 distinct products across all 11required categories, source e90c5f0, one2063.272second run.
-11 responses rejected (4 no local pickup,7 missing listing prices);0 processing errors,
-0 duplicate IDs/URLs.35 local unavailable records retained with blank local prices.
+- Two independent506record live samples, all11parent categories, identical producer bytes/settings,
+  sourcee90c5f0/2ff5e20. No merging.0duplicates/processing errors;35unavailable retained each.
+- First11rejections; repeat6including2wrong store. Invalid data excluded while collection continued.
+  Every accepted row source-replayed:506each.537/533complete body hashes and18/19native hashes passed.
+- Repeat comparison:468common IDs,433nonblank prices unchanged,1common item now locally unavailable.
+- Current recovery source45ba7c4: one three-product/one-category live SIGKILL/resume,11checks passed,
+ 3source replays/7complete body hashes/1native hash. Saved data unchanged; unfinished work retried once.
+- Two actual complete wrong/correct private response pairs captured in separate stopped79/68runs.
+  Public metadata only; reviewed body sharing pending. Re-fetch is not a remedy claim.
+- Offline safeguards/source checks clearly separated from live collection. Historical500and33samples
+  remain separate. Public package contains safe evidence only; private originals remain local.
 
-Actual JSON:evidence/controlled-skip-invalid-20261025/products.json.
-Independent audit:evidence/controlled-skip-invalid-20261025/summary.json.
-All506 accepted records replayed against original source;537 Fetch body and18 native snapshot hashes
-verified. Both store 100/72712/PICKUP controls passed. Corrected mode rejects/logs bad responses and
-continues, without re-fetching. No wrong-store response occurred in this run; that continuation path
-was tested offline. No transport remedy or sustained reliability claim.
+## Still open, with bounded next actions
 
-Historical500,33/67/5samples and stopped79/68attempts remain separate and were not merged. Those
-stopped attempts produced2 complete private wrong/correct pairs; reviewed sharing bodies/access
-still pending. Private originals/native DOM/session details never pushed.
+| Gap | Potential next action / blocker |
+|---|---|
+| Prevent upstream store drift | One fresh-session comparison after observed drift,5minutes; no supported cure yet |
+| Reviewed raw pair sharing | Review/redact two complete pairs; agree private transfer, preserve original hashes |
+| Full uncapped coverage | Resolve69uncertain associations/3new landings/empty ArtAprons; account for and exhaust queues |
+| Genuine volume/digital offers | Client-known qualifying local examples or capped targeted search; zero verified so far |
+| Full-run repetition/recovery | After scope resolution, same frozen version/config full runs and controlled restart |
+| Azure | Approved access required; local acceptance before bounded cloud execution |
 
-## Still open
-
-- Full uncapped category scope/queue exhaustion, uncertain landing links and empty ArtAprons route.
-- Genuine volume/digital offer examples.
-- Repeated complete collection and final-wrapper live interruption/resume.
-- Reviewed raw-pair sharing/access and refreshed frozenZIP/unsent client draft.
-- Azure access/execution (not granted or run).
-
-Older production-core3-product recovery proof retains its recorded source/config/scope. Current
-506 sample acceptance does not complete all project requirements. Run/audit instructions in
-CONTROLLED_COLLECTION.md. Missing source values remain empty; no UPC/weight/PPM/deal price invented.
-
-## Latest: bounded repeat completed
-
-Same producer hashes/settings/plan: repeat source 2ff5e20 produced506 validated records across all 11
-categories in 2048.379 seconds, versus 2063.272 seconds baseline.6rejections (2 wrong store,4 no pickup),
-0 processing errors/duplicates,35 unavailable retained.506 replays/533 body/19 snapshot hashes passed.
-468 common IDs,433 known-price pairs unchanged,1 matched product now locally unavailable.38 sample-only
-IDs each side are not product additions/deletions. Original baseline unchanged. Comparison/data in
-evidence/controlled-skip-invalid-repeat-20261025/. No job running; nothing sent to client.
-This closes requested bounded repeat only. Repeated full uncapped collection/recovery/Azure/offers
-and reviewed pair sharing still open. No upstream store-drift remedy claim.
+No responsible full-completion date yet. Proposed next diagnostic update26October2026 18:00CET
+(UTC+1), written as an unsent proposal; no automatic test or client message scheduled.
+Current archive verification checks files/exports offline. It does not replay private bodies again,
+prove full coverage or transfer earlier506results to changed recovery code. No live job running.

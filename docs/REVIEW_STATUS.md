@@ -103,9 +103,17 @@ One or two corrected re-fetches are not a demonstrated remedy.
   but does not replace ArtAprons coverage. Pending queue counts remain in the fresh sample report.
 - Genuine volume/digital deal examples:zero verified. New dataset has no deal examples.
 - Repeated full uncapped collection and sustained reliability beyond the two bounded samples.
-- Final-version interruption/resume for this controlled wrapper. Existing production-core3-product
-  SIGKILL/resume proof applies only to its recorded source/config/scope, not this new wrapper.
-- Raw-pair reviewed sharing copies/access and refreshed full package/manifest/unsent client draft.
+- Full-catalog recovery/every interruption point remains unproven. Current collector passed the
+  separately scoped three-product live SIGKILL/resume at45ba7c4; no large run after recovery change.
+- Raw-pair reviewed sharing copies/access remain pending. Updated public package and unsent draft
+  frozen as review-20261026-step9; verification instructions in docs/VERIFY_PACKAGE.md.
 - Azure:no access granted, no deployment/test executed.
 
 No production acceptance or full project completion claimed. Nothing sent/submitted to client.
+
+## Step9 review package
+
+Frozen source/evidence version:review-20261026-step9. Includes separate two506datasets, current-source
+recovery3, historical samples, source checks, safe logs/metadata, manifest and unsent client draft.
+No new collection or Azure test during packaging. Exact tagged commit/local ZIP receipt recorded
+after freeze in evidence/review-package-20261026/receipt.json on main. Raw originals remain private.

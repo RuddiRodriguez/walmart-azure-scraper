@@ -1,23 +1,26 @@
-UNSENT DRAFT — 25 October 2026, 19:21 CET (UTC+1)
+UNSENT DRAFT — 26 October 2026
 
 Hi,
 
-Thanks for confirming Bentonville #100, 406 S Walton Blvd, AR 72712, PICKUP for the demonstration. Here’s the updated versioned package:
-https://github.com/RuddiRodriguez/walmart-azure-scraper/tree/review-20261025-final-v2
+Thanks for the clear feedback. The updated review package is here:
+https://github.com/RuddiRodriguez/walmart-azure-scraper/tree/review-20261026-step9
+Download: https://github.com/RuddiRodriguez/walmart-azure-scraper/archive/refs/tags/review-20261026-step9.zip
 
-It includes source, running instructions, hashes, logs and source evidence. Collector modules match live-tested commit 53cb6d94be5fc29eeedd32cd3f75b129d2f2aed4; file hashes are in evidence/SHA256SUMS.json. evidence/products-500.json still contains the earlier 500 genuine, distinct products. It remains separate from the two 33-product samples and today’s diagnostic results.
+It includes versioned code, running instructions, actual JSON, logs, source checks and file hashes. Package verification is in docs/VERIFY_PACKAGE.md.
 
-I tested the smallest session change: the same six products in one session versus fresh sessions after three products, keeping browser-fetch transport. Both approaches passed with matching prices and Store 100/PICKUP response identifiers. No drift appeared, so this does not establish batching as a remedy.
+Two separate live runs each collected 506 genuine, distinct products across all 11 required parent categories, using identical collection code/settings. Each retained 35 locally unavailable products with blank prices. The repeat excluded two wrong-store responses and continued safely; no duplicates or processing errors occurred. All accepted records passed independent source checks. These datasets remain separate from the earlier 500-product demonstration and two 33-product samples.
 
-Capture now saves complete Fetch-decoded bodies before parsing, with request options, timing, sequence and attempts. Thirty-five bodies are retained privately with hashes and redaction drafts; public evidence contains metadata and selected listing/product source fields. The requested complete wrong/correct pair remains missing: the earlier wrong result was saved as product JSON, and today’s test did not reproduce it.
+Checks use listing/product identifiers, store 100, ZIP 72712, PICKUP and price evidence, rather than trusting the banner. Invalid responses stay out of local-price output. Review runs preserve earlier datasets without publishing over them; last-good publication safeguards were tested separately offline.
 
-Store checks inspect listing/product identifiers, ZIP, fulfillment and local offer evidence, so a correct banner cannot override conflicting data. Any mismatch fails its run. Unavailable-product safeguards and last-good publication checks passed offline; earlier genuine unavailable examples remain separately dated.
+The smallest change is a listing/product validation gate, not a claimed transport cure. A fresh session after detected drift is a possible next bounded comparison. The current recovery version, 45ba7c47c0415981c330e911abefa40d0a183be5, passed a separate live three-product hard-stop/resume test: saved data survived, unfinished work resumed once, no duplicate saves. The two 506-product runs used the earlier producer version; they do not prove large-run recovery with this change.
 
-Current-code live interruption/resume passed: one saved product survived SIGKILL, the interrupted product completed once after restart, and all three final records passed source checks. Two offer searches checked three distinct products; no qualifying volume/digital example was verified.
+Two genuine wrong-store/corrected re-fetch pairs are retained privately, with hashes, price context, redacted request settings and sequence/retry metadata in the package. Complete sharing copies still need privacy review. Browser-generated cookies/headers were not recorded. A successful re-fetch is not proof of a remedy.
 
-Tests used local Python/Chrome, without paid scraping services. The comparison stayed within 36 product requests/40 minutes; recovery within 12 attempts/15 minutes; offer review within 8 product requests/10 minutes. Exact environment and limits are documented. Azure was not run, and I understand access has not been granted.
+Remaining work: review and share those pairs; resolve uncertain/empty category routes and exhaust all required pages; capture genuine volume/digital offers; test full-coverage repetition/recovery; then test Azure once access is approved. Store drift prevention remains unproven. These need bounded follow-up tests, not invented or inferred results.
 
-This is the next diagnostic deliverable requested in your feedback, prepared 25 October 2026, 19:21 CET (UTC+1). Still open are the paired drift capture, sustained reliability, full uncapped coverage, repeated complete collection, real offers and Azure acceptance. A further bounded drift investigation is the next proposed step; a dependable full-completion date still depends on resolving that blocker.
+Tests used local Python/Chrome, no paid service. Each 506 run was capped at 750 product/control requests, 80 listing requests and 60 minutes; observed times were about 34 minutes. Recovery used 7 product/control requests and 1 listing request in 90 seconds, within its 10-minute cap. Browser/UI assets are additional requests. Exact environment and storage limits are documented. Azure has not been run; no access was granted.
+
+This diagnostic package is ready for review. Proposed next diagnostic update: 26 October, 18:00 CET (UTC+1), covering remaining evidence gaps and a bounded next test. A responsible full-completion date depends on coverage, offer evidence and approved Azure access. No further test is scheduled by this draft.
 
 Thanks,
 Ruddi

@@ -13,12 +13,14 @@
     },
     {
       "request": "Retain listing/product identifiers and price-bearing #100/PICKUP context",
-      "status": "Passed for fresh506bounded sample:506source replays,537body hashes,18native snapshots verified",
+      "status": "Two separate506bounded samples:every accepted row independently source-audited; current recovery3also audited",
       "evidence": [
         "evidence/diagnostic-20261025/step3-results/source-contexts.json",
         "evidence/diagnostic-20261025/step4-offers/source-contexts.json",
         "evidence/corrected-plan-20261025/step2-results/source-contexts.json",
-        "evidence/controlled-skip-invalid-20261025/summary.json"
+        "evidence/controlled-skip-invalid-20261025/summary.json",
+        "evidence/controlled-skip-invalid-repeat-20261025/summary.json",
+        "evidence/step8-controlled-recovery-20261026/summary.json"
       ],
       "completion_gate": "Actual response identity/store/ZIP/fulfillment and local price association; banner alone insufficient"
     },
@@ -39,9 +41,11 @@
     },
     {
       "request": "Redacted request settings,session sequence,retry behavior",
-      "status": "Partial:metadata available; requested raw pair absent",
+      "status": "Public metadata ties both complete private pairs to response/settings/session sequence and identical-options single re-fetch; privacy-reviewed body sharing pending; browser-generated headers not captured",
       "evidence": [
-        "evidence/diagnostic-20261025/step3-results/capture-metadata.json"
+        "evidence/diagnostic-20261025/step3-results/capture-metadata.json",
+        "evidence/controlled-500-20261025/raw-pair-metadata.json",
+        "evidence/controlled-500-continuation-20261025/raw-pair-metadata.json"
       ],
       "completion_gate": "Metadata tied to both pair members; browser-generated headers explicitly unobserved; raw sharing copies privacy-reviewed"
     },
@@ -68,7 +72,7 @@
         "evidence/controlled-skip-invalid-20261025/summary.json",
         "evidence/controlled-skip-invalid-repeat-20261025/summary.json"
       ],
-      "completion_gate": "Invalid response cannot publish; supported local unavailable products retained; prior good data/pointer survives. Current matched sample had no unavailable items"
+      "completion_gate": "Invalid response cannot publish; supported local unavailable retained; prior good data/pointer survives.35genuine unavailable in each506sample; publication safeguards separate offline evidence."
     },
     {
       "request": "Precise environment/service dependency and bounded request/runtime/cost limits",
@@ -137,20 +141,24 @@
     },
     {
       "request": "Authoritative version/hash and accessible current package",
-      "status": "Repo contains two506datasets/source audits/comparison; producer hashes identicale90c5f0/2ff5e20; older frozenZIP historical",
+      "status": "Updated code/source audits/separate actual JSON frozen as review-20261026-step9; exact tagged commit/local ZIP receipt recorded after freeze on main",
       "evidence": [
         "evidence/diagnostic-20261025/public-package-receipt.json",
         "evidence/corrected-plan-20261025/step1-baseline.json",
         "evidence/controlled-skip-invalid-20261025/summary.json",
-        "evidence/controlled-skip-invalid-repeat-20261025/preflight.json"
+        "evidence/controlled-skip-invalid-repeat-20261025/preflight.json",
+        "docs/VERIFY_PACKAGE.md",
+        "evidence/step8-controlled-recovery-20261026/summary.json"
       ],
       "completion_gate": "Frozen tag/commit,source/config hashes,accessible package and verified receipts"
     },
     {
       "request": "Date for next diagnostic deliverable",
-      "status": "Proposed date recorded; delivery not completed",
+      "status": "Current diagnostic package prepared26October2026; unsent draft proposes next update26October18:00CET. No client delivery or next test scheduled; full-completion date not responsibly established",
       "evidence": [
-        "evidence/corrected-plan-20261025/step1-baseline.json"
+        "evidence/corrected-plan-20261025/step1-baseline.json",
+        "docs/REPLY_DRAFT.txt",
+        "docs/DELIVERY_CHECKPOINT_CURRENT.md"
       ],
       "completion_gate": "Prepare diagnostic evidence/findings/blockers by proposed26October2026 18:00CET. A dated proposal is not proof of delivery"
     },

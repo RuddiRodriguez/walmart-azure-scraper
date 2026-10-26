@@ -138,3 +138,10 @@ contact. Evidence/side-by-side comparison: evidence/controlled-skip-invalid-repe
 
 ## Step8 current collector live recovery passed
 Source45ba7c4, one Art Supplies sample: SIGKILL after one committed record during next recorded product request; one unchanged-code/settings resume completed3genuine distinct records in90.378seconds. All11recovery/evidence checks passed; existing11offline orchestration checks passed separately. Independent3source replays,7complete body hashes,1native hash passed. Interruptedrequest metadata preserved, no complete body falsely counted.7product/control+1listing requests,4,348,416bodybytes; original600second/12product/2listing caps carried over. Changedsettings rejected beforebrowser; oldsavedrecord/bodies unchanged, interruptedproductretriedonce, committedproductsnotrefetched, no duplicatecommits. No unavailable/invalidresponse cases observed in this tiny sample; no claim for allcrashwindows/fullcatalog or500repeat onnewsource. Fullscope/offers/driftremedy/reviewedpairsharing/refreshedpackage/Azure remainopen. Safeevidence: evidence/step8-controlled-recovery-20261026/. Rawcheckpoint/bodies/session/native evidence private. Nothing sent/submitted. Alljobsfinished.
+
+## Step9 updated review package
+Current source/instructions, separate actual datasets and audits, safe evidence/logs, manifest and
+unsent client draft frozen as review-20261026-step9. Verification docs distinguish private raw replay,
+offline archive checks and actual live collection. Current collector matches recovery45ba7c4;
+large506proof remains earlier producer scope. Open gaps retained; next diagnostic date proposed,
+not scheduled/delivered. Receipt added separately after freeze. No live test/client contact/Azure.

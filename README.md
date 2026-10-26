@@ -40,7 +40,13 @@ This proves bounded-sample repetition, **not full uncapped category coverage/rep
 Current-wrapper recovery passed a separate three-product live SIGKILL/resume test at 45ba7c4;
 see [step8 results](evidence/step8-controlled-recovery-20261026/RESULTS.md). Full-catalog recovery remains unproven.
 Offers, Azure and reviewed private-pair sharing remain open. Earlier
-samples/failed runs stay separate; older frozen ZIP is historical. Nothing sent/submitted to client.
+samples/failed runs stay separate; earlier frozen ZIPs are historical. Nothing sent/submitted to client.
+
+## Updated review package
+
+Frozen version: `review-20261026-step9`. [Download source/evidence ZIP](https://github.com/RuddiRodriguez/walmart-azure-scraper/archive/refs/tags/review-20261026-step9.zip).
+[Verify package](docs/VERIFY_PACKAGE.md); [unsent client draft](docs/REPLY_DRAFT.txt).
+Earlier tags/ZIP receipts remain historical. New package does not prove open requirements complete.
 
 ## Local setup
 
