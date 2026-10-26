@@ -1,0 +1,42 @@
+{
+  "version": "review-20261026-step9",
+  "source_commit": "c433dce631ba17ffb10624e3c4765a89de51b6fe",
+  "filename": "walmart-review-20261026-step9.zip",
+  "bytes": 118221404,
+  "sha256": "98b6e3740afa7fc066f3a0253b21c46eefbb0a340bdb43390c3d7425c9148614",
+  "zip_crc_passed": true,
+  "file_manifest_verified": 954,
+  "archive_inventory_verified": true,
+  "private_runtime_files_excluded": true,
+  "datasets": [
+    {
+      "folder": "controlled-skip-invalid-20261025",
+      "records": 506,
+      "source_commit": "e90c5f059bc6e2ae25a33b97230ed798bd4177be",
+      "json_sha256": "eb54f4bd0e123b88f9fe6a6442b10cc67a917d9df390304116d6cf9a933b8268"
+    },
+    {
+      "folder": "controlled-skip-invalid-repeat-20261025",
+      "records": 506,
+      "source_commit": "2ff5e2082444f17b46f11cc5beefe05e572f11b1",
+      "json_sha256": "2c5b51df299bfdac87a015d7b8d3e286acf483a1ac3cf72777d60ba813df80d1"
+    },
+    {
+      "folder": "step8-controlled-recovery-20261026",
+      "records": 3,
+      "source_commit": "45ba7c47c0415981c330e911abefa40d0a183be5",
+      "json_sha256": "5becade39b040e72bac088c5c98a55b06ff05798678da55ca96d7911d0040e53"
+    }
+  ],
+  "recovery_checks": 11,
+  "scope": "Offline archive/manifest/export verification; no new live collection or raw-body replay",
+  "client_message_sent": false,
+  "contest_submitted": false,
+  "azure_executed": false,
+  "built_utc": "2026-10-26T00:13:06.557823+00:00",
+  "current_collector_matches_live_recovery": true,
+  "tag_url": "https://github.com/RuddiRodriguez/walmart-azure-scraper/tree/review-20261026-step9",
+  "github_archive_url": "https://github.com/RuddiRodriguez/walmart-azure-scraper/archive/refs/tags/review-20261026-step9.zip",
+  "receipt_scope": "Post-freeze receipt, outside frozen archive; GitHub-generated outer ZIP hash may differ",
+  "github_release_published": false
+}

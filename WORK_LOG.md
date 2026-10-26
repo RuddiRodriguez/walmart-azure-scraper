@@ -629,3 +629,6 @@ Source45ba7c4, one Art Supplies sample: SIGKILL after one committed record durin
 - Remaining gaps explicitly open: prevention remedy, reviewed private body sharing, uncapped scope/queues/ArtAprons/uncertain links, genuine offers, full-catalog repetition/recovery, Azure access/execution. Nothing sent/submitted; no live run started.
 
 - First offline archive check rejected five already-public historical count-only .log files because blanket extension filter was too broad. Reviewed their contents for session/credential/HTML fields; no hits. Checker now allows only those five exact reviewed paths; private/raw/new runtime logs still excluded. Failed local ZIP removed; unpublished local tag will be recreated at corrected freeze. No live requests.
+
+## Step9 freeze verification passed
+Frozen tagreview-20261026-step9 atc433dce631ba17ffb10624e3c4765a89de51b6fe. LocalZIP118,221,404bytes; SHA25698b6e3740afa7fc066f3a0253b21c46eefbb0a340bdb43390c3d7425c9148614. ZIPCRC/fullinventory/954file hashes passed. Separate actual506/506/3JSON exports validated against stored source-audit reports and11recoverychecks; current collector producer files match live45ba7c4hashes. No new private-body replay or live request. Receipt separately committed afterfreeze; GitHubautoZIPmaydifferouterhash. No client contact/submission/release/Azure.
