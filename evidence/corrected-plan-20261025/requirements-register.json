@@ -26,7 +26,7 @@
     },
     {
       "request": "Paired complete wrong-store response and corrected re-fetch",
-      "status": "Two actual complete private pairs hash/context verified; privacy-reviewed sharing bodies/access pending, not marked complete",
+      "status": "Sharing preparation complete:four actual source-verified heavily redacted response copies, source commits/hashes, preserved public fields, settings/sequence and agent privacy review ready. No client delivery/independent verification yet; full originals private.",
       "evidence": [
         "docs/STEP1_BASELINE_20261025.md",
         "evidence/corrected-plan-20261025/step2-results/summary.json",
@@ -35,17 +35,23 @@
         "evidence/corrected-plan-20261025/historical-length-probe/summary.json",
         "evidence/corrected-plan-20261025/rendered-candidate-probe/summary.json",
         "evidence/controlled-500-20261025/raw-pair-metadata.json",
-        "evidence/controlled-500-continuation-20261025/raw-pair-metadata.json"
+        "evidence/controlled-500-continuation-20261025/raw-pair-metadata.json",
+        "evidence/response-pairs-reviewed-20261026/README.md",
+        "evidence/response-pairs-reviewed-20261026/reviewed-pairs.json",
+        "evidence/response-pairs-reviewed-20261026/privacy-review.json"
       ],
       "completion_gate": "Actual complete wrong and corrected bodies from documented sequence; reviewed redacted copies; hashes; no reconstructed data"
     },
     {
       "request": "Redacted request settings,session sequence,retry behavior",
-      "status": "Public metadata ties both complete private pairs to response/settings/session sequence and identical-options single re-fetch; privacy-reviewed body sharing pending; browser-generated headers not captured",
+      "status": "Sharing preparation complete:four actual source-verified heavily redacted response copies, source commits/hashes, preserved public fields, settings/sequence and agent privacy review ready. No client delivery/independent verification yet; full originals private.",
       "evidence": [
         "evidence/diagnostic-20261025/step3-results/capture-metadata.json",
         "evidence/controlled-500-20261025/raw-pair-metadata.json",
-        "evidence/controlled-500-continuation-20261025/raw-pair-metadata.json"
+        "evidence/controlled-500-continuation-20261025/raw-pair-metadata.json",
+        "evidence/response-pairs-reviewed-20261026/README.md",
+        "evidence/response-pairs-reviewed-20261026/reviewed-pairs.json",
+        "evidence/response-pairs-reviewed-20261026/privacy-review.json"
       ],
       "completion_gate": "Metadata tied to both pair members; browser-generated headers explicitly unobserved; raw sharing copies privacy-reviewed"
     },

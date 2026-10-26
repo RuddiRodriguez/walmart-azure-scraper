@@ -1,0 +1,699 @@
+{
+  "scope": "Privacy-reviewed redacted response documents from complete private Fetch-decoded originals; no new live requests",
+  "demonstration": {
+    "store": "100",
+    "address": "406 S Walton Blvd, Bentonville, AR 72712",
+    "fulfillment": "PICKUP"
+  },
+  "redaction": "All HTML attributes and text redacted except one allowlisted product JSON subtree; other original JSON replaced. HTML reserialized, not byte-identical original. No reconstructed product/store/price values.",
+  "pairs": [
+    {
+      "run": "controlled-500-20261025",
+      "source_commit": "6f9284bfb698acfac62bc48106bb96bac37aa530",
+      "source_hashes": {
+        "controlled_collection.py": "0c77f046457e730014d83f447d3f3779e18fcb2cecce3bd1061d309e2e05e124",
+        "diagnostic_capture.py": "7aae043eed5e95efb2a1bf6de58af0dc93c1473d37ad4cfbe2748aa8c0268e65",
+        "capture_store_drift.py": "9ce534bfb7b887af0776fa18843dc19e162c397e3a6e7f844ffb97f5aa5bf6f7",
+        "scrape.py": "ac43589987b1811f0b707f24eb1c1556d978b72f12a630caee784e7e50740e47",
+        "browser.py": "2b46d80e5b5edd1b75c7cbf36d460d96da91cfd218e0b1dfa309dcc3459cec24",
+        "extract.py": "e252ee14a9e66c9be33220a014984e161192651759c9619202ecf73c39242605",
+        "storage.py": "2453aa318e9e59b37bcc85dd3a6b9c5d8b4cc7616368e4cbf01f41b054385c90",
+        "validate.py": "d316b2e14887bbc02b08a5b54af6fe7c5d340d1ad9b1f5819e242de39ec53ada"
+      },
+      "retry_behavior": "One diagnostic same-session re-fetch of identical URL/settings after rejected context; failed run stayed invalid. No new session; no cure claimed.",
+      "responses": [
+        {
+          "role": "wrong",
+          "sequence": 94,
+          "original_private_path": "data/controlled-500-20261025/captures/collection-094.body",
+          "original_body_sha256": "504e3c3e61feb374e377b8fcd4cf8762350e34eb14cfda722a31cd5a48a58815",
+          "original_bytes": 562316,
+          "redacted_path": "evidence/response-pairs-reviewed-20261026/controlled-500-20261025-wrong.redacted.html",
+          "redacted_sha256": "7187e41d01733f1862160a941eeb072ad718daded43393bf16931f26dde9d69c",
+          "retained_product": {
+            "usItemId": "14898365",
+            "name": "Clorox Disinfecting Wipes Bleach Free Fresh Scent And Crisp Lemon Scent 75 Count 3 Pack",
+            "upc": "044600302089",
+            "sellerName": null,
+            "sellerDisplayName": "Walmart.com",
+            "availabilityStatus": "IN_STOCK",
+            "priceInfo": {
+              "dropPrice": false,
+              "priceDisplayCodes": {
+                "clearance": null,
+                "eligibleForAssociateDiscount": true,
+                "finalCostByWeight": null,
+                "priceDisplayCondition": null,
+                "reducedPrice": null,
+                "rollback": null,
+                "submapType": null,
+                "isB2BPrice": false,
+                "pricePerUnitUom": null,
+                "priceDisplayType": "UNKNOWN",
+                "priceComparedToNew": false
+              },
+              "currentPrice": {
+                "price": 12.78,
+                "priceString": "$12.78",
+                "variantPriceString": "$12.78",
+                "currencyUnit": "USD",
+                "bestValue": null,
+                "supportText": null,
+                "priceDisplay": "$12.78"
+              },
+              "basePrice": null,
+              "wasPrice": null,
+              "comparisonPrice": null,
+              "unitPrice": {
+                "price": 5.68,
+                "priceString": "$5.68/100 ct",
+                "variantPriceString": null,
+                "currencyUnit": "USD",
+                "bestValue": null,
+                "supportText": null
+              },
+              "savings": null,
+              "savingsAmount": null,
+              "secondaryOfferBoost": null,
+              "shipPrice": null,
+              "isPriceReduced": false,
+              "priceReducedDisplay": null,
+              "subscriptionPrice": null,
+              "priceRange": {
+                "minPrice": null,
+                "maxPrice": null,
+                "priceString": null,
+                "currencyUnit": null,
+                "denominations": null
+              },
+              "listPrice": null,
+              "capType": null,
+              "volumePriceTiers": [],
+              "walmartFundedAmount": null,
+              "wPlusEarlyAccessPrice": null,
+              "additionalFees": {
+                "dutyFee": {
+                  "price": 0,
+                  "priceString": "$0.00"
+                },
+                "shippingAndImportFee": {
+                  "price": 0,
+                  "priceString": "$0.00"
+                },
+                "giftCardMarginAndFee": null,
+                "estimatedTotalPrice": {
+                  "price": 12.78,
+                  "priceString": "$12.78"
+                },
+                "countryName": "United States"
+              },
+              "taxInfo": null
+            },
+            "location": {
+              "postalCode": "07030",
+              "stateOrProvinceCode": "NJ",
+              "city": "Hoboken",
+              "storeIds": [
+                "3520"
+              ],
+              "intent": "SHIPPING",
+              "pickupLocation": {
+                "storeId": "3520",
+                "accessType": null
+              }
+            },
+            "fulfillmentOptions": [
+              {
+                "type": "SHIPPING",
+                "intent": true,
+                "selected": true,
+                "availabilityStatus": "IN_STOCK",
+                "inventoryStatus": null,
+                "availableQuantity": null,
+                "maxOrderQuantity": 12,
+                "orderLimit": 12
+              },
+              {
+                "type": "PICKUP",
+                "intent": false,
+                "selected": false,
+                "availabilityStatus": "IN_STOCK",
+                "inventoryStatus": null,
+                "availableQuantity": null,
+                "maxOrderQuantity": 12,
+                "orderLimit": 12
+              },
+              {
+                "type": "DELIVERY",
+                "intent": false,
+                "selected": false,
+                "availabilityStatus": "IN_STOCK",
+                "availableQuantity": null,
+                "maxOrderQuantity": 12,
+                "orderLimit": 12
+              }
+            ]
+          },
+          "request": {
+            "url": "https://www.walmart.com/ip/Clorox-Disinfecting-and-Cleaning-Wipes-Crisp-Lemon-and-Fresh-Scent-75-Count-Each-3-Pack/14898365?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D",
+            "attempt": 1,
+            "started_utc": "2026-10-25T21:12:40.907928+00:00",
+            "settings": {
+              "method": "GET",
+              "cache": "no-store",
+              "credentials": "same-origin (browser default)",
+              "redirect": "follow (browser default)",
+              "timeout_seconds": 25,
+              "configured_attempts": 1,
+              "request_headers": "browser-managed; not captured"
+            }
+          },
+          "response": {
+            "status": 200,
+            "url": "https://www.walmart.com/ip/Clorox-Disinfecting-and-Cleaning-Wipes-Crisp-Lemon-and-Fresh-Scent-75-Count-Each-3-Pack/14898365?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D",
+            "redirected": false,
+            "headers": {
+              "date": "Sun, 25 Oct 2026 21:12:44 GMT",
+              "cache-control": "max-age=0, no-cache, no-store",
+              "cache-status": "Miss",
+              "vary": "Accept-Encoding",
+              "content-type": "text/html; charset=utf-8"
+            },
+            "received_utc": "2026-10-25T21:12:44.395455+00:00",
+            "elapsed_seconds": 3.488
+          },
+          "source_values_unchanged": true,
+          "original_scope": "Complete decoded bytes returned by browser Fetch; not wire/TLS capture"
+        },
+        {
+          "role": "refetch",
+          "sequence": 95,
+          "original_private_path": "data/controlled-500-20261025/captures/collection-095.body",
+          "original_body_sha256": "c7453892fd4009cd89dbd2f00b9d06c64f89a36f31e52d3b04d66028e7fade39",
+          "original_bytes": 511907,
+          "redacted_path": "evidence/response-pairs-reviewed-20261026/controlled-500-20261025-refetch.redacted.html",
+          "redacted_sha256": "62251a60715a89ae953c2c6f7f0931deb1e0589214af2fe158e7f3c2d6fa4f5a",
+          "retained_product": {
+            "usItemId": "14898365",
+            "name": "Clorox Disinfecting Wipes Bleach Free Fresh Scent And Crisp Lemon Scent 75 Count 3 Pack",
+            "upc": "044600302089",
+            "sellerName": null,
+            "sellerDisplayName": "Walmart.com",
+            "availabilityStatus": "IN_STOCK",
+            "priceInfo": {
+              "dropPrice": false,
+              "priceDisplayCodes": {
+                "clearance": null,
+                "eligibleForAssociateDiscount": true,
+                "finalCostByWeight": null,
+                "priceDisplayCondition": null,
+                "reducedPrice": null,
+                "rollback": null,
+                "submapType": null,
+                "isB2BPrice": false,
+                "pricePerUnitUom": null,
+                "priceDisplayType": "UNKNOWN",
+                "priceComparedToNew": false
+              },
+              "currentPrice": {
+                "price": 12.78,
+                "priceString": "$12.78",
+                "variantPriceString": "$12.78",
+                "currencyUnit": "USD",
+                "bestValue": null,
+                "supportText": null,
+                "priceDisplay": "$12.78"
+              },
+              "basePrice": null,
+              "wasPrice": null,
+              "comparisonPrice": null,
+              "unitPrice": {
+                "price": 5.68,
+                "priceString": "$5.68/100 ct",
+                "variantPriceString": null,
+                "currencyUnit": "USD",
+                "bestValue": null,
+                "supportText": null
+              },
+              "savings": null,
+              "savingsAmount": null,
+              "secondaryOfferBoost": null,
+              "shipPrice": null,
+              "isPriceReduced": false,
+              "priceReducedDisplay": null,
+              "subscriptionPrice": null,
+              "priceRange": {
+                "minPrice": null,
+                "maxPrice": null,
+                "priceString": null,
+                "currencyUnit": null,
+                "denominations": null
+              },
+              "listPrice": null,
+              "capType": null,
+              "volumePriceTiers": [],
+              "walmartFundedAmount": null,
+              "wPlusEarlyAccessPrice": null,
+              "additionalFees": {
+                "dutyFee": {
+                  "price": 0,
+                  "priceString": "$0.00"
+                },
+                "shippingAndImportFee": {
+                  "price": 0,
+                  "priceString": "$0.00"
+                },
+                "giftCardMarginAndFee": null,
+                "estimatedTotalPrice": {
+                  "price": 12.78,
+                  "priceString": "$12.78"
+                },
+                "countryName": "United States"
+              },
+              "taxInfo": null
+            },
+            "location": {
+              "postalCode": "72712",
+              "stateOrProvinceCode": "AR",
+              "city": "Bentonville",
+              "storeIds": [
+                "100"
+              ],
+              "intent": "PICKUP",
+              "pickupLocation": {
+                "storeId": "100",
+                "accessType": null
+              }
+            },
+            "fulfillmentOptions": [
+              {
+                "type": "SHIPPING",
+                "intent": false,
+                "selected": false,
+                "availabilityStatus": "IN_STOCK",
+                "inventoryStatus": null,
+                "availableQuantity": null,
+                "maxOrderQuantity": 12,
+                "orderLimit": 12
+              },
+              {
+                "type": "PICKUP",
+                "intent": true,
+                "selected": true,
+                "availabilityStatus": "IN_STOCK",
+                "inventoryStatus": null,
+                "availableQuantity": null,
+                "maxOrderQuantity": 12,
+                "orderLimit": 12
+              },
+              {
+                "type": "DELIVERY",
+                "intent": false,
+                "selected": false,
+                "availabilityStatus": "IN_STOCK",
+                "availableQuantity": null,
+                "maxOrderQuantity": 12,
+                "orderLimit": 12
+              }
+            ]
+          },
+          "request": {
+            "url": "https://www.walmart.com/ip/Clorox-Disinfecting-and-Cleaning-Wipes-Crisp-Lemon-and-Fresh-Scent-75-Count-Each-3-Pack/14898365?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D",
+            "attempt": 1,
+            "started_utc": "2026-10-25T21:12:44.521819+00:00",
+            "settings": {
+              "method": "GET",
+              "cache": "no-store",
+              "credentials": "same-origin (browser default)",
+              "redirect": "follow (browser default)",
+              "timeout_seconds": 25,
+              "configured_attempts": 1,
+              "request_headers": "browser-managed; not captured"
+            }
+          },
+          "response": {
+            "status": 200,
+            "url": "https://www.walmart.com/ip/Clorox-Disinfecting-and-Cleaning-Wipes-Crisp-Lemon-and-Fresh-Scent-75-Count-Each-3-Pack/14898365?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=REGULAR&athbdg=%5Bredacted%5D",
+            "redirected": false,
+            "headers": {
+              "date": "Sun, 25 Oct 2026 21:12:45 GMT",
+              "cache-control": "max-age=0, no-cache, no-store",
+              "cache-status": "Miss",
+              "vary": "Accept-Encoding",
+              "content-type": "text/html; charset=utf-8"
+            },
+            "received_utc": "2026-10-25T21:12:45.903342+00:00",
+            "elapsed_seconds": 1.382
+          },
+          "source_values_unchanged": true,
+          "original_scope": "Complete decoded bytes returned by browser Fetch; not wire/TLS capture"
+        }
+      ]
+    },
+    {
+      "run": "controlled-500-continuation-20261025",
+      "source_commit": "2a32583283d5a14a57f29857e17836c344bf6044",
+      "source_hashes": {
+        "controlled_collection.py": "b6172b99f5c8d1cef300ddc30fa868e12ffca6d5d32d3b591107025e28563684",
+        "diagnostic_capture.py": "7aae043eed5e95efb2a1bf6de58af0dc93c1473d37ad4cfbe2748aa8c0268e65",
+        "capture_store_drift.py": "9ce534bfb7b887af0776fa18843dc19e162c397e3a6e7f844ffb97f5aa5bf6f7",
+        "scrape.py": "ac43589987b1811f0b707f24eb1c1556d978b72f12a630caee784e7e50740e47",
+        "browser.py": "2b46d80e5b5edd1b75c7cbf36d460d96da91cfd218e0b1dfa309dcc3459cec24",
+        "extract.py": "e252ee14a9e66c9be33220a014984e161192651759c9619202ecf73c39242605",
+        "storage.py": "2453aa318e9e59b37bcc85dd3a6b9c5d8b4cc7616368e4cbf01f41b054385c90",
+        "validate.py": "d316b2e14887bbc02b08a5b54af6fe7c5d340d1ad9b1f5819e242de39ec53ada"
+      },
+      "retry_behavior": "One diagnostic same-session re-fetch of identical URL/settings after rejected context; failed run stayed invalid. No new session; no cure claimed.",
+      "responses": [
+        {
+          "role": "wrong",
+          "sequence": 72,
+          "original_private_path": "data/controlled-500-continuation-20261025/captures/collection-072.body",
+          "original_body_sha256": "0becaa265098ad68c3266708332b29fe3984a56c1cb5ebac498b03a1602c86f0",
+          "original_bytes": 598888,
+          "redacted_path": "evidence/response-pairs-reviewed-20261026/controlled-500-continuation-20261025-wrong.redacted.html",
+          "redacted_sha256": "3851900e69ccad9992eb439f481bd320a39a5b62b71cdafe2573f1c9b2e86844",
+          "retained_product": {
+            "usItemId": "51237368",
+            "name": "Clorox ToiletWand Disinfecting Brush Refills, Disposable Toilet Bowl Cleaner, Rainforest Rush, 10 Count",
+            "upc": "044600313924",
+            "sellerName": null,
+            "sellerDisplayName": "Walmart.com",
+            "availabilityStatus": "IN_STOCK",
+            "priceInfo": {
+              "dropPrice": false,
+              "priceDisplayCodes": {
+                "clearance": null,
+                "eligibleForAssociateDiscount": true,
+                "finalCostByWeight": null,
+                "priceDisplayCondition": null,
+                "reducedPrice": null,
+                "rollback": null,
+                "submapType": null,
+                "isB2BPrice": false,
+                "pricePerUnitUom": "OZ",
+                "priceDisplayType": "UNKNOWN",
+                "priceComparedToNew": false
+              },
+              "currentPrice": {
+                "price": 7.94,
+                "priceString": "$7.94",
+                "variantPriceString": "$7.94",
+                "currencyUnit": "USD",
+                "bestValue": null,
+                "supportText": null,
+                "priceDisplay": "$7.94"
+              },
+              "basePrice": null,
+              "wasPrice": null,
+              "comparisonPrice": null,
+              "unitPrice": {
+                "price": 4.67,
+                "priceString": "$4.67/oz",
+                "variantPriceString": null,
+                "currencyUnit": "USD",
+                "bestValue": null,
+                "supportText": null
+              },
+              "savings": null,
+              "savingsAmount": null,
+              "secondaryOfferBoost": null,
+              "shipPrice": null,
+              "isPriceReduced": false,
+              "priceReducedDisplay": null,
+              "subscriptionPrice": null,
+              "priceRange": {
+                "minPrice": null,
+                "maxPrice": null,
+                "priceString": null,
+                "currencyUnit": null,
+                "denominations": null
+              },
+              "listPrice": null,
+              "capType": null,
+              "volumePriceTiers": [],
+              "walmartFundedAmount": null,
+              "wPlusEarlyAccessPrice": null,
+              "additionalFees": {
+                "dutyFee": {
+                  "price": 0,
+                  "priceString": "$0.00"
+                },
+                "shippingAndImportFee": {
+                  "price": 0,
+                  "priceString": "$0.00"
+                },
+                "giftCardMarginAndFee": null,
+                "estimatedTotalPrice": {
+                  "price": 7.94,
+                  "priceString": "$7.94"
+                },
+                "countryName": null
+              },
+              "taxInfo": null
+            },
+            "location": {
+              "postalCode": "95829",
+              "stateOrProvinceCode": "CA",
+              "city": "Sacramento",
+              "storeIds": [
+                "3081"
+              ],
+              "intent": "SHIPPING",
+              "pickupLocation": {
+                "storeId": "3081",
+                "accessType": null
+              }
+            },
+            "fulfillmentOptions": [
+              {
+                "type": "SHIPPING",
+                "intent": true,
+                "selected": true,
+                "availabilityStatus": "IN_STOCK",
+                "inventoryStatus": null,
+                "availableQuantity": null,
+                "maxOrderQuantity": 12,
+                "orderLimit": 12
+              },
+              {
+                "type": "PICKUP",
+                "intent": false,
+                "selected": false,
+                "availabilityStatus": "IN_STOCK",
+                "inventoryStatus": null,
+                "availableQuantity": null,
+                "maxOrderQuantity": 12,
+                "orderLimit": 12
+              },
+              {
+                "type": "DELIVERY",
+                "intent": false,
+                "selected": false,
+                "availabilityStatus": "IN_STOCK",
+                "availableQuantity": null,
+                "maxOrderQuantity": 12,
+                "orderLimit": 12
+              }
+            ]
+          },
+          "request": {
+            "url": "https://www.walmart.com/ip/Clorox-ToiletWand-Disinfecting-Brush-Refills-Dispsable-Toilet-Bowl-Cleaner-Rainforest-Rush-10-Count/51237368?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT",
+            "attempt": 1,
+            "started_utc": "2026-10-25T21:24:11.988902+00:00",
+            "settings": {
+              "method": "GET",
+              "cache": "no-store",
+              "credentials": "same-origin (browser default)",
+              "redirect": "follow (browser default)",
+              "timeout_seconds": 25,
+              "configured_attempts": 1,
+              "request_headers": "browser-managed; not captured"
+            }
+          },
+          "response": {
+            "status": 200,
+            "url": "https://www.walmart.com/ip/Clorox-ToiletWand-Disinfecting-Brush-Refills-Dispsable-Toilet-Bowl-Cleaner-Rainforest-Rush-10-Count/51237368?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT",
+            "redirected": false,
+            "headers": {
+              "date": "Sun, 25 Oct 2026 21:24:12 GMT",
+              "cache-control": "max-age=0, no-cache, no-store",
+              "cache-status": "Miss",
+              "vary": "Accept-Encoding",
+              "content-type": "text/html; charset=utf-8"
+            },
+            "received_utc": "2026-10-25T21:24:13.164554+00:00",
+            "elapsed_seconds": 1.176
+          },
+          "source_values_unchanged": true,
+          "original_scope": "Complete decoded bytes returned by browser Fetch; not wire/TLS capture"
+        },
+        {
+          "role": "refetch",
+          "sequence": 73,
+          "original_private_path": "data/controlled-500-continuation-20261025/captures/collection-073.body",
+          "original_body_sha256": "449d965299963c4e9c0e2fc415e09662f2eae131fe1d9fe156a374f4e962cdf9",
+          "original_bytes": 599700,
+          "redacted_path": "evidence/response-pairs-reviewed-20261026/controlled-500-continuation-20261025-refetch.redacted.html",
+          "redacted_sha256": "c82d1161576810cb32b9f6119ef6ad075cf21e31b328c44c9ca1aeb44161fbd4",
+          "retained_product": {
+            "usItemId": "51237368",
+            "name": "Clorox ToiletWand Disinfecting Brush Refills, Disposable Toilet Bowl Cleaner, Rainforest Rush, 10 Count",
+            "upc": "044600313924",
+            "sellerName": null,
+            "sellerDisplayName": "Walmart.com",
+            "availabilityStatus": "IN_STOCK",
+            "priceInfo": {
+              "dropPrice": false,
+              "priceDisplayCodes": {
+                "clearance": null,
+                "eligibleForAssociateDiscount": true,
+                "finalCostByWeight": null,
+                "priceDisplayCondition": null,
+                "reducedPrice": null,
+                "rollback": null,
+                "submapType": null,
+                "isB2BPrice": false,
+                "pricePerUnitUom": "OZ",
+                "priceDisplayType": "UNKNOWN",
+                "priceComparedToNew": false
+              },
+              "currentPrice": {
+                "price": 7.57,
+                "priceString": "$7.57",
+                "variantPriceString": "$7.57",
+                "currencyUnit": "USD",
+                "bestValue": null,
+                "supportText": null,
+                "priceDisplay": "$7.57"
+              },
+              "basePrice": null,
+              "wasPrice": null,
+              "comparisonPrice": null,
+              "unitPrice": {
+                "price": 4.45,
+                "priceString": "$4.45/oz",
+                "variantPriceString": null,
+                "currencyUnit": "USD",
+                "bestValue": null,
+                "supportText": null
+              },
+              "savings": null,
+              "savingsAmount": null,
+              "secondaryOfferBoost": null,
+              "shipPrice": null,
+              "isPriceReduced": false,
+              "priceReducedDisplay": null,
+              "subscriptionPrice": null,
+              "priceRange": {
+                "minPrice": null,
+                "maxPrice": null,
+                "priceString": null,
+                "currencyUnit": null,
+                "denominations": null
+              },
+              "listPrice": null,
+              "capType": null,
+              "volumePriceTiers": [],
+              "walmartFundedAmount": null,
+              "wPlusEarlyAccessPrice": null,
+              "additionalFees": {
+                "dutyFee": {
+                  "price": 0,
+                  "priceString": "$0.00"
+                },
+                "shippingAndImportFee": {
+                  "price": 0,
+                  "priceString": "$0.00"
+                },
+                "giftCardMarginAndFee": null,
+                "estimatedTotalPrice": {
+                  "price": 7.57,
+                  "priceString": "$7.57"
+                },
+                "countryName": "United States"
+              },
+              "taxInfo": null
+            },
+            "location": {
+              "postalCode": "72712",
+              "stateOrProvinceCode": "AR",
+              "city": "Bentonville",
+              "storeIds": [
+                "100"
+              ],
+              "intent": "PICKUP",
+              "pickupLocation": {
+                "storeId": "100",
+                "accessType": null
+              }
+            },
+            "fulfillmentOptions": [
+              {
+                "type": "SHIPPING",
+                "intent": false,
+                "selected": false,
+                "availabilityStatus": "IN_STOCK",
+                "inventoryStatus": null,
+                "availableQuantity": null,
+                "maxOrderQuantity": 12,
+                "orderLimit": 12
+              },
+              {
+                "type": "PICKUP",
+                "intent": true,
+                "selected": true,
+                "availabilityStatus": "IN_STOCK",
+                "inventoryStatus": null,
+                "availableQuantity": null,
+                "maxOrderQuantity": 12,
+                "orderLimit": 12
+              },
+              {
+                "type": "DELIVERY",
+                "intent": false,
+                "selected": false,
+                "availabilityStatus": "IN_STOCK",
+                "availableQuantity": null,
+                "maxOrderQuantity": 12,
+                "orderLimit": 12
+              }
+            ]
+          },
+          "request": {
+            "url": "https://www.walmart.com/ip/Clorox-ToiletWand-Disinfecting-Brush-Refills-Dispsable-Toilet-Bowl-Cleaner-Rainforest-Rush-10-Count/51237368?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT",
+            "attempt": 1,
+            "started_utc": "2026-10-25T21:24:13.253862+00:00",
+            "settings": {
+              "method": "GET",
+              "cache": "no-store",
+              "credentials": "same-origin (browser default)",
+              "redirect": "follow (browser default)",
+              "timeout_seconds": 25,
+              "configured_attempts": 1,
+              "request_headers": "browser-managed; not captured"
+            }
+          },
+          "response": {
+            "status": 200,
+            "url": "https://www.walmart.com/ip/Clorox-ToiletWand-Disinfecting-Brush-Refills-Dispsable-Toilet-Bowl-Cleaner-Rainforest-Rush-10-Count/51237368?fulfillmentIntent=Pickup&filters=%5Bredacted%5D&classType=VARIANT",
+            "redirected": false,
+            "headers": {
+              "date": "Sun, 25 Oct 2026 21:24:14 GMT",
+              "cache-control": "max-age=0, no-cache, no-store",
+              "cache-status": "Miss",
+              "vary": "Accept-Encoding",
+              "content-type": "text/html; charset=utf-8"
+            },
+            "received_utc": "2026-10-25T21:24:14.345065+00:00",
+            "elapsed_seconds": 1.091
+          },
+          "source_values_unchanged": true,
+          "original_scope": "Complete decoded bytes returned by browser Fetch; not wire/TLS capture"
+        }
+      ]
+    }
+  ],
+  "client_sent": false,
+  "transport_remedy_proven": false
+}

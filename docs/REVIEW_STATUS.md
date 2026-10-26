@@ -1,5 +1,14 @@
 # Current review status
 
+## Latest client feedback: step1 response-pair sharing preparation
+
+Four source-verified redacted response copies and exact capture commits/module hashes are ready in
+evidence/response-pairs-reviewed-20261026/. See its README for request sequence, unchanged preserved
+fields, privacy review and limitations. Full originals remain private. This supersedes historical
+“privacy review pending” notes for these copies only; no client delivery/acceptance or drift cure
+is claimed. Other new-feedback requirements, especially rejection/retention, remain unaddressed
+by this focused task. Existing review-20261026-step9 archive remains unchanged.
+
 ## Step 7 bounded repeat — completed
 
 Same producer hashes, plan bytes, store/category/dependency settings and observed versions as first

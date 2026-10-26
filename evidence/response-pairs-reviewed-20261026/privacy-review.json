@@ -1,0 +1,26 @@
+{
+  "reviewed_utc": "2026-10-26T09:40:40.308507+00:00",
+  "reviewer": "Codex/JARVIS; agent review and deterministic structural checks, not independent client or human approval",
+  "scope": "Four actual captured response bodies; public field allowlist, full retained JSON and metadata inspected",
+  "checks": {
+    "original_body_hashes_and_lengths_verified": 4,
+    "source_commits_and_module_hashes_verified": 2,
+    "retained_product_store_fulfillment_price_values_verified": 4,
+    "all_html_attributes_removed": true,
+    "all_nonallowlisted_text_and_scripts_redacted": true,
+    "nonallowlisted_json_removed": true,
+    "price_tree_matches_previously_public_metadata": true,
+    "session_address_identifiers_removed": true,
+    "synthetic_secret_injection_checks_passed": true,
+    "raw_originals_not_shared": true
+  },
+  "ready_for_client_review": true,
+  "client_sent": false,
+  "client_acceptance": false,
+  "limits": [
+    "Heavily redacted and reserialized response copies; not byte-identical raw bodies",
+    "Browser-managed request headers/cookies unrecorded",
+    "Independent checking of omitted bytes requires private originals",
+    "No retry remedy or broad reliability claim"
+  ]
+}
