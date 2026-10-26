@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "checks": [
+    "Restart keeps original expired deadline",
+    "Restart keeps consumed page allowance",
+    "Expired budget launches no job",
+    "Finished orphan batch adopted once",
+    "Interrupted evidence export does not double-count pages on restart",
+    "Adoption preserves original deadline and starts no duplicate job"
+  ],
+  "live_requests": 0
+}

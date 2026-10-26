@@ -6,7 +6,11 @@
     "Two-page limit respected",
     "Continuation advances without redoing committed pages",
     "Bad pages logged once then next page attempted",
-    "Failed pages not counted as legitimate empty/reviewed"
+    "Failed pages not counted as legitimate empty/reviewed",
+    "Page aliases01and1 share one identity",
+    "Nonpositive page rejected",
+    "Repeated-listing fingerprint excludes sponsored and duplicate IDs",
+    "Same actual item set onpage2 stops branch and records gap"
   ],
   "live_requests": 0
 }

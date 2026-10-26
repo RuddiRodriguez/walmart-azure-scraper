@@ -10,11 +10,14 @@ from extract import category_id,discover,next_data,product_record,promotion_fiel
 from capture_store_drift import listing_from_rendered
 from scrape import next_page_url,verify_listing_store
 from storage import atomic_json,page_url
+from audit_queue_growth import listing_ids
 
 
 def key(url):
     query=parse_qs(urlsplit(url).query)
-    return category_id(url).split('_')[-1]+'#'+str((query.get('page') or ['1'])[0])
+    page=int((query.get('page') or ['1'])[0])
+    if page<1:raise ValueError('Page number must be positive')
+    return category_id(url).split('_')[-1]+'#'+str(page)
 
 
 def run(folder,maximum,seconds):
@@ -26,6 +29,9 @@ def run(folder,maximum,seconds):
     db.executescript('CREATE TABLE IF NOT EXISTS pages(category TEXT,key TEXT,url TEXT,status TEXT,reason TEXT,PRIMARY KEY(category,key)); CREATE TABLE IF NOT EXISTS links(category TEXT,url TEXT,parent TEXT,decision TEXT,PRIMARY KEY(category,url,parent));')
     db.execute('CREATE TABLE IF NOT EXISTS scope_proofs(category TEXT,leaf TEXT,decision TEXT,actual_id TEXT,breadcrumb TEXT,source TEXT,PRIMARY KEY(category,leaf))')
     if 'scope_review' not in {r[1] for r in db.execute('PRAGMA table_info(pages)')}:db.execute('ALTER TABLE pages ADD COLUMN scope_review INTEGER DEFAULT 0')
+    db.execute('CREATE TABLE IF NOT EXISTS listing_fingerprints(category TEXT,leaf TEXT,page INTEGER,fingerprint TEXT,source TEXT,PRIMARY KEY(category,leaf,page))')
+    initial_page_count=db.execute('SELECT count(*) FROM pages').fetchone()[0]
+    growth=Counter();seeding=True
     roots={r['Category (Auto)']:page_url(r['URL']) for r in csv.DictReader(Path('config/categories.csv').open())}
     def add(category,url,parent):
         ids=category_id(url).split('_');scope=bool(re.search(r'(?:^|_)'+re.escape(category_id(roots[category]))+r'(?:_|$)',category_id(url)))
@@ -33,7 +39,9 @@ def run(folder,maximum,seconds):
         proof=db.execute('SELECT decision FROM scope_proofs WHERE category=? AND leaf=?',(category,category_id(url).split('_')[-1])).fetchone()
         decision='brief_exclusion' if excluded else proof[0] if proof else 'scoped_queue' if scope else 'scope_unverified'
         db.execute('INSERT OR IGNORE INTO links VALUES (?,?,?,?)',(category,page_url(url),parent,decision))
-        if not excluded and category_id(url) and decision!='outside_required_ancestry':db.execute("INSERT OR IGNORE INTO pages(category,key,url,status,reason,scope_review) VALUES (?,?,?,'pending','',?)",(category,key(url),page_url(url),int(not scope)))
+        if not excluded and category_id(url) and decision!='outside_required_ancestry':
+            inserted=db.execute("INSERT OR IGNORE INTO pages(category,key,url,status,reason,scope_review) VALUES (?,?,?,'pending','',?)",(category,key(url),page_url(url),int(not scope and decision!='scope_confirmed_by_response')))
+            growth[('seed_' if seeding else 'discovery_')+('new_page' if inserted.rowcount else 'already_known_page')]+=1
     def prove(category,url,decision,actual,breadcrumb,source):
         leaf=category_id(url).split('_')[-1]
         db.execute('INSERT OR REPLACE INTO scope_proofs VALUES (?,?,?,?,?,?)',(category,leaf,decision,actual,json.dumps(breadcrumb),source))
@@ -42,19 +50,20 @@ def run(folder,maximum,seconds):
     for c,u in roots.items():add(c,u,'required_csv')
     ledger=json.loads(Path('evidence/point3-20261026/coverage-ledger.json').read_text())
     for n in ledger:add(n['category'],n['url'],'historically_observed_link')
-    db.commit()
+    db.execute("UPDATE pages SET scope_review=0 WHERE scope_review=1 AND EXISTS (SELECT 1 FROM scope_proofs s WHERE s.category=pages.category AND s.leaf=substr(pages.key,1,instr(pages.key,'#')-1) AND s.decision='scope_confirmed_by_response')")
+    db.commit();seeding=False
     batch=int(db.execute('SELECT count(*) FROM pages WHERE status!=\'pending\'').fetchone()[0])
     output=folder/f'batch-{batch:05}-{int(time.time())}';output.mkdir()
     settings=json.loads(Path('config/stores.json').read_text());settings.update(retries=1,max_page_seconds=25)
     store=settings['stores'][0]
     state=dict(started=time.monotonic(),limits=dict(product_requests=10,listing_requests=maximum,seconds=seconds),product_requests=0,listing_requests=0,sequence=0,body_bytes=0,body_limit_bytes=1024*2**20)
     from datetime import datetime,timezone
-    result=dict(started_utc=datetime.now(timezone.utc).isoformat(),source_commit=subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip(),scope='Listing/category coverage review only; no full product/PDP collection',pages=[],offer_observations=[],limits=state['limits'],full_coverage_complete=False)
+    result=dict(started_utc=datetime.now(timezone.utc).isoformat(),source_commit=subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip(),source_hashes={n:hashlib.sha256(Path(n).read_bytes()).hexdigest() for n in ['coverage_queue.py','audit_queue_growth.py','extract.py','browser.py']},scope='Listing/category coverage review only; no full product/PDP collection',pages=[],offer_observations=[],limits=state['limits'],full_coverage_complete=False)
     sb=None
     def log(event,**values):
         with (output/'events.jsonl').open('a') as f:f.write(json.dumps(dict(event=event,**values))+'\n')
     def save():
-        result.update(seconds=round(time.monotonic()-state['started'],2),counts={k:state[k] for k in ['product_requests','listing_requests','sequence','body_bytes']},queue_counts=dict(db.execute('SELECT status,count(*) FROM pages GROUP BY status')),scope_counts=dict(db.execute('SELECT decision,count(*) FROM links GROUP BY decision')))
+        result.update(queue_growth=dict(growth),new_page_identities=db.execute('SELECT count(*) FROM pages').fetchone()[0]-initial_page_count,seconds=round(time.monotonic()-state['started'],2),counts={k:state[k] for k in ['product_requests','listing_requests','sequence','body_bytes']},queue_counts=dict(db.execute('SELECT status,count(*) FROM pages GROUP BY status')),scope_counts=dict(db.execute('SELECT decision,count(*) FROM links GROUP BY decision')))
         atomic_json(output/'report.json',result)
     def alarm(*_):raise TimeoutError('Bounded coverage runtime reached')
     previous=signal.signal(signal.SIGALRM,alarm);signal.alarm(seconds)
@@ -62,7 +71,7 @@ def run(folder,maximum,seconds):
         sb=open_browser();select_store(sb,store,settings,log,output)
         for _ in range(maximum):
             # Breadth first: next pending page from category with fewest completed pages.
-            pending=db.execute("SELECT p.category,p.key,p.url,p.scope_review FROM pages p WHERE p.status='pending' ORDER BY (SELECT count(*) FROM pages d WHERE d.category=p.category AND d.status!='pending'),p.rowid LIMIT 1").fetchone()
+            pending=db.execute("SELECT p.category,p.key,p.url,p.scope_review FROM pages p WHERE p.status='pending' ORDER BY p.scope_review,(SELECT count(*) FROM pages d WHERE d.category=p.category AND d.status!='pending'),p.rowid LIMIT 1").fetchone()
             if not pending:break
             category,identity,url,scope_review=pending;entry=dict(category=category,url=safe_url(url),status='started')
             result['pages'].append(entry);save()
@@ -116,6 +125,14 @@ def run(folder,maximum,seconds):
                         following=next_page_url(fetched,url,search) or following_native
                         pagination=search.get('paginationV2') or {};page=int((pagination.get('pageProperties') or {}).get('page') or 1);last=int(pagination.get('maxPage') or 1)
                         if page!=int((parse_qs(urlsplit(url).query).get('page') or ['1'])[0]):raise ValueError('Pagination response page mismatch')
+                        ids=listing_ids(search)
+                        fingerprint=hashlib.sha256(json.dumps(ids).encode()).hexdigest() if ids else None
+                        duplicate=db.execute('SELECT page,source FROM listing_fingerprints WHERE category=? AND leaf=? AND fingerprint=? AND page!=?',(category,actual.split('_')[-1],fingerprint,page)).fetchone() if fingerprint else None
+                        if duplicate:
+                            entry.update(repeated_listing_of_page=duplicate[0],repeated_listing_source=duplicate[1])
+                            raise ValueError('Repeated product set on a different page; pagination branch requires review')
+                        if fingerprint:
+                            with db:db.execute('INSERT OR REPLACE INTO listing_fingerprints VALUES (?,?,?,?,?)',(category,actual.split('_')[-1],page,fingerprint,str(output)))
                         if page<last and not following:raise ValueError('Missing observed next-page control')
                         entry.update(page=page,reported_last_page=last,listing_rejections=dict(Counter(r['reason'] for r in rejections)))
                     elif not links:raise ValueError('Neither verified product listing nor child navigation; not legitimate empty category')

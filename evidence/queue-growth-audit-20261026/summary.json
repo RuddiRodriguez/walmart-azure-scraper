@@ -1,0 +1,149 @@
+{
+  "mode": "Offline audit of stored real coverage responses and queue",
+  "queue_counts": {
+    "reviewed": 844,
+    "failed": 43,
+    "pending": 2159,
+    "navigation_scope_unverified": 9,
+    "outside_scope": 1
+  },
+  "page_identity_duplicates": 0,
+  "url_types": {
+    "category_first_page": 2696,
+    "pagination": 360,
+    "pending_first_page": 1864,
+    "pending_pagination": 295
+  },
+  "page_number_range": [
+    1,
+    11
+  ],
+  "captured_listing_bodies_hash_verified": 900,
+  "repeated_product_sets_across_different_pages": 0,
+  "batch_progress": [
+    {
+      "batch": "batch-00000-1793022207",
+      "queue_counts": {
+        "failed": 3,
+        "pending": 1217,
+        "reviewed": 77
+      },
+      "pages_attempted": 80
+    },
+    {
+      "batch": "batch-00077-1793025412",
+      "queue_counts": {
+        "failed": 8,
+        "pending": 1450,
+        "reviewed": 149
+      },
+      "pages_attempted": 80
+    },
+    {
+      "batch": "batch-00157-1793026838",
+      "queue_counts": {
+        "failed": 10,
+        "pending": 1562,
+        "reviewed": 227
+      },
+      "pages_attempted": 80
+    },
+    {
+      "batch": "batch-00237-1793028144",
+      "queue_counts": {
+        "failed": 11,
+        "pending": 1672,
+        "reviewed": 306
+      },
+      "pages_attempted": 80
+    },
+    {
+      "batch": "batch-00317-1793029509",
+      "queue_counts": {
+        "failed": 13,
+        "pending": 1703,
+        "reviewed": 384
+      },
+      "pages_attempted": 80
+    },
+    {
+      "batch": "batch-00397-1793030827",
+      "queue_counts": {
+        "failed": 17,
+        "navigation_scope_unverified": 6,
+        "outside_scope": 1,
+        "pending": 1790,
+        "reviewed": 453
+      },
+      "pages_attempted": 80
+    },
+    {
+      "batch": "batch-00477-1793032152",
+      "queue_counts": {
+        "failed": 20,
+        "navigation_scope_unverified": 9,
+        "outside_scope": 1,
+        "pending": 1905,
+        "reviewed": 527
+      },
+      "pages_attempted": 80
+    },
+    {
+      "batch": "batch-00557-1793033638",
+      "queue_counts": {
+        "failed": 25,
+        "navigation_scope_unverified": 9,
+        "outside_scope": 1,
+        "pending": 1941,
+        "reviewed": 602
+      },
+      "pages_attempted": 80
+    },
+    {
+      "batch": "batch-00637-1793035060",
+      "queue_counts": {
+        "failed": 35,
+        "navigation_scope_unverified": 9,
+        "outside_scope": 1,
+        "pending": 2012,
+        "reviewed": 672
+      },
+      "pages_attempted": 80
+    },
+    {
+      "batch": "batch-00717-1793036448",
+      "queue_counts": {
+        "failed": 39,
+        "navigation_scope_unverified": 9,
+        "outside_scope": 1,
+        "pending": 2069,
+        "reviewed": 748
+      },
+      "pages_attempted": 80
+    },
+    {
+      "batch": "batch-00797-1793037889",
+      "queue_counts": {
+        "failed": 43,
+        "navigation_scope_unverified": 9,
+        "outside_scope": 1,
+        "pending": 2152,
+        "reviewed": 824
+      },
+      "pages_attempted": 80
+    },
+    {
+      "batch": "batch-00877-1793039393",
+      "queue_counts": {
+        "failed": 43,
+        "navigation_scope_unverified": 9,
+        "outside_scope": 1,
+        "pending": 2159,
+        "reviewed": 847
+      },
+      "pages_attempted": 24
+    }
+  ],
+  "full_coverage_complete": false,
+  "live_requests": 0
+}
