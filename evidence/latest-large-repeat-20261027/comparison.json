@@ -1,0 +1,80 @@
+{
+  "mode": "comparison of separately collected live runs; calculation itself is offline",
+  "runs": [
+    {
+      "folder": "data/latest-large-recovery-20261027/collection/100/runs/20261027T203118369512Z",
+      "records": 132,
+      "mode": "sample",
+      "active_seconds": 625.36,
+      "elapsed_seconds": 1052.1,
+      "active_time_complete": false,
+      "elapsed_event_span_seconds": null,
+      "failure": null,
+      "category_counts": {
+        "Health & Wellness": 12,
+        "Office Supplies": 12,
+        "Pets": 12,
+        "Diapering": 12,
+        "Feeding": 12,
+        "Household Essentials": 12,
+        "Balloons": 12,
+        "Beauty": 12,
+        "Personal Care": 12,
+        "Art Supplies": 12,
+        "Food": 12
+      },
+      "sample_passed": true,
+      "full_passed": false,
+      "signature": "2ddb404aeef381b7843114156b066c198d502c5788bbb398d3ea1255be29d05f"
+    },
+    {
+      "folder": "data/latest-large-repeat-20261027/100/runs/20261027T213532675226Z",
+      "records": 132,
+      "mode": "sample",
+      "active_seconds": 930.32,
+      "elapsed_seconds": 933.84,
+      "active_time_complete": true,
+      "elapsed_event_span_seconds": null,
+      "failure": null,
+      "category_counts": {
+        "Health & Wellness": 12,
+        "Office Supplies": 12,
+        "Pets": 12,
+        "Diapering": 12,
+        "Feeding": 12,
+        "Household Essentials": 12,
+        "Balloons": 12,
+        "Beauty": 12,
+        "Personal Care": 12,
+        "Art Supplies": 12,
+        "Food": 12
+      },
+      "sample_passed": true,
+      "full_passed": false,
+      "signature": "2ddb404aeef381b7843114156b066c198d502c5788bbb398d3ea1255be29d05f"
+    }
+  ],
+  "common_ids": 125,
+  "only_first": [
+    "18722654384",
+    "24681654",
+    "247949557",
+    "50861014",
+    "50861015",
+    "709242841",
+    "9529665094"
+  ],
+  "only_second": [
+    "18714368611",
+    "19597569773",
+    "19670656641",
+    "343103083",
+    "41127255",
+    "457507694",
+    "637247401"
+  ],
+  "price_changes": [],
+  "same_category_counts": true,
+  "same_code_and_configuration": true,
+  "limit": "Short samples do not prove complete catalog reliability. Real assortment, ordering and prices may change."
+}
