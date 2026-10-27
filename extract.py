@@ -12,6 +12,13 @@ PPM = re.compile(r'(?:\$\d+(?:\.\d+)?|\d+(?:\.\d+)?\s*¢)\s*/\s*(?:\d+\s*)?(?:fl
 WEIGHT = re.compile(r'\b\d+(?:\.\d+)?\s*(?:fl\.?\s*oz|oz|ounces?|lbs?|pounds?|kg|grams?|ml|liters?)\b', re.I)
 APPROX = re.compile(r'\b(?:approx\.?|approximately|about|estimated weight)\b', re.I)
 FINANCE = {'1PAYCC', 'AFFIRM', 'ONEPAY', 'CREDIT_CARD', 'ONE_PREQUAL'}
+ROOT_IDS = {
+    'Food': '976759', 'Household Essentials': '1115193', 'Personal Care': '1005862',
+    'Beauty': '1085666', 'Diapering': '5427_486190', 'Feeding': '133283',
+    'Health & Wellness': '976760', 'Pets': '5440',
+    'Balloons': '2637_1042319_1212898_3956207', 'Art Supplies': '5899871',
+    'Office Supplies': '1229749',
+}
 
 
 def next_data(soup):
@@ -22,9 +29,13 @@ def next_data(soup):
 
 
 def scope(category, item):
-    path = (item.get('category') or {}).get('categoryPath', '')
-    term = {'Health & Wellness': 'health and medicine', 'Balloons': 'balloon'}.get(category, category.lower())
-    return term in path.lower() and 'farm animals' not in path.lower()
+    details = item.get('category') or {}
+    expected = ROOT_IDS.get(category, '').split('_')
+    actual = str(details.get('categoryPathId') or '').split(':')
+    path = str(details.get('categoryPath') or '')
+    inside = any(actual[index:index + len(expected)] == expected
+                 for index in range(len(actual) - len(expected) + 1)) if expected else False
+    return inside and 'farm animals' not in path.lower()
 
 
 def money(value):

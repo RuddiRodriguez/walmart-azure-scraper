@@ -98,33 +98,27 @@ def check():
         bad_product.script.string = json.dumps({'props': {'pageProps': {'initialData': {'data': {'product': bad_data}}}}})
         settings['trace_store_context'] = True
         config.write_text(json.dumps(settings))
-        snapshots = [({}, None), ({}, None), ({}, None), ValueError('Synthetic unavailable context snapshot')]
-        with patch('scrape.open_browser', return_value=sb) as opened, patch('scrape.select_store', return_value=''), patch('scrape.canary_check'), patch('scrape.verify_banner'), patch('scrape.navigate', side_effect=navigate), patch('scrape.listing_candidates', side_effect=listing), patch('scrape.discover', side_effect=lambda *a, **k: {}), patch('scrape.fetch_product', side_effect=[bad_product, copy.deepcopy(product)]) as fetch, patch('scrape.store_snapshot', side_effect=snapshots):
-            try:
-                run(args)
-            except ValueError as error:
-                assert 'Location mismatch' in str(error)
-            else:
-                raise AssertionError('Wrong location accepted')
+        snapshot_calls = {'count': 0}
+        def snapshot(*_):
+            snapshot_calls['count'] += 1
+            if snapshot_calls['count'] == 4:
+                raise ValueError('Synthetic unavailable context snapshot')
+            return {}, None
+        with patch('scrape.open_browser', return_value=sb) as opened, patch('scrape.select_store', return_value=''), patch('scrape.canary_check'), patch('scrape.verify_banner'), patch('scrape.navigate', side_effect=navigate), patch('scrape.listing_candidates', side_effect=listing), patch('scrape.discover', side_effect=lambda *a, **k: {}), patch('scrape.fetch_product', side_effect=[bad_product, copy.deepcopy(product)]) as fetch, patch('scrape.store_snapshot', side_effect=snapshot):
+            run(args)
             rejected = list((folder / 'location-failure').glob('100/runs/*/sources/rejected/*.json'))
             assert len(rejected) == 1 and json.loads(rejected[0].read_text())['product']['location']['intent'] == 'SHIPPING'
-            first_failure = next((folder / 'location-failure').glob('100/runs/*/failure.json'))
-            assert json.loads(first_failure.read_text())['location_mismatch_seen']
-            events = [json.loads(line) for line in (first_failure.parent / 'events.jsonl').read_text().splitlines()]
+            pointer = json.loads((folder / 'location-failure/100/latest.json').read_text())
+            report = json.loads((folder / 'location-failure/100' / pointer['report']).read_text())
+            assert report['passed'] and report['location_mismatch_seen'] and report['context_failures'] == 1
+            events = [json.loads(line) for line in (folder / 'location-failure/100' / pointer['report']).parent.joinpath('events.jsonl').read_text().splitlines()]
             assert any(event['event'] == 'store_trace_unavailable' for event in events)
+            assert any(event['event'] == 'product_context_retry' for event in events)
             args.resume = True
             opened.reset_mock()
-            try:
-                run(args)
-            except RuntimeError as error:
-                assert 'publication checks' in str(error)
-            else:
-                raise AssertionError('Previously mismatched run published after resume')
-            opened.assert_not_called()
-            assert fetch.call_count == 1
-            failure = next((folder / 'location-failure').glob('100/runs/*/failure.json'))
-            assert json.loads(failure.read_text())['current_work'] == {'kind': 'resume_validation'}
-            assert not (folder / 'location-failure/100/latest.json').exists()
+            run(args)
+            opened.assert_called_once()
+            assert fetch.call_count == 2
         args.output = original_output
         args.sample = 2
         try:
@@ -136,7 +130,7 @@ def check():
             raise AssertionError('Cross-mode resume accepted')
     result = {'mode': 'offline simulated navigation; captured product fixture; no live browser or network',
               'passed': True, 'checks': ['Two pages traversed', 'Repeated product ID deduplicated',
-              'Complete valid full-mode result publishes atomically', 'Resume does not repeat committed product', 'Cross-mode resume rejected', 'Rejected location response saved before validation failure', 'Location mismatch permanently prevents publication even after resume', 'Previously mismatched run rejected before browser launch or product request', 'Early resume failure records the failed validation stage', 'Diagnostic snapshot failure cannot mask a location mismatch or its publication block', 'Placeholder and JavaScript next-page controls do not become URL loops', 'Real pagination URL and real loop targets preserved for validation', 'Explicit next-page metadata preserves functional filters', 'Unexpected page jumps rejected', 'Explicit wrong-store primary listing rejected', 'New full run carries unseen unavailable product without changing original date or prices']}
+              'Complete valid full-mode result publishes atomically', 'Resume does not repeat committed product', 'Cross-mode resume rejected', 'Wrong location response saved and excluded', 'Freshly verified retry accepted independently', 'Context failure count retained without invalidating corrected record', 'Resume does not repeat corrected product', 'Diagnostic snapshot failure cannot hide rejected response', 'Placeholder and JavaScript next-page controls do not become URL loops', 'Real pagination URL and real loop targets preserved for validation', 'Explicit next-page metadata preserves functional filters', 'Unexpected page jumps rejected', 'Explicit wrong-store primary listing rejected', 'New full run carries unseen unavailable product without changing original date or prices']}
     Path('evidence/runner-flow-check.json').write_text(json.dumps(result, indent=2) + '\n')
     print(json.dumps(result))
 

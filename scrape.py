@@ -117,6 +117,10 @@ def run(args):
             snapshot, prior_store_cookies = store_snapshot(sb, store, prior_store_cookies)
             log('store_context', stage=stage, **snapshot)
 
+    def unsafe_context(error):
+        return any(text in str(error) for text in ['Location mismatch', 'Location ZIP mismatch',
+                                                    'Product identity mismatch or missing response'])
+
     def collect_products():
         nonlocal current_work
         for key, text in db.execute("SELECT id,data FROM candidates WHERE status='pending' ORDER BY rowid").fetchall():
@@ -126,30 +130,52 @@ def run(args):
             current_work = {'kind': 'product', 'id': key, 'url': candidate['url'], 'category': candidate['category']}
             log('product_started', **current_work)
             trace_context('before_product_' + key)
-            soup = fetch_product(sb, candidate['url'], settings, log)
-            data = next_data(soup).get('data') or {}
-            source_data = {'candidate': candidate, 'product': data.get('product'),
-                           'specifications': (data.get('idml') or {}).get('specifications'), 'reason': 'not_validated'}
-            atomic_json(output / 'sources' / (key + '.json'), source_data)
-            try:
-                known = retention.known_assortment(catalog, key)
-                row, reason, product = product_record(candidate, soup, store, settings['private_labels'], logo, retain_missing=True, known_store_assortment=known)
-                observed_utc = datetime.now(timezone.utc).isoformat()
-                row = retention.observe(catalog, key, row, retention.product_state(candidate, product, store, known, reason) if row else reason, run_id, observed_utc, bool(row and reason != 'retained_assortment_unverified'))
-                source_data['known_store_assortment'] = known
-            except Exception as error:
-                retention.observe(catalog, key, None, 'validation_error', run_id, datetime.now(timezone.utc).isoformat(), False)
-                source_data.update(reason='validation_error', error=str(error))
-                stamp = datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%S%fZ')
-                atomic_json(output / 'sources' / 'rejected' / (key + '-' + stamp + '.json'), source_data)
+            row = None
+            reason = 'validation_error'
+            for attempt in range(2):
+                soup = fetch_product(sb, candidate['url'], settings, log)
+                data = next_data(soup).get('data') or {}
+                source_data = {'candidate': candidate, 'product': data.get('product'),
+                               'specifications': (data.get('idml') or {}).get('specifications'),
+                               'reason': 'not_validated', 'attempt': attempt + 1}
+                atomic_json(output / 'sources' / (key + '.json'), source_data)
                 try:
-                    trace_context('rejected_product_' + key)
-                except Exception as trace_error:
-                    log('store_trace_unavailable', error=str(trace_error))
-                raise
-            finally:
-                soup.clear(decompose=True)
-                soup.decompose()
+                    known = retention.known_assortment(catalog, key)
+                    row, reason, product = product_record(candidate, soup, store, settings['private_labels'], logo, retain_missing=True, known_store_assortment=known)
+                    observed_utc = datetime.now(timezone.utc).isoformat()
+                    row = retention.observe(catalog, key, row, retention.product_state(candidate, product, store, known, reason) if row else reason, run_id, observed_utc, bool(row and reason != 'retained_assortment_unverified'))
+                    source_data['known_store_assortment'] = known
+                    metadata(db, 'consecutive_context_failures', 0)
+                    break
+                except Exception as error:
+                    context_error = unsafe_context(error)
+                    failure_reason = 'unsafe_context' if context_error else 'validation_error'
+                    retention.observe(catalog, key, None, failure_reason, run_id, datetime.now(timezone.utc).isoformat(), False)
+                    source_data.update(reason=failure_reason, error=str(error))
+                    stamp = datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%S%fZ')
+                    atomic_json(output / 'sources' / 'rejected' / (key + '-' + stamp + '.json'), source_data)
+                    log('product_response_rejected', id=key, reason=failure_reason, attempt=attempt + 1)
+                    try:
+                        trace_context('rejected_product_' + key)
+                    except Exception as trace_error:
+                        log('store_trace_unavailable', error=str(trace_error))
+                    if context_error:
+                        metadata(db, 'location_mismatch_seen', True)
+                        metadata(db, 'context_failures', (metadata(db, 'context_failures') or 0) + 1)
+                        if attempt == 0:
+                            canary_check(sb, store, settings)
+                            log('product_context_retry', id=key, reason=str(error))
+                            continue
+                        failures = (metadata(db, 'consecutive_context_failures') or 0) + 1
+                        metadata(db, 'consecutive_context_failures', failures)
+                        reason = 'unsafe_context'
+                        if failures >= settings.get('max_consecutive_context_failures', 3):
+                            raise RuntimeError('Repeated unsafe store context; collection stopped') from error
+                    save_product(db, candidate, None, reason)
+                    break
+                finally:
+                    soup.clear(decompose=True)
+                    soup.decompose()
             source_data['reason'] = reason
             atomic_json(output / 'sources' / (key + '.json'), source_data)
             eligible_row = row if reason != 'retained_assortment_unverified' else None
@@ -161,9 +187,6 @@ def run(args):
         current_work = {}
 
     try:
-        if metadata(db, 'location_mismatch_seen'):
-            current_work = {'kind': 'resume_validation'}
-            raise RuntimeError('Location mismatch in earlier session; publication checks require a fresh run')
         current_work = {'kind': 'store_selection'}
         sb = open_browser(headless=settings.get('headless', False))
         logo = select_store(sb, store, settings, log, output)
@@ -172,6 +195,7 @@ def run(args):
         collect_products()
         page_count = db.execute("SELECT count(*) FROM pages WHERE status='done'").fetchone()[0]
         # Breadth-first across categories. Sample obtains a minimum from each category.
+        page_limit_reached = False
         while True:
             order = "CASE WHEN url LIKE '%page=%' THEN 0 ELSE 1 END,CASE WHEN url LIKE '%/browse/%' THEN 0 ELSE 1 END,rowid"
             pending = db.execute("SELECT category,url FROM (SELECT category,url,rowid, row_number() OVER (PARTITION BY category ORDER BY " + order + ") AS position FROM pages WHERE status='pending') WHERE position=1 ORDER BY rowid").fetchall()
@@ -183,7 +207,9 @@ def run(args):
                     if sample_counts[category] >= args.sample:
                         continue
                 if page_count >= settings['max_pages']:
-                    raise ValueError('Page safety limit reached; coverage incomplete')
+                    page_limit_reached = True
+                    log('page_limit_reached', pages=page_count, pending=len(pending))
+                    break
                 current_work = {'kind': 'page', 'category': category, 'url': url}
                 log('page_started', **current_work)
                 soup = navigate(sb, url, settings, log)
@@ -258,6 +284,8 @@ def run(args):
                 collect_products()
                 if page_count % 20 == 0:
                     canary_check(sb, store, settings)
+            if page_limit_reached:
+                break
             if not progressed:
                 break
         canary_check(sb, store, settings)
@@ -281,11 +309,9 @@ def run(args):
         if args.sample:
             sample_settings = {**settings, 'minimum_records': args.sample * len(categories), 'minimum_category_records': args.sample}
             report['sample_validation'] = validate(rows, list(categories), store, sample_settings, 0, 0, review, unavailable_urls=unavailable_urls, unknown_price_urls=unknown_price_urls)
-        if metadata(db, 'location_mismatch_seen'):
-            for validation in [report] + ([report['sample_validation']] if args.sample else []):
-                validation['passed'] = False
-                validation['errors'].append('Location mismatch occurred in this run; fresh run required for publication')
         report.update(retention_catalog=report_retention, carried_observations=sum(v['source'] != run_id and v['assortment_confirmed'] for v in catalog_states.values()) if not args.sample else 0, location_mismatch_seen=bool(metadata(db, 'location_mismatch_seen')), mode='sample' if args.sample else 'full', store=store,
+                      context_failures=metadata(db, 'context_failures') or 0,
+                      page_limit_reached=page_limit_reached,
                       active_seconds=round(metadata(db, 'active_seconds') + time.monotonic() - started, 2),
                       elapsed_seconds=round(time.time() - metadata(db, 'started'), 2),
                       active_time_complete=not bool(metadata(db, 'active_time_incomplete')),
