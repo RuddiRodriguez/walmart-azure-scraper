@@ -6,7 +6,7 @@ from storage import atomic_json
 
 VOLUME=Path('/Volumes/CODEX')
 DESTINATION=VOLUME/'Walmart_Scraper_Private_Evidence'
-RESERVE=4*2**30
+RESERVE=40*2**30
 
 
 def digest(path):
@@ -28,7 +28,7 @@ def relocate(source):
     size=sum(p.stat().st_size for p in files)
     target=(DESTINATION/relative).resolve()
     if source.resolve()==target.resolve():return dict(source=str(source),destination=str(target),status='already_on_external_drive')
-    if shutil.disk_usage(VOLUME).free<size+RESERVE:raise RuntimeError('CODEX reserve would fall below4GiB')
+    if shutil.disk_usage(VOLUME).free<size+RESERVE:raise RuntimeError('CODEX reserve would fall below 40 GiB')
     target.mkdir(parents=True,exist_ok=True,mode=0o700)
     hashes={}
     for path in files:

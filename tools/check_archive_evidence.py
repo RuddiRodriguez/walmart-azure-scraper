@@ -34,7 +34,7 @@ def check():
    try:archive.relocate(bad)
    except RuntimeError:pass
    else:raise AssertionError('SD reserve ignored')
-  checks.append('SD free-space reserve enforced before relocation')
+  checks.append('40 GiB CODEX free-space reserve enforced before relocation')
  out=Path('evidence/storage-decision-20261026');out.mkdir(exist_ok=True);result=dict(mode='Synthetic local tests only; no real backup/SD settings changed',passed=True,checks=checks)
  atomic_json(out/'offline-checks.json',result);print(json.dumps(result))
 
