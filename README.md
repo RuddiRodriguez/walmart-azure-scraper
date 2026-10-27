@@ -43,13 +43,13 @@ Offers and Azure remain open. Privacy-reviewed wrong/correct sharing copies are 
 `evidence/response-pairs-reviewed-20261026/`; complete originals remain private and hash-recorded. Earlier
 samples/failed runs stay separate; earlier frozen ZIPs are historical. Nothing sent/submitted to client.
 
-## Updated review package
+## Latest client review package
 
-Frozen version: `review-20261027-evidence-correction`. [Download source/evidence ZIP](https://github.com/RuddiRodriguez/walmart-azure-scraper/archive/refs/tags/review-20261027-evidence-correction.zip).
-[Verify package](docs/VERIFY_PACKAGE.md); [unsent client draft](docs/REPLY_DRAFT.txt).
-This corrected package adds the reviewed response pairs,15-event retention trace and bounded506-product
-interruption/resume plus matching506-product repeat. Earlier tags/ZIP receipts remain historical.
-The package does not prove full coverage,genuine offers or Azure execution.
+Version: `review-20261027-final-client`.
+[Download source and review evidence](https://github.com/RuddiRodriguez/walmart-azure-scraper/archive/refs/tags/review-20261027-final-client.zip).
+[Final status](docs/FINAL_CLIENT_REVIEW_20261027.md); [verification](docs/VERIFY_PACKAGE.md); [unsent client message](docs/CLIENT_MESSAGE_DRAFT.txt).
+
+Package includes reviewed response pairs, retention trace, two 506-product runs, 506-product interruption/resume proof, current-collector recovery and repeat proof, bounded category reconciliation, and zero-result genuine-offer evidence. Full category coverage and qualifying offer examples remain unproven. Azure remains separate.
 
 ## Retention update after client feedback
 

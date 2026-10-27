@@ -1,5 +1,7 @@
 # Current review status
 
+Latest concise status: `docs/FINAL_CLIENT_REVIEW_20261027.md`. It supersedes package-status wording below where later evidence differs. Historical sections remain for audit history.
+
 ## Corrected evidence package
 
 Frozen version:`review-20261027-evidence-correction`. It adds the privacy-reviewed response-pair
