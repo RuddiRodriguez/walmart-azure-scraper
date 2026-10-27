@@ -1,0 +1,742 @@
+[
+  {
+    "id": "coverage-016",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 16,
+    "request": {
+      "url": "https://www.walmart.com/browse/health-medicine/salonpas/976760_6972993_4605309",
+      "attempt": 1,
+      "started_utc": "2026-10-27T13:38:32.780322+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/health-medicine/salonpas/976760_6972993_4605309",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 13:38:33 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T13:38:33.178735+00:00",
+      "elapsed_seconds": 0.398
+    },
+    "body_sha256": "bddd25b0af86696aea797708b621ca85d099af402d7308dfaea126ee02d7e9af",
+    "body_bytes": 868458,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-020",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 20,
+    "request": {
+      "url": "https://www.walmart.com/browse/household-essentials/cascade/1115193_8250903_2742941?page=2",
+      "attempt": 1,
+      "started_utc": "2026-10-27T13:39:46.620488+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/household-essentials/cascade/1115193_8250903_2742941?page=2",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 13:39:46 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T13:39:46.933453+00:00",
+      "elapsed_seconds": 0.313
+    },
+    "body_sha256": "0bb8d23847b262dacf97d8799218053a5722c11408dcee1f030df2042c0e73da",
+    "body_bytes": 651243,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-017",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 17,
+    "request": {
+      "url": "https://www.walmart.com/browse/office-supplies/paper-weights/1229749_7431192_7938104",
+      "attempt": 1,
+      "started_utc": "2026-10-27T13:38:53.639686+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/office-supplies/paper-weights/1229749_7431192_7938104",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 13:38:53 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T13:38:54.004382+00:00",
+      "elapsed_seconds": 0.365
+    },
+    "body_sha256": "a95aa501ef36d3d0569512f93c3ca7ed6659e6a7280154e203f186dbb2eee2b4",
+    "body_bytes": 528042,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-001",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 1,
+    "request": {
+      "url": "https://www.walmart.com/browse/pets/cat-grooming-clippers/5440_202073_9900738_9704295",
+      "attempt": 1,
+      "started_utc": "2026-10-27T13:34:01.573635+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/pets/cat-grooming-clippers/5440_202073_9900738_9704295",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 13:34:01 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T13:34:02.012055+00:00",
+      "elapsed_seconds": 0.438
+    },
+    "body_sha256": "8bcdb0f480e46ab306e7c4ea4b7a80bc831a5daff5c6d9c975bf3726b3f73688",
+    "body_bytes": 767964,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-006",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 6,
+    "request": {
+      "url": "https://www.walmart.com/browse/beauty/body-spray/1085666_133225_1738248?page=2",
+      "attempt": 1,
+      "started_utc": "2026-10-27T13:35:38.283007+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/beauty/body-spray/1085666_133225_1738248?page=2",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 13:35:38 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T13:35:38.631795+00:00",
+      "elapsed_seconds": 0.349
+    },
+    "body_sha256": "eb568c75858f8cdd06c2c30edf8ba2cf59cc5aac1c63e4e360f2156dd1e88fbf",
+    "body_bytes": 1173381,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-010",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 10,
+    "request": {
+      "url": "https://www.walmart.com/browse/health-medicine/tiger-balm/976760_6972993_3860135",
+      "attempt": 1,
+      "started_utc": "2026-10-27T13:36:48.178153+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/health-medicine/tiger-balm/976760_6972993_3860135",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 13:36:48 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T13:36:48.388106+00:00",
+      "elapsed_seconds": 0.21
+    },
+    "body_sha256": "04b0192ab241c54262dd0e370078f1a4cfcd7910f0e2bbfdaafd4092455adba5",
+    "body_bytes": 711259,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-011",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 11,
+    "request": {
+      "url": "https://www.walmart.com/browse/office-supplies/paper-shredders/1229749_2155104",
+      "attempt": 1,
+      "started_utc": "2026-10-27T13:37:04.955542+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/office-supplies/paper-shredders/1229749_2155104",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 13:37:05 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T13:37:05.545422+00:00",
+      "elapsed_seconds": 0.59
+    },
+    "body_sha256": "db48d1df936639cdb408a199ec9c0c709b55e54c8b9cb4738fa6d7b673679d05",
+    "body_bytes": 739434,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-007",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 7,
+    "request": {
+      "url": "https://www.walmart.com/browse/pets/cat-nail-clippers/5440_202073_9900738_2691521",
+      "attempt": 1,
+      "started_utc": "2026-10-27T13:35:54.626818+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/pets/cat-nail-clippers/5440_202073_9900738_2691521",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 13:35:55 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T13:35:55.165788+00:00",
+      "elapsed_seconds": 0.539
+    },
+    "body_sha256": "c27d3c9f8929fab6b75f96ed49e11ea6edcc812f3eee6771a0ba116531aa7917",
+    "body_bytes": 579147,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-008",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 8,
+    "request": {
+      "url": "https://www.walmart.com/browse/household-essentials/carpet-cleaning-solution/1115193_1071966_1073104_8116517?page=2",
+      "attempt": 1,
+      "started_utc": "2026-10-27T13:36:11.953822+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/household-essentials/carpet-cleaning-solution/1115193_1071966_1073104_8116517?page=2",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 13:36:12 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T13:36:12.315430+00:00",
+      "elapsed_seconds": 0.362
+    },
+    "body_sha256": "2149abb3094940710dd6065dd7b326bce9f7f9992093b01232f896e26f2413f4",
+    "body_bytes": 756700,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-012",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 12,
+    "request": {
+      "url": "https://www.walmart.com/browse/pets/cat-shampoo/5440_202073_9900738_5310803",
+      "attempt": 1,
+      "started_utc": "2026-10-27T13:37:22.288593+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/pets/cat-shampoo/5440_202073_9900738_5310803",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 13:37:22 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T13:37:22.825562+00:00",
+      "elapsed_seconds": 0.537
+    },
+    "body_sha256": "bf5f0c0899f47b03bba631ba7e326f3b8cab66934c07b1db354044726787171b",
+    "body_bytes": 721074,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-004",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 4,
+    "request": {
+      "url": "https://www.walmart.com/browse/health-medicine/icy-hot/976760_6972993_5275628",
+      "attempt": 1,
+      "started_utc": "2026-10-27T13:35:00.101828+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/health-medicine/icy-hot/976760_6972993_5275628",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 13:35:00 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T13:35:00.436289+00:00",
+      "elapsed_seconds": 0.334
+    },
+    "body_sha256": "d0ee41bff8296c76decfbe2f4e2ee4f5c83775ef02653a8edfc1facf10fbfad2",
+    "body_bytes": 911854,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-005",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 5,
+    "request": {
+      "url": "https://www.walmart.com/browse/office-supplies/paper-organizers/1229749_7431192_2407655",
+      "attempt": 1,
+      "started_utc": "2026-10-27T13:35:16.708847+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/office-supplies/paper-organizers/1229749_7431192_2407655",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 13:35:17 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T13:35:17.230905+00:00",
+      "elapsed_seconds": 0.522
+    },
+    "body_sha256": "e87a2aab088e96bb5837b373cebc6fd812d7e6eef93d806888ec9c04235969f1",
+    "body_bytes": 536206,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-013",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 13,
+    "request": {
+      "url": "https://www.walmart.com/browse/beauty/bronzer/1085666_1007040_4989345_9344248?page=2",
+      "attempt": 1,
+      "started_utc": "2026-10-27T13:37:38.425994+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/beauty/bronzer/1085666_1007040_4989345_9344248?page=2",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 13:37:38 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T13:37:38.731032+00:00",
+      "elapsed_seconds": 0.305
+    },
+    "body_sha256": "13652d6dc9f137755081f832f834a3f95e2222735fdbae2f9f9e3e684305523a",
+    "body_bytes": 868083,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-009",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 9,
+    "request": {
+      "url": "https://www.walmart.com/browse/personal-care/beard-tools/1005862_1007220_9340723_8408469",
+      "attempt": 1,
+      "started_utc": "2026-10-27T13:36:30.438952+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/personal-care/beard-tools/1005862_1007220_9340723_8408469",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 13:36:30 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T13:36:30.713361+00:00",
+      "elapsed_seconds": 0.274
+    },
+    "body_sha256": "5bfa0cec5d15b17fec6acd61f2ace11ee2648cb1d8f7ffd679d4b1628c9a4435",
+    "body_bytes": 651897,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-014",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 14,
+    "request": {
+      "url": "https://www.walmart.com/browse/household-essentials/cascade-dishwasher-detergents/1115193_1071966_7583868_2993464",
+      "attempt": 1,
+      "started_utc": "2026-10-27T13:37:57.158802+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/household-essentials/cascade-dishwasher-detergents/1115193_8250903_2742941_2993464",
+      "redirected": true,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 13:37:57 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T13:37:57.724139+00:00",
+      "elapsed_seconds": 0.565
+    },
+    "body_sha256": "6b141e2fc3ad963577e5a611bbd6652e64efa876eb2e165244aa03e6f321aa46",
+    "body_bytes": 1148301,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-002",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 2,
+    "request": {
+      "url": "https://www.walmart.com/browse/household-essentials/folex/1115193_1071966_1073104_8116517_8488558",
+      "attempt": 1,
+      "started_utc": "2026-10-27T13:34:19.446528+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/household-essentials/folex/1115193_1071966_1073104_8116517_8488558",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 13:34:19 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T13:34:19.737987+00:00",
+      "elapsed_seconds": 0.291
+    },
+    "body_sha256": "d8f89f5833162bece5a66a29f716703acaf9b310ae3ee4da1266265fcb04a4b1",
+    "body_bytes": 569887,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-018",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 18,
+    "request": {
+      "url": "https://www.walmart.com/browse/pets/all-cat-litter/5440_202073_202098_3004825",
+      "attempt": 1,
+      "started_utc": "2026-10-27T13:39:14.106324+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/pets/cat-litter/5440_202073_202098_3004825",
+      "redirected": true,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 13:39:14 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T13:39:14.638776+00:00",
+      "elapsed_seconds": 0.532
+    },
+    "body_sha256": "8a74185814896a2ab5e805528fb191e532e7fc4d3c47f581842e6abb287248c0",
+    "body_bytes": 1176621,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-019",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 19,
+    "request": {
+      "url": "https://www.walmart.com/browse/beauty/ariana-grande-perfume/1085666_133225_5149721_4668952",
+      "attempt": 1,
+      "started_utc": "2026-10-27T13:39:30.372732+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/beauty/ariana-grande-perfume/1085666_133225_5149721_4668952",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 13:39:30 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T13:39:30.552341+00:00",
+      "elapsed_seconds": 0.18
+    },
+    "body_sha256": "0b067ca5941a5fb1aa7be6d1d009f275a7329fbe32d828e108267d2397649d56",
+    "body_bytes": 625497,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-003",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 3,
+    "request": {
+      "url": "https://www.walmart.com/browse/personal-care/beard-oil/1005862_1007220_7312346_7791324",
+      "attempt": 1,
+      "started_utc": "2026-10-27T13:34:37.581691+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/personal-care/beard-oil/1005862_1007220_7312346_7791324",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 13:34:37 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T13:34:38.120469+00:00",
+      "elapsed_seconds": 0.539
+    },
+    "body_sha256": "3c95efdbda772aa56d61dc14b8ab915fff16b86686e024f2d1689b8a41ad8d96",
+    "body_bytes": 872018,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-015",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 15,
+    "request": {
+      "url": "https://www.walmart.com/browse/personal-care/beard-trimmers/1005862_1007220_7312346_9340723?page=2",
+      "attempt": 1,
+      "started_utc": "2026-10-27T13:38:16.175130+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/personal-care/beard-trimmers/1005862_1007220_7312346_9340723?page=2",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 13:38:16 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T13:38:16.765380+00:00",
+      "elapsed_seconds": 0.59
+    },
+    "body_sha256": "0901651192a0a4f7377e831d27037b639b79ca18e2c7a516dfc2f31ae228e3fd",
+    "body_bytes": 1059501,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  }
+]
