@@ -7,11 +7,11 @@
   "max_pages": 2000,
   "queue_counts": {
     "cross_link_excluded": 137,
-    "failed": 75,
+    "failed": 89,
     "navigation_scope_unverified": 9,
     "outside_scope": 1,
-    "pending": 2229,
-    "reviewed": 1475
+    "pending": 2079,
+    "reviewed": 1701
   },
   "scope_counts": {
     "brief_exclusion": 2,
@@ -71,83 +71,138 @@
     "queue_sha256_after": "b373f7c13523f0d8a3c6f1696c873fab6dc066a505d11ba7f61fae38720f001a"
   },
   "taxonomy_trial": {
-    "started_utc": "2026-10-27T09:56:17.967311+00:00",
-    "finished_utc": "2026-10-27T10:35:21.282252+00:00",
+    "started_utc": "2026-10-27T13:26:06.048719+00:00",
+    "finished_utc": "2026-10-27T14:36:28.681607+00:00",
     "finished": true,
     "limits": {
-      "batches": 5,
+      "batches": 10,
       "pages_per_batch": 20,
       "seconds_per_batch": 1800
     },
     "status_before": {
       "cross_link_excluded": 137,
-      "failed": 72,
-      "navigation_scope_unverified": 9,
-      "outside_scope": 1,
-      "pending": 2284,
-      "reviewed": 1378
-    },
-    "status_after": {
-      "cross_link_excluded": 137,
       "failed": 75,
       "navigation_scope_unverified": 9,
       "outside_scope": 1,
-      "pending": 2229,
-      "reviewed": 1475
+      "pending": 2215,
+      "reviewed": 1515
+    },
+    "status_after": {
+      "cross_link_excluded": 137,
+      "failed": 89,
+      "navigation_scope_unverified": 9,
+      "outside_scope": 1,
+      "pending": 2079,
+      "reviewed": 1701
     },
     "results": [
       {
         "number": 1,
-        "batch": "batch-01597-1793095002",
+        "batch": "batch-01737-1793107584",
         "pages": 20,
-        "new_pages": 20,
-        "pending_before": 2284,
-        "pending_after": 2284,
-        "failed_after": 73,
+        "new_pages": 5,
+        "pending_before": 2215,
+        "pending_after": 2200,
+        "failed_after": 76,
         "stop_reason": null,
         "offer_observations": 0
       },
       {
         "number": 2,
-        "batch": "batch-01617-1793095446",
+        "batch": "batch-01757-1793107996",
         "pages": 20,
-        "new_pages": 7,
-        "pending_before": 2284,
-        "pending_after": 2271,
-        "failed_after": 74,
+        "new_pages": 3,
+        "pending_before": 2200,
+        "pending_after": 2183,
+        "failed_after": 76,
         "stop_reason": null,
         "offer_observations": 0
       },
       {
         "number": 3,
-        "batch": "batch-01637-1793096001",
+        "batch": "batch-01777-1793108390",
         "pages": 20,
-        "new_pages": 7,
-        "pending_before": 2271,
-        "pending_after": 2258,
-        "failed_after": 74,
+        "new_pages": 15,
+        "pending_before": 2183,
+        "pending_after": 2178,
+        "failed_after": 77,
         "stop_reason": null,
         "offer_observations": 0
       },
       {
         "number": 4,
-        "batch": "batch-01657-1793096562",
+        "batch": "batch-01797-1793108832",
         "pages": 20,
-        "new_pages": 7,
-        "pending_before": 2258,
-        "pending_after": 2245,
-        "failed_after": 74,
+        "new_pages": 9,
+        "pending_before": 2178,
+        "pending_after": 2167,
+        "failed_after": 81,
         "stop_reason": null,
         "offer_observations": 0
       },
       {
         "number": 5,
-        "batch": "batch-01677-1793096961",
+        "batch": "batch-01817-1793109229",
         "pages": 20,
-        "new_pages": 4,
-        "pending_before": 2245,
-        "pending_after": 2229,
-        "failed_after": 75,
+        "new_pages": 5,
+        "pending_before": 2167,
+        "pending_after": 2152,
+        "failed_after": 83,
+        "stop_reason": null,
+        "offer_observations": 0
+      },
+      {
+        "number": 6,
+        "batch": "batch-01837-1793109680",
+        "pages": 20,
+        "new_pages": 3,
+        "pending_before": 2152,
+        "pending_after": 2135,
+        "failed_after": 83,
+        "stop_reason": null,
+        "offer_observations": 0
+      },
+      {
+        "number": 7,
+        "batch": "batch-01857-1793110085",
+        "pages": 20,
+        "new_pages": 5,
+        "pending_before": 2135,
+        "pending_after": 2120,
+        "failed_after": 88,
+        "stop_reason": null,
+        "offer_observations": 0
+      },
+      {
+        "number": 8,
+        "batch": "batch-01877-1793110493",
+        "pages": 20,
+        "new_pages": 5,
+        "pending_before": 2120,
+        "pending_after": 2105,
+        "failed_after": 89,
+        "stop_reason": null,
+        "offer_observations": 0
+      },
+      {
+        "number": 9,
+        "batch": "batch-01897-1793110903",
+        "pages": 20,
+        "new_pages": 9,
+        "pending_before": 2105,
+        "pending_after": 2094,
+        "failed_after": 89,
+        "stop_reason": null,
+        "offer_observations": 0
+      },
+      {
+        "number": 10,
+        "batch": "batch-01917-1793111362",
+        "pages": 20,
+        "new_pages": 5,
+        "pending_before": 2094,
+        "pending_after": 2079,
+        "failed_after": 89,
         "stop_reason": null,
         "offer_observations": 0
       }
