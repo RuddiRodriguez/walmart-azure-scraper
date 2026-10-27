@@ -33,6 +33,7 @@ def relocate(source):
     hashes={}
     for path in files:
         name=str(path.relative_to(source));saved=target/name;saved.parent.mkdir(parents=True,exist_ok=True,mode=0o700)
+        if shutil.disk_usage(VOLUME).free<path.stat().st_size+RESERVE:raise RuntimeError('CODEX reserve would fall below 40 GiB; originals preserved')
         original=digest(path)
         if not saved.exists() or digest(saved)!=original:shutil.copy2(path,saved)
         if digest(saved)!=original:raise RuntimeError('External verification failed; originals preserved')
