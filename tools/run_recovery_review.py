@@ -82,12 +82,10 @@ def review(output):
                 stopper = subprocess.Popen([sys.executable, '-m', 'tools.hard_stop_review', str(worker.pid), str(run),
                                             '--event', 'product_started', '--minimum-products', '1', '--timeout', '240'],
                                            stdout=evidence, stderr=subprocess.STDOUT)
-                while stopper.poll() is None and worker.poll() is None:
+                while stopper.poll() is None:
                     if exhausted(run):
                         raise RuntimeError('Recovery request/runtime budget reached')
                     time.sleep(0.2)
-                if stopper.poll() is None:
-                    stopper.terminate()
                 result['stopper_exit'] = stopper.wait()
             worker.wait(timeout=30)
             result['initial_exit'] = worker.returncode
