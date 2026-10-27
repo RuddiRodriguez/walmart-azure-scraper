@@ -1,57 +1,56 @@
-UNSENT EVIDENCE CORRECTION DRAFT — 27 October 2026
+UNSENT CLIENT DRAFT — 27 October 2026
 
 Hi,
 
-The link in my previous message was incomplete and pointed to the older frozen package. The corrected
-evidence package is:
+Thanks for checking the package. I corrected the incomplete link and separated the frozen evidence from the latest executable source.
+
+The corrected evidence package is:
 https://github.com/RuddiRodriguez/walmart-azure-scraper/tree/review-20261027-evidence-correction
 
-Download:
+Direct download:
 https://github.com/RuddiRodriguez/walmart-azure-scraper/archive/refs/tags/review-20261027-evidence-correction.zip
 
 Frozen evidence commit:
 https://github.com/RuddiRodriguez/walmart-azure-scraper/commit/f251aa0fbd8c2a3b9f3ba889a3f3780f19a6865b
 
-Latest organized source commit:
-https://github.com/RuddiRodriguez/walmart-azure-scraper/commit/d696e9ce937da1e1d84a7098b3be79d6ef77f117
+Latest executable source commit, including the organized tools and bounded Azure plan:
+https://github.com/RuddiRodriguez/walmart-azure-scraper/commit/5441a23d9a5217e3908a8bb97f7753a4188123fd
 
-The later commit only organizes tests, diagnostics and review utilities under `tools/`. It does not
-change the frozen datasets or evidence claims.
-
-Reviewed wrong-store/corrected-response pairs:
+The reviewed wrong-store and corrected-response pairs are available at:
 https://github.com/RuddiRodriguez/walmart-azure-scraper/tree/review-20261027-evidence-correction/evidence/response-pairs-reviewed-20261026
 
-Fifteen-event retention trace:
+These copies preserve the product identity, store, pickup and price fields, together with the redacted request order and retry information. Credentials, cookies and private session data are excluded. The pairs document the observed behaviour, but I am not presenting one corrected re-fetch as a permanent solution to store drift.
+
+The 15-event retention trace is available at:
 https://github.com/RuddiRodriguez/walmart-azure-scraper/tree/review-20261027-evidence-correction/evidence/retention-step2-20261026
 
-Larger interruption/resume and repeat evidence:
+It covers 15 rejected observations across 12 products. Eligible products remain in the dataset when a current pickup offer or price cannot be supported. Current unsupported values stay empty, while previous valid observations keep their original dates. Missing evidence remains separate from confirmed unavailability.
+
+The larger interruption and recovery evidence is available at:
 https://github.com/RuddiRodriguez/walmart-azure-scraper/tree/review-20261027-evidence-correction/evidence/point3-20261026/recovery-506
+
+The matching repeat evidence is available at:
 https://github.com/RuddiRodriguez/walmart-azure-scraper/tree/review-20261027-evidence-correction/evidence/point3-20261026/repeat-506
 
-The reviewed response copies preserve the product,store,fulfillment and price fields requested.
-Credentials,cookies and private session state are excluded. Complete originals remain private with
-their hashes recorded.
+The larger recovery run used source commit:
+https://github.com/RuddiRodriguez/walmart-azure-scraper/commit/deaec35c4b5d58e3a3374bdb89ddb3330f97eb76
 
-The retention trace accounts for all15 rejection events. The larger recovery test was interrupted
-after100 saved products and resumed to506; a matching bounded repeat also reached506. These remain
-bounded tests. Full coverage, genuine offers and full-catalog recovery/repetition are still open.
-I will keep the 28 October, 18:00 Amsterdam checkpoint for those items.
+It was interrupted after 100 saved products and resumed to 506. Its original checker result remains preserved as failed because that checker counted repeated skip events as duplicate saved products. The later source-ledger re-evaluation found no duplicate saved records and passed all 10 recovery checks:
+https://github.com/RuddiRodriguez/walmart-azure-scraper/blob/review-20261027-evidence-correction/evidence/point3-20261026/recovery-reevaluation.json
 
-The exact proposed Azure diagnostic is documented at:
+The separate 506-product repeat used source commit:
+https://github.com/RuddiRodriguez/walmart-azure-scraper/commit/1a3bf4f0dceda9bc4a48c02fafa082b49d76911c
+
+These are bounded demonstrations from earlier source versions. They do not satisfy the requested larger recovery test on the latest executable version. That current-version test remains open.
+
+The exact proposed Azure diagnostic is available at:
 https://github.com/RuddiRodriguez/walmart-azure-scraper/blob/main/docs/AZURE_DIAGNOSTIC_PROPOSAL.md
 
-It uses one temporary Central US Standard_B2ls_v2 VM with Ubuntu 24.04, 2 vCPU, 4 GiB RAM,
-a 32 GiB Standard SSD and one IP restricted to my current address. The client owns the separate
-resource group, so I need no Azure account role. The plan includes my dedicated public SSH key
-and the exact creation, installation, run, resume, export, hash and cleanup commands.
+It uses one temporary Central US Standard_B2ls_v2 VM with Ubuntu 24.04, 2 vCPU, 4 GiB RAM, a 32 GiB Standard SSD and one IP restricted to my current address. The client owns the separate resource group, so I need no Azure account role. The document contains my dedicated public SSH key and the exact creation, installation, run, interruption, resume, export, hash and cleanup commands.
 
-The diagnostic is limited to three products, 12 product requests plus 2 listing requests, and one
-shared 10-minute deadline across the interruption and restart. The VM, disk and IP have a maximum
-60-minute lifetime. Estimated total cost is below $0.10, with a hard $1 stop. Any store mismatch,
-blocked request, limit, hash failure or cleanup problem stops the test without publishing data.
-Azure access and spending are not approved yet, and this plan does not claim an Azure run.
+The diagnostic is limited to three products, 12 product requests plus 2 listing requests, and one shared 10-minute collection deadline across the interruption and restart. Setup, collection, export and cleanup fit inside a 60-minute resource lifetime. Estimated total cost is below $0.10, with a hard $1 stop. Any store mismatch, blocked request, limit, hash failure or cleanup problem stops the test without publishing data. Azure access and spending remain unapproved, and I am not claiming an Azure run.
 
-Nothing has been sent.
+Full category and pagination reconciliation, genuine promotional examples and the larger latest-version recovery test remain open. I will keep the 28 October at 18:00 Amsterdam-time checkpoint for those items, with task-by-task estimates and anything specifically waiting on you.
 
 Thanks,
 Ruddi

@@ -5,13 +5,15 @@
 This is one three-product Store 100 / ZIP 72712 / PICKUP interruption-and-resume diagnostic. It does not publish production output.
 
 - Repository: https://github.com/RuddiRodriguez/walmart-azure-scraper
-- Current organized source commit: `d696e9ce937da1e1d84a7098b3be79d6ef77f117`
+- Current executable source commit: `5441a23d9a5217e3908a8bb97f7753a4188123fd`
 - Frozen evidence commit: `f251aa0fbd8c2a3b9f3ba889a3f3780f19a6865b`
 - Review tag: `review-20261027-evidence-correction`
-- Plan: `evidence/step8-controlled-recovery-20261026/plan.json`
+- Plan: `config/azure-diagnostic.json`
 - Product/listing request ceiling: 12 product + 2 listing requests = 14 total.
 - Collection deadline: 600 seconds shared by the first process and resumed process. Restart does not reset the recorded start time or counters.
 - Saved response-body ceiling: 256 MiB for this proposed run.
+
+The product counter includes control checks, failed attempts and the interrupted product retry. The listing counter covers captured listing evidence requests. Store selection, visible browser navigation and browser-managed assets are not represented as product records and are not hidden inside those counters; they are bounded separately by one active browser at a time, one initial session plus one resumed session, one configured route, one attempt per request, a 25-second page timeout, the same 10-minute collection deadline, the 256 MiB saved-body limit and the 60-minute environment lifetime.
 
 No Azure access or spending is approved by this document.
 
@@ -25,7 +27,7 @@ No Azure access or spending is approved by this document.
 - One Standard static public IPv4 address
 - One inbound rule: TCP 22 from Ruddi's current public IPv4 `/32` only
 - No paid proxy, scraping API, database, load balancer or monitoring workspace
-- Maximum resource lifetime: 60 minutes from VM creation. Auto-shutdown at 55 minutes; whole resource group deleted by 60 minutes.
+- Maximum resource lifetime: 60 minutes from VM creation. Setup stops at minute 25 if incomplete. Collection ends by minute 35, export by minute 50, and resource-group deletion starts by minute 50. Auto-shutdown at minute 55 is a compute-cost fallback. The client verifies deletion by minute 60.
 
 The client creates and owns the temporary resource group. Ruddi needs no Azure RBAC role. Access is only SSH to the temporary VM. This is the minimum access arrangement. The client deletes the resource group after evidence export.
 
@@ -60,7 +62,7 @@ SSH_KEY='ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMMpeXcCaQrZS79H6PQseEMi781jYetRv6D
 az group create --name "$RG" --location "$REGION"
 
 az vm list-skus --location "$REGION" --size "$SIZE" --all \
-  --query "[?name=='$SIZE' && restrictions==null].name" --output tsv | grep -qx "$SIZE"
+  --query "[?name=='$SIZE' && length(restrictions)==\`0\`].name" --output tsv | grep -qx "$SIZE"
 
 az vm image show --location "$REGION" --urn "$IMAGE" --query name --output tsv
 
@@ -111,9 +113,10 @@ set -euo pipefail
 sudo install -d -o "$USER" -g "$USER" /opt/walmart-scraper
 git clone https://github.com/RuddiRodriguez/walmart-azure-scraper.git /opt/walmart-scraper
 cd /opt/walmart-scraper
-git checkout --detach d696e9ce937da1e1d84a7098b3be79d6ef77f117
-test "$(git rev-parse HEAD)" = 'd696e9ce937da1e1d84a7098b3be79d6ef77f117'
+git checkout --detach 5441a23d9a5217e3908a8bb97f7753a4188123fd
+test "$(git rev-parse HEAD)" = '5441a23d9a5217e3908a8bb97f7753a4188123fd'
 sudo ./deploy/install-ubuntu.sh
+sudo .venv/bin/pip install psutil==7.2.2
 ```
 
 Installation downloads Ubuntu packages, Chrome and Python packages. No browser is opened during installation.
@@ -132,7 +135,7 @@ printf '%s\n' "$RUN" > /tmp/walmart-diagnostic-run-path
 timeout --signal=TERM 620s xvfb-run -a \
   .venv/bin/python -m tools.run_controlled_recovery \
   --output "$RUN" \
-  --plan evidence/step8-controlled-recovery-20261026/plan.json
+  --plan config/azure-diagnostic.json
 ```
 
 The 620-second shell guard allows up to 20 seconds for process termination and final file writes. Network collection remains limited by the plan's original shared 600-second deadline. The plan separately caps 12 product requests and 2 listing requests, so their combined maximum is 14 across the interruption and restart.
@@ -170,7 +173,7 @@ cp "$RUN/collection/report.json" "$EXPORT/"
 cp "$RUN/collection/products.json" "$EXPORT/"
 cp "$RUN/collection/events.jsonl" "$EXPORT/"
 cp "$RUN/collection/selected-store.json" "$EXPORT/"
-cp evidence/step8-controlled-recovery-20261026/plan.json "$EXPORT/plan.json"
+cp config/azure-diagnostic.json "$EXPORT/plan.json"
 find "$RUN/collection/captures" -maxdepth 1 -type f -name '*.json' \
   -exec cp {} "$EXPORT/captures/" \;
 
@@ -201,7 +204,7 @@ After verified export, or immediately after any failure:
 ```bash
 RG=rg-walmart-ruddi-diagnostic
 az vm deallocate --resource-group "$RG" --name walmart-ruddi-diag-01
-az group delete --name "$RG" --yes --no-wait
+az group delete --name "$RG" --yes
 ```
 
 The client confirms deletion:
