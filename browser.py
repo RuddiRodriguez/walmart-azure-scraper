@@ -26,7 +26,7 @@ def check_html(html):
     return soup
 
 
-def navigate(sb, url, settings, log):
+def navigate(sb, url, settings, log, require_banner=True):
     for attempt in range(settings['retries']):
         started = time.monotonic()
         try:
@@ -35,7 +35,8 @@ def navigate(sb, url, settings, log):
             html = sb.get_page_source()
             for _ in range(12):
                 pending = BeautifulSoup(html, 'html.parser')
-                ready = bool(pending.title and pending.title.get_text(strip=True) and pending.select_one('#__NEXT_DATA__') and pending.select_one('[data-automation-id="fulfillment-banner"]'))
+                ready = bool(pending.title and pending.title.get_text(strip=True) and pending.select_one('#__NEXT_DATA__')
+                             and (not require_banner or pending.select_one('[data-automation-id="fulfillment-banner"]')))
                 pending.clear(decompose=True)
                 pending.decompose()
                 if ready:
@@ -44,7 +45,7 @@ def navigate(sb, url, settings, log):
                 html = sb.get_page_source()
             soup = check_html(html)
             next_data(soup)
-            if not soup.select_one('[data-automation-id="fulfillment-banner"]'):
+            if require_banner and not soup.select_one('[data-automation-id="fulfillment-banner"]'):
                 raise ValueError('Store banner not loaded; retry incomplete page')
             elapsed = time.monotonic() - started
             if elapsed > settings['max_page_seconds']:

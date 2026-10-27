@@ -40,7 +40,7 @@ def check():
     button.a['data-dca-extras'] = json.dumps({'custom': [{'owner': 'search', 'name': 'paginationPage', 'value': '3'}]})
     assert next_page_url(button, root, primary) == ''
     state = {}
-    def navigate(sb, url, settings, log):
+    def navigate(sb, url, settings, log, require_banner=True):
         second = '?page=2' in url
         data = {'searchResult': {'itemStacks': [{'items': [{'__typename': 'Product'}]}],
                                 'paginationV2': {'pageProperties': {'page': 2 if second else 1, 'stores': '100', 'facet': 'fulfillment_method:Pickup'}, 'maxPage': 2}}}

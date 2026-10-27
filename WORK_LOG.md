@@ -769,3 +769,7 @@ Listing/category review only. Pending/failed/scope-unverified remain open. Raw b
 The scraper remains paused while the existing CODEX backup finishes naturally. No backup process or backup folder was changed. Safe Codex application caches were cleared; chats, sessions, memories, worktrees, generated files and project data were preserved.
 
 Added hard stops before resuming point 3: evidence must be on the approved CODEX evidence path, the Mac must keep at least 60 GiB free, CODEX must keep at least 40 GiB free, each batch is limited to 2 GiB and the coordinator now uses 40-page batches. Offline budget and relocation tests passed. The original page and time limits remain unchanged.
+
+## 2026-10-27 verified evidence relocation and bounded resume
+
+Verified 12,823 files and 7,575,337,240 bytes before replacing the local `data` directory with a link to the separate CODEX evidence folder. The existing CODEX backup continued unchanged. Post-move space: about 92 GiB free on the Mac and 113 GiB free on CODEX. Storage guards passed. User pause was removed after verified relocation and direct authorization to continue.

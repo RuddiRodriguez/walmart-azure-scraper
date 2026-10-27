@@ -285,16 +285,21 @@ def run(output, plan, resume=False):
                 report['pages'].append(entry)
                 save()
                 try:
-                    native = navigate(sb, url, settings, log)
+                    native = navigate(sb, url, settings, log, require_banner=False)
                     try:
-                        verify_banner(native, store)
+                        banner_verified = False
+                        if native.select_one('[data-automation-id="fulfillment-banner"]'):
+                            verify_banner(native, store)
+                            banner_verified = True
                         stable, prior = 0, -1
                         for _ in range(20):
                             sb.scroll_down(900)
                             sb.sleep(0.4)
                             native.decompose()
                             native = BeautifulSoup(sb.get_page_source(), 'html.parser')
-                            verify_banner(native, store)
+                            if native.select_one('[data-automation-id="fulfillment-banner"]'):
+                                verify_banner(native, store)
+                                banner_verified = True
                             visible = len(native.select('[data-item-id]'))
                             stable = stable + 1 if visible == prior else 0
                             prior = visible
@@ -305,7 +310,10 @@ def run(output, plan, resume=False):
                         snapshot = output / f'native-{len(report["pages"])}.html'
                         body = str(native).encode()
                         snapshot.write_bytes(body)
-                        entry.update(snapshot=snapshot.name, snapshot_sha256=hashlib.sha256(body).hexdigest())
+                        entry.update(snapshot=snapshot.name, snapshot_sha256=hashlib.sha256(body).hexdigest(),
+                                     native_banner_verified=banner_verified)
+                        log('listing_banner_context', category=name, url=safe_url(url), verified=banner_verified,
+                            reason='matching_store_pickup' if banner_verified else 'navigation_only_context_unavailable')
                         native_search = next_data(native).get('searchResult')
                         native_next = next_page_url(native, url, native_search)
                         links = discover(native, roots[name], ['recipes', r'shop[- ]all[- ]foods?$', 'farm[- ]animals'],
