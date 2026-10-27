@@ -1,0 +1,58 @@
+{
+  "time_utc": "2026-10-27T10:01:00Z",
+  "branch": "codex/azure-small-test",
+  "product_navigation_commit": "ead402fa0ffa8f51686326d83cac5ca3ad55fbb9",
+  "clean_product_url_commit": "19146ae6972244a365e544eef2fe63c62b204676",
+  "environment": {
+    "provider": "Azure",
+    "region": "westus2",
+    "vm_size": "Standard_D2s_v5",
+    "operating_system": "Ubuntu 24.04",
+    "browser": "Google Chrome 156",
+    "execution_user": "walmart"
+  },
+  "product_navigation_run": {
+    "initial_store_control_passed": true,
+    "original_listing_response_captured": true,
+    "original_product_response_captured": true,
+    "product_response_request_id_present": true,
+    "product_status": 200,
+    "product_redirected_to_blocked_page": true,
+    "accepted_products": 0,
+    "interruption_resume_executed": false,
+    "runtime_seconds": 59.258,
+    "passed_full_diagnostic": false,
+    "conclusion": "Original product navigation response capture works, but Walmart redirected the product navigation to its blocked page. Removing the duplicate product fetch did not solve Azure product access."
+  },
+  "clean_product_url_runs": {
+    "attempts": 2,
+    "captured_requests": 0,
+    "failure": "Store banner not loaded during initial store selection",
+    "clean_product_url_live_result": "not tested",
+    "conclusion": "Both later sessions stopped before listing or product requests. The clean product URL change remains offline-tested only."
+  },
+  "limits": {
+    "target_products": 3,
+    "product_request_limit": 12,
+    "listing_request_limit": 2,
+    "runtime_limit_seconds": 600,
+    "captcha_bypass": false
+  },
+  "privacy": {
+    "raw_response_bodies_exported": false,
+    "cookies_exported": false,
+    "session_secrets_exported": false,
+    "reviewed_metadata_exported": true
+  },
+  "reviewed_archive": {
+    "local_path": "data/azure-product-navigation-live-20261027/azure-product-navigation-reviewed.tar.gz",
+    "sha256": "6aea848f0b67e889bf4ee2ae1c377267eac4bafbfa3f87357756a0cf6193b9b1",
+    "archive_hash_verified": true,
+    "internal_hashes_verified": true
+  },
+  "cleanup": {
+    "resource_group": "rg-walmart-diag-ead402f",
+    "resource_group_deleted": true,
+    "remaining_azure_resources": 0
+  }
+}
