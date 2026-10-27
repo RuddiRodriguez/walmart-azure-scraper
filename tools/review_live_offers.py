@@ -28,7 +28,7 @@ def qualifying_example(record, reason, unknown, description_visible, fields):
                 and (fields['volume_deals_description'] or fields['digital_deals_description']))
 
 
-def review(output, expanded=False):
+def review(output, expanded=False, queries=None, per_query=None, seconds=600):
     output = Path(output).resolve()
     if not output.is_relative_to(Path('data').resolve()):
         raise ValueError('Offer evidence must stay under ignored data/')
@@ -38,10 +38,10 @@ def review(output, expanded=False):
     store = settings['stores'][0]
     with Path('config/categories.csv').open() as source:
         categories = [r['Category (Auto)'] for r in csv.DictReader(source)]
-    queries = ['mix or match', 'buy 1 get 1 free', 'digital coupon', 'clip coupon'] if expanded else ['buy 2 save', 'digital coupon']
-    per_query = 4 if expanded else 3
+    queries = queries or (['mix or match', 'buy 1 get 1 free', 'digital coupon', 'clip coupon'] if expanded else ['buy 2 save', 'digital coupon'])
+    per_query = per_query or (4 if expanded else 3)
     seen = set()
-    state = {'started': time.monotonic(), 'limits': {'product_requests': len(queries) * per_query + 2, 'listing_requests': len(queries), 'seconds': 600},
+    state = {'started': time.monotonic(), 'limits': {'product_requests': len(queries) * per_query + 2, 'listing_requests': len(queries), 'seconds': seconds},
              'product_requests': 0, 'listing_requests': 0, 'sequence': 0, 'body_bytes': 0}
     result = {'mode': 'bounded live offer inspection; not a catalog run',
               'started_utc': datetime.now(timezone.utc).isoformat(), 'queries': [], 'products': [],
@@ -73,10 +73,10 @@ def review(output, expanded=False):
             page.decompose()
 
     def timeout(*_):
-        raise TimeoutError('Offer review reached ten-minute limit')
+        raise TimeoutError('Offer review reached runtime limit')
 
     previous = signal.signal(signal.SIGALRM, timeout)
-    signal.alarm(600)
+    signal.alarm(seconds)
     try:
         sb = open_browser()
         logo = select_store(sb, store, settings, log, output)
@@ -155,7 +155,10 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output', required=True)
     parser.add_argument('--expanded', action='store_true')
+    parser.add_argument('--query', action='append', dest='queries')
+    parser.add_argument('--per-query', type=int)
+    parser.add_argument('--seconds', type=int, default=600)
     args = parser.parse_args()
     os.umask(0o077)
-    if not review(args.output, args.expanded)['completed']:
+    if not review(args.output, args.expanded, args.queries, args.per_query, args.seconds)['completed']:
         raise SystemExit(1)
