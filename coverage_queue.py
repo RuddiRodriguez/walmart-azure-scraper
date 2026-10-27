@@ -46,6 +46,7 @@ def run(folder,maximum,seconds):
     if 'scope_review' not in {r[1] for r in db.execute('PRAGMA table_info(pages)')}:db.execute('ALTER TABLE pages ADD COLUMN scope_review INTEGER DEFAULT 0')
     db.execute('CREATE TABLE IF NOT EXISTS listing_fingerprints(category TEXT,leaf TEXT,page INTEGER,fingerprint TEXT,source TEXT,PRIMARY KEY(category,leaf,page))')
     db.execute('CREATE TABLE IF NOT EXISTS page_products(category TEXT,leaf TEXT,page INTEGER,product_id TEXT,PRIMARY KEY(category,leaf,page,product_id))')
+    db.execute('CREATE TABLE IF NOT EXISTS eligible_page_products(category TEXT,leaf TEXT,page INTEGER,product_id TEXT,PRIMARY KEY(category,leaf,page,product_id))')
     db.execute('CREATE TABLE IF NOT EXISTS leaf_counts(category TEXT,leaf TEXT,reported_count INTEGER,aggregated_count INTEGER,reported_pages INTEGER,source TEXT,PRIMARY KEY(category,leaf))')
     initial_page_count=db.execute('SELECT count(*) FROM pages').fetchone()[0]
     growth=Counter();seeding=True
@@ -81,14 +82,15 @@ def run(folder,maximum,seconds):
         with (output/'events.jsonl').open('a') as f:f.write(json.dumps(dict(event=event,**values))+'\n')
     def save():
         coverage=[dict(category=c,leaf=leaf,reported_count=reported,aggregated_count=aggregated,reported_pages=pages,
-                       reviewed_pages=reviewed,unique_product_ids=products,
-                       complete=reviewed>=pages and (not reported or products>=reported))
-                  for c,leaf,reported,aggregated,pages,reviewed,products in db.execute('''
+                       reviewed_pages=reviewed,unique_listed_product_ids=listed,unique_eligible_product_ids=eligible,
+                       complete=reviewed>=pages and (not reported or listed>=reported))
+                  for c,leaf,reported,aggregated,pages,reviewed,listed,eligible in db.execute('''
                     SELECT l.category,l.leaf,l.reported_count,l.aggregated_count,l.reported_pages,
-                           count(DISTINCT f.page),count(DISTINCT p.product_id)
+                           count(DISTINCT f.page),count(DISTINCT p.product_id),count(DISTINCT e.product_id)
                     FROM leaf_counts l
                     LEFT JOIN listing_fingerprints f ON f.category=l.category AND f.leaf=l.leaf
                     LEFT JOIN page_products p ON p.category=l.category AND p.leaf=l.leaf
+                    LEFT JOIN eligible_page_products e ON e.category=l.category AND e.leaf=l.leaf
                     GROUP BY l.category,l.leaf ORDER BY l.category,l.leaf''')]
         result.update(queue_growth=dict(growth),new_page_identities=db.execute('SELECT count(*) FROM pages').fetchone()[0]-initial_page_count,seconds=round(time.monotonic()-state['started'],2),counts={k:state[k] for k in ['product_requests','listing_requests','sequence','body_bytes']},queue_counts=dict(db.execute('SELECT status,count(*) FROM pages GROUP BY status')),scope_counts=dict(db.execute('SELECT decision,count(*) FROM links GROUP BY decision')),coverage_reconciliation=coverage)
         atomic_json(output/'report.json',result)
@@ -155,6 +157,8 @@ def run(folder,maximum,seconds):
                         pagination=search.get('paginationV2') or {};page=int((pagination.get('pageProperties') or {}).get('page') or 1);last=int(pagination.get('maxPage') or 1)
                         if page!=int((parse_qs(urlsplit(url).query).get('page') or ['1'])[0]):raise ValueError('Pagination response page mismatch')
                         ids=listing_ids(search)
+                        all_ids=sorted({str(item['usItemId']) for stack in search.get('itemStacks',[]) for item in stack.get('items',[])
+                                        if item.get('__typename')=='Product' and item.get('usItemId')})
                         reported_count=int(search.get('count') or 0);aggregated_count=int(search.get('aggregatedCount') or 0)
                         fingerprint=hashlib.sha256(json.dumps(ids).encode()).hexdigest() if ids else None
                         duplicate=db.execute('SELECT page,source FROM listing_fingerprints WHERE category=? AND leaf=? AND fingerprint=? AND page!=?',(category,actual,fingerprint,page)).fetchone() if fingerprint else None
@@ -164,11 +168,13 @@ def run(folder,maximum,seconds):
                         if fingerprint:
                             with db:
                                 db.execute('INSERT OR REPLACE INTO listing_fingerprints VALUES (?,?,?,?,?)',(category,actual,page,fingerprint,str(output)))
-                                db.executemany('INSERT OR IGNORE INTO page_products VALUES (?,?,?,?)',[(category,actual,page,key) for key in ids])
+                                db.executemany('INSERT OR IGNORE INTO page_products VALUES (?,?,?,?)',[(category,actual,page,key) for key in all_ids])
+                                db.executemany('INSERT OR IGNORE INTO eligible_page_products VALUES (?,?,?,?)',[(category,actual,page,key) for key in ids])
                                 db.execute('INSERT OR REPLACE INTO leaf_counts VALUES (?,?,?,?,?,?)',(category,actual,reported_count,aggregated_count,last,str(output)))
                         if page<last and not following:raise ValueError('Missing observed next-page control')
                         entry.update(page=page,reported_last_page=last,reported_count=reported_count,aggregated_count=aggregated_count,
-                                     unique_product_ids=len(ids),product_ids=ids,listing_rejections=dict(Counter(r['reason'] for r in rejections)))
+                                     unique_listed_product_ids=len(all_ids),unique_eligible_product_ids=len(ids),
+                                     listed_product_ids=all_ids,eligible_product_ids=ids,listing_rejections=dict(Counter(r['reason'] for r in rejections)))
                     elif not links:raise ValueError('Neither verified product listing nor child navigation; not legitimate empty category')
                 finally:fetched.decompose()
                 with db:

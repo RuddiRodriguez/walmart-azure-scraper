@@ -12,5 +12,15 @@
   "next_test": {
     "pages": 20,
     "purpose": "Validate live reported counts, unique IDs and reconciliation output"
+  },
+  "first_test": {
+    "pages": 20,
+    "reported_leaf_counts_captured": 20,
+    "pending_before": 2229,
+    "pending_after": 2216,
+    "reviewed_after": 1495,
+    "failed_after": 75,
+    "new_pages": 7,
+    "finding": "Reported totals include sponsored placements; reporting now separates all listed IDs from eligible non-sponsored IDs"
   }
 }
