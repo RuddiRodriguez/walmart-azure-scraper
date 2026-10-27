@@ -1,0 +1,16 @@
+{
+  "goal": "Measure required category leaf coverage instead of counting visited links",
+  "method": [
+    "Keep only verified required category ancestry",
+    "Record retailer reported item count and page count for every reviewed leaf",
+    "Record unique product IDs observed on every page",
+    "Compare reviewed pages and unique IDs against reported values",
+    "Keep incomplete, failed and unresolved leaves explicit",
+    "Use observed facets only when a real pagination cap prevents completion"
+  ],
+  "completion_rule": "No full-coverage claim until every required leaf and page is reconciled",
+  "next_test": {
+    "pages": 20,
+    "purpose": "Validate live reported counts, unique IDs and reconciliation output"
+  }
+}
