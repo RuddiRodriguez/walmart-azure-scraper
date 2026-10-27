@@ -83,7 +83,7 @@ def run(folder,maximum,seconds):
     def save():
         coverage=[dict(category=c,leaf=leaf,reported_count=reported,aggregated_count=aggregated,reported_pages=pages,
                        reviewed_pages=reviewed,unique_listed_product_ids=listed,unique_eligible_product_ids=eligible,
-                       complete=reviewed>=pages and (not reported or listed>=reported))
+                       reported_minus_unique_listed=reported-listed,complete=reviewed>=pages)
                   for c,leaf,reported,aggregated,pages,reviewed,listed,eligible in db.execute('''
                     SELECT l.category,l.leaf,l.reported_count,l.aggregated_count,l.reported_pages,
                            count(DISTINCT f.page),count(DISTINCT p.product_id),count(DISTINCT e.product_id)

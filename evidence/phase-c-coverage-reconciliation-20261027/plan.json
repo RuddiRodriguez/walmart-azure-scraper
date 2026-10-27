@@ -22,5 +22,15 @@
     "failed_after": 75,
     "new_pages": 7,
     "finding": "Reported totals include sponsored placements; reporting now separates all listed IDs from eligible non-sponsored IDs"
+  },
+  "second_test": {
+    "pages": 20,
+    "reported_leaf_counts_captured": 20,
+    "pending_before": 2216,
+    "pending_after": 2215,
+    "reviewed_after": 1515,
+    "failed_after": 75,
+    "new_pages": 19,
+    "finding": "Reported count measures placements and can include repeated sponsored or marketplace items; page completion therefore uses reconciled pagination while count differences remain visible"
   }
 }
