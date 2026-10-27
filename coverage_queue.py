@@ -1,5 +1,5 @@
 """Persistent bounded category/pagination review. Records gaps; never claims partial walk complete."""
-import argparse,csv,hashlib,json,os,re,signal,sqlite3,subprocess,time
+import argparse,csv,hashlib,json,os,re,shutil,signal,sqlite3,subprocess,time
 from collections import Counter
 from pathlib import Path
 from urllib.parse import urlsplit,parse_qs
@@ -11,6 +11,19 @@ from capture_store_drift import listing_from_rendered
 from scrape import next_page_url,verify_listing_store
 from storage import atomic_json,page_url
 from audit_queue_growth import listing_ids
+
+CODEX=Path('/Volumes/CODEX')
+EXTERNAL_DATA=CODEX/'Walmart_Scraper_Private_Evidence'
+GIB=2**30
+BATCH_LIMIT=2*GIB
+
+
+def ensure_storage(folder,state=None):
+    if not CODEX.is_mount():raise RuntimeError('CODEX evidence drive is not mounted')
+    if not Path(folder).resolve().is_relative_to(EXTERNAL_DATA.resolve()):raise RuntimeError('Private evidence is not on the approved CODEX drive')
+    if shutil.disk_usage('/').free<60*GIB:raise RuntimeError('Mac free space is below 60 GiB')
+    if shutil.disk_usage(CODEX).free<40*GIB:raise RuntimeError('CODEX free space is below 40 GiB')
+    if state and state['body_bytes']+state['native_bytes']>BATCH_LIMIT:raise RuntimeError('Batch growth reached 2 GiB')
 
 
 def key(url):
@@ -24,6 +37,7 @@ def run(folder,maximum,seconds):
     if not 1<=maximum<=80 or not 0<seconds<=5400:raise ValueError('Use at most80pages/90minutes per continuation')
     folder=Path(folder);folder.mkdir(parents=True,exist_ok=True)
     if (folder/'USER_PAUSED').exists():raise RuntimeError('Point3 paused by user; explicit resume required')
+    ensure_storage(folder)
     import fcntl
     lock=(folder/'run.lock').open('w');fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
     db=sqlite3.connect(folder/'queue.sqlite')
@@ -57,7 +71,7 @@ def run(folder,maximum,seconds):
     output=folder/f'batch-{batch:05}-{int(time.time())}';output.mkdir()
     settings=json.loads(Path('config/stores.json').read_text());settings.update(retries=1,max_page_seconds=25)
     store=settings['stores'][0]
-    state=dict(started=time.monotonic(),limits=dict(product_requests=10,listing_requests=maximum,seconds=seconds),product_requests=0,listing_requests=0,sequence=0,body_bytes=0,body_limit_bytes=1024*2**20)
+    state=dict(started=time.monotonic(),limits=dict(product_requests=10,listing_requests=maximum,seconds=seconds,batch_bytes=BATCH_LIMIT),product_requests=0,listing_requests=0,sequence=0,body_bytes=0,native_bytes=0,body_limit_bytes=1024*2**20)
     from datetime import datetime,timezone
     result=dict(started_utc=datetime.now(timezone.utc).isoformat(),source_commit=subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip(),source_hashes={n:hashlib.sha256(Path(n).read_bytes()).hexdigest() for n in ['coverage_queue.py','audit_queue_growth.py','extract.py','browser.py']},scope='Listing/category coverage review only; no full product/PDP collection',pages=[],offer_observations=[],limits=state['limits'],full_coverage_complete=False)
     sb=None
@@ -71,6 +85,7 @@ def run(folder,maximum,seconds):
     try:
         sb=open_browser();select_store(sb,store,settings,log,output)
         for _ in range(maximum):
+            ensure_storage(folder,state)
             # Breadth first: next pending page from category with fewest completed pages.
             pending=db.execute("SELECT p.category,p.key,p.url,p.scope_review FROM pages p WHERE p.status='pending' ORDER BY p.scope_review,(SELECT count(*) FROM pages d WHERE d.category=p.category AND d.status!='pending'),p.rowid LIMIT 1").fetchone()
             if not pending:break
@@ -84,10 +99,11 @@ def run(folder,maximum,seconds):
                     count=len(native.select('[data-item-id]'));stable=stable+1 if count==prior else 0;prior=count
                     if stable>=4:break
                 else:raise ValueError('Lazy loading did not settle')
-                snapshot=output/f'native-{len(result["pages"])}.html';snapshot.write_bytes(str(native).encode())
+                snapshot=output/f'native-{len(result["pages"])}.html';snapshot.write_bytes(str(native).encode());state['native_bytes']+=snapshot.stat().st_size;ensure_storage(folder,state)
                 decisions=[];links=discover(native,roots[category],['recipes',r'shop[- ]all[- ]foods?$',r'farm[- ]animals'],current_url=url,decisions=decisions)
                 native_search=next_data(native).get('searchResult');following_native=next_page_url(native,url,native_search);native.decompose()
                 fetched=fetch_product(sb,url,settings,capture=make_capture(output/'captures','coverage',state,'listing'))
+                ensure_storage(folder,state)
                 try:
                     entry['listing_sequence']=state['sequence']
                     search=next_data(fetched).get('searchResult');following=None;candidate_count=0

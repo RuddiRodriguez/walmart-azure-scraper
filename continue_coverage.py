@@ -1,5 +1,5 @@
 """Finite persistent coverage continuations; original budget survives audit/restart."""
-import fcntl,hashlib,json,sqlite3,subprocess,sys,time
+import fcntl,hashlib,json,shutil,sqlite3,subprocess,sys,time
 from pathlib import Path
 import psutil
 from storage import atomic_json
@@ -7,6 +7,16 @@ from diagnostic_capture import safe_url
 
 ROOT=Path('data/full-coverage-20261026')
 PUBLIC=Path('evidence/point3-coverage-queue-20261026')
+CODEX=Path('/Volumes/CODEX')
+EXTERNAL_DATA=CODEX/'Walmart_Scraper_Private_Evidence'
+GIB=2**30
+
+
+def ensure_storage():
+ if not CODEX.is_mount():raise RuntimeError('CODEX evidence drive is not mounted')
+ if not ROOT.resolve().is_relative_to(EXTERNAL_DATA.resolve()):raise RuntimeError('Private evidence has not been verified and relocated to CODEX')
+ if shutil.disk_usage('/').free<60*GIB:raise RuntimeError('Mac free space is below 60 GiB')
+ if shutil.disk_usage(CODEX).free<40*GIB:raise RuntimeError('CODEX free space is below 40 GiB')
 
 
 def export_batch(batch,report,status):
@@ -52,6 +62,7 @@ def run():
   return any(o.get('qualified_candidate') for o in report.get('offer_observations',[]))
  try:
   if (ROOT/'USER_PAUSED').exists():status['phase']='paused_by_user_storage_cleanup';return
+  ensure_storage()
   # An audit may stop only the coordinator while its current child finishes safely.
   running=[p for p in psutil.process_iter(['cmdline']) if 'coverage_queue.py' in (p.info['cmdline'] or [])]
   if len(running)>1:raise RuntimeError('Multiple walkers; refuse duplicate work')
@@ -65,7 +76,7 @@ def run():
    db=sqlite3.connect(ROOT/'queue.sqlite');pending=db.execute("SELECT count(*) FROM pages WHERE status='pending'").fetchone()[0];db.close()
    if not pending:status['phase']='queue_exhausted_review_remaining_gaps';break
    status['phase']='walking';save();before=set(ROOT.glob('batch-*'))
-   remaining=int(status['deadline_unix']-time.time());maximum=min(80,status['max_pages']-status['pages_attempted'])
+   remaining=int(status['deadline_unix']-time.time());maximum=min(40,status['max_pages']-status['pages_attempted'])
    if remaining<1:break
    with (ROOT/'worker.log').open('a') as log:
     process=subprocess.Popen([sys.executable,'coverage_queue.py','--pages',str(maximum),'--seconds',str(min(5400,remaining))],stdout=log,stderr=subprocess.STDOUT)
@@ -77,6 +88,7 @@ def run():
      process.kill();process.wait();raise RuntimeError('Coverage outer runtime guard reached')
    new=set(ROOT.glob('batch-*'))-before
    if len(new)!=1:raise RuntimeError('Unexpected batch count')
+   ensure_storage()
    if completed(new.pop()):status['phase']='offer_candidate_ready_for_source_review';break
    if process.returncode:raise RuntimeError('Walker failed; inspect private worker log')
   else:status['phase']='original_finite_work_budget_reached'

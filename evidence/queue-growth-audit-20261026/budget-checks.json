@@ -1,6 +1,9 @@
 {
   "passed": true,
   "checks": [
+    "External evidence location required",
+    "60 GiB Mac reserve enforced",
+    "40 GiB CODEX reserve enforced",
     "Restart keeps original expired deadline",
     "Restart keeps consumed page allowance",
     "Expired budget launches no job",

@@ -26,7 +26,7 @@ def relocate(source):
     files=[p for p in paths if p.is_file() and not p.is_symlink()]
     links=[p for p in paths if p.is_symlink()]
     size=sum(p.stat().st_size for p in files)
-    target=DESTINATION/relative
+    target=(DESTINATION/relative).resolve()
     if source.resolve()==target.resolve():return dict(source=str(source),destination=str(target),status='already_on_external_drive')
     if shutil.disk_usage(VOLUME).free<size+RESERVE:raise RuntimeError('CODEX reserve would fall below4GiB')
     target.mkdir(parents=True,exist_ok=True,mode=0o700)

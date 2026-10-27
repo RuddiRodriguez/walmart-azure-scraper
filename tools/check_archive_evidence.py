@@ -19,7 +19,7 @@ def check():
   checks+=['Exact contents and existing path preserved through verified link','Receipt saved before local duplicate removed','Rerun does not duplicate archived evidence']
   bad=root/'failure';bad.mkdir();(bad/'original').write_text('keep me');original_digest=archive.digest
   def mismatch(path):
-   return 'intentional mismatch' if path.is_relative_to(destination) else original_digest(path)
+   return 'intentional mismatch' if path.resolve().is_relative_to(destination.resolve()) else original_digest(path)
   with patch.object(archive,'VOLUME',volume),patch.object(archive,'DESTINATION',destination),patch.object(Path,'is_mount',return_value=True),patch.object(archive,'digest',side_effect=mismatch):
    try:archive.relocate(bad)
    except RuntimeError:pass

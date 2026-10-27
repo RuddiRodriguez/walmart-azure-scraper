@@ -764,3 +764,8 @@ Listing/category review only. Pending/failed/scope-unverified remain open. Raw b
 - SD_Card_3writefailed withErrno5I/O beforeanycompletebatchverified; relocationresults empty,alloriginalsstilllocal. PartialSDcopy nottreatedasbackup. UserapprovedCODEXseparatefolder,127GiBfree,existingCodex-Mac-Backup untouched.
 - Chose moveprivate data toCODEXafter fullhash/inventoryverification,thenkeeprepodata pathlink. Existing relativeaudit/checkpointpaths preserved; originalraw/native/datsets notdeletedforage. Fourclosed-profilelinks preservedaslinks,notfollowedtoexternalcontents. Notanindependentsecondbackup. Gitmetadata135MiB,notdominantstorage.
 - Cleanupselectedonlyregenerable unrevieweddrafts withverified originalbodies/drafthashes,andclosedhistoricalbrowserCache/CodeCache. Approvedsharingredactions/rawbodies/nativeproof/records/history/checkpoints preserved. Actualcleanup/move counts willbe recorded aftersuccessfulcompletion. Sourcecollectionstayspausedpendingexplicitresume. Sixsyntheticrelocationchecks passed; backups untouched.
+## 2026-10-27 storage-safe continuation preparation
+
+The scraper remains paused while the existing CODEX backup finishes naturally. No backup process or backup folder was changed. Safe Codex application caches were cleared; chats, sessions, memories, worktrees, generated files and project data were preserved.
+
+Added hard stops before resuming point 3: evidence must be on the approved CODEX evidence path, the Mac must keep at least 60 GiB free, CODEX must keep at least 40 GiB free, each batch is limited to 2 GiB and the coordinator now uses 40-page batches. Offline budget and relocation tests passed. The original page and time limits remain unchanged.
