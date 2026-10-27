@@ -1,0 +1,742 @@
+[
+  {
+    "id": "coverage-016",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 16,
+    "request": {
+      "url": "https://www.walmart.com/browse/health-medicine/olly-vitamins/976760_1005863_2156819?page=2",
+      "attempt": 1,
+      "started_utc": "2026-10-27T10:21:24.699563+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/health-medicine/olly-vitamins/976760_1005863_2156819?page=2",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 10:21:25 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T10:21:25.361099+00:00",
+      "elapsed_seconds": 0.662
+    },
+    "body_sha256": "81d19c66e57995f7636781fad27b7c6c4ec6393ced29af93c54db3214e2959e6",
+    "body_bytes": 731577,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-020",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 20,
+    "request": {
+      "url": "https://www.walmart.com/browse/personal-care/all-bath-bombs-bubbles-bath-soaks/1005862_1071969_2187415?page=2",
+      "attempt": 1,
+      "started_utc": "2026-10-27T10:22:38.838323+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/personal-care/all-bath-bombs-bubbles-bath-soaks/1005862_1071969_2187415?page=2",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 10:22:39 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T10:22:39.300567+00:00",
+      "elapsed_seconds": 0.462
+    },
+    "body_sha256": "900e69d11857d58535501ae3c522f8f53400ded70355ab6eb7df0e1eda47e055",
+    "body_bytes": 1130984,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-017",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 17,
+    "request": {
+      "url": "https://www.walmart.com/browse/office-supplies/mini-binders/1229749_5093993_5959018",
+      "attempt": 1,
+      "started_utc": "2026-10-27T10:21:41.500735+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/office-supplies/mini-binders/1229749_5093993_5959018",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 10:21:41 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T10:21:41.849920+00:00",
+      "elapsed_seconds": 0.349
+    },
+    "body_sha256": "3eedee47b35036525b703143c05f3886c4ccf48dcb2937b8e5a7d0cbdcbbeb60",
+    "body_bytes": 712576,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-001",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 1,
+    "request": {
+      "url": "https://www.walmart.com/browse/personal-care/men-s-beard-care/1005862_1007220_7312346",
+      "attempt": 1,
+      "started_utc": "2026-10-27T10:14:34.475027+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/personal-care/men-s-beard-care/1005862_1007220_7312346",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 10:14:35 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T10:14:35.416872+00:00",
+      "elapsed_seconds": 0.942
+    },
+    "body_sha256": "31934c10464dc710ff52ce60fcfb74d6e8eeb2ed01310f57ef379dcb6419b517",
+    "body_bytes": 1161120,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-006",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 6,
+    "request": {
+      "url": "https://www.walmart.com/browse/beauty/aussie/1085666_3147628_8028415_9774050?page=2",
+      "attempt": 1,
+      "started_utc": "2026-10-27T10:16:43.097659+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/beauty/aussie/1085666_3147628_8028415_9774050?page=2",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 10:16:43 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T10:16:43.644443+00:00",
+      "elapsed_seconds": 0.547
+    },
+    "body_sha256": "d281c68601fc9830557000ed4d81bb0fbdc3f5e5390ebe45641c0dbbd2b2be60",
+    "body_bytes": 878520,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-010",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 10,
+    "request": {
+      "url": "https://www.walmart.com/browse/health-medicine/nasal-sprays/976760_3771182_6521746?page=2",
+      "attempt": 1,
+      "started_utc": "2026-10-27T10:18:33.116597+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/health-medicine/nasal-sprays/976760_3771182_6521746?page=2",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 10:18:33 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T10:18:33.709438+00:00",
+      "elapsed_seconds": 0.593
+    },
+    "body_sha256": "785be5a1ac17099978dd524b888d4606d39dc48c80947cffcdcca652321d8c2c",
+    "body_bytes": 802489,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-011",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 11,
+    "request": {
+      "url": "https://www.walmart.com/browse/office-supplies/mildliner-highlighters/1229749_9081741_7907154",
+      "attempt": 1,
+      "started_utc": "2026-10-27T10:19:02.418534+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/office-supplies/mildliner-highlighters/1229749_8843226_5527408_7907154",
+      "redirected": true,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 10:19:02 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T10:19:02.997848+00:00",
+      "elapsed_seconds": 0.579
+    },
+    "body_sha256": "1c9deb3442de464a89772a5a622ee0d5369db4b1046e19e6a06e1573f3a1af8a",
+    "body_bytes": 590317,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-007",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 7,
+    "request": {
+      "url": "https://www.walmart.com/browse/personal-care/mens-shaving-cream/1005862_1007220_1001491_9312881",
+      "attempt": 1,
+      "started_utc": "2026-10-27T10:17:11.687835+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/personal-care/mens-shaving-cream/1005862_1007220_1001491_9312881",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 10:17:11 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T10:17:12.041631+00:00",
+      "elapsed_seconds": 0.354
+    },
+    "body_sha256": "0081ef0d31d88568a1174ede890e67bfc0365318758ce964e27ae645f8f56ed6",
+    "body_bytes": 1203205,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-008",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 8,
+    "request": {
+      "url": "https://www.walmart.com/browse/pets/cat-backpacks/5440_202073_7788817_5544612_1550800",
+      "attempt": 1,
+      "started_utc": "2026-10-27T10:17:34.429456+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/pets/cat-backpacks/5440_202073_7788817_1550800",
+      "redirected": true,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 10:17:36 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T10:17:37.006616+00:00",
+      "elapsed_seconds": 2.577
+    },
+    "body_sha256": "97016b6fbda5697ae008d7399415822ea568bff2038463417a6674cf3aea4309",
+    "body_bytes": 590042,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-012",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 12,
+    "request": {
+      "url": "https://www.walmart.com/browse/beauty/beauty-solutions-haircare/1085666_1729914_6060229?page=2",
+      "attempt": 1,
+      "started_utc": "2026-10-27T10:19:44.525387+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/beauty/beauty-solutions-haircare/1085666_1729914_6060229?page=2",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 10:19:44 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T10:19:45.912234+00:00",
+      "elapsed_seconds": 1.387
+    },
+    "body_sha256": "79f7343789261824b1872589b252d4c8d2964ccd7ea4b326e37e2e7793c4c6db",
+    "body_bytes": 1141643,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-004",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 4,
+    "request": {
+      "url": "https://www.walmart.com/browse/health-medicine/sinus-rinses/976760_3771182_8230104",
+      "attempt": 1,
+      "started_utc": "2026-10-27T10:16:04.391463+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/health-medicine/sinus-rinses/976760_3771182_8230104",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 10:16:05 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T10:16:05.746151+00:00",
+      "elapsed_seconds": 1.355
+    },
+    "body_sha256": "f64f439c6f81853162e57345e55cd293057ccab8e4ce6804c7d2301791768b62",
+    "body_bytes": 913623,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-005",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 5,
+    "request": {
+      "url": "https://www.walmart.com/browse/office-supplies/micro-cut-shredders/1229749_2155104_8985104",
+      "attempt": 1,
+      "started_utc": "2026-10-27T10:16:24.818689+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/office-supplies/micro-cut-shredders/1229749_2155104_8985104",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 10:16:24 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T10:16:25.045193+00:00",
+      "elapsed_seconds": 0.227
+    },
+    "body_sha256": "6c2bced45249ce4619ecc023f533320010457c7309fa9fe0d37b4e034e3b6c65",
+    "body_bytes": 595594,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-013",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 13,
+    "request": {
+      "url": "https://www.walmart.com/browse/personal-care/womens-shaving-cream/1005862_1007220_1001491_7396738",
+      "attempt": 1,
+      "started_utc": "2026-10-27T10:20:18.944789+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/personal-care/womens-shaving-cream/1005862_1007220_1001491_7396738",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 10:20:19 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T10:20:19.310587+00:00",
+      "elapsed_seconds": 0.366
+    },
+    "body_sha256": "b456c5d5ee42eec16dd96d85daa53d8fc9db6fb389a9e19274a088088ce87eed",
+    "body_bytes": 1144140,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-009",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 9,
+    "request": {
+      "url": "https://www.walmart.com/browse/household-essentials/chemical-guys-car-air-freshener/1115193_1025739_7032476_2346414_5445381",
+      "attempt": 1,
+      "started_utc": "2026-10-27T10:18:13.636868+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/household-essentials/chemical-guys-car-air-freshener/1115193_1025739_7032476_2346414_5445381",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 10:18:13 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T10:18:14.061564+00:00",
+      "elapsed_seconds": 0.425
+    },
+    "body_sha256": "7472b7eeadb2f9f85ca8da4193749cefc050cef9745f7fc5c9c2e7fd4cd61a3b",
+    "body_bytes": 871295,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-014",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 14,
+    "request": {
+      "url": "https://www.walmart.com/browse/pets/cat-bubble-backpacks/5440_202073_7788817_4791389",
+      "attempt": 1,
+      "started_utc": "2026-10-27T10:20:39.626911+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/pets/cat-bubble-backpacks/5440_202073_7788817_4791389",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 10:20:39 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T10:20:40.080458+00:00",
+      "elapsed_seconds": 0.454
+    },
+    "body_sha256": "28d1282832a936f55e6d3c5cecd39c02dbc92d3588c90645e08715531072c4af",
+    "body_bytes": 555988,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-002",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 2,
+    "request": {
+      "url": "https://www.walmart.com/browse/pets/airline-approved-cat-carriers/5440_202073_7788817_5544612_5911467",
+      "attempt": 1,
+      "started_utc": "2026-10-27T10:15:21.640064+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/pets/airline-approved-cat-carriers/5440_202073_7788817_5911467",
+      "redirected": true,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 10:15:22 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T10:15:22.611615+00:00",
+      "elapsed_seconds": 0.972
+    },
+    "body_sha256": "0248954fd9ab941f6a057fce98edc6326df5cacf70b2ab9d5386751294374fcd",
+    "body_bytes": 739849,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-018",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 18,
+    "request": {
+      "url": "https://www.walmart.com/browse/beauty/hair-care-hair-tools/1085666_7192911_7737658",
+      "attempt": 1,
+      "started_utc": "2026-10-27T10:22:01.010660+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/beauty/hair-care-hair-tools/1085666_7192911_7737658",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 10:22:01 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T10:22:01.631528+00:00",
+      "elapsed_seconds": 0.621
+    },
+    "body_sha256": "37abe615de6364ceaad5cb7fc9036b108570031ad460247454c88344ba99faae",
+    "body_bytes": 1440257,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-019",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 19,
+    "request": {
+      "url": "https://www.walmart.com/browse/pets/cat-strollers/5440_202073_7788817_5544612_6846637",
+      "attempt": 1,
+      "started_utc": "2026-10-27T10:22:21.182482+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/pets/cat-strollers/5440_202073_7788817_6846637",
+      "redirected": true,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 10:22:21 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T10:22:22.042185+00:00",
+      "elapsed_seconds": 0.86
+    },
+    "body_sha256": "16f7f524c0986ca481f87bccf1b1a60837b685999760729191b599fc0e855f41",
+    "body_bytes": 588538,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-003",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 3,
+    "request": {
+      "url": "https://www.walmart.com/browse/household-essentials/california-scents/1115193_1025739_7032476_2346414_5382328",
+      "attempt": 1,
+      "started_utc": "2026-10-27T10:15:42.137297+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/household-essentials/california-scents/1115193_1025739_7032476_2346414_5382328",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 10:15:42 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T10:15:42.499984+00:00",
+      "elapsed_seconds": 0.363
+    },
+    "body_sha256": "1f648549fa82fc6013823431b0bf842c8b673b6091cc9b441bc814aee26b5203",
+    "body_bytes": 787092,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-015",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 15,
+    "request": {
+      "url": "https://www.walmart.com/browse/household-essentials/febreze-car-air-fresheners/1115193_1025739_7032476_2346414_1683109",
+      "attempt": 1,
+      "started_utc": "2026-10-27T10:21:04.193345+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/household-essentials/febreze-car-air-fresheners/1115193_1025739_7032476_2346414_1683109",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 10:21:05 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T10:21:05.796422+00:00",
+      "elapsed_seconds": 1.603
+    },
+    "body_sha256": "0dfc5601863fa5374dded3e5eed6fe71ef40291bbb0f1371a2ae5823d1ffb741",
+    "body_bytes": 1163818,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  }
+]
