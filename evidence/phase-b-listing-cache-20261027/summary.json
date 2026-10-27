@@ -18,7 +18,17 @@
     "First bounded repeat exposed blank listing prices because Walmart supplied priceDetails instead of currentPrice",
     "Parser now verifies visible listing price against priceDetails when available"
   ],
-  "open": [
-    "Bounded live repeat acceptance"
-  ]
+  "live_acceptance": {
+    "passed": true,
+    "records": 11,
+    "categories": 11,
+    "current_prices": 11,
+    "direct_ppm": 8,
+    "product_page_requests": 0,
+    "cached_listing_records": 11,
+    "context_failures": 0,
+    "duplicate_product_ids": 0,
+    "active_seconds": 418.67
+  },
+  "open": []
 }
