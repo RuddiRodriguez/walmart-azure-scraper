@@ -2,6 +2,8 @@
 import json
 import os
 import sqlite3
+import subprocess
+import hashlib
 from pathlib import Path
 from urllib.parse import urlsplit, urlunsplit, parse_qsl, urlencode
 
@@ -15,6 +17,25 @@ def atomic_json(path, value):
         stream.flush()
         os.fsync(stream.fileno())
     temp.replace(path)
+
+
+def git_index_sha256(exclude='evidence/SHA256SUMS.json'):
+    """Hash staged Git contents in one process, ignoring unrelated working files."""
+    records=subprocess.check_output(['git','ls-files','-s','-z']).decode().split('\0')
+    entries=[]
+    for record in records:
+        if not record:continue
+        meta,name=record.split('\t',1);mode,blob,stage=meta.split()
+        if stage=='0' and name!=exclude:entries.append((name,blob))
+    process=subprocess.Popen(['git','cat-file','--batch'],stdin=subprocess.PIPE,stdout=subprocess.PIPE)
+    result={}
+    for name,blob in entries:
+        process.stdin.write((blob+'\n').encode());process.stdin.flush()
+        header=process.stdout.readline().decode().split();size=int(header[2]);body=process.stdout.read(size);process.stdout.read(1)
+        result[name]=hashlib.sha256(body).hexdigest()
+    process.stdin.close();process.wait()
+    if process.returncode:raise RuntimeError('Git index hashing failed')
+    return result
 
 
 def connect(path):

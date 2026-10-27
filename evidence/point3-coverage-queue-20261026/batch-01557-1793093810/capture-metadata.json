@@ -1,0 +1,742 @@
+[
+  {
+    "id": "coverage-016",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 16,
+    "request": {
+      "url": "https://www.walmart.com/browse/office-supplies/magnetic-calendars/1229749_8412191_2274527_9105498",
+      "attempt": 1,
+      "started_utc": "2026-10-27T09:42:43.830659+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/office-supplies/magnetic-calendars/1229749_8412191_2274527_9105498",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 09:42:44 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T09:42:44.125106+00:00",
+      "elapsed_seconds": 0.294
+    },
+    "body_sha256": "5254c6001e9d03a21ba27fac8b5acb19a3afd1dbb3b326c17addc0015e11d73d",
+    "body_bytes": 552842,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-020",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 20,
+    "request": {
+      "url": "https://www.walmart.com/browse/office-supplies/magnets/1229749_3417460_7835039",
+      "attempt": 1,
+      "started_utc": "2026-10-27T09:43:55.513114+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/office-supplies/magnets/1229749_9234438_7835039",
+      "redirected": true,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 09:43:55 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T09:43:56.127257+00:00",
+      "elapsed_seconds": 0.614
+    },
+    "body_sha256": "420fd673a958a2c49b7344848d76a1b4cbf05c94e524683009fea4a448c4a09a",
+    "body_bytes": 836185,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-017",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 17,
+    "request": {
+      "url": "https://www.walmart.com/browse/pets/parakeet-food/5440_228734_1225008_5043995",
+      "attempt": 1,
+      "started_utc": "2026-10-27T09:42:59.709782+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/pets/parakeet-food/5440_228734_1225008_5043995",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 09:43:00 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T09:43:00.172958+00:00",
+      "elapsed_seconds": 0.463
+    },
+    "body_sha256": "0a2392801f7ad1e648265972a1e08fc25daca1f872d29b8c9517a27e29e8009d",
+    "body_bytes": 773959,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-001",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 1,
+    "request": {
+      "url": "https://www.walmart.com/browse/household-essentials/bathroom-air-fresheners/1115193_1025739_5929933?page=2",
+      "attempt": 1,
+      "started_utc": "2026-10-27T09:38:00.638919+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/household-essentials/bathroom-air-fresheners/1115193_1025739_5929933?page=2",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 09:38:00 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T09:38:01.017427+00:00",
+      "elapsed_seconds": 0.379
+    },
+    "body_sha256": "f9c5bb6321c5a2359a23929c5c0886a8da0a7ccdd62840f9d8a0a9b009dc280b",
+    "body_bytes": 1190266,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-006",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 6,
+    "request": {
+      "url": "https://www.walmart.com/browse/household-essentials/oxiclean-bathroom-cleaners/1115193_1071965_4273739",
+      "attempt": 1,
+      "started_utc": "2026-10-27T09:39:39.871411+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/household-essentials/oxiclean-bathroom-cleaners/1115193_1071965_4273739",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 09:39:40 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T09:39:40.450815+00:00",
+      "elapsed_seconds": 0.579
+    },
+    "body_sha256": "001566c38991ea43117b61d4a18c0d4164ad8c3f5af0c7cc98c19edb3e15ef99",
+    "body_bytes": 685562,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-010",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 10,
+    "request": {
+      "url": "https://www.walmart.com/browse/office-supplies/magic-markers/1229749_9081741_8911842",
+      "attempt": 1,
+      "started_utc": "2026-10-27T09:40:57.701239+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/office-supplies/magic-markers/1229749_9081741_8911842",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 09:40:57 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T09:40:57.828585+00:00",
+      "elapsed_seconds": 0.127
+    },
+    "body_sha256": "1323424efeb803f11c6ced72e7c04543f10062ae31a46365c571fa3cf4a0950d",
+    "body_bytes": 375941,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-011",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 11,
+    "request": {
+      "url": "https://www.walmart.com/browse/pets/cockatiel-cages/5440_228734_7047090_2902319",
+      "attempt": 1,
+      "started_utc": "2026-10-27T09:41:13.069047+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/pets/cockatiel-cages/5440_228734_7047090_2902319",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 09:41:13 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T09:41:13.380622+00:00",
+      "elapsed_seconds": 0.312
+    },
+    "body_sha256": "7a7842b4bf29c09a4d1742cd275c06eeb92b6c98e24b8e70996b3c33c653b47a",
+    "body_bytes": 507673,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-007",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 7,
+    "request": {
+      "url": "https://www.walmart.com/browse/office-supplies/magazine-holders/1229749_7431192_7061047",
+      "attempt": 1,
+      "started_utc": "2026-10-27T09:39:56.321036+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/office-supplies/magazine-holders/1229749_7431192_7061047",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 09:39:56 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T09:39:56.660150+00:00",
+      "elapsed_seconds": 0.339
+    },
+    "body_sha256": "87a6ee9b77fd54026df90b79e1631003f11426f03b329c5b5db2d43cdf0c8dc8",
+    "body_bytes": 581894,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-008",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 8,
+    "request": {
+      "url": "https://www.walmart.com/browse/pets/parrot-cages/5440_228734_7047090_5202216",
+      "attempt": 1,
+      "started_utc": "2026-10-27T09:40:16.128343+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/pets/parrot-cages/5440_228734_7047090_5202216",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 09:40:16 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T09:40:16.348662+00:00",
+      "elapsed_seconds": 0.22
+    },
+    "body_sha256": "2f34f9921640c884605aecc16e5df462c46e3de3268c8cc1f034d4b9d70b8ca1",
+    "body_bytes": 508295,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-012",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 12,
+    "request": {
+      "url": "https://www.walmart.com/browse/household-essentials/diatomaceous-earth/1115193_1025745_6036609",
+      "attempt": 1,
+      "started_utc": "2026-10-27T09:41:29.456426+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/household-essentials/diatomaceous-earth/1115193_1025745_6036609",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 09:41:29 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T09:41:29.685989+00:00",
+      "elapsed_seconds": 0.23
+    },
+    "body_sha256": "d9ac15521144464e6d42596af01d8124ae951b10a687d1f1a250cd7f2c670a5c",
+    "body_bytes": 491683,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-004",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 4,
+    "request": {
+      "url": "https://www.walmart.com/browse/household-essentials/scrubbing-bubbles/1115193_8250903_2963058",
+      "attempt": 1,
+      "started_utc": "2026-10-27T09:39:05.182997+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/household-essentials/scrubbing-bubbles/1115193_8250903_2963058",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 09:39:05 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T09:39:05.402478+00:00",
+      "elapsed_seconds": 0.219
+    },
+    "body_sha256": "fbbfba95fa5020344597663728cee152e19b674dc7665a7327a0124576806f56",
+    "body_bytes": 889276,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-005",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 5,
+    "request": {
+      "url": "https://www.walmart.com/browse/office-supplies/loose-leaf-filler-paper/1229749_6562796_4539149",
+      "attempt": 1,
+      "started_utc": "2026-10-27T09:39:22.952806+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/office-supplies/loose-leaf-filler-paper/1229749_6562796_4539149",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 09:39:23 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T09:39:23.148396+00:00",
+      "elapsed_seconds": 0.196
+    },
+    "body_sha256": "147f7c4c06549c2d77b46477bfbcd19fb3aa1b3f5cf60598e7decc665d71cc11",
+    "body_bytes": 662543,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-013",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 13,
+    "request": {
+      "url": "https://www.walmart.com/browse/office-supplies/magnetic-boards/1229749_1565348_7012109",
+      "attempt": 1,
+      "started_utc": "2026-10-27T09:41:47.849242+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/office-supplies/magnetic-boards/1229749_1565348_7012109",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 09:41:49 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T09:41:49.750351+00:00",
+      "elapsed_seconds": 1.901
+    },
+    "body_sha256": "f8416ec31b18674d9ee7bd47c7e25d8a3a0602db7fd541dada0e8657751841ad",
+    "body_bytes": 859869,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-009",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 9,
+    "request": {
+      "url": "https://www.walmart.com/browse/household-essentials/bathroom-cleaners/1115193_1071965_1072125?page=2",
+      "attempt": 1,
+      "started_utc": "2026-10-27T09:40:34.749657+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/household-essentials/bathroom-cleaners/1115193_1071965_1072125?page=2",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 09:40:36 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T09:40:36.758072+00:00",
+      "elapsed_seconds": 2.008
+    },
+    "body_sha256": "22f693cb8c5b691eb0509cbe21f2aea48fe1facdead5479d46a6de4a49f86353",
+    "body_bytes": 1202253,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-014",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 14,
+    "request": {
+      "url": "https://www.walmart.com/browse/pets/bird-aviaries/5440_228734_2892656",
+      "attempt": 1,
+      "started_utc": "2026-10-27T09:42:06.525420+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/pets/bird-aviaries/5440_228734_2892656",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 09:42:07 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T09:42:07.582555+00:00",
+      "elapsed_seconds": 1.057
+    },
+    "body_sha256": "efa2eb42c9ecc7e165db22985ccbfc80a1e1e8fe88698032427d805faa778d32",
+    "body_bytes": 516804,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-002",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 2,
+    "request": {
+      "url": "https://www.walmart.com/browse/household-essentials/lysol-bathroom-cleaners/1115193_8250903_9423727_6616232",
+      "attempt": 1,
+      "started_utc": "2026-10-27T09:38:23.869733+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/household-essentials/lysol-bathroom-cleaners/1115193_8250903_9423727_6616232",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 09:38:23 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T09:38:24.196329+00:00",
+      "elapsed_seconds": 0.327
+    },
+    "body_sha256": "aa3f5c9ec8db37419881ff3ba3cce96dc4e2798eac6de6e110242088088bd13c",
+    "body_bytes": 1281246,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-018",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 18,
+    "request": {
+      "url": "https://www.walmart.com/browse/personal-care/incontinence-underwear-for-men/1005862_1225655_7099766",
+      "attempt": 1,
+      "started_utc": "2026-10-27T09:43:17.836807+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/personal-care/incontinence-underwear-for-men/1005862_1225655_7099766",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 09:43:18 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T09:43:18.175802+00:00",
+      "elapsed_seconds": 0.339
+    },
+    "body_sha256": "73afca30facb9ed8186dacf08ba45efec10f5b59fbbe58ea60c5749e94453391",
+    "body_bytes": 973268,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-019",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 19,
+    "request": {
+      "url": "https://www.walmart.com/browse/household-essentials/clorox-bleach/1115193_1071967_1149380_6794236",
+      "attempt": 1,
+      "started_utc": "2026-10-27T09:43:37.131677+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/household-essentials/clorox-bleach/1115193_1071967_1149380_6794236",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 09:43:37 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T09:43:37.996762+00:00",
+      "elapsed_seconds": 0.865
+    },
+    "body_sha256": "825510040a5e4d2cb681b9aa8535bb2eac18891cd6e1f2388300904d6f3c99ac",
+    "body_bytes": 931938,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-003",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 3,
+    "request": {
+      "url": "https://www.walmart.com/browse/office-supplies/locking-journals/1229749_4922227_9286603",
+      "attempt": 1,
+      "started_utc": "2026-10-27T09:38:40.380816+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/office-supplies/locking-journals/1229749_4922227_9286603",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 09:38:40 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T09:38:40.575007+00:00",
+      "elapsed_seconds": 0.194
+    },
+    "body_sha256": "f570128272c2baa2031abd0f8a7f24c5bf238c8486d81d28e32eb29e9a223fb1",
+    "body_bytes": 693038,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-015",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 15,
+    "request": {
+      "url": "https://www.walmart.com/browse/household-essentials/bed-bug-spray/1115193_1025745_3313179_6962803",
+      "attempt": 1,
+      "started_utc": "2026-10-27T09:42:25.837974+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/household-essentials/bed-bug-spray/1115193_1025745_8151679_3313179_6962803",
+      "redirected": true,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 09:42:26 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T09:42:26.389301+00:00",
+      "elapsed_seconds": 0.551
+    },
+    "body_sha256": "6a57c8cdd6a9c771da077af113be0ab3deff43f4968cc2e4bb4984b758a5fe6e",
+    "body_bytes": 704491,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  }
+]

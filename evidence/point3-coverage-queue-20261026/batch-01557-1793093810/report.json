@@ -1,0 +1,2934 @@
+{
+  "started_utc": "2026-10-27T09:36:50.843570+00:00",
+  "source_commit": "67400808939a89ec17068f06cc7b5ce6a06cdf0a",
+  "source_hashes": {
+    "coverage_queue.py": "ed6cf286c67d367fa04b37f1b915d6b2aa01163d0a3e6c4f4fd719fe5011d2d2",
+    "audit_queue_growth.py": "3ae6dc804966741256914559ecbf81fceeb4d00210e81a03998afd494800117d",
+    "extract.py": "34276d3e23cc56f9c4be813db61e30e1b3a1441863eb6d34a29de10b21f2806b",
+    "browser.py": "9dd3473ffb835741ca3b1d6b2c718164eefa4c18b7a9c5ed2b84a00e16bdcbaa"
+  },
+  "scope": "Listing/category coverage review only; no full product/PDP collection",
+  "pages": [
+    {
+      "category": "Household Essentials",
+      "url": "https://www.walmart.com/browse/household-essentials/bathroom-air-fresheners/1115193_1025739_5929933?page=2",
+      "status": "reviewed",
+      "listing_sequence": 1,
+      "response_category_id": "1115193_1025739_5929933",
+      "breadcrumb": [
+        {
+          "id": "1115193",
+          "name": "Household Essentials",
+          "url": "/cp/1115193"
+        },
+        {
+          "id": "1115193_1025739",
+          "name": "Air Fresheners",
+          "url": "/browse/household-essentials/air-fresheners/1115193_1025739"
+        },
+        {
+          "id": "1115193_1025739_5929933",
+          "name": "Bathroom Air Fresheners",
+          "url": "/browse/air-fresheners/bathroom-air-fresheners/1115193_1025739_5929933"
+        }
+      ],
+      "page": 2,
+      "reported_last_page": 8,
+      "listing_rejections": {
+        "sponsored": 11,
+        "outside_category": 1
+      },
+      "candidate_count": 38,
+      "next_page": "https://www.walmart.com/browse/household-essentials/bathroom-air-fresheners/1115193_1025739_5929933?page=3",
+      "snapshot_sha256": "5fa77863e4fae1e593c5d4858d5c05475b8e625ddfdb8bff7cbc0524eacb953a",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/1115193",
+          "name": "Household Essentials",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/air-fresheners/1115193_1025739",
+          "name": "Air Fresheners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/air-fresheners/bathroom-air-fresheners/1115193_1025739_5929933",
+          "name": "Bathroom Air Fresheners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/toilet-sprays/1115193_1025739_7780635",
+          "name": "Toilet Sprays",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/renuzit-air-fresheners/1115193_8250903_6932871",
+          "name": "Renuzit Air Fresheners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/febreze-small-spaces/1115193_8250903_5439019_4444393",
+          "name": "Febreze Bathroom",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/spray-air-fresheners/1115193_1025739_3653204",
+          "name": "Spray Air Fresheners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/air-fresheners/1115193_1025739",
+          "name": "Shop all Air Fresheners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/toilet-sprays/1115193_1025739_7780635",
+          "name": "Toilet Sprays",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/renuzit-air-fresheners/1115193_8250903_6932871",
+          "name": "Renuzit Air Fresheners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/febreze-small-spaces/1115193_8250903_5439019_4444393",
+          "name": "Febreze Bathroom",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/spray-air-fresheners/1115193_1025739_3653204",
+          "name": "Spray Air Fresheners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/air-fresheners/1115193_1025739",
+          "name": "Shop all Air Fresheners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        }
+      ]
+    },
+    {
+      "category": "Household Essentials",
+      "url": "https://www.walmart.com/browse/household-essentials/lysol-bathroom-cleaners/1115193_8250903_9423727_6616232",
+      "status": "reviewed",
+      "listing_sequence": 2,
+      "response_category_id": "1115193_8250903_9423727_6616232",
+      "breadcrumb": [
+        {
+          "id": "1115193",
+          "name": "Household Essentials",
+          "url": "/cp/1115193"
+        },
+        {
+          "id": "1115193_8250903",
+          "name": "Household Essentials by Brand",
+          "url": "/browse/household-essentials/household-essentials-by-brand/1115193_8250903"
+        },
+        {
+          "id": "1115193_8250903_9423727",
+          "name": "Lysol",
+          "url": "/browse/household-essentials-by-brand/lysol/1115193_8250903_9423727"
+        },
+        {
+          "id": "1115193_8250903_9423727_6616232",
+          "name": "Lysol Bathroom Cleaners",
+          "url": "/browse/lysol/lysol-bathroom-cleaners/1115193_8250903_9423727_6616232"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 2,
+      "listing_rejections": {
+        "sponsored": 10,
+        "marketplace": 5
+      },
+      "candidate_count": 44,
+      "next_page": "https://www.walmart.com/browse/household-essentials/lysol-bathroom-cleaners/1115193_8250903_9423727_6616232?page=2",
+      "snapshot_sha256": "ba69c29b1a5f57cc940ebd644437aadb459ad29be0a9d675f7684b54ca9dcde7",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/1115193",
+          "name": "Household Essentials",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/household-essentials-by-brand/1115193_8250903",
+          "name": "Household Essentials by Brand",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials-by-brand/lysol/1115193_8250903_9423727",
+          "name": "Lysol",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/lysol/lysol-bathroom-cleaners/1115193_8250903_9423727_6616232",
+          "name": "Lysol Bathroom Cleaners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/lysol-all-purpose-cleaners/1115193_8250903_9423727_8049174",
+          "name": "Lysol all purpose cleaners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/lysol-sprays/1115193_8250903_9423727_8049174_2756502",
+          "name": "Lysol disinfectant sprays",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/lysol-wipes/1115193_8250903_9423727_8049174_7677242",
+          "name": "Lysol disinfecting wipes",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/lysol-bathroom-cleaners/1115193_8250903_9423727_6616232",
+          "name": "Lysol bathroom cleaners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/cleaning-supplies/1115193_1071966",
+          "name": "Cleaning supplies savings",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/cleaning-supplies/1115193_1071966",
+          "name": "Cleaning supplies",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/cleaning-supplies/1115193_1071966",
+          "name": "Cleaning supplies",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/lysol-all-purpose-cleaners/1115193_8250903_9423727_8049174",
+          "name": "Lysol all purpose cleaners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/lysol-sprays/1115193_8250903_9423727_8049174_2756502",
+          "name": "Lysol disinfectant sprays",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/lysol-wipes/1115193_8250903_9423727_8049174_7677242",
+          "name": "Lysol disinfecting wipes",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/lysol-bathroom-cleaners/1115193_8250903_9423727_6616232",
+          "name": "Lysol bathroom cleaners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/cleaning-supplies/1115193_1071966",
+          "name": "Cleaning supplies savings",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/cleaning-supplies/1115193_1071966",
+          "name": "Cleaning supplies",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/cleaning-supplies/1115193_1071966",
+          "name": "Cleaning supplies",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        }
+      ]
+    },
+    {
+      "category": "Office Supplies",
+      "url": "https://www.walmart.com/browse/office-supplies/locking-journals/1229749_4922227_9286603",
+      "status": "reviewed",
+      "listing_sequence": 3,
+      "response_category_id": "1229749_4922227_9286603",
+      "breadcrumb": [
+        {
+          "id": "1229749",
+          "name": "Office Supplies",
+          "url": "/cp/1229749"
+        },
+        {
+          "id": "1229749_4922227",
+          "name": "Journals & Diaries",
+          "url": "/browse/office-supplies/journals-diaries/1229749_4922227"
+        },
+        {
+          "id": "1229749_4922227_9286603",
+          "name": "Locking Journals",
+          "url": "/browse/journals-diaries/locking-journals/1229749_4922227_9286603"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 1,
+      "listing_rejections": {
+        "sponsored": 1,
+        "outside_category": 1,
+        "marketplace": 10
+      },
+      "candidate_count": 1,
+      "next_page": null,
+      "snapshot_sha256": "b2dd1fc0fafa1de875bf2c920e6bc7ec4f1c8e4a23951bb73bb01de0e097b6af",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/1229749",
+          "name": "Office Supplies",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/journals-diaries/1229749_4922227",
+          "name": "Journals & Diaries",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/journals-diaries/locking-journals/1229749_4922227_9286603",
+          "name": "Locking Journals",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/daily-journals/1229749_4922227_1457342",
+          "name": "Daily Journals",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/leather-journals/1229749_4922227_2633427",
+          "name": "Leather Journals",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/locking-journals/1229749_4922227_9286603",
+          "name": "Locking Journals",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/writing-journals/1229749_4922227_5635035",
+          "name": "Writing Journals",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/premium-journals/1229749_4922227_8418699",
+          "name": "Premium Journals",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/bullet-journals/1229749_4922227_6519909",
+          "name": "Bullet Journals",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/padfolios/1229749_4922227_2715430",
+          "name": "Padfolios",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/password-journals/1229749_4922227_5468501",
+          "name": "Password Journals",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/journals-with-prompts/1229749_4922227_6728115",
+          "name": "Journals with Prompts",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/mens-journals/1229749_4922227_6712674",
+          "name": "Men's Journals",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/gratitude-journals/1229749_4922227_3362152",
+          "name": "Gratitude Journals",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/prayer-journals/1229749_4922227_8549522",
+          "name": "Prayer Journals",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/bible-journals/1229749_4922227_8673073",
+          "name": "Bible Journals",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/food-journals/1229749_4922227_3236670",
+          "name": "Food Journals",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/idea-journals/1229749_4922227_9816845",
+          "name": "Idea Journals",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/fitness-journals/1229749_4922227_7126892",
+          "name": "Fitness Journals",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/dotted-journals/1229749_4922227_8666917",
+          "name": "Dotted Journals",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/travel-journals/1229749_4922227_8803078",
+          "name": "Travel Journals",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/dream-journals/1229749_4922227_3798846",
+          "name": "Dream Journals",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/wellness-journal/1229749_4922227_5071265",
+          "name": "Wellness Journal",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        }
+      ]
+    },
+    {
+      "category": "Household Essentials",
+      "url": "https://www.walmart.com/browse/household-essentials/scrubbing-bubbles/1115193_8250903_2963058",
+      "status": "reviewed",
+      "listing_sequence": 4,
+      "response_category_id": "1115193_8250903_2963058",
+      "breadcrumb": [
+        {
+          "id": "1115193",
+          "name": "Household Essentials",
+          "url": "/cp/1115193"
+        },
+        {
+          "id": "1115193_8250903",
+          "name": "Household Essentials by Brand",
+          "url": "/browse/household-essentials/household-essentials-by-brand/1115193_8250903"
+        },
+        {
+          "id": "1115193_8250903_2963058",
+          "name": "Scrubbing Bubbles",
+          "url": "/browse/household-essentials-by-brand/scrubbing-bubbles/1115193_8250903_2963058"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 1,
+      "listing_rejections": {
+        "sponsored": 7,
+        "marketplace": 5
+      },
+      "candidate_count": 16,
+      "next_page": null,
+      "snapshot_sha256": "9b6e11ad0e190bc0164e6becbb5f01c1b7d6b4e4d50b12b08c1fd32a64c15461",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/1115193",
+          "name": "Household Essentials",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/household-essentials-by-brand/1115193_8250903",
+          "name": "Household Essentials by Brand",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials-by-brand/scrubbing-bubbles/1115193_8250903_2963058",
+          "name": "Scrubbing Bubbles",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/toilet-bowl-cleaner/1115193_1071966_2600011",
+          "name": "Toilet bowl cleaners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/shower-cleaners/1115193_1071965_5859660",
+          "name": "Shower cleaners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/drain-cleaners/1115193_1071966_3278685",
+          "name": "Drain cleaners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/clorox-bathroom-cleaners/1115193_8250903_7784444_9424016",
+          "name": "Clorox bathroom cleaners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/lysol-bathroom-cleaners/1115193_8250903_9423727_6616232",
+          "name": "Lysol bathroom cleaners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/scrubbing-bubbles/1115193_8250903_2963058",
+          "name": "Scrubbing Bubbles",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/oxiclean-bathroom-cleaners/1115193_1071965_4273739",
+          "name": "OxiClean bathroom cleaners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/cleaning-supplies/1115193_1071966",
+          "name": "Cleaning supplies savings",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/cleaning-supplies/1115193_1071966",
+          "name": "Cleaning supplies",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/cleaning-supplies/1115193_1071966",
+          "name": "Cleaning supplies",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/toilet-bowl-cleaner/1115193_1071966_2600011",
+          "name": "Toilet bowl cleaners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/shower-cleaners/1115193_1071965_5859660",
+          "name": "Shower cleaners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/drain-cleaners/1115193_1071966_3278685",
+          "name": "Drain cleaners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/clorox-bathroom-cleaners/1115193_8250903_7784444_9424016",
+          "name": "Clorox bathroom cleaners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/lysol-bathroom-cleaners/1115193_8250903_9423727_6616232",
+          "name": "Lysol bathroom cleaners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/scrubbing-bubbles/1115193_8250903_2963058",
+          "name": "Scrubbing Bubbles",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/oxiclean-bathroom-cleaners/1115193_1071965_4273739",
+          "name": "OxiClean bathroom cleaners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/cleaning-supplies/1115193_1071966",
+          "name": "Cleaning supplies savings",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/cleaning-supplies/1115193_1071966",
+          "name": "Cleaning supplies",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/cleaning-supplies/1115193_1071966",
+          "name": "Cleaning supplies",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        }
+      ]
+    },
+    {
+      "category": "Office Supplies",
+      "url": "https://www.walmart.com/browse/office-supplies/loose-leaf-filler-paper/1229749_6562796_4539149",
+      "status": "reviewed",
+      "listing_sequence": 5,
+      "response_category_id": "1229749_6562796_4539149",
+      "breadcrumb": [
+        {
+          "id": "1229749",
+          "name": "Office Supplies",
+          "url": "/cp/1229749"
+        },
+        {
+          "id": "1229749_6562796",
+          "name": "Paper",
+          "url": "/browse/office-supplies/paper/1229749_6562796"
+        },
+        {
+          "id": "1229749_6562796_4539149",
+          "name": "Loose Leaf Filler Paper",
+          "url": "/browse/paper/loose-leaf-filler-paper/1229749_6562796_4539149"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 1,
+      "listing_rejections": {
+        "marketplace": 8
+      },
+      "candidate_count": 7,
+      "next_page": null,
+      "snapshot_sha256": "435e6639b16f51be5da46c73da2d2cfb6c1eb689bef705349a6fa06e6bbafca4",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/1229749",
+          "name": "Office Supplies",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/paper/1229749_6562796",
+          "name": "Paper",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/paper/loose-leaf-filler-paper/1229749_6562796_4539149",
+          "name": "Loose Leaf Filler Paper",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/copy-paper/1229749_6562796_7518152",
+          "name": "Copy Paper",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/sticky-notes/1229749_6562796_1044276",
+          "name": "Sticky Notes",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/loose-leaf-filler-paper/1229749_6562796_4539149",
+          "name": "Loose Leaf Paper",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/colored-paper/1229749_6562796_7380511",
+          "name": "Colored Paper",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/cardstock/1229749_6562796_5537573",
+          "name": "Cardstock",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/index-cards/1229749_6562796_8833558",
+          "name": "Index Cards",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/ream-of-paper/1229749_6562796_9184886",
+          "name": "Ream of Paper",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/photo-paper/1229749_6562796_7181527",
+          "name": "Photo Paper",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/graph-paper/1229749_6562796_3220513",
+          "name": "Graph Paper",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/pengear-paper/1229749_1431586_6267234_3520962",
+          "name": "Pen+Gear Paper",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/thermal-paper/1229749_2447475_6494636_3596974",
+          "name": "Thermal Paper",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/a4-paper/1229749_6562796_9611676",
+          "name": "A4 Paper",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/resume-business-stationery/1229749_6562796_8049542",
+          "name": "Resume & Business Paper",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/textured-paper/1229749_6562796_3525468",
+          "name": "Textured Paper",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/kraft-paper/1229749_6562796_4636601",
+          "name": "Kraft Paper",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/black-paper/1229749_6562796_8286348",
+          "name": "Black Paper",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/certificates/1229749_6562796_5216310",
+          "name": "Certificates",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/printer-paper/1229749_6562796_2521430",
+          "name": "Printer Paper",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/inkjet-printer-paper/1229749_6562796_3031957",
+          "name": "Inkjet Printer Paper",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/laser-printer-paper/1229749_6562796_5743411",
+          "name": "Laser Printer Paper",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/copy-paper/1229749_6562796_7518152",
+          "name": "Copy Paper",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/sticky-notes/1229749_6562796_1044276",
+          "name": "Sticky Notes",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/loose-leaf-filler-paper/1229749_6562796_4539149",
+          "name": "Loose Leaf Paper",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/colored-paper/1229749_6562796_7380511",
+          "name": "Colored Paper",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/cardstock/1229749_6562796_5537573",
+          "name": "Cardstock",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/index-cards/1229749_6562796_8833558",
+          "name": "Index Cards",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/ream-of-paper/1229749_6562796_9184886",
+          "name": "Ream of Paper",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/photo-paper/1229749_6562796_7181527",
+          "name": "Photo Paper",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/graph-paper/1229749_6562796_3220513",
+          "name": "Graph Paper",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/pengear-paper/1229749_1431586_6267234_3520962",
+          "name": "Pen+Gear Paper",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/thermal-paper/1229749_2447475_6494636_3596974",
+          "name": "Thermal Paper",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/a4-paper/1229749_6562796_9611676",
+          "name": "A4 Paper",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/resume-business-stationery/1229749_6562796_8049542",
+          "name": "Resume & Business Paper",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/textured-paper/1229749_6562796_3525468",
+          "name": "Textured Paper",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/kraft-paper/1229749_6562796_4636601",
+          "name": "Kraft Paper",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/black-paper/1229749_6562796_8286348",
+          "name": "Black Paper",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/certificates/1229749_6562796_5216310",
+          "name": "Certificates",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/printer-paper/1229749_6562796_2521430",
+          "name": "Printer Paper",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/inkjet-printer-paper/1229749_6562796_3031957",
+          "name": "Inkjet Printer Paper",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/laser-printer-paper/1229749_6562796_5743411",
+          "name": "Laser Printer Paper",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        }
+      ]
+    },
+    {
+      "category": "Household Essentials",
+      "url": "https://www.walmart.com/browse/household-essentials/oxiclean-bathroom-cleaners/1115193_1071965_4273739",
+      "status": "reviewed",
+      "listing_sequence": 6,
+      "response_category_id": "1115193_1071965_4273739",
+      "breadcrumb": [
+        {
+          "id": "1115193",
+          "name": "Household Essentials",
+          "url": "/cp/1115193"
+        },
+        {
+          "id": "1115193_1071965",
+          "name": "Bathroom Cleaning Supplies",
+          "url": "/browse/household-essentials/bathroom-cleaning-supplies/1115193_1071965"
+        },
+        {
+          "id": "1115193_1071965_4273739",
+          "name": "OxiClean Bathroom Cleaners",
+          "url": "/browse/bathroom-cleaning-supplies/oxiclean-bathroom-cleaners/1115193_1071965_4273739"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 1,
+      "listing_rejections": {
+        "marketplace": 8
+      },
+      "candidate_count": 6,
+      "next_page": null,
+      "snapshot_sha256": "c0d12db8b008e56519e82f5a5be0ca2d92a24f682c6ca7c577c3c2d95a6c2c72",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/1115193",
+          "name": "Household Essentials",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/bathroom-cleaning-supplies/1115193_1071965",
+          "name": "Bathroom Cleaning Supplies",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/bathroom-cleaning-supplies/oxiclean-bathroom-cleaners/1115193_1071965_4273739",
+          "name": "OxiClean Bathroom Cleaners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/toilet-bowl-cleaner/1115193_1071966_2600011",
+          "name": "Toilet bowl cleaners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/shower-cleaners/1115193_1071965_5859660",
+          "name": "Shower cleaners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/drain-cleaners/1115193_1071966_3278685",
+          "name": "Drain cleaners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/clorox-bathroom-cleaners/1115193_8250903_7784444_9424016",
+          "name": "Clorox bathroom cleaners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/lysol-bathroom-cleaners/1115193_8250903_9423727_6616232",
+          "name": "Lysol bathroom cleaners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/scrubbing-bubbles/1115193_8250903_2963058",
+          "name": "Scrubbing Bubbles",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/oxiclean-bathroom-cleaners/1115193_1071965_4273739",
+          "name": "OxiClean bathroom cleaners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/cleaning-supplies/1115193_1071966",
+          "name": "Cleaning supplies savings",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/cleaning-supplies/1115193_1071966",
+          "name": "Cleaning supplies",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/cleaning-supplies/1115193_1071966",
+          "name": "Cleaning supplies",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/toilet-bowl-cleaner/1115193_1071966_2600011",
+          "name": "Toilet bowl cleaners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/shower-cleaners/1115193_1071965_5859660",
+          "name": "Shower cleaners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/drain-cleaners/1115193_1071966_3278685",
+          "name": "Drain cleaners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/clorox-bathroom-cleaners/1115193_8250903_7784444_9424016",
+          "name": "Clorox bathroom cleaners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/lysol-bathroom-cleaners/1115193_8250903_9423727_6616232",
+          "name": "Lysol bathroom cleaners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/scrubbing-bubbles/1115193_8250903_2963058",
+          "name": "Scrubbing Bubbles",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/oxiclean-bathroom-cleaners/1115193_1071965_4273739",
+          "name": "OxiClean bathroom cleaners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/cleaning-supplies/1115193_1071966",
+          "name": "Cleaning supplies savings",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/cleaning-supplies/1115193_1071966",
+          "name": "Cleaning supplies",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/cleaning-supplies/1115193_1071966",
+          "name": "Cleaning supplies",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        }
+      ]
+    },
+    {
+      "category": "Office Supplies",
+      "url": "https://www.walmart.com/browse/office-supplies/magazine-holders/1229749_7431192_7061047",
+      "status": "reviewed",
+      "listing_sequence": 7,
+      "response_category_id": "1229749_7431192_7061047",
+      "breadcrumb": [
+        {
+          "id": "1229749",
+          "name": "Office Supplies",
+          "url": "/cp/1229749"
+        },
+        {
+          "id": "1229749_7431192",
+          "name": "Desk Organization",
+          "url": "/browse/office-supplies/desk-organization/1229749_7431192"
+        },
+        {
+          "id": "1229749_7431192_7061047",
+          "name": "Magazine Holders",
+          "url": "/browse/desk-organization/magazine-holders/1229749_7431192_7061047"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 1,
+      "listing_rejections": {
+        "marketplace": 10
+      },
+      "candidate_count": 0,
+      "next_page": null,
+      "snapshot_sha256": "4319290d6f7ecbd8daeb3d07bb2af54a0f28052ebc1e66e67093cc70e8e1f198",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/1229749",
+          "name": "Office Supplies",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/desk-organization/1229749_7431192",
+          "name": "Desk Organization",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/desk-organization/magazine-holders/1229749_7431192_7061047",
+          "name": "Magazine Holders",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/desktop-organizers/1229749_7431192_1072373",
+          "name": "Desktop Organizers",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/lap-desks/1229749_7431192_5545897",
+          "name": "Lap Desks",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/file-organizers/1229749_7431192_3406177",
+          "name": "File Organizers",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/magazine-holders/1229749_7431192_7061047",
+          "name": "Magazine Holders",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/file-cabinets/1229749_7431192_2900918",
+          "name": "File Cabinets",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/desk-pads/1229749_7431192_3187134",
+          "name": "Desk Pads",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/pencil-holders-pencil-cups/1229749_7431192_2253956",
+          "name": "Pencil Holders & Cups",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/desk-organizer-sets/1229749_7431192_7115873",
+          "name": "Desk Organizer Sets",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/bookends/1229749_7431192_6847609",
+          "name": "Bookends",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/business-card-holders-name-plates/1229749_7431192_4674813",
+          "name": "Business Card Holders",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/paper-weights/1229749_7431192_7938104",
+          "name": "Paper Weights",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/literature-organizers/1229749_7431192_9303741",
+          "name": "Literature Organizers",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/letter-trays/1229749_7431192_2346156",
+          "name": "Letter Trays",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/paper-organizers/1229749_7431192_2407655",
+          "name": "Paper Organizers",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/steel-file-cabinets/1229749_7431192_6121669",
+          "name": "Steel File Cabinets",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/desktop-organizers/1229749_7431192_1072373",
+          "name": "Desktop Organizers",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/lap-desks/1229749_7431192_5545897",
+          "name": "Lap Desks",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/file-organizers/1229749_7431192_3406177",
+          "name": "File Organizers",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/magazine-holders/1229749_7431192_7061047",
+          "name": "Magazine Holders",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/file-cabinets/1229749_7431192_2900918",
+          "name": "File Cabinets",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/desk-pads/1229749_7431192_3187134",
+          "name": "Desk Pads",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/pencil-holders-pencil-cups/1229749_7431192_2253956",
+          "name": "Pencil Holders & Cups",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/desk-organizer-sets/1229749_7431192_7115873",
+          "name": "Desk Organizer Sets",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/bookends/1229749_7431192_6847609",
+          "name": "Bookends",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/business-card-holders-name-plates/1229749_7431192_4674813",
+          "name": "Business Card Holders",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/paper-weights/1229749_7431192_7938104",
+          "name": "Paper Weights",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/literature-organizers/1229749_7431192_9303741",
+          "name": "Literature Organizers",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/letter-trays/1229749_7431192_2346156",
+          "name": "Letter Trays",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/paper-organizers/1229749_7431192_2407655",
+          "name": "Paper Organizers",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/steel-file-cabinets/1229749_7431192_6121669",
+          "name": "Steel File Cabinets",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        }
+      ]
+    },
+    {
+      "category": "Pets",
+      "url": "https://www.walmart.com/browse/pets/parrot-cages/5440_228734_7047090_5202216",
+      "status": "reviewed",
+      "listing_sequence": 8,
+      "response_category_id": "5440_228734_7047090_5202216",
+      "breadcrumb": [
+        {
+          "id": "5440",
+          "name": "Pets",
+          "url": "/cp/5440"
+        },
+        {
+          "id": "5440_228734",
+          "name": "Birds",
+          "url": "/browse/pets/birds/5440_228734"
+        },
+        {
+          "id": "5440_228734_7047090",
+          "name": "Bird Cages",
+          "url": "/browse/birds/bird-cages/5440_228734_7047090"
+        },
+        {
+          "id": "5440_228734_7047090_5202216",
+          "name": "Parrot Cages",
+          "url": "/browse/bird-cages/parrot-cages/5440_228734_7047090_5202216"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 1,
+      "listing_rejections": {
+        "marketplace": 8
+      },
+      "candidate_count": 2,
+      "next_page": null,
+      "snapshot_sha256": "087f3dcd50eea159b1ebb8ca49f196734e8dd2f085b69a84e4ddca0c754c5ab7",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/5440",
+          "name": "Pets",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/birds/5440_228734",
+          "name": "Birds",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/birds/bird-cages/5440_228734_7047090",
+          "name": "Bird Cages",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/bird-cages/parrot-cages/5440_228734_7047090_5202216",
+          "name": "Parrot Cages",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/birds/5440_228734",
+          "name": "All bird supplies",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/small-bird-cages/5440_228734_7047090_9351804",
+          "name": "Small bird cages",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/large-bird-cages/5440_228734_7047090_3195109",
+          "name": "Large bird cages",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/parakeet-cages/5440_228734_7047090_6717052",
+          "name": "Parakeet cages",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/parrot-cages/5440_228734_7047090_5202216",
+          "name": "Parrot cages",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/cockatiel-cages/5440_228734_7047090_2902319",
+          "name": "Cockatiel cages",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/bird-aviaries/5440_228734_2892656",
+          "name": "Bird aviaries",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/bird-toys/5440_228734_4661638",
+          "name": "Bird toys",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/bird-perches/5440_228734_2266380",
+          "name": "Bird perches",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/bird-food/5440_228734_1225008",
+          "name": "Bird food",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/bird-treats/5440_228734_9404822",
+          "name": "Bird treats",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/birds/5440_228734",
+          "name": "All bird supplies",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/small-bird-cages/5440_228734_7047090_9351804",
+          "name": "Small bird cages",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/large-bird-cages/5440_228734_7047090_3195109",
+          "name": "Large bird cages",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/parakeet-cages/5440_228734_7047090_6717052",
+          "name": "Parakeet cages",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/parrot-cages/5440_228734_7047090_5202216",
+          "name": "Parrot cages",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/cockatiel-cages/5440_228734_7047090_2902319",
+          "name": "Cockatiel cages",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/bird-aviaries/5440_228734_2892656",
+          "name": "Bird aviaries",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/bird-toys/5440_228734_4661638",
+          "name": "Bird toys",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/bird-perches/5440_228734_2266380",
+          "name": "Bird perches",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/bird-food/5440_228734_1225008",
+          "name": "Bird food",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/bird-treats/5440_228734_9404822",
+          "name": "Bird treats",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        }
+      ]
+    },
+    {
+      "category": "Household Essentials",
+      "url": "https://www.walmart.com/browse/household-essentials/bathroom-cleaners/1115193_1071965_1072125?page=2",
+      "status": "reviewed",
+      "listing_sequence": 9,
+      "response_category_id": "1115193_1071965_1072125",
+      "breadcrumb": [
+        {
+          "id": "1115193",
+          "name": "Household Essentials",
+          "url": "/cp/1115193"
+        },
+        {
+          "id": "1115193_1071965",
+          "name": "Bathroom Cleaning Supplies",
+          "url": "/browse/household-essentials/bathroom-cleaning-supplies/1115193_1071965"
+        },
+        {
+          "id": "1115193_1071965_1072125",
+          "name": "Bathroom Cleaners",
+          "url": "/browse/bathroom-cleaning-supplies/bathroom-cleaners/1115193_1071965_1072125"
+        }
+      ],
+      "page": 2,
+      "reported_last_page": 4,
+      "listing_rejections": {
+        "sponsored": 10,
+        "outside_category": 1
+      },
+      "candidate_count": 39,
+      "next_page": "https://www.walmart.com/browse/household-essentials/bathroom-cleaners/1115193_1071965_1072125?page=3",
+      "snapshot_sha256": "47ed812a31807c702b5454089d1bb1204bf6005ecfde2fefde980df0c4a6520f",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/1115193",
+          "name": "Household Essentials",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/bathroom-cleaning-supplies/1115193_1071965",
+          "name": "Bathroom Cleaning Supplies",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/bathroom-cleaning-supplies/bathroom-cleaners/1115193_1071965_1072125",
+          "name": "Bathroom Cleaners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/toilet-bowl-cleaner/1115193_1071966_2600011",
+          "name": "Toilet bowl cleaners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/shower-cleaners/1115193_1071965_5859660",
+          "name": "Shower cleaners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/drain-cleaners/1115193_1071966_3278685",
+          "name": "Drain cleaners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/clorox-bathroom-cleaners/1115193_8250903_7784444_9424016",
+          "name": "Clorox bathroom cleaners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/lysol-bathroom-cleaners/1115193_8250903_9423727_6616232",
+          "name": "Lysol bathroom cleaners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/scrubbing-bubbles/1115193_8250903_2963058",
+          "name": "Scrubbing Bubbles",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/oxiclean-bathroom-cleaners/1115193_1071965_4273739",
+          "name": "OxiClean bathroom cleaners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/cleaning-supplies/1115193_1071966",
+          "name": "Cleaning supplies savings",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/cleaning-supplies/1115193_1071966",
+          "name": "Cleaning supplies",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/cleaning-supplies/1115193_1071966",
+          "name": "Cleaning supplies",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/toilet-bowl-cleaner/1115193_1071966_2600011",
+          "name": "Toilet bowl cleaners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/shower-cleaners/1115193_1071965_5859660",
+          "name": "Shower cleaners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/drain-cleaners/1115193_1071966_3278685",
+          "name": "Drain cleaners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/clorox-bathroom-cleaners/1115193_8250903_7784444_9424016",
+          "name": "Clorox bathroom cleaners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/lysol-bathroom-cleaners/1115193_8250903_9423727_6616232",
+          "name": "Lysol bathroom cleaners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/scrubbing-bubbles/1115193_8250903_2963058",
+          "name": "Scrubbing Bubbles",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/oxiclean-bathroom-cleaners/1115193_1071965_4273739",
+          "name": "OxiClean bathroom cleaners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/cleaning-supplies/1115193_1071966",
+          "name": "Cleaning supplies savings",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/cleaning-supplies/1115193_1071966",
+          "name": "Cleaning supplies",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/cleaning-supplies/1115193_1071966",
+          "name": "Cleaning supplies",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        }
+      ]
+    },
+    {
+      "category": "Office Supplies",
+      "url": "https://www.walmart.com/browse/office-supplies/magic-markers/1229749_9081741_8911842",
+      "status": "failed",
+      "failure_probe_error_type": "ValueError",
+      "reason": "Empty page title; page may still be loading",
+      "error_type": "ValueError"
+    },
+    {
+      "category": "Pets",
+      "url": "https://www.walmart.com/browse/pets/cockatiel-cages/5440_228734_7047090_2902319",
+      "status": "reviewed",
+      "listing_sequence": 11,
+      "response_category_id": "5440_228734_7047090_2902319",
+      "breadcrumb": [
+        {
+          "id": "5440",
+          "name": "Pets",
+          "url": "/cp/5440"
+        },
+        {
+          "id": "5440_228734",
+          "name": "Birds",
+          "url": "/browse/pets/birds/5440_228734"
+        },
+        {
+          "id": "5440_228734_7047090",
+          "name": "Bird Cages",
+          "url": "/browse/birds/bird-cages/5440_228734_7047090"
+        },
+        {
+          "id": "5440_228734_7047090_2902319",
+          "name": "Cockatiel Cages",
+          "url": "/browse/bird-cages/cockatiel-cages/5440_228734_7047090_2902319"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 1,
+      "listing_rejections": {
+        "marketplace": 9
+      },
+      "candidate_count": 1,
+      "next_page": null,
+      "snapshot_sha256": "ee1ecf7eea609e78468d0c8394f7c139e48bc7a223af1c410f2ad20eed4b6a53",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/5440",
+          "name": "Pets",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/birds/5440_228734",
+          "name": "Birds",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/birds/bird-cages/5440_228734_7047090",
+          "name": "Bird Cages",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/bird-cages/cockatiel-cages/5440_228734_7047090_2902319",
+          "name": "Cockatiel Cages",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/birds/5440_228734",
+          "name": "All bird supplies",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/small-bird-cages/5440_228734_7047090_9351804",
+          "name": "Small bird cages",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/large-bird-cages/5440_228734_7047090_3195109",
+          "name": "Large bird cages",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/parakeet-cages/5440_228734_7047090_6717052",
+          "name": "Parakeet cages",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/parrot-cages/5440_228734_7047090_5202216",
+          "name": "Parrot cages",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/cockatiel-cages/5440_228734_7047090_2902319",
+          "name": "Cockatiel cages",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/bird-aviaries/5440_228734_2892656",
+          "name": "Bird aviaries",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/bird-toys/5440_228734_4661638",
+          "name": "Bird toys",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/bird-perches/5440_228734_2266380",
+          "name": "Bird perches",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/bird-food/5440_228734_1225008",
+          "name": "Bird food",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/bird-treats/5440_228734_9404822",
+          "name": "Bird treats",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/birds/5440_228734",
+          "name": "All bird supplies",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/small-bird-cages/5440_228734_7047090_9351804",
+          "name": "Small bird cages",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/large-bird-cages/5440_228734_7047090_3195109",
+          "name": "Large bird cages",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/parakeet-cages/5440_228734_7047090_6717052",
+          "name": "Parakeet cages",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/parrot-cages/5440_228734_7047090_5202216",
+          "name": "Parrot cages",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/cockatiel-cages/5440_228734_7047090_2902319",
+          "name": "Cockatiel cages",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/bird-aviaries/5440_228734_2892656",
+          "name": "Bird aviaries",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/bird-toys/5440_228734_4661638",
+          "name": "Bird toys",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/bird-perches/5440_228734_2266380",
+          "name": "Bird perches",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/bird-food/5440_228734_1225008",
+          "name": "Bird food",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/bird-treats/5440_228734_9404822",
+          "name": "Bird treats",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        }
+      ]
+    },
+    {
+      "category": "Household Essentials",
+      "url": "https://www.walmart.com/browse/household-essentials/diatomaceous-earth/1115193_1025745_6036609",
+      "status": "reviewed",
+      "listing_sequence": 12,
+      "response_category_id": "1115193_1025745_6036609",
+      "breadcrumb": [
+        {
+          "id": "1115193",
+          "name": "Household Essentials",
+          "url": "/cp/1115193"
+        },
+        {
+          "id": "1115193_1025745",
+          "name": "Pest Control",
+          "url": "/browse/household-essentials/pest-control/1115193_1025745"
+        },
+        {
+          "id": "1115193_1025745_6036609",
+          "name": "Diatomaceous Earth",
+          "url": "/browse/pest-control/diatomaceous-earth/1115193_1025745_6036609"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 1,
+      "listing_rejections": {
+        "marketplace": 7
+      },
+      "candidate_count": 3,
+      "next_page": null,
+      "snapshot_sha256": "bd08d6fb4cf4182235525e8278acf2c8e8fa7e357fadf37c4464ca926a92fbdc",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/1115193",
+          "name": "Household Essentials",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/pest-control/1115193_1025745",
+          "name": "Pest Control",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pest-control/diatomaceous-earth/1115193_1025745_6036609",
+          "name": "Diatomaceous Earth",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/diatomaceous-earth/1115193_1025745_6036609",
+          "name": "Diatomaceous earth",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/bed-bug-spray/1115193_1025745_3313179_6962803",
+          "name": "Bed bug spray",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pest-control/1115193_1025745",
+          "name": "Shop all pest control",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/diatomaceous-earth/1115193_1025745_6036609",
+          "name": "Diatomaceous earth",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/bed-bug-spray/1115193_1025745_3313179_6962803",
+          "name": "Bed bug spray",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pest-control/1115193_1025745",
+          "name": "Shop all pest control",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        }
+      ]
+    },
+    {
+      "category": "Office Supplies",
+      "url": "https://www.walmart.com/browse/office-supplies/magnetic-boards/1229749_1565348_7012109",
+      "status": "failed",
+      "failure_body_probe": "Captured once; native rendering still failed, not accepted as empty",
+      "reason": "Empty page title; page may still be loading",
+      "error_type": "ValueError"
+    },
+    {
+      "category": "Pets",
+      "url": "https://www.walmart.com/browse/pets/bird-aviaries/5440_228734_2892656",
+      "status": "reviewed",
+      "listing_sequence": 14,
+      "response_category_id": "5440_228734_2892656",
+      "breadcrumb": [
+        {
+          "id": "5440",
+          "name": "Pets",
+          "url": "/cp/5440"
+        },
+        {
+          "id": "5440_228734",
+          "name": "Birds",
+          "url": "/browse/pets/birds/5440_228734"
+        },
+        {
+          "id": "5440_228734_2892656",
+          "name": "Bird Aviaries",
+          "url": "/browse/birds/bird-aviaries/5440_228734_2892656"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 1,
+      "listing_rejections": {
+        "marketplace": 9
+      },
+      "candidate_count": 1,
+      "next_page": null,
+      "snapshot_sha256": "b87b7d59960a309b114211111ac4621607acdf2857900a61a7927eeb2e85122f",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/5440",
+          "name": "Pets",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/birds/5440_228734",
+          "name": "Birds",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/birds/bird-aviaries/5440_228734_2892656",
+          "name": "Bird Aviaries",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/birds/5440_228734",
+          "name": "All bird supplies",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/small-bird-cages/5440_228734_7047090_9351804",
+          "name": "Small bird cages",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/large-bird-cages/5440_228734_7047090_3195109",
+          "name": "Large bird cages",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/parakeet-cages/5440_228734_7047090_6717052",
+          "name": "Parakeet cages",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/parrot-cages/5440_228734_7047090_5202216",
+          "name": "Parrot cages",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/cockatiel-cages/5440_228734_7047090_2902319",
+          "name": "Cockatiel cages",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/bird-aviaries/5440_228734_2892656",
+          "name": "Bird aviaries",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/bird-toys/5440_228734_4661638",
+          "name": "Bird toys",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/bird-perches/5440_228734_2266380",
+          "name": "Bird perches",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/bird-food/5440_228734_1225008",
+          "name": "Bird food",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/bird-treats/5440_228734_9404822",
+          "name": "Bird treats",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/birds/5440_228734",
+          "name": "All bird supplies",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/small-bird-cages/5440_228734_7047090_9351804",
+          "name": "Small bird cages",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/large-bird-cages/5440_228734_7047090_3195109",
+          "name": "Large bird cages",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/parakeet-cages/5440_228734_7047090_6717052",
+          "name": "Parakeet cages",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/parrot-cages/5440_228734_7047090_5202216",
+          "name": "Parrot cages",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/cockatiel-cages/5440_228734_7047090_2902319",
+          "name": "Cockatiel cages",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/bird-aviaries/5440_228734_2892656",
+          "name": "Bird aviaries",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/bird-toys/5440_228734_4661638",
+          "name": "Bird toys",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/bird-perches/5440_228734_2266380",
+          "name": "Bird perches",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/bird-food/5440_228734_1225008",
+          "name": "Bird food",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/bird-treats/5440_228734_9404822",
+          "name": "Bird treats",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        }
+      ]
+    },
+    {
+      "category": "Household Essentials",
+      "url": "https://www.walmart.com/browse/household-essentials/bed-bug-spray/1115193_1025745_3313179_6962803",
+      "status": "reviewed",
+      "listing_sequence": 15,
+      "response_category_id": "1115193_1025745_8151679_3313179_6962803",
+      "breadcrumb": [
+        {
+          "id": "1115193",
+          "name": "Household Essentials",
+          "url": "/cp/1115193"
+        },
+        {
+          "id": "1115193_1025745",
+          "name": "Pest Control",
+          "url": "/browse/household-essentials/pest-control/1115193_1025745"
+        },
+        {
+          "id": "1115193_1025745_8151679",
+          "name": "Indoor Pest Control",
+          "url": "/browse/pest-control/indoor-pest-control/1115193_1025745_8151679"
+        },
+        {
+          "id": "1115193_1025745_8151679_3313179",
+          "name": "Bed Bug Control",
+          "url": "/browse/indoor-pest-control/bed-bug-control/1115193_1025745_8151679_3313179"
+        },
+        {
+          "id": "1115193_1025745_8151679_3313179_6962803",
+          "name": "Bed Bug Spray",
+          "url": "/browse/bed-bug-control/bed-bug-spray/1115193_1025745_8151679_3313179_6962803"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 1,
+      "listing_rejections": {
+        "sponsored": 1,
+        "outside_category": 1,
+        "marketplace": 2
+      },
+      "candidate_count": 12,
+      "next_page": null,
+      "snapshot_sha256": "2812d28e9d717c39b90a5e4715e0a97e724eab072b6d5e2cedec090287c82730",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/1115193",
+          "name": "Household Essentials",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/pest-control/1115193_1025745",
+          "name": "Pest Control",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pest-control/indoor-pest-control/1115193_1025745_8151679",
+          "name": "Indoor Pest Control",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/indoor-pest-control/bed-bug-control/1115193_1025745_8151679_3313179",
+          "name": "Bed Bug Control",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/bed-bug-control/bed-bug-spray/1115193_1025745_8151679_3313179_6962803",
+          "name": "Bed Bug Spray",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/diatomaceous-earth/1115193_1025745_6036609",
+          "name": "Diatomaceous earth",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/bed-bug-spray/1115193_1025745_3313179_6962803",
+          "name": "Bed bug spray",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pest-control/1115193_1025745",
+          "name": "Shop all pest control",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/diatomaceous-earth/1115193_1025745_6036609",
+          "name": "Diatomaceous earth",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/bed-bug-spray/1115193_1025745_3313179_6962803",
+          "name": "Bed bug spray",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pest-control/1115193_1025745",
+          "name": "Shop all pest control",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        }
+      ]
+    },
+    {
+      "category": "Office Supplies",
+      "url": "https://www.walmart.com/browse/office-supplies/magnetic-calendars/1229749_8412191_2274527_9105498",
+      "status": "reviewed",
+      "listing_sequence": 16,
+      "response_category_id": "1229749_8412191_2274527_9105498",
+      "breadcrumb": [
+        {
+          "id": "1229749",
+          "name": "Office Supplies",
+          "url": "/cp/1229749"
+        },
+        {
+          "id": "1229749_8412191",
+          "name": "Calendars and Planners",
+          "url": "/browse/office-supplies/calendars-and-planners/1229749_8412191"
+        },
+        {
+          "id": "1229749_8412191_2274527",
+          "name": "Calendars",
+          "url": "/browse/calendars-and-planners/calendars/1229749_8412191_2274527"
+        },
+        {
+          "id": "1229749_8412191_2274527_9105498",
+          "name": "Magnetic Calendars",
+          "url": "/browse/calendars/magnetic-calendars/1229749_8412191_2274527_9105498"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 1,
+      "listing_rejections": {
+        "marketplace": 5,
+        "outside_category": 2
+      },
+      "candidate_count": 3,
+      "next_page": null,
+      "snapshot_sha256": "03cad01383f44e365717cb6074f020090feb9cba21f759436f25aa237acfcd6e",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/1229749",
+          "name": "Office Supplies",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/calendars-and-planners/1229749_8412191",
+          "name": "Calendars and Planners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/calendars-and-planners/calendars/1229749_8412191_2274527",
+          "name": "Calendars",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/calendars/magnetic-calendars/1229749_8412191_2274527_9105498",
+          "name": "Magnetic Calendars",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        }
+      ]
+    },
+    {
+      "category": "Pets",
+      "url": "https://www.walmart.com/browse/pets/parakeet-food/5440_228734_1225008_5043995",
+      "status": "reviewed",
+      "listing_sequence": 17,
+      "response_category_id": "5440_228734_1225008_5043995",
+      "breadcrumb": [
+        {
+          "id": "5440",
+          "name": "Pets",
+          "url": "/cp/5440"
+        },
+        {
+          "id": "5440_228734",
+          "name": "Birds",
+          "url": "/browse/pets/birds/5440_228734"
+        },
+        {
+          "id": "5440_228734_1225008",
+          "name": "Bird Food",
+          "url": "/browse/birds/bird-food/5440_228734_1225008"
+        },
+        {
+          "id": "5440_228734_1225008_5043995",
+          "name": "Parakeet Food",
+          "url": "/browse/bird-food/parakeet-food/5440_228734_1225008_5043995"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 1,
+      "listing_rejections": {
+        "outside_category": 3,
+        "sponsored": 1,
+        "marketplace": 1
+      },
+      "candidate_count": 14,
+      "next_page": null,
+      "snapshot_sha256": "e7f0d98145e4a9323aad7fe7e92dcbd5f04fbf30157fc1310aff5d5c55d08366",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/5440",
+          "name": "Pets",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/birds/5440_228734",
+          "name": "Birds",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/birds/bird-food/5440_228734_1225008",
+          "name": "Bird Food",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/bird-food/parakeet-food/5440_228734_1225008_5043995",
+          "name": "Parakeet Food",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/parakeet-food/5440_228734_1225008_5043995",
+          "name": "Parakeet Food",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/parrot-food/5440_228734_1225008_7796262",
+          "name": "Parrot Food",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/cockatiel-food/5440_228734_1225008_9078298",
+          "name": "Cockatiel food",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/bird-treats/5440_228734_9404822",
+          "name": "Bird Treats",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/bird-food/5440_228734_1225008",
+          "name": "All Bird Food",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/patio-garden/bird-seeds/5428_1102183_7802063_3504553",
+          "name": "Wild birdseed",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/bird-toys/5440_228734_4661638",
+          "name": "Bird Toys",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/bird-perches/5440_228734_2266380",
+          "name": "Bird Perches",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/bird-cages/5440_228734_7047090",
+          "name": "Bird Cages",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/bird-aviaries/5440_228734_2892656",
+          "name": "Bird Aviaries",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/birds/5440_228734",
+          "name": "All Bird Supplies",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/parakeet-food/5440_228734_1225008_5043995",
+          "name": "Parakeet Food",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/parrot-food/5440_228734_1225008_7796262",
+          "name": "Parrot Food",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/cockatiel-food/5440_228734_1225008_9078298",
+          "name": "Cockatiel food",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/bird-treats/5440_228734_9404822",
+          "name": "Bird Treats",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/bird-food/5440_228734_1225008",
+          "name": "All Bird Food",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/patio-garden/bird-seeds/5428_1102183_7802063_3504553",
+          "name": "Wild birdseed",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/bird-toys/5440_228734_4661638",
+          "name": "Bird Toys",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/bird-perches/5440_228734_2266380",
+          "name": "Bird Perches",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/bird-cages/5440_228734_7047090",
+          "name": "Bird Cages",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/bird-aviaries/5440_228734_2892656",
+          "name": "Bird Aviaries",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/birds/5440_228734",
+          "name": "All Bird Supplies",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        }
+      ]
+    },
+    {
+      "category": "Personal Care",
+      "url": "https://www.walmart.com/browse/personal-care/incontinence-underwear-for-men/1005862_1225655_7099766",
+      "status": "reviewed",
+      "listing_sequence": 18,
+      "response_category_id": "1005862_1225655_7099766",
+      "breadcrumb": [
+        {
+          "id": "1005862",
+          "name": "Personal Care",
+          "url": "/cp/1005862"
+        },
+        {
+          "id": "1005862_1225655",
+          "name": "Incontinence",
+          "url": "/browse/personal-care/incontinence/1005862_1225655"
+        },
+        {
+          "id": "1005862_1225655_7099766",
+          "name": "Incontinence Underwear for Men",
+          "url": "/browse/incontinence/incontinence-underwear-for-men/1005862_1225655_7099766"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 1,
+      "listing_rejections": {
+        "sponsored": 4,
+        "marketplace": 4
+      },
+      "candidate_count": 24,
+      "next_page": null,
+      "snapshot_sha256": "f9b834f28f616b8894ba0d71572e19b639b1fa02662c47c2906e97936ceb77ac",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/1005862",
+          "name": "Personal Care",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/incontinence/1005862_1225655",
+          "name": "Incontinence",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/incontinence/incontinence-underwear-for-men/1005862_1225655_7099766",
+          "name": "Incontinence Underwear for Men",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/incontinence-underwear-for-men-small47;medium/1005862_1225655_4702995",
+          "name": "S/M Undewear",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/incontinence-underwear-for-men-large47;extra-large/1005862_1225655_8593409",
+          "name": "L/XL Underwear",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/incontinence-underwear-xxl-plus/1005862_1225655_9840294",
+          "name": "XXL Plus Underwear",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/incontinence-guards-for-men/1005862_1225655_1438288",
+          "name": "Men's Incontinence Guards",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/incontinence-underpads/1005862_1225655_2999240",
+          "name": "Incontinence Bed Pads",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/adult-wipes/1005862_1225655_4617231",
+          "name": "Adult Wipes",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/mens-incontinence/1005862_1225655_4853497",
+          "name": "Shop All Men's Incontinence",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/incontinence-underwear-for-men-small47;medium/1005862_1225655_4702995",
+          "name": "S/M Undewear",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/incontinence-underwear-for-men-large47;extra-large/1005862_1225655_8593409",
+          "name": "L/XL Underwear",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/incontinence-underwear-xxl-plus/1005862_1225655_9840294",
+          "name": "XXL Plus Underwear",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/incontinence-guards-for-men/1005862_1225655_1438288",
+          "name": "Men's Incontinence Guards",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/incontinence-underpads/1005862_1225655_2999240",
+          "name": "Incontinence Bed Pads",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/adult-wipes/1005862_1225655_4617231",
+          "name": "Adult Wipes",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/mens-incontinence/1005862_1225655_4853497",
+          "name": "Shop All Men's Incontinence",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/incontinence/1005862_1225655",
+          "name": "View details for Save on incontinence",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/scent-theory-hand-sanitizer/1005862_7850115_1604259",
+          "name": "View details for A scent for every mood",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        }
+      ]
+    },
+    {
+      "category": "Household Essentials",
+      "url": "https://www.walmart.com/browse/household-essentials/clorox-bleach/1115193_1071967_1149380_6794236",
+      "status": "reviewed",
+      "listing_sequence": 19,
+      "response_category_id": "1115193_1071967_1149380_6794236",
+      "breadcrumb": [
+        {
+          "id": "1115193",
+          "name": "Household Essentials",
+          "url": "/cp/1115193"
+        },
+        {
+          "id": "1115193_1071967",
+          "name": "Laundry",
+          "url": "/browse/household-essentials/laundry/1115193_1071967"
+        },
+        {
+          "id": "1115193_1071967_1149380",
+          "name": "Bleach",
+          "url": "/browse/laundry/bleach/1115193_1071967_1149380"
+        },
+        {
+          "id": "1115193_1071967_1149380_6794236",
+          "name": "Clorox Bleach",
+          "url": "/browse/bleach/clorox-bleach/1115193_1071967_1149380_6794236"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 1,
+      "listing_rejections": {
+        "sponsored": 4,
+        "marketplace": 4
+      },
+      "candidate_count": 22,
+      "next_page": null,
+      "snapshot_sha256": "fe907c7e277a5e461d5ff33caf594d15a10a3db82305c71fbffae13589f4ca08",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/1115193",
+          "name": "Household Essentials",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/laundry/1115193_1071967",
+          "name": "Laundry",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/laundry/bleach/1115193_1071967_1149380",
+          "name": "Bleach",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/bleach/clorox-bleach/1115193_1071967_1149380_6794236",
+          "name": "Clorox Bleach",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/clorox-bleach/1115193_1071967_1149380_6794236",
+          "name": "Clorox bleach",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/great-value-bleach/1115193_1071967_1149380_2289877",
+          "name": "Great Value bleach",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/color-safe-bleach/1115193_1071967_1149380_3445178",
+          "name": "Color safe bleach",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/bleach-tablets/1115193_1071967_1149380_4879305",
+          "name": "Bleach tablets",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/bleach/1115193_1071967_1149380",
+          "name": "Bleach under $10",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/laundry/1115193_1071967",
+          "name": "Shop all laundry",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/laundry/1115193_1071967",
+          "name": "Laundry Savings",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/clorox-bleach/1115193_1071967_1149380_6794236",
+          "name": "Clorox bleach",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/great-value-bleach/1115193_1071967_1149380_2289877",
+          "name": "Great Value bleach",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/color-safe-bleach/1115193_1071967_1149380_3445178",
+          "name": "Color safe bleach",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/bleach-tablets/1115193_1071967_1149380_4879305",
+          "name": "Bleach tablets",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/bleach/1115193_1071967_1149380",
+          "name": "Bleach under $10",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/laundry/1115193_1071967",
+          "name": "Shop all laundry",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/laundry/1115193_1071967",
+          "name": "Laundry Savings",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/seasonal-air-fresheners/1115193_1025739_3975002",
+          "name": "View details for Must-try air care",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        }
+      ]
+    },
+    {
+      "category": "Office Supplies",
+      "url": "https://www.walmart.com/browse/office-supplies/magnets/1229749_3417460_7835039",
+      "status": "reviewed",
+      "listing_sequence": 20,
+      "response_category_id": "1229749_9234438_7835039",
+      "breadcrumb": [
+        {
+          "id": "1229749",
+          "name": "Office Supplies",
+          "url": "/cp/1229749"
+        },
+        {
+          "id": "1229749_9234438",
+          "name": "Office Basics",
+          "url": "/browse/office-supplies/office-basics/1229749_9234438"
+        },
+        {
+          "id": "1229749_9234438_7835039",
+          "name": "Magnets",
+          "url": "/browse/office-basics/magnets/1229749_9234438_7835039"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 1,
+      "listing_rejections": {
+        "sponsored": 2,
+        "outside_category": 17,
+        "marketplace": 1
+      },
+      "candidate_count": 9,
+      "next_page": null,
+      "snapshot_sha256": "fd7e6ab8fc4344b406cdb5956125dda3c040f508563f59c08bf38788909eb689",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/1229749",
+          "name": "Office Supplies",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/office-basics/1229749_9234438",
+          "name": "Office Basics",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-basics/magnets/1229749_9234438_7835039",
+          "name": "Magnets",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        }
+      ]
+    }
+  ],
+  "offer_observations": [],
+  "limits": {
+    "product_requests": 10,
+    "listing_requests": 20,
+    "seconds": 1800,
+    "batch_bytes": 2147483648
+  },
+  "full_coverage_complete": false,
+  "queue_growth": {
+    "seed_already_known_page": 1304,
+    "discovery_new_page": 3
+  },
+  "new_page_identities": 3,
+  "seconds": 426.75,
+  "counts": {
+    "product_requests": 0,
+    "listing_requests": 20,
+    "sequence": 20,
+    "body_bytes": 15219026
+  },
+  "queue_counts": {
+    "cross_link_excluded": 137,
+    "failed": 71,
+    "navigation_scope_unverified": 9,
+    "outside_scope": 1,
+    "pending": 2289,
+    "reviewed": 1359
+  },
+  "scope_counts": {
+    "brief_exclusion": 2,
+    "outside_required_ancestry": 2,
+    "parent_scope_unverified": 104,
+    "scope_confirmed_by_response": 10300,
+    "scope_unverified": 311,
+    "scoped_queue": 5849
+  }
+}
