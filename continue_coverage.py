@@ -57,11 +57,14 @@ def run():
   if batch.name not in status['accounted_batches']:
    status['batches']+=1;status['pages_attempted']+=len(report['pages']);status['accounted_batches'].append(batch.name)
   status.update(queue_counts=report['queue_counts'],scope_counts=report['scope_counts'],latest_batch=batch.name);save();export_batch(batch,report,status)
-  if report.get('stop_reason'):raise RuntimeError(report['stop_reason'])
+  if report.get('stop_reason'):
+   if report['stop_reason']=='Bounded coverage runtime reached':status['phase']='original_finite_work_budget_reached';save();return False
+   raise RuntimeError(report['stop_reason'])
   if not report['pages']:raise RuntimeError('No page progress')
   return any(o.get('qualified_candidate') for o in report.get('offer_observations',[]))
  try:
-  if (ROOT/'USER_PAUSED').exists():status['phase']='paused_by_user_storage_cleanup';return
+  if (ROOT/'USER_PAUSED').exists():status.update(phase='paused_by_user_storage_cleanup',user_paused=True);return
+  status['user_paused']=False
   ensure_storage()
   # An audit may stop only the coordinator while its current child finishes safely.
   running=[p for p in psutil.process_iter(['cmdline']) if 'coverage_queue.py' in (p.info['cmdline'] or [])]

@@ -34,7 +34,7 @@ def check():
   with patch.object(worker,'ROOT',root),patch.object(worker,'PUBLIC',public),patch.object(worker,'ensure_storage'),patch.object(worker.psutil,'process_iter',return_value=[]),patch.object(worker.subprocess,'Popen') as start:
    worker.run();start.assert_not_called()
   result=json.loads((root/'worker-status.json').read_text())
-  assert result['deadline_unix']==deadline and result['pages_attempted']==1700 and result['phase']=='original_finite_work_budget_reached'
+  assert result['deadline_unix']==deadline and result['pages_attempted']==1700 and result['phase']=='original_finite_work_budget_reached' and result['user_paused'] is False
   checks+=['Restart keeps original expired deadline','Restart keeps consumed page allowance','Expired budget launches no job']
  with tempfile.TemporaryDirectory(dir='data') as folder:
   root=Path(folder);public=root/'public';public.mkdir();batch=root/'batch-inflight';batch.mkdir()
