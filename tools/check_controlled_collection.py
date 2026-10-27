@@ -51,7 +51,7 @@ def check():
                     candidate['price_text']=''
                 items.append(candidate)
             return items, [], search
-        def navigation(*_):
+        def navigation(*_, **__):
             if mode == 'empty_page':
                 raise ValueError('Empty page title; synthetic navigation failure')
             return BeautifulSoup(html, 'html.parser')
