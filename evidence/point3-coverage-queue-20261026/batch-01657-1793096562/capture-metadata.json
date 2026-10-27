@@ -1,0 +1,742 @@
+[
+  {
+    "id": "coverage-016",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 16,
+    "request": {
+      "url": "https://www.walmart.com/browse/beauty/beauty-solutions/1085666_1729914?page=2",
+      "attempt": 1,
+      "started_utc": "2026-10-27T10:28:13.402477+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/beauty/beauty-solutions/1085666_1729914?page=2",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 10:28:13 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T10:28:13.711810+00:00",
+      "elapsed_seconds": 0.309
+    },
+    "body_sha256": "768bf1188ba9dfac5ec0190f8e10944a490f2c4e9fec9b4f2cae5d8b29625a1e",
+    "body_bytes": 1291401,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-020",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 20,
+    "request": {
+      "url": "https://www.walmart.com/browse/health-medicine/neck-shoulder-massager/976760_36290_7228247_4219593",
+      "attempt": 1,
+      "started_utc": "2026-10-27T10:29:18.965924+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/health-medicine/neck-shoulder-massager/976760_36290_7228247_4219593",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 10:29:19 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T10:29:19.139433+00:00",
+      "elapsed_seconds": 0.174
+    },
+    "body_sha256": "c298146a958fd3c634a70935d4b365b5efe0cd1697f53245397a29f292daf16e",
+    "body_bytes": 663650,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-017",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 17,
+    "request": {
+      "url": "https://www.walmart.com/browse/pets/cat-cages/5440_202073_7788817_5544612_1233428",
+      "attempt": 1,
+      "started_utc": "2026-10-27T10:28:31.052479+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/pets/cat-cages/5440_202073_1233428",
+      "redirected": true,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 10:28:31 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T10:28:31.645443+00:00",
+      "elapsed_seconds": 0.593
+    },
+    "body_sha256": "fabde3949d9a41b8b9599b52fa8e6eec9ffb9216627a77e961cf4f932baeca24",
+    "body_bytes": 609023,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-001",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 1,
+    "request": {
+      "url": "https://www.walmart.com/browse/household-essentials/funkaway-car-air-freshener/1115193_1025739_7032476_2346414_5138899",
+      "attempt": 1,
+      "started_utc": "2026-10-27T10:23:23.883945+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/household-essentials/funkaway-car-air-freshener/1115193_1025739_7032476_2346414_5138899",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 10:23:24 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T10:23:24.189942+00:00",
+      "elapsed_seconds": 0.306
+    },
+    "body_sha256": "c01a6e19cb20e88f595f8e835c7f0671cbf2ac33fa6553ba59adfc6442ab89fb",
+    "body_bytes": 568847,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-006",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 6,
+    "request": {
+      "url": "https://www.walmart.com/browse/bath-body/dr-teal-s/1005862_1071969_7745301",
+      "attempt": 1,
+      "started_utc": "2026-10-27T10:25:05.209742+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/bath-body/dr-teal-s/1005862_1071969_7745301",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 10:25:05 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T10:25:05.859536+00:00",
+      "elapsed_seconds": 0.65
+    },
+    "body_sha256": "7a88350e18eccc3d40d1e645663a2b6e6bc87c477d7c393c27401ee73e18ef15",
+    "body_bytes": 1194032,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-010",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 10,
+    "request": {
+      "url": "https://www.walmart.com/browse/beauty/nails/1085666_1007040_1001529",
+      "attempt": 1,
+      "started_utc": "2026-10-27T10:26:17.627361+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/beauty/nails/1085666_1007040_1001529",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 10:26:17 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T10:26:18.232993+00:00",
+      "elapsed_seconds": 0.606
+    },
+    "body_sha256": "de3453fad4b646112fe1464fabbcc4055c7d79aebefeea3693d560f400ef114b",
+    "body_bytes": 1745892,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-011",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 11,
+    "request": {
+      "url": "https://www.walmart.com/browse/cat-health-and-wellness/cat-anxiety-and-calming/5440_202073_2866753_7738042",
+      "attempt": 1,
+      "started_utc": "2026-10-27T10:26:34.747737+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/cat-health-and-wellness/cat-anxiety-and-calming/5440_202073_2866753_7738042",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 10:26:37 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T10:26:37.496794+00:00",
+      "elapsed_seconds": 2.749
+    },
+    "body_sha256": "c7d63e172cc70d2adcd5b0504f77fb0c22c109ee7c652d1149be3a533f956734",
+    "body_bytes": 641311,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-007",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 7,
+    "request": {
+      "url": "https://www.walmart.com/browse/household-essentials/little-trees-air-fresheners/1115193_1025739_7032476_2346414_8928193",
+      "attempt": 1,
+      "started_utc": "2026-10-27T10:25:25.021219+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/household-essentials/little-trees-air-fresheners/1115193_1025739_7032476_2346414_8928193",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 10:25:25 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T10:25:25.385043+00:00",
+      "elapsed_seconds": 0.364
+    },
+    "body_sha256": "8fdd02d83837889c894e044d6f7f2547548187715f0fc75425043cc8cdb2e8a1",
+    "body_bytes": 1144292,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-008",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 8,
+    "request": {
+      "url": "https://www.walmart.com/browse/health-medicine/clear-protein/976760_1166769_7458180_8290502",
+      "attempt": 1,
+      "started_utc": "2026-10-27T10:25:43.841463+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/health-medicine/clear-protein/976760_1166769_7458180_8290502",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 10:25:44 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T10:25:44.260400+00:00",
+      "elapsed_seconds": 0.419
+    },
+    "body_sha256": "f3646457770d1c4c21a633b35359a5cb83f6dc3cd7ff6933089a2670426b30d6",
+    "body_bytes": 785951,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-012",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 12,
+    "request": {
+      "url": "https://www.walmart.com/browse/personal-care/dr-teals-epsom-salts/1005862_1071969_7745301_1922128",
+      "attempt": 1,
+      "started_utc": "2026-10-27T10:27:00.206279+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/personal-care/dr-teals-epsom-salts/1005862_1071969_7745301_1922128",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 10:27:00 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T10:27:00.629150+00:00",
+      "elapsed_seconds": 0.423
+    },
+    "body_sha256": "98a1eaff001bb627a7a9a5ee72faac7455a53d464cfdfeac74dbe0dc7c1253f3",
+    "body_bytes": 1203392,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-004",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 4,
+    "request": {
+      "url": "https://www.walmart.com/browse/beauty/all-makeup/1085666_1007040_8924647",
+      "attempt": 1,
+      "started_utc": "2026-10-27T10:24:18.202409+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/beauty/all-makeup/1085666_1007040_8924647",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 10:24:18 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T10:24:18.571084+00:00",
+      "elapsed_seconds": 0.369
+    },
+    "body_sha256": "ffbffb3c2c22f5b784e5937c344f0835e49b7f3fe3c125e018ad2d0eaa47381a",
+    "body_bytes": 1878967,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-005",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 5,
+    "request": {
+      "url": "https://www.walmart.com/browse/pets/large-cat-carriers/5440_202073_7788817_8418004",
+      "attempt": 1,
+      "started_utc": "2026-10-27T10:24:36.596896+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/pets/large-cat-carriers/5440_202073_7788817_8418004",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 10:24:37 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T10:24:37.117576+00:00",
+      "elapsed_seconds": 0.521
+    },
+    "body_sha256": "63dc38e55ce628c6837b32b5afa65ce590ad5bee3251425b14ebbe0841e8edc5",
+    "body_bytes": 703568,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-013",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 13,
+    "request": {
+      "url": "https://www.walmart.com/browse/household-essentials/refresh-your-car/1115193_1025739_7032476_2346414_9346835",
+      "attempt": 1,
+      "started_utc": "2026-10-27T10:27:18.393335+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/household-essentials/refresh-your-car/1115193_1025739_7032476_2346414_9346835",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 10:27:18 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T10:27:18.638130+00:00",
+      "elapsed_seconds": 0.245
+    },
+    "body_sha256": "f0bb9fb92502153ac43363cef2784822299839179066a0bc69e12da0a377c09d",
+    "body_bytes": 936888,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-009",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 9,
+    "request": {
+      "url": "https://www.walmart.com/browse/office-supplies/money-bill-counters/1229749_2447475_6494636_2743397",
+      "attempt": 1,
+      "started_utc": "2026-10-27T10:26:00.193685+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/office-supplies/money-bill-counters/1229749_2447475_6494636_2743397",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 10:26:00 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T10:26:00.551151+00:00",
+      "elapsed_seconds": 0.357
+    },
+    "body_sha256": "4074369be02ab505c068f4de35390abdb378357fbe1cfaffd4645dcd7052c161",
+    "body_bytes": 500650,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-014",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 14,
+    "request": {
+      "url": "https://www.walmart.com/browse/health-medicine/protein-shakes/976760_1166769_1282185?page=2",
+      "attempt": 1,
+      "started_utc": "2026-10-27T10:27:38.791766+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/health-medicine/protein-shakes/976760_1166769_1282185?page=2",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 10:27:39 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T10:27:39.671644+00:00",
+      "elapsed_seconds": 0.88
+    },
+    "body_sha256": "9077cc19965f2264d775b309017ca9e6229af5bccced35cc9b0faa3e50fc0429",
+    "body_bytes": 1225403,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-002",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 2,
+    "request": {
+      "url": "https://www.walmart.com/browse/health-medicine/pain-patches/976760_6972993_5539693?page=2",
+      "attempt": 1,
+      "started_utc": "2026-10-27T10:23:40.342504+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/health-medicine/pain-patches/976760_6972993_5539693?page=2",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 10:23:40 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T10:23:40.695656+00:00",
+      "elapsed_seconds": 0.353
+    },
+    "body_sha256": "3383f1838f184e26901b7350d942980a6013e4fbe4f52a6b012ba02f281a30be",
+    "body_bytes": 769319,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-018",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 18,
+    "request": {
+      "url": "https://www.walmart.com/browse/personal-care/dr-teals-bubble-bath/1005862_1071969_7745301_5557551",
+      "attempt": 1,
+      "started_utc": "2026-10-27T10:28:48.168454+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/personal-care/dr-teals-bubble-bath/1005862_1071969_7745301_5557551",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 10:28:48 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T10:28:48.532695+00:00",
+      "elapsed_seconds": 0.364
+    },
+    "body_sha256": "13ef51b91b7a6772f08d144584df05ec5d72f1957f463e14d076ea22745c4ec1",
+    "body_bytes": 1016492,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-019",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 19,
+    "request": {
+      "url": "https://www.walmart.com/browse/household-essentials/yankee-candle-car-fresheners/1115193_1025739_7032476_5291603",
+      "attempt": 1,
+      "started_utc": "2026-10-27T10:29:03.478466+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/household-essentials/yankee-candle-car-fresheners/1115193_1025739_7032476_5291603",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 10:29:03 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T10:29:03.824549+00:00",
+      "elapsed_seconds": 0.346
+    },
+    "body_sha256": "a3528f409f3e80db3827ae324c31b76ff6b82bd571a9164fd450fceb64d198d1",
+    "body_bytes": 786846,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-003",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 3,
+    "request": {
+      "url": "https://www.walmart.com/browse/office-supplies/moleskine-notebooks/1229749_4796182_6402625",
+      "attempt": 1,
+      "started_utc": "2026-10-27T10:23:56.881353+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/office-supplies/moleskine-notebooks/1229749_4796182_6402625",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 10:23:57 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T10:23:57.353814+00:00",
+      "elapsed_seconds": 0.472
+    },
+    "body_sha256": "a2a0a6dae53db2a468ff52f97579760e9445db064bab4c3dc87acdcb4568003e",
+    "body_bytes": 525400,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-015",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 15,
+    "request": {
+      "url": "https://www.walmart.com/browse/office-supplies/monthly-calendars/1229749_8412191_2341241",
+      "attempt": 1,
+      "started_utc": "2026-10-27T10:27:55.761079+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/office-supplies/monthly-calendars/1229749_8412191_2341241",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 10:27:55 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T10:27:56.102776+00:00",
+      "elapsed_seconds": 0.342
+    },
+    "body_sha256": "cff3874e35467e49ddcf6f7afa5a60811ef0e1c25dc035073602260c1ea7d366",
+    "body_bytes": 679361,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  }
+]

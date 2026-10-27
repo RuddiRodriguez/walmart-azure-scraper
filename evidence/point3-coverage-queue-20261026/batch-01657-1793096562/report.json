@@ -1,0 +1,2991 @@
+{
+  "started_utc": "2026-10-27T10:22:42.595652+00:00",
+  "source_commit": "ad816550ea60fa0a7c48b32c8e8cfcf7274fe5e2",
+  "source_hashes": {
+    "coverage_queue.py": "ed6cf286c67d367fa04b37f1b915d6b2aa01163d0a3e6c4f4fd719fe5011d2d2",
+    "audit_queue_growth.py": "3ae6dc804966741256914559ecbf81fceeb4d00210e81a03998afd494800117d",
+    "extract.py": "34276d3e23cc56f9c4be813db61e30e1b3a1441863eb6d34a29de10b21f2806b",
+    "browser.py": "9dd3473ffb835741ca3b1d6b2c718164eefa4c18b7a9c5ed2b84a00e16bdcbaa"
+  },
+  "scope": "Listing/category coverage review only; no full product/PDP collection",
+  "pages": [
+    {
+      "category": "Household Essentials",
+      "url": "https://www.walmart.com/browse/household-essentials/funkaway-car-air-freshener/1115193_1025739_7032476_2346414_5138899",
+      "status": "reviewed",
+      "listing_sequence": 1,
+      "response_category_id": "1115193_1025739_7032476_2346414_5138899",
+      "breadcrumb": [
+        {
+          "id": "1115193",
+          "name": "Household Essentials",
+          "url": "/cp/1115193"
+        },
+        {
+          "id": "1115193_1025739",
+          "name": "Air Fresheners",
+          "url": "/browse/household-essentials/air-fresheners/1115193_1025739"
+        },
+        {
+          "id": "1115193_1025739_7032476",
+          "name": "Car Air Fresheners",
+          "url": "/browse/air-fresheners/car-air-fresheners/1115193_1025739_7032476"
+        },
+        {
+          "id": "1115193_1025739_7032476_2346414",
+          "name": "Car Air Fresheners by Brand",
+          "url": "/browse/car-air-fresheners/car-air-fresheners-by-brand/1115193_1025739_7032476_2346414"
+        },
+        {
+          "id": "1115193_1025739_7032476_2346414_5138899",
+          "name": "FunkAway Car Air Freshener",
+          "url": "/browse/car-air-fresheners-by-brand/funkaway-car-air-freshener/1115193_1025739_7032476_2346414_5138899"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 1,
+      "listing_rejections": {
+        "sponsored": 2
+      },
+      "candidate_count": 2,
+      "next_page": null,
+      "snapshot_sha256": "401424d114e28acf4e14a87e698575a698881891342355260fbe5074c0ca6992",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/1115193",
+          "name": "Household Essentials",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/air-fresheners/1115193_1025739",
+          "name": "Air Fresheners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/air-fresheners/car-air-fresheners/1115193_1025739_7032476",
+          "name": "Car Air Fresheners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/car-air-fresheners/car-air-fresheners-by-brand/1115193_1025739_7032476_2346414",
+          "name": "Car Air Fresheners by Brand",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/car-air-fresheners-by-brand/funkaway-car-air-freshener/1115193_1025739_7032476_2346414_5138899",
+          "name": "FunkAway Car Air Freshener",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/air-wick-car-air-freshener/1115193_1025739_7032476_2346414_9514904",
+          "name": "Air Wick Car Air Freshener",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/arm-hammer-car-air-freshener/1115193_1025739_7032476_2346414_3020215",
+          "name": "Arm & Hammer Car Air Freshener",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/armor-all-car-air-freshener/1115193_1025739_7032476_2346414_3609357",
+          "name": "Armor All Car Air Freshener",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/axe-car-freshener/1115193_1025739_7032476_2346414_4807342",
+          "name": "Axe Car Freshener",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/california-car-scents/1115193_1025739_7032476_2346414_5382328",
+          "name": "California Scents",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/chemical-guys-car-air-freshener/1115193_1025739_7032476_2346414_5445381",
+          "name": "Chemical Guys Car Air Freshener",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/febreze-car-air-fresheners/1115193_1025739_7032476_2346414_1683109",
+          "name": "Febreze Car Air Fresheners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/funk-away-car-air-freshener/1115193_1025739_7032476_2346414_5138899",
+          "name": "FunkAway Car Air Freshener",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/glade-car-air-freshener/1115193_1025739_7032476_2346414_6923985",
+          "name": "Glade Car Air Freshener",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/little-joe-car-air-freshener/1115193_1025739_7032476_2346414_7440817",
+          "name": "Little Joe Car Air Freshener",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/little-trees-air-fresheners/1115193_1025739_7032476_2346414_8928193",
+          "name": "Little Trees Air Fresheners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/old-spice-car-air-freshener/1115193_1025739_7032476_2346414_9243190",
+          "name": "Old Spice Car Air Freshener",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/ozium-car-spray/1115193_1025739_7032476_2346414_3092691",
+          "name": "Ozium Car Spray",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/paradise-air-car-freshener/1115193_1025739_7032476_2346414_5617800",
+          "name": "Paradise Air Car Freshener",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/psd-air-freshener/1115193_1025739_7032476_2346414_7301369",
+          "name": "PSD Air Freshener",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/sexwax-car-air-freshener/1115193_1025739_7032476_2346414_7523663",
+          "name": "Sex Wax Car Air Freshener",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/yankee-candle-car-fresheners/1115193_1025739_7032476_5291603",
+          "name": "Yankee Candle Car Fresheners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        }
+      ]
+    },
+    {
+      "category": "Health & Wellness",
+      "url": "https://www.walmart.com/browse/health-medicine/pain-patches/976760_6972993_5539693?page=2",
+      "status": "reviewed",
+      "listing_sequence": 2,
+      "response_category_id": "976760_6972993_5539693",
+      "breadcrumb": [
+        {
+          "id": "976760",
+          "name": "Health and Medicine",
+          "url": "/cp/976760"
+        },
+        {
+          "id": "976760_6972993",
+          "name": "Pain management",
+          "url": "/browse/health-and-medicine/pain-management/976760_6972993"
+        },
+        {
+          "id": "976760_6972993_5539693",
+          "name": "Pain Patches",
+          "url": "/browse/pain-management/pain-patches/976760_6972993_5539693"
+        }
+      ],
+      "page": 2,
+      "reported_last_page": 2,
+      "listing_rejections": {
+        "sponsored": 10,
+        "outside_category": 2
+      },
+      "candidate_count": 4,
+      "next_page": null,
+      "snapshot_sha256": "bb07210184f8ab4c4c7a7d59202e290e389d6fd711efe082bf46afd5b44332ce",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/976760",
+          "name": "Health and Medicine",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-and-medicine/pain-management/976760_6972993",
+          "name": "Pain management",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pain-management/pain-patches/976760_6972993_5539693",
+          "name": "Pain Patches",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/pain-patches/976760_6972993_5539693",
+          "name": "Equate pain patches",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/pain-patches/976760_6972993_5539693",
+          "name": "Salonpas patches",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/pain-patches/976760_6972993_5539693",
+          "name": "Icy Hot patches",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/pain-patches/976760_6972993_5539693",
+          "name": "BioFreeze patches",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/pain-patches/976760_6972993_5539693",
+          "name": "Aspercreme patches",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/pain-patches/976760_6972993_5539693",
+          "name": "Shop all pain patches",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/pain-patches/976760_6972993_5539693",
+          "name": "Pain patches under $10",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/pain-patches/976760_6972993_5539693",
+          "name": "Get pain patches fast",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/pain-patches/976760_6972993_5539693",
+          "name": "Equate pain patches",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/pain-patches/976760_6972993_5539693",
+          "name": "Salonpas patches",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/pain-patches/976760_6972993_5539693",
+          "name": "Icy Hot patches",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/pain-patches/976760_6972993_5539693",
+          "name": "BioFreeze patches",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/pain-patches/976760_6972993_5539693",
+          "name": "Aspercreme patches",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/pain-patches/976760_6972993_5539693",
+          "name": "Shop all pain patches",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/pain-patches/976760_6972993_5539693",
+          "name": "Pain patches under $10",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/pain-patches/976760_6972993_5539693",
+          "name": "Get pain patches fast",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        }
+      ]
+    },
+    {
+      "category": "Office Supplies",
+      "url": "https://www.walmart.com/browse/office-supplies/moleskine-notebooks/1229749_4796182_6402625",
+      "status": "reviewed",
+      "listing_sequence": 3,
+      "response_category_id": "1229749_4796182_6402625",
+      "breadcrumb": [
+        {
+          "id": "1229749",
+          "name": "Office Supplies",
+          "url": "/cp/1229749"
+        },
+        {
+          "id": "1229749_4796182",
+          "name": "Notebooks & Pads",
+          "url": "/browse/office-supplies/notebooks-pads/1229749_4796182"
+        },
+        {
+          "id": "1229749_4796182_6402625",
+          "name": "Moleskine Notebooks",
+          "url": "/browse/notebooks-pads/moleskine-notebooks/1229749_4796182_6402625"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 1,
+      "listing_rejections": {
+        "marketplace": 6
+      },
+      "candidate_count": 4,
+      "next_page": null,
+      "snapshot_sha256": "434ff8016268d1ee3a806444080c3e01a8129f971bee2fb20fb70af4cdcc3518",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/1229749",
+          "name": "Office Supplies",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/notebooks-pads/1229749_4796182",
+          "name": "Notebooks & Pads",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/notebooks-pads/moleskine-notebooks/1229749_4796182_6402625",
+          "name": "Moleskine Notebooks",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/notebooks-pads/1229749_4796182",
+          "name": "Get it today",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/composition-notebooks/1229749_4796182_4411896",
+          "name": "Composition notebooks",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/spiral-notebooks/1229749_4796182_2714026",
+          "name": "Spiral notebooks",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/1-subject-spiral-notebooks/1229749_4796182_2714026_7232305",
+          "name": "1 subject notebooks",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/3-subject-spiral-notebooks/1229749_4796182_2714026_8173909",
+          "name": "3 subject notebooks",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/5-subject-spiral-notebooks/1229749_4796182_2714026_3633439",
+          "name": "5 subject notebooks",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/five-star-notebooks/1229749_4796182_6487690",
+          "name": "Five Star notebooks",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/moleskine-notebooks/1229749_4796182_6402625",
+          "name": "Moleskine notebooks",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/notebooks-in-bulk/1229749_1086045_3462603_1889202_3196462",
+          "name": "Notebook multipacks",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/journals-diaries/1229749_4922227",
+          "name": "Journals",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/notepads/1229749_9607197_4087395",
+          "name": "Notepads",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/primary-composition-notebooks/1229749_4796182_7629751",
+          "name": "Primary Composition Notebooks",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/a5-notebooks/1229749_4796182_6754528",
+          "name": "A5 notebooks",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/pocket-notebooks/1229749_4796182_2287536",
+          "name": "Pocket notebooks",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/leather-notebooks/1229749_4796182_8466841",
+          "name": "Leather notebooks",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/steno-notebooks-pads/1229749_4796182_5344621",
+          "name": "Steno pads",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/graph-ruled-notebook/1229749_4796182_2621243",
+          "name": "Graph ruled notebooks",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/rocketbook-notebooks/1229749_4796182_7894066",
+          "name": "Rocketbook notebooks",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/notebooks-pads/1229749_4796182",
+          "name": "Get it today",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/composition-notebooks/1229749_4796182_4411896",
+          "name": "Composition notebooks",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/spiral-notebooks/1229749_4796182_2714026",
+          "name": "Spiral notebooks",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/1-subject-spiral-notebooks/1229749_4796182_2714026_7232305",
+          "name": "1 subject notebooks",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/3-subject-spiral-notebooks/1229749_4796182_2714026_8173909",
+          "name": "3 subject notebooks",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/5-subject-spiral-notebooks/1229749_4796182_2714026_3633439",
+          "name": "5 subject notebooks",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/five-star-notebooks/1229749_4796182_6487690",
+          "name": "Five Star notebooks",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/moleskine-notebooks/1229749_4796182_6402625",
+          "name": "Moleskine notebooks",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/notebooks-in-bulk/1229749_1086045_3462603_1889202_3196462",
+          "name": "Notebook multipacks",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/journals-diaries/1229749_4922227",
+          "name": "Journals",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/notepads/1229749_9607197_4087395",
+          "name": "Notepads",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/primary-composition-notebooks/1229749_4796182_7629751",
+          "name": "Primary Composition Notebooks",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/a5-notebooks/1229749_4796182_6754528",
+          "name": "A5 notebooks",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/pocket-notebooks/1229749_4796182_2287536",
+          "name": "Pocket notebooks",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/leather-notebooks/1229749_4796182_8466841",
+          "name": "Leather notebooks",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/steno-notebooks-pads/1229749_4796182_5344621",
+          "name": "Steno pads",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/graph-ruled-notebook/1229749_4796182_2621243",
+          "name": "Graph ruled notebooks",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/rocketbook-notebooks/1229749_4796182_7894066",
+          "name": "Rocketbook notebooks",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        }
+      ]
+    },
+    {
+      "category": "Beauty",
+      "url": "https://www.walmart.com/browse/beauty/all-makeup/1085666_1007040_8924647",
+      "status": "reviewed",
+      "listing_sequence": 4,
+      "response_category_id": "1085666_1007040_8924647",
+      "breadcrumb": [
+        {
+          "id": "1085666",
+          "name": "Beauty",
+          "url": "/cp/1085666"
+        },
+        {
+          "id": "1085666_1007040",
+          "name": "Makeup",
+          "url": "/browse/beauty/makeup/1085666_1007040"
+        },
+        {
+          "id": "1085666_1007040_8924647",
+          "name": "All Makeup",
+          "url": "/browse/makeup/all-makeup/1085666_1007040_8924647"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 25,
+      "listing_rejections": {
+        "sponsored": 9,
+        "outside_category": 3,
+        "marketplace": 8
+      },
+      "candidate_count": 39,
+      "next_page": "https://www.walmart.com/browse/beauty/all-makeup/1085666_1007040_8924647?page=2",
+      "snapshot_sha256": "7430ecbee2d04b6e9051a2eab04c911d63e46dc90733fa81ed33599a937a5bcc",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/1085666",
+          "name": "Beauty",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/beauty/makeup/1085666_1007040",
+          "name": "Makeup",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/makeup/all-makeup/1085666_1007040_8924647",
+          "name": "All Makeup",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        }
+      ]
+    },
+    {
+      "category": "Pets",
+      "url": "https://www.walmart.com/browse/pets/large-cat-carriers/5440_202073_7788817_8418004",
+      "status": "reviewed",
+      "listing_sequence": 5,
+      "response_category_id": "5440_202073_7788817_8418004",
+      "breadcrumb": [
+        {
+          "id": "5440",
+          "name": "Pets",
+          "url": "/cp/5440"
+        },
+        {
+          "id": "5440_202073",
+          "name": "Cats",
+          "url": "/browse/pets/cats/5440_202073"
+        },
+        {
+          "id": "5440_202073_7788817",
+          "name": "Cat Carriers",
+          "url": "/browse/cats/cat-carriers/5440_202073_7788817"
+        },
+        {
+          "id": "5440_202073_7788817_8418004",
+          "name": "Large Cat Carriers",
+          "url": "/browse/cat-carriers/large-cat-carriers/5440_202073_7788817_8418004"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 1,
+      "listing_rejections": {
+        "sponsored": 1,
+        "marketplace": 9
+      },
+      "candidate_count": 4,
+      "next_page": null,
+      "snapshot_sha256": "3616a69713178f83a9493dbb2ec84cbdbe56ec16ac13872818fd0de47336d489",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/5440",
+          "name": "Pets",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/cats/5440_202073",
+          "name": "Cats",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/cats/cat-carriers/5440_202073_7788817",
+          "name": "Cat Carriers",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/cat-carriers/large-cat-carriers/5440_202073_7788817_8418004",
+          "name": "Large Cat Carriers",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/airline-approved-cat-carriers/5440_202073_7788817_5544612_5911467",
+          "name": "Airline Approved Carriers",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/cat-backpacks/5440_202073_7788817_5544612_1550800",
+          "name": "Cat Backpacks",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/cat-bubble-backpacks/5440_202073_7788817_4791389",
+          "name": "Cat Bubble Backpacks",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/cat-strollers/5440_202073_7788817_5544612_6846637",
+          "name": "Cat Strollers",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/large-cat-carriers/5440_202073_7788817_8418004",
+          "name": "Large Cat Carriers",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/cat-health-and-wellness/cat-anxiety-and-calming/5440_202073_2866753_7738042",
+          "name": "Cat Anxiety & Calming",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/cat-cages/5440_202073_7788817_5544612_1233428",
+          "name": "Cat Cages",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/airline-approved-cat-carriers/5440_202073_7788817_5544612_5911467",
+          "name": "Airline Approved Carriers",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/cat-backpacks/5440_202073_7788817_5544612_1550800",
+          "name": "Cat Backpacks",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/cat-bubble-backpacks/5440_202073_7788817_4791389",
+          "name": "Cat Bubble Backpacks",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/cat-strollers/5440_202073_7788817_5544612_6846637",
+          "name": "Cat Strollers",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/large-cat-carriers/5440_202073_7788817_8418004",
+          "name": "Large Cat Carriers",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/cat-health-and-wellness/cat-anxiety-and-calming/5440_202073_2866753_7738042",
+          "name": "Cat Anxiety & Calming",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/cat-cages/5440_202073_7788817_5544612_1233428",
+          "name": "Cat Cages",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        }
+      ]
+    },
+    {
+      "category": "Personal Care",
+      "url": "https://www.walmart.com/browse/bath-body/dr-teal-s/1005862_1071969_7745301",
+      "status": "reviewed",
+      "listing_sequence": 6,
+      "response_category_id": "1005862_1071969_7745301",
+      "breadcrumb": [
+        {
+          "id": "1005862",
+          "name": "Personal Care",
+          "url": "/cp/1005862"
+        },
+        {
+          "id": "1005862_1071969",
+          "name": "Bath & Body",
+          "url": "/browse/personal-care/bath-body/1005862_1071969"
+        },
+        {
+          "id": "1005862_1071969_7745301",
+          "name": "Dr Teal's",
+          "url": "/browse/bath-body/dr-teal-s/1005862_1071969_7745301"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 3,
+      "listing_rejections": {
+        "sponsored": 10,
+        "outside_category": 5,
+        "marketplace": 1
+      },
+      "candidate_count": 43,
+      "next_page": "https://www.walmart.com/browse/bath-body/dr-teal-s/1005862_1071969_7745301?page=2",
+      "snapshot_sha256": "a7d33f8118fa954ab85ea3e97d3e70de8cb94c6db4f1f367a9a7dbd09da3a20a",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/1005862",
+          "name": "Personal Care",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/bath-body/1005862_1071969",
+          "name": "Bath & Body",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/bath-body/dr-teal-s/1005862_1071969_7745301",
+          "name": "Dr Teal's",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/dr-teals-epsom-salts/1005862_1071969_7745301_1922128",
+          "name": "Epsom salt",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/dr-teals-bubble-bath/1005862_1071969_7745301_5557551",
+          "name": "Bubble bath",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/dr-teals-body-wash/1005862_1071969_7745301_6228026",
+          "name": "Body wash",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/dr-teals-body-scrub/1005862_1071969_7745301_1796710",
+          "name": "Body scrubs",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/dr-teals-sleep-spray/1005862_1071969_7745301_5091596",
+          "name": "Sleep spray",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/dr-teals-lotions/1005862_1071969_7745301_9631888",
+          "name": "Body lotion",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/dr-teals-foot-care/1005862_1071969_7745301_5198592",
+          "name": "Foot care",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/dr-teals-epsom-salts/1005862_1071969_7745301_1922128",
+          "name": "Epsom salt",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/dr-teals-bubble-bath/1005862_1071969_7745301_5557551",
+          "name": "Bubble bath",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/dr-teals-body-wash/1005862_1071969_7745301_6228026",
+          "name": "Body wash",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/dr-teals-body-scrub/1005862_1071969_7745301_1796710",
+          "name": "Body scrubs",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/dr-teals-sleep-spray/1005862_1071969_7745301_5091596",
+          "name": "Sleep spray",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/dr-teals-lotions/1005862_1071969_7745301_9631888",
+          "name": "Body lotion",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/dr-teals-foot-care/1005862_1071969_7745301_5198592",
+          "name": "Foot care",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/cp/travel-size-essentials/8097138",
+          "name": "View details for The Travel Size Shop",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/scent-theory-hand-sanitizer/1005862_7850115_1604259",
+          "name": "View details for A scent for every mood",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/hand-soap/1005862_1001719",
+          "name": "View details for Save on hand soap & more",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        }
+      ]
+    },
+    {
+      "category": "Household Essentials",
+      "url": "https://www.walmart.com/browse/household-essentials/little-trees-air-fresheners/1115193_1025739_7032476_2346414_8928193",
+      "status": "reviewed",
+      "listing_sequence": 7,
+      "response_category_id": "1115193_1025739_7032476_2346414_8928193",
+      "breadcrumb": [
+        {
+          "id": "1115193",
+          "name": "Household Essentials",
+          "url": "/cp/1115193"
+        },
+        {
+          "id": "1115193_1025739",
+          "name": "Air Fresheners",
+          "url": "/browse/household-essentials/air-fresheners/1115193_1025739"
+        },
+        {
+          "id": "1115193_1025739_7032476",
+          "name": "Car Air Fresheners",
+          "url": "/browse/air-fresheners/car-air-fresheners/1115193_1025739_7032476"
+        },
+        {
+          "id": "1115193_1025739_7032476_2346414",
+          "name": "Car Air Fresheners by Brand",
+          "url": "/browse/car-air-fresheners/car-air-fresheners-by-brand/1115193_1025739_7032476_2346414"
+        },
+        {
+          "id": "1115193_1025739_7032476_2346414_8928193",
+          "name": "Little Trees Air Fresheners",
+          "url": "/browse/car-air-fresheners-by-brand/little-trees-air-fresheners/1115193_1025739_7032476_2346414_8928193"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 1,
+      "listing_rejections": {
+        "marketplace": 8
+      },
+      "candidate_count": 39,
+      "next_page": null,
+      "snapshot_sha256": "3d835077b75d0ed875417531ecfe586898125eea01be07406ef4da1eb167e8ca",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/1115193",
+          "name": "Household Essentials",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/air-fresheners/1115193_1025739",
+          "name": "Air Fresheners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/air-fresheners/car-air-fresheners/1115193_1025739_7032476",
+          "name": "Car Air Fresheners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/car-air-fresheners/car-air-fresheners-by-brand/1115193_1025739_7032476_2346414",
+          "name": "Car Air Fresheners by Brand",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/car-air-fresheners-by-brand/little-trees-air-fresheners/1115193_1025739_7032476_2346414_8928193",
+          "name": "Little Trees Air Fresheners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/air-wick-car-air-freshener/1115193_1025739_7032476_2346414_9514904",
+          "name": "Air Wick Car Air Freshener",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/arm-hammer-car-air-freshener/1115193_1025739_7032476_2346414_3020215",
+          "name": "Arm & Hammer Car Air Freshener",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/armor-all-car-air-freshener/1115193_1025739_7032476_2346414_3609357",
+          "name": "Armor All Car Air Freshener",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/axe-car-freshener/1115193_1025739_7032476_2346414_4807342",
+          "name": "Axe Car Freshener",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/california-car-scents/1115193_1025739_7032476_2346414_5382328",
+          "name": "California Scents",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/chemical-guys-car-air-freshener/1115193_1025739_7032476_2346414_5445381",
+          "name": "Chemical Guys Car Air Freshener",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/febreze-car-air-fresheners/1115193_1025739_7032476_2346414_1683109",
+          "name": "Febreze Car Air Fresheners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/funk-away-car-air-freshener/1115193_1025739_7032476_2346414_5138899",
+          "name": "FunkAway Car Air Freshener",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/glade-car-air-freshener/1115193_1025739_7032476_2346414_6923985",
+          "name": "Glade Car Air Freshener",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/little-joe-car-air-freshener/1115193_1025739_7032476_2346414_7440817",
+          "name": "Little Joe Car Air Freshener",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/little-trees-air-fresheners/1115193_1025739_7032476_2346414_8928193",
+          "name": "Little Trees Air Fresheners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/old-spice-car-air-freshener/1115193_1025739_7032476_2346414_9243190",
+          "name": "Old Spice Car Air Freshener",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/ozium-car-spray/1115193_1025739_7032476_2346414_3092691",
+          "name": "Ozium Car Spray",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/paradise-air-car-freshener/1115193_1025739_7032476_2346414_5617800",
+          "name": "Paradise Air Car Freshener",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/psd-air-freshener/1115193_1025739_7032476_2346414_7301369",
+          "name": "PSD Air Freshener",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/sexwax-car-air-freshener/1115193_1025739_7032476_2346414_7523663",
+          "name": "Sex Wax Car Air Freshener",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/yankee-candle-car-fresheners/1115193_1025739_7032476_5291603",
+          "name": "Yankee Candle Car Fresheners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/gain-grinchmas/1115193_8250903_1302612_5397101",
+          "name": "View details for The latest & more from Gain",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        }
+      ]
+    },
+    {
+      "category": "Health & Wellness",
+      "url": "https://www.walmart.com/browse/health-medicine/clear-protein/976760_1166769_7458180_8290502",
+      "status": "reviewed",
+      "listing_sequence": 8,
+      "response_category_id": "976760_1166769_7458180_8290502",
+      "breadcrumb": [
+        {
+          "id": "976760",
+          "name": "Health and Medicine",
+          "url": "/cp/976760"
+        },
+        {
+          "id": "976760_1166769",
+          "name": "Protein",
+          "url": "/browse/health-and-medicine/protein/976760_1166769"
+        },
+        {
+          "id": "976760_1166769_7458180",
+          "name": "Protein Powder",
+          "url": "/browse/protein/protein-powder/976760_1166769_7458180"
+        },
+        {
+          "id": "976760_1166769_7458180_8290502",
+          "name": "Clear Protein",
+          "url": "/browse/protein-powder/clear-protein/976760_1166769_7458180_8290502"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 1,
+      "listing_rejections": {
+        "sponsored": 3,
+        "marketplace": 8
+      },
+      "candidate_count": 11,
+      "next_page": null,
+      "snapshot_sha256": "1ddf2eb9387d863b16fc409b1167430ebef2bfa75263a896640e982ed34c6dc1",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/976760",
+          "name": "Health and Medicine",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-and-medicine/protein/976760_1166769",
+          "name": "Protein",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/protein/protein-powder/976760_1166769_7458180",
+          "name": "Protein Powder",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/protein-powder/clear-protein/976760_1166769_7458180_8290502",
+          "name": "Clear Protein",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/cp/protein-fitness/1166769",
+          "name": "Shop all",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/976760_8301824",
+          "name": "Rollbacks & more",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-and-medicine/protein-powder/976760_1166769_7458180",
+          "name": "Protein powders",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/protein-shakes/976760_1166769_1282185",
+          "name": "Protein shakes",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/protein-bars/976760_1166769_7400666_9653112",
+          "name": "Protein bars",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/clear-protein/976760_1166769_7458180_8290502",
+          "name": "Clear protein",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/cp/protein-focused-meal-ideas/7679972",
+          "name": "Protein meals",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/protein-snacks/976760_1166769_6765253",
+          "name": "Protein snacks",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/protein-breakfast/0/0/",
+          "name": "Protein breakfast staples",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/food/protein-dairy/976759_9176907_4899814",
+          "name": "Dairy protein",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/cp/glp-1-support/1340891",
+          "name": "Start your journey",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/all-protein-supplements/976760_1166769_9231506",
+          "name": "Under $10",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/cp/protein-fitness/1166769",
+          "name": "Shop all",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/976760_8301824",
+          "name": "Rollbacks & more",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-and-medicine/protein-powder/976760_1166769_7458180",
+          "name": "Protein powders",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/protein-shakes/976760_1166769_1282185",
+          "name": "Protein shakes",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/protein-bars/976760_1166769_7400666_9653112",
+          "name": "Protein bars",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/clear-protein/976760_1166769_7458180_8290502",
+          "name": "Clear protein",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/cp/protein-focused-meal-ideas/7679972",
+          "name": "Protein meals",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/protein-snacks/976760_1166769_6765253",
+          "name": "Protein snacks",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/protein-breakfast/0/0/",
+          "name": "Protein breakfast staples",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/food/protein-dairy/976759_9176907_4899814",
+          "name": "Dairy protein",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/cp/glp-1-support/1340891",
+          "name": "Start your journey",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/all-protein-supplements/976760_1166769_9231506",
+          "name": "Under $10",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        }
+      ]
+    },
+    {
+      "category": "Office Supplies",
+      "url": "https://www.walmart.com/browse/office-supplies/money-bill-counters/1229749_2447475_6494636_2743397",
+      "status": "reviewed",
+      "listing_sequence": 9,
+      "response_category_id": "1229749_2447475_6494636_2743397",
+      "breadcrumb": [
+        {
+          "id": "1229749",
+          "name": "Office Supplies",
+          "url": "/cp/1229749"
+        },
+        {
+          "id": "1229749_2447475",
+          "name": "Retail Essentials",
+          "url": "/browse/office-supplies/retail-essentials/1229749_2447475"
+        },
+        {
+          "id": "1229749_2447475_6494636",
+          "name": "Money Handling",
+          "url": "/browse/retail-essentials/money-handling/1229749_2447475_6494636"
+        },
+        {
+          "id": "1229749_2447475_6494636_2743397",
+          "name": "Money & Bill Counters",
+          "url": "/browse/money-handling/money-bill-counters/1229749_2447475_6494636_2743397"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 1,
+      "listing_rejections": {
+        "marketplace": 9
+      },
+      "candidate_count": 1,
+      "next_page": null,
+      "snapshot_sha256": "e6dab5d3f9263e8db1f81459ce15dd161ac0a7a7bd960a8248e5a29b9b9d4039",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/1229749",
+          "name": "Office Supplies",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/retail-essentials/1229749_2447475",
+          "name": "Retail Essentials",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/retail-essentials/money-handling/1229749_2447475_6494636",
+          "name": "Money Handling",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/money-handling/money-bill-counters/1229749_2447475_6494636_2743397",
+          "name": "Money & Bill Counters",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        }
+      ]
+    },
+    {
+      "category": "Beauty",
+      "url": "https://www.walmart.com/browse/beauty/nails/1085666_1007040_1001529",
+      "status": "reviewed",
+      "listing_sequence": 10,
+      "response_category_id": "1085666_1007040_1001529",
+      "breadcrumb": [
+        {
+          "id": "1085666",
+          "name": "Beauty",
+          "url": "/cp/1085666"
+        },
+        {
+          "id": "1085666_1007040",
+          "name": "Makeup",
+          "url": "/browse/beauty/makeup/1085666_1007040"
+        },
+        {
+          "id": "1085666_1007040_1001529",
+          "name": "Nails",
+          "url": "/browse/makeup/nails/1085666_1007040_1001529"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 17,
+      "listing_rejections": {
+        "sponsored": 10,
+        "outside_category": 3,
+        "marketplace": 10
+      },
+      "candidate_count": 36,
+      "next_page": "https://www.walmart.com/browse/beauty/nails/1085666_1007040_1001529?page=2",
+      "snapshot_sha256": "ec8b89978d96202b4dc5ac4fae419010f69694626baeae26c16a2fda10670d94",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/1085666",
+          "name": "Beauty",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/beauty/makeup/1085666_1007040",
+          "name": "Makeup",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/makeup/nails/1085666_1007040_1001529",
+          "name": "Nails",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        }
+      ]
+    },
+    {
+      "category": "Pets",
+      "url": "https://www.walmart.com/browse/cat-health-and-wellness/cat-anxiety-and-calming/5440_202073_2866753_7738042",
+      "status": "reviewed",
+      "listing_sequence": 11,
+      "response_category_id": "5440_202073_2866753_7738042",
+      "breadcrumb": [
+        {
+          "id": "5440",
+          "name": "Pets",
+          "url": "/cp/5440"
+        },
+        {
+          "id": "5440_202073",
+          "name": "Cats",
+          "url": "/browse/pets/cats/5440_202073"
+        },
+        {
+          "id": "5440_202073_2866753",
+          "name": "Cat Health and Wellness",
+          "url": "/browse/cats/cat-health-and-wellness/5440_202073_2866753"
+        },
+        {
+          "id": "5440_202073_2866753_7738042",
+          "name": "Cat Anxiety and Calming",
+          "url": "/browse/cat-health-and-wellness/cat-anxiety-and-calming/5440_202073_2866753_7738042"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 1,
+      "listing_rejections": {
+        "sponsored": 1,
+        "marketplace": 5
+      },
+      "candidate_count": 8,
+      "next_page": null,
+      "snapshot_sha256": "49542affebbdf7df71dd016619504ee89d6196117dea758fa655076a3a232cf2",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/5440",
+          "name": "Pets",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/cats/5440_202073",
+          "name": "Cats",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/cats/cat-health-and-wellness/5440_202073_2866753",
+          "name": "Cat Health and Wellness",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/cat-health-and-wellness/cat-anxiety-and-calming/5440_202073_2866753_7738042",
+          "name": "Cat Anxiety and Calming",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/cat-anxiety-and-calming/5440_202073_2866753_7738042",
+          "name": "Get it today",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/interactive-cat-toys/5440_202073_2584809_4656364",
+          "name": "Interactive cat toys",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/cat-feeders-fountains-and-bowls/5440_202073_2600039",
+          "name": "Cat feeders and waterers",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/cats/cat-health-wellbeing/5440_202073_2866753",
+          "name": "Cat Health & Wellness",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/cat-pheromone-diffuser/5440_202073_2866753_7738042_3230751",
+          "name": "Cat Pheromone Diffuser",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/cat-calming-treats/5440_202073_6005312_2407696",
+          "name": "Calming Cat Treats",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/cat-calming-collars/5440_202073_1014984_3348756",
+          "name": "Cat Calming Collars",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/feliway/5440_202073_2866753_7738042_6239680",
+          "name": "Feliway",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/cat-dewormers/5440_202073_2866753_5972932",
+          "name": "Cat Dewormers",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/cat-hairball-remedies/5440_202073_2866753_1722338",
+          "name": "Cat Hairball Remedies",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/cat-health-and-wellness/cat-vitamins-and-supplements/5440_202073_2866753_7699898",
+          "name": "Cat Supplements",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/cat-eye-drops-treatment/5440_202073_2866753_6151404",
+          "name": "Cat Eye Drops",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/cat-health-and-wellness/cat-dental-care/5440_202073_2866753_3638005",
+          "name": "Cat Dental Care",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/cat-ear-care/5440_202073_2866753_4434448",
+          "name": "Cat Ear Care",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/cat-anxiety-and-calming/5440_202073_2866753_7738042",
+          "name": "Get it today",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/interactive-cat-toys/5440_202073_2584809_4656364",
+          "name": "Interactive cat toys",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/cat-feeders-fountains-and-bowls/5440_202073_2600039",
+          "name": "Cat feeders and waterers",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/cats/cat-health-wellbeing/5440_202073_2866753",
+          "name": "Cat Health & Wellness",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/cat-pheromone-diffuser/5440_202073_2866753_7738042_3230751",
+          "name": "Cat Pheromone Diffuser",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/cat-calming-treats/5440_202073_6005312_2407696",
+          "name": "Calming Cat Treats",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/cat-calming-collars/5440_202073_1014984_3348756",
+          "name": "Cat Calming Collars",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/feliway/5440_202073_2866753_7738042_6239680",
+          "name": "Feliway",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/cat-dewormers/5440_202073_2866753_5972932",
+          "name": "Cat Dewormers",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/cat-hairball-remedies/5440_202073_2866753_1722338",
+          "name": "Cat Hairball Remedies",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/cat-health-and-wellness/cat-vitamins-and-supplements/5440_202073_2866753_7699898",
+          "name": "Cat Supplements",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/cat-eye-drops-treatment/5440_202073_2866753_6151404",
+          "name": "Cat Eye Drops",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/cat-health-and-wellness/cat-dental-care/5440_202073_2866753_3638005",
+          "name": "Cat Dental Care",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/cat-ear-care/5440_202073_2866753_4434448",
+          "name": "Cat Ear Care",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        }
+      ]
+    },
+    {
+      "category": "Personal Care",
+      "url": "https://www.walmart.com/browse/personal-care/dr-teals-epsom-salts/1005862_1071969_7745301_1922128",
+      "status": "reviewed",
+      "listing_sequence": 12,
+      "response_category_id": "1005862_1071969_7745301_1922128",
+      "breadcrumb": [
+        {
+          "id": "1005862",
+          "name": "Personal Care",
+          "url": "/cp/1005862"
+        },
+        {
+          "id": "1005862_1071969",
+          "name": "Bath & Body",
+          "url": "/browse/personal-care/bath-body/1005862_1071969"
+        },
+        {
+          "id": "1005862_1071969_7745301",
+          "name": "Dr Teal's",
+          "url": "/browse/bath-body/dr-teal-s/1005862_1071969_7745301"
+        },
+        {
+          "id": "1005862_1071969_7745301_1922128",
+          "name": "Dr Teal's Epsom Salts",
+          "url": "/browse/dr-teal-s/dr-teal-s-epsom-salts/1005862_1071969_7745301_1922128"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 1,
+      "listing_rejections": {
+        "sponsored": 10,
+        "outside_category": 4,
+        "marketplace": 3
+      },
+      "candidate_count": 40,
+      "next_page": null,
+      "snapshot_sha256": "5c74c2102145a57d109130ed280e7f79ca279c1eb1e5ae940405323d1742e28a",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/1005862",
+          "name": "Personal Care",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/bath-body/1005862_1071969",
+          "name": "Bath & Body",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/bath-body/dr-teal-s/1005862_1071969_7745301",
+          "name": "Dr Teal's",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/dr-teal-s/dr-teal-s-epsom-salts/1005862_1071969_7745301_1922128",
+          "name": "Dr Teal's Epsom Salts",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/dr-teals-epsom-salts/1005862_1071969_7745301_1922128",
+          "name": "Epsom salt",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/dr-teals-bubble-bath/1005862_1071969_7745301_5557551",
+          "name": "Bubble bath",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/dr-teals-body-wash/1005862_1071969_7745301_6228026",
+          "name": "Body wash",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/dr-teals-body-scrub/1005862_1071969_7745301_1796710",
+          "name": "Body scrubs",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/dr-teals-sleep-spray/1005862_1071969_7745301_5091596",
+          "name": "Sleep spray",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/dr-teals-lotions/1005862_1071969_7745301_9631888",
+          "name": "Body lotion",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/dr-teals-foot-care/1005862_1071969_7745301_5198592",
+          "name": "Foot care",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/dr-teals-epsom-salts/1005862_1071969_7745301_1922128",
+          "name": "Epsom salt",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/dr-teals-bubble-bath/1005862_1071969_7745301_5557551",
+          "name": "Bubble bath",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/dr-teals-body-wash/1005862_1071969_7745301_6228026",
+          "name": "Body wash",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/dr-teals-body-scrub/1005862_1071969_7745301_1796710",
+          "name": "Body scrubs",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/dr-teals-sleep-spray/1005862_1071969_7745301_5091596",
+          "name": "Sleep spray",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/dr-teals-lotions/1005862_1071969_7745301_9631888",
+          "name": "Body lotion",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/dr-teals-foot-care/1005862_1071969_7745301_5198592",
+          "name": "Foot care",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/shop-all-personal-care/1005862_2554774",
+          "name": "View details for Save on personal care",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/cp/pg-gameday/5626954",
+          "name": "View details for Personal care MVPs",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/scent-theory-hand-sanitizer/1005862_7850115_1604259",
+          "name": "View details for A scent for every mood",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        }
+      ]
+    },
+    {
+      "category": "Household Essentials",
+      "url": "https://www.walmart.com/browse/household-essentials/refresh-your-car/1115193_1025739_7032476_2346414_9346835",
+      "status": "reviewed",
+      "listing_sequence": 13,
+      "response_category_id": "1115193_1025739_7032476_2346414_9346835",
+      "breadcrumb": [
+        {
+          "id": "1115193",
+          "name": "Household Essentials",
+          "url": "/cp/1115193"
+        },
+        {
+          "id": "1115193_1025739",
+          "name": "Air Fresheners",
+          "url": "/browse/household-essentials/air-fresheners/1115193_1025739"
+        },
+        {
+          "id": "1115193_1025739_7032476",
+          "name": "Car Air Fresheners",
+          "url": "/browse/air-fresheners/car-air-fresheners/1115193_1025739_7032476"
+        },
+        {
+          "id": "1115193_1025739_7032476_2346414",
+          "name": "Car Air Fresheners by Brand",
+          "url": "/browse/car-air-fresheners/car-air-fresheners-by-brand/1115193_1025739_7032476_2346414"
+        },
+        {
+          "id": "1115193_1025739_7032476_2346414_9346835",
+          "name": "Refresh Your Car!",
+          "url": "/browse/car-air-fresheners-by-brand/refresh-your-car-/1115193_1025739_7032476_2346414_9346835"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 1,
+      "listing_rejections": {
+        "sponsored": 3,
+        "marketplace": 5
+      },
+      "candidate_count": 25,
+      "next_page": null,
+      "snapshot_sha256": "c0a274ea3accacca4c918e37ac5e15542e60bde41fac082a4787bde72d6590eb",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/1115193",
+          "name": "Household Essentials",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/air-fresheners/1115193_1025739",
+          "name": "Air Fresheners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/air-fresheners/car-air-fresheners/1115193_1025739_7032476",
+          "name": "Car Air Fresheners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/car-air-fresheners/car-air-fresheners-by-brand/1115193_1025739_7032476_2346414",
+          "name": "Car Air Fresheners by Brand",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/car-air-fresheners-by-brand/refresh-your-car-/1115193_1025739_7032476_2346414_9346835",
+          "name": "Refresh Your Car!",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/air-wick-car-air-freshener/1115193_1025739_7032476_2346414_9514904",
+          "name": "Air Wick Car Air Freshener",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/arm-hammer-car-air-freshener/1115193_1025739_7032476_2346414_3020215",
+          "name": "Arm & Hammer Car Air Freshener",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/armor-all-car-air-freshener/1115193_1025739_7032476_2346414_3609357",
+          "name": "Armor All Car Air Freshener",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/axe-car-freshener/1115193_1025739_7032476_2346414_4807342",
+          "name": "Axe Car Freshener",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/california-car-scents/1115193_1025739_7032476_2346414_5382328",
+          "name": "California Scents",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/chemical-guys-car-air-freshener/1115193_1025739_7032476_2346414_5445381",
+          "name": "Chemical Guys Car Air Freshener",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/febreze-car-air-fresheners/1115193_1025739_7032476_2346414_1683109",
+          "name": "Febreze Car Air Fresheners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/funk-away-car-air-freshener/1115193_1025739_7032476_2346414_5138899",
+          "name": "FunkAway Car Air Freshener",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/glade-car-air-freshener/1115193_1025739_7032476_2346414_6923985",
+          "name": "Glade Car Air Freshener",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/little-joe-car-air-freshener/1115193_1025739_7032476_2346414_7440817",
+          "name": "Little Joe Car Air Freshener",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/little-trees-air-fresheners/1115193_1025739_7032476_2346414_8928193",
+          "name": "Little Trees Air Fresheners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/old-spice-car-air-freshener/1115193_1025739_7032476_2346414_9243190",
+          "name": "Old Spice Car Air Freshener",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/ozium-car-spray/1115193_1025739_7032476_2346414_3092691",
+          "name": "Ozium Car Spray",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/paradise-air-car-freshener/1115193_1025739_7032476_2346414_5617800",
+          "name": "Paradise Air Car Freshener",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/psd-air-freshener/1115193_1025739_7032476_2346414_7301369",
+          "name": "PSD Air Freshener",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/sexwax-car-air-freshener/1115193_1025739_7032476_2346414_7523663",
+          "name": "Sex Wax Car Air Freshener",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/yankee-candle-car-fresheners/1115193_1025739_7032476_5291603",
+          "name": "Yankee Candle Car Fresheners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/gain-grinchmas/1115193_8250903_1302612_5397101",
+          "name": "View details for The latest & more from Gain",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        }
+      ]
+    },
+    {
+      "category": "Health & Wellness",
+      "url": "https://www.walmart.com/browse/health-medicine/protein-shakes/976760_1166769_1282185?page=2",
+      "status": "reviewed",
+      "listing_sequence": 14,
+      "response_category_id": "976760_1166769_1282185",
+      "breadcrumb": [
+        {
+          "id": "976760",
+          "name": "Health and Medicine",
+          "url": "/cp/976760"
+        },
+        {
+          "id": "976760_1166769",
+          "name": "Protein",
+          "url": "/browse/health-and-medicine/protein/976760_1166769"
+        },
+        {
+          "id": "976760_1166769_1282185",
+          "name": "Protein Shakes",
+          "url": "/browse/protein/protein-shakes/976760_1166769_1282185"
+        }
+      ],
+      "page": 2,
+      "reported_last_page": 5,
+      "listing_rejections": {
+        "sponsored": 10
+      },
+      "candidate_count": 39,
+      "next_page": "https://www.walmart.com/browse/health-medicine/protein-shakes/976760_1166769_1282185?page=3",
+      "snapshot_sha256": "662bf18b8aade742f3088f1f551f9352075ec2e2813e1d0d62ba81703bd6b2f1",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/976760",
+          "name": "Health and Medicine",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-and-medicine/protein/976760_1166769",
+          "name": "Protein",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/protein/protein-shakes/976760_1166769_1282185",
+          "name": "Protein Shakes",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/cp/protein-fitness/1166769",
+          "name": "Shop all",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/protein-shakes/976760_1166769_1282185",
+          "name": "30g Protein",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/protein-shakes/976760_1166769_1282185",
+          "name": "Chocolate Protein",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/protein-shakes/976760_1166769_1282185",
+          "name": "Vanilla Protein",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/protein-shakes/976760_1166769_1282185",
+          "name": "Plant Base Protein",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/protein-shakes/976760_1166769_1282185",
+          "name": "Zero Sugar Protein",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/protein-shakes/976760_1166769_1282185",
+          "name": "12 - pack Protein",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/cp/protein-fitness/1166769",
+          "name": "Shop all",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/protein-shakes/976760_1166769_1282185",
+          "name": "30g Protein",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/protein-shakes/976760_1166769_1282185",
+          "name": "Chocolate Protein",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/protein-shakes/976760_1166769_1282185",
+          "name": "Vanilla Protein",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/protein-shakes/976760_1166769_1282185",
+          "name": "Plant Base Protein",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/protein-shakes/976760_1166769_1282185",
+          "name": "Zero Sugar Protein",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/protein-shakes/976760_1166769_1282185",
+          "name": "12 - pack Protein",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        }
+      ]
+    },
+    {
+      "category": "Office Supplies",
+      "url": "https://www.walmart.com/browse/office-supplies/monthly-calendars/1229749_8412191_2341241",
+      "status": "reviewed",
+      "listing_sequence": 15,
+      "response_category_id": "1229749_8412191_2341241",
+      "breadcrumb": [
+        {
+          "id": "1229749",
+          "name": "Office Supplies",
+          "url": "/cp/1229749"
+        },
+        {
+          "id": "1229749_8412191",
+          "name": "Calendars and Planners",
+          "url": "/browse/office-supplies/calendars-and-planners/1229749_8412191"
+        },
+        {
+          "id": "1229749_8412191_2341241",
+          "name": "Monthly Calendars",
+          "url": "/browse/calendars-and-planners/monthly-calendars/1229749_8412191_2341241"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 1,
+      "listing_rejections": {
+        "marketplace": 8
+      },
+      "candidate_count": 7,
+      "next_page": null,
+      "snapshot_sha256": "d276d29cd083ef0e3aed28f7789150fed90f817a7ed9b1e335c1ee3b77c26432",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/1229749",
+          "name": "Office Supplies",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/calendars-and-planners/1229749_8412191",
+          "name": "Calendars and Planners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/calendars-and-planners/monthly-calendars/1229749_8412191_2341241",
+          "name": "Monthly Calendars",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        }
+      ]
+    },
+    {
+      "category": "Beauty",
+      "url": "https://www.walmart.com/browse/beauty/beauty-solutions/1085666_1729914?page=2",
+      "status": "reviewed",
+      "listing_sequence": 16,
+      "response_category_id": "1085666_1729914",
+      "breadcrumb": [
+        {
+          "id": "1085666",
+          "name": "Beauty",
+          "url": "/cp/1085666"
+        },
+        {
+          "id": "1085666_1729914",
+          "name": "Beauty Solutions",
+          "url": "/browse/beauty/beauty-solutions/1085666_1729914"
+        }
+      ],
+      "page": 2,
+      "reported_last_page": 7,
+      "listing_rejections": {
+        "sponsored": 10,
+        "outside_category": 3
+      },
+      "candidate_count": 37,
+      "next_page": "https://www.walmart.com/browse/beauty/beauty-solutions/1085666_1729914?page=3",
+      "snapshot_sha256": "621af624356ed56029cbb3cd1cf9a76ef15482f0f57f2804c309343682746a54",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/1085666",
+          "name": "Beauty",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/beauty/beauty-solutions/1085666_1729914",
+          "name": "Beauty Solutions",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/beauty/skincare/1085666_1007039",
+          "name": "Skincare",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/beauty/fragrance/1085666_133225",
+          "name": "Fragrance",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/beauty/hair-care-hair-tools/1085666_7192911_7737658",
+          "name": "Haircare & tools",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/beauty/all-makeup/1085666_1007040_8924647",
+          "name": "Makeup",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/beauty/nails/1085666_1007040_1001529",
+          "name": "Nail care",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/cp/premium-beauty/7924299",
+          "name": "Shop all Premium beauty",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/cp/k-beauty/6521388",
+          "name": "Shop all Korean beauty",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/cp/mens-essentials/1056884",
+          "name": "Shop all men's grooming",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/cp/the-curl-shop/5859906",
+          "name": "The curl shop",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/beauty/skincare/1085666_1007039",
+          "name": "Skincare",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/beauty/fragrance/1085666_133225",
+          "name": "Fragrance",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/beauty/hair-care-hair-tools/1085666_7192911_7737658",
+          "name": "Haircare & tools",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/beauty/all-makeup/1085666_1007040_8924647",
+          "name": "Makeup",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/beauty/nails/1085666_1007040_1001529",
+          "name": "Nail care",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/cp/premium-beauty/7924299",
+          "name": "Shop all Premium beauty",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/cp/k-beauty/6521388",
+          "name": "Shop all Korean beauty",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/cp/mens-essentials/1056884",
+          "name": "Shop all men's grooming",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/cp/the-curl-shop/5859906",
+          "name": "The curl shop",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        }
+      ]
+    },
+    {
+      "category": "Pets",
+      "url": "https://www.walmart.com/browse/pets/cat-cages/5440_202073_7788817_5544612_1233428",
+      "status": "reviewed",
+      "listing_sequence": 17,
+      "response_category_id": "5440_202073_1233428",
+      "breadcrumb": [
+        {
+          "id": "5440",
+          "name": "Pets",
+          "url": "/cp/5440"
+        },
+        {
+          "id": "5440_202073",
+          "name": "Cats",
+          "url": "/browse/pets/cats/5440_202073"
+        },
+        {
+          "id": "5440_202073_1233428",
+          "name": "Cat Cages",
+          "url": "/browse/cats/cat-cages/5440_202073_1233428"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 1,
+      "listing_rejections": {
+        "sponsored": 1,
+        "marketplace": 10
+      },
+      "candidate_count": 2,
+      "next_page": null,
+      "snapshot_sha256": "dc8c04640e8c9ac10673fea2e09e3fc3ff083ed64370d8b00e1f4c8a68089ede",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/5440",
+          "name": "Pets",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/cats/5440_202073",
+          "name": "Cats",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/cats/cat-cages/5440_202073_1233428",
+          "name": "Cat Cages",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/airline-approved-cat-carriers/5440_202073_7788817_5544612_5911467",
+          "name": "Airline Approved Carriers",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/cat-backpacks/5440_202073_7788817_5544612_1550800",
+          "name": "Cat Backpacks",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/cat-bubble-backpacks/5440_202073_7788817_4791389",
+          "name": "Cat Bubble Backpacks",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/cat-strollers/5440_202073_7788817_5544612_6846637",
+          "name": "Cat Strollers",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/large-cat-carriers/5440_202073_7788817_8418004",
+          "name": "Large Cat Carriers",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/cat-health-and-wellness/cat-anxiety-and-calming/5440_202073_2866753_7738042",
+          "name": "Cat Anxiety & Calming",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/cat-cages/5440_202073_7788817_5544612_1233428",
+          "name": "Cat Cages",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/airline-approved-cat-carriers/5440_202073_7788817_5544612_5911467",
+          "name": "Airline Approved Carriers",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/cat-backpacks/5440_202073_7788817_5544612_1550800",
+          "name": "Cat Backpacks",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/cat-bubble-backpacks/5440_202073_7788817_4791389",
+          "name": "Cat Bubble Backpacks",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/cat-strollers/5440_202073_7788817_5544612_6846637",
+          "name": "Cat Strollers",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/large-cat-carriers/5440_202073_7788817_8418004",
+          "name": "Large Cat Carriers",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/cat-health-and-wellness/cat-anxiety-and-calming/5440_202073_2866753_7738042",
+          "name": "Cat Anxiety & Calming",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/cat-cages/5440_202073_7788817_5544612_1233428",
+          "name": "Cat Cages",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        }
+      ]
+    },
+    {
+      "category": "Personal Care",
+      "url": "https://www.walmart.com/browse/personal-care/dr-teals-bubble-bath/1005862_1071969_7745301_5557551",
+      "status": "reviewed",
+      "listing_sequence": 18,
+      "response_category_id": "1005862_1071969_7745301_5557551",
+      "breadcrumb": [
+        {
+          "id": "1005862",
+          "name": "Personal Care",
+          "url": "/cp/1005862"
+        },
+        {
+          "id": "1005862_1071969",
+          "name": "Bath & Body",
+          "url": "/browse/personal-care/bath-body/1005862_1071969"
+        },
+        {
+          "id": "1005862_1071969_7745301",
+          "name": "Dr Teal's",
+          "url": "/browse/bath-body/dr-teal-s/1005862_1071969_7745301"
+        },
+        {
+          "id": "1005862_1071969_7745301_5557551",
+          "name": "Dr Teal's Bubble Bath",
+          "url": "/browse/dr-teal-s/dr-teal-s-bubble-bath/1005862_1071969_7745301_5557551"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 1,
+      "listing_rejections": {
+        "sponsored": 11,
+        "outside_category": 3,
+        "marketplace": 6
+      },
+      "candidate_count": 26,
+      "next_page": null,
+      "snapshot_sha256": "ab7190732d70c3143d24cc344348266da7319b57a1440b2dacf85da8b52c5e02",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/1005862",
+          "name": "Personal Care",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/bath-body/1005862_1071969",
+          "name": "Bath & Body",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/bath-body/dr-teal-s/1005862_1071969_7745301",
+          "name": "Dr Teal's",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/dr-teal-s/dr-teal-s-bubble-bath/1005862_1071969_7745301_5557551",
+          "name": "Dr Teal's Bubble Bath",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/dr-teals-epsom-salts/1005862_1071969_7745301_1922128",
+          "name": "Epsom salt",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/dr-teals-bubble-bath/1005862_1071969_7745301_5557551",
+          "name": "Bubble bath",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/dr-teals-body-wash/1005862_1071969_7745301_6228026",
+          "name": "Body wash",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/dr-teals-body-scrub/1005862_1071969_7745301_1796710",
+          "name": "Body scrubs",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/dr-teals-sleep-spray/1005862_1071969_7745301_5091596",
+          "name": "Sleep spray",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/dr-teals-lotions/1005862_1071969_7745301_9631888",
+          "name": "Body lotion",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/dr-teals-foot-care/1005862_1071969_7745301_5198592",
+          "name": "Foot care",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/dr-teals-epsom-salts/1005862_1071969_7745301_1922128",
+          "name": "Epsom salt",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/dr-teals-bubble-bath/1005862_1071969_7745301_5557551",
+          "name": "Bubble bath",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/dr-teals-body-wash/1005862_1071969_7745301_6228026",
+          "name": "Body wash",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/dr-teals-body-scrub/1005862_1071969_7745301_1796710",
+          "name": "Body scrubs",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/dr-teals-sleep-spray/1005862_1071969_7745301_5091596",
+          "name": "Sleep spray",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/dr-teals-lotions/1005862_1071969_7745301_9631888",
+          "name": "Body lotion",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/dr-teals-foot-care/1005862_1071969_7745301_5198592",
+          "name": "Foot care",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/scent-theory-hand-sanitizer/1005862_7850115_1604259",
+          "name": "View details for A scent for every mood",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/deodorants-antiperspirants/1005862_1001487",
+          "name": "View details for Save on deodorant",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        }
+      ]
+    },
+    {
+      "category": "Household Essentials",
+      "url": "https://www.walmart.com/browse/household-essentials/yankee-candle-car-fresheners/1115193_1025739_7032476_5291603",
+      "status": "reviewed",
+      "listing_sequence": 19,
+      "response_category_id": "1115193_1025739_7032476_5291603",
+      "breadcrumb": [
+        {
+          "id": "1115193",
+          "name": "Household Essentials",
+          "url": "/cp/1115193"
+        },
+        {
+          "id": "1115193_1025739",
+          "name": "Air Fresheners",
+          "url": "/browse/household-essentials/air-fresheners/1115193_1025739"
+        },
+        {
+          "id": "1115193_1025739_7032476",
+          "name": "Car Air Fresheners",
+          "url": "/browse/air-fresheners/car-air-fresheners/1115193_1025739_7032476"
+        },
+        {
+          "id": "1115193_1025739_7032476_5291603",
+          "name": "Yankee Candle Car Fresheners",
+          "url": "/browse/car-air-fresheners/yankee-candle-car-fresheners/1115193_1025739_7032476_5291603"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 1,
+      "listing_rejections": {
+        "outside_category": 20
+      },
+      "candidate_count": 0,
+      "next_page": null,
+      "snapshot_sha256": "e10ab7ee99a2c32ac676ed5870199724cc0dcd02decb1235d9e7766c09659524",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/1115193",
+          "name": "Household Essentials",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/air-fresheners/1115193_1025739",
+          "name": "Air Fresheners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/air-fresheners/car-air-fresheners/1115193_1025739_7032476",
+          "name": "Car Air Fresheners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/car-air-fresheners/yankee-candle-car-fresheners/1115193_1025739_7032476_5291603",
+          "name": "Yankee Candle Car Fresheners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/gain-grinchmas/1115193_8250903_1302612_5397101",
+          "name": "View details for The latest & more from Gain",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        }
+      ]
+    },
+    {
+      "category": "Health & Wellness",
+      "url": "https://www.walmart.com/browse/health-medicine/neck-shoulder-massager/976760_36290_7228247_4219593",
+      "status": "reviewed",
+      "listing_sequence": 20,
+      "response_category_id": "976760_36290_7228247_4219593",
+      "breadcrumb": [
+        {
+          "id": "976760",
+          "name": "Health and Medicine",
+          "url": "/cp/976760"
+        },
+        {
+          "id": "976760_36290",
+          "name": "Massage",
+          "url": "/browse/health-and-medicine/massage/976760_36290"
+        },
+        {
+          "id": "976760_36290_7228247",
+          "name": "Neck Massagers",
+          "url": "/browse/massage/neck-massagers/976760_36290_7228247"
+        },
+        {
+          "id": "976760_36290_7228247_4219593",
+          "name": "Neck & Shoulder Massager",
+          "url": "/browse/neck-massagers/neck-shoulder-massager/976760_36290_7228247_4219593"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 1,
+      "listing_rejections": {
+        "sponsored": 1,
+        "marketplace": 10
+      },
+      "candidate_count": 2,
+      "next_page": null,
+      "snapshot_sha256": "786b75c3906f117074acda28bb80916286a314065378b793969d6baaea7cc92d",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/976760",
+          "name": "Health and Medicine",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-and-medicine/massage/976760_36290",
+          "name": "Massage",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/massage/neck-massagers/976760_36290_7228247",
+          "name": "Neck Massagers",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/neck-massagers/neck-shoulder-massager/976760_36290_7228247_4219593",
+          "name": "Neck & Shoulder Massager",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/shop-all-massagers/976760_36290_2915217",
+          "name": "Top rated massagers",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/fsahsa-eligible-massage-physical-therapy-aids/976760_6120851_5437773_7974445",
+          "name": "FSA eligible massagers",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/neck-shoulder-massager/976760_36290_7228247_4219593",
+          "name": "Neck Massagers",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/massage/massage-guns/976760_36290_6550815",
+          "name": "Massage Guns",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/foot-massagers/976760_36290_5073874",
+          "name": "Foot Massagers",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/massage-chairs/976760_36290_648199",
+          "name": "Massage Chairs",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/back-massagers/976760_36290_8377117",
+          "name": "Back Massagers",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/handheld-massagers/976760_36290_4699901",
+          "name": "Handheld Massagers",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/leg-massagers/976760_36290_2056159",
+          "name": "Leg Massagers",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/eye-massagers/976760_36290_9523132",
+          "name": "Eye massager",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/hand-massagers/976760_36290_5550976",
+          "name": "Hand Massagers",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/shop-all-massagers/976760_36290_2915217",
+          "name": "Top rated massagers",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/fsahsa-eligible-massage-physical-therapy-aids/976760_6120851_5437773_7974445",
+          "name": "FSA eligible massagers",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/neck-shoulder-massager/976760_36290_7228247_4219593",
+          "name": "Neck Massagers",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/massage/massage-guns/976760_36290_6550815",
+          "name": "Massage Guns",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/foot-massagers/976760_36290_5073874",
+          "name": "Foot Massagers",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/massage-chairs/976760_36290_648199",
+          "name": "Massage Chairs",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/back-massagers/976760_36290_8377117",
+          "name": "Back Massagers",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/handheld-massagers/976760_36290_4699901",
+          "name": "Handheld Massagers",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/leg-massagers/976760_36290_2056159",
+          "name": "Leg Massagers",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/eye-massagers/976760_36290_9523132",
+          "name": "Eye massager",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/hand-massagers/976760_36290_5550976",
+          "name": "Hand Massagers",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        }
+      ]
+    }
+  ],
+  "offer_observations": [],
+  "limits": {
+    "product_requests": 10,
+    "listing_requests": 20,
+    "seconds": 1800,
+    "batch_bytes": 2147483648
+  },
+  "full_coverage_complete": false,
+  "queue_growth": {
+    "seed_already_known_page": 1304,
+    "discovery_new_page": 7,
+    "discovery_already_known_page": 7
+  },
+  "new_page_identities": 7,
+  "seconds": 397.64,
+  "counts": {
+    "product_requests": 0,
+    "listing_requests": 20,
+    "sequence": 20,
+    "body_bytes": 18870685
+  },
+  "queue_counts": {
+    "cross_link_excluded": 137,
+    "failed": 74,
+    "navigation_scope_unverified": 9,
+    "outside_scope": 1,
+    "pending": 2245,
+    "reviewed": 1456
+  },
+  "scope_counts": {
+    "brief_exclusion": 2,
+    "outside_required_ancestry": 2,
+    "parent_scope_unverified": 104,
+    "scope_confirmed_by_response": 10545,
+    "scope_unverified": 311,
+    "scoped_queue": 5697
+  }
+}
