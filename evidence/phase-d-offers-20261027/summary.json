@@ -1,0 +1,57 @@
+{
+  "mode": "bounded live offer inspection; not a catalog run",
+  "source_commit": "d6ad75a5992b3d6e4b632b19dd440c215be108a8",
+  "completed": true,
+  "queries": [
+    {
+      "query": "mix or match",
+      "inspected": 1,
+      "eligible_candidates": 1,
+      "listing_context": {
+        "stores": "100",
+        "facet": "fulfillment_method:Pickup",
+        "page": 1
+      }
+    },
+    {
+      "query": "buy 1 get 1 free",
+      "inspected": 4,
+      "eligible_candidates": 47,
+      "listing_context": {
+        "stores": "100",
+        "facet": "fulfillment_method:Pickup",
+        "page": 1
+      }
+    },
+    {
+      "query": "digital coupon",
+      "inspected": 4,
+      "eligible_candidates": 14,
+      "listing_context": {
+        "stores": "100",
+        "facet": "fulfillment_method:Pickup",
+        "page": 1
+      }
+    },
+    {
+      "query": "clip coupon",
+      "inspected": 4,
+      "eligible_candidates": 21,
+      "listing_context": {
+        "stores": "100",
+        "facet": "fulfillment_method:Pickup",
+        "page": 1
+      }
+    }
+  ],
+  "distinct_products_inspected": 13,
+  "verified_examples": 0,
+  "counts": {
+    "product_requests": 15,
+    "listing_requests": 4,
+    "sequence": 19,
+    "body_bytes": 12321844
+  },
+  "seconds": 222.552,
+  "conclusion": "No qualifying genuine volume or digital discount offer found in bounded search; no example fabricated"
+}
