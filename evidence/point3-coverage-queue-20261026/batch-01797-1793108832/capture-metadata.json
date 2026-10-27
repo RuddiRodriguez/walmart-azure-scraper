@@ -1,0 +1,742 @@
+[
+  {
+    "id": "coverage-016",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 16,
+    "request": {
+      "url": "https://www.walmart.com/browse/household-essentials/glass-cleaners/1115193_1071966_1072132",
+      "attempt": 1,
+      "started_utc": "2026-10-27T13:52:31.400099+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/household-essentials/glass-cleaners/1115193_1071966_1072132",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 13:52:31 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T13:52:31.664461+00:00",
+      "elapsed_seconds": 0.264
+    },
+    "body_sha256": "90f2cfedc10fe7c650f6889459c1c434bc1183fe47dcbd859116b37b21faebdc",
+    "body_bytes": 1096496,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-020",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 20,
+    "request": {
+      "url": "https://www.walmart.com/browse/pets/cat-tunnels/5440_202073_2584809_7775923",
+      "attempt": 1,
+      "started_utc": "2026-10-27T13:53:46.099281+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/pets/cat-tunnels/5440_202073_2584809_7775923",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 13:53:46 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T13:53:46.403249+00:00",
+      "elapsed_seconds": 0.304
+    },
+    "body_sha256": "776937e18ceb392ec50a6f67e4d5412fcfd336b269be675f3ef2721bf56b46cb",
+    "body_bytes": 585312,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-017",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 17,
+    "request": {
+      "url": "https://www.walmart.com/browse/personal-care/lubriderm-body-lotions-creams/1005862_1071969_9943636",
+      "attempt": 1,
+      "started_utc": "2026-10-27T13:52:53.902390+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/personal-care/lubriderm/1005862_1071969_9943636",
+      "redirected": true,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 13:52:55 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T13:52:55.164796+00:00",
+      "elapsed_seconds": 1.262
+    },
+    "body_sha256": "befabe8ea0dc1fbba4fb960ac26566d943beb91a2b6e70f0e49e172c0f848e7f",
+    "body_bytes": 798153,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-001",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 1,
+    "request": {
+      "url": "https://www.walmart.com/browse/office-supplies/pen-gear/1229749_1431586_6267234",
+      "attempt": 1,
+      "started_utc": "2026-10-27T13:47:55.738285+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/office-supplies/pen-gear/1229749_1431586_6267234",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 13:47:55 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T13:47:55.998120+00:00",
+      "elapsed_seconds": 0.26
+    },
+    "body_sha256": "d77697124ddaa009e54f891f22f96b00bc35af11a6413f2c8cdeda96df7f1aed",
+    "body_bytes": 1145537,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-006",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 6,
+    "request": {
+      "url": "https://www.walmart.com/browse/health-medicine/posture-correctors/976760_1005860_4157476_4436767_7215550",
+      "attempt": 1,
+      "started_utc": "2026-10-27T13:49:33.006479+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/health-medicine/posture-correctors/976760_1005860_4157476_4436767_7215550",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 13:49:33 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T13:49:33.278757+00:00",
+      "elapsed_seconds": 0.272
+    },
+    "body_sha256": "fe3bbf1e6b546129b8de7ed441543b0057c3ac2af10c492b83a7e354ee47d273",
+    "body_bytes": 634803,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-010",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 10,
+    "request": {
+      "url": "https://www.walmart.com/browse/household-essentials/brooms/1115193_1071966_6525182",
+      "attempt": 1,
+      "started_utc": "2026-10-27T13:50:43.726021+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/household-essentials/brooms/1115193_1071966_6525182",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 13:50:44 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T13:50:44.396680+00:00",
+      "elapsed_seconds": 0.671
+    },
+    "body_sha256": "33e287fa25e628e97e8234b13e63d312a92a6a2d7323d884f82fb0754e0e1c2c",
+    "body_bytes": 864785,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-011",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 11,
+    "request": {
+      "url": "https://www.walmart.com/browse/personal-care/aquaphor-body-lotions-creams/1005862_1071969_2329962",
+      "attempt": 1,
+      "started_utc": "2026-10-27T13:51:02.774012+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/personal-care/aquaphor-body-lotions-creams/1005862_1071969_2329962",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 13:51:02 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T13:51:03.034312+00:00",
+      "elapsed_seconds": 0.26
+    },
+    "body_sha256": "5b7694b07fa21110968781cf248f12f0aa5f1bd043a4ca72b4154e976b948de2",
+    "body_bytes": 1090822,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-007",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 7,
+    "request": {
+      "url": "https://www.walmart.com/browse/office-supplies/pen-grips/1229749_1988510_2581946",
+      "attempt": 1,
+      "started_utc": "2026-10-27T13:49:52.106387+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/office-supplies/pen-grips/1229749_1988510_2581946",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 13:49:52 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T13:49:52.481004+00:00",
+      "elapsed_seconds": 0.375
+    },
+    "body_sha256": "542de69eb0315be65af9a949c4b360a4b41d3a7e5f77670a2a91d4dc84c891af",
+    "body_bytes": 511907,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-008",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 8,
+    "request": {
+      "url": "https://www.walmart.com/browse/pets/cat-litter-and-accessories/5440_202073_202098?page=2",
+      "attempt": 1,
+      "started_utc": "2026-10-27T13:50:08.919115+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/pets/cat-litter-and-accessories/5440_202073_202098?page=2",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 13:50:09 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T13:50:09.310024+00:00",
+      "elapsed_seconds": 0.391
+    },
+    "body_sha256": "e44f8e2d5829a304f1b39cbe9bf5b7087312689f2973eb92c247f3dd34f662ec",
+    "body_bytes": 1189038,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-012",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 12,
+    "request": {
+      "url": "https://www.walmart.com/browse/health/childrens-mucinex/976760_7831163_1668216_6470744_4139579",
+      "attempt": 1,
+      "started_utc": "2026-10-27T13:51:22.393871+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/health/childrens-mucinex/976760_7831163_1668216_6470744_4139579",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 13:51:22 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T13:51:22.577965+00:00",
+      "elapsed_seconds": 0.184
+    },
+    "body_sha256": "e6022a45b8951798e043a0a4ef902ea605e98f433e2bc696fd6bd442b3474d0f",
+    "body_bytes": 676137,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-004",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 4,
+    "request": {
+      "url": "https://www.walmart.com/browse/household-essentials/mops/1115193_1071966_2346201",
+      "attempt": 1,
+      "started_utc": "2026-10-27T13:48:58.152289+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/household-essentials/mops/1115193_1071966_2346201",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 13:48:58 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T13:48:58.584160+00:00",
+      "elapsed_seconds": 0.432
+    },
+    "body_sha256": "6cd25e1d1049a585d2046371d9006fadd12ea88db7989a742fd58b3386a9ddd3",
+    "body_bytes": 1289401,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-005",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 5,
+    "request": {
+      "url": "https://www.walmart.com/browse/personal-care/cetaphil-body-lotions-creams/1005862_1071969_2866136",
+      "attempt": 1,
+      "started_utc": "2026-10-27T13:49:17.145652+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/brand/cetaphil/10021018",
+      "redirected": true,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 13:49:17 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T13:49:17.866691+00:00",
+      "elapsed_seconds": 0.721
+    },
+    "body_sha256": "fe7c72503e9a356b414e16a6368613acc59291d617368af46382e38b688e7bc9",
+    "body_bytes": 606462,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-013",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 13,
+    "request": {
+      "url": "https://www.walmart.com/browse/office-supplies/pen-highlighters/1229749_1988510_1481723",
+      "attempt": 1,
+      "started_utc": "2026-10-27T13:51:38.639810+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/office-supplies/pen-highlighters/1229749_1988510_1481723",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 13:51:38 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T13:51:39.004084+00:00",
+      "elapsed_seconds": 0.364
+    },
+    "body_sha256": "d9628eefd5e8548fa690f98bc897bb09a028e4fb3ed4030eda3cf6dcb94402cb",
+    "body_bytes": 558266,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-009",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 9,
+    "request": {
+      "url": "https://www.walmart.com/browse/beauty/elizabeth-taylor-perfume/1085666_133225_5149721_1780275",
+      "attempt": 1,
+      "started_utc": "2026-10-27T13:50:26.203699+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/beauty/elizabeth-taylor-perfume/1085666_133225_5149721_1780275",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 13:50:26 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T13:50:26.413465+00:00",
+      "elapsed_seconds": 0.21
+    },
+    "body_sha256": "803a38a291ec349e9c9db135eb92fca5ab5738f67a76f7f9fd91afa6cfaceccc",
+    "body_bytes": 647273,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-014",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 14,
+    "request": {
+      "url": "https://www.walmart.com/browse/pets/all-cat-trees/5440_202073_7793759_2465681",
+      "attempt": 1,
+      "started_utc": "2026-10-27T13:51:55.474229+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/pets/cat-trees/5440_202073_7793759",
+      "redirected": true,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 13:51:55 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T13:51:56.046400+00:00",
+      "elapsed_seconds": 0.572
+    },
+    "body_sha256": "2df7a88e62c931cd52b55c80ddb64763e8d4274ffd6f24fd7dcff62c0dee3314",
+    "body_bytes": 876958,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-002",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 2,
+    "request": {
+      "url": "https://www.walmart.com/browse/pets/all-cat-treats/5440_202073_6005312_1229646",
+      "attempt": 1,
+      "started_utc": "2026-10-27T13:48:17.670382+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/pets/cat-treats/5440_202073_6005312",
+      "redirected": true,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 13:48:18 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T13:48:18.547632+00:00",
+      "elapsed_seconds": 0.877
+    },
+    "body_sha256": "20b4a56d011cff1db535ce89aa4bb23d9fa68a69f4f172db2cf1ea09715ce0f0",
+    "body_bytes": 1357160,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-018",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 18,
+    "request": {
+      "url": "https://www.walmart.com/browse/health-medicine/chest-cough-congestion/976760_4661388_6244277_9198548",
+      "attempt": 1,
+      "started_utc": "2026-10-27T13:53:11.748047+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/health-medicine/chest-cough-congestion/976760_4661388_6244277_9198548",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 13:53:12 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T13:53:13.022090+00:00",
+      "elapsed_seconds": 1.274
+    },
+    "body_sha256": "2382bfda61b40e84afbdf94cbbc13c6e61e830af2012fbec0788616d253b5944",
+    "body_bytes": 940496,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-019",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 19,
+    "request": {
+      "url": "https://www.walmart.com/browse/office-supplies/pen-refills/1229749_1988510_7333797",
+      "attempt": 1,
+      "started_utc": "2026-10-27T13:53:28.948355+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/office-supplies/pen-refills/1229749_8843226_1988510_7333797",
+      "redirected": true,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 13:53:29 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T13:53:29.584248+00:00",
+      "elapsed_seconds": 0.636
+    },
+    "body_sha256": "de0616f741a86c1f564572d62250e988eaa37a0c5a1b76e0852f92b856417e3c",
+    "body_bytes": 514110,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-003",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 3,
+    "request": {
+      "url": "https://www.walmart.com/browse/beauty/britney-spears-perfume/1085666_133225_5149721_8207072",
+      "attempt": 1,
+      "started_utc": "2026-10-27T13:48:36.665769+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/beauty/britney-spears-perfume/1085666_133225_5149721_8207072",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 13:48:37 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T13:48:37.140907+00:00",
+      "elapsed_seconds": 0.475
+    },
+    "body_sha256": "a45c4e54f572c2d5f366ba828abd678c36e250071b0697bacda118b406670819",
+    "body_bytes": 547828,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-015",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 15,
+    "request": {
+      "url": "https://www.walmart.com/browse/beauty/sofia-vergara-perfume/1085666_133225_5149721_1993772",
+      "attempt": 1,
+      "started_utc": "2026-10-27T13:52:14.982304+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/beauty/sofia-vergara-perfume/1085666_133225_5149721_1993772",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 13:52:15 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T13:52:15.110572+00:00",
+      "elapsed_seconds": 0.128
+    },
+    "body_sha256": "030c044c2c8b314139875f50a99c7a2145cf4f56ca0e60d166a6b947b9b8ec73",
+    "body_bytes": 405517,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  }
+]
