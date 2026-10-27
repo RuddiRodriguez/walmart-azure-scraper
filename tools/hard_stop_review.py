@@ -23,10 +23,11 @@ if __name__ == '__main__':
     if 'scrape.py' not in process.cmdline():
         raise SystemExit('Selected process is not scrape.py')
     events_path = args.run / 'events.jsonl'
-    before_lines = len(events_path.read_text().splitlines())
+    before_lines = len(events_path.read_text().splitlines()) if events_path.exists() else 0
     deadline = time.monotonic() + args.timeout
     while time.monotonic() < deadline:
-        events = [json.loads(line) for line in events_path.read_text().splitlines()]
+        lines = events_path.read_text().splitlines() if events_path.exists() else []
+        events = [json.loads(line) for line in lines]
         new_pages = [e for e in events[before_lines:] if e['event'] == args.event]
         completed_products = sum(e['event'] == 'product' and e.get('accepted') for e in events)
         if new_pages and events[-1]['event'] == args.event and completed_products >= args.minimum_products:
