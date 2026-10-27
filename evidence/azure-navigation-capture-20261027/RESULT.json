@@ -1,0 +1,60 @@
+{
+  "time_utc": "2026-10-27T09:44:53Z",
+  "source_commit": "b97d5c50b5f67239ed9d2a850626fe6c2c8a9be6",
+  "branch": "codex/azure-small-test",
+  "environment": {
+    "provider": "Azure",
+    "region": "westus2",
+    "vm_size": "Standard_D2s_v5",
+    "operating_system": "Ubuntu 24.04",
+    "browser": "Google Chrome 156",
+    "execution_user": "walmart"
+  },
+  "scope": {
+    "store": "100",
+    "zip": "72712",
+    "intent": "PICKUP",
+    "target_products": 3,
+    "product_request_limit": 12,
+    "listing_request_limit": 2,
+    "runtime_limit_seconds": 600
+  },
+  "result": {
+    "initial_store_control_passed": true,
+    "original_navigation_response_captured": true,
+    "listing_status": 200,
+    "listing_resource_type": "Document",
+    "listing_protocol": "h2",
+    "listing_redirected": false,
+    "listing_body_sha256": "014a1f17b52daa3d5909cdd89251fe05076aca5d88b7a5b4b08431bfd4215210",
+    "listing_candidates": 37,
+    "sponsored_excluded": 5,
+    "outside_category_excluded": 5,
+    "marketplace_excluded": 8,
+    "product_request_blocked": true,
+    "blocked_product_response_status": 200,
+    "blocked_product_redirected": true,
+    "accepted_products": 0,
+    "interruption_resume_executed": false,
+    "runtime_seconds": 44.052,
+    "passed_full_diagnostic": false
+  },
+  "conclusion": "Original listing navigation capture works on Azure and removes the duplicate listing fetch. The next product fetch was redirected to Walmart's blocked page, so collection stopped without publishing.",
+  "privacy": {
+    "raw_response_bodies_exported": false,
+    "cookies_exported": false,
+    "session_secrets_exported": false,
+    "reviewed_metadata_exported": true
+  },
+  "reviewed_archive": {
+    "local_path": "data/azure-navigation-live-20261027T094700Z/azure-navigation-reviewed.tar.gz",
+    "sha256": "8ce6572023a23c48b7d30b6f268c10bf308206250e5fdb3804705adbc9746304",
+    "archive_hash_verified": true,
+    "internal_hashes_verified": true
+  },
+  "cleanup": {
+    "resource_group": "rg-walmart-diag-b97d5c5-w2",
+    "resource_group_deleted": true,
+    "remaining_azure_resources": 0
+  }
+}
