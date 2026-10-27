@@ -1,0 +1,4839 @@
+{
+  "started_utc": "2026-10-27T12:56:30.920684+00:00",
+  "source_commit": "fa1ec582c9954d22629cadd24c129954905615b2",
+  "source_hashes": {
+    "coverage_queue.py": "1cc12999d1e4d07b3dd7e962e2c3961b91db98e53c5503afe7757d5678b2723d",
+    "audit_queue_growth.py": "3ae6dc804966741256914559ecbf81fceeb4d00210e81a03998afd494800117d",
+    "extract.py": "d8f4907da13805a7470edbbaaafbe83e4915ed87b651aba12d239c06887af937",
+    "browser.py": "9dd3473ffb835741ca3b1d6b2c718164eefa4c18b7a9c5ed2b84a00e16bdcbaa"
+  },
+  "scope": "Listing/category coverage review only; no full product/PDP collection",
+  "pages": [
+    {
+      "category": "Household Essentials",
+      "url": "https://www.walmart.com/browse/household-essentials/taylor-swift-car-air-fresheners/1115193_1025739_7032476_8100274",
+      "status": "reviewed",
+      "listing_sequence": 1,
+      "response_category_id": "1115193_1025739_7032476_8100274",
+      "breadcrumb": [
+        {
+          "id": "1115193",
+          "name": "Household Essentials",
+          "url": "/cp/1115193"
+        },
+        {
+          "id": "1115193_1025739",
+          "name": "Air Fresheners",
+          "url": "/browse/household-essentials/air-fresheners/1115193_1025739"
+        },
+        {
+          "id": "1115193_1025739_7032476",
+          "name": "Car Air Fresheners",
+          "url": "/browse/air-fresheners/car-air-fresheners/1115193_1025739_7032476"
+        },
+        {
+          "id": "1115193_1025739_7032476_8100274",
+          "name": "Taylor Swift Car Air Fresheners",
+          "url": "/browse/car-air-fresheners/taylor-swift-car-air-fresheners/1115193_1025739_7032476_8100274"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 1,
+      "reported_count": 10,
+      "aggregated_count": 0,
+      "unique_listed_product_ids": 10,
+      "unique_eligible_product_ids": 10,
+      "listed_product_ids": [
+        "10542872072",
+        "18041268463",
+        "18503168762",
+        "1853825023",
+        "19172554898",
+        "19955357281",
+        "2004539768",
+        "20083619047",
+        "20474368565",
+        "657299197"
+      ],
+      "eligible_product_ids": [
+        "10542872072",
+        "18041268463",
+        "18503168762",
+        "1853825023",
+        "19172554898",
+        "19955357281",
+        "2004539768",
+        "20083619047",
+        "20474368565",
+        "657299197"
+      ],
+      "listing_rejections": {
+        "marketplace": 10
+      },
+      "candidate_count": 0,
+      "next_page": null,
+      "snapshot_sha256": "7d738ea59c92b74c834762acebc2460ad1538a2c4a5f644860746d9c5797c7fe",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/1115193",
+          "name": "Household Essentials",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/air-fresheners/1115193_1025739",
+          "name": "Air Fresheners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/air-fresheners/car-air-fresheners/1115193_1025739_7032476",
+          "name": "Car Air Fresheners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/car-air-fresheners/taylor-swift-car-air-fresheners/1115193_1025739_7032476_8100274",
+          "name": "Taylor Swift Car Air Fresheners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        }
+      ]
+    },
+    {
+      "category": "Health & Wellness",
+      "url": "https://www.walmart.com/browse/health-medicine/unisom/976760_1005863_2780146_5928096",
+      "status": "reviewed",
+      "listing_sequence": 2,
+      "response_category_id": "976760_1005863_2780146_5928096",
+      "breadcrumb": [
+        {
+          "id": "976760",
+          "name": "Health and Medicine",
+          "url": "/cp/976760"
+        },
+        {
+          "id": "976760_1005863",
+          "name": "Vitamins and Supplements",
+          "url": "/browse/health-and-medicine/vitamins-and-supplements/976760_1005863"
+        },
+        {
+          "id": "976760_1005863_2780146",
+          "name": "Sleep Support Supplements",
+          "url": "/browse/vitamins-and-supplements/sleep-support-supplements/976760_1005863_2780146"
+        },
+        {
+          "id": "976760_1005863_2780146_5928096",
+          "name": "Unisom",
+          "url": "/browse/sleep-support-supplements/unisom/976760_1005863_2780146_5928096"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 1,
+      "reported_count": 26,
+      "aggregated_count": 15,
+      "unique_listed_product_ids": 17,
+      "unique_eligible_product_ids": 17,
+      "listed_product_ids": [
+        "10307666",
+        "10307672",
+        "112788092",
+        "137637352",
+        "15521473312",
+        "19607324502",
+        "224690942",
+        "27830618",
+        "286268885",
+        "39264312",
+        "40601489",
+        "548787779",
+        "670863658",
+        "787093734",
+        "790044079",
+        "843149190",
+        "912316259"
+      ],
+      "eligible_product_ids": [
+        "10307666",
+        "10307672",
+        "112788092",
+        "137637352",
+        "15521473312",
+        "19607324502",
+        "224690942",
+        "27830618",
+        "286268885",
+        "39264312",
+        "40601489",
+        "548787779",
+        "670863658",
+        "787093734",
+        "790044079",
+        "843149190",
+        "912316259"
+      ],
+      "listing_rejections": {
+        "sponsored": 8,
+        "marketplace": 10
+      },
+      "candidate_count": 7,
+      "next_page": null,
+      "snapshot_sha256": "a65bf8e71e7e9c78c0e2e4fae7b5d2ad830cc1ddfc9736a99c7af9b66638ab6b",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/976760",
+          "name": "Health and Medicine",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-and-medicine/vitamins-and-supplements/976760_1005863",
+          "name": "Vitamins and Supplements",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/vitamins-and-supplements/sleep-support-supplements/976760_1005863_2780146",
+          "name": "Sleep Support Supplements",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/sleep-support-supplements/unisom/976760_1005863_2780146_5928096",
+          "name": "Unisom",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/equate-sleep-aids/976760_9602210_7675032",
+          "name": "Equate sleep aids",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/zzzquil/976760_1005863_2780146_9312306",
+          "name": "ZzzQuil sleep aids",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/unisom/976760_1005863_2780146_5928096",
+          "name": "Unisom sleep aids",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/melatonin/976760_1005863_7476811",
+          "name": "Melatonin sleep supplements",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/magnesium/976760_1005863_6070710_5948405",
+          "name": "Magnesium sleep supplements",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/pm-pain-relief/976760_6972993_3135061",
+          "name": "PM pain relief",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/sleep-snoring-aids/976760_2449239",
+          "name": "Snoring aids & sleep masks",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-and-medicine/sleep-better/976760_9035881",
+          "name": "Shop all sleep aids",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-and-medicine/sleep-better/976760_9035881",
+          "name": "Sleep aids under $10",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-and-medicine/sleep-better/976760_9035881",
+          "name": "Get sleep aids fast",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/equate-sleep-aids/976760_9602210_7675032",
+          "name": "Equate sleep aids",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/zzzquil/976760_1005863_2780146_9312306",
+          "name": "ZzzQuil sleep aids",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/unisom/976760_1005863_2780146_5928096",
+          "name": "Unisom sleep aids",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/melatonin/976760_1005863_7476811",
+          "name": "Melatonin sleep supplements",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/magnesium/976760_1005863_6070710_5948405",
+          "name": "Magnesium sleep supplements",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/pm-pain-relief/976760_6972993_3135061",
+          "name": "PM pain relief",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/sleep-snoring-aids/976760_2449239",
+          "name": "Snoring aids & sleep masks",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-and-medicine/sleep-better/976760_9035881",
+          "name": "Shop all sleep aids",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-and-medicine/sleep-better/976760_9035881",
+          "name": "Sleep aids under $10",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-and-medicine/sleep-better/976760_9035881",
+          "name": "Get sleep aids fast",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        }
+      ]
+    },
+    {
+      "category": "Office Supplies",
+      "url": "https://www.walmart.com/browse/office-supplies/office-shredders/1229749_2155104_6158083",
+      "status": "reviewed",
+      "listing_sequence": 3,
+      "response_category_id": "1229749_2155104_6158083",
+      "breadcrumb": [
+        {
+          "id": "1229749",
+          "name": "Office Supplies",
+          "url": "/cp/1229749"
+        },
+        {
+          "id": "1229749_2155104",
+          "name": "Paper Shredders",
+          "url": "/browse/office-supplies/paper-shredders/1229749_2155104"
+        },
+        {
+          "id": "1229749_2155104_6158083",
+          "name": "Office Shredders",
+          "url": "/browse/paper-shredders/office-shredders/1229749_2155104_6158083"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 1,
+      "reported_count": 10,
+      "aggregated_count": 0,
+      "unique_listed_product_ids": 10,
+      "unique_eligible_product_ids": 10,
+      "listed_product_ids": [
+        "14859460345",
+        "19100564541",
+        "359658078",
+        "46699350",
+        "502891273",
+        "5235032225",
+        "5237926441",
+        "54944081",
+        "702276068",
+        "867016405"
+      ],
+      "eligible_product_ids": [
+        "14859460345",
+        "19100564541",
+        "359658078",
+        "46699350",
+        "502891273",
+        "5235032225",
+        "5237926441",
+        "54944081",
+        "702276068",
+        "867016405"
+      ],
+      "listing_rejections": {
+        "marketplace": 4
+      },
+      "candidate_count": 6,
+      "next_page": null,
+      "snapshot_sha256": "8f9054f34590994dd2d733ae8e6f8d70c5e6ba34b99ce6cc364dbc011ac13312",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/1229749",
+          "name": "Office Supplies",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/paper-shredders/1229749_2155104",
+          "name": "Paper Shredders",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/paper-shredders/office-shredders/1229749_2155104_6158083",
+          "name": "Office Shredders",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/paper-shredders/1229749_2155104",
+          "name": "Shredders Under $50",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/cross-cut-shredders/1229749_2155104_3771526",
+          "name": "Cross-Cut Shredders",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/home-shredders/1229749_2155104_7117582",
+          "name": "Home Shredders",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/office-shredders/1229749_2155104_6158083",
+          "name": "Office Shredders",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/shredder-oil/1229749_2155104_4665275",
+          "name": "Shredder Oil",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/strip-cut-shredders/1229749_2155104_3208493",
+          "name": "Strip-Cut Shredders",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/micro-cut-shredders/1229749_2155104_8985104",
+          "name": "Micro-Cut Shredders",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/commercial-shredders/1229749_2155104_4555248",
+          "name": "Commercial Shredders",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/fellowes-paper-shredders/1229749_1431586_2873910",
+          "name": "Fellowes Paper Shredders",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        }
+      ]
+    },
+    {
+      "category": "Beauty",
+      "url": "https://www.walmart.com/browse/skin-care/eye-creams/1085666_1007039_8768767",
+      "status": "reviewed",
+      "listing_sequence": 4,
+      "response_category_id": "1085666_1007039_8768767",
+      "breadcrumb": [
+        {
+          "id": "1085666",
+          "name": "Beauty",
+          "url": "/cp/1085666"
+        },
+        {
+          "id": "1085666_1007039",
+          "name": "Skincare",
+          "url": "/browse/beauty/skincare/1085666_1007039"
+        },
+        {
+          "id": "1085666_1007039_8768767",
+          "name": "Eye Creams",
+          "url": "/browse/skincare/eye-creams/1085666_1007039_8768767"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 2,
+      "reported_count": 60,
+      "aggregated_count": 53,
+      "unique_listed_product_ids": 49,
+      "unique_eligible_product_ids": 49,
+      "listed_product_ids": [
+        "1038787990",
+        "10543658",
+        "10782669950",
+        "1159475901",
+        "1182737991",
+        "13191512420",
+        "15390760482",
+        "15747278",
+        "16207421075",
+        "16333254415",
+        "16337813697",
+        "17001452649",
+        "17227972727",
+        "17924267928",
+        "17963657842",
+        "18137509198",
+        "18534162548",
+        "18799208165",
+        "19486019783",
+        "1952260118",
+        "20492411263",
+        "20565290",
+        "21062554",
+        "2624213135",
+        "2824506448",
+        "2934409709",
+        "3660934149",
+        "40488262",
+        "405366657",
+        "50753911",
+        "50753914",
+        "513353803",
+        "53233950",
+        "5430643174",
+        "55325693",
+        "5568312097",
+        "5740970099",
+        "577086704",
+        "5790522253",
+        "671206208",
+        "7179824886",
+        "7652218566",
+        "7704205988",
+        "780490354",
+        "794061537",
+        "821197545",
+        "888169",
+        "899597484",
+        "989197255"
+      ],
+      "eligible_product_ids": [
+        "1038787990",
+        "10543658",
+        "10782669950",
+        "1159475901",
+        "1182737991",
+        "13191512420",
+        "15390760482",
+        "15747278",
+        "16207421075",
+        "16333254415",
+        "16337813697",
+        "17001452649",
+        "17227972727",
+        "17924267928",
+        "17963657842",
+        "18137509198",
+        "18534162548",
+        "18799208165",
+        "19486019783",
+        "1952260118",
+        "20492411263",
+        "20565290",
+        "21062554",
+        "2624213135",
+        "2824506448",
+        "2934409709",
+        "3660934149",
+        "40488262",
+        "405366657",
+        "50753911",
+        "50753914",
+        "513353803",
+        "53233950",
+        "5430643174",
+        "55325693",
+        "5568312097",
+        "5740970099",
+        "577086704",
+        "5790522253",
+        "671206208",
+        "7179824886",
+        "7652218566",
+        "7704205988",
+        "780490354",
+        "794061537",
+        "821197545",
+        "888169",
+        "899597484",
+        "989197255"
+      ],
+      "listing_rejections": {
+        "outside_category": 13,
+        "sponsored": 12,
+        "marketplace": 5
+      },
+      "candidate_count": 29,
+      "next_page": "https://www.walmart.com/browse/skin-care/eye-creams/1085666_1007039_8768767?page=2",
+      "snapshot_sha256": "cab4d35a9b717dd4405383c0ed85a901273f481f8e77dc2c4a23a30995bbdad0",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/1085666",
+          "name": "Beauty",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/beauty/skincare/1085666_1007039",
+          "name": "Skincare",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/skincare/eye-creams/1085666_1007039_8768767",
+          "name": "Eye Creams",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/beauty/eye-creams/1085666_1007039_8768767_1422258",
+          "name": "Eye creams",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/beauty/eye-serums/1085666_1007039_8768767_8952211",
+          "name": "Eye serums",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/beauty/eye-treatments-for-puffy-eyes/1085666_1007039_8768767_9570352",
+          "name": "Eye treatments",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/beauty/eye-masks/1085666_1007039_8768767_3839557",
+          "name": "Eye masks",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/beauty/skincare/1085666_1007039",
+          "name": "Shop all skincare",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/beauty/eye-creams/1085666_1007039_8768767_1422258",
+          "name": "Eye creams",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/beauty/eye-serums/1085666_1007039_8768767_8952211",
+          "name": "Eye serums",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/beauty/eye-treatments-for-puffy-eyes/1085666_1007039_8768767_9570352",
+          "name": "Eye treatments",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/beauty/eye-masks/1085666_1007039_8768767_3839557",
+          "name": "Eye masks",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/beauty/skincare/1085666_1007039",
+          "name": "Shop all skincare",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        }
+      ]
+    },
+    {
+      "category": "Pets",
+      "url": "https://www.walmart.com/browse/pets/cat-flea-collars/5440_202073_3304805_9055456",
+      "status": "reviewed",
+      "listing_sequence": 5,
+      "response_category_id": "5440_202073_3304805_9055456",
+      "breadcrumb": [
+        {
+          "id": "5440",
+          "name": "Pets",
+          "url": "/cp/5440"
+        },
+        {
+          "id": "5440_202073",
+          "name": "Cats",
+          "url": "/browse/pets/cats/5440_202073"
+        },
+        {
+          "id": "5440_202073_3304805",
+          "name": "Cat Flea and Tick",
+          "url": "/browse/cats/cat-flea-and-tick/5440_202073_3304805"
+        },
+        {
+          "id": "5440_202073_3304805_9055456",
+          "name": "Cat Flea Collars",
+          "url": "/browse/cat-flea-and-tick/cat-flea-collars/5440_202073_3304805_9055456"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 1,
+      "reported_count": 16,
+      "aggregated_count": 8,
+      "unique_listed_product_ids": 15,
+      "unique_eligible_product_ids": 15,
+      "listed_product_ids": [
+        "10311991",
+        "10312380",
+        "103139427",
+        "148320180",
+        "15287322754",
+        "170678487",
+        "19700055023",
+        "19700055544",
+        "19714207146",
+        "20665614250",
+        "20824868414",
+        "26384693",
+        "314649591",
+        "35491106",
+        "35499518"
+      ],
+      "eligible_product_ids": [
+        "10311991",
+        "10312380",
+        "103139427",
+        "148320180",
+        "15287322754",
+        "170678487",
+        "19700055023",
+        "19700055544",
+        "19714207146",
+        "20665614250",
+        "20824868414",
+        "26384693",
+        "314649591",
+        "35491106",
+        "35499518"
+      ],
+      "listing_rejections": {
+        "sponsored": 1,
+        "marketplace": 5
+      },
+      "candidate_count": 10,
+      "next_page": null,
+      "snapshot_sha256": "cda20eb43b9503ca62f455fe56063c2ad127ba390cd715761d1025039615b6e3",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/5440",
+          "name": "Pets",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/cats/5440_202073",
+          "name": "Cats",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/cats/cat-flea-and-tick/5440_202073_3304805",
+          "name": "Cat Flea and Tick",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/cat-flea-and-tick/cat-flea-collars/5440_202073_3304805_9055456",
+          "name": "Cat Flea Collars",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/cats/cat-flea-and-tick-supplies/5440_202073_3304805",
+          "name": "All Cat Flea & Tick",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/cat-flea-pills/5440_202073_3304805_3993303",
+          "name": "Cat Flea Pills",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/cat-flea-tick-spot-treatments/5440_202073_3304805_7118188",
+          "name": "Cat Spot Treatment",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/cat-flea-shampoos/5440_202073_3304805_9344430",
+          "name": "Cat Flea Shampoo",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/cat-flea-combs/5440_202073_3304805_6964126",
+          "name": "Cat Flea Combs",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/cats/cat-health-wellbeing/5440_202073_2866753",
+          "name": "All Cat Health & Wellness",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/cats/cat-collars-leashes-harnesses/5440_202073_1014984",
+          "name": "All Cat Collars",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/cats/cat-flea-and-tick-supplies/5440_202073_3304805",
+          "name": "All Cat Flea & Tick",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/cat-flea-pills/5440_202073_3304805_3993303",
+          "name": "Cat Flea Pills",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/cat-flea-tick-spot-treatments/5440_202073_3304805_7118188",
+          "name": "Cat Spot Treatment",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/cat-flea-shampoos/5440_202073_3304805_9344430",
+          "name": "Cat Flea Shampoo",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/cat-flea-combs/5440_202073_3304805_6964126",
+          "name": "Cat Flea Combs",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/cats/cat-health-wellbeing/5440_202073_2866753",
+          "name": "All Cat Health & Wellness",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/cats/cat-collars-leashes-harnesses/5440_202073_1014984",
+          "name": "All Cat Collars",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        }
+      ]
+    },
+    {
+      "category": "Household Essentials",
+      "url": "https://www.walmart.com/browse/household-essentials/wood-car-air-freshener/1115193_1025739_7032476_8012181",
+      "status": "reviewed",
+      "listing_sequence": 6,
+      "response_category_id": "1115193_1025739_7032476_8012181",
+      "breadcrumb": [
+        {
+          "id": "1115193",
+          "name": "Household Essentials",
+          "url": "/cp/1115193"
+        },
+        {
+          "id": "1115193_1025739",
+          "name": "Air Fresheners",
+          "url": "/browse/household-essentials/air-fresheners/1115193_1025739"
+        },
+        {
+          "id": "1115193_1025739_7032476",
+          "name": "Car Air Fresheners",
+          "url": "/browse/air-fresheners/car-air-fresheners/1115193_1025739_7032476"
+        },
+        {
+          "id": "1115193_1025739_7032476_8012181",
+          "name": "Wood Car Air Freshener",
+          "url": "/browse/car-air-fresheners/wood-car-air-freshener/1115193_1025739_7032476_8012181"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 1,
+      "reported_count": 32,
+      "aggregated_count": 20,
+      "unique_listed_product_ids": 28,
+      "unique_eligible_product_ids": 28,
+      "listed_product_ids": [
+        "10282507977",
+        "1222156012",
+        "1267013839",
+        "13049952992",
+        "13518968472",
+        "13518968956",
+        "13530562722",
+        "13530612590",
+        "15505213818",
+        "16877655894",
+        "17559369248",
+        "17591802048",
+        "17635611763",
+        "17660073457",
+        "17918715575",
+        "17954662916",
+        "19627215983",
+        "20076519844",
+        "20293424632",
+        "20347873922",
+        "20365121383",
+        "20406562994",
+        "20410155192",
+        "20662304784",
+        "3222858009",
+        "5126047944",
+        "9664966804",
+        "9666707813"
+      ],
+      "eligible_product_ids": [
+        "10282507977",
+        "1222156012",
+        "1267013839",
+        "13049952992",
+        "13518968472",
+        "13518968956",
+        "13530562722",
+        "13530612590",
+        "15505213818",
+        "16877655894",
+        "17559369248",
+        "17591802048",
+        "17635611763",
+        "17660073457",
+        "17918715575",
+        "17954662916",
+        "19627215983",
+        "20076519844",
+        "20293424632",
+        "20347873922",
+        "20365121383",
+        "20406562994",
+        "20410155192",
+        "20662304784",
+        "3222858009",
+        "5126047944",
+        "9664966804",
+        "9666707813"
+      ],
+      "listing_rejections": {
+        "sponsored": 2,
+        "marketplace": 7
+      },
+      "candidate_count": 21,
+      "next_page": null,
+      "snapshot_sha256": "64a1d796fef9b951ff00d80f5fa562e0f58d8d158a9c561120f6ba173872778d",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/1115193",
+          "name": "Household Essentials",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/air-fresheners/1115193_1025739",
+          "name": "Air Fresheners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/air-fresheners/car-air-fresheners/1115193_1025739_7032476",
+          "name": "Car Air Fresheners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/car-air-fresheners/wood-car-air-freshener/1115193_1025739_7032476_8012181",
+          "name": "Wood Car Air Freshener",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/gain-grinchmas/1115193_8250903_1302612_5397101",
+          "name": "View details for The latest & more from Gain",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        }
+      ]
+    },
+    {
+      "category": "Personal Care",
+      "url": "https://www.walmart.com/browse/electric-toothbrushes/electric-toothbrush-heads/1005862_1007221_2709578_5756015_1225307",
+      "status": "reviewed",
+      "listing_sequence": 7,
+      "response_category_id": "1005862_1007221_2709578_5756015_1225307",
+      "breadcrumb": [
+        {
+          "id": "1005862",
+          "name": "Personal Care",
+          "url": "/cp/1005862"
+        },
+        {
+          "id": "1005862_1007221",
+          "name": "Oral Care",
+          "url": "/browse/personal-care/oral-care/1005862_1007221"
+        },
+        {
+          "id": "1005862_1007221_2709578",
+          "name": "Toothbrushes",
+          "url": "/browse/oral-care/toothbrushes/1005862_1007221_2709578"
+        },
+        {
+          "id": "1005862_1007221_2709578_5756015",
+          "name": "Electric Toothbrushes",
+          "url": "/browse/toothbrushes/electric-toothbrushes/1005862_1007221_2709578_5756015"
+        },
+        {
+          "id": "1005862_1007221_2709578_5756015_1225307",
+          "name": "Electric Toothbrush Heads",
+          "url": "/browse/electric-toothbrushes/electric-toothbrush-heads/1005862_1007221_2709578_5756015_1225307"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 1,
+      "reported_count": 48,
+      "aggregated_count": 33,
+      "unique_listed_product_ids": 41,
+      "unique_eligible_product_ids": 41,
+      "listed_product_ids": [
+        "10321286",
+        "11148254",
+        "1211479591",
+        "1277150792",
+        "12984171701",
+        "14094504137",
+        "143515506",
+        "14903311009",
+        "1543343689",
+        "16305122498",
+        "16333800454",
+        "16333900262",
+        "16347317891",
+        "16358561344",
+        "16721616820",
+        "16754319270",
+        "17140220224",
+        "17519504993",
+        "17968323212",
+        "18448651247",
+        "1990582399",
+        "20016858374",
+        "20093900105",
+        "20093900108",
+        "20220066067",
+        "20265062294",
+        "22437470",
+        "22437471",
+        "2474314422",
+        "2595975385",
+        "2886887188",
+        "374868946",
+        "42386903",
+        "53725837",
+        "5399031629",
+        "5435781676",
+        "5737402414",
+        "5750318749",
+        "592835376",
+        "641563271",
+        "780579543"
+      ],
+      "eligible_product_ids": [
+        "10321286",
+        "11148254",
+        "1211479591",
+        "1277150792",
+        "12984171701",
+        "14094504137",
+        "143515506",
+        "14903311009",
+        "1543343689",
+        "16305122498",
+        "16333800454",
+        "16333900262",
+        "16347317891",
+        "16358561344",
+        "16721616820",
+        "16754319270",
+        "17140220224",
+        "17519504993",
+        "17968323212",
+        "18448651247",
+        "1990582399",
+        "20016858374",
+        "20093900105",
+        "20093900108",
+        "20220066067",
+        "20265062294",
+        "22437470",
+        "22437471",
+        "2474314422",
+        "2595975385",
+        "2886887188",
+        "374868946",
+        "42386903",
+        "53725837",
+        "5399031629",
+        "5435781676",
+        "5737402414",
+        "5750318749",
+        "592835376",
+        "641563271",
+        "780579543"
+      ],
+      "listing_rejections": {
+        "sponsored": 2,
+        "outside_category": 3,
+        "marketplace": 9
+      },
+      "candidate_count": 29,
+      "next_page": null,
+      "snapshot_sha256": "ce5f4a0611b763d5513def2af4800ba0cf1a8a59998024aeafcf204ec0540563",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/1005862",
+          "name": "Personal Care",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/oral-care/1005862_1007221",
+          "name": "Oral Care",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/oral-care/toothbrushes/1005862_1007221_2709578",
+          "name": "Toothbrushes",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/toothbrushes/electric-toothbrushes/1005862_1007221_2709578_5756015",
+          "name": "Electric Toothbrushes",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/electric-toothbrushes/electric-toothbrush-heads/1005862_1007221_2709578_5756015_1225307",
+          "name": "Electric Toothbrush Heads",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/electric-toothbrushes/electric-toothbrush-heads/1005862_1007221_2709578_5756015_1225307",
+          "name": "Oral B Toothbrush Heads",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/cp/travel-size-essentials/8097138",
+          "name": "View details for The Travel Size Shop",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/oral-care/1005862_1007221",
+          "name": "View details for Save on oral care",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/scent-theory-hand-sanitizer/1005862_7850115_1604259",
+          "name": "View details for A scent for every mood",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/cp/pg-gameday/5626954",
+          "name": "View details for Personal care MVPs",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        }
+      ]
+    },
+    {
+      "category": "Health & Wellness",
+      "url": "https://www.walmart.com/browse/health-medicine/melatonin/976760_1005863_7476811",
+      "status": "reviewed",
+      "listing_sequence": 8,
+      "response_category_id": "976760_1005863_7476811",
+      "breadcrumb": [
+        {
+          "id": "976760",
+          "name": "Health and Medicine",
+          "url": "/cp/976760"
+        },
+        {
+          "id": "976760_1005863",
+          "name": "Vitamins and Supplements",
+          "url": "/browse/health-and-medicine/vitamins-and-supplements/976760_1005863"
+        },
+        {
+          "id": "976760_1005863_7476811",
+          "name": "Melatonin",
+          "url": "/browse/vitamins-and-supplements/melatonin/976760_1005863_7476811"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 2,
+      "reported_count": 63,
+      "aggregated_count": 78,
+      "unique_listed_product_ids": 54,
+      "unique_eligible_product_ids": 49,
+      "listed_product_ids": [
+        "105337513",
+        "11047659",
+        "1109873340",
+        "118202779",
+        "1233897715",
+        "126868776",
+        "1362899700",
+        "14657869887",
+        "14683118526",
+        "14707215636",
+        "14950810515",
+        "15136704",
+        "15136798",
+        "16940371",
+        "17177134",
+        "1826013576",
+        "1827295950",
+        "18800920597",
+        "19231950537",
+        "19232000764",
+        "24681606",
+        "260561079",
+        "2746267300",
+        "2816261379",
+        "281630150",
+        "288099875",
+        "2938063541",
+        "2955753786",
+        "348748508",
+        "35912856",
+        "40711580",
+        "40711581",
+        "410978987",
+        "429898510",
+        "438047886",
+        "438060736",
+        "455487948",
+        "46014826",
+        "46024170",
+        "48187260",
+        "50733191",
+        "519575375",
+        "519919564",
+        "5216707054",
+        "5279969073",
+        "5375040359",
+        "610348062",
+        "613162552",
+        "669532981",
+        "715799614",
+        "746208181",
+        "918091295",
+        "962448238",
+        "963752291"
+      ],
+      "eligible_product_ids": [
+        "105337513",
+        "11047659",
+        "1109873340",
+        "118202779",
+        "1233897715",
+        "126868776",
+        "1362899700",
+        "14683118526",
+        "14950810515",
+        "15136704",
+        "15136798",
+        "16940371",
+        "17177134",
+        "1826013576",
+        "18800920597",
+        "19231950537",
+        "19232000764",
+        "24681606",
+        "260561079",
+        "2746267300",
+        "2816261379",
+        "281630150",
+        "288099875",
+        "2955753786",
+        "348748508",
+        "35912856",
+        "40711580",
+        "40711581",
+        "429898510",
+        "438047886",
+        "438060736",
+        "455487948",
+        "46014826",
+        "46024170",
+        "48187260",
+        "50733191",
+        "519575375",
+        "519919564",
+        "5216707054",
+        "5279969073",
+        "5375040359",
+        "610348062",
+        "613162552",
+        "669532981",
+        "715799614",
+        "746208181",
+        "918091295",
+        "962448238",
+        "963752291"
+      ],
+      "listing_rejections": {
+        "sponsored": 10,
+        "outside_category": 2,
+        "marketplace": 5
+      },
+      "candidate_count": 42,
+      "next_page": "https://www.walmart.com/browse/health-medicine/melatonin/976760_1005863_7476811?page=2",
+      "snapshot_sha256": "6ff7831e6c8dc31c625477aaca998d65dc9464844b1f248b26490160fcf2657a",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/976760",
+          "name": "Health and Medicine",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-and-medicine/vitamins-and-supplements/976760_1005863",
+          "name": "Vitamins and Supplements",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/vitamins-and-supplements/melatonin/976760_1005863_7476811",
+          "name": "Melatonin",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/cp/vitamins-supplements/1005863",
+          "name": "Shop all Vitamins",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/wellness-mini/0/0/",
+          "name": "Wellness Minis",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/vitamins-supplements/melatonin/976760_1005863_7476811",
+          "name": "Spring Valley",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-and-medicine/natrol-melatonin/976760_1005863_5033407",
+          "name": "Natrol",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/vitamins-supplements/melatonin/976760_1005863_7476811",
+          "name": "Zarbee's",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/zzzquil/976760_1005863_2780146_9312306",
+          "name": "ZZQuil",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/vitamins-supplements/melatonin/976760_1005863_7476811",
+          "name": "Liquid Melatonin",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/melatonin-gummies/976760_1005863_7279573",
+          "name": "Melatonin Gummies",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/kids-melatonin/976760_1005863_4386519",
+          "name": "Kids Melatonin",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/melatonin-gummies/976760_1005863_7279573https://www.walmart.com/browse/health/sleep-better/976760_9035881",
+          "name": "All Sleep Support",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/cp/vitamins-supplements/1005863",
+          "name": "Shop all Vitamins",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/wellness-mini/0/0/",
+          "name": "Wellness Minis",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/vitamins-supplements/melatonin/976760_1005863_7476811",
+          "name": "Spring Valley",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-and-medicine/natrol-melatonin/976760_1005863_5033407",
+          "name": "Natrol",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/vitamins-supplements/melatonin/976760_1005863_7476811",
+          "name": "Zarbee's",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/zzzquil/976760_1005863_2780146_9312306",
+          "name": "ZZQuil",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/vitamins-supplements/melatonin/976760_1005863_7476811",
+          "name": "Liquid Melatonin",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/melatonin-gummies/976760_1005863_7279573",
+          "name": "Melatonin Gummies",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/kids-melatonin/976760_1005863_4386519",
+          "name": "Kids Melatonin",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/melatonin-gummies/976760_1005863_7279573https://www.walmart.com/browse/health/sleep-better/976760_9035881",
+          "name": "All Sleep Support",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/sleep-support-supplements/976760_1005863_2780146",
+          "name": "View details for Rest easy with Spring Valley",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/multivitamins/976760_1005863_1699667",
+          "name": "View details for Explore all vitamins",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        }
+      ]
+    },
+    {
+      "category": "Office Supplies",
+      "url": "https://www.walmart.com/browse/office-supplies/office-supplies-school-supplies-by-brand/1229749_1431586",
+      "status": "reviewed",
+      "listing_sequence": 9,
+      "response_category_id": "1229749_1431586",
+      "breadcrumb": [
+        {
+          "id": "1229749",
+          "name": "Office Supplies",
+          "url": "/cp/1229749"
+        },
+        {
+          "id": "1229749_1431586",
+          "name": "Office Supplies & School Supplies by Brand",
+          "url": "/browse/office-supplies/office-supplies-school-supplies-by-brand/1229749_1431586"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 25,
+      "reported_count": 58,
+      "aggregated_count": 2056,
+      "unique_listed_product_ids": 57,
+      "unique_eligible_product_ids": 47,
+      "listed_product_ids": [
+        "107427030",
+        "120869409",
+        "12596313888",
+        "12613610091",
+        "1326180962",
+        "13560974432",
+        "14164797",
+        "15000520768",
+        "15053213602",
+        "15123301819",
+        "15145771136",
+        "15162073004",
+        "15973504024",
+        "16828168",
+        "1698239772",
+        "17011266",
+        "17256264",
+        "17575008293",
+        "17889122331",
+        "17932066292",
+        "17954321014",
+        "18021912131",
+        "18025509698",
+        "18030513228",
+        "18085814574",
+        "18161654119",
+        "19054359146",
+        "19431219011",
+        "19449473630",
+        "19468916881",
+        "19493721659",
+        "19501255294",
+        "19584464429",
+        "19627267591",
+        "19634004281",
+        "19640907796",
+        "20113669651",
+        "318954281",
+        "349801865",
+        "358275107",
+        "414379003",
+        "425674262",
+        "5064688441",
+        "5066412051",
+        "5367596097",
+        "5478609007",
+        "5480754924",
+        "5510310525",
+        "551758741",
+        "600725616",
+        "795575073",
+        "817125195",
+        "848958824",
+        "905938825",
+        "930631510",
+        "984074236",
+        "986626920"
+      ],
+      "eligible_product_ids": [
+        "120869409",
+        "12596313888",
+        "12613610091",
+        "1326180962",
+        "13560974432",
+        "14164797",
+        "15000520768",
+        "15053213602",
+        "15123301819",
+        "15145771136",
+        "15973504024",
+        "16828168",
+        "1698239772",
+        "17011266",
+        "17256264",
+        "17575008293",
+        "17932066292",
+        "17954321014",
+        "19054359146",
+        "19431219011",
+        "19449473630",
+        "19468916881",
+        "19493721659",
+        "19501255294",
+        "19584464429",
+        "19627267591",
+        "19634004281",
+        "19640907796",
+        "20113669651",
+        "349801865",
+        "358275107",
+        "414379003",
+        "425674262",
+        "5064688441",
+        "5066412051",
+        "5367596097",
+        "5478609007",
+        "5480754924",
+        "5510310525",
+        "551758741",
+        "600725616",
+        "795575073",
+        "817125195",
+        "848958824",
+        "905938825",
+        "930631510",
+        "984074236"
+      ],
+      "listing_rejections": {
+        "sponsored": 10,
+        "outside_category": 2,
+        "marketplace": 5
+      },
+      "candidate_count": 40,
+      "next_page": "https://www.walmart.com/browse/office-supplies/office-supplies-school-supplies-by-brand/1229749_1431586?page=2",
+      "snapshot_sha256": "0315ae55a80a2f6b9f55d6e463fabd45f05c86a4b393200f6b10fa8db51fb94e",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/1229749",
+          "name": "Office Supplies",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/office-supplies-school-supplies-by-brand/1229749_1431586",
+          "name": "Office Supplies & School Supplies by Brand",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/office-supplies-school-supplies-by-brand/1229749_1431586",
+          "name": "Pen+Gear",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/office-supplies-school-supplies-by-brand/1229749_1431586",
+          "name": "Pen+Gear Office Supplies",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/office-supplies-school-supplies-by-brand/1229749_1431586",
+          "name": "Pen+Gear Moving & Shipping",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/office-supplies-school-supplies-by-brand/1229749_1431586",
+          "name": "Pen+Gear Journals & Planners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/office-supplies-school-supplies-by-brand/1229749_1431586",
+          "name": "Pen+Gear Coloring Supplies",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/office-supplies-school-supplies-by-brand/1229749_1431586",
+          "name": "Pen+Gear Office Security",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/office-supplies-school-supplies-by-brand/1229749_1431586",
+          "name": "Scotch Tape Dispensers",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/office-supplies-school-supplies-by-brand/1229749_1431586",
+          "name": "Pen+Gear Writing Utensils",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/office-supplies-school-supplies-by-brand/1229749_1431586",
+          "name": "Dymo",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/office-supplies-school-supplies-by-brand/1229749_1431586",
+          "name": "Newell Brands",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/office-supplies-school-supplies-by-brand/1229749_1431586",
+          "name": "Duck",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/office-supplies-school-supplies-by-brand/1229749_1431586",
+          "name": "Scotch",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/office-supplies-school-supplies-by-brand/1229749_1431586",
+          "name": "Duck Tape",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/office-supplies-school-supplies-by-brand/1229749_1431586",
+          "name": "U-Brands",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/office-supplies-school-supplies-by-brand/1229749_1431586",
+          "name": "Sharpie",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/office-supplies-school-supplies-by-brand/1229749_1431586",
+          "name": "Avery",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/office-supplies-school-supplies-by-brand/1229749_1431586",
+          "name": "Fiskars",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/office-supplies-school-supplies-by-brand/1229749_1431586",
+          "name": "Sharpies",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/office-supplies-school-supplies-by-brand/1229749_1431586",
+          "name": "Post-it",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/office-supplies-school-supplies-by-brand/1229749_1431586",
+          "name": "Elmer's",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        }
+      ]
+    },
+    {
+      "category": "Beauty",
+      "url": "https://www.walmart.com/browse/skin-care/face-masks/1085666_1007039_7620876",
+      "status": "reviewed",
+      "listing_sequence": 10,
+      "response_category_id": "1085666_1007039_7620876",
+      "breadcrumb": [
+        {
+          "id": "1085666",
+          "name": "Beauty",
+          "url": "/cp/1085666"
+        },
+        {
+          "id": "1085666_1007039",
+          "name": "Skincare",
+          "url": "/browse/beauty/skincare/1085666_1007039"
+        },
+        {
+          "id": "1085666_1007039_7620876",
+          "name": "Beauty Face Masks",
+          "url": "/browse/skincare/beauty-face-masks/1085666_1007039_7620876"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 2,
+      "reported_count": 58,
+      "aggregated_count": 49,
+      "unique_listed_product_ids": 48,
+      "unique_eligible_product_ids": 48,
+      "listed_product_ids": [
+        "102557168",
+        "10849684",
+        "13108970966",
+        "13566350205",
+        "154329285",
+        "160752127",
+        "16207421075",
+        "16379762237",
+        "1643874575",
+        "166768598",
+        "16926672685",
+        "17323551713",
+        "17479818521",
+        "18051455716",
+        "18092623559",
+        "18532324255",
+        "19217205983",
+        "19219754457",
+        "19987313007",
+        "19995507486",
+        "19996952333",
+        "20004805336",
+        "203595731",
+        "209708706",
+        "229924920",
+        "236339102",
+        "2671170461",
+        "2740106853",
+        "34208870",
+        "345305568",
+        "397842470",
+        "456703287",
+        "481597433",
+        "491676560",
+        "5023414692",
+        "5541393261",
+        "5548841467",
+        "5556338844",
+        "622218425",
+        "652605721",
+        "692523897",
+        "718383065",
+        "748169425",
+        "7876450441",
+        "872230936",
+        "879851791",
+        "938931275",
+        "971318443"
+      ],
+      "eligible_product_ids": [
+        "102557168",
+        "10849684",
+        "13108970966",
+        "13566350205",
+        "154329285",
+        "160752127",
+        "16207421075",
+        "16379762237",
+        "1643874575",
+        "166768598",
+        "16926672685",
+        "17323551713",
+        "17479818521",
+        "18051455716",
+        "18092623559",
+        "18532324255",
+        "19217205983",
+        "19219754457",
+        "19987313007",
+        "19995507486",
+        "19996952333",
+        "20004805336",
+        "203595731",
+        "209708706",
+        "229924920",
+        "236339102",
+        "2671170461",
+        "2740106853",
+        "34208870",
+        "345305568",
+        "397842470",
+        "456703287",
+        "481597433",
+        "491676560",
+        "5023414692",
+        "5541393261",
+        "5548841467",
+        "5556338844",
+        "622218425",
+        "652605721",
+        "692523897",
+        "718383065",
+        "748169425",
+        "7876450441",
+        "872230936",
+        "879851791",
+        "938931275",
+        "971318443"
+      ],
+      "listing_rejections": {
+        "sponsored": 6,
+        "outside_category": 2,
+        "marketplace": 9
+      },
+      "candidate_count": 36,
+      "next_page": "https://www.walmart.com/browse/skin-care/face-masks/1085666_1007039_7620876?page=2",
+      "snapshot_sha256": "12ad8934da056da578baa695fd1c426c1880f84982add25b695fa1e707a2ba90",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/1085666",
+          "name": "Beauty",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/beauty/skincare/1085666_1007039",
+          "name": "Skincare",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/skincare/beauty-face-masks/1085666_1007039_7620876",
+          "name": "Beauty Face Masks",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/beauty/clay-masks/1085666_1007039_7620876_4242111",
+          "name": "Clay masks",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/beauty/peel-off-masks/1085666_1007039_7620876_3992861",
+          "name": "Peel-off masks",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/beauty/sheet-masks/1085666_1007039_7620876_5410866",
+          "name": "Sheet-masks",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/beauty/eye-masks/1085666_1007039_8768767_3839557",
+          "name": "Eye masks",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/beauty/skincare/1085666_1007039",
+          "name": "Shop all skincare",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/beauty/clay-masks/1085666_1007039_7620876_4242111",
+          "name": "Clay masks",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/beauty/peel-off-masks/1085666_1007039_7620876_3992861",
+          "name": "Peel-off masks",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/beauty/sheet-masks/1085666_1007039_7620876_5410866",
+          "name": "Sheet-masks",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/beauty/eye-masks/1085666_1007039_8768767_3839557",
+          "name": "Eye masks",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/beauty/skincare/1085666_1007039",
+          "name": "Shop all skincare",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/beauty-get-it-fast/0/0/",
+          "name": "View details for Beauty in as fast as an hour*",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/beauty-picks:-skincare/0/0/",
+          "name": "View details for Just-dropped skincare",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/beauty/beauty-solutions-skincare/1085666_1729914_7135563",
+          "name": "View details for Your 5-step skincare",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        }
+      ]
+    },
+    {
+      "category": "Pets",
+      "url": "https://www.walmart.com/browse/pets/cat-flea-tick-spot-treatments/5440_202073_3304805_7118188",
+      "status": "reviewed",
+      "listing_sequence": 11,
+      "response_category_id": "5440_202073_3304805_7118188",
+      "breadcrumb": [
+        {
+          "id": "5440",
+          "name": "Pets",
+          "url": "/cp/5440"
+        },
+        {
+          "id": "5440_202073",
+          "name": "Cats",
+          "url": "/browse/pets/cats/5440_202073"
+        },
+        {
+          "id": "5440_202073_3304805",
+          "name": "Cat Flea and Tick",
+          "url": "/browse/cats/cat-flea-and-tick/5440_202073_3304805"
+        },
+        {
+          "id": "5440_202073_3304805_7118188",
+          "name": "Cat Flea and Tick Topical Treatment",
+          "url": "/browse/cat-flea-and-tick/cat-flea-and-tick-topical-treatment/5440_202073_3304805_7118188"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 1,
+      "reported_count": 21,
+      "aggregated_count": 10,
+      "unique_listed_product_ids": 18,
+      "unique_eligible_product_ids": 18,
+      "listed_product_ids": [
+        "13043581",
+        "14053412",
+        "1685685798",
+        "1876130961",
+        "20665202229",
+        "2159358641",
+        "250401278",
+        "2961216683",
+        "361615624",
+        "42425087",
+        "427678965",
+        "43412474",
+        "447814940",
+        "49680870",
+        "5049068834",
+        "5472682399",
+        "765485655",
+        "984245124"
+      ],
+      "eligible_product_ids": [
+        "13043581",
+        "14053412",
+        "1685685798",
+        "1876130961",
+        "20665202229",
+        "2159358641",
+        "250401278",
+        "2961216683",
+        "361615624",
+        "42425087",
+        "427678965",
+        "43412474",
+        "447814940",
+        "49680870",
+        "5049068834",
+        "5472682399",
+        "765485655",
+        "984245124"
+      ],
+      "listing_rejections": {
+        "sponsored": 2,
+        "marketplace": 5
+      },
+      "candidate_count": 13,
+      "next_page": null,
+      "snapshot_sha256": "dd2ecb20226afa1e573c39ee786e28d63cbed8709c829e6ba28f4c81a73600ca",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/5440",
+          "name": "Pets",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/cats/5440_202073",
+          "name": "Cats",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/cats/cat-flea-and-tick/5440_202073_3304805",
+          "name": "Cat Flea and Tick",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/cat-flea-and-tick/cat-flea-and-tick-topical-treatment/5440_202073_3304805_7118188",
+          "name": "Cat Flea and Tick Topical Treatment",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/cats/cat-flea-and-tick-supplies/5440_202073_3304805",
+          "name": "All Cat Flea & Tick",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/cat-flea-pills/5440_202073_3304805_3993303",
+          "name": "Cat Flea Pills",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/cat-flea-collars/5440_202073_3304805_9055456",
+          "name": "Cat Flea Collars",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/cat-flea-shampoos/5440_202073_3304805_9344430",
+          "name": "Cat Flea Shampoo",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/cat-flea-combs/5440_202073_3304805_6964126",
+          "name": "Cat Flea Combs",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/cat-dewormers/5440_202073_2866753_5972932",
+          "name": "Cat Dewormers",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/cats/cat-health-wellbeing/5440_202073_2866753",
+          "name": "All Cat Health & Wellness",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/cats/cat-flea-and-tick-supplies/5440_202073_3304805",
+          "name": "All Cat Flea & Tick",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/cat-flea-pills/5440_202073_3304805_3993303",
+          "name": "Cat Flea Pills",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/cat-flea-collars/5440_202073_3304805_9055456",
+          "name": "Cat Flea Collars",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/cat-flea-shampoos/5440_202073_3304805_9344430",
+          "name": "Cat Flea Shampoo",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/cat-flea-combs/5440_202073_3304805_6964126",
+          "name": "Cat Flea Combs",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/cat-dewormers/5440_202073_2866753_5972932",
+          "name": "Cat Dewormers",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/cats/cat-health-wellbeing/5440_202073_2866753",
+          "name": "All Cat Health & Wellness",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        }
+      ]
+    },
+    {
+      "category": "Household Essentials",
+      "url": "https://www.walmart.com/browse/household-essentials/car-air-fresheners/1115193_1025739_7032476?page=2",
+      "status": "reviewed",
+      "listing_sequence": 12,
+      "response_category_id": "1115193_1025739_7032476",
+      "breadcrumb": [
+        {
+          "id": "1115193",
+          "name": "Household Essentials",
+          "url": "/cp/1115193"
+        },
+        {
+          "id": "1115193_1025739",
+          "name": "Air Fresheners",
+          "url": "/browse/household-essentials/air-fresheners/1115193_1025739"
+        },
+        {
+          "id": "1115193_1025739_7032476",
+          "name": "Car Air Fresheners",
+          "url": "/browse/air-fresheners/car-air-fresheners/1115193_1025739_7032476"
+        }
+      ],
+      "page": 2,
+      "reported_last_page": 7,
+      "reported_count": 51,
+      "aggregated_count": 270,
+      "unique_listed_product_ids": 47,
+      "unique_eligible_product_ids": 40,
+      "listed_product_ids": [
+        "11395812782",
+        "121773688",
+        "1222156012",
+        "1229690053",
+        "130115903",
+        "133431146",
+        "13530562722",
+        "139118363",
+        "1495987422",
+        "15334421126",
+        "15355903080",
+        "15358468237",
+        "15378555612",
+        "1600101461",
+        "1614348970",
+        "1656474830",
+        "16879766",
+        "16879779",
+        "17096702417",
+        "17249116139",
+        "17324298",
+        "17330364148",
+        "17909853965",
+        "18009816431",
+        "18042267154",
+        "18054500845",
+        "18258007709",
+        "18369308917",
+        "18646672150",
+        "18658972412",
+        "19641114859",
+        "19714257242",
+        "2025431626",
+        "20347873922",
+        "378255552",
+        "481760924",
+        "5024424899",
+        "5040429061",
+        "510774243",
+        "523904507",
+        "52599278",
+        "5953340121",
+        "6369911859",
+        "764312029",
+        "815803498",
+        "824533642",
+        "842269054"
+      ],
+      "eligible_product_ids": [
+        "121773688",
+        "1222156012",
+        "1229690053",
+        "130115903",
+        "133431146",
+        "13530562722",
+        "139118363",
+        "1495987422",
+        "15334421126",
+        "15355903080",
+        "15358468237",
+        "15378555612",
+        "1614348970",
+        "16879766",
+        "16879779",
+        "17096702417",
+        "17324298",
+        "17909853965",
+        "18009816431",
+        "18042267154",
+        "18054500845",
+        "18369308917",
+        "18646672150",
+        "18658972412",
+        "19641114859",
+        "19714257242",
+        "2025431626",
+        "20347873922",
+        "378255552",
+        "481760924",
+        "5024424899",
+        "510774243",
+        "523904507",
+        "52599278",
+        "5953340121",
+        "6369911859",
+        "764312029",
+        "815803498",
+        "824533642",
+        "842269054"
+      ],
+      "listing_rejections": {
+        "sponsored": 10,
+        "outside_category": 4
+      },
+      "candidate_count": 36,
+      "next_page": "https://www.walmart.com/browse/household-essentials/car-air-fresheners/1115193_1025739_7032476?page=3",
+      "snapshot_sha256": "13ca6b6ce5ff8df08f1f5ebc3eb5d7a85863d6095108a09b97e364a3bf1d9224",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/1115193",
+          "name": "Household Essentials",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/air-fresheners/1115193_1025739",
+          "name": "Air Fresheners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/air-fresheners/car-air-fresheners/1115193_1025739_7032476",
+          "name": "Car Air Fresheners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/car-air-fresheners/1115193_1025739_7032476",
+          "name": "Get it today",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/car-air-fresheners-by-brand/1115193_1025739_7032476_2346414",
+          "name": "Shop by Brand",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/car-air-fresheners-by-scent/1115193_1025739_7032476_5913704",
+          "name": "Shop by Car Scent",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/car-air-freshener-bombs/1115193_1025739_7032476_6078599",
+          "name": "Car Bomb Air Fresheners",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/car-diffusers/1115193_1025739_7032476_3398845",
+          "name": "Car Diffusers",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/car-vent-freshener/1115193_1025739_7032476_7150063",
+          "name": "Car Vent Air Fresheners",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/hanging-car-air-freshener/1115193_1025739_7032476_1575656",
+          "name": "Hanging Car Air Fresheners",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/natural-car-freshener/1115193_1025739_7032476_3573078",
+          "name": "Natural Car Air Fresheners",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/armor-all-car-air-freshener/1115193_1025739_7032476_2346414_3609357",
+          "name": "Armor All Car Fresheners",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/california-scents/1115193_1025739_7032476_2346414_5382328",
+          "name": "California Scents",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/chemical-guys-car-air-freshener/1115193_1025739_7032476_2346414_5445381",
+          "name": "Chemical Guys Car Fresheners",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/febreze-car-air-fresheners/1115193_1025739_7032476_2346414_1683109",
+          "name": "Febreze Car Fresheners",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/funkaway-car-air-freshener/1115193_1025739_7032476_2346414_5138899",
+          "name": "FunkAway Car Fresheners",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/little-trees-air-fresheners/1115193_1025739_7032476_2346414_8928193",
+          "name": "Little Trees Air Fresheners",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/refresh-your-car/1115193_1025739_7032476_2346414_9346835",
+          "name": "Refresh Your Car!",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/yankee-candle-car-fresheners/1115193_1025739_7032476_5291603",
+          "name": "Yankee Candle Car Fresheners",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/black-ice-air-fresheners/1115193_1025739_7032476_5913704_2495396",
+          "name": "Black Ice Air Fresheners",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/car-freshies/1115193_1025739_7032476_2494636",
+          "name": "Car Freshies",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/car-scent-remover/1115193_1025739_7032476_6089279",
+          "name": "Car Scent Removers",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/car-spray/1115193_1025739_7032476_9218307",
+          "name": "Car Spray",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/non-toxic-car-freshener/1115193_1025739_7032476_6601136",
+          "name": "Non Toxic Car Fresheners",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/record-player-car-air-freshener/1115193_1025739_7032476_4761274",
+          "name": "Record Player Car Fresheners",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/taylor-swift-car-air-fresheners/1115193_1025739_7032476_8100274",
+          "name": "Taylor Swift Car Air Fresheners",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/wood-car-air-freshener/1115193_1025739_7032476_8012181",
+          "name": "Wood Car Air Fresheners",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/car-air-fresheners/1115193_1025739_7032476",
+          "name": "Get it today",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/car-air-fresheners-by-brand/1115193_1025739_7032476_2346414",
+          "name": "Shop by Brand",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/car-air-fresheners-by-scent/1115193_1025739_7032476_5913704",
+          "name": "Shop by Car Scent",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/car-air-freshener-bombs/1115193_1025739_7032476_6078599",
+          "name": "Car Bomb Air Fresheners",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/car-diffusers/1115193_1025739_7032476_3398845",
+          "name": "Car Diffusers",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/car-vent-freshener/1115193_1025739_7032476_7150063",
+          "name": "Car Vent Air Fresheners",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/hanging-car-air-freshener/1115193_1025739_7032476_1575656",
+          "name": "Hanging Car Air Fresheners",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/natural-car-freshener/1115193_1025739_7032476_3573078",
+          "name": "Natural Car Air Fresheners",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/armor-all-car-air-freshener/1115193_1025739_7032476_2346414_3609357",
+          "name": "Armor All Car Fresheners",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/california-scents/1115193_1025739_7032476_2346414_5382328",
+          "name": "California Scents",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/chemical-guys-car-air-freshener/1115193_1025739_7032476_2346414_5445381",
+          "name": "Chemical Guys Car Fresheners",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/febreze-car-air-fresheners/1115193_1025739_7032476_2346414_1683109",
+          "name": "Febreze Car Fresheners",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/funkaway-car-air-freshener/1115193_1025739_7032476_2346414_5138899",
+          "name": "FunkAway Car Fresheners",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/little-trees-air-fresheners/1115193_1025739_7032476_2346414_8928193",
+          "name": "Little Trees Air Fresheners",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/refresh-your-car/1115193_1025739_7032476_2346414_9346835",
+          "name": "Refresh Your Car!",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/yankee-candle-car-fresheners/1115193_1025739_7032476_5291603",
+          "name": "Yankee Candle Car Fresheners",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/black-ice-air-fresheners/1115193_1025739_7032476_5913704_2495396",
+          "name": "Black Ice Air Fresheners",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/car-freshies/1115193_1025739_7032476_2494636",
+          "name": "Car Freshies",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/car-scent-remover/1115193_1025739_7032476_6089279",
+          "name": "Car Scent Removers",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/car-spray/1115193_1025739_7032476_9218307",
+          "name": "Car Spray",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/non-toxic-car-freshener/1115193_1025739_7032476_6601136",
+          "name": "Non Toxic Car Fresheners",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/record-player-car-air-freshener/1115193_1025739_7032476_4761274",
+          "name": "Record Player Car Fresheners",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/taylor-swift-car-air-fresheners/1115193_1025739_7032476_8100274",
+          "name": "Taylor Swift Car Air Fresheners",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/wood-car-air-freshener/1115193_1025739_7032476_8012181",
+          "name": "Wood Car Air Fresheners",
+          "action": "queued",
+          "reason": "category_link"
+        }
+      ]
+    },
+    {
+      "category": "Personal Care",
+      "url": "https://www.walmart.com/browse/bath-body/bath-shower/1005862_1071969_1694681",
+      "status": "reviewed",
+      "listing_sequence": 13,
+      "response_category_id": "1005862_1071969_1694681",
+      "breadcrumb": [
+        {
+          "id": "1005862",
+          "name": "Personal Care",
+          "url": "/cp/1005862"
+        },
+        {
+          "id": "1005862_1071969",
+          "name": "Bath & Body",
+          "url": "/browse/personal-care/bath-body/1005862_1071969"
+        },
+        {
+          "id": "1005862_1071969_1694681",
+          "name": "Bath & Shower",
+          "url": "/browse/bath-body/bath-shower/1005862_1071969_1694681"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 25,
+      "reported_count": 65,
+      "aggregated_count": 1082,
+      "unique_listed_product_ids": 57,
+      "unique_eligible_product_ids": 50,
+      "listed_product_ids": [
+        "11047125",
+        "15136067",
+        "15287166782",
+        "1542989787",
+        "15955111859",
+        "16338510231",
+        "16648916530",
+        "16672127",
+        "167447481",
+        "177706542",
+        "18072803737",
+        "18261574791",
+        "190600304",
+        "19083969980",
+        "201141458",
+        "20141317280",
+        "20958765794",
+        "21186531",
+        "2214569994",
+        "251041062",
+        "26598905",
+        "269908909",
+        "27231189",
+        "281423722",
+        "291806475",
+        "29304725",
+        "296395316",
+        "3346060602",
+        "34941677",
+        "35790545",
+        "38260427",
+        "3831688208",
+        "3998391933",
+        "436012005",
+        "441138540",
+        "5178603652",
+        "5183616257",
+        "5373792010",
+        "552501332",
+        "552861283",
+        "555900296",
+        "619121176",
+        "625527254",
+        "673158045",
+        "6831204063",
+        "690032288",
+        "725462427",
+        "728579794",
+        "753058537",
+        "830467712",
+        "8345711401",
+        "851599654",
+        "863623247",
+        "943188318",
+        "966757870",
+        "970472955",
+        "987747796"
+      ],
+      "eligible_product_ids": [
+        "11047125",
+        "15136067",
+        "15287166782",
+        "1542989787",
+        "15955111859",
+        "16338510231",
+        "16648916530",
+        "16672127",
+        "167447481",
+        "177706542",
+        "190600304",
+        "19083969980",
+        "201141458",
+        "20141317280",
+        "20958765794",
+        "21186531",
+        "2214569994",
+        "251041062",
+        "26598905",
+        "269908909",
+        "27231189",
+        "281423722",
+        "291806475",
+        "29304725",
+        "296395316",
+        "34941677",
+        "35790545",
+        "38260427",
+        "3831688208",
+        "436012005",
+        "441138540",
+        "5178603652",
+        "5183616257",
+        "5373792010",
+        "552501332",
+        "552861283",
+        "619121176",
+        "625527254",
+        "673158045",
+        "6831204063",
+        "690032288",
+        "725462427",
+        "728579794",
+        "753058537",
+        "830467712",
+        "8345711401",
+        "851599654",
+        "966757870",
+        "970472955",
+        "987747796"
+      ],
+      "listing_rejections": {
+        "sponsored": 10,
+        "outside_category": 4,
+        "marketplace": 6
+      },
+      "candidate_count": 40,
+      "next_page": "https://www.walmart.com/browse/bath-body/bath-shower/1005862_1071969_1694681?page=2",
+      "snapshot_sha256": "82a1147c363cefd7d353b4f6570704897a5fb56e1066c1e26087c30e878c4272",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/1005862",
+          "name": "Personal Care",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/bath-body/1005862_1071969",
+          "name": "Bath & Body",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/bath-body/bath-shower/1005862_1071969_1694681",
+          "name": "Bath & Shower",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/bath-body/bath-shower/1005862_1071969_1694681",
+          "name": "Bar Soap",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/bath-body/bath-shower/1005862_1071969_1694681",
+          "name": "Loofahs",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/bath-body/bath-shower/1005862_1071969_1694681",
+          "name": "Bubble Baths",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/bath-body/bath-shower/1005862_1071969_1694681",
+          "name": "Kids' Bubble Baths",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/bath-body/bath-shower/1005862_1071969_1694681",
+          "name": "Body Wash",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/bath-body/bath-shower/1005862_1071969_1694681",
+          "name": "Exfoliators",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/bath-body/bath-shower/1005862_1071969_1694681",
+          "name": "Body Scrubs",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/bath-body/bath-shower/1005862_1071969_1694681",
+          "name": "Exfoliating gloves",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/scent-theory-hand-sanitizer/1005862_7850115_1604259",
+          "name": "View details for A scent for every mood",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/1005862_1071969",
+          "name": "View details for Save on bath & body",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        }
+      ]
+    },
+    {
+      "category": "Health & Wellness",
+      "url": "https://www.walmart.com/browse/health-medicine/pm-pain-relief/976760_6972993_3135061",
+      "status": "reviewed",
+      "listing_sequence": 14,
+      "response_category_id": "976760_6972993_3135061",
+      "breadcrumb": [
+        {
+          "id": "976760",
+          "name": "Health and Medicine",
+          "url": "/cp/976760"
+        },
+        {
+          "id": "976760_6972993",
+          "name": "Pain management",
+          "url": "/browse/health-and-medicine/pain-management/976760_6972993"
+        },
+        {
+          "id": "976760_6972993_3135061",
+          "name": "PM pain relief",
+          "url": "/browse/pain-management/pm-pain-relief/976760_6972993_3135061"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 2,
+      "reported_count": 59,
+      "aggregated_count": 62,
+      "unique_listed_product_ids": 49,
+      "unique_eligible_product_ids": 49,
+      "listed_product_ids": [
+        "10307672",
+        "10416984",
+        "10416996",
+        "10534002807",
+        "12444539",
+        "12444646",
+        "13553353233",
+        "15115969976",
+        "15320672579",
+        "16088920608",
+        "16102968290",
+        "17325203",
+        "18545511080",
+        "18653923300",
+        "19466523339",
+        "19664767900",
+        "19879370827",
+        "20669700",
+        "20669704",
+        "207942317",
+        "273415088",
+        "27830618",
+        "35776262",
+        "36282317",
+        "380767248",
+        "382087883",
+        "39082185",
+        "39082186",
+        "39193263",
+        "40601489",
+        "410978987",
+        "423779467",
+        "469056902",
+        "486139839",
+        "500450218",
+        "512108714",
+        "5149558764",
+        "54061719",
+        "548787779",
+        "561463477",
+        "611242003",
+        "612844400",
+        "683149376",
+        "730528912",
+        "811159957",
+        "845053546",
+        "920367517",
+        "922217389",
+        "963752291"
+      ],
+      "eligible_product_ids": [
+        "10307672",
+        "10416984",
+        "10416996",
+        "10534002807",
+        "12444539",
+        "12444646",
+        "13553353233",
+        "15115969976",
+        "15320672579",
+        "16088920608",
+        "16102968290",
+        "17325203",
+        "18545511080",
+        "18653923300",
+        "19466523339",
+        "19664767900",
+        "19879370827",
+        "20669700",
+        "20669704",
+        "207942317",
+        "273415088",
+        "27830618",
+        "35776262",
+        "36282317",
+        "380767248",
+        "382087883",
+        "39082185",
+        "39082186",
+        "39193263",
+        "40601489",
+        "410978987",
+        "423779467",
+        "469056902",
+        "486139839",
+        "500450218",
+        "512108714",
+        "5149558764",
+        "54061719",
+        "548787779",
+        "561463477",
+        "611242003",
+        "612844400",
+        "683149376",
+        "730528912",
+        "811159957",
+        "845053546",
+        "920367517",
+        "922217389",
+        "963752291"
+      ],
+      "listing_rejections": {
+        "sponsored": 7,
+        "marketplace": 7
+      },
+      "candidate_count": 42,
+      "next_page": "https://www.walmart.com/browse/health-medicine/pm-pain-relief/976760_6972993_3135061?page=2",
+      "snapshot_sha256": "e340c2a73b62aef110b9f842735750dde85f75df513bd65f20c1ea6f8b110596",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/976760",
+          "name": "Health and Medicine",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-and-medicine/pain-management/976760_6972993",
+          "name": "Pain management",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pain-management/pm-pain-relief/976760_6972993_3135061",
+          "name": "PM pain relief",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/equate-sleep-aids/976760_9602210_7675032",
+          "name": "Equate sleep aids",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/zzzquil/976760_1005863_2780146_9312306",
+          "name": "ZzzQuil sleep aids",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/unisom/976760_1005863_2780146_5928096",
+          "name": "Unisom sleep aids",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/melatonin/976760_1005863_7476811",
+          "name": "Melatonin sleep supplements",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/magnesium/976760_1005863_6070710_5948405",
+          "name": "Magnesium sleep supplements",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/pm-pain-relief/976760_6972993_3135061",
+          "name": "PM pain relief",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/sleep-snoring-aids/976760_2449239",
+          "name": "Snoring aids & sleep masks",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-and-medicine/sleep-better/976760_9035881",
+          "name": "Shop all sleep aids",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-and-medicine/sleep-better/976760_9035881",
+          "name": "Sleep aids under $10",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-and-medicine/sleep-better/976760_9035881",
+          "name": "Get sleep aids fast",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/equate-sleep-aids/976760_9602210_7675032",
+          "name": "Equate sleep aids",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/zzzquil/976760_1005863_2780146_9312306",
+          "name": "ZzzQuil sleep aids",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/unisom/976760_1005863_2780146_5928096",
+          "name": "Unisom sleep aids",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/melatonin/976760_1005863_7476811",
+          "name": "Melatonin sleep supplements",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/magnesium/976760_1005863_6070710_5948405",
+          "name": "Magnesium sleep supplements",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/pm-pain-relief/976760_6972993_3135061",
+          "name": "PM pain relief",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/sleep-snoring-aids/976760_2449239",
+          "name": "Snoring aids & sleep masks",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-and-medicine/sleep-better/976760_9035881",
+          "name": "Shop all sleep aids",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-and-medicine/sleep-better/976760_9035881",
+          "name": "Sleep aids under $10",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-and-medicine/sleep-better/976760_9035881",
+          "name": "Get sleep aids fast",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/cp/fsa-hsa-store/6120851",
+          "name": "View details for Top FSA/HSA-eligible brands",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/heating-pads/976760_2000371",
+          "name": "View details for Wrap yourself in cozy comfort",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        }
+      ]
+    },
+    {
+      "category": "Office Supplies",
+      "url": "https://www.walmart.com/browse/office-supplies/one-line-a-day-journal/1229749_4922227_4770193",
+      "status": "reviewed",
+      "listing_sequence": 15,
+      "response_category_id": "1229749_4922227_4770193",
+      "breadcrumb": [
+        {
+          "id": "1229749",
+          "name": "Office Supplies",
+          "url": "/cp/1229749"
+        },
+        {
+          "id": "1229749_4922227",
+          "name": "Journals & Diaries",
+          "url": "/browse/office-supplies/journals-diaries/1229749_4922227"
+        },
+        {
+          "id": "1229749_4922227_4770193",
+          "name": "One Line A Day Journal",
+          "url": "/browse/journals-diaries/one-line-a-day-journal/1229749_4922227_4770193"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 1,
+      "reported_count": 10,
+      "aggregated_count": 0,
+      "unique_listed_product_ids": 10,
+      "unique_eligible_product_ids": 10,
+      "listed_product_ids": [
+        "1489599752",
+        "1584948762",
+        "17441860937",
+        "18884903728",
+        "18956365391",
+        "3105668932",
+        "431181852",
+        "5224790220",
+        "651982532",
+        "902433570"
+      ],
+      "eligible_product_ids": [
+        "1489599752",
+        "1584948762",
+        "17441860937",
+        "18884903728",
+        "18956365391",
+        "3105668932",
+        "431181852",
+        "5224790220",
+        "651982532",
+        "902433570"
+      ],
+      "listing_rejections": {
+        "outside_category": 5,
+        "marketplace": 2
+      },
+      "candidate_count": 3,
+      "next_page": null,
+      "snapshot_sha256": "1699fd187f75f8e129c2867f1b83fabc34cb48dc97a97ff30a45ed80cc8a1daa",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/1229749",
+          "name": "Office Supplies",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/journals-diaries/1229749_4922227",
+          "name": "Journals & Diaries",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/journals-diaries/one-line-a-day-journal/1229749_4922227_4770193",
+          "name": "One Line A Day Journal",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/daily-journals/1229749_4922227_1457342",
+          "name": "Daily Journals",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/leather-journals/1229749_4922227_2633427",
+          "name": "Leather Journals",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/locking-journals/1229749_4922227_9286603",
+          "name": "Locking Journals",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/writing-journals/1229749_4922227_5635035",
+          "name": "Writing Journals",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/premium-journals/1229749_4922227_8418699",
+          "name": "Premium Journals",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/bullet-journals/1229749_4922227_6519909",
+          "name": "Bullet Journals",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/padfolios/1229749_4922227_2715430",
+          "name": "Padfolios",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/password-journals/1229749_4922227_5468501",
+          "name": "Password Journals",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/journals-with-prompts/1229749_4922227_6728115",
+          "name": "Journals with Prompts",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/mens-journals/1229749_4922227_6712674",
+          "name": "Men's Journals",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/gratitude-journals/1229749_4922227_3362152",
+          "name": "Gratitude Journals",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/prayer-journals/1229749_4922227_8549522",
+          "name": "Prayer Journals",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/bible-journals/1229749_4922227_8673073",
+          "name": "Bible Journals",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/food-journals/1229749_4922227_3236670",
+          "name": "Food Journals",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/idea-journals/1229749_4922227_9816845",
+          "name": "Idea Journals",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/fitness-journals/1229749_4922227_7126892",
+          "name": "Fitness Journals",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/dotted-journals/1229749_4922227_8666917",
+          "name": "Dotted Journals",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/travel-journals/1229749_4922227_8803078",
+          "name": "Travel Journals",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/dream-journals/1229749_4922227_3798846",
+          "name": "Dream Journals",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/wellness-journal/1229749_4922227_5071265",
+          "name": "Wellness Journal",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        }
+      ]
+    },
+    {
+      "category": "Beauty",
+      "url": "https://www.walmart.com/browse/beauty/beauty-trend-skincare/1085666_7614150_5033997?page=2",
+      "status": "reviewed",
+      "listing_sequence": 16,
+      "response_category_id": "1085666_7614150_5033997",
+      "breadcrumb": [
+        {
+          "id": "1085666",
+          "name": "Beauty",
+          "url": "/cp/1085666"
+        },
+        {
+          "id": "1085666_7614150",
+          "name": "Beauty Trends",
+          "url": "/browse/beauty/beauty-trends/1085666_7614150"
+        },
+        {
+          "id": "1085666_7614150_5033997",
+          "name": "Beauty Trend: Skincare",
+          "url": "/browse/beauty-trends/beauty-trend-skincare/1085666_7614150_5033997"
+        }
+      ],
+      "page": 2,
+      "reported_last_page": 4,
+      "reported_count": 51,
+      "aggregated_count": 142,
+      "unique_listed_product_ids": 46,
+      "unique_eligible_product_ids": 40,
+      "listed_product_ids": [
+        "10283316616",
+        "10515364113",
+        "11150564530",
+        "11624870129",
+        "14122693",
+        "14712817894",
+        "150304632",
+        "15089066087",
+        "15128121920",
+        "15146363015",
+        "16234362016",
+        "16274860696",
+        "16336868119",
+        "16425718807",
+        "166197548",
+        "16970573987",
+        "17924267928",
+        "17963356303",
+        "17969910776",
+        "18045051092",
+        "18137509198",
+        "18173458244",
+        "18200304651",
+        "18323570823",
+        "18357512826",
+        "21062555",
+        "3072613118",
+        "30855287",
+        "376365298",
+        "442061947",
+        "46008166",
+        "46095599",
+        "5049344584",
+        "509909388",
+        "5161786479",
+        "5164703537",
+        "517163915",
+        "5200572074",
+        "5233217594",
+        "5487801892",
+        "586368008",
+        "588591863",
+        "589830108",
+        "613634573",
+        "725073812",
+        "932068"
+      ],
+      "eligible_product_ids": [
+        "10283316616",
+        "10515364113",
+        "11150564530",
+        "11624870129",
+        "14122693",
+        "14712817894",
+        "150304632",
+        "15089066087",
+        "15128121920",
+        "16234362016",
+        "16274860696",
+        "16336868119",
+        "16425718807",
+        "16970573987",
+        "17963356303",
+        "17969910776",
+        "18045051092",
+        "18173458244",
+        "18200304651",
+        "18323570823",
+        "18357512826",
+        "21062555",
+        "3072613118",
+        "376365298",
+        "442061947",
+        "46008166",
+        "46095599",
+        "5049344584",
+        "509909388",
+        "5161786479",
+        "5164703537",
+        "517163915",
+        "5200572074",
+        "5233217594",
+        "5487801892",
+        "586368008",
+        "589830108",
+        "613634573",
+        "725073812",
+        "932068"
+      ],
+      "listing_rejections": {
+        "sponsored": 12,
+        "outside_category": 5
+      },
+      "candidate_count": 33,
+      "next_page": "https://www.walmart.com/browse/beauty/beauty-trend-skincare/1085666_7614150_5033997?page=3",
+      "snapshot_sha256": "f1ae03b1bef6d0d82f2ba5882a63235ce55bfc628c2bc2fea8b9f1089f57c681",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/1085666",
+          "name": "Beauty",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/beauty/beauty-trends/1085666_7614150",
+          "name": "Beauty Trends",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/beauty-trends/beauty-trend-skincare/1085666_7614150_5033997",
+          "name": "Beauty Trend: Skincare",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/cp/1007039",
+          "name": "Skincare Shop",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/beauty/moisturizers/1085666_1007039_9837318",
+          "name": "Moisturizers",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/skin-care/facial-cleansers/1085666_1007039_1001503",
+          "name": "Cleansers & Exfoliants",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/skin-care/facial-serums/1085666_1007039_6013946",
+          "name": "Serums & Treatments",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/skin-care/eye-creams/1085666_1007039_8768767",
+          "name": "Eye Treatments",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/skin-care/face-masks/1085666_1007039_7620876",
+          "name": "Face Masks",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/cp/sunscreen/4046177",
+          "name": "Sunscreen",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/cp/premium-beauty/7924299",
+          "name": "Premium Beauty",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/cp/k-beauty/6521388",
+          "name": "K-Beauty",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/cp/1007039",
+          "name": "Skincare Shop",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/beauty/moisturizers/1085666_1007039_9837318",
+          "name": "Moisturizers",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/skin-care/facial-cleansers/1085666_1007039_1001503",
+          "name": "Cleansers & Exfoliants",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/skin-care/facial-serums/1085666_1007039_6013946",
+          "name": "Serums & Treatments",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/skin-care/eye-creams/1085666_1007039_8768767",
+          "name": "Eye Treatments",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/skin-care/face-masks/1085666_1007039_7620876",
+          "name": "Face Masks",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/cp/sunscreen/4046177",
+          "name": "Sunscreen",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/cp/premium-beauty/7924299",
+          "name": "Premium Beauty",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/cp/k-beauty/6521388",
+          "name": "K-Beauty",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        }
+      ]
+    },
+    {
+      "category": "Pets",
+      "url": "https://www.walmart.com/browse/pets/cat-flea-shampoos/5440_202073_3304805_9344430",
+      "status": "reviewed",
+      "listing_sequence": 17,
+      "response_category_id": "5440_202073_3304805_9344430",
+      "breadcrumb": [
+        {
+          "id": "5440",
+          "name": "Pets",
+          "url": "/cp/5440"
+        },
+        {
+          "id": "5440_202073",
+          "name": "Cats",
+          "url": "/browse/pets/cats/5440_202073"
+        },
+        {
+          "id": "5440_202073_3304805",
+          "name": "Cat Flea and Tick",
+          "url": "/browse/cats/cat-flea-and-tick/5440_202073_3304805"
+        },
+        {
+          "id": "5440_202073_3304805_9344430",
+          "name": "Cat Flea Shampoo",
+          "url": "/browse/cat-flea-and-tick/cat-flea-shampoo/5440_202073_3304805_9344430"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 1,
+      "reported_count": 16,
+      "aggregated_count": 6,
+      "unique_listed_product_ids": 15,
+      "unique_eligible_product_ids": 15,
+      "listed_product_ids": [
+        "14053412",
+        "1812496552",
+        "1929794777",
+        "19542059129",
+        "20288071864",
+        "20464163516",
+        "20677167506",
+        "24491756",
+        "24885624",
+        "43415651",
+        "458835777",
+        "491746931",
+        "50103682",
+        "5227511161",
+        "889512698"
+      ],
+      "eligible_product_ids": [
+        "14053412",
+        "1812496552",
+        "1929794777",
+        "19542059129",
+        "20288071864",
+        "20464163516",
+        "20677167506",
+        "24491756",
+        "24885624",
+        "43415651",
+        "458835777",
+        "491746931",
+        "50103682",
+        "5227511161",
+        "889512698"
+      ],
+      "listing_rejections": {
+        "sponsored": 1,
+        "marketplace": 6
+      },
+      "candidate_count": 9,
+      "next_page": null,
+      "snapshot_sha256": "f9665d623c7af763e6ef7053331c191efeb2f52af5aed28a14d8b78a1b0b4823",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/5440",
+          "name": "Pets",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/cats/5440_202073",
+          "name": "Cats",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/cats/cat-flea-and-tick/5440_202073_3304805",
+          "name": "Cat Flea and Tick",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/cat-flea-and-tick/cat-flea-shampoo/5440_202073_3304805_9344430",
+          "name": "Cat Flea Shampoo",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/cat-shampoo/5440_202073_9900738_5310803",
+          "name": "All Cat Shampoo",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/cats/cat-flea-and-tick-supplies/5440_202073_3304805",
+          "name": "All Cat Flea & Tick",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/cat-flea-combs/5440_202073_3304805_6964126",
+          "name": "Cat Flea Combs",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/cat-flea-pills/5440_202073_3304805_3993303",
+          "name": "Cat Flea Pills",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/cat-flea-collars/5440_202073_3304805_9055456",
+          "name": "Cat Flea Collars",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/cat-flea-tick-spot-treatments/5440_202073_3304805_7118188",
+          "name": "Cat Spot Treatment",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/cats/cat-health-wellbeing/5440_202073_2866753",
+          "name": "All Cat Health & Wellness",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/cat-shampoo/5440_202073_9900738_5310803",
+          "name": "All Cat Shampoo",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/cats/cat-flea-and-tick-supplies/5440_202073_3304805",
+          "name": "All Cat Flea & Tick",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/cat-flea-combs/5440_202073_3304805_6964126",
+          "name": "Cat Flea Combs",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/cat-flea-pills/5440_202073_3304805_3993303",
+          "name": "Cat Flea Pills",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/cat-flea-collars/5440_202073_3304805_9055456",
+          "name": "Cat Flea Collars",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/cat-flea-tick-spot-treatments/5440_202073_3304805_7118188",
+          "name": "Cat Spot Treatment",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/cats/cat-health-wellbeing/5440_202073_2866753",
+          "name": "All Cat Health & Wellness",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        }
+      ]
+    },
+    {
+      "category": "Household Essentials",
+      "url": "https://www.walmart.com/browse/household-essentials/carpet-stain-removers/1115193_1071966_1073104_8116517_4420684",
+      "status": "reviewed",
+      "listing_sequence": 18,
+      "response_category_id": "1115193_1071966_1073104_8116517_4420684",
+      "breadcrumb": [
+        {
+          "id": "1115193",
+          "name": "Household Essentials",
+          "url": "/cp/1115193"
+        },
+        {
+          "id": "1115193_1071966",
+          "name": "Cleaning Supplies",
+          "url": "/browse/household-essentials/cleaning-supplies/1115193_1071966"
+        },
+        {
+          "id": "1115193_1071966_1073104",
+          "name": "Floor Cleaners",
+          "url": "/browse/cleaning-supplies/floor-cleaners/1115193_1071966_1073104"
+        },
+        {
+          "id": "1115193_1071966_1073104_8116517",
+          "name": "Carpet Cleaning Solution",
+          "url": "/browse/floor-cleaners/carpet-cleaning-solution/1115193_1071966_1073104_8116517"
+        },
+        {
+          "id": "1115193_1071966_1073104_8116517_4420684",
+          "name": "Carpet Stain Removers",
+          "url": "/browse/carpet-cleaning-solution/carpet-stain-removers/1115193_1071966_1073104_8116517_4420684"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 1,
+      "reported_count": 30,
+      "aggregated_count": 18,
+      "unique_listed_product_ids": 22,
+      "unique_eligible_product_ids": 22,
+      "listed_product_ids": [
+        "11027231",
+        "11027240",
+        "12335095",
+        "137685943",
+        "145112657",
+        "14862978",
+        "14934806",
+        "15332400339",
+        "17283465",
+        "196046404",
+        "19675536",
+        "27419881",
+        "340126470",
+        "415308582",
+        "43830574",
+        "439424832",
+        "448678950",
+        "471516368",
+        "51984616",
+        "54410515",
+        "708357956",
+        "931875259"
+      ],
+      "eligible_product_ids": [
+        "11027231",
+        "11027240",
+        "12335095",
+        "137685943",
+        "145112657",
+        "14862978",
+        "14934806",
+        "15332400339",
+        "17283465",
+        "196046404",
+        "19675536",
+        "27419881",
+        "340126470",
+        "415308582",
+        "43830574",
+        "439424832",
+        "448678950",
+        "471516368",
+        "51984616",
+        "54410515",
+        "708357956",
+        "931875259"
+      ],
+      "listing_rejections": {
+        "sponsored": 6,
+        "outside_category": 5,
+        "marketplace": 3
+      },
+      "candidate_count": 14,
+      "next_page": null,
+      "snapshot_sha256": "2aa6df5de1e0f57ee3885fb7dce5c1767fb935b253db7b754955b38e6e57d1c4",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/1115193",
+          "name": "Household Essentials",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/cleaning-supplies/1115193_1071966",
+          "name": "Cleaning Supplies",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/cleaning-supplies/floor-cleaners/1115193_1071966_1073104",
+          "name": "Floor Cleaners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/floor-cleaners/carpet-cleaning-solution/1115193_1071966_1073104_8116517",
+          "name": "Carpet Cleaning Solution",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/carpet-cleaning-solution/carpet-stain-removers/1115193_1071966_1073104_8116517_4420684",
+          "name": "Carpet Stain Removers",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/carpet-stain-removers/1115193_1071966_1073104_8116517_4420684",
+          "name": "Carpet Stain Removers",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/pet-carpet-cleaners/1115193_1071966_1073104_8116517_1795377",
+          "name": "Pet Carpet Cleaners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/carpet-powder/1115193_1071966_1073104_8116517_2690021",
+          "name": "Carpet Powder",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/resolve-carpet-cleaner/1115193_1071966_1073104_8116517_4599908",
+          "name": "Resolve Carpet Cleaner",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/folex/1115193_1071966_1073104_8116517_8488558",
+          "name": "Folex",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/carpet-cleaning-solution/1115193_1071966_1073104_8116517",
+          "name": "Woolite Carpet Cleaners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/furniture-cleaners/1115193_1071966_4836020",
+          "name": "Furniture Cleaners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/carpet-cleaning-solution/1115193_1071966_1073104_8116517",
+          "name": "All Carpet Cleaning Solutions",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/floor-cleaners/1115193_1071966_1073104",
+          "name": "All Floor Cleaners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/home/carpet-cleaners/4044_90548_4047_133184",
+          "name": "Carpet Cleaners",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/carpet-stain-removers/1115193_1071966_1073104_8116517_4420684",
+          "name": "Carpet Stain Removers",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/pet-carpet-cleaners/1115193_1071966_1073104_8116517_1795377",
+          "name": "Pet Carpet Cleaners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/carpet-powder/1115193_1071966_1073104_8116517_2690021",
+          "name": "Carpet Powder",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/resolve-carpet-cleaner/1115193_1071966_1073104_8116517_4599908",
+          "name": "Resolve Carpet Cleaner",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/folex/1115193_1071966_1073104_8116517_8488558",
+          "name": "Folex",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/carpet-cleaning-solution/1115193_1071966_1073104_8116517",
+          "name": "Woolite Carpet Cleaners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/furniture-cleaners/1115193_1071966_4836020",
+          "name": "Furniture Cleaners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/carpet-cleaning-solution/1115193_1071966_1073104_8116517",
+          "name": "All Carpet Cleaning Solutions",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/floor-cleaners/1115193_1071966_1073104",
+          "name": "All Floor Cleaners",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/home/carpet-cleaners/4044_90548_4047_133184",
+          "name": "Carpet Cleaners",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/gain-grinchmas/1115193_8250903_1302612_5397101",
+          "name": "View details for The latest & more from Gain",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        }
+      ]
+    },
+    {
+      "category": "Personal Care",
+      "url": "https://www.walmart.com/browse/personal-care/irish-spring-bar-soap/1005862_1071969_9936161",
+      "status": "reviewed",
+      "listing_sequence": 19,
+      "response_category_id": "1005862_1071969_9936161",
+      "breadcrumb": [
+        {
+          "id": "1005862",
+          "name": "Personal Care",
+          "url": "/cp/1005862"
+        },
+        {
+          "id": "1005862_1071969",
+          "name": "Bath & Body",
+          "url": "/browse/personal-care/bath-body/1005862_1071969"
+        },
+        {
+          "id": "1005862_1071969_9936161",
+          "name": "Irish Spring Bar Soap",
+          "url": "/browse/bath-body/irish-spring-bar-soap/1005862_1071969_9936161"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 1,
+      "reported_count": 27,
+      "aggregated_count": 14,
+      "unique_listed_product_ids": 17,
+      "unique_eligible_product_ids": 17,
+      "listed_product_ids": [
+        "10312237",
+        "10312238",
+        "10312240",
+        "10312242",
+        "10312243",
+        "12443199",
+        "268661170",
+        "489815216",
+        "55134839",
+        "553884031",
+        "609527811",
+        "748888044",
+        "862469698",
+        "863186526",
+        "965335053",
+        "967120374",
+        "981868598"
+      ],
+      "eligible_product_ids": [
+        "10312237",
+        "10312238",
+        "10312240",
+        "10312242",
+        "10312243",
+        "12443199",
+        "268661170",
+        "489815216",
+        "55134839",
+        "553884031",
+        "609527811",
+        "748888044",
+        "862469698",
+        "863186526",
+        "965335053",
+        "967120374",
+        "981868598"
+      ],
+      "listing_rejections": {
+        "sponsored": 7,
+        "marketplace": 9
+      },
+      "candidate_count": 8,
+      "next_page": null,
+      "snapshot_sha256": "edf1da30f04ac48471c21d0293db1c1b3f64225b8b91d286343b38fa817c9c96",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/1005862",
+          "name": "Personal Care",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/bath-body/1005862_1071969",
+          "name": "Bath & Body",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/bath-body/irish-spring-bar-soap/1005862_1071969_9936161",
+          "name": "Irish Spring Bar Soap",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/hand-soap/1005862_1001719",
+          "name": "View details for Save on hand soap & more",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/shop-all-personal-care/1005862_2554774",
+          "name": "View details for Save on personal care",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        }
+      ]
+    },
+    {
+      "category": "Health & Wellness",
+      "url": "https://www.walmart.com/browse/health/sleep-snoring-aids/976760_2449239",
+      "status": "reviewed",
+      "listing_sequence": 20,
+      "response_category_id": "976760_2449239",
+      "breadcrumb": [
+        {
+          "id": "976760",
+          "name": "Health and Medicine",
+          "url": "/cp/976760"
+        },
+        {
+          "id": "976760_2449239",
+          "name": "Sleep & Snoring Aids",
+          "url": "/browse/health-and-medicine/sleep-snoring-aids/976760_2449239"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 1,
+      "reported_count": 32,
+      "aggregated_count": 20,
+      "unique_listed_product_ids": 24,
+      "unique_eligible_product_ids": 24,
+      "listed_product_ids": [
+        "10572506063",
+        "1154280061",
+        "13017206011",
+        "138100494",
+        "15402974560",
+        "15690109156",
+        "17244772085",
+        "18347402992",
+        "18768314052",
+        "19393672907",
+        "20313652627",
+        "20413401740",
+        "20438520833",
+        "20451367800",
+        "36817816",
+        "45734536",
+        "46068633",
+        "537343132",
+        "5417574938",
+        "5779765009",
+        "578009359",
+        "621086318",
+        "983382357",
+        "995610771"
+      ],
+      "eligible_product_ids": [
+        "10572506063",
+        "1154280061",
+        "13017206011",
+        "138100494",
+        "15402974560",
+        "15690109156",
+        "17244772085",
+        "18347402992",
+        "18768314052",
+        "19393672907",
+        "20313652627",
+        "20413401740",
+        "20438520833",
+        "20451367800",
+        "36817816",
+        "45734536",
+        "46068633",
+        "537343132",
+        "5417574938",
+        "5779765009",
+        "578009359",
+        "621086318",
+        "983382357",
+        "995610771"
+      ],
+      "listing_rejections": {
+        "sponsored": 6,
+        "outside_category": 1,
+        "marketplace": 10
+      },
+      "candidate_count": 13,
+      "next_page": null,
+      "snapshot_sha256": "5ec608bc3ef731515137041ab5ae1e8cd0d3e033094ce36d989e79c507d2e399",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/976760",
+          "name": "Health and Medicine",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-and-medicine/sleep-snoring-aids/976760_2449239",
+          "name": "Sleep & Snoring Aids",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/nasal-strips/976760_2449239_8323951",
+          "name": "Nasal Strips",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/mouth-tape/976760_2449239_7793627",
+          "name": "Mouth tape",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/sleep-snoring-aids/976760_2449239",
+          "name": "Nasal Spray",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/chin-strap/976760_2449239_5494890",
+          "name": "Chin Strap",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/sleep-masks/976760_2449239_2954371",
+          "name": "Sleep masks",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/sound-machines/976760_1005860_3788935",
+          "name": "Sound machines",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/sleep-support-supplements/976760_1005863_2780146",
+          "name": "Sleep Support Supplements",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/sleep-snoring-aids/976760_2449239",
+          "name": "All sleep solutions",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/nasal-strips/976760_2449239_8323951",
+          "name": "Nasal Strips",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/mouth-tape/976760_2449239_7793627",
+          "name": "Mouth tape",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/sleep-snoring-aids/976760_2449239",
+          "name": "Nasal Spray",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/chin-strap/976760_2449239_5494890",
+          "name": "Chin Strap",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/sleep-masks/976760_2449239_2954371",
+          "name": "Sleep masks",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/sound-machines/976760_1005860_3788935",
+          "name": "Sound machines",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/sleep-support-supplements/976760_1005863_2780146",
+          "name": "Sleep Support Supplements",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/sleep-snoring-aids/976760_2449239",
+          "name": "All sleep solutions",
+          "action": "skipped",
+          "reason": "not_descendant_of_current_category"
+        },
+        {
+          "url": "https://www.walmart.com/cp/fsa-hsa-store/6120851",
+          "name": "View details for Top FSA/HSA-eligible brands",
+          "action": "skipped",
+          "reason": "outside_required_category"
+        }
+      ]
+    }
+  ],
+  "offer_observations": [],
+  "limits": {
+    "product_requests": 10,
+    "listing_requests": 20,
+    "seconds": 1800,
+    "batch_bytes": 2147483648
+  },
+  "full_coverage_complete": false,
+  "queue_growth": {
+    "seed_already_known_page": 1304,
+    "discovery_new_page": 19,
+    "discovery_already_known_page": 23
+  },
+  "new_page_identities": 19,
+  "seconds": 432.54,
+  "counts": {
+    "product_requests": 0,
+    "listing_requests": 20,
+    "sequence": 20,
+    "body_bytes": 19296907
+  },
+  "queue_counts": {
+    "cross_link_excluded": 137,
+    "failed": 75,
+    "navigation_scope_unverified": 9,
+    "outside_scope": 1,
+    "pending": 2215,
+    "reviewed": 1515
+  },
+  "scope_counts": {
+    "brief_exclusion": 2,
+    "outside_required_ancestry": 2,
+    "parent_scope_unverified": 104,
+    "scope_confirmed_by_response": 10726,
+    "scope_unverified": 311,
+    "scoped_queue": 5587
+  },
+  "coverage_reconciliation": [
+    {
+      "category": "Beauty",
+      "leaf": "1085666_1007039_7620876",
+      "reported_count": 58,
+      "aggregated_count": 49,
+      "reported_pages": 2,
+      "reviewed_pages": 1,
+      "unique_listed_product_ids": 48,
+      "unique_eligible_product_ids": 48,
+      "complete": false
+    },
+    {
+      "category": "Beauty",
+      "leaf": "1085666_1007039_8768767",
+      "reported_count": 60,
+      "aggregated_count": 53,
+      "reported_pages": 2,
+      "reviewed_pages": 1,
+      "unique_listed_product_ids": 49,
+      "unique_eligible_product_ids": 49,
+      "complete": false
+    },
+    {
+      "category": "Beauty",
+      "leaf": "1085666_1007039_9837318",
+      "reported_count": 59,
+      "aggregated_count": 215,
+      "reported_pages": 6,
+      "reviewed_pages": 1,
+      "unique_listed_product_ids": 49,
+      "unique_eligible_product_ids": 0,
+      "complete": false
+    },
+    {
+      "category": "Beauty",
+      "leaf": "1085666_4820682_1307057_7779614",
+      "reported_count": 64,
+      "aggregated_count": 58,
+      "reported_pages": 2,
+      "reviewed_pages": 1,
+      "unique_listed_product_ids": 50,
+      "unique_eligible_product_ids": 0,
+      "complete": false
+    },
+    {
+      "category": "Beauty",
+      "leaf": "1085666_7614150_5033997",
+      "reported_count": 51,
+      "aggregated_count": 142,
+      "reported_pages": 4,
+      "reviewed_pages": 1,
+      "unique_listed_product_ids": 46,
+      "unique_eligible_product_ids": 40,
+      "complete": false
+    },
+    {
+      "category": "Beauty",
+      "leaf": "1085666_8097138_5764906",
+      "reported_count": 13,
+      "aggregated_count": 3,
+      "reported_pages": 1,
+      "reviewed_pages": 1,
+      "unique_listed_product_ids": 12,
+      "unique_eligible_product_ids": 0,
+      "complete": false
+    },
+    {
+      "category": "Health & Wellness",
+      "leaf": "976760_1005863_2780146_5928096",
+      "reported_count": 26,
+      "aggregated_count": 15,
+      "reported_pages": 1,
+      "reviewed_pages": 1,
+      "unique_listed_product_ids": 17,
+      "unique_eligible_product_ids": 17,
+      "complete": false
+    },
+    {
+      "category": "Health & Wellness",
+      "leaf": "976760_1005863_2780146_9312306",
+      "reported_count": 40,
+      "aggregated_count": 29,
+      "reported_pages": 1,
+      "reviewed_pages": 1,
+      "unique_listed_product_ids": 35,
+      "unique_eligible_product_ids": 0,
+      "complete": false
+    },
+    {
+      "category": "Health & Wellness",
+      "leaf": "976760_1005863_7476811",
+      "reported_count": 63,
+      "aggregated_count": 78,
+      "reported_pages": 2,
+      "reviewed_pages": 1,
+      "unique_listed_product_ids": 54,
+      "unique_eligible_product_ids": 49,
+      "complete": false
+    },
+    {
+      "category": "Health & Wellness",
+      "leaf": "976760_2449239",
+      "reported_count": 32,
+      "aggregated_count": 20,
+      "reported_pages": 1,
+      "reviewed_pages": 1,
+      "unique_listed_product_ids": 24,
+      "unique_eligible_product_ids": 24,
+      "complete": false
+    },
+    {
+      "category": "Health & Wellness",
+      "leaf": "976760_6972993_3135061",
+      "reported_count": 59,
+      "aggregated_count": 62,
+      "reported_pages": 2,
+      "reviewed_pages": 1,
+      "unique_listed_product_ids": 49,
+      "unique_eligible_product_ids": 49,
+      "complete": false
+    },
+    {
+      "category": "Health & Wellness",
+      "leaf": "976760_9035881",
+      "reported_count": 62,
+      "aggregated_count": 225,
+      "reported_pages": 6,
+      "reviewed_pages": 1,
+      "unique_listed_product_ids": 50,
+      "unique_eligible_product_ids": 0,
+      "complete": false
+    },
+    {
+      "category": "Health & Wellness",
+      "leaf": "976760_9602210_7675032",
+      "reported_count": 17,
+      "aggregated_count": 15,
+      "reported_pages": 1,
+      "reviewed_pages": 1,
+      "unique_listed_product_ids": 14,
+      "unique_eligible_product_ids": 0,
+      "complete": false
+    },
+    {
+      "category": "Household Essentials",
+      "leaf": "1115193_1025739_7032476",
+      "reported_count": 51,
+      "aggregated_count": 270,
+      "reported_pages": 7,
+      "reviewed_pages": 1,
+      "unique_listed_product_ids": 47,
+      "unique_eligible_product_ids": 40,
+      "complete": false
+    },
+    {
+      "category": "Household Essentials",
+      "leaf": "1115193_1025739_7032476_4761274",
+      "reported_count": 10,
+      "aggregated_count": 0,
+      "reported_pages": 1,
+      "reviewed_pages": 1,
+      "unique_listed_product_ids": 10,
+      "unique_eligible_product_ids": 0,
+      "complete": true
+    },
+    {
+      "category": "Household Essentials",
+      "leaf": "1115193_1025739_7032476_6601136",
+      "reported_count": 14,
+      "aggregated_count": 4,
+      "reported_pages": 1,
+      "reviewed_pages": 1,
+      "unique_listed_product_ids": 14,
+      "unique_eligible_product_ids": 0,
+      "complete": true
+    },
+    {
+      "category": "Household Essentials",
+      "leaf": "1115193_1025739_7032476_8012181",
+      "reported_count": 32,
+      "aggregated_count": 20,
+      "reported_pages": 1,
+      "reviewed_pages": 1,
+      "unique_listed_product_ids": 28,
+      "unique_eligible_product_ids": 28,
+      "complete": false
+    },
+    {
+      "category": "Household Essentials",
+      "leaf": "1115193_1025739_7032476_8100274",
+      "reported_count": 10,
+      "aggregated_count": 0,
+      "reported_pages": 1,
+      "reviewed_pages": 1,
+      "unique_listed_product_ids": 10,
+      "unique_eligible_product_ids": 10,
+      "complete": true
+    },
+    {
+      "category": "Household Essentials",
+      "leaf": "1115193_1025739_7032476_9218307",
+      "reported_count": 50,
+      "aggregated_count": 39,
+      "reported_pages": 1,
+      "reviewed_pages": 1,
+      "unique_listed_product_ids": 39,
+      "unique_eligible_product_ids": 0,
+      "complete": false
+    },
+    {
+      "category": "Household Essentials",
+      "leaf": "1115193_1071966_1073104_8116517_4420684",
+      "reported_count": 30,
+      "aggregated_count": 18,
+      "reported_pages": 1,
+      "reviewed_pages": 1,
+      "unique_listed_product_ids": 22,
+      "unique_eligible_product_ids": 22,
+      "complete": false
+    },
+    {
+      "category": "Office Supplies",
+      "leaf": "1229749_1431586",
+      "reported_count": 58,
+      "aggregated_count": 2056,
+      "reported_pages": 25,
+      "reviewed_pages": 1,
+      "unique_listed_product_ids": 57,
+      "unique_eligible_product_ids": 47,
+      "complete": false
+    },
+    {
+      "category": "Office Supplies",
+      "leaf": "1229749_2155104_6158083",
+      "reported_count": 10,
+      "aggregated_count": 0,
+      "reported_pages": 1,
+      "reviewed_pages": 1,
+      "unique_listed_product_ids": 10,
+      "unique_eligible_product_ids": 10,
+      "complete": true
+    },
+    {
+      "category": "Office Supplies",
+      "leaf": "1229749_4796182",
+      "reported_count": 47,
+      "aggregated_count": 188,
+      "reported_pages": 5,
+      "reviewed_pages": 1,
+      "unique_listed_product_ids": 43,
+      "unique_eligible_product_ids": 0,
+      "complete": false
+    },
+    {
+      "category": "Office Supplies",
+      "leaf": "1229749_4922227_4770193",
+      "reported_count": 10,
+      "aggregated_count": 0,
+      "reported_pages": 1,
+      "reviewed_pages": 1,
+      "unique_listed_product_ids": 10,
+      "unique_eligible_product_ids": 10,
+      "complete": true
+    },
+    {
+      "category": "Office Supplies",
+      "leaf": "1229749_9234438",
+      "reported_count": 55,
+      "aggregated_count": 364,
+      "reported_pages": 9,
+      "reviewed_pages": 1,
+      "unique_listed_product_ids": 45,
+      "unique_eligible_product_ids": 0,
+      "complete": false
+    },
+    {
+      "category": "Office Supplies",
+      "leaf": "1229749_9607197_4087395",
+      "reported_count": 14,
+      "aggregated_count": 4,
+      "reported_pages": 1,
+      "reviewed_pages": 1,
+      "unique_listed_product_ids": 13,
+      "unique_eligible_product_ids": 0,
+      "complete": false
+    },
+    {
+      "category": "Personal Care",
+      "leaf": "1005862_1007221_2709578_5756015_1225307",
+      "reported_count": 48,
+      "aggregated_count": 33,
+      "reported_pages": 1,
+      "reviewed_pages": 1,
+      "unique_listed_product_ids": 41,
+      "unique_eligible_product_ids": 41,
+      "complete": false
+    },
+    {
+      "category": "Personal Care",
+      "leaf": "1005862_1007221_2709578_5756015_7057335",
+      "reported_count": 17,
+      "aggregated_count": 56,
+      "reported_pages": 2,
+      "reviewed_pages": 1,
+      "unique_listed_product_ids": 7,
+      "unique_eligible_product_ids": 0,
+      "complete": false
+    },
+    {
+      "category": "Personal Care",
+      "leaf": "1005862_1071969_1694681",
+      "reported_count": 65,
+      "aggregated_count": 1082,
+      "reported_pages": 25,
+      "reviewed_pages": 1,
+      "unique_listed_product_ids": 57,
+      "unique_eligible_product_ids": 50,
+      "complete": false
+    },
+    {
+      "category": "Personal Care",
+      "leaf": "1005862_1071969_7745301_1776596",
+      "reported_count": 49,
+      "aggregated_count": 113,
+      "reported_pages": 3,
+      "reviewed_pages": 1,
+      "unique_listed_product_ids": 40,
+      "unique_eligible_product_ids": 0,
+      "complete": false
+    },
+    {
+      "category": "Personal Care",
+      "leaf": "1005862_1071969_7745301_5198592",
+      "reported_count": 62,
+      "aggregated_count": 50,
+      "reported_pages": 2,
+      "reviewed_pages": 1,
+      "unique_listed_product_ids": 50,
+      "unique_eligible_product_ids": 0,
+      "complete": false
+    },
+    {
+      "category": "Personal Care",
+      "leaf": "1005862_1071969_7745301_9631888",
+      "reported_count": 16,
+      "aggregated_count": 6,
+      "reported_pages": 1,
+      "reviewed_pages": 1,
+      "unique_listed_product_ids": 16,
+      "unique_eligible_product_ids": 0,
+      "complete": true
+    },
+    {
+      "category": "Personal Care",
+      "leaf": "1005862_1071969_9936161",
+      "reported_count": 27,
+      "aggregated_count": 14,
+      "reported_pages": 1,
+      "reviewed_pages": 1,
+      "unique_listed_product_ids": 17,
+      "unique_eligible_product_ids": 17,
+      "complete": false
+    },
+    {
+      "category": "Pets",
+      "leaf": "5440_202073_1014984_3348756",
+      "reported_count": 10,
+      "aggregated_count": 0,
+      "reported_pages": 1,
+      "reviewed_pages": 1,
+      "unique_listed_product_ids": 10,
+      "unique_eligible_product_ids": 0,
+      "complete": true
+    },
+    {
+      "category": "Pets",
+      "leaf": "5440_202073_1014984_5376587",
+      "reported_count": 10,
+      "aggregated_count": 0,
+      "reported_pages": 1,
+      "reviewed_pages": 1,
+      "unique_listed_product_ids": 10,
+      "unique_eligible_product_ids": 0,
+      "complete": true
+    },
+    {
+      "category": "Pets",
+      "leaf": "5440_202073_3304805_3993303",
+      "reported_count": 4,
+      "aggregated_count": 4,
+      "reported_pages": 1,
+      "reviewed_pages": 1,
+      "unique_listed_product_ids": 2,
+      "unique_eligible_product_ids": 0,
+      "complete": false
+    },
+    {
+      "category": "Pets",
+      "leaf": "5440_202073_3304805_7118188",
+      "reported_count": 21,
+      "aggregated_count": 10,
+      "reported_pages": 1,
+      "reviewed_pages": 1,
+      "unique_listed_product_ids": 18,
+      "unique_eligible_product_ids": 18,
+      "complete": false
+    },
+    {
+      "category": "Pets",
+      "leaf": "5440_202073_3304805_9055456",
+      "reported_count": 16,
+      "aggregated_count": 8,
+      "reported_pages": 1,
+      "reviewed_pages": 1,
+      "unique_listed_product_ids": 15,
+      "unique_eligible_product_ids": 15,
+      "complete": false
+    },
+    {
+      "category": "Pets",
+      "leaf": "5440_202073_3304805_9344430",
+      "reported_count": 16,
+      "aggregated_count": 6,
+      "reported_pages": 1,
+      "reviewed_pages": 1,
+      "unique_listed_product_ids": 15,
+      "unique_eligible_product_ids": 15,
+      "complete": false
+    },
+    {
+      "category": "Pets",
+      "leaf": "5440_5285960_7464990",
+      "reported_count": 40,
+      "aggregated_count": 29,
+      "reported_pages": 1,
+      "reviewed_pages": 1,
+      "unique_listed_product_ids": 35,
+      "unique_eligible_product_ids": 0,
+      "complete": false
+    }
+  ]
+}
