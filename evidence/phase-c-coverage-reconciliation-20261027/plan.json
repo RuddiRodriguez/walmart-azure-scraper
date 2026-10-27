@@ -32,5 +32,18 @@
     "failed_after": 75,
     "new_pages": 19,
     "finding": "Reported count measures placements and can include repeated sponsored or marketplace items; page completion therefore uses reconciled pagination while count differences remain visible"
+  },
+  "fixed_budget_result": {
+    "pages": 200,
+    "reviewed_before": 1515,
+    "reviewed_after": 1701,
+    "pending_before": 2215,
+    "pending_after": 2079,
+    "failed_before": 75,
+    "failed_after": 89,
+    "measured_leaves": 226,
+    "page_complete_leaves": 152,
+    "queue_growth_stop": false,
+    "full_coverage_complete": false
   }
 }
