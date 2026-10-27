@@ -1,8 +1,8 @@
 {
-  "phase": "walking",
+  "phase": "original_finite_work_budget_reached",
   "batches": 21,
   "pages_attempted": 1343,
-  "finished": false,
+  "finished": true,
   "max_seconds": 43200,
   "max_pages": 2000,
   "queue_counts": {
@@ -21,7 +21,7 @@
     "scoped_queue": 5934
   },
   "latest_batch": "batch-01417-1793068523",
-  "seconds": 43201.2,
+  "seconds": 43253.6,
   "deadline_unix": 1793068609.162635,
   "audit_started_unix": 1793039861.047031,
   "accounted_batches": [
@@ -38,5 +38,5 @@
     "batch-01377-1793067590",
     "batch-01417-1793068523"
   ],
-  "user_paused": true
+  "user_paused": false
 }
