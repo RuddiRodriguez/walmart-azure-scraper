@@ -15,7 +15,7 @@ from urllib.parse import urljoin, urlsplit, urlunsplit, parse_qsl, urlencode
 from bs4 import BeautifulSoup
 
 from browser import open_browser, select_store, navigate, verify_banner, fetch_product, canary_check, store_snapshot
-from extract import discover, listing_candidates, next_data, product_record
+from extract import discover, listing_candidates, listing_record, next_data, product_record
 from storage import connect, metadata, atomic_json, add_pages, save_page, save_product, records, page_url
 from validate import validate
 
@@ -139,6 +139,16 @@ def run(args):
             current_work = {'kind': 'product', 'id': key, 'url': candidate['url'], 'category': candidate['category']}
             log('product_started', **current_work)
             trace_context('before_product_' + key)
+            cached = retention.current_record(catalog, key)
+            row, reason = listing_record(candidate, cached, store, settings['private_labels'], logo)
+            if row is not None:
+                observed_utc = datetime.now(timezone.utc).isoformat()
+                state = retention.product_state(candidate, candidate['item'], store, True, reason)
+                row = retention.observe(catalog, key, row, state, run_id, observed_utc, True)
+                save_product(db, candidate, row, reason)
+                sample_counts[candidate['category']] += 1
+                log('product', id=key, accepted=True, reason=reason, category=candidate['category'], source='verified_listing_with_cached_details')
+                continue
             row = None
             reason = 'validation_error'
             source_data = {'candidate': candidate, 'reason': reason}
@@ -272,6 +282,8 @@ def run(args):
                 (output / 'sources' / source).write_text(str(soup))
                 candidates, rejected, search = listing_candidates(soup, category, store)
                 verified = verify_listing_store(search, store, require_context=bool(candidates))
+                for candidate in candidates:
+                    candidate['listing_store_verified'] = verified
                 log('listing_context', verified=verified, candidates=len(candidates),
                     reason='matching_store_pickup' if verified else 'no_candidates_context_unverified')
                 atomic_json(output / 'sources' / (source + '.listing.json'), {'category': category, 'url': url, 'rejected': rejected, 'candidate_ids': [c['item_id'] for c in candidates]})

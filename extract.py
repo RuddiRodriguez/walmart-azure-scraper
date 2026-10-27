@@ -209,6 +209,40 @@ def product_record(candidate, soup, store, private_labels, logo, retain_missing=
     return row, 'retained_unavailable' if unavailable else '', product
 
 
+def listing_record(candidate, cached, store, private_labels, logo):
+    """Refresh changing fields from a verified listing while reusing stable cached details."""
+    if not cached or not candidate.get('listing_store_verified'):
+        return None, 'product_detail_required'
+    item = candidate['item']
+    unavailable = item.get('availabilityStatus') in ['OUT_OF_STOCK', 'UNAVAILABLE']
+    has_pickup = candidate.get('local_pickup_at_listing', False) or pickup(item, store)
+    if not unavailable and not has_pickup:
+        return None, 'product_detail_required'
+    info = item.get('priceInfo') or {}
+    current = None if unavailable or not has_pickup else (info.get('currentPrice') or {}).get('price')
+    displayed = None if current is None else re.search(r'(?:Price Now|Price) \$(\d+(?:\.\d{1,2})?)', candidate['price_text'])
+    if current is not None and (not displayed or money(current) != money(displayed.group(1))):
+        return None, 'price_changed'
+    promos, unknown = promotion_fields({} if current is None else item)
+    if unknown:
+        return None, 'promotion_review_required'
+    was = None if current is None else re.search(r'Was \$(\d+(?:\.\d{1,2})?)', candidate['price_text'])
+    ppm = None if current is None else PPM.search(candidate['price_text'])
+    title = item.get('name') or cached['product_title']
+    weight = WEIGHT.search(title)
+    brand = item.get('brand') or ''
+    row = dict.fromkeys(FIELDS, '')
+    row.update(zipcode=store['zip'], store_name=store['name'], store_location=store['address'], store_logo=logo or cached['store_logo'],
+               store_brand=brand if brand in private_labels else cached['store_brand'], category=candidate['category'],
+               sub_category=(item.get('category') or {}).get('categoryPath', '').split('/')[-1],
+               product_title=title, weight=weight.group() if weight else cached['weight'],
+               regular_price=money(was.group(1) if was else current), sale_price=money(current) if was else '',
+               image_url=candidate['image_url'], url=candidate['url'], upc=cached['upc'],
+               ppm=ppm.group() if ppm else '', crawl_date=datetime.now(timezone.utc).isoformat())
+    row.update(promos)
+    return row, 'retained_unavailable' if unavailable else ('retained_no_pickup_offer' if not has_pickup else '')
+
+
 def category_id(url):
     path = urlsplit(url).path.rstrip('/').split('/')[-1]
     return path if re.fullmatch(r'\d+(?:_\d+)*', path) else ''

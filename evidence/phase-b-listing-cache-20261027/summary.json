@@ -1,0 +1,19 @@
+{
+  "mode": "Offline focused checks; no new retailer requests",
+  "completed": [
+    "Verified listing responses refresh current price, availability and directly scraped PPM",
+    "Cached product details provide UPC, weight and other stable fields on repeat runs",
+    "New or incomplete products still use product pages",
+    "Unavailable cached products remain retained with blank current price fields",
+    "Listing data is accepted only after Store 100 and PICKUP context verification"
+  ],
+  "checks": [
+    "Offline runner flow passed",
+    "Repeat run reused cached stable details without another product request",
+    "Wrong-store product retry behavior still passed",
+    "Historical unavailable observation remained unchanged"
+  ],
+  "open": [
+    "Bounded live repeat acceptance"
+  ]
+}

@@ -54,6 +54,11 @@ def known_assortment(db, key):
     return db.execute('SELECT 1 FROM observations WHERE product_id=? AND eligible=1 LIMIT 1', (key,)).fetchone() is not None
 
 
+def current_record(db, key):
+    row = db.execute('SELECT record FROM current_products WHERE product_id=?', (key,)).fetchone()
+    return json.loads(row[0]) if row and row[0] else None
+
+
 def observe(db, key, row, state, source, observed_utc, eligible):
     if datetime.fromisoformat(observed_utc).tzinfo is None:
         raise ValueError('Observation date requires timezone')

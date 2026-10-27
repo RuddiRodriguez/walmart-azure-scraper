@@ -91,6 +91,7 @@ def check():
             assert len(carried)==2 and next(r for r in carried if r['url'].endswith('9999942'))==retained
             next_report=json.loads((folder/'data/100'/next_pointer['report']).read_text())
             assert next_report['carried_observations']==1 and next_report['passed']
+            assert fetch.call_count == 1
         original_output = args.output
         args.output = str(folder / 'location-failure'); args.resume = False
         bad_data = copy.deepcopy(source['product']); bad_data['location']['intent'] = 'SHIPPING'
@@ -131,6 +132,7 @@ def check():
     result = {'mode': 'offline simulated navigation; captured product fixture; no live browser or network',
               'passed': True, 'checks': ['Two pages traversed', 'Repeated product ID deduplicated',
               'Complete valid full-mode result publishes atomically', 'Resume does not repeat committed product', 'Cross-mode resume rejected', 'Wrong location response saved and excluded', 'Freshly verified retry accepted independently', 'Context failure count retained without invalidating corrected record', 'Resume does not repeat corrected product', 'Diagnostic snapshot failure cannot hide rejected response', 'Placeholder and JavaScript next-page controls do not become URL loops', 'Real pagination URL and real loop targets preserved for validation', 'Explicit next-page metadata preserves functional filters', 'Unexpected page jumps rejected', 'Explicit wrong-store primary listing rejected', 'New full run carries unseen unavailable product without changing original date or prices']}
+    result['checks'].append('Repeat run reuses cached stable details without another product request')
     Path('evidence/runner-flow-check.json').write_text(json.dumps(result, indent=2) + '\n')
     print(json.dumps(result))
 

@@ -17,6 +17,7 @@
     "Explicit next-page metadata preserves functional filters",
     "Unexpected page jumps rejected",
     "Explicit wrong-store primary listing rejected",
-    "New full run carries unseen unavailable product without changing original date or prices"
+    "New full run carries unseen unavailable product without changing original date or prices",
+    "Repeat run reuses cached stable details without another product request"
   ]
 }
