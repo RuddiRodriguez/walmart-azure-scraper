@@ -1,0 +1,742 @@
+[
+  {
+    "id": "coverage-016",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 16,
+    "request": {
+      "url": "https://www.walmart.com/browse/beauty/maybelline-prime-set/1085666_3316357_4013810_1640742",
+      "attempt": 1,
+      "started_utc": "2026-10-27T10:02:30.875377+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/beauty/maybelline-prime-set/1085666_3316357_4013810_1640742",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 10:02:31 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T10:02:31.274549+00:00",
+      "elapsed_seconds": 0.399
+    },
+    "body_sha256": "2f41182b9711f7250733ab2ab978f282856efc8dbb57dcfbd36ad4986e1c4cf7",
+    "body_bytes": 650932,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-020",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 20,
+    "request": {
+      "url": "https://www.walmart.com/browse/health-medicine/astepro/976760_3771182_5803891",
+      "attempt": 1,
+      "started_utc": "2026-10-27T10:03:56.896178+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/health-medicine/astepro/976760_3771182_5803891",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 10:03:57 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T10:03:57.334461+00:00",
+      "elapsed_seconds": 0.438
+    },
+    "body_sha256": "8d8b484f3227d95206bfb3cb194a3f2027002b1dc66e481af0d4f4dd16b41a63",
+    "body_bytes": 589467,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-017",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 17,
+    "request": {
+      "url": "https://www.walmart.com/browse/personal-care/adult-wipes/1005862_1225655_4617231?page=2",
+      "attempt": 1,
+      "started_utc": "2026-10-27T10:03:00.741889+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/personal-care/adult-wipes/1005862_1225655_4617231?page=2",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 10:03:01 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T10:03:01.190398+00:00",
+      "elapsed_seconds": 0.449
+    },
+    "body_sha256": "5a0603e282a09cdec35e93551571e57a138074ad763798e7ed5aee7066821845",
+    "body_bytes": 1120171,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-001",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 1,
+    "request": {
+      "url": "https://www.walmart.com/browse/personal-care/partner-toys/1005862_1414629_4054919_8051829",
+      "attempt": 1,
+      "started_utc": "2026-10-27T09:57:36.510050+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/personal-care/partner-toys/1005862_1414629_4054919_8051829",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 09:57:37 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T09:57:37.264397+00:00",
+      "elapsed_seconds": 0.754
+    },
+    "body_sha256": "d888de620fb1da6e0b938179e40c40bc0d60906506b477865403da3aed9567c8",
+    "body_bytes": 530330,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-006",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 6,
+    "request": {
+      "url": "https://www.walmart.com/browse/personal-care/adult-toy-cleaners/1005862_1414629_4054919_5228657",
+      "attempt": 1,
+      "started_utc": "2026-10-27T09:59:01.696985+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/personal-care/adult-toy-cleaners/1005862_1414629_4054919_5228657",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 09:59:01 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T09:59:02.014190+00:00",
+      "elapsed_seconds": 0.317
+    },
+    "body_sha256": "8830381b0fd2d15cfb9ae6b775c8b6d63bfc56595626af20ccb2f7d3da28ee8a",
+    "body_bytes": 530225,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-010",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 10,
+    "request": {
+      "url": "https://www.walmart.com/browse/office-supplies/markers-and-highlighters/1229749_9081741",
+      "attempt": 1,
+      "started_utc": "2026-10-27T10:00:18.440988+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/office-supplies/markers/1229749_8843226_4078147",
+      "redirected": true,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 10:00:19 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T10:00:19.392329+00:00",
+      "elapsed_seconds": 0.951
+    },
+    "body_sha256": "7c402518a2d2dd41ed1411670f2bb6ba15218de79239a9d39b2adee7fe8137f2",
+    "body_bytes": 1077588,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-011",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 11,
+    "request": {
+      "url": "https://www.walmart.com/browse/personal-care/depend-fresh-essentials/1005862_1225655_1353025_3689478",
+      "attempt": 1,
+      "started_utc": "2026-10-27T10:00:36.561091+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/personal-care/depend-fresh-essentials/1005862_1225655_1353025_3689478",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 10:00:39 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T10:00:39.257335+00:00",
+      "elapsed_seconds": 2.696
+    },
+    "body_sha256": "95a27f55ab30b44dacf372f3c43d73898402ab8197a6d2cba740682079608980",
+    "body_bytes": 501863,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-007",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 7,
+    "request": {
+      "url": "https://www.walmart.com/browse/pets/cat-cave-beds-hideaways-tents/5440_202073_1648217_7084157",
+      "attempt": 1,
+      "started_utc": "2026-10-27T09:59:19.810691+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/pets/cat-cave-beds-hideaways-tents/5440_202073_1648217_7084157",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 09:59:20 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T09:59:20.106068+00:00",
+      "elapsed_seconds": 0.295
+    },
+    "body_sha256": "6c86fea080b4c99018718910d94e5499c154a373067799f97981ffa6d7d8e9b3",
+    "body_bytes": 620240,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-008",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 8,
+    "request": {
+      "url": "https://www.walmart.com/browse/household-essentials/car-air-freshener-bombs/1115193_1025739_7032476_6078599",
+      "attempt": 1,
+      "started_utc": "2026-10-27T09:59:36.346611+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/household-essentials/car-air-freshener-bombs/1115193_1025739_7032476_6078599",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 09:59:36 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T09:59:36.887621+00:00",
+      "elapsed_seconds": 0.541
+    },
+    "body_sha256": "ddc5acde3ac16c2f07491c3efceaf587f985a95fd38bb65dfcbb6243caefaddb",
+    "body_bytes": 645927,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-012",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 12,
+    "request": {
+      "url": "https://www.walmart.com/browse/pets/outdoor-cat-beds/5440_202073_1648217_3810604",
+      "attempt": 1,
+      "started_utc": "2026-10-27T10:00:56.549823+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/pets/outdoor-cat-beds/5440_202073_1648217_3810604",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 10:00:57 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T10:00:57.089722+00:00",
+      "elapsed_seconds": 0.54
+    },
+    "body_sha256": "baedacb08244e0b2e2af777b56a440a47236e8b151cdefb16e1735ad5364476f",
+    "body_bytes": 531118,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-004",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 4,
+    "request": {
+      "url": "https://www.walmart.com/browse/health/zicam-cough-cold-flu/976760_4661388_6244277_4260291",
+      "attempt": 1,
+      "started_utc": "2026-10-27T09:58:27.450433+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/health/zicam-cough-cold-flu/976760_4661388_6244277_4260291",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 09:58:27 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T09:58:27.982083+00:00",
+      "elapsed_seconds": 0.532
+    },
+    "body_sha256": "40b18058616edb1ff8f2134b87a4c2a2ed80a4338523285676ba7bb6a68d0798",
+    "body_bytes": 605893,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-005",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 5,
+    "request": {
+      "url": "https://www.walmart.com/browse/office-supplies/manual-staplers/1229749_1966854_5387606",
+      "attempt": 1,
+      "started_utc": "2026-10-27T09:58:44.045054+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/office-supplies/manual-staplers/1229749_1966854_5387606",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 09:58:44 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T09:58:44.389890+00:00",
+      "elapsed_seconds": 0.345
+    },
+    "body_sha256": "baba6342930075d48af03a9c8ef49295c6c66d513f0cb9bbd3915c125b94d64c",
+    "body_bytes": 790595,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-013",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 13,
+    "request": {
+      "url": "https://www.walmart.com/browse/household-essentials/car-diffusers/1115193_1025739_7032476_3398845",
+      "attempt": 1,
+      "started_utc": "2026-10-27T10:01:15.727506+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/household-essentials/car-diffusers/1115193_1025739_7032476_3398845",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 10:01:15 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T10:01:16.224393+00:00",
+      "elapsed_seconds": 0.497
+    },
+    "body_sha256": "77eaf69625405f8ef31f2ea9b85698765b3cecd4bb3f5637c4bfed056053261d",
+    "body_bytes": 988120,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-009",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 9,
+    "request": {
+      "url": "https://www.walmart.com/browse/health-medicine/immunity-support-supplements/976760_1005863_8975469?page=2",
+      "attempt": 1,
+      "started_utc": "2026-10-27T09:59:57.151841+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/health-medicine/immunity-support-supplements/976760_1005863_8975469?page=2",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 09:59:57 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T09:59:57.501048+00:00",
+      "elapsed_seconds": 0.349
+    },
+    "body_sha256": "397c8a46af4f77d97fde4e148a5e5bf326213cc6b4a1258036b137391a271084",
+    "body_bytes": 1231873,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-014",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 14,
+    "request": {
+      "url": "https://www.walmart.com/browse/health/equate-allergy/976760_3771182_6913844",
+      "attempt": 1,
+      "started_utc": "2026-10-27T10:01:36.832998+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/health/equate-allergy/976760_3771182_6913844",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 10:01:40 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T10:01:40.629098+00:00",
+      "elapsed_seconds": 3.796
+    },
+    "body_sha256": "404f0b8e2865ee4039bd30bf60c859b03cd97fe947a543f2d63908f1704992bd",
+    "body_bytes": 1065496,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-002",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 2,
+    "request": {
+      "url": "https://www.walmart.com/browse/pets/heated-cat-beds/5440_202073_1648217_8724977",
+      "attempt": 1,
+      "started_utc": "2026-10-27T09:57:54.816221+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/pets/heated-cat-beds/5440_202073_1648217_8724977",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 09:57:55 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T09:57:55.305639+00:00",
+      "elapsed_seconds": 0.489
+    },
+    "body_sha256": "47592b27ec66fde8792e1868e20addc3c54956eaaa392b1bcc5796365c4e8fe1",
+    "body_bytes": 516671,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-018",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 18,
+    "request": {
+      "url": "https://www.walmart.com/browse/pets/window-cat-beds/5440_202073_1648217_6852671",
+      "attempt": 1,
+      "started_utc": "2026-10-27T10:03:17.151307+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/pets/window-cat-beds/5440_202073_1648217_6852671",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 10:03:17 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T10:03:17.533019+00:00",
+      "elapsed_seconds": 0.382
+    },
+    "body_sha256": "95a39fa7337cd9a3586fb832ce2b1350a6319e998d766bf5acef3382c939386f",
+    "body_bytes": 546091,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-019",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 19,
+    "request": {
+      "url": "https://www.walmart.com/browse/household-essentials/car-vent-freshener/1115193_1025739_7032476_7150063",
+      "attempt": 1,
+      "started_utc": "2026-10-27T10:03:37.442803+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/household-essentials/car-vent-freshener/1115193_1025739_7032476_7150063",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 10:03:38 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T10:03:38.374599+00:00",
+      "elapsed_seconds": 0.932
+    },
+    "body_sha256": "caf2aca919564d244a1df0c2a9b81fc201c958f7b2e0b3f66eb958e4e4fe10c4",
+    "body_bytes": 1280159,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-003",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 3,
+    "request": {
+      "url": "https://www.walmart.com/browse/household-essentials/car-air-fresheners-by-scent/1115193_1025739_7032476_5913704",
+      "attempt": 1,
+      "started_utc": "2026-10-27T09:58:12.230206+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/household-essentials/car-air-fresheners-by-scent/1115193_1025739_7032476_5913704",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 09:58:12 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T09:58:12.783625+00:00",
+      "elapsed_seconds": 0.553
+    },
+    "body_sha256": "36558e33849253816ea829e1f0a23af6bdeca51e44d554e2003501b291f87a7d",
+    "body_bytes": 1356914,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-015",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 15,
+    "request": {
+      "url": "https://www.walmart.com/browse/office-supplies/markers/1229749_9081741_4078147",
+      "attempt": 1,
+      "started_utc": "2026-10-27T10:02:02.249718+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/office-supplies/markers/1229749_8843226_4078147",
+      "redirected": true,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 10:02:02 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T10:02:03.011858+00:00",
+      "elapsed_seconds": 0.762
+    },
+    "body_sha256": "7c402518a2d2dd41ed1411670f2bb6ba15218de79239a9d39b2adee7fe8137f2",
+    "body_bytes": 1077588,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  }
+]
