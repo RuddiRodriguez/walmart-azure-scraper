@@ -219,9 +219,14 @@ def listing_record(candidate, cached, store, private_labels, logo):
     if not unavailable and not has_pickup:
         return None, 'product_detail_required'
     info = item.get('priceInfo') or {}
-    current = None if unavailable or not has_pickup else (info.get('currentPrice') or {}).get('price')
-    displayed = None if current is None else re.search(r'(?:Price Now|Price) \$(\d+(?:\.\d{1,2})?)', candidate['price_text'])
-    if current is not None and (not displayed or money(current) != money(displayed.group(1))):
+    displayed = None if unavailable or not has_pickup else re.search(r'(?:Price Now|Price) \$(\d+(?:\.\d{1,2})?)', candidate['price_text'])
+    lines = (info.get('priceDetails') or {}).get('priceLines') or []
+    structured = next((value.get('value') for line in lines if line.get('lineType') == 'CURRENT_PRICE'
+                       for value in line.get('values') or [] if value.get('key') == 'PRICE'), None)
+    current = displayed.group(1) if displayed else None
+    if current is not None and structured is not None and money(current) != money(structured):
+        return None, 'price_changed'
+    if not unavailable and has_pickup and current is None:
         return None, 'price_changed'
     promos, unknown = promotion_fields({} if current is None else item)
     if unknown:

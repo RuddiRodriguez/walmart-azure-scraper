@@ -13,6 +13,11 @@
     "Wrong-store product retry behavior still passed",
     "Historical unavailable observation remained unchanged"
   ],
+  "live_findings": [
+    "First bounded repeat used zero product-page requests and reused all 11 cached products",
+    "First bounded repeat exposed blank listing prices because Walmart supplied priceDetails instead of currentPrice",
+    "Parser now verifies visible listing price against priceDetails when available"
+  ],
   "open": [
     "Bounded live repeat acceptance"
   ]
