@@ -20,7 +20,7 @@ from capture_store_drift import listing_from_rendered
 from diagnostic_capture import make_capture, safe_url
 from extract import category_id, discover, next_data, pickup, product_record
 from scrape import next_page_url, verify_listing_store
-from storage import atomic_json, page_url
+from storage import atomic_json, page_url, product_url
 from trace_store_context import product_context
 from validate import validate
 
@@ -159,7 +159,7 @@ def run(output, plan, resume=False):
 
     def observe(candidate, listing_sequence):
         page = capture_product_navigation(
-            sb, candidate['url'], settings, log,
+            sb, product_url(candidate['url']), settings, log,
             make_capture(output / 'captures', 'collection', state))
         try:
             data = next_data(page)

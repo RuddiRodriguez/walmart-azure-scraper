@@ -4,6 +4,7 @@
   "checks": [
     "Tracking and fragment aliases collapse",
     "Pagination, filters and blank parameters retained",
+    "Product URL keeps identity and functional context without tracking",
     "Normalization is idempotent",
     "Queue deduplicates within each category without merging categories"
   ],

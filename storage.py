@@ -51,6 +51,15 @@ def page_url(url):
     return urlunsplit((parts.scheme, parts.netloc, parts.path, urlencode(query), ''))
 
 
+def product_url(url):
+    """Keep product identity and functional context; drop ad and navigation tracking."""
+    parts = urlsplit(url)
+    allowed = ['fulfillmentIntent', 'classType']
+    query = [(key, value) for key, value in parse_qsl(parts.query, keep_blank_values=True)
+             if key in allowed]
+    return urlunsplit((parts.scheme, parts.netloc, parts.path, urlencode(query), ''))
+
+
 def add_pages(db, category, urls):
     db.executemany('INSERT OR IGNORE INTO pages(category,url) VALUES (?,?)', [(category, page_url(u)) for u in urls])
 

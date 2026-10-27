@@ -3,7 +3,7 @@ import json
 import tempfile
 from pathlib import Path
 from urllib.parse import parse_qs, urlsplit
-from storage import connect, add_pages, page_url
+from storage import connect, add_pages, page_url, product_url
 
 
 def check():
@@ -14,6 +14,10 @@ def check():
     canonical = page_url(next_page)
     assert parse_qs(urlsplit(canonical).query, keep_blank_values=True) == {'page': ['2'], 'facet': ['brand:Example'], 'empty': ['']}
     assert canonical != base and page_url(canonical) == canonical
+    product = ('https://www.walmart.com/ip/Example/123?fulfillmentIntent=Pickup'
+               '&filters=pickup&classType=VARIANT&athbdg=L1600&povid=tracking#top')
+    assert product_url(product) == ('https://www.walmart.com/ip/Example/123'
+                                    '?fulfillmentIntent=Pickup&classType=VARIANT')
     with tempfile.TemporaryDirectory() as folder:
         db = connect(Path(folder) / 'checkpoint.sqlite')
         with db:
@@ -28,6 +32,7 @@ def check():
     after = {(r['category'], page_url(r['url'])) for r in historical}
     result = {'mode': 'offline synthetic regressions and saved queue analysis; no fresh collection', 'passed': True,
               'checks': ['Tracking and fragment aliases collapse', 'Pagination, filters and blank parameters retained',
+                         'Product URL keeps identity and functional context without tracking',
                          'Normalization is idempotent', 'Queue deduplicates within each category without merging categories'],
               'historical_queue_entries': len(before), 'normalized_entries': len(after), 'redundant_entries': len(before)-len(after)}
     Path('evidence/page-url-checks.json').write_text(json.dumps(result, indent=2) + '\n')
