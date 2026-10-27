@@ -1,0 +1,742 @@
+[
+  {
+    "id": "coverage-016",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 16,
+    "request": {
+      "url": "https://www.walmart.com/browse/pets/catnip-cat-toys/5440_202073_2584809_7006527",
+      "attempt": 1,
+      "started_utc": "2026-10-27T14:06:46.647572+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/pets/catnip-cat-toys/5440_202073_2584809_7006527",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 14:06:46 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T14:06:47.011069+00:00",
+      "elapsed_seconds": 0.363
+    },
+    "body_sha256": "042fda9aa74aec63538676bc14139859a5e01d662c4ee4e3dbeeea9259e7cf11",
+    "body_bytes": 1105215,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-020",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 20,
+    "request": {
+      "url": "https://www.walmart.com/browse/health/clear-care/976760_9575239_2739230",
+      "attempt": 1,
+      "started_utc": "2026-10-27T14:07:59.242651+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/health/clear-care/976760_9575239_2739230",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 14:07:59 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T14:07:59.595773+00:00",
+      "elapsed_seconds": 0.353
+    },
+    "body_sha256": "a1afc720410e6ebaa5d3edeb47717d3f72f8345877ecf5dd9037346a483be03b",
+    "body_bytes": 587226,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-017",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 17,
+    "request": {
+      "url": "https://www.walmart.com/browse/beauty/cologne-gift-sets/1085666_133225_164223_1981411",
+      "attempt": 1,
+      "started_utc": "2026-10-27T14:07:02.981948+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/beauty/cologne-gift-sets/1085666_133225_164223_1981411",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 14:07:03 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T14:07:03.171376+00:00",
+      "elapsed_seconds": 0.189
+    },
+    "body_sha256": "ca8150d6ec9a78ba7fca8dd4a887311734c8cbf52de7c3c7551259ca46772177",
+    "body_bytes": 765256,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-001",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 1,
+    "request": {
+      "url": "https://www.walmart.com/browse/household-essentials/buckets/1115193_1071966_1025741_4870864",
+      "attempt": 1,
+      "started_utc": "2026-10-27T14:02:06.299045+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/household-essentials/buckets/1115193_1071966_1025741_4870864",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 14:02:08 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T14:02:08.186568+00:00",
+      "elapsed_seconds": 1.887
+    },
+    "body_sha256": "ec38aa00cb01c56cc9b487897d4c8a3332075c23e3e7ff2f4988dacc0c829e4b",
+    "body_bytes": 808387,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-006",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 6,
+    "request": {
+      "url": "https://www.walmart.com/browse/personal-care/jergens-body-lotions-creams/1005862_1071969_4376074",
+      "attempt": 1,
+      "started_utc": "2026-10-27T14:03:45.541983+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/personal-care/jergens-body-lotions-creams/1005862_1071969_4376074",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 14:03:45 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T14:03:45.936763+00:00",
+      "elapsed_seconds": 0.395
+    },
+    "body_sha256": "d251c18a7027e952b2c3e296bed86557c0dd1d8ebdb27e1f5c7138892749e6df",
+    "body_bytes": 1053013,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-010",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 10,
+    "request": {
+      "url": "https://www.walmart.com/browse/pets/cat-grass/5440_202073_2584809_3260719",
+      "attempt": 1,
+      "started_utc": "2026-10-27T14:04:56.080275+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/pets/cat-grass/5440_202073_2584809_3260719",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 14:04:56 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T14:04:56.308609+00:00",
+      "elapsed_seconds": 0.228
+    },
+    "body_sha256": "3911133c9d3bc6e966f470ab7e60d18a7bc22eb4bde8dd7d6f8d5e07dd153523",
+    "body_bytes": 561572,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-011",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 11,
+    "request": {
+      "url": "https://www.walmart.com/browse/beauty/cerave/1085666_3316357_9663742?page=2",
+      "attempt": 1,
+      "started_utc": "2026-10-27T14:05:15.126408+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/beauty/cerave/1085666_3316357_9663742?page=2",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 14:05:15 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T14:05:15.565275+00:00",
+      "elapsed_seconds": 0.439
+    },
+    "body_sha256": "199b48712e0581095ec3c94fd6b7c70cf134a14285cba7d1a6b3004b7b1da6d4",
+    "body_bytes": 1161827,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-007",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 7,
+    "request": {
+      "url": "https://www.walmart.com/browse/household-essentials/spray-bottles/1115193_1071966_1025741_8366049",
+      "attempt": 1,
+      "started_utc": "2026-10-27T14:04:03.196182+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/household-essentials/spray-bottles/1115193_1071966_1025741_8366049",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 14:04:03 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T14:04:04.026152+00:00",
+      "elapsed_seconds": 0.83
+    },
+    "body_sha256": "330d15c7964f000e33ac9875c00556f27ebb1cf3c1c907e30528cd4de648361d",
+    "body_bytes": 918009,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-008",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 8,
+    "request": {
+      "url": "https://www.walmart.com/browse/health/contact-lens-rewetting-drops/976760_9575239_8850435",
+      "attempt": 1,
+      "started_utc": "2026-10-27T14:04:24.459820+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/health/contact-lens-rewetting-drops/976760_9575239_8850435",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 14:04:24 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T14:04:24.879175+00:00",
+      "elapsed_seconds": 0.419
+    },
+    "body_sha256": "f9a6874682c1e9f42e64eb5018475a58b3be658540970b6b06390a8b98b6b0f8",
+    "body_bytes": 680218,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-012",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 12,
+    "request": {
+      "url": "https://www.walmart.com/browse/personal-care/nivea-body-lotions-creams/1005862_1071969_9679778",
+      "attempt": 1,
+      "started_utc": "2026-10-27T14:05:31.911040+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/personal-care/nivea-body-lotions-creams/1005862_1071969_9679778",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 14:05:32 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T14:05:32.195074+00:00",
+      "elapsed_seconds": 0.284
+    },
+    "body_sha256": "5a1cf891d401dc765c91244f45b99d0a2c59276221a9f400d43455b80845ddfc",
+    "body_bytes": 966393,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-004",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 4,
+    "request": {
+      "url": "https://www.walmart.com/browse/pets/interactive-cat-toys/5440_202073_2584809_4656364",
+      "attempt": 1,
+      "started_utc": "2026-10-27T14:03:01.243357+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/pets/interactive-cat-toys/5440_202073_2584809_4656364",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 14:03:01 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T14:03:01.708450+00:00",
+      "elapsed_seconds": 0.465
+    },
+    "body_sha256": "55b00fc54977a1971d9a752851ea597844402d4b7af0305149b0f8c33b875412",
+    "body_bytes": 902471,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-005",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 5,
+    "request": {
+      "url": "https://www.walmart.com/browse/beauty/bath-body/1085666_5589682",
+      "attempt": 1,
+      "started_utc": "2026-10-27T14:03:24.800926+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/beauty/bath-body/1085666_5589682",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 14:03:24 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T14:03:25.140462+00:00",
+      "elapsed_seconds": 0.34
+    },
+    "body_sha256": "2eea83c920c1d5acd5267268ccf40416150e58b0c442b79be75b5cab4c2f97a3",
+    "body_bytes": 1329000,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-013",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 13,
+    "request": {
+      "url": "https://www.walmart.com/browse/household-essentials/squeegees/1115193_1071966_1025741_3583755",
+      "attempt": 1,
+      "started_utc": "2026-10-27T14:05:53.263446+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/household-essentials/squeegees/1115193_1071966_1025741_3583755",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 14:05:53 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T14:05:53.620017+00:00",
+      "elapsed_seconds": 0.357
+    },
+    "body_sha256": "557097e4eb2b531bbf17297dd6a004a4c98d98d13b091049b94785e3d6086991",
+    "body_bytes": 678623,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-009",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 9,
+    "request": {
+      "url": "https://www.walmart.com/browse/office-supplies/pencil-pouches/1229749_8665030_8299765",
+      "attempt": 1,
+      "started_utc": "2026-10-27T14:04:40.338026+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/office-supplies/pencil-pouches/1229749_8665030_8299765",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 14:04:40 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T14:04:40.727343+00:00",
+      "elapsed_seconds": 0.389
+    },
+    "body_sha256": "14bf1db421e9731eea69cc83c8a82d33e3104bf321cbad8c4a05e72586707d54",
+    "body_bytes": 932082,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-014",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 14,
+    "request": {
+      "url": "https://www.walmart.com/browse/health/hard-contact-solution/976760_9575239_8955358",
+      "attempt": 1,
+      "started_utc": "2026-10-27T14:06:10.725376+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/health/hard-contact-solution/976760_9575239_8955358",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 14:06:11 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T14:06:11.329369+00:00",
+      "elapsed_seconds": 0.604
+    },
+    "body_sha256": "ccb0fde33abaf7a208b7886d15b9a3b0d929241f6c2827774df6662ed3c71de6",
+    "body_bytes": 724513,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-002",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 2,
+    "request": {
+      "url": "https://www.walmart.com/browse/health/childrens-cough-cold-and-flu-medicine/976760_4661388_6244277_9662516?page=2",
+      "attempt": 1,
+      "started_utc": "2026-10-27T14:02:25.611183+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/health/childrens-cough-cold-and-flu-medicine/976760_4661388_6244277_9662516?page=2",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 14:02:25 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T14:02:26.008719+00:00",
+      "elapsed_seconds": 0.398
+    },
+    "body_sha256": "e53a39526d41b36ef204acdfd90bdcd34ebf6fb0b0657f8fdb9a2ff5c363e7cb",
+    "body_bytes": 1209314,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-018",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 18,
+    "request": {
+      "url": "https://www.walmart.com/browse/personal-care/olay-body-lotions-creams/1005862_1071969_1744700",
+      "attempt": 1,
+      "started_utc": "2026-10-27T14:07:25.044922+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/personal-care/olay-body-lotions-creams/1005862_1071969_1744700",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 14:07:25 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T14:07:25.459896+00:00",
+      "elapsed_seconds": 0.415
+    },
+    "body_sha256": "d94820c99eb267f02987434707c8e9bedb7c73143c2e1568435d7c4be20cebe2",
+    "body_bytes": 724705,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-019",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 19,
+    "request": {
+      "url": "https://www.walmart.com/browse/household-essentials/toilet-plungers/1115193_1071966_1025741_6498065",
+      "attempt": 1,
+      "started_utc": "2026-10-27T14:07:41.647692+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/household-essentials/toilet-plungers/1115193_1071966_1025741_6498065",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 14:07:41 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T14:07:41.957767+00:00",
+      "elapsed_seconds": 0.31
+    },
+    "body_sha256": "add548926d829a795cd584fb2dbd70c89dfa9911334445f1ec9ff2ce8f682171",
+    "body_bytes": 815219,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-003",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 3,
+    "request": {
+      "url": "https://www.walmart.com/browse/office-supplies/pencil-holders-and-pencil-cups/1229749_7431192_2253956",
+      "attempt": 1,
+      "started_utc": "2026-10-27T14:02:44.050634+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/office-supplies/pencil-holders-and-pencil-cups/1229749_7431192_2253956",
+      "redirected": false,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 14:02:44 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T14:02:44.468553+00:00",
+      "elapsed_seconds": 0.418
+    },
+    "body_sha256": "19750adff48021f041a8ccfe6e410eccbc634338f2213c20e4cab311fc06dccc",
+    "body_bytes": 802549,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-015",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 15,
+    "request": {
+      "url": "https://www.walmart.com/browse/office-supplies/pencil-sharpeners/1229749_9412206_8738834",
+      "attempt": 1,
+      "started_utc": "2026-10-27T14:06:27.735787+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/office-supplies/pencil-sharpeners/1229749_8843226_8738834",
+      "redirected": true,
+      "headers": {
+        "date": "Tue, 27 Oct 2026 14:06:28 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-27T14:06:28.295450+00:00",
+      "elapsed_seconds": 0.56
+    },
+    "body_sha256": "71189944ce6855038eaa1ea0b30f4ad270718682d6560e2f2f29e05142c53180",
+    "body_bytes": 802718,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  }
+]
