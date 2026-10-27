@@ -37,7 +37,7 @@ def export_batch(batch,report,status):
  with Path('WORK_LOG.md').open('a') as log:log.write('\n## Coverage continuation result\n'+json.dumps(status)+'\nListing/category review only. Pending/failed/scope-unverified remain open. Raw bodies/native pages private.\n')
  for directory in [PUBLIC,dest]:atomic_json(directory/'SHA256SUMS.json',{p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(directory.iterdir()) if p.is_file() and p.name!='SHA256SUMS.json'})
  subprocess.run(['git','add','WORK_LOG.md',str(PUBLIC)],check=True)
- manifest=Path('evidence/SHA256SUMS.json');names=subprocess.check_output(['git','ls-files'],text=True).splitlines();atomic_json(manifest,{n:hashlib.sha256(Path(n).read_bytes()).hexdigest() for n in names if n!=str(manifest) and Path(n).is_file()})
+ manifest=Path('evidence/SHA256SUMS.json');names=subprocess.check_output(['git','ls-files'],text=True).splitlines();atomic_json(manifest,{n:hashlib.sha256(subprocess.check_output(['git','show',f':{n}'])).hexdigest() for n in names if n!=str(manifest)})
  subprocess.run(['git','add',str(manifest)],check=True);subprocess.run(['git','diff','--cached','--check'],check=True);subprocess.run(['git','commit','-m','Record persistent coverage continuation and actual taxonomy evidence'],check=True)
  subprocess.run(['git','-c','http.version=HTTP/1.1','-c','http.postBuffer=52428800','push','origin','main'],check=True)
 
