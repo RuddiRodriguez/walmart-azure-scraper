@@ -1,0 +1,24 @@
+{
+  "time_utc": "2026-10-27T16:55:51.469869+00:00",
+  "signal": "SIGKILL",
+  "last_event": {
+    "time": "2026-10-27T16:55:51.176294+00:00",
+    "event": "product_started",
+    "store": "100",
+    "kind": "product",
+    "id": "883632494",
+    "url": "https://www.walmart.com/ip/Clorox-Splash-Less-Liquid-Bleach-Cleaner-Regular-Scent-77-fl-oz/883632494?fulfillmentIntent=Pickup&filters=%5B%7B%22intent%22%3A%22fulfillmentIntent%22%2C%22values%22%3A%5B%22Pickup%22%5D%7D%5D&classType=VARIANT&athbdg=L1102",
+    "category": "Household Essentials"
+  },
+  "completed_pages": [
+    [
+      "Household Essentials",
+      "https://www.walmart.com/browse/household-essentials/clorox/1115193_8250903_7784444"
+    ]
+  ],
+  "committed_ids": [
+    "914173307"
+  ],
+  "sqlite_integrity": "ok",
+  "scope": "live process killed after product_started; browser children also terminated; committed state recorded below"
+}
