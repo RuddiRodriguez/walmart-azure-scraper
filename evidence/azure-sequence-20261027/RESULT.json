@@ -58,6 +58,43 @@
     "runtime_seconds": 21.756,
     "completed": false
   },
+  "second_region_sequence": {
+    "provider": "Azure",
+    "region": "eastus2",
+    "vm_size": "Standard_D2als_v7",
+    "operating_system": "Ubuntu 24.04",
+    "browser": "Google Chrome 156.0.8078.47",
+    "execution_user": "walmart",
+    "store_selection_passed": true,
+    "control_product": {
+      "normal_browser_navigation": true,
+      "http_status": 200,
+      "redirected": false,
+      "request_id_present": true,
+      "loader_id_present": true,
+      "product_id": "47428850",
+      "store_id": "100",
+      "zip": "72712",
+      "intent": "PICKUP",
+      "current_price": 3.97,
+      "identity_matches": true,
+      "store_matches": true
+    },
+    "listing": {
+      "http_status": 200,
+      "redirected_to_blocked_path": true,
+      "page_title": "Robot or human?",
+      "classification": "walmart_block_page",
+      "request_id_present": true,
+      "loader_id_present": true,
+      "cache_status": "Hit"
+    },
+    "candidate_products_reached": 0,
+    "product_requests": 1,
+    "listing_requests": 1,
+    "runtime_seconds": 45.382,
+    "completed": false
+  },
   "operational_log": [
     "First pre-request launch used the SSH administrator and stopped on a downloaded_files ownership error.",
     "The live sequences then ran as the configured walmart service user. No Walmart request was made by the failed administrator launch."
@@ -66,6 +103,8 @@
     "Azure served one genuine Store 100 PICKUP control product through original browser navigation.",
     "The immediately following listing navigation was explicitly redirected to Walmart's blocked page.",
     "The later banner failure was a normal Walmart homepage with structured page data but no rendered store banner; it was not an explicit blocked page.",
+    "A second fresh VM in East US 2 reproduced the same valid control-product response followed by an explicit block on the listing navigation.",
+    "Changing from West US 2 to East US 2 did not make this sequence reliable.",
     "The cleaned candidate URL was not reached, so this run does not establish whether that URL change helps.",
     "These bounded runs do not prove that Azure IP reputation alone caused the block, and do not establish listing or product reliability at volume."
   ],
@@ -75,17 +114,31 @@
     "session_secrets_exported": false,
     "reviewed_metadata_exported": true
   },
-  "reviewed_archive": {
-    "local_path": "data/azure-sequence-live-20261027/azure-sequence-reviewed.tar.gz",
-    "sha256": "ed4d2c3e6fab82ba5dcb1d6ff458b26a1c7b67a499bff4d6634ab3abd816b6d0",
-    "archive_hash_verified": true,
-    "internal_hashes_verified": true
-  },
+  "reviewed_archives": [
+    {
+      "region": "westus2",
+      "local_path": "data/azure-sequence-live-20261027/azure-sequence-reviewed.tar.gz",
+      "sha256": "ed4d2c3e6fab82ba5dcb1d6ff458b26a1c7b67a499bff4d6634ab3abd816b6d0",
+      "archive_hash_verified": true,
+      "internal_hashes_verified": true
+    },
+    {
+      "region": "eastus2",
+      "local_path": "data/azure-east-live-20261027/azure-east-reviewed.tar.gz",
+      "sha256": "d238896af981b989b3181dff2dc8520c6a370c5b28e1f9cb72fe216a22fbc86b",
+      "archive_hash_verified": true,
+      "internal_hashes_verified": true
+    }
+  ],
   "cleanup": {
-    "resource_group": "rg-walmart-diag-seq-9101c81",
+    "resource_groups": [
+      "rg-walmart-diag-seq-9101c81",
+      "rg-walmart-diag-east-8f9a5c6"
+    ],
     "vm_deallocated": true,
     "resource_group_deletion_requested": true,
-    "resource_group_deleted": true,
+    "westus2_resource_group_deleted": true,
+    "eastus2_resource_group_deleted": true,
     "remaining_azure_resources": 0
   }
 }
