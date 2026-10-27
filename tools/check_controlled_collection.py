@@ -51,17 +51,32 @@ def check():
                     candidate['price_text']=''
                 items.append(candidate)
             return items, [], search
-        def navigation(*_, **__):
+        def captured_navigation(sb, url, settings, log, capture):
+            capture('request', url=url, attempt=1, started_utc='synthetic',
+                    settings={'transport': 'original browser navigation'})
             if mode == 'empty_page':
+                capture('error', error_type='ValueError', error='Empty page title; synthetic navigation failure')
                 raise ValueError('Empty page title; synthetic navigation failure')
-            return BeautifulSoup(html, 'html.parser')
+            capture('response', result={
+                'status': 200,
+                'url': url,
+                'redirected': False,
+                'headers': {'content-type': 'text/html'},
+                'body_base64': base64.b64encode(html.encode()).decode(),
+                'request_id': 'request-listing',
+                'loader_id': 'loader-listing',
+                'resource_type': 'Document',
+                'protocol': 'h2',
+                'body_scope': 'Synthetic original navigation response',
+            }, received_utc='synthetic', elapsed_seconds=0)
+            return BeautifulSoup(html, 'html.parser'), BeautifulSoup(html, 'html.parser')
         plan = dict(target=3, minimum_per_category=1, limits=dict(product_requests=3 if mode == 'budget' else 10, listing_requests=4, seconds=30),
                     categories=[dict(category=n, required_root='https://www.walmart.com/browse/' + path, urls=['https://www.walmart.com/browse/' + path]) for n, path in [('Food', 'food/976759'), ('Art Supplies', 'art/5899871')]])
         browser = SimpleNamespace(scroll_down=lambda _: None, sleep=lambda _: None, get_page_source=lambda: html, quit=lambda: None)
         with tempfile.TemporaryDirectory(dir='data') as folder:
             plan['catalog_path'] = str(Path(folder) / 'catalog.sqlite')
             with patch.object(collector, 'open_browser', return_value=browser), patch.object(collector, 'select_store', return_value='logo'), \
-                 patch.object(collector, 'verify_banner'), patch.object(collector, 'navigate', side_effect=navigation), \
+                 patch.object(collector, 'verify_banner'), patch.object(collector, 'capture_navigation', side_effect=captured_navigation), \
                  patch.object(collector, 'fetch_product', side_effect=fetch), patch.object(collector, 'listing_from_rendered', side_effect=candidates), \
                  patch.object(collector, 'discover', return_value={}), patch.object(collector.time, 'sleep'):
                 collector.run(Path(folder) / 'run', plan)

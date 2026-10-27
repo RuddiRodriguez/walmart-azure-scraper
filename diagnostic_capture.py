@@ -84,10 +84,15 @@ def make_capture(output, session, state, kind='product'):
             path.write_bytes(body)  # Original bytes saved before any parsing/redaction.
             record.update(response={'status': result['status'], 'url': safe_url(result.get('url', '')),
                                     'redirected': result.get('redirected', False),
+                                    'request_id': result.get('request_id', ''),
+                                    'loader_id': result.get('loader_id', ''),
+                                    'resource_type': result.get('resource_type', ''),
+                                    'protocol': result.get('protocol', ''),
                                     'headers': {key: value for key, value in result.get('headers', {}).items()
                                                 if key in ['date', 'age', 'cache-control', 'cache-status', 'x-cache', 'vary', 'content-type']},
                                     'received_utc': data['received_utc'], 'elapsed_seconds': data['elapsed_seconds']},
                           body_file=path.name, body_bytes=len(body), body_sha256=hashlib.sha256(body).hexdigest())
+            record['body_scope'] = result.get('body_scope', record['body_scope'])
             save()
             try:
                 redacted = redact_body(body)

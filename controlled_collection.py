@@ -15,7 +15,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from bs4 import BeautifulSoup
-from browser import open_browser, select_store, navigate, verify_banner, fetch_product
+from browser import open_browser, select_store, capture_navigation, verify_banner, fetch_product
 from capture_store_drift import listing_from_rendered
 from diagnostic_capture import make_capture, safe_url
 from extract import category_id, discover, next_data, pickup, product_record
@@ -285,7 +285,9 @@ def run(output, plan, resume=False):
                 report['pages'].append(entry)
                 save()
                 try:
-                    native = navigate(sb, url, settings, log, require_banner=False)
+                    native, page = capture_navigation(
+                        sb, url, settings, log,
+                        make_capture(output / 'captures', 'collection', state, 'listing'))
                     try:
                         banner_verified = False
                         if native.select_one('[data-automation-id="fulfillment-banner"]'):
@@ -320,7 +322,6 @@ def run(output, plan, resume=False):
                                          current_url=url, decisions=entry['decisions'])
                     finally:
                         native.decompose()
-                    page = fetch_product(sb, url, settings, capture=make_capture(output / 'captures', 'collection', state, 'listing'))
                     try:
                         listing_sequence = state['sequence']
                         search = next_data(page).get('searchResult')

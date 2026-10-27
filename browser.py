@@ -1,5 +1,6 @@
 """Local Chrome session. Challenges and location changes stop collection."""
 import asyncio
+import base64
 import json
 import re
 import time
@@ -7,6 +8,7 @@ from datetime import datetime, timezone
 from urllib.parse import urlsplit
 
 from bs4 import BeautifulSoup
+import mycdp
 from seleniumbase import sb_cdp
 
 from extract import next_data, pickup
@@ -26,7 +28,7 @@ def check_html(html):
     return soup
 
 
-def navigate(sb, url, settings, log, require_banner=True):
+def navigate(sb, url, settings, log, require_banner=True, validate=True):
     for attempt in range(settings['retries']):
         started = time.monotonic()
         try:
@@ -43,10 +45,11 @@ def navigate(sb, url, settings, log, require_banner=True):
                     break
                 sb.sleep(1)
                 html = sb.get_page_source()
-            soup = check_html(html)
-            next_data(soup)
-            if require_banner and not soup.select_one('[data-automation-id="fulfillment-banner"]'):
-                raise ValueError('Store banner not loaded; retry incomplete page')
+            soup = check_html(html) if validate else BeautifulSoup(html, 'html.parser')
+            if validate:
+                next_data(soup)
+                if require_banner and not soup.select_one('[data-automation-id="fulfillment-banner"]'):
+                    raise ValueError('Store banner not loaded; retry incomplete page')
             elapsed = time.monotonic() - started
             if elapsed > settings['max_page_seconds']:
                 raise TimeoutError(f'Abnormal page latency: {elapsed:.1f}s')
@@ -57,6 +60,87 @@ def navigate(sb, url, settings, log, require_banner=True):
             if 'Challenge' in str(error) or attempt + 1 == settings['retries']:
                 raise
             sb.sleep(settings['delay_seconds'] * (attempt + 2))
+
+
+def enable_navigation_capture(sb):
+    """Keep metadata for original document responses received by Chrome."""
+    if hasattr(sb, '_navigation_responses'):
+        return
+    sb._navigation_responses = []
+
+    def remember(event):
+        if event.type_ != mycdp.network.ResourceType.DOCUMENT:
+            return
+        response = event.response
+        sb._navigation_responses.append({
+            'request_id': event.request_id,
+            'loader_id': event.loader_id,
+            'url': response.url,
+            'status': response.status,
+            'headers': {str(key).lower(): str(value) for key, value in response.headers.items()},
+            'protocol': response.protocol or '',
+        })
+
+    sb.add_handler(mycdp.network.ResponseReceived, remember)
+    sb.loop.run_until_complete(sb.page.send(mycdp.network.enable(
+        max_total_buffer_size=24 * 2**20,
+        max_resource_buffer_size=12 * 2**20,
+    )))
+
+
+def select_navigation_response(responses, url, start=0):
+    """Select the latest new document response for the requested host and path."""
+    requested = urlsplit(url)
+    host = (requested.hostname or '').lower()
+    path = requested.path.rstrip('/') or '/'
+    matches = []
+    for response in responses[start:]:
+        observed = urlsplit(response['url'])
+        if (observed.hostname or '').lower() == host and (observed.path.rstrip('/') or '/') == path:
+            matches.append(response)
+    if not matches:
+        raise ValueError('Original navigation response not observed for requested listing')
+    return matches[-1]
+
+
+def capture_navigation(sb, url, settings, log, capture):
+    """Navigate once and preserve the matching document response without a second fetch."""
+    enable_navigation_capture(sb)
+    start = len(sb._navigation_responses)
+    started = time.monotonic()
+    capture('request', url=url, attempt=1, started_utc=datetime.now(timezone.utc).isoformat(),
+            settings={'method': 'GET', 'transport': 'original browser navigation',
+                      'cache': 'browser-managed', 'redirect': 'browser-managed',
+                      'timeout_seconds': settings['max_page_seconds'],
+                      'configured_attempts': settings['retries'],
+                      'request_headers': 'browser-managed; not captured'})
+    try:
+        # Save the original response before parsing so blocked/invalid bodies are retained as evidence.
+        rendered = navigate(sb, url, settings, log, require_banner=False, validate=False)
+        response = select_navigation_response(sb._navigation_responses, url, start)
+        body, encoded = sb.loop.run_until_complete(
+            sb.page.send(mycdp.network.get_response_body(response['request_id'])))
+        body = base64.b64decode(body) if encoded else body.encode('utf-8')
+        result = {
+            **response,
+            'redirected': response['url'] != url,
+            'body_base64': base64.b64encode(body).decode(),
+            'request_id': str(response['request_id']),
+            'loader_id': str(response['loader_id']),
+            'resource_type': 'Document',
+            'body_scope': 'Complete body returned by Chrome for the original document navigation; not compressed wire bytes',
+        }
+        capture('response', result=result, elapsed_seconds=round(time.monotonic() - started, 3),
+                received_utc=datetime.now(timezone.utc).isoformat())
+        if result['status'] in [401, 403, 412, 429]:
+            raise ValueError(f"Access blocked: HTTP {result['status']}; run stopped")
+        if result['status'] != 200:
+            raise RuntimeError(f"Listing HTTP {result['status']}")
+        captured = check_html(body.decode('utf-8', errors='replace'))
+        return rendered, captured
+    except Exception as error:
+        capture('error', error_type=type(error).__name__, error=str(error))
+        raise
 
 
 def select_store(sb, store, settings, log, output):
