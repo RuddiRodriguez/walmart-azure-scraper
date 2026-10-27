@@ -1,23 +1,25 @@
-UNSENT DRAFT — 25 October 2026, 19:21 CET (UTC+1)
+UNSENT DRAFT — 27 October 2026, 18:17 Amsterdam time
 
 Hi,
 
-Thanks for confirming Bentonville #100, 406 S Walton Blvd, AR 72712, PICKUP for the demonstration. Here’s the updated versioned package:
-https://github.com/RuddiRodriguez/walmart-azure-scraper/tree/review-20261025-final-v2
+I finished the latest local review package:
+https://github.com/RuddiRodriguez/walmart-azure-scraper/tree/review-20261027-final-client
 
-It includes source, running instructions, hashes, logs and source evidence. Collector modules match live-tested commit 53cb6d94be5fc29eeedd32cd3f75b129d2f2aed4; file hashes are in evidence/SHA256SUMS.json. evidence/products-500.json still contains the earlier 500 genuine, distinct products. It remains separate from the two 33-product samples and today’s diagnostic results.
+The authoritative version is tag review-20261027-final-client, commit 21a9ea04794d1ed589c881a644a49c9fe499c7d8. The downloadable ZIP, source, instructions, hashes and evidence are all available from that tag.
 
-I tested the smallest session change: the same six products in one session versus fresh sessions after three products, keeping browser-fetch transport. Both approaches passed with matching prices and Store 100/PICKUP response identifiers. No drift appeared, so this does not establish batching as a remedy.
+The privacy-reviewed wrong-store/corrected-response pairs are under evidence/response-pairs-reviewed-20261026. They preserve product identity, store, fulfillment, price, request settings and sequence without cookies or session secrets. Wrong-store data remains excluded. The corrected re-fetch is evidence of detection and recovery, not proof that one retry prevents future drift.
 
-Capture now saves complete Fetch-decoded bodies before parsing, with request options, timing, sequence and attempts. Thirty-five bodies are retained privately with hashes and redaction drafts; public evidence contains metadata and selected listing/product source fields. The requested complete wrong/correct pair remains missing: the earlier wrong result was saved as product JSON, and today’s test did not reproduce it.
+The retention trace is under evidence/retention-step2-20261026. Eligible products remain stored when pickup or price is unavailable, unsupported current values stay blank, and earlier supported observations keep their original dates. Missing evidence remains separate from confirmed unavailability.
 
-Store checks inspect listing/product identifiers, ZIP, fulfillment and local offer evidence, so a correct banner cannot override conflicting data. Any mismatch fails its run. Unavailable-product safeguards and last-good publication checks passed offline; earlier genuine unavailable examples remain separately dated.
+For the larger test, one live run was force-stopped after 100 saved products and resumed to 506 without losing or duplicating committed records. A separate 506-product repeat also passed. Both cover all 11 required parent categories. The current production collector also passed a fresh smaller force-stop/resume test and an identical-settings repeat with the same products and prices. Evidence is under evidence/point3-20261026, evidence/phase-e-recovery-20261027 and evidence/phase-e-repeat-20261027.
 
-Current-code live interruption/resume passed: one saved product survived SIGKILL, the interrupted product completed once after restart, and all three final records passed source checks. Two offer searches checked three distinct products; no qualifying volume/digital example was verified.
+Full category and pagination coverage is still not complete. The cleaned review currently records 1,701 reviewed pages, 89 failed pages, 9 unresolved navigation pages and 2,079 pending pages. The latest bounded continuation reduced the queue and did not recreate the earlier queue-growth problem.
 
-Tests used local Python/Chrome, without paid scraping services. The comparison stayed within 36 product requests/40 minutes; recovery within 12 attempts/15 minutes; offer review within 8 product requests/10 minutes. Exact environment and limits are documented. Azure was not run, and I understand access has not been granted.
+I also completed a focused live search for genuine volume and digital discounts. It checked four searches and 13 distinct Store 100 products, but found no qualifying offer. I left the offer fields blank instead of treating financing, cashback, Walmart Cash, Rollback or Clearance as requested offers. Evidence is under evidence/phase-d-offers-20261027.
 
-This is the next diagnostic deliverable requested in your feedback, prepared 25 October 2026, 19:21 CET (UTC+1). Still open are the paired drift capture, sustained reliability, full uncapped coverage, repeated complete collection, real offers and Azure acceptance. A further bounded drift investigation is the next proposed step; a dependable full-completion date still depends on resolving that blocker.
+Azure is being handled separately, so this package makes no Azure execution claim.
+
+This is the strongest verified local version. Remaining open work is full queue reconciliation and a genuine offer example if Walmart presents one in the required scope.
 
 Thanks,
 Ruddi
