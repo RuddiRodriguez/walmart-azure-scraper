@@ -1,0 +1,423 @@
+{
+  "started_utc": "2026-10-27T02:35:23.086515+00:00",
+  "source_commit": "995516ac160af13a52dc5c19714adfe1718b204a",
+  "source_hashes": {
+    "coverage_queue.py": "ed6cf286c67d367fa04b37f1b915d6b2aa01163d0a3e6c4f4fd719fe5011d2d2",
+    "audit_queue_growth.py": "3ae6dc804966741256914559ecbf81fceeb4d00210e81a03998afd494800117d",
+    "extract.py": "5d7dca9180052e97b66753921d2b8d9a73cdacf4be2d2949a03aed03c79c0d6e",
+    "browser.py": "9dd3473ffb835741ca3b1d6b2c718164eefa4c18b7a9c5ed2b84a00e16bdcbaa"
+  },
+  "scope": "Listing/category coverage review only; no full product/PDP collection",
+  "pages": [
+    {
+      "category": "Personal Care",
+      "url": "https://www.walmart.com/browse/personal-care/incontinence-underwear-for-women/1005862_1225655_3702936",
+      "status": "reviewed",
+      "listing_sequence": 1,
+      "response_category_id": "1005862_1225655_3702936",
+      "breadcrumb": [
+        {
+          "id": "1005862",
+          "name": "Personal Care",
+          "url": "/cp/1005862"
+        },
+        {
+          "id": "1005862_1225655",
+          "name": "Incontinence",
+          "url": "/browse/personal-care/incontinence/1005862_1225655"
+        },
+        {
+          "id": "1005862_1225655_3702936",
+          "name": "Incontinence Underwear for Women",
+          "url": "/browse/incontinence/incontinence-underwear-for-women/1005862_1225655_3702936"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 2,
+      "listing_rejections": {
+        "sponsored": 4,
+        "outside_category": 4,
+        "marketplace": 6
+      },
+      "candidate_count": 39,
+      "next_page": "https://www.walmart.com/browse/personal-care/incontinence-underwear-for-women/1005862_1225655_3702936?page=2",
+      "snapshot_sha256": "bfef701a1c7658d4a06af9f217083043f651522eb158335a5ba590ea4ff7609d",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/1005862",
+          "name": "Personal Care",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/incontinence/1005862_1225655",
+          "name": "Incontinence",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/incontinence/incontinence-underwear-for-women/1005862_1225655_3702936",
+          "name": "Incontinence Underwear for Women",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/incontinence-underwear-for-women-small47;medium/1005862_1225655_3403223",
+          "name": "S/M underwear",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/incontinence-underwear-for-women-large47;extra-large/1005862_1225655_8253122",
+          "name": "L/XL underwear",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/incontinence-underwear-xxl-plus/1005862_1225655_9840294",
+          "name": "XXL plus underwear",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/incontinence-pads/1005862_1225655_7599028",
+          "name": "Incontinence pads",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/incontinence-underpads/1005862_1225655_2999240",
+          "name": "Incontinence underpads",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/adult-wipes/1005862_1225655_4617231",
+          "name": "Adult wipes",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/womens-incontinence/1005862_1225655_8790411",
+          "name": "Women's incontinence savings",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/womens-incontinence/1005862_1225655_8790411",
+          "name": "Get it fast",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/womens-incontinence/1005862_1225655_8790411",
+          "name": "Shop all women's incontinence",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/incontinence-underwear-for-women-small47;medium/1005862_1225655_3403223",
+          "name": "S/M underwear",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/incontinence-underwear-for-women-large47;extra-large/1005862_1225655_8253122",
+          "name": "L/XL underwear",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/incontinence-underwear-xxl-plus/1005862_1225655_9840294",
+          "name": "XXL plus underwear",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/incontinence-pads/1005862_1225655_7599028",
+          "name": "Incontinence pads",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/incontinence-underpads/1005862_1225655_2999240",
+          "name": "Incontinence underpads",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/adult-wipes/1005862_1225655_4617231",
+          "name": "Adult wipes",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/womens-incontinence/1005862_1225655_8790411",
+          "name": "Women's incontinence savings",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/womens-incontinence/1005862_1225655_8790411",
+          "name": "Get it fast",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/womens-incontinence/1005862_1225655_8790411",
+          "name": "Shop all women's incontinence",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/incontinence/1005862_1225655",
+          "name": "View details for Incontinence care",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/incontinence/1005862_1225655",
+          "name": "View details for Use your FSA/HSA funds",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/incontinence/1005862_1225655",
+          "name": "View details for Save on incontinence",
+          "action": "queued",
+          "reason": "category_link"
+        }
+      ]
+    },
+    {
+      "category": "Health & Wellness",
+      "url": "https://www.walmart.com/browse/health/vitamin-d3/976760_1005863_1001553_5388249",
+      "status": "reviewed",
+      "listing_sequence": 2,
+      "response_category_id": "976760_1005863_1001553_5388249",
+      "breadcrumb": [
+        {
+          "id": "976760",
+          "name": "Health and Medicine",
+          "url": "/cp/976760"
+        },
+        {
+          "id": "976760_1005863",
+          "name": "Vitamins and Supplements",
+          "url": "/browse/health-and-medicine/vitamins-and-supplements/976760_1005863"
+        },
+        {
+          "id": "976760_1005863_1001553",
+          "name": "Letter Vitamins",
+          "url": "/browse/vitamins-and-supplements/letter-vitamins/976760_1005863_1001553"
+        },
+        {
+          "id": "976760_1005863_1001553_5388249",
+          "name": "Vitamin D3",
+          "url": "/browse/letter-vitamins/vitamin-d3/976760_1005863_1001553_5388249"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 2,
+      "listing_rejections": {
+        "sponsored": 11,
+        "outside_category": 1,
+        "marketplace": 8
+      },
+      "candidate_count": 39,
+      "next_page": "https://www.walmart.com/browse/health/vitamin-d3/976760_1005863_1001553_5388249?page=2",
+      "snapshot_sha256": "08d614a7f639dba36641642561f40befc4b7ccfac102b91fca97d5e740ef53cc",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/976760",
+          "name": "Health and Medicine",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-and-medicine/vitamins-and-supplements/976760_1005863",
+          "name": "Vitamins and Supplements",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/vitamins-and-supplements/letter-vitamins/976760_1005863_1001553",
+          "name": "Letter Vitamins",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/letter-vitamins/vitamin-d3/976760_1005863_1001553_5388249",
+          "name": "Vitamin D3",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/spring-valley-vitamin-d/976760_1005863_7121894_6166682_8901320",
+          "name": "Spring Valley",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/vitamin-d/976760_1005863_1001553_8172992",
+          "name": "Nature Made",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/vitamin-d/976760_1005863_1001553_8172992",
+          "name": "Nature's Bounty",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/letter-vitamins/976760_1005863_1001553",
+          "name": "Thorne",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/vitamin-d/976760_1005863_1001553_8172992",
+          "name": "liquid vitamin D",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/vitamin-d/976760_1005863_1001553_8172992",
+          "name": "Gummies vitamin D",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/letter-vitamins/976760_1005863_1001553",
+          "name": "Kids vitamin D",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/letter-vitamins/976760_1005863_1001553",
+          "name": "All letter vitamins",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/spring-valley-vitamin-d/976760_1005863_7121894_6166682_8901320",
+          "name": "Spring Valley",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/vitamin-d/976760_1005863_1001553_8172992",
+          "name": "Nature Made",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/vitamin-d/976760_1005863_1001553_8172992",
+          "name": "Nature's Bounty",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/letter-vitamins/976760_1005863_1001553",
+          "name": "Thorne",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/vitamin-d/976760_1005863_1001553_8172992",
+          "name": "liquid vitamin D",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/vitamin-d/976760_1005863_1001553_8172992",
+          "name": "Gummies vitamin D",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/letter-vitamins/976760_1005863_1001553",
+          "name": "Kids vitamin D",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/letter-vitamins/976760_1005863_1001553",
+          "name": "All letter vitamins",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/letter-vitamins/976760_1005863_1001553",
+          "name": "View details for Top-rated letter vitamins",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/letter-vitamins/976760_1005863_1001553",
+          "name": "View details for Spring Valley has a new look!",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/emergen-c/976760_1544540_6845837",
+          "name": "View details for Emergen-C gummies & powders",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/force-factor/976760_1166769_9024843_2274852",
+          "name": "View details for Hydrate with new Liquid Labs",
+          "action": "queued",
+          "reason": "category_link"
+        }
+      ]
+    },
+    {
+      "category": "Food",
+      "url": "https://www.walmart.com/browse/food/single-serve-candy/976759_3701649_9074834",
+      "status": "failed",
+      "reason": "Bounded coverage runtime reached",
+      "error_type": "TimeoutError"
+    }
+  ],
+  "offer_observations": [],
+  "limits": {
+    "product_requests": 10,
+    "listing_requests": 40,
+    "seconds": 86,
+    "batch_bytes": 2147483648
+  },
+  "full_coverage_complete": false,
+  "queue_growth": {
+    "seed_already_known_page": 1304,
+    "discovery_already_known_page": 17,
+    "discovery_new_page": 4
+  },
+  "new_page_identities": 4,
+  "seconds": 87.02,
+  "counts": {
+    "product_requests": 0,
+    "listing_requests": 3,
+    "sequence": 3,
+    "body_bytes": 2483106
+  },
+  "queue_counts": {
+    "failed": 69,
+    "navigation_scope_unverified": 9,
+    "outside_scope": 1,
+    "pending": 2443,
+    "reviewed": 1341
+  },
+  "scope_counts": {
+    "brief_exclusion": 2,
+    "outside_required_ancestry": 2,
+    "parent_scope_unverified": 104,
+    "scope_confirmed_by_response": 10212,
+    "scope_unverified": 311,
+    "scoped_queue": 5934
+  },
+  "stop_reason": "Bounded coverage runtime reached",
+  "error_type": "TimeoutError"
+}
