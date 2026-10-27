@@ -778,6 +778,12 @@ Verified 12,823 files and 7,575,337,240 bytes before replacing the local `data` 
 
 Ran five complete 40-page batches and one final three-page batch before the original 12-hour deadline. All six batches were committed and pushed. Final total: 1,343 pages attempted, 1,341 reviewed, 69 failed, 9 navigation-scope unresolved, 1 outside scope and 2,443 pending. No qualifying genuine promotional offer was found. The queue remained open because reviewed pages continued to reveal valid child and pagination links. Full coverage remains incomplete. Final space: about 87 GiB free on the Mac and 107 GiB free on CODEX. No backup process or backup folder was changed.
 
+## 2026-10-27 taxonomy queue cleanup
+
+Researched crawler queue growth before changing code. Root cause: category pages exposed sibling, brand and promotional links containing the required root ID, while discovery accepted every such link. Changed discovery to accept only a category whose retailer ID continues the current category path. Added a stop after two consecutive batches that add at least as many pages as they process.
+
+Offline cleanup preserved all evidence and created a hashed SQLite backup. Reclassified 137 definite invalid pending entries: 134 outside required category ancestry and 3 malformed repeated `/browse/browse/` paths. Pending count fell from 2,443 to 2,306. No live Walmart request was made. Genuine offers remain a separate targeted task.
+
 ## Coverage continuation result
 {"phase": "walking", "batches": 16, "pages_attempted": 1180, "finished": false, "max_seconds": 43200, "max_pages": 2000, "queue_counts": {"failed": 60, "navigation_scope_unverified": 9, "outside_scope": 1, "pending": 2421, "reviewed": 1187}, "scope_counts": {"brief_exclusion": 2, "outside_required_ancestry": 2, "parent_scope_unverified": 104, "scope_confirmed_by_response": 8838, "scope_unverified": 311, "scoped_queue": 5726}, "latest_batch": "batch-01217-1793063813", "seconds": 39259.9, "deadline_unix": 1793068609.162635, "audit_started_unix": 1793039861.047031, "accounted_batches": ["batch-00797-1793037889", "batch-00877-1793039393", "batch-00957-1793041686", "batch-01037-1793043375", "batch-01117-1793044878", "batch-01174-1793048707", "batch-01217-1793063813"], "user_paused": true}
 Listing/category review only. Pending/failed/scope-unverified remain open. Raw bodies/native pages private.

@@ -1,0 +1,28 @@
+{
+  "mode": "Offline queue cleanup; no retailer requests",
+  "applied": false,
+  "pending_before": 2443,
+  "excluded": 137,
+  "pending_after": 2443,
+  "reason_counts": {
+    "outside_required_category_ancestry": 134,
+    "malformed_repeated_browse_path": 3
+  },
+  "status_before": {
+    "failed": 69,
+    "navigation_scope_unverified": 9,
+    "outside_scope": 1,
+    "pending": 2443,
+    "reviewed": 1341
+  },
+  "status_after": {
+    "failed": 69,
+    "navigation_scope_unverified": 9,
+    "outside_scope": 1,
+    "pending": 2443,
+    "reviewed": 1341
+  },
+  "evidence_deleted": false,
+  "backup": "",
+  "source_queue_sha256": "1cbdd86cf0192d7706996f5d3bb68905341217f9378870e72fd1324a82de587d"
+}

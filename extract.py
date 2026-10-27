@@ -203,6 +203,15 @@ def category_id(url):
     return path if re.fullmatch(r'\d+(?:_\d+)*', path) else ''
 
 
+def descendant_id(parent, child):
+    """True only when child continues parent's retailer category path."""
+    parent_parts = parent.split('_')
+    child_parts = child.split('_')
+    return any(child_parts[index:index + len(parent_parts)] == parent_parts
+               and index + len(parent_parts) < len(child_parts)
+               for index in range(len(child_parts) - len(parent_parts) + 1))
+
+
 def discover(soup, root_url, exclusions, current_url=None, decisions=None):
     root_id = category_id(root_url)
     current_id = category_id(current_url or root_url)
@@ -214,17 +223,15 @@ def discover(soup, root_url, exclusions, current_url=None, decisions=None):
         if parts.netloc != 'www.walmart.com' or not parts.path.startswith(('/cp/', '/browse/')):
             continue
         child_id = category_id(url)
-        parent_reference = (parse_qs(parts.query).get('povid') or [''])[0]
-        parent_link = any(parent_reference.startswith(parent + '_') for parent in [root_id, current_id])
-        direct_landing_link = parts.path.startswith('/cp/') and urlsplit(current_url or root_url).path.startswith('/cp/')
-        if not child_id or not (re.search(r'(?:^|_)' + re.escape(root_id) + r'(?:_|$)', child_id) or parent_link or direct_landing_link):
+        if not child_id:
             continue
         name = a.get_text(' ', strip=True)
         canonical = parts.scheme + '://' + parts.netloc + parts.path
         reason = ''
-        ancestry_matches = any(re.search(r'(?:^|_)' + re.escape(parent) + r'(?:_|$)', child_id) for parent in [root_id, current_id])
-        if parts.path.startswith('/browse/') and '_' in child_id and not ancestry_matches:
-            reason = 'different_category_ancestry'
+        if not descendant_id(root_id, child_id):
+            reason = 'outside_required_category'
+        elif not descendant_id(current_id, child_id):
+            reason = 'not_descendant_of_current_category'
         if any((re.search(pattern, name, re.I) or re.search(pattern, parts.path, re.I)) for pattern in exclusions):
             reason = 'brief_exclusion'
         if decisions is not None:

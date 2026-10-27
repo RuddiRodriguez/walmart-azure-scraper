@@ -19,6 +19,10 @@ def ensure_storage():
  if shutil.disk_usage(CODEX).free<40*GIB:raise RuntimeError('CODEX free space is below 40 GiB')
 
 
+def next_growth_streak(previous,pages,new_pages):
+ return previous+1 if pages and new_pages>=pages else 0
+
+
 def export_batch(batch,report,status):
  dest=PUBLIC/batch.name;dest.mkdir(exist_ok=True);metadata=[]
  for path in (batch/'captures').glob('*.json'):
@@ -56,7 +60,10 @@ def run():
   report=json.loads((batch/'report.json').read_text())
   if batch.name not in status['accounted_batches']:
    status['batches']+=1;status['pages_attempted']+=len(report['pages']);status['accounted_batches'].append(batch.name)
-  status.update(queue_counts=report['queue_counts'],scope_counts=report['scope_counts'],latest_batch=batch.name);save();export_batch(batch,report,status)
+  pages=len(report['pages']);new=report.get('new_page_identities',0)
+  status['queue_growth_streak']=next_growth_streak(status.get('queue_growth_streak',0),pages,new)
+  status.update(queue_counts=report['queue_counts'],scope_counts=report['scope_counts'],latest_batch=batch.name,last_batch_pages=pages,last_batch_new_pages=new);save();export_batch(batch,report,status)
+  if status['queue_growth_streak']>=2:raise RuntimeError('Queue did not shrink for two batches; offline taxonomy review required')
   if report.get('stop_reason'):
    if report['stop_reason']=='Bounded coverage runtime reached':status['phase']='original_finite_work_budget_reached';save();return False
    raise RuntimeError(report['stop_reason'])

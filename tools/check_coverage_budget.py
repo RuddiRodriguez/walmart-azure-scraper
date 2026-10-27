@@ -9,6 +9,8 @@ from storage import atomic_json
 
 def check():
  checks=[]
+ assert worker.next_growth_streak(0,40,40)==1 and worker.next_growth_streak(1,40,41)==2 and worker.next_growth_streak(2,40,39)==0
+ checks.append('Two non-shrinking batches trigger offline review')
  with tempfile.TemporaryDirectory() as folder:
   root=Path(folder)/'external'/'run';root.mkdir(parents=True)
   free=SimpleNamespace(free=100*worker.GIB)

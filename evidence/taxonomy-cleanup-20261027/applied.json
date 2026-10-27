@@ -1,0 +1,30 @@
+{
+  "mode": "Offline queue cleanup; no retailer requests",
+  "applied": true,
+  "pending_before": 2443,
+  "excluded": 137,
+  "pending_after": 2306,
+  "reason_counts": {
+    "outside_required_category_ancestry": 134,
+    "malformed_repeated_browse_path": 3
+  },
+  "status_before": {
+    "failed": 69,
+    "navigation_scope_unverified": 9,
+    "outside_scope": 1,
+    "pending": 2443,
+    "reviewed": 1341
+  },
+  "status_after": {
+    "cross_link_excluded": 137,
+    "failed": 69,
+    "navigation_scope_unverified": 9,
+    "outside_scope": 1,
+    "pending": 2306,
+    "reviewed": 1341
+  },
+  "evidence_deleted": false,
+  "backup": "data/full-coverage-20261026/queue-before-taxonomy-cleanup-20261027.sqlite",
+  "backup_sha256": "d9e7a4ad409428573d554fd256af06a81758f8f86053e3fd33859d7e0f7e5228",
+  "queue_sha256_after": "b373f7c13523f0d8a3c6f1696c873fab6dc066a505d11ba7f61fae38720f001a"
+}
