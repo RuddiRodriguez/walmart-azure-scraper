@@ -1,5 +1,15 @@
 # Walmart location-aware catalog scraper
 
+## Client review — start here
+
+- [Final verified status](docs/FINAL_CLIENT_REVIEW_20261027.md)
+- [Running instructions](docs/OPERATIONS.md)
+- [Evidence index](evidence/README.md)
+- [Documentation index](docs/README.md)
+- [Unsent client message](docs/CLIENT_MESSAGE_DRAFT.txt)
+
+Production collector: `scrape.py`. Supporting production modules: `browser.py`, `extract.py`, `storage.py`, `retention.py`, and `validate.py`. Tests, diagnostics and evidence helpers live under `tools/`.
+
 Corrected plan baseline: [step 1 report](docs/CORRECTED_PLAN_BASELINE.md) and [requirement register](evidence/corrected-plan-20261025/requirements-register.json). Existing evidence is reusable only within its recorded source/configuration/scope; outstanding requirements remain open.
 
 
@@ -45,8 +55,8 @@ samples/failed runs stay separate; earlier frozen ZIPs are historical. Nothing s
 
 ## Latest client review package
 
-Version: `review-20261027-final-client`.
-[Download source and review evidence](https://github.com/RuddiRodriguez/walmart-azure-scraper/archive/refs/tags/review-20261027-final-client.zip).
+Version: `review-20261027-client-ready-v2`.
+[Download source and review evidence](https://github.com/RuddiRodriguez/walmart-azure-scraper/archive/refs/tags/review-20261027-client-ready-v2.zip).
 [Final status](docs/FINAL_CLIENT_REVIEW_20261027.md); [verification](docs/VERIFY_PACKAGE.md); [unsent client message](docs/CLIENT_MESSAGE_DRAFT.txt).
 
 Package includes reviewed response pairs, retention trace, two 506-product runs, 506-product interruption/resume proof, current-collector recovery and repeat proof, bounded category reconciliation, and zero-result genuine-offer evidence. Full category coverage and qualifying offer examples remain unproven. Azure remains separate.

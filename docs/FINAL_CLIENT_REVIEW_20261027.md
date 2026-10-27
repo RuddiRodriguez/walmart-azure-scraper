@@ -1,7 +1,7 @@
 # Final client review status — 27 October 2026
 
-Authoritative package version: `review-20261027-final-client`.
-Exact package commit is recorded in `evidence/final-review-20261027/receipt.json` after the tag is frozen.
+Authoritative package version: `review-20261027-client-ready-v2`.
+Exact package commit is recorded in `evidence/client-ready-v2-20261027/receipt.json` after the tag is frozen.
 
 ## What works
 
