@@ -1,0 +1,113 @@
+{
+  "passed": false,
+  "records": 3,
+  "errors": [
+    "Below minimum product count",
+    "Incomplete checkpoint queue"
+  ],
+  "category_counts": {
+    "Household Essentials": 3
+  },
+  "duplicate_urls": 0,
+  "duplicate_product_ids": 0,
+  "field_nonempty_counts": {
+    "zipcode": 3,
+    "store_name": 3,
+    "store_location": 3,
+    "store_logo": 3,
+    "store_brand": 3,
+    "category": 3,
+    "sub_category": 3,
+    "product_title": 3,
+    "weight": 2,
+    "regular_price": 3,
+    "sale_price": 0,
+    "volume_deals_description": 0,
+    "volume_deals_price": 0,
+    "digital_deals_description": 0,
+    "digital_deals_price": 0,
+    "image_url": 3,
+    "url": 3,
+    "upc": 3,
+    "gupc": 0,
+    "ppm": 3,
+    "unit_price": 0,
+    "crawl_date": 3
+  },
+  "pending_pages": 5,
+  "pending_products": 42,
+  "products_needing_review": 0,
+  "retained_unavailable_records": 0,
+  "retained_unknown_price_records": 0,
+  "sample_validation": {
+    "passed": true,
+    "records": 3,
+    "errors": [],
+    "category_counts": {
+      "Household Essentials": 3
+    },
+    "duplicate_urls": 0,
+    "duplicate_product_ids": 0,
+    "field_nonempty_counts": {
+      "zipcode": 3,
+      "store_name": 3,
+      "store_location": 3,
+      "store_logo": 3,
+      "store_brand": 3,
+      "category": 3,
+      "sub_category": 3,
+      "product_title": 3,
+      "weight": 2,
+      "regular_price": 3,
+      "sale_price": 0,
+      "volume_deals_description": 0,
+      "volume_deals_price": 0,
+      "digital_deals_description": 0,
+      "digital_deals_price": 0,
+      "image_url": 3,
+      "url": 3,
+      "upc": 3,
+      "gupc": 0,
+      "ppm": 3,
+      "unit_price": 0,
+      "crawl_date": 3
+    },
+    "pending_pages": 0,
+    "pending_products": 0,
+    "products_needing_review": 0,
+    "retained_unavailable_records": 0,
+    "retained_unknown_price_records": 0
+  },
+  "retention_catalog": {
+    "eligible_records": 3,
+    "assortment_unverified": 0,
+    "observations": 3,
+    "expiration_policy": "No expiry or automatic deletion; dates never refreshed by export"
+  },
+  "carried_observations": 0,
+  "location_mismatch_seen": false,
+  "mode": "sample",
+  "store": {
+    "id": "100",
+    "zip": "72712",
+    "name": "Bentonville S Walton Blvd Supercenter",
+    "address": "406 S WALTON BLVD, Bentonville, AR 72712",
+    "canary_urls": [
+      "https://www.walmart.com/ip/Carving-Pumpkin-Each/47428850?fulfillmentIntent=Pickup&filters=%5B%7B%22intent%22%3A%22fulfillmentIntent%22%2C%22values%22%3A%5B%22Pickup%22%5D%7D%5D&classType=REGULAR&athbdg=L1200"
+    ]
+  },
+  "context_failures": 0,
+  "page_limit_reached": false,
+  "active_seconds": 74.69,
+  "elapsed_seconds": 75.03,
+  "active_time_complete": true,
+  "signature": "8aa9b31e235ab57415c63ccd81523acac01cebf194e5f29a947a633e0b25426b",
+  "pages_processed": 1,
+  "duplicate_ids": 0,
+  "exclusions": {
+    "marketplace": 1,
+    "outside_category": 4,
+    "sponsored": 9
+  },
+  "detail_exclusions": {}
+}

@@ -1,0 +1,44 @@
+{
+  "mode": "comparison of separately collected live runs; calculation itself is offline",
+  "runs": [
+    {
+      "folder": "data/phase-e-recovery-20261027-d/collection/100/runs/20261027T165447882886Z",
+      "records": 3,
+      "mode": "sample",
+      "active_seconds": 42.0,
+      "elapsed_seconds": 107.85,
+      "active_time_complete": false,
+      "elapsed_event_span_seconds": null,
+      "failure": null,
+      "category_counts": {
+        "Household Essentials": 3
+      },
+      "sample_passed": true,
+      "full_passed": false,
+      "signature": "8aa9b31e235ab57415c63ccd81523acac01cebf194e5f29a947a633e0b25426b"
+    },
+    {
+      "folder": "data/phase-e-repeat-20261027/100/runs/20261027T171430696037Z",
+      "records": 3,
+      "mode": "sample",
+      "active_seconds": 74.69,
+      "elapsed_seconds": 75.03,
+      "active_time_complete": true,
+      "elapsed_event_span_seconds": null,
+      "failure": null,
+      "category_counts": {
+        "Household Essentials": 3
+      },
+      "sample_passed": true,
+      "full_passed": false,
+      "signature": "8aa9b31e235ab57415c63ccd81523acac01cebf194e5f29a947a633e0b25426b"
+    }
+  ],
+  "common_ids": 3,
+  "only_first": [],
+  "only_second": [],
+  "price_changes": [],
+  "same_category_counts": true,
+  "same_code_and_configuration": true,
+  "limit": "Short samples do not prove complete catalog reliability. Real assortment, ordering and prices may change."
+}
