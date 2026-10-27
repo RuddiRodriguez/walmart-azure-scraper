@@ -56,7 +56,7 @@ def product_price(product):
     }
 
 
-def run(output):
+def run(output, skip_listing=False):
     output.mkdir(parents=True, exist_ok=False, mode=0o700)
     settings = json.loads(Path('config/stores.json').read_text())
     settings.update(retries=1, max_page_seconds=25)
@@ -73,6 +73,7 @@ def run(output):
     }
     result = {
         'mode': 'Bounded Azure navigation sequence; no crawl or publication',
+        'skip_listing': skip_listing,
         'started_utc': datetime.now(timezone.utc).isoformat(),
         'source_commit': subprocess.check_output(['git', 'rev-parse', 'HEAD'], text=True).strip(),
         'expected': {'store_id': str(store['id']), 'zip': store['zip'], 'intent': 'PICKUP'},
@@ -129,24 +130,25 @@ def run(output):
             return result
         if not product_step('control-before-listing', control_url):
             return result
-        listing = {'name': 'listing', 'requested_url': safe_url(LISTING_URL), 'status': 'started'}
-        result['steps'].append(listing)
-        save()
-        page = None
-        try:
-            page, _ = capture_navigation(
-                sb, LISTING_URL, settings, log,
-                make_capture(output / 'captures', 'azure-sequence', state, 'listing'),
-                response_kind='listing')
-            listing['status'] = 'passed'
-        except Exception as error:
-            listing.update(status='failed', error_type=type(error).__name__, error=str(error),
-                           page=page_state(sb, store, output, 'listing'))
-            return result
-        finally:
-            if page is not None:
-                page.decompose()
+        if not skip_listing:
+            listing = {'name': 'listing', 'requested_url': safe_url(LISTING_URL), 'status': 'started'}
+            result['steps'].append(listing)
             save()
+            page = None
+            try:
+                page, _ = capture_navigation(
+                    sb, LISTING_URL, settings, log,
+                    make_capture(output / 'captures', 'azure-sequence', state, 'listing'),
+                    response_kind='listing')
+                listing['status'] = 'passed'
+            except Exception as error:
+                listing.update(status='failed', error_type=type(error).__name__, error=str(error),
+                               page=page_state(sb, store, output, 'listing'))
+                return result
+            finally:
+                if page is not None:
+                    page.decompose()
+                save()
         candidate_passed = product_step('previously-blocked-clean-url', BLOCKED_CANDIDATE)
         if candidate_passed:
             product_step('second-candidate-clean-url', SECOND_CANDIDATE)
@@ -163,5 +165,6 @@ def run(output):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output', type=Path, required=True)
+    parser.add_argument('--skip-listing', action='store_true')
     args = parser.parse_args()
-    run(args.output)
+    run(args.output, args.skip_listing)
