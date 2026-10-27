@@ -77,7 +77,7 @@ def review(output):
             if not pointer.exists():
                 raise RuntimeError('Recovery checkpoint not created')
             run = pointer.parent / 'runs' / json.loads(pointer.read_text())['run_id']
-            result['run'] = str(run.relative_to(Path.cwd()))
+            result['run'] = str(run.relative_to(output))
             with (output / 'hard-stop.log').open('w') as evidence:
                 stopper = subprocess.Popen([sys.executable, '-m', 'tools.hard_stop_review', str(worker.pid), str(run),
                                             '--event', 'product_started', '--minimum-products', '1', '--timeout', '240'],
