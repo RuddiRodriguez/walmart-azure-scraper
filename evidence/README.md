@@ -4,7 +4,7 @@
 
 | Requirement | Evidence |
 |---|---|
-| Final status and package receipt | `docs/FINAL_CLIENT_REVIEW_20261027.md`, `final-review-20261027/receipt.json` |
+| Final status and package receipt | `docs/FINAL_CLIENT_REVIEW_20261027.md`, `client-ready-v2-20261027/receipt.json` |
 | Wrong-store and corrected-response pairs | `response-pairs-reviewed-20261026/` |
 | Unavailable-product retention | `retention-step2-20261026/` |
 | 506-product interruption and resume | `point3-20261026/recovery-506/`, `point3-20261026/recovery-reevaluation.json` |

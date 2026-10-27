@@ -5,7 +5,7 @@ Hi,
 I finished the latest local review package:
 https://github.com/RuddiRodriguez/walmart-azure-scraper/tree/review-20261027-client-ready-v2
 
-The authoritative version is tag review-20261027-client-ready-v2. Its exact commit is recorded in evidence/client-ready-v2-20261027/receipt.json. The downloadable ZIP, source, instructions, hashes and evidence are all available from that tag.
+The authoritative version is tag review-20261027-client-ready-v2, commit 950afe6ce6eacfc1af99d8945964506382630981. Its receipt is under evidence/client-ready-v2-20261027. The downloadable ZIP, source, instructions, hashes and evidence are all available from that tag.
 
 The privacy-reviewed wrong-store/corrected-response pairs are under evidence/response-pairs-reviewed-20261026. They preserve product identity, store, fulfillment, price, request settings and sequence without cookies or session secrets. Wrong-store data remains excluded. The corrected re-fetch is evidence of detection and recovery, not proof that one retry prevents future drift.
 
