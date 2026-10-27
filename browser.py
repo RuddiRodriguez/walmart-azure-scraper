@@ -88,22 +88,32 @@ def enable_navigation_capture(sb):
     )))
 
 
-def select_navigation_response(responses, url, start=0):
-    """Select the latest new document response for the requested host and path."""
+def select_navigation_response(responses, url, start=0, loader_id=''):
+    """Select the main document response for one browser navigation."""
     requested = urlsplit(url)
     host = (requested.hostname or '').lower()
     path = requested.path.rstrip('/') or '/'
-    matches = []
+    host_matches = []
     for response in responses[start:]:
         observed = urlsplit(response['url'])
-        if (observed.hostname or '').lower() == host and (observed.path.rstrip('/') or '/') == path:
-            matches.append(response)
+        if (observed.hostname or '').lower() == host:
+            host_matches.append(response)
+    if loader_id:
+        matches = [response for response in host_matches if str(response['loader_id']) == str(loader_id)]
+    else:
+        matches = [response for response in host_matches
+                   if (urlsplit(response['url']).path.rstrip('/') or '/') == path]
     if not matches:
-        raise ValueError('Original navigation response not observed for requested listing')
+        raise ValueError('Original main-document response not observed for requested page')
     return matches[-1]
 
 
-def capture_navigation(sb, url, settings, log, capture):
+def main_loader_id(sb):
+    tree = sb.loop.run_until_complete(sb.page.send(mycdp.page.get_frame_tree()))
+    return str(tree.frame.loader_id)
+
+
+def capture_navigation(sb, url, settings, log, capture, response_kind='page'):
     """Navigate once and preserve the matching document response without a second fetch."""
     enable_navigation_capture(sb)
     start = len(sb._navigation_responses)
@@ -117,7 +127,8 @@ def capture_navigation(sb, url, settings, log, capture):
     try:
         # Save the original response before parsing so blocked/invalid bodies are retained as evidence.
         rendered = navigate(sb, url, settings, log, require_banner=False, validate=False)
-        response = select_navigation_response(sb._navigation_responses, url, start)
+        response = select_navigation_response(
+            sb._navigation_responses, url, start, main_loader_id(sb))
         body, encoded = sb.loop.run_until_complete(
             sb.page.send(mycdp.network.get_response_body(response['request_id'])))
         body = base64.b64decode(body) if encoded else body.encode('utf-8')
@@ -135,12 +146,20 @@ def capture_navigation(sb, url, settings, log, capture):
         if result['status'] in [401, 403, 412, 429]:
             raise ValueError(f"Access blocked: HTTP {result['status']}; run stopped")
         if result['status'] != 200:
-            raise RuntimeError(f"Listing HTTP {result['status']}")
+            raise RuntimeError(f"{response_kind.title()} HTTP {result['status']}")
         captured = check_html(body.decode('utf-8', errors='replace'))
         return rendered, captured
     except Exception as error:
         capture('error', error_type=type(error).__name__, error=str(error))
         raise
+
+
+def capture_product_navigation(sb, url, settings, log, capture):
+    """Capture one product's original navigation response."""
+    rendered, captured = capture_navigation(
+        sb, url, settings, log, capture, response_kind='product')
+    rendered.decompose()
+    return captured
 
 
 def select_store(sb, store, settings, log, output):

@@ -23,6 +23,14 @@ def check():
         {'url': 'https://www.walmart.com/browse/food/976759?page=2', 'request_id': 'latest'},
     ]
     assert select_navigation_response(responses, target, 1)['request_id'] == 'latest'
+    redirected = responses + [
+        {'url': 'https://www.walmart.com/blocked', 'request_id': 'redirected',
+         'loader_id': 'main-loader'},
+        {'url': 'https://www.walmart.com/frame', 'request_id': 'frame',
+         'loader_id': 'child-loader'},
+    ]
+    assert select_navigation_response(
+        redirected, target, len(responses), 'main-loader')['request_id'] == 'redirected'
     try:
         select_navigation_response(responses, 'https://www.walmart.com/browse/art/5899871', 0)
     except ValueError:
@@ -49,6 +57,7 @@ def check():
         return BeautifulSoup(document, 'html.parser')
     events = []
     with patch.object(browser, 'enable_navigation_capture'), patch.object(
+            browser, 'main_loader_id', return_value='loader-live-shape'), patch.object(
             browser, 'navigate', side_effect=navigate):
         rendered, captured = capture_navigation(
             sb, target, {'max_page_seconds': 10, 'retries': 1}, lambda *_, **__: None,
@@ -85,7 +94,7 @@ def check():
         assert record['body_scope'] == 'Original navigation test body'
         assert state['listing_requests'] == 1
 
-    print(json.dumps({'passed': True, 'checks': 13, 'live_requests': 0}))
+    print(json.dumps({'passed': True, 'checks': 14, 'live_requests': 0}))
 
 
 if __name__ == '__main__':

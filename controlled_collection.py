@@ -15,7 +15,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from bs4 import BeautifulSoup
-from browser import open_browser, select_store, capture_navigation, verify_banner, fetch_product
+from browser import open_browser, select_store, capture_navigation, capture_product_navigation, verify_banner, fetch_product
 from capture_store_drift import listing_from_rendered
 from diagnostic_capture import make_capture, safe_url
 from extract import category_id, discover, next_data, pickup, product_record
@@ -158,8 +158,9 @@ def run(output, plan, resume=False):
             raise RuntimeError('Failure ceiling reached or unsafe context: ' + str(error)) from error
 
     def observe(candidate, listing_sequence):
-        page = fetch_product(sb, candidate['url'], settings,
-                             capture=make_capture(output / 'captures', 'collection', state))
+        page = capture_product_navigation(
+            sb, candidate['url'], settings, log,
+            make_capture(output / 'captures', 'collection', state))
         try:
             data = next_data(page)
             product = data.get('data', {}).get('product') or {}

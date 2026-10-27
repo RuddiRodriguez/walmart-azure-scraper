@@ -70,6 +70,8 @@ def check():
                 'body_scope': 'Synthetic original navigation response',
             }, received_utc='synthetic', elapsed_seconds=0)
             return BeautifulSoup(html, 'html.parser'), BeautifulSoup(html, 'html.parser')
+        def product_navigation(sb, url, settings, log, capture):
+            return fetch(sb, url, settings, capture=capture)
         plan = dict(target=3, minimum_per_category=1, limits=dict(product_requests=3 if mode == 'budget' else 10, listing_requests=4, seconds=30),
                     categories=[dict(category=n, required_root='https://www.walmart.com/browse/' + path, urls=['https://www.walmart.com/browse/' + path]) for n, path in [('Food', 'food/976759'), ('Art Supplies', 'art/5899871')]])
         browser = SimpleNamespace(scroll_down=lambda _: None, sleep=lambda _: None, get_page_source=lambda: html, quit=lambda: None)
@@ -77,6 +79,7 @@ def check():
             plan['catalog_path'] = str(Path(folder) / 'catalog.sqlite')
             with patch.object(collector, 'open_browser', return_value=browser), patch.object(collector, 'select_store', return_value='logo'), \
                  patch.object(collector, 'verify_banner'), patch.object(collector, 'capture_navigation', side_effect=captured_navigation), \
+                 patch.object(collector, 'capture_product_navigation', side_effect=product_navigation), \
                  patch.object(collector, 'fetch_product', side_effect=fetch), patch.object(collector, 'listing_from_rendered', side_effect=candidates), \
                  patch.object(collector, 'discover', return_value={}), patch.object(collector.time, 'sleep'):
                 collector.run(Path(folder) / 'run', plan)
