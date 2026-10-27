@@ -1,0 +1,5244 @@
+{
+  "started_utc": "2026-10-27T01:48:15.024951+00:00",
+  "source_commit": "49ea53c30eabef8ca290eddc8bc3ddf6a58de11e",
+  "source_hashes": {
+    "coverage_queue.py": "ed6cf286c67d367fa04b37f1b915d6b2aa01163d0a3e6c4f4fd719fe5011d2d2",
+    "audit_queue_growth.py": "3ae6dc804966741256914559ecbf81fceeb4d00210e81a03998afd494800117d",
+    "extract.py": "5d7dca9180052e97b66753921d2b8d9a73cdacf4be2d2949a03aed03c79c0d6e",
+    "browser.py": "9dd3473ffb835741ca3b1d6b2c718164eefa4c18b7a9c5ed2b84a00e16bdcbaa"
+  },
+  "scope": "Listing/category coverage review only; no full product/PDP collection",
+  "pages": [
+    {
+      "category": "Pets",
+      "url": "https://www.walmart.com/browse/pets/blue-buffalo-puppy-food/5440_5285960_1311249_8143559",
+      "status": "reviewed",
+      "listing_sequence": 1,
+      "response_category_id": "5440_5285960_1311249_8143559",
+      "breadcrumb": [
+        {
+          "id": "5440",
+          "name": "Pets",
+          "url": "/cp/5440"
+        },
+        {
+          "id": "5440_5285960",
+          "name": "Pets Shop By Brand",
+          "url": "/browse/pets/pets-shop-by-brand/5440_5285960"
+        },
+        {
+          "id": "5440_5285960_1311249",
+          "name": "Blue Buffalo",
+          "url": "/browse/pets-shop-by-brand/blue-buffalo/5440_5285960_1311249"
+        },
+        {
+          "id": "5440_5285960_1311249_8143559",
+          "name": "Blue Buffalo Puppy Food",
+          "url": "/browse/blue-buffalo/blue-buffalo-puppy-food/5440_5285960_1311249_8143559"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 1,
+      "listing_rejections": {
+        "sponsored": 2,
+        "marketplace": 3
+      },
+      "candidate_count": 24,
+      "next_page": null,
+      "snapshot_sha256": "aa95a75d207cf7db69a73ae0de066556e4a2cb3c8c6eacebce602ee35e504b7f",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/5440",
+          "name": "Pets",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/pets-shop-by-brand/5440_5285960",
+          "name": "Pets Shop By Brand",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets-shop-by-brand/blue-buffalo/5440_5285960_1311249",
+          "name": "Blue Buffalo",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/blue-buffalo/blue-buffalo-puppy-food/5440_5285960_1311249_8143559",
+          "name": "Blue Buffalo Puppy Food",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/blue-buffalo-dog-food/5440_5285960_1311249_2483056",
+          "name": "Get it today",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/all-blue-buffalo-veterinary-diet/5440_8328098_5777749_9705831_8934441",
+          "name": "Blue Buffalo Dog Vet Diet",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/blue-buffalo-dog-food/5440_5285960_1311249_2483056",
+          "name": "Blue Buffalo Dog Food",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/blue-buffalo-puppy-food/5440_5285960_1311249_8143559",
+          "name": "Blue Buffalo Puppy Food",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/blue-buffalo-wilderness-dog-food/5440_5285960_1311249_9882639",
+          "name": "Blue Buffalo Wilderness",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/dogs/dog-treats/5440_202072_8052432",
+          "name": "All Dog Treats",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/dogs/dog-food-and-treats/5440_202072_6432755",
+          "name": "All Dog Food",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/dog-food/dog-food-brands/5440_202072_6432755_5931883",
+          "name": "All Dog Food Brands",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/blue-buffalo-dog-food/5440_5285960_1311249_2483056",
+          "name": "Get it today",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/all-blue-buffalo-veterinary-diet/5440_8328098_5777749_9705831_8934441",
+          "name": "Blue Buffalo Dog Vet Diet",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/blue-buffalo-dog-food/5440_5285960_1311249_2483056",
+          "name": "Blue Buffalo Dog Food",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/blue-buffalo-puppy-food/5440_5285960_1311249_8143559",
+          "name": "Blue Buffalo Puppy Food",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/blue-buffalo-wilderness-dog-food/5440_5285960_1311249_9882639",
+          "name": "Blue Buffalo Wilderness",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/dogs/dog-treats/5440_202072_8052432",
+          "name": "All Dog Treats",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/dogs/dog-food-and-treats/5440_202072_6432755",
+          "name": "All Dog Food",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/dog-food/dog-food-brands/5440_202072_6432755_5931883",
+          "name": "All Dog Food Brands",
+          "action": "queued",
+          "reason": "category_link"
+        }
+      ]
+    },
+    {
+      "category": "Household Essentials",
+      "url": "https://www.walmart.com/browse/household-essentials/fabuloso/1115193_8250903_4920942",
+      "status": "reviewed",
+      "listing_sequence": 2,
+      "response_category_id": "1115193_8250903_4920942",
+      "breadcrumb": [
+        {
+          "id": "1115193",
+          "name": "Household Essentials",
+          "url": "/cp/1115193"
+        },
+        {
+          "id": "1115193_8250903",
+          "name": "Household Essentials by Brand",
+          "url": "/browse/household-essentials/household-essentials-by-brand/1115193_8250903"
+        },
+        {
+          "id": "1115193_8250903_4920942",
+          "name": "Fabuloso",
+          "url": "/browse/household-essentials-by-brand/fabuloso/1115193_8250903_4920942"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 1,
+      "listing_rejections": {
+        "marketplace": 3
+      },
+      "candidate_count": 24,
+      "next_page": null,
+      "snapshot_sha256": "20708891b3b6fe9ccadc8c2ee7dff4a7943b5092fe8745e605206418ff45f986",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/1115193",
+          "name": "Household Essentials",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/household-essentials-by-brand/1115193_8250903",
+          "name": "Household Essentials by Brand",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials-by-brand/fabuloso/1115193_8250903_4920942",
+          "name": "Fabuloso",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/all-purpose-cleaners/1115193_1071966_7408243",
+          "name": "Cleaning supplies",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/all-purpose-cleaners/1115193_1071966_7408243",
+          "name": "Cleaning supplies",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/seasonal-air-fresheners/1115193_1025739_3975002",
+          "name": "View details for Must-try air care",
+          "action": "queued",
+          "reason": "category_link"
+        }
+      ]
+    },
+    {
+      "category": "Health & Wellness",
+      "url": "https://www.walmart.com/browse/health/bath-safety/976760_1005860_1230858",
+      "status": "reviewed",
+      "listing_sequence": 3,
+      "response_category_id": "976760_1005860_1230858",
+      "breadcrumb": [
+        {
+          "id": "976760",
+          "name": "Health and Medicine",
+          "url": "/cp/976760"
+        },
+        {
+          "id": "976760_1005860",
+          "name": "Home Health Care",
+          "url": "/browse/health-and-medicine/home-health-care/976760_1005860"
+        },
+        {
+          "id": "976760_1005860_1230858",
+          "name": "Bath Safety",
+          "url": "/browse/home-health-care/bath-safety/976760_1005860_1230858"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 1,
+      "listing_rejections": {
+        "outside_category": 11,
+        "sponsored": 1,
+        "marketplace": 8
+      },
+      "candidate_count": 19,
+      "next_page": null,
+      "snapshot_sha256": "84bbfbe97560fdc3f7aa4e5c323b9ecc8a19df206e850e6c0abfee542b2f913b",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/976760",
+          "name": "Health and Medicine",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-and-medicine/home-health-care/976760_1005860",
+          "name": "Home Health Care",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/home-health-care/bath-safety/976760_1005860_1230858",
+          "name": "Bath Safety",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/sharper-image/976760_1005860_9496902",
+          "name": "Sharper Image Home Health",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/shower-chairs/976760_1005860_1230858_4152217_2765977",
+          "name": "Shower chairs",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/grab-bars/976760_1005860_1230858_4152217_8878870",
+          "name": "Grab bars",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/adult-bed-safety-handles-rails/976760_9785329_2503402",
+          "name": "Safety handles & rails",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/transfer-benches/976760_1005860_1230858_4152217_6274544",
+          "name": "Transfer benches",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/shower-stools/976760_1005860_1230858_4152217_5284413",
+          "name": "Shower stools",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/bath-safety/976760_1005860_1230858",
+          "name": "Bathroom safety",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/bath-safety/commodes-liners/976760_1005860_1230858_6815206",
+          "name": "Commodes & liners",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/bath-safety/raised-toilet-seats/976760_1005860_1230858_5325005",
+          "name": "Raised toilet seats",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/bathtub-lifts/976760_1005860_1230858_4152217_4219535",
+          "name": "Bathtub lifts",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/bath-safety/bath-and-shower-aids/976760_1005860_1230858_4152217",
+          "name": "Bath & shower aids",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/bath-safety/976760_1005860_1230858",
+          "name": "Get bathroom safety fast",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/shower-chairs/976760_1005860_1230858_4152217_2765977",
+          "name": "Top rated shower chairs",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/bath-safety/976760_1005860_1230858",
+          "name": "FSA eligible bathroom safety",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/sharper-image/976760_1005860_9496902",
+          "name": "Sharper Image Home Health",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/shower-chairs/976760_1005860_1230858_4152217_2765977",
+          "name": "Shower chairs",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/grab-bars/976760_1005860_1230858_4152217_8878870",
+          "name": "Grab bars",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/adult-bed-safety-handles-rails/976760_9785329_2503402",
+          "name": "Safety handles & rails",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/transfer-benches/976760_1005860_1230858_4152217_6274544",
+          "name": "Transfer benches",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/shower-stools/976760_1005860_1230858_4152217_5284413",
+          "name": "Shower stools",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/bath-safety/976760_1005860_1230858",
+          "name": "Bathroom safety",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/bath-safety/commodes-liners/976760_1005860_1230858_6815206",
+          "name": "Commodes & liners",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/bath-safety/raised-toilet-seats/976760_1005860_1230858_5325005",
+          "name": "Raised toilet seats",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/bathtub-lifts/976760_1005860_1230858_4152217_4219535",
+          "name": "Bathtub lifts",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/bath-safety/bath-and-shower-aids/976760_1005860_1230858_4152217",
+          "name": "Bath & shower aids",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/bath-safety/976760_1005860_1230858",
+          "name": "Get bathroom safety fast",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/shower-chairs/976760_1005860_1230858_4152217_2765977",
+          "name": "Top rated shower chairs",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/bath-safety/976760_1005860_1230858",
+          "name": "FSA eligible bathroom safety",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/pill-organizers/976760_1005860_2979341_6338546",
+          "name": "View details for Daily pill organizers",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/heating-pads/976760_2000371",
+          "name": "View details for Wrap yourself in cozy comfort",
+          "action": "queued",
+          "reason": "category_link"
+        }
+      ]
+    },
+    {
+      "category": "Feeding",
+      "url": "https://www.walmart.com/browse/baby/baby-food-pouches/5427_133283_1001448_2047143?page=5",
+      "status": "reviewed",
+      "listing_sequence": 4,
+      "response_category_id": "5427_133283_1001448_2047143",
+      "breadcrumb": [
+        {
+          "id": "5427",
+          "name": "Baby",
+          "url": "/cp/5427"
+        },
+        {
+          "id": "5427_133283",
+          "name": "Feeding",
+          "url": "/browse/baby/feeding/5427_133283"
+        },
+        {
+          "id": "5427_133283_1001448",
+          "name": "Baby Food",
+          "url": "/browse/feeding/baby-food/5427_133283_1001448"
+        },
+        {
+          "id": "5427_133283_1001448_2047143",
+          "name": "Baby Food Pouches",
+          "url": "/browse/baby-food/baby-food-pouches/5427_133283_1001448_2047143"
+        }
+      ],
+      "page": 5,
+      "reported_last_page": 5,
+      "listing_rejections": {
+        "sponsored": 4,
+        "outside_category": 1
+      },
+      "candidate_count": 1,
+      "next_page": null,
+      "snapshot_sha256": "ccd63d57014c200ba61310184283efb538e7f333f0130284e819438be933bd55",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/browse/baby/feeding/5427_133283",
+          "name": "Feeding",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/feeding/baby-food/5427_133283_1001448",
+          "name": "Baby Food",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/baby-food/baby-food-pouches/5427_133283_1001448_2047143",
+          "name": "Baby Food Pouches",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/feeding/baby-food/5427_133283_1001448",
+          "name": "EBT eligible baby food",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/baby/baby-food-pouches/5427_133283_1001448_2047143",
+          "name": "Organic baby pouches",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/baby/baby-food-pouches/5427_133283_1001448_2047143",
+          "name": "Gerber baby pouches",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/baby/baby-food-pouches/5427_133283_1001448_2047143",
+          "name": "Beech-Nut baby pouches",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/baby/baby-food-pouches/5427_133283_1001448_2047143",
+          "name": "Plum baby pouches",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/baby/baby-food-pouches/5427_133283_1001448_2047143",
+          "name": "Earth's Best baby pouches",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/baby/baby-food-pouches/5427_133283_1001448_2047143",
+          "name": "Happy Baby pouches",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/baby/baby-food-pouches/5427_133283_1001448_2047143",
+          "name": "Serenity Kids baby pouches",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/baby/baby-food-pouches/5427_133283_1001448_2047143",
+          "name": "Once Upon a Farm baby pouches",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/baby/baby-food-pouches/5427_133283_1001448_2047143",
+          "name": "Cerebelly baby pouches",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/baby/baby-food-pouches/5427_133283_1001448_2047143",
+          "name": "Parent's Choice baby pouches",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/baby/baby-food-pouches/5427_133283_1001448_2047143",
+          "name": "Peter Rabbit baby pouches",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/baby/baby-food/5427_133283_1001448",
+          "name": "Shop all baby food",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/feeding/baby-food/5427_133283_1001448",
+          "name": "EBT eligible baby food",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/baby/baby-food-pouches/5427_133283_1001448_2047143",
+          "name": "Organic baby pouches",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/baby/baby-food-pouches/5427_133283_1001448_2047143",
+          "name": "Gerber baby pouches",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/baby/baby-food-pouches/5427_133283_1001448_2047143",
+          "name": "Beech-Nut baby pouches",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/baby/baby-food-pouches/5427_133283_1001448_2047143",
+          "name": "Plum baby pouches",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/baby/baby-food-pouches/5427_133283_1001448_2047143",
+          "name": "Earth's Best baby pouches",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/baby/baby-food-pouches/5427_133283_1001448_2047143",
+          "name": "Happy Baby pouches",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/baby/baby-food-pouches/5427_133283_1001448_2047143",
+          "name": "Serenity Kids baby pouches",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/baby/baby-food-pouches/5427_133283_1001448_2047143",
+          "name": "Once Upon a Farm baby pouches",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/baby/baby-food-pouches/5427_133283_1001448_2047143",
+          "name": "Cerebelly baby pouches",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/baby/baby-food-pouches/5427_133283_1001448_2047143",
+          "name": "Parent's Choice baby pouches",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/baby/baby-food-pouches/5427_133283_1001448_2047143",
+          "name": "Peter Rabbit baby pouches",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/baby/baby-food/5427_133283_1001448",
+          "name": "Shop all baby food",
+          "action": "queued",
+          "reason": "category_link"
+        }
+      ]
+    },
+    {
+      "category": "Beauty",
+      "url": "https://www.walmart.com/browse/beauty/tresemme/1085666_3147628_8028415_9017734",
+      "status": "reviewed",
+      "listing_sequence": 5,
+      "response_category_id": "1085666_3147628_8028415_9017734",
+      "breadcrumb": [
+        {
+          "id": "1085666",
+          "name": "Beauty",
+          "url": "/cp/1085666"
+        },
+        {
+          "id": "1085666_3147628",
+          "name": "Hair Care",
+          "url": "/browse/beauty/hair-care/1085666_3147628"
+        },
+        {
+          "id": "1085666_3147628_8028415",
+          "name": "Hair Care Brands",
+          "url": "/browse/hair-care/hair-care-brands/1085666_3147628_8028415"
+        },
+        {
+          "id": "1085666_3147628_8028415_9017734",
+          "name": "Tresemme",
+          "url": "/browse/hair-care-brands/tresemme/1085666_3147628_8028415_9017734"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 2,
+      "listing_rejections": {
+        "sponsored": 4,
+        "outside_category": 2,
+        "marketplace": 6
+      },
+      "candidate_count": 42,
+      "next_page": "https://www.walmart.com/browse/beauty/tresemme/1085666_3147628_8028415_9017734?page=2",
+      "snapshot_sha256": "1203bad4741a15927343dde1f97f6664e44ca20f60af24933115612317973c9b",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/1085666",
+          "name": "Beauty",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/beauty/hair-care/1085666_3147628",
+          "name": "Hair Care",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/hair-care/hair-care-brands/1085666_3147628_8028415",
+          "name": "Hair Care Brands",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/hair-care-brands/tresemme/1085666_3147628_8028415_9017734",
+          "name": "Tresemme",
+          "action": "queued",
+          "reason": "category_link"
+        }
+      ]
+    },
+    {
+      "category": "Food",
+      "url": "https://www.walmart.com/browse/food/pretzels/976759_976787_1044156",
+      "status": "reviewed",
+      "listing_sequence": 6,
+      "response_category_id": "976759_976787_1044156",
+      "breadcrumb": [
+        {
+          "id": "976759",
+          "name": "Food",
+          "url": "/cp/976759"
+        },
+        {
+          "id": "976759_976787",
+          "name": "Snacks, Cookies & Chips",
+          "url": "/browse/food/snacks-cookies-chips/976759_976787"
+        },
+        {
+          "id": "976759_976787_1044156",
+          "name": "Pretzels",
+          "url": "/browse/snacks-cookies-chips/pretzels/976759_976787_1044156"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 3,
+      "listing_rejections": {
+        "sponsored": 9,
+        "marketplace": 10
+      },
+      "candidate_count": 40,
+      "next_page": "https://www.walmart.com/browse/food/pretzels/976759_976787_1044156?page=2",
+      "snapshot_sha256": "260a34c220eee0d879b7bfa29735f012bb6c19dddd8e1ae05acd407564375279",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/976759",
+          "name": "Food",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/food/snacks-cookies-chips/976759_976787",
+          "name": "Snacks, Cookies & Chips",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/snacks-cookies-chips/pretzels/976759_976787_1044156",
+          "name": "Pretzels",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/food/pretzels/976759_976787_1044156",
+          "name": "Pretzel Sticks",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/food/pretzels/976759_976787_1044156",
+          "name": "Snyder's Pretzels",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/food/pretzels/976759_976787_1044156",
+          "name": "Utz Pretzels",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/food/pretzels/976759_976787_1044156",
+          "name": "Rold Gold Pretzels",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/food/pretzels/976759_976787_1044156",
+          "name": "Pretzel Rods",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/food/pretzels/976759_976787_1044156",
+          "name": "Pretzel Crisps",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/food/pretzels/976759_976787_1044156",
+          "name": "Chocolate Covered Pretzels",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/food/pretzels/976759_976787_1044156",
+          "name": "Pretzels",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/food/pretzels/976759_976787_1044156",
+          "name": "Gluten Free Pretzels",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/food/pretzels/976759_976787_1044156",
+          "name": "Great Value Pretzels",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/food/pretzels/976759_976787_1044156",
+          "name": "Pretzel Canisters",
+          "action": "queued",
+          "reason": "category_link"
+        }
+      ]
+    },
+    {
+      "category": "Office Supplies",
+      "url": "https://www.walmart.com/browse/office-supplies/kraft-paper/1229749_6562796_4636601",
+      "status": "reviewed",
+      "listing_sequence": 7,
+      "response_category_id": "1229749_6562796_4636601",
+      "breadcrumb": [
+        {
+          "id": "1229749",
+          "name": "Office Supplies",
+          "url": "/cp/1229749"
+        },
+        {
+          "id": "1229749_6562796",
+          "name": "Paper",
+          "url": "/browse/office-supplies/paper/1229749_6562796"
+        },
+        {
+          "id": "1229749_6562796_4636601",
+          "name": "Kraft Paper",
+          "url": "/browse/paper/kraft-paper/1229749_6562796_4636601"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 1,
+      "listing_rejections": {
+        "marketplace": 9,
+        "outside_category": 1
+      },
+      "candidate_count": 1,
+      "next_page": null,
+      "snapshot_sha256": "6d9a72b285806aa5b4c356e25ad966072062990207b78ded762297ca4fb7a5bb",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/1229749",
+          "name": "Office Supplies",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/paper/1229749_6562796",
+          "name": "Paper",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/paper/kraft-paper/1229749_6562796_4636601",
+          "name": "Kraft Paper",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/copy-paper/1229749_6562796_7518152",
+          "name": "Copy Paper",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/sticky-notes/1229749_6562796_1044276",
+          "name": "Sticky Notes",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/loose-leaf-filler-paper/1229749_6562796_4539149",
+          "name": "Loose Leaf Paper",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/colored-paper/1229749_6562796_7380511",
+          "name": "Colored Paper",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/cardstock/1229749_6562796_5537573",
+          "name": "Cardstock",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/index-cards/1229749_6562796_8833558",
+          "name": "Index Cards",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/ream-of-paper/1229749_6562796_9184886",
+          "name": "Ream of Paper",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/photo-paper/1229749_6562796_7181527",
+          "name": "Photo Paper",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/graph-paper/1229749_6562796_3220513",
+          "name": "Graph Paper",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/pengear-paper/1229749_1431586_6267234_3520962",
+          "name": "Pen+Gear Paper",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/thermal-paper/1229749_2447475_6494636_3596974",
+          "name": "Thermal Paper",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/a4-paper/1229749_6562796_9611676",
+          "name": "A4 Paper",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/resume-business-stationery/1229749_6562796_8049542",
+          "name": "Resume & Business Paper",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/textured-paper/1229749_6562796_3525468",
+          "name": "Textured Paper",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/kraft-paper/1229749_6562796_4636601",
+          "name": "Kraft Paper",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/black-paper/1229749_6562796_8286348",
+          "name": "Black Paper",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/certificates/1229749_6562796_5216310",
+          "name": "Certificates",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/printer-paper/1229749_6562796_2521430",
+          "name": "Printer Paper",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/inkjet-printer-paper/1229749_6562796_3031957",
+          "name": "Inkjet Printer Paper",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/laser-printer-paper/1229749_6562796_5743411",
+          "name": "Laser Printer Paper",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/copy-paper/1229749_6562796_7518152",
+          "name": "Copy Paper",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/sticky-notes/1229749_6562796_1044276",
+          "name": "Sticky Notes",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/loose-leaf-filler-paper/1229749_6562796_4539149",
+          "name": "Loose Leaf Paper",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/colored-paper/1229749_6562796_7380511",
+          "name": "Colored Paper",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/cardstock/1229749_6562796_5537573",
+          "name": "Cardstock",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/index-cards/1229749_6562796_8833558",
+          "name": "Index Cards",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/ream-of-paper/1229749_6562796_9184886",
+          "name": "Ream of Paper",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/photo-paper/1229749_6562796_7181527",
+          "name": "Photo Paper",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/graph-paper/1229749_6562796_3220513",
+          "name": "Graph Paper",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/pengear-paper/1229749_1431586_6267234_3520962",
+          "name": "Pen+Gear Paper",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/thermal-paper/1229749_2447475_6494636_3596974",
+          "name": "Thermal Paper",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/a4-paper/1229749_6562796_9611676",
+          "name": "A4 Paper",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/resume-business-stationery/1229749_6562796_8049542",
+          "name": "Resume & Business Paper",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/textured-paper/1229749_6562796_3525468",
+          "name": "Textured Paper",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/kraft-paper/1229749_6562796_4636601",
+          "name": "Kraft Paper",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/black-paper/1229749_6562796_8286348",
+          "name": "Black Paper",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/certificates/1229749_6562796_5216310",
+          "name": "Certificates",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/printer-paper/1229749_6562796_2521430",
+          "name": "Printer Paper",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/inkjet-printer-paper/1229749_6562796_3031957",
+          "name": "Inkjet Printer Paper",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/laser-printer-paper/1229749_6562796_5743411",
+          "name": "Laser Printer Paper",
+          "action": "queued",
+          "reason": "category_link"
+        }
+      ]
+    },
+    {
+      "category": "Personal Care",
+      "url": "https://www.walmart.com/browse/1005862_1414629_9659942_9869413",
+      "status": "reviewed",
+      "listing_sequence": 8,
+      "response_category_id": "1005862_1414629_9659942_9869413",
+      "breadcrumb": [
+        {
+          "id": "1005862",
+          "name": "Personal Care",
+          "url": "/cp/1005862"
+        },
+        {
+          "id": "1005862_1414629",
+          "name": "Sexual Wellness",
+          "url": "/browse/personal-care/sexual-wellness/1005862_1414629"
+        },
+        {
+          "id": "1005862_1414629_9659942",
+          "name": "Lube",
+          "url": "/browse/sexual-wellness/lube/1005862_1414629_9659942"
+        },
+        {
+          "id": "1005862_1414629_9659942_9869413",
+          "name": "Anal Lube",
+          "url": "/browse/lube/anal-lube/1005862_1414629_9659942_9869413"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 1,
+      "listing_rejections": {
+        "marketplace": 9
+      },
+      "candidate_count": 2,
+      "next_page": null,
+      "snapshot_sha256": "85fa607bd19133dab26ce8cf979ee06f54c61d31d0d9f841a3f06b683238df76",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/1005862",
+          "name": "Personal Care",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/sexual-wellness/1005862_1414629",
+          "name": "Sexual Wellness",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/sexual-wellness/lube/1005862_1414629_9659942",
+          "name": "Lube",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/lube/anal-lube/1005862_1414629_9659942_9869413",
+          "name": "Anal Lube",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/k-y-lubricants/1005862_1876667_9284721",
+          "name": "K-Y lubricants",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/astroglide/1005862_1876667_9654021",
+          "name": "Astroglide lubricants",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/1005862_1414629_9659942",
+          "name": "Equate lubricants",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/water-based-lubes/1005862_1414629_9659942_2850088",
+          "name": "Water-based lubricants",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/silicone-lubes/1005862_1414629_9659942_6305778",
+          "name": "Silicone-based lubricants",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/flavored-lube/1005862_1414629_6578740",
+          "name": "Flavored lubricants",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/sensorial-lube/1005862_1414629_9659942_8974194",
+          "name": "Sensorial lubricants",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/1005862_1414629_9659942_9869413",
+          "name": "Anal lubricants",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/anal-douches/1005862_1414629_4054919_1532927",
+          "name": "Anal douches",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/lubricants/1005862_1414629_9659942",
+          "name": "Get lubricants fast",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/lubricants/1005862_1414629_9659942",
+          "name": "Shop all lubricants",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/k-y-lubricants/1005862_1876667_9284721",
+          "name": "K-Y lubricants",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/astroglide/1005862_1876667_9654021",
+          "name": "Astroglide lubricants",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/1005862_1414629_9659942",
+          "name": "Equate lubricants",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/water-based-lubes/1005862_1414629_9659942_2850088",
+          "name": "Water-based lubricants",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/silicone-lubes/1005862_1414629_9659942_6305778",
+          "name": "Silicone-based lubricants",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/flavored-lube/1005862_1414629_6578740",
+          "name": "Flavored lubricants",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/sensorial-lube/1005862_1414629_9659942_8974194",
+          "name": "Sensorial lubricants",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/1005862_1414629_9659942_9869413",
+          "name": "Anal lubricants",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/anal-douches/1005862_1414629_4054919_1532927",
+          "name": "Anal douches",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/lubricants/1005862_1414629_9659942",
+          "name": "Get lubricants fast",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/lubricants/1005862_1414629_9659942",
+          "name": "Shop all lubricants",
+          "action": "queued",
+          "reason": "category_link"
+        }
+      ]
+    },
+    {
+      "category": "Pets",
+      "url": "https://www.walmart.com/browse/pets/blue-wilderness-cat-food/5440_5285960_1311249_9240649",
+      "status": "reviewed",
+      "listing_sequence": 9,
+      "response_category_id": "5440_5285960_1311249_9240649",
+      "breadcrumb": [
+        {
+          "id": "5440",
+          "name": "Pets",
+          "url": "/cp/5440"
+        },
+        {
+          "id": "5440_5285960",
+          "name": "Pets Shop By Brand",
+          "url": "/browse/pets/pets-shop-by-brand/5440_5285960"
+        },
+        {
+          "id": "5440_5285960_1311249",
+          "name": "Blue Buffalo",
+          "url": "/browse/pets-shop-by-brand/blue-buffalo/5440_5285960_1311249"
+        },
+        {
+          "id": "5440_5285960_1311249_9240649",
+          "name": "Blue Wilderness Cat Food",
+          "url": "/browse/blue-buffalo/blue-wilderness-cat-food/5440_5285960_1311249_9240649"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 1,
+      "listing_rejections": {
+        "sponsored": 3,
+        "marketplace": 2
+      },
+      "candidate_count": 11,
+      "next_page": null,
+      "snapshot_sha256": "946909d07f49615d5fd17ce6750c9c90168da19ae17538ce80c83d3336b16b4a",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/5440",
+          "name": "Pets",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/pets-shop-by-brand/5440_5285960",
+          "name": "Pets Shop By Brand",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets-shop-by-brand/blue-buffalo/5440_5285960_1311249",
+          "name": "Blue Buffalo",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/blue-buffalo/blue-wilderness-cat-food/5440_5285960_1311249_9240649",
+          "name": "Blue Wilderness Cat Food",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/all-blue-buffalo-veterinary-diet/5440_8328098_5777749_9705831_8934441",
+          "name": "Blue Buffalo Cat Vet Diet",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/blue-buffalo-cat-food/5440_5285960_1311249_7152306",
+          "name": "Blue Buffalo Cat Food",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/blue-buffalo-kitten-food/5440_5285960_1311249_8126830",
+          "name": "Blue Buffalo Kitten Food",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/blue-wilderness-cat-food/5440_5285960_1311249_9240649",
+          "name": "Blue Wilderness Cat Food",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/5440_202073_6005312",
+          "name": "Cat Treats",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/5440_202073_1749780_1014999",
+          "name": "All Cat Food",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/kitten-food/5440_202073_1749780_8293399",
+          "name": "All Kitten Food",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/all-blue-buffalo-veterinary-diet/5440_8328098_5777749_9705831_8934441",
+          "name": "Blue Buffalo Cat Vet Diet",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/blue-buffalo-cat-food/5440_5285960_1311249_7152306",
+          "name": "Blue Buffalo Cat Food",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/blue-buffalo-kitten-food/5440_5285960_1311249_8126830",
+          "name": "Blue Buffalo Kitten Food",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/blue-wilderness-cat-food/5440_5285960_1311249_9240649",
+          "name": "Blue Wilderness Cat Food",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/5440_202073_6005312",
+          "name": "Cat Treats",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/5440_202073_1749780_1014999",
+          "name": "All Cat Food",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/kitten-food/5440_202073_1749780_8293399",
+          "name": "All Kitten Food",
+          "action": "queued",
+          "reason": "category_link"
+        }
+      ]
+    },
+    {
+      "category": "Household Essentials",
+      "url": "https://www.walmart.com/browse/household-essentials/pine-sol/1115193_1071966_7408243_3119118",
+      "status": "reviewed",
+      "listing_sequence": 10,
+      "response_category_id": "1115193_1071966_7408243_3119118",
+      "breadcrumb": [
+        {
+          "id": "1115193",
+          "name": "Household Essentials",
+          "url": "/cp/1115193"
+        },
+        {
+          "id": "1115193_1071966",
+          "name": "Cleaning Supplies",
+          "url": "/browse/household-essentials/cleaning-supplies/1115193_1071966"
+        },
+        {
+          "id": "1115193_1071966_7408243",
+          "name": "All Purpose Cleaners",
+          "url": "/browse/cleaning-supplies/all-purpose-cleaners/1115193_1071966_7408243"
+        },
+        {
+          "id": "1115193_1071966_7408243_3119118",
+          "name": "Pine Sol",
+          "url": "/browse/all-purpose-cleaners/pine-sol/1115193_1071966_7408243_3119118"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 1,
+      "listing_rejections": {
+        "sponsored": 1,
+        "marketplace": 7
+      },
+      "candidate_count": 16,
+      "next_page": null,
+      "snapshot_sha256": "5c7e7045a585bc3e45df4b7220de2c987e390eae0fb5da18fcc9aacecf58f8d7",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/1115193",
+          "name": "Household Essentials",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/cleaning-supplies/1115193_1071966",
+          "name": "Cleaning Supplies",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/cleaning-supplies/all-purpose-cleaners/1115193_1071966_7408243",
+          "name": "All Purpose Cleaners",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/all-purpose-cleaners/pine-sol/1115193_1071966_7408243_3119118",
+          "name": "Pine Sol",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/clorox-sprays/1115193_8250903_7784444_5520663",
+          "name": "Clorox cleaners",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/lysol-all-purpose-cleaners/1115193_8250903_9423727_8049174",
+          "name": "Lysol cleaners",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/mr-clean-multi-surface-cleaner/1115193_1071966_7553837_8398643",
+          "name": "Mr. Clean cleaners",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/fabuloso/1115193_8250903_4920942",
+          "name": "Fabuloso cleaners",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/pine-sol/1115193_1071966_7408243_3119118",
+          "name": "Pine-Sol cleaners",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/mrs-meyers-cleaners/1115193_8250903_4950927_3877374",
+          "name": "Mrs. Meyer's cleaners",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/method-cleaning-products/1115193_8250903_2394791_6350166",
+          "name": "Method cleaners",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/all-purpose-cleaners/1115193_1071966_7408243",
+          "name": "Great Value cleaners",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/cleaning-supplies/1115193_1071966",
+          "name": "Cleaning supplies savings",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/cleaning-supplies/1115193_1071966",
+          "name": "Cleaning supplies",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/cleaning-supplies/1115193_1071966",
+          "name": "Cleaning supplies",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/clorox-sprays/1115193_8250903_7784444_5520663",
+          "name": "Clorox cleaners",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/lysol-all-purpose-cleaners/1115193_8250903_9423727_8049174",
+          "name": "Lysol cleaners",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/mr-clean-multi-surface-cleaner/1115193_1071966_7553837_8398643",
+          "name": "Mr. Clean cleaners",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/fabuloso/1115193_8250903_4920942",
+          "name": "Fabuloso cleaners",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/pine-sol/1115193_1071966_7408243_3119118",
+          "name": "Pine-Sol cleaners",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/mrs-meyers-cleaners/1115193_8250903_4950927_3877374",
+          "name": "Mrs. Meyer's cleaners",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/method-cleaning-products/1115193_8250903_2394791_6350166",
+          "name": "Method cleaners",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/all-purpose-cleaners/1115193_1071966_7408243",
+          "name": "Great Value cleaners",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/cleaning-supplies/1115193_1071966",
+          "name": "Cleaning supplies savings",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/cleaning-supplies/1115193_1071966",
+          "name": "Cleaning supplies",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/cleaning-supplies/1115193_1071966",
+          "name": "Cleaning supplies",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/gain-grinchmas/1115193_8250903_1302612_5397101",
+          "name": "View details for The latest & more from Gain",
+          "action": "queued",
+          "reason": "category_link"
+        }
+      ]
+    },
+    {
+      "category": "Health & Wellness",
+      "url": "https://www.walmart.com/browse/health-medicine/bedroom-safety/976760_1005860_623461",
+      "status": "reviewed",
+      "listing_sequence": 11,
+      "response_category_id": "976760_1005860_623461",
+      "breadcrumb": [
+        {
+          "id": "976760",
+          "name": "Health and Medicine",
+          "url": "/cp/976760"
+        },
+        {
+          "id": "976760_1005860",
+          "name": "Home Health Care",
+          "url": "/browse/health-and-medicine/home-health-care/976760_1005860"
+        },
+        {
+          "id": "976760_1005860_623461",
+          "name": "Bedroom Safety",
+          "url": "/browse/home-health-care/bedroom-safety/976760_1005860_623461"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 1,
+      "listing_rejections": {
+        "sponsored": 3,
+        "outside_category": 3,
+        "marketplace": 9
+      },
+      "candidate_count": 3,
+      "next_page": null,
+      "snapshot_sha256": "0fcaa74c25357e1fefdb89b2c64b2bd53f84d5fcc1fcd39dbaf5b9ede39c312a",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/976760",
+          "name": "Health and Medicine",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-and-medicine/home-health-care/976760_1005860",
+          "name": "Home Health Care",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/home-health-care/bedroom-safety/976760_1005860_623461",
+          "name": "Bedroom Safety",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/sharper-image/976760_1005860_9496902",
+          "name": "Sharper Image Home Health",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/mobility-aids/976760_2915579_9711527",
+          "name": "Mobility aids",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/blood-pressure-monitors/976760_1005860_1161882_1077045",
+          "name": "Blood pressure monitors",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/nutritional-shakes/976760_1166769_5626855",
+          "name": "Nutritional drinks",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/bath-safety/976760_1005860_1230858",
+          "name": "Bathroom safety",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/bedroom-safety/976760_1005860_623461",
+          "name": "Bedroom safety",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/pain-relievers/976760_6972993",
+          "name": "Pain relievers",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/pill-organizers/976760_1005860_2979341_6338546",
+          "name": "Pill organizers",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/reachers-grabbers/976760_1005860_2979341_6112119",
+          "name": "Reaching aids",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/home-health-care/otc-hearing-aids/976760_1005860_8870874",
+          "name": "OTC Hearing aids",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/first-aid/first-aid-kits/976760_2571007_9065854",
+          "name": "First aid",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/home-health-tests/all-home-health-tests/976760_1005860_542089_2543981",
+          "name": "Home health tests",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/sharper-image/976760_1005860_9496902",
+          "name": "Sharper Image Home Health",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/mobility-aids/976760_2915579_9711527",
+          "name": "Mobility aids",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/blood-pressure-monitors/976760_1005860_1161882_1077045",
+          "name": "Blood pressure monitors",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/nutritional-shakes/976760_1166769_5626855",
+          "name": "Nutritional drinks",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/bath-safety/976760_1005860_1230858",
+          "name": "Bathroom safety",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/bedroom-safety/976760_1005860_623461",
+          "name": "Bedroom safety",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/pain-relievers/976760_6972993",
+          "name": "Pain relievers",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/pill-organizers/976760_1005860_2979341_6338546",
+          "name": "Pill organizers",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/reachers-grabbers/976760_1005860_2979341_6112119",
+          "name": "Reaching aids",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/home-health-care/otc-hearing-aids/976760_1005860_8870874",
+          "name": "OTC Hearing aids",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/first-aid/first-aid-kits/976760_2571007_9065854",
+          "name": "First aid",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/home-health-tests/all-home-health-tests/976760_1005860_542089_2543981",
+          "name": "Home health tests",
+          "action": "queued",
+          "reason": "category_link"
+        }
+      ]
+    },
+    {
+      "category": "Feeding",
+      "url": "https://www.walmart.com/browse/baby/organic-baby-food/5427_133283_1001448_3609934?page=6",
+      "status": "reviewed",
+      "listing_sequence": 12,
+      "response_category_id": "5427_133283_1001448_3609934",
+      "breadcrumb": [
+        {
+          "id": "5427",
+          "name": "Baby",
+          "url": "/cp/5427"
+        },
+        {
+          "id": "5427_133283",
+          "name": "Feeding",
+          "url": "/browse/baby/feeding/5427_133283"
+        },
+        {
+          "id": "5427_133283_1001448",
+          "name": "Baby Food",
+          "url": "/browse/feeding/baby-food/5427_133283_1001448"
+        },
+        {
+          "id": "5427_133283_1001448_3609934",
+          "name": "Organic Baby Food",
+          "url": "/browse/baby-food/organic-baby-food/5427_133283_1001448_3609934"
+        }
+      ],
+      "page": 6,
+      "reported_last_page": 6,
+      "listing_rejections": {
+        "sponsored": 2,
+        "outside_category": 1
+      },
+      "candidate_count": 0,
+      "next_page": null,
+      "snapshot_sha256": "3ef410a0600869665b3a360ad54b7910fb938fa39c4e6da8ca75634122111b53",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/browse/baby/feeding/5427_133283",
+          "name": "Feeding",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/feeding/baby-food/5427_133283_1001448",
+          "name": "Baby Food",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/baby-food/organic-baby-food/5427_133283_1001448_3609934",
+          "name": "Organic Baby Food",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/feeding/baby-food/5427_133283_1001448",
+          "name": "EBT eligible baby food",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/baby/baby-cereal/5427_133283_1001448_2887290",
+          "name": "Organic baby cereal",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/baby/organic-baby-food/5427_133283_1001448_3609934",
+          "name": "Organic baby food jars",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/baby/baby-food-pouches/5427_133283_1001448_2047143",
+          "name": "Organic baby food pouches",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/baby-food/baby-toddler-meals/5427_133283_1001448_9725807",
+          "name": "Organic baby food meals",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/baby-food/baby-snack-foods/5427_133283_1001448_6373549",
+          "name": "Organic baby & toddler snacks",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/baby/baby-food/5427_133283_1001448",
+          "name": "Shop all baby food",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/feeding/baby-food/5427_133283_1001448",
+          "name": "EBT eligible baby food",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/baby/baby-cereal/5427_133283_1001448_2887290",
+          "name": "Organic baby cereal",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/baby/organic-baby-food/5427_133283_1001448_3609934",
+          "name": "Organic baby food jars",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/baby/baby-food-pouches/5427_133283_1001448_2047143",
+          "name": "Organic baby food pouches",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/baby-food/baby-toddler-meals/5427_133283_1001448_9725807",
+          "name": "Organic baby food meals",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/baby-food/baby-snack-foods/5427_133283_1001448_6373549",
+          "name": "Organic baby & toddler snacks",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/baby/baby-food/5427_133283_1001448",
+          "name": "Shop all baby food",
+          "action": "queued",
+          "reason": "category_link"
+        }
+      ]
+    },
+    {
+      "category": "Beauty",
+      "url": "https://www.walmart.com/browse/beauty/tweezers-eyebrow-tools/1085666_1007040_7828467_5200539",
+      "status": "reviewed",
+      "listing_sequence": 13,
+      "response_category_id": "1085666_1007040_7828467_5200539",
+      "breadcrumb": [
+        {
+          "id": "1085666",
+          "name": "Beauty",
+          "url": "/cp/1085666"
+        },
+        {
+          "id": "1085666_1007040",
+          "name": "Makeup",
+          "url": "/browse/beauty/makeup/1085666_1007040"
+        },
+        {
+          "id": "1085666_1007040_7828467",
+          "name": "Makeup Tools & Brushes",
+          "url": "/browse/makeup/makeup-tools-brushes/1085666_1007040_7828467"
+        },
+        {
+          "id": "1085666_1007040_7828467_5200539",
+          "name": "Tweezers & Eyebrow Tools",
+          "url": "/browse/makeup-tools-brushes/tweezers-eyebrow-tools/1085666_1007040_7828467_5200539"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 1,
+      "listing_rejections": {
+        "sponsored": 6,
+        "marketplace": 8
+      },
+      "candidate_count": 22,
+      "next_page": null,
+      "snapshot_sha256": "e2140d1aa9ad6bdddd47dd3e75d5224c2a0c042404f47d28f870ad5823e9a62e",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/1085666",
+          "name": "Beauty",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/beauty/makeup/1085666_1007040",
+          "name": "Makeup",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/makeup/makeup-tools-brushes/1085666_1007040_7828467",
+          "name": "Makeup Tools & Brushes",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/makeup-tools-brushes/tweezers-eyebrow-tools/1085666_1007040_7828467_5200539",
+          "name": "Tweezers & Eyebrow Tools",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/beauty/tweezers-eyebrow-tools/1085666_1007040_7828467_5200539",
+          "name": "Tweezers",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/beauty/tweezers-eyebrow-tools/1085666_1007040_7828467_5200539",
+          "name": "Cosmetic Pencil Sharpener",
+          "action": "queued",
+          "reason": "category_link"
+        }
+      ]
+    },
+    {
+      "category": "Food",
+      "url": "https://www.walmart.com/browse/food/prima-della-food/976759_7128585_4364629",
+      "status": "reviewed",
+      "listing_sequence": 14,
+      "response_category_id": "976759_7128585_4364629",
+      "breadcrumb": [
+        {
+          "id": "976759",
+          "name": "Food",
+          "url": "/cp/976759"
+        },
+        {
+          "id": "976759_7128585",
+          "name": "From Our Brands",
+          "url": "/browse/food/from-our-brands/976759_7128585"
+        },
+        {
+          "id": "976759_7128585_4364629",
+          "name": "Prima Della Food",
+          "url": "/browse/from-our-brands/prima-della-food/976759_7128585_4364629"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 2,
+      "listing_rejections": {},
+      "candidate_count": 40,
+      "next_page": "https://www.walmart.com/browse/food/prima-della-food/976759_7128585_4364629?page=2",
+      "snapshot_sha256": "8b9de6c790a96e8d33883a2f0aa58cbf2dd98541cb256feef659cc9ebb720e6c",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/976759",
+          "name": "Food",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/food/from-our-brands/976759_7128585",
+          "name": "From Our Brands",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/from-our-brands/prima-della-food/976759_7128585_4364629",
+          "name": "Prima Della Food",
+          "action": "queued",
+          "reason": "category_link"
+        }
+      ]
+    },
+    {
+      "category": "Office Supplies",
+      "url": "https://www.walmart.com/browse/office-supplies/label-maker-tape-refills/1229749_4339346_9332220",
+      "status": "reviewed",
+      "listing_sequence": 15,
+      "response_category_id": "1229749_4339346_9332220",
+      "breadcrumb": [
+        {
+          "id": "1229749",
+          "name": "Office Supplies",
+          "url": "/cp/1229749"
+        },
+        {
+          "id": "1229749_4339346",
+          "name": "Labels & Label Makers",
+          "url": "/browse/office-supplies/labels-label-makers/1229749_4339346"
+        },
+        {
+          "id": "1229749_4339346_9332220",
+          "name": "Label Maker Tape & Refills",
+          "url": "/browse/labels-label-makers/label-maker-tape-refills/1229749_4339346_9332220"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 1,
+      "listing_rejections": {
+        "marketplace": 10
+      },
+      "candidate_count": 10,
+      "next_page": null,
+      "snapshot_sha256": "765cb9464cfe53e551d68f2dd67e9914312c34d53059ae053def02b42f8d59a2",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/1229749",
+          "name": "Office Supplies",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/labels-label-makers/1229749_4339346",
+          "name": "Labels & Label Makers",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/labels-label-makers/label-maker-tape-refills/1229749_4339346_9332220",
+          "name": "Label Maker Tape & Refills",
+          "action": "queued",
+          "reason": "category_link"
+        }
+      ]
+    },
+    {
+      "category": "Personal Care",
+      "url": "https://www.walmart.com/browse/personal-care/anal-douches/1005862_1414629_4054919_1532927",
+      "status": "reviewed",
+      "listing_sequence": 16,
+      "response_category_id": "1005862_1414629_4054919_1532927",
+      "breadcrumb": [
+        {
+          "id": "1005862",
+          "name": "Personal Care",
+          "url": "/cp/1005862"
+        },
+        {
+          "id": "1005862_1414629",
+          "name": "Sexual Wellness",
+          "url": "/browse/personal-care/sexual-wellness/1005862_1414629"
+        },
+        {
+          "id": "1005862_1414629_4054919",
+          "name": "Adult Toys",
+          "url": "/browse/sexual-wellness/adult-toys/1005862_1414629_4054919"
+        },
+        {
+          "id": "1005862_1414629_4054919_1532927",
+          "name": "Anal Douches",
+          "url": "/browse/adult-toys/anal-douches/1005862_1414629_4054919_1532927"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 1,
+      "listing_rejections": {
+        "sponsored": 2,
+        "marketplace": 10
+      },
+      "candidate_count": 0,
+      "next_page": null,
+      "snapshot_sha256": "57a7a0bc788be06ea073a726074cec3f366e4df54cc01643c6bf85ce5b32ecde",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/1005862",
+          "name": "Personal Care",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/sexual-wellness/1005862_1414629",
+          "name": "Sexual Wellness",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/sexual-wellness/adult-toys/1005862_1414629_4054919",
+          "name": "Adult Toys",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/adult-toys/anal-douches/1005862_1414629_4054919_1532927",
+          "name": "Anal Douches",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/vibrators/1005862_1414629_3436730",
+          "name": "Vibrators",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/dildos/1005862_1414629_4054919_1811332",
+          "name": "Dildos",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/strokers/1005862_1414629_4054919_6111088",
+          "name": "Masturbators",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/penis-rings/1005862_1414629_4054919_2339008",
+          "name": "Penis rings",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/anal-toys/1005862_1414629_4054919_9117610",
+          "name": "Anal sex toys",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/partner-toys/1005862_1414629_4054919_8051829",
+          "name": "Partner toys",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/lubricants/1005862_1414629_9659942",
+          "name": "Lubricants",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/adult-toy-cleaners/1005862_1414629_4054919_5228657",
+          "name": "Adult toy cleaners",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/adult-toys/1005862_1414629_4054919",
+          "name": "Get adult toys fast",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/adult-toys/1005862_1414629_4054919",
+          "name": "Shop all adult toys",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/vibrators/1005862_1414629_3436730",
+          "name": "Vibrators",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/dildos/1005862_1414629_4054919_1811332",
+          "name": "Dildos",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/strokers/1005862_1414629_4054919_6111088",
+          "name": "Masturbators",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/penis-rings/1005862_1414629_4054919_2339008",
+          "name": "Penis rings",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/anal-toys/1005862_1414629_4054919_9117610",
+          "name": "Anal sex toys",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/partner-toys/1005862_1414629_4054919_8051829",
+          "name": "Partner toys",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/lubricants/1005862_1414629_9659942",
+          "name": "Lubricants",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/adult-toy-cleaners/1005862_1414629_4054919_5228657",
+          "name": "Adult toy cleaners",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/adult-toys/1005862_1414629_4054919",
+          "name": "Get adult toys fast",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/adult-toys/1005862_1414629_4054919",
+          "name": "Shop all adult toys",
+          "action": "queued",
+          "reason": "category_link"
+        }
+      ]
+    },
+    {
+      "category": "Pets",
+      "url": "https://www.walmart.com/browse/pets/blue-buffalo-wilderness-dog-food/5440_5285960_1311249_9882639",
+      "status": "reviewed",
+      "listing_sequence": 17,
+      "response_category_id": "5440_5285960_1311249_9882639",
+      "breadcrumb": [
+        {
+          "id": "5440",
+          "name": "Pets",
+          "url": "/cp/5440"
+        },
+        {
+          "id": "5440_5285960",
+          "name": "Pets Shop By Brand",
+          "url": "/browse/pets/pets-shop-by-brand/5440_5285960"
+        },
+        {
+          "id": "5440_5285960_1311249",
+          "name": "Blue Buffalo",
+          "url": "/browse/pets-shop-by-brand/blue-buffalo/5440_5285960_1311249"
+        },
+        {
+          "id": "5440_5285960_1311249_9882639",
+          "name": "Blue Buffalo Wilderness Dog Food",
+          "url": "/browse/blue-buffalo/blue-buffalo-wilderness-dog-food/5440_5285960_1311249_9882639"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 1,
+      "listing_rejections": {
+        "sponsored": 3,
+        "marketplace": 1
+      },
+      "candidate_count": 23,
+      "next_page": null,
+      "snapshot_sha256": "6d2a1e2cf216d3502e89aafbf1d87e8cdff5487e05f13eb87c2f23821a6dbb19",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/5440",
+          "name": "Pets",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/pets-shop-by-brand/5440_5285960",
+          "name": "Pets Shop By Brand",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets-shop-by-brand/blue-buffalo/5440_5285960_1311249",
+          "name": "Blue Buffalo",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/blue-buffalo/blue-buffalo-wilderness-dog-food/5440_5285960_1311249_9882639",
+          "name": "Blue Buffalo Wilderness Dog Food",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/blue-buffalo-dog-food/5440_5285960_1311249_2483056",
+          "name": "Get it today",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/all-blue-buffalo-veterinary-diet/5440_8328098_5777749_9705831_8934441",
+          "name": "Blue Buffalo Dog Vet Diet",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/blue-buffalo-dog-food/5440_5285960_1311249_2483056",
+          "name": "Blue Buffalo Dog Food",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/blue-buffalo-puppy-food/5440_5285960_1311249_8143559",
+          "name": "Blue Buffalo Puppy Food",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/blue-buffalo-wilderness-dog-food/5440_5285960_1311249_9882639",
+          "name": "Blue Buffalo Wilderness",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/dogs/dog-treats/5440_202072_8052432",
+          "name": "All Dog Treats",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/dogs/dog-food-and-treats/5440_202072_6432755",
+          "name": "All Dog Food",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/dog-food/dog-food-brands/5440_202072_6432755_5931883",
+          "name": "All Dog Food Brands",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/blue-buffalo-dog-food/5440_5285960_1311249_2483056",
+          "name": "Get it today",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/all-blue-buffalo-veterinary-diet/5440_8328098_5777749_9705831_8934441",
+          "name": "Blue Buffalo Dog Vet Diet",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/blue-buffalo-dog-food/5440_5285960_1311249_2483056",
+          "name": "Blue Buffalo Dog Food",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/blue-buffalo-puppy-food/5440_5285960_1311249_8143559",
+          "name": "Blue Buffalo Puppy Food",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/blue-buffalo-wilderness-dog-food/5440_5285960_1311249_9882639",
+          "name": "Blue Buffalo Wilderness",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/dogs/dog-treats/5440_202072_8052432",
+          "name": "All Dog Treats",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/dogs/dog-food-and-treats/5440_202072_6432755",
+          "name": "All Dog Food",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/dog-food/dog-food-brands/5440_202072_6432755_5931883",
+          "name": "All Dog Food Brands",
+          "action": "queued",
+          "reason": "category_link"
+        }
+      ]
+    },
+    {
+      "category": "Household Essentials",
+      "url": "https://www.walmart.com/browse/household-essentials/mrs-meyers-cleaners/1115193_8250903_4950927_3877374",
+      "status": "reviewed",
+      "listing_sequence": 18,
+      "response_category_id": "1115193_8250903_4950927_3877374",
+      "breadcrumb": [
+        {
+          "id": "1115193",
+          "name": "Household Essentials",
+          "url": "/cp/1115193"
+        },
+        {
+          "id": "1115193_8250903",
+          "name": "Household Essentials by Brand",
+          "url": "/browse/household-essentials/household-essentials-by-brand/1115193_8250903"
+        },
+        {
+          "id": "1115193_8250903_4950927",
+          "name": "Mrs. Meyer's",
+          "url": "/browse/household-essentials-by-brand/mrs-meyer-s/1115193_8250903_4950927"
+        },
+        {
+          "id": "1115193_8250903_4950927_3877374",
+          "name": "Mrs. Meyer's Cleaners",
+          "url": "/browse/mrs-meyer-s/mrs-meyer-s-cleaners/1115193_8250903_4950927_3877374"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 1,
+      "listing_rejections": {
+        "marketplace": 4
+      },
+      "candidate_count": 8,
+      "next_page": null,
+      "snapshot_sha256": "3b83699f780b930f9c312fcb004ad6d63888524057ac348fb120c9ad89445a52",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/1115193",
+          "name": "Household Essentials",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/household-essentials-by-brand/1115193_8250903",
+          "name": "Household Essentials by Brand",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials-by-brand/mrs-meyer-s/1115193_8250903_4950927",
+          "name": "Mrs. Meyer's",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/mrs-meyer-s/mrs-meyer-s-cleaners/1115193_8250903_4950927_3877374",
+          "name": "Mrs. Meyer's Cleaners",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/mrs-meyers-cleaners/1115193_1071966_7408243_3877374",
+          "name": "Mrs. Meyer's Clean Day cleaners",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/mrs-meyer-s/1115193_8250903_4950927",
+          "name": "Mrs. Meyer's Clean Day dish soap",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/air-fresheners/1115193_1025739",
+          "name": "Mrs. Meyer's Clean Day air fresheners",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/mrs-meyer-s/1115193_8250903_4950927",
+          "name": "Mrs. Meyer's Clean Day laundry care",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/mrs-meyers-candles/1115193_1025739_9198928_7658897",
+          "name": "Mrs. Meyer's Clean Day candles",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/mrs-meyers-cleaners/1115193_1071966_7408243_3877374",
+          "name": "Mrs. Meyer's Clean Day cleaners",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/mrs-meyer-s/1115193_8250903_4950927",
+          "name": "Mrs. Meyer's Clean Day dish soap",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/air-fresheners/1115193_1025739",
+          "name": "Mrs. Meyer's Clean Day air fresheners",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/mrs-meyer-s/1115193_8250903_4950927",
+          "name": "Mrs. Meyer's Clean Day laundry care",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/mrs-meyers-candles/1115193_1025739_9198928_7658897",
+          "name": "Mrs. Meyer's Clean Day candles",
+          "action": "queued",
+          "reason": "category_link"
+        }
+      ]
+    },
+    {
+      "category": "Health & Wellness",
+      "url": "https://www.walmart.com/browse/health-medicine/reachers-grabbers/976760_1005860_2979341_6112119",
+      "status": "reviewed",
+      "listing_sequence": 19,
+      "response_category_id": "976760_1005860_2979341_6112119",
+      "breadcrumb": [
+        {
+          "id": "976760",
+          "name": "Health and Medicine",
+          "url": "/cp/976760"
+        },
+        {
+          "id": "976760_1005860",
+          "name": "Home Health Care",
+          "url": "/browse/health-and-medicine/home-health-care/976760_1005860"
+        },
+        {
+          "id": "976760_1005860_2979341",
+          "name": "Daily Living Aids",
+          "url": "/browse/home-health-care/daily-living-aids/976760_1005860_2979341"
+        },
+        {
+          "id": "976760_1005860_2979341_6112119",
+          "name": "Reachers and Grabbers",
+          "url": "/browse/daily-living-aids/reachers-and-grabbers/976760_1005860_2979341_6112119"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 1,
+      "listing_rejections": {
+        "sponsored": 2,
+        "outside_category": 2,
+        "marketplace": 8
+      },
+      "candidate_count": 4,
+      "next_page": null,
+      "snapshot_sha256": "925a2abd54fb1195384806c169742ea5aac834131a92ef33ce2dd927fbebca9d",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/976760",
+          "name": "Health and Medicine",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-and-medicine/home-health-care/976760_1005860",
+          "name": "Home Health Care",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/home-health-care/daily-living-aids/976760_1005860_2979341",
+          "name": "Daily Living Aids",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/daily-living-aids/reachers-and-grabbers/976760_1005860_2979341_6112119",
+          "name": "Reachers and Grabbers",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/sharper-image/976760_1005860_9496902",
+          "name": "Sharper Image Home Health",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/mobility-aids/976760_2915579_9711527",
+          "name": "Mobility aids",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/blood-pressure-monitors/976760_1005860_1161882_1077045",
+          "name": "Blood pressure monitors",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/nutritional-shakes/976760_1166769_5626855",
+          "name": "Nutritional drinks",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/bath-safety/976760_1005860_1230858",
+          "name": "Bathroom safety",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/bedroom-safety/976760_1005860_623461",
+          "name": "Bedroom safety",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/pain-relievers/976760_6972993",
+          "name": "Pain relievers",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/pill-organizers/976760_1005860_2979341_6338546",
+          "name": "Pill organizers",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/reachers-grabbers/976760_1005860_2979341_6112119",
+          "name": "Reaching aids",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/home-health-care/otc-hearing-aids/976760_1005860_8870874",
+          "name": "OTC Hearing aids",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/first-aid/first-aid-kits/976760_2571007_9065854",
+          "name": "First aid",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/home-health-tests/all-home-health-tests/976760_1005860_542089_2543981",
+          "name": "Home health tests",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/sharper-image/976760_1005860_9496902",
+          "name": "Sharper Image Home Health",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/mobility-aids/976760_2915579_9711527",
+          "name": "Mobility aids",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/blood-pressure-monitors/976760_1005860_1161882_1077045",
+          "name": "Blood pressure monitors",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/nutritional-shakes/976760_1166769_5626855",
+          "name": "Nutritional drinks",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/bath-safety/976760_1005860_1230858",
+          "name": "Bathroom safety",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/bedroom-safety/976760_1005860_623461",
+          "name": "Bedroom safety",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/pain-relievers/976760_6972993",
+          "name": "Pain relievers",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/pill-organizers/976760_1005860_2979341_6338546",
+          "name": "Pill organizers",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/reachers-grabbers/976760_1005860_2979341_6112119",
+          "name": "Reaching aids",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/home-health-care/otc-hearing-aids/976760_1005860_8870874",
+          "name": "OTC Hearing aids",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/first-aid/first-aid-kits/976760_2571007_9065854",
+          "name": "First aid",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/home-health-tests/all-home-health-tests/976760_1005860_542089_2543981",
+          "name": "Home health tests",
+          "action": "queued",
+          "reason": "category_link"
+        }
+      ]
+    },
+    {
+      "category": "Feeding",
+      "url": "https://www.walmart.com/browse/baby/baby-food/5427_133283_1001448?page=7",
+      "status": "reviewed",
+      "listing_sequence": 20,
+      "response_category_id": "5427_133283_1001448",
+      "breadcrumb": [
+        {
+          "id": "5427",
+          "name": "Baby",
+          "url": "/cp/5427"
+        },
+        {
+          "id": "5427_133283",
+          "name": "Feeding",
+          "url": "/browse/baby/feeding/5427_133283"
+        },
+        {
+          "id": "5427_133283_1001448",
+          "name": "Baby Food",
+          "url": "/browse/feeding/baby-food/5427_133283_1001448"
+        }
+      ],
+      "page": 7,
+      "reported_last_page": 12,
+      "listing_rejections": {
+        "sponsored": 7,
+        "outside_category": 8
+      },
+      "candidate_count": 32,
+      "next_page": "https://www.walmart.com/browse/baby/baby-food/5427_133283_1001448?page=8",
+      "snapshot_sha256": "bfee6d0e12c03e30875810c377667eb625df4120ce9ffcc626fb0ce38060748e",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/browse/baby/feeding/5427_133283",
+          "name": "Feeding",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/feeding/baby-food/5427_133283_1001448",
+          "name": "Baby Food",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/baby/baby-food/5427_133283_1001448",
+          "name": "Baby food jars & tubs",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/baby/baby-food/5427_133283_1001448",
+          "name": "Baby food - pouches",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/baby/once-upon-a-farm/5427_133283_1001448_9714419",
+          "name": "Fresh baby food",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/baby/baby-snack-foods/5427_133283_1001448_6373549",
+          "name": "Baby snacks",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/baby/organic-baby-food/5427_133283_1001448_3609934",
+          "name": "Organic baby food",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/baby/baby-food/5427_133283_1001448",
+          "name": "Baby food jars & tubs",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/baby/baby-food/5427_133283_1001448",
+          "name": "Baby food - pouches",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/baby/once-upon-a-farm/5427_133283_1001448_9714419",
+          "name": "Fresh baby food",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/baby/baby-snack-foods/5427_133283_1001448_6373549",
+          "name": "Baby snacks",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/baby/organic-baby-food/5427_133283_1001448_3609934",
+          "name": "Organic baby food",
+          "action": "queued",
+          "reason": "category_link"
+        }
+      ]
+    },
+    {
+      "category": "Beauty",
+      "url": "https://www.walmart.com/browse/beauty/unisex-fragrances/1085666_133225_7768373",
+      "status": "reviewed",
+      "listing_sequence": 21,
+      "response_category_id": "1085666_133225_7768373",
+      "breadcrumb": [
+        {
+          "id": "1085666",
+          "name": "Beauty",
+          "url": "/cp/1085666"
+        },
+        {
+          "id": "1085666_133225",
+          "name": "Fragrances",
+          "url": "/browse/beauty/fragrances/1085666_133225"
+        },
+        {
+          "id": "1085666_133225_7768373",
+          "name": "Unisex Fragrances",
+          "url": "/browse/fragrances/unisex-fragrances/1085666_133225_7768373"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 1,
+      "listing_rejections": {
+        "sponsored": 2,
+        "marketplace": 9
+      },
+      "candidate_count": 6,
+      "next_page": null,
+      "snapshot_sha256": "82b70aeb62551444aadedb895694780a579bef5b7fd1948ef1bb565de4423c20",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/1085666",
+          "name": "Beauty",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/beauty/fragrances/1085666_133225",
+          "name": "Fragrances",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/fragrances/unisex-fragrances/1085666_133225_7768373",
+          "name": "Unisex Fragrances",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/beauty/fresh-perfume-cologne/1085666_133225_2809623_8188825",
+          "name": "Fresh",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/beauty/woody-earthy-perfume-cologne/1085666_133225_2809623_9365976",
+          "name": "Woody & Earthy",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/beauty/warm-spicy-perfume-cologne/1085666_133225_2809623_9971990",
+          "name": "Warm & Spicy",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/beauty/fruity-perfume-cologne/1085666_133225_2809623_8322929",
+          "name": "Fruity",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/beauty/floral-perfume-cologne/1085666_133225_2809623_8630517",
+          "name": "Floral",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/beauty/perfume-for-women/1085666_133225_4659649",
+          "name": "Perfume",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/beauty/cologne-for-men/1085666_133225_6873232",
+          "name": "Cologne",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/beauty/fragrance/1085666_133225",
+          "name": "Shop all fragrance",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/beauty/fresh-perfume-cologne/1085666_133225_2809623_8188825",
+          "name": "Fresh",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/beauty/woody-earthy-perfume-cologne/1085666_133225_2809623_9365976",
+          "name": "Woody & Earthy",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/beauty/warm-spicy-perfume-cologne/1085666_133225_2809623_9971990",
+          "name": "Warm & Spicy",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/beauty/fruity-perfume-cologne/1085666_133225_2809623_8322929",
+          "name": "Fruity",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/beauty/floral-perfume-cologne/1085666_133225_2809623_8630517",
+          "name": "Floral",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/beauty/perfume-for-women/1085666_133225_4659649",
+          "name": "Perfume",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/beauty/cologne-for-men/1085666_133225_6873232",
+          "name": "Cologne",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/beauty/fragrance/1085666_133225",
+          "name": "Shop all fragrance",
+          "action": "queued",
+          "reason": "category_link"
+        }
+      ]
+    },
+    {
+      "category": "Food",
+      "url": "https://www.walmart.com/browse/food/private-label-beverages/976759_7128585_1478350",
+      "status": "reviewed",
+      "listing_sequence": 22,
+      "response_category_id": "976759_7128585_1478350",
+      "breadcrumb": [
+        {
+          "id": "976759",
+          "name": "Food",
+          "url": "/cp/976759"
+        },
+        {
+          "id": "976759_7128585",
+          "name": "From Our Brands",
+          "url": "/browse/food/from-our-brands/976759_7128585"
+        },
+        {
+          "id": "976759_7128585_1478350",
+          "name": "Private Label Beverages",
+          "url": "/browse/from-our-brands/private-label-beverages/976759_7128585_1478350"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 1,
+      "listing_rejections": {
+        "not_rendered": 1
+      },
+      "candidate_count": 41,
+      "next_page": null,
+      "snapshot_sha256": "0c354f2ce06b06d4d9142c40ca265b015ea106cda5580c12b4c461cdb5187061",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/976759",
+          "name": "Food",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/food/from-our-brands/976759_7128585",
+          "name": "From Our Brands",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/from-our-brands/private-label-beverages/976759_7128585_1478350",
+          "name": "Private Label Beverages",
+          "action": "queued",
+          "reason": "category_link"
+        }
+      ]
+    },
+    {
+      "category": "Office Supplies",
+      "url": "https://www.walmart.com/browse/office-supplies/label-makers/1229749_4339346_5500982",
+      "status": "reviewed",
+      "listing_sequence": 23,
+      "response_category_id": "1229749_4339346_5500982",
+      "breadcrumb": [
+        {
+          "id": "1229749",
+          "name": "Office Supplies",
+          "url": "/cp/1229749"
+        },
+        {
+          "id": "1229749_4339346",
+          "name": "Labels & Label Makers",
+          "url": "/browse/office-supplies/labels-label-makers/1229749_4339346"
+        },
+        {
+          "id": "1229749_4339346_5500982",
+          "name": "Label Makers",
+          "url": "/browse/labels-label-makers/label-makers/1229749_4339346_5500982"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 1,
+      "listing_rejections": {
+        "outside_category": 5,
+        "marketplace": 6
+      },
+      "candidate_count": 6,
+      "next_page": null,
+      "snapshot_sha256": "9e77eadf93be44049603fa3bb8aa445f2f3c48c9d008d2d8605f988e467560f5",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/1229749",
+          "name": "Office Supplies",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/labels-label-makers/1229749_4339346",
+          "name": "Labels & Label Makers",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/labels-label-makers/label-makers/1229749_4339346_5500982",
+          "name": "Label Makers",
+          "action": "queued",
+          "reason": "category_link"
+        }
+      ]
+    },
+    {
+      "category": "Pets",
+      "url": "https://www.walmart.com/browse/pets/all-blue-buffalo-veterinary-diet/5440_8328098_5777749_9705831_8934441",
+      "status": "reviewed",
+      "listing_sequence": 24,
+      "response_category_id": "5440_8328098_5777749_9705831_8934441",
+      "breadcrumb": [
+        {
+          "id": "5440",
+          "name": "Pets",
+          "url": "/cp/5440"
+        },
+        {
+          "id": "5440_8328098",
+          "name": "Walmart Pet Pharmacy",
+          "url": "/browse/pets/walmart-pet-pharmacy/5440_8328098"
+        },
+        {
+          "id": "5440_8328098_5777749",
+          "name": "Veterinary Diet by Brand",
+          "url": "/browse/walmart-pet-pharmacy/veterinary-diet-by-brand/5440_8328098_5777749"
+        },
+        {
+          "id": "5440_8328098_5777749_9705831",
+          "name": "Blue Buffalo Veterinary Diet",
+          "url": "/browse/veterinary-diet-by-brand/blue-buffalo-veterinary-diet/5440_8328098_5777749_9705831"
+        },
+        {
+          "id": "5440_8328098_5777749_9705831_8934441",
+          "name": "All Blue Buffalo Veterinary Diet",
+          "url": "/browse/blue-buffalo-veterinary-diet/all-blue-buffalo-veterinary-diet/5440_8328098_5777749_9705831_8934441"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 1,
+      "listing_rejections": {},
+      "candidate_count": 10,
+      "next_page": null,
+      "snapshot_sha256": "e339051d2e3dc49b633755795b0f9e695bf52b975060df5a37fafa9b8ec45f50",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/5440",
+          "name": "Pets",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/walmart-pet-pharmacy/5440_8328098",
+          "name": "Walmart Pet Pharmacy",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/walmart-pet-pharmacy/veterinary-diet-by-brand/5440_8328098_5777749",
+          "name": "Veterinary Diet by Brand",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/veterinary-diet-by-brand/blue-buffalo-veterinary-diet/5440_8328098_5777749_9705831",
+          "name": "Blue Buffalo Veterinary Diet",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/blue-buffalo-veterinary-diet/all-blue-buffalo-veterinary-diet/5440_8328098_5777749_9705831_8934441",
+          "name": "All Blue Buffalo Veterinary Diet",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/blue-buffalo-pet-food-treats/5440_5285960_1311249",
+          "name": "All Blue Buffalo",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/cats/blue-buffalo-cat-food/5440_5285960_1311249_7152306",
+          "name": "Blue Buffalo Cat Food",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/blue-buffalo-dog-food/5440_5285960_1311249_2483056",
+          "name": "Blue Buffalo Dog Food",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/dogs/dog-treats/5440_202072_8052432",
+          "name": "Blue Buffalo Dog Treats",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/nudges-dog-treats/5440_5285960_1311249_4411191",
+          "name": "Nudges Dog Treats",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/cats/blue-buffalo-kitten-food/5440_5285960_1311249_8126830",
+          "name": "Blue Buffalo Kitten Food",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/blue-buffalo-puppy-food/5440_5285960_1311249_8143559",
+          "name": "Blue Buffalo Puppy Food",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/blue-wilderness-cat-food/5440_5285960_1311249_9240649",
+          "name": "Wilderness Cat Food",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/blue-buffalo-wilderness-dog-food/5440_5285960_1311249_9882639",
+          "name": "Wilderness Dog Food",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/all-blue-buffalo-veterinary-diet/5440_8328098_5777749_9705831_8934441",
+          "name": "Blue Buffalo Vet Diet",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/blue-buffalo-pet-food-treats/5440_5285960_1311249",
+          "name": "All Blue Buffalo",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/cats/blue-buffalo-cat-food/5440_5285960_1311249_7152306",
+          "name": "Blue Buffalo Cat Food",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/blue-buffalo-dog-food/5440_5285960_1311249_2483056",
+          "name": "Blue Buffalo Dog Food",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/dogs/dog-treats/5440_202072_8052432",
+          "name": "Blue Buffalo Dog Treats",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/nudges-dog-treats/5440_5285960_1311249_4411191",
+          "name": "Nudges Dog Treats",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/cats/blue-buffalo-kitten-food/5440_5285960_1311249_8126830",
+          "name": "Blue Buffalo Kitten Food",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/blue-buffalo-puppy-food/5440_5285960_1311249_8143559",
+          "name": "Blue Buffalo Puppy Food",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/blue-wilderness-cat-food/5440_5285960_1311249_9240649",
+          "name": "Wilderness Cat Food",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/blue-buffalo-wilderness-dog-food/5440_5285960_1311249_9882639",
+          "name": "Wilderness Dog Food",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/pets/all-blue-buffalo-veterinary-diet/5440_8328098_5777749_9705831_8934441",
+          "name": "Blue Buffalo Vet Diet",
+          "action": "queued",
+          "reason": "category_link"
+        }
+      ]
+    },
+    {
+      "category": "Personal Care",
+      "url": "https://www.walmart.com/browse/personal-care/all-body-wash/1005862_1071969_1074364_2482671",
+      "status": "reviewed",
+      "listing_sequence": 25,
+      "response_category_id": "1005862_1071969_1074364_2482671",
+      "breadcrumb": [
+        {
+          "id": "1005862",
+          "name": "Personal Care",
+          "url": "/cp/1005862"
+        },
+        {
+          "id": "1005862_1071969",
+          "name": "Bath & Body",
+          "url": "/browse/personal-care/bath-body/1005862_1071969"
+        },
+        {
+          "id": "1005862_1071969_1074364",
+          "name": "Body Wash",
+          "url": "/browse/bath-body/body-wash/1005862_1071969_1074364"
+        },
+        {
+          "id": "1005862_1071969_1074364_2482671",
+          "name": "All Body Wash",
+          "url": "/browse/body-wash/all-body-wash/1005862_1071969_1074364_2482671"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 15,
+      "listing_rejections": {
+        "sponsored": 9,
+        "outside_category": 2,
+        "not_rendered": 1,
+        "marketplace": 3
+      },
+      "candidate_count": 44,
+      "next_page": "https://www.walmart.com/browse/personal-care/all-body-wash/1005862_1071969_1074364_2482671?page=2",
+      "snapshot_sha256": "452543085936e167951cc2eac4fad48176de81e374ef1968f6ce9413ca5d31d1",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/1005862",
+          "name": "Personal Care",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/bath-body/1005862_1071969",
+          "name": "Bath & Body",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/bath-body/body-wash/1005862_1071969_1074364",
+          "name": "Body Wash",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/body-wash/all-body-wash/1005862_1071969_1074364_2482671",
+          "name": "All Body Wash",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/all-body-wash/1005862_1071969_1074364_2482671",
+          "name": "Body wash savings",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/seasonal-scents/1005862_1071969_4544239",
+          "name": "Seasonal scents",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/bar-soap/1005862_1071969_1694681_4735846",
+          "name": "Bar Soap",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/exfoliators/1005862_1071969_3179364_1044042",
+          "name": "Body Scrub",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/body-lotions/1005862_1071969_2566660",
+          "name": "Hand & body lotion",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/loofahs/1005862_1071969_1694681_1001516",
+          "name": "Loofah",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/all-body-wash/1005862_1071969_1074364_2482671",
+          "name": "Get body wash fast",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/all-body-wash/1005862_1071969_1074364_2482671",
+          "name": "Body wash under $5",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/all-body-wash/1005862_1071969_1074364_2482671",
+          "name": "Shop all body wash",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/all-body-wash/1005862_1071969_1074364_2482671",
+          "name": "Body wash savings",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/seasonal-scents/1005862_1071969_4544239",
+          "name": "Seasonal scents",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/bar-soap/1005862_1071969_1694681_4735846",
+          "name": "Bar Soap",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/exfoliators/1005862_1071969_3179364_1044042",
+          "name": "Body Scrub",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/body-lotions/1005862_1071969_2566660",
+          "name": "Hand & body lotion",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/loofahs/1005862_1071969_1694681_1001516",
+          "name": "Loofah",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/all-body-wash/1005862_1071969_1074364_2482671",
+          "name": "Get body wash fast",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/all-body-wash/1005862_1071969_1074364_2482671",
+          "name": "Body wash under $5",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/all-body-wash/1005862_1071969_1074364_2482671",
+          "name": "Shop all body wash",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/deodorants-antiperspirants/1005862_1001487",
+          "name": "View details for Save on deodorant",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/shop-all-personal-care/1005862_2554774",
+          "name": "View details for Save on personal care",
+          "action": "queued",
+          "reason": "category_link"
+        }
+      ]
+    },
+    {
+      "category": "Household Essentials",
+      "url": "https://www.walmart.com/browse/household-essentials/method-cleaning-products/1115193_8250903_2394791_6350166",
+      "status": "reviewed",
+      "listing_sequence": 26,
+      "response_category_id": "1115193_8250903_2394791_6350166",
+      "breadcrumb": [
+        {
+          "id": "1115193",
+          "name": "Household Essentials",
+          "url": "/cp/1115193"
+        },
+        {
+          "id": "1115193_8250903",
+          "name": "Household Essentials by Brand",
+          "url": "/browse/household-essentials/household-essentials-by-brand/1115193_8250903"
+        },
+        {
+          "id": "1115193_8250903_2394791",
+          "name": "Method",
+          "url": "/browse/household-essentials-by-brand/method/1115193_8250903_2394791"
+        },
+        {
+          "id": "1115193_8250903_2394791_6350166",
+          "name": "Method Cleaning Products",
+          "url": "/browse/method/method-cleaning-products/1115193_8250903_2394791_6350166"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 1,
+      "listing_rejections": {
+        "marketplace": 2,
+        "outside_category": 1
+      },
+      "candidate_count": 8,
+      "next_page": null,
+      "snapshot_sha256": "fa9e68765f0c64957413d1234762f7c33b938e3a857ae9593e09256f77836f92",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/1115193",
+          "name": "Household Essentials",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/household-essentials-by-brand/1115193_8250903",
+          "name": "Household Essentials by Brand",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials-by-brand/method/1115193_8250903_2394791",
+          "name": "Method",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/method/method-cleaning-products/1115193_8250903_2394791_6350166",
+          "name": "Method Cleaning Products",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/method-hand-soaps/1115193_8250903_2394791_4326791",
+          "name": "Method hand soap",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/method-cleaning-products/1115193_8250903_2394791_6350166",
+          "name": "Method home cleaning",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/method-laundry-care/1115193_8250903_2394791_7622821",
+          "name": "Method laundry care",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/method-dish-cleaners/1115193_8250903_2394791_9253759",
+          "name": "Method dish cleaning",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/method-body-care/1115193_8250903_2394791_6006485",
+          "name": "Method body care",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/method-body-wash/1115193_8250903_2394791_8280721",
+          "name": "Method body wash",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/method-hand-soaps/1115193_8250903_2394791_4326791",
+          "name": "Method hand soap",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/method-cleaning-products/1115193_8250903_2394791_6350166",
+          "name": "Method home cleaning",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/method-laundry-care/1115193_8250903_2394791_7622821",
+          "name": "Method laundry care",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/method-dish-cleaners/1115193_8250903_2394791_9253759",
+          "name": "Method dish cleaning",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/method-body-care/1115193_8250903_2394791_6006485",
+          "name": "Method body care",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/method-body-wash/1115193_8250903_2394791_8280721",
+          "name": "Method body wash",
+          "action": "queued",
+          "reason": "category_link"
+        }
+      ]
+    },
+    {
+      "category": "Health & Wellness",
+      "url": "https://www.walmart.com/browse/home-health-care/otc-hearing-aids/976760_1005860_8870874",
+      "status": "reviewed",
+      "listing_sequence": 27,
+      "response_category_id": "976760_1005860_8870874",
+      "breadcrumb": [
+        {
+          "id": "976760",
+          "name": "Health and Medicine",
+          "url": "/cp/976760"
+        },
+        {
+          "id": "976760_1005860",
+          "name": "Home Health Care",
+          "url": "/browse/health-and-medicine/home-health-care/976760_1005860"
+        },
+        {
+          "id": "976760_1005860_8870874",
+          "name": "OTC Hearing Aids",
+          "url": "/browse/home-health-care/otc-hearing-aids/976760_1005860_8870874"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 1,
+      "listing_rejections": {
+        "sponsored": 3,
+        "marketplace": 10
+      },
+      "candidate_count": 4,
+      "next_page": null,
+      "snapshot_sha256": "44d33e0e9731251440cde13eb31fad5c274a3e72aae1dfd151868bb45d641d37",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/976760",
+          "name": "Health and Medicine",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-and-medicine/home-health-care/976760_1005860",
+          "name": "Home Health Care",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/home-health-care/otc-hearing-aids/976760_1005860_8870874",
+          "name": "OTC Hearing Aids",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/home-health-care/otc-hearing-aids/976760_1005860_8870874",
+          "name": "FSA hearing aids",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/home-health-care/otc-hearing-aids/976760_1005860_8870874",
+          "name": "Get hearing aids fast",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/home-health-care/otc-hearing-aids/976760_1005860_8870874",
+          "name": "OTC Hearing aids",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/hearing-amplifiers/976760_1005860_5455166_9633793",
+          "name": "Sound amplifiers",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/hearing-aid-batteries/976760_1005860_5455166_8123336_3830255",
+          "name": "Hearing aid batteries",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/hearing-aid-cleaning-kits/976760_1005860_8123336_3575889",
+          "name": "Cleaning kits",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/hearing-aid-domes-tubes/976760_1005860_8123336_6376446",
+          "name": "Domes & tubes",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/hearing-aid-wax-guards-dryers/976760_1005860_8123336_9775216",
+          "name": "Wax guards",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/hearing-aid-cases/976760_1005860_8123336_5178647",
+          "name": "Cases & Dryers",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/hearing-aid-accessories/976760_1005860_5455166_8123336",
+          "name": "Accessories",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/home-health-care/otc-hearing-aids/976760_1005860_8870874",
+          "name": "FSA hearing aids",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/home-health-care/otc-hearing-aids/976760_1005860_8870874",
+          "name": "Get hearing aids fast",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/home-health-care/otc-hearing-aids/976760_1005860_8870874",
+          "name": "OTC Hearing aids",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/hearing-amplifiers/976760_1005860_5455166_9633793",
+          "name": "Sound amplifiers",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/hearing-aid-batteries/976760_1005860_5455166_8123336_3830255",
+          "name": "Hearing aid batteries",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/hearing-aid-cleaning-kits/976760_1005860_8123336_3575889",
+          "name": "Cleaning kits",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/hearing-aid-domes-tubes/976760_1005860_8123336_6376446",
+          "name": "Domes & tubes",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/hearing-aid-wax-guards-dryers/976760_1005860_8123336_9775216",
+          "name": "Wax guards",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/hearing-aid-cases/976760_1005860_8123336_5178647",
+          "name": "Cases & Dryers",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/hearing-aid-accessories/976760_1005860_5455166_8123336",
+          "name": "Accessories",
+          "action": "queued",
+          "reason": "category_link"
+        }
+      ]
+    },
+    {
+      "category": "Feeding",
+      "url": "https://www.walmart.com/browse/feeding/baby-drinks/5427_133283_7172091?page=7",
+      "status": "reviewed",
+      "listing_sequence": 28,
+      "response_category_id": "5427_133283_7172091",
+      "breadcrumb": [
+        {
+          "id": "5427",
+          "name": "Baby",
+          "url": "/cp/5427"
+        },
+        {
+          "id": "5427_133283",
+          "name": "Feeding",
+          "url": "/browse/baby/feeding/5427_133283"
+        },
+        {
+          "id": "5427_133283_7172091",
+          "name": "Baby Drinks",
+          "url": "/browse/feeding/baby-drinks/5427_133283_7172091"
+        }
+      ],
+      "page": 7,
+      "reported_last_page": 8,
+      "listing_rejections": {
+        "sponsored": 9,
+        "outside_category": 10
+      },
+      "candidate_count": 28,
+      "next_page": "https://www.walmart.com/browse/feeding/baby-drinks/5427_133283_7172091?page=8",
+      "snapshot_sha256": "289fc880487a6ca62641f182d1b877ce04ba1cf3a6e2ceb55445b3dac35525a4",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/browse/baby/feeding/5427_133283",
+          "name": "Feeding",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/feeding/baby-drinks/5427_133283_7172091",
+          "name": "Baby Drinks",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/feeding/baby-drinks/5427_133283_7172091",
+          "name": "Toddler Formula",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/feeding/baby-drinks/5427_133283_7172091",
+          "name": "Pediatric Nutrition Shakes",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/feeding/baby-drinks/5427_133283_7172091",
+          "name": "Pediatric Electrolyte",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/feeding/baby-drinks/5427_133283_7172091",
+          "name": "Toddler Food & Drinks",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/feeding/baby-drinks/5427_133283_7172091",
+          "name": "Pedialyte",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/feeding/baby-drinks/5427_133283_7172091",
+          "name": "Kenda Kids Nutrition Shakes",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/feeding/baby-drinks/5427_133283_7172091",
+          "name": "PediaSure",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/feeding/baby-drinks/5427_133283_7172091",
+          "name": "Baby Beverages",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/feeding/baby-drinks/5427_133283_7172091",
+          "name": "Natural & Organic Baby Drinks and Formula",
+          "action": "queued",
+          "reason": "category_link"
+        }
+      ]
+    },
+    {
+      "category": "Beauty",
+      "url": "https://www.walmart.com/browse/beauty/walmart-beauty-box/1085666_4820682_9411485",
+      "status": "reviewed",
+      "listing_sequence": 29,
+      "response_category_id": "1085666_4820682_9411485",
+      "breadcrumb": [
+        {
+          "id": "1085666",
+          "name": "Beauty",
+          "url": "/cp/1085666"
+        },
+        {
+          "id": "1085666_4820682",
+          "name": "Beauty by Topic",
+          "url": "/browse/beauty/beauty-by-topic/1085666_4820682"
+        },
+        {
+          "id": "1085666_4820682_9411485",
+          "name": "Walmart Beauty Box",
+          "url": "/browse/beauty-by-topic/walmart-beauty-box/1085666_4820682_9411485"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 3,
+      "listing_rejections": {
+        "sponsored": 9,
+        "outside_category": 6,
+        "marketplace": 5
+      },
+      "candidate_count": 38,
+      "next_page": "https://www.walmart.com/browse/beauty/walmart-beauty-box/1085666_4820682_9411485?page=2",
+      "snapshot_sha256": "928c9c50d660a0e3c70b410b410d7145f258df9e1be066f545d48367a98f7127",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/1085666",
+          "name": "Beauty",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/beauty/beauty-by-topic/1085666_4820682",
+          "name": "Beauty by Topic",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/beauty-by-topic/walmart-beauty-box/1085666_4820682_9411485",
+          "name": "Walmart Beauty Box",
+          "action": "queued",
+          "reason": "category_link"
+        }
+      ]
+    },
+    {
+      "category": "Food",
+      "url": "https://www.walmart.com/browse/food/private-label-fresh-food/976759_7128585_2981759",
+      "status": "reviewed",
+      "listing_sequence": 30,
+      "response_category_id": "976759_7128585_2981759",
+      "breadcrumb": [
+        {
+          "id": "976759",
+          "name": "Food",
+          "url": "/cp/976759"
+        },
+        {
+          "id": "976759_7128585",
+          "name": "From Our Brands",
+          "url": "/browse/food/from-our-brands/976759_7128585"
+        },
+        {
+          "id": "976759_7128585_2981759",
+          "name": "Private Label Fresh Food",
+          "url": "/browse/from-our-brands/private-label-fresh-food/976759_7128585_2981759"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 25,
+      "listing_rejections": {
+        "sponsored": 3,
+        "not_rendered": 4,
+        "marketplace": 1
+      },
+      "candidate_count": 40,
+      "next_page": "https://www.walmart.com/browse/food/private-label-fresh-food/976759_7128585_2981759?page=2",
+      "snapshot_sha256": "c34344ea09d38649bf54d42e01fafff4975e3d4ff4b55bad6067aa7cf17a65de",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/976759",
+          "name": "Food",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/food/from-our-brands/976759_7128585",
+          "name": "From Our Brands",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/from-our-brands/private-label-fresh-food/976759_7128585_2981759",
+          "name": "Private Label Fresh Food",
+          "action": "queued",
+          "reason": "category_link"
+        }
+      ]
+    },
+    {
+      "category": "Office Supplies",
+      "url": "https://www.walmart.com/browse/office-supplies/labels-label-makers/1229749_4339346",
+      "status": "reviewed",
+      "listing_sequence": 31,
+      "response_category_id": "1229749_4339346",
+      "breadcrumb": [
+        {
+          "id": "1229749",
+          "name": "Office Supplies",
+          "url": "/cp/1229749"
+        },
+        {
+          "id": "1229749_4339346",
+          "name": "Labels & Label Makers",
+          "url": "/browse/office-supplies/labels-label-makers/1229749_4339346"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 4,
+      "listing_rejections": {
+        "outside_category": 4,
+        "marketplace": 9
+      },
+      "candidate_count": 33,
+      "next_page": "https://www.walmart.com/browse/office-supplies/labels-label-makers/1229749_4339346?page=2",
+      "snapshot_sha256": "5e851e75ff4e11f01340dce67c1347135fcb806b1019ab46fddcc0343c6d8196",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/1229749",
+          "name": "Office Supplies",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/labels-label-makers/1229749_4339346",
+          "name": "Labels & Label Makers",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/labels-label-makers/1229749_4339346",
+          "name": "Labels",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/labels-label-makers/1229749_4339346",
+          "name": "Multi-Purpose Labels",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/labels-label-makers/1229749_4339346",
+          "name": "Label Maker Tape & Refills",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/labels-label-makers/1229749_4339346",
+          "name": "Color Coding Labels",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/labels-label-makers/1229749_4339346",
+          "name": "White Labels",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/labels-label-makers/1229749_4339346",
+          "name": "Address Labels",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/labels-label-makers/1229749_4339346",
+          "name": "Shipping Labels",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/labels-label-makers/1229749_4339346",
+          "name": "Black Labels",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/labels-label-makers/1229749_4339346",
+          "name": "Red Labels",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/labels-label-makers/1229749_4339346",
+          "name": "Label Makers",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/labels-label-makers/1229749_4339346",
+          "name": "Brother Label Makers",
+          "action": "queued",
+          "reason": "category_link"
+        }
+      ]
+    },
+    {
+      "category": "Pets",
+      "url": "https://www.walmart.com/browse/pets/all-blue-buffalo/5440_5285960_1311249_2404549?page=2",
+      "status": "failed",
+      "listing_sequence": 32,
+      "reason": "Response category identifier mismatch or missing",
+      "error_type": "ValueError"
+    },
+    {
+      "category": "Personal Care",
+      "url": "https://www.walmart.com/browse/bath-body/body-wash-shower-gel/1005862_1071969_1074364?page=2",
+      "status": "reviewed",
+      "listing_sequence": 33,
+      "response_category_id": "1005862_1071969_1074364",
+      "breadcrumb": [
+        {
+          "id": "1005862",
+          "name": "Personal Care",
+          "url": "/cp/1005862"
+        },
+        {
+          "id": "1005862_1071969",
+          "name": "Bath & Body",
+          "url": "/browse/personal-care/bath-body/1005862_1071969"
+        },
+        {
+          "id": "1005862_1071969_1074364",
+          "name": "Body Wash",
+          "url": "/browse/bath-body/body-wash/1005862_1071969_1074364"
+        }
+      ],
+      "page": 2,
+      "reported_last_page": 17,
+      "listing_rejections": {
+        "sponsored": 10
+      },
+      "candidate_count": 40,
+      "next_page": "https://www.walmart.com/browse/bath-body/body-wash-shower-gel/1005862_1071969_1074364?page=3",
+      "snapshot_sha256": "8e70d598de11566980e25ef65a626505abc968afc5404fecee1198955bd47fed",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/1005862",
+          "name": "Personal Care",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/bath-body/1005862_1071969",
+          "name": "Bath & Body",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/bath-body/body-wash/1005862_1071969_1074364",
+          "name": "Body Wash",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/all-body-wash/1005862_1071969_1074364_2482671",
+          "name": "Body wash savings",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/seasonal-scents/1005862_1071969_4544239",
+          "name": "Seasonal scents",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/bar-soap/1005862_1071969_1694681_4735846",
+          "name": "Bar Soap",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/exfoliators/1005862_1071969_3179364_1044042",
+          "name": "Body Scrub",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/body-lotions/1005862_1071969_2566660",
+          "name": "Hand & body lotion",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/loofahs/1005862_1071969_1694681_1001516",
+          "name": "Loofah",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/all-body-wash/1005862_1071969_1074364_2482671",
+          "name": "Get body wash fast",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/all-body-wash/1005862_1071969_1074364_2482671",
+          "name": "Body wash under $5",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/all-body-wash/1005862_1071969_1074364_2482671",
+          "name": "Shop all body wash",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/all-body-wash/1005862_1071969_1074364_2482671",
+          "name": "Body wash savings",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/seasonal-scents/1005862_1071969_4544239",
+          "name": "Seasonal scents",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/bar-soap/1005862_1071969_1694681_4735846",
+          "name": "Bar Soap",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/exfoliators/1005862_1071969_3179364_1044042",
+          "name": "Body Scrub",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/body-lotions/1005862_1071969_2566660",
+          "name": "Hand & body lotion",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/loofahs/1005862_1071969_1694681_1001516",
+          "name": "Loofah",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/all-body-wash/1005862_1071969_1074364_2482671",
+          "name": "Get body wash fast",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/all-body-wash/1005862_1071969_1074364_2482671",
+          "name": "Body wash under $5",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/all-body-wash/1005862_1071969_1074364_2482671",
+          "name": "Shop all body wash",
+          "action": "queued",
+          "reason": "category_link"
+        }
+      ]
+    },
+    {
+      "category": "Household Essentials",
+      "url": "https://www.walmart.com/browse/household-essentials/all-purpose-cleaners/1115193_1071966_7408243?page=2",
+      "status": "reviewed",
+      "listing_sequence": 34,
+      "response_category_id": "1115193_1071966_7408243",
+      "breadcrumb": [
+        {
+          "id": "1115193",
+          "name": "Household Essentials",
+          "url": "/cp/1115193"
+        },
+        {
+          "id": "1115193_1071966",
+          "name": "Cleaning Supplies",
+          "url": "/browse/household-essentials/cleaning-supplies/1115193_1071966"
+        },
+        {
+          "id": "1115193_1071966_7408243",
+          "name": "All Purpose Cleaners",
+          "url": "/browse/cleaning-supplies/all-purpose-cleaners/1115193_1071966_7408243"
+        }
+      ],
+      "page": 2,
+      "reported_last_page": 8,
+      "listing_rejections": {
+        "sponsored": 10,
+        "outside_category": 1
+      },
+      "candidate_count": 39,
+      "next_page": "https://www.walmart.com/browse/household-essentials/all-purpose-cleaners/1115193_1071966_7408243?page=3",
+      "snapshot_sha256": "47a492052f5d300954c527e5ece3c55c246029722d6050251aa137d91fc610f2",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/1115193",
+          "name": "Household Essentials",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/cleaning-supplies/1115193_1071966",
+          "name": "Cleaning Supplies",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/cleaning-supplies/all-purpose-cleaners/1115193_1071966_7408243",
+          "name": "All Purpose Cleaners",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/clorox-sprays/1115193_8250903_7784444_5520663",
+          "name": "Clorox cleaners",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/lysol-all-purpose-cleaners/1115193_8250903_9423727_8049174",
+          "name": "Lysol cleaners",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/mr-clean-multi-surface-cleaner/1115193_1071966_7553837_8398643",
+          "name": "Mr. Clean cleaners",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/fabuloso/1115193_8250903_4920942",
+          "name": "Fabuloso cleaners",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/pine-sol/1115193_1071966_7408243_3119118",
+          "name": "Pine-Sol cleaners",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/mrs-meyers-cleaners/1115193_8250903_4950927_3877374",
+          "name": "Mrs. Meyer's cleaners",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/method-cleaning-products/1115193_8250903_2394791_6350166",
+          "name": "Method cleaners",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/all-purpose-cleaners/1115193_1071966_7408243",
+          "name": "Great Value cleaners",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/cleaning-supplies/1115193_1071966",
+          "name": "Cleaning supplies savings",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/cleaning-supplies/1115193_1071966",
+          "name": "Cleaning supplies",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/cleaning-supplies/1115193_1071966",
+          "name": "Cleaning supplies",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/clorox-sprays/1115193_8250903_7784444_5520663",
+          "name": "Clorox cleaners",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/lysol-all-purpose-cleaners/1115193_8250903_9423727_8049174",
+          "name": "Lysol cleaners",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/mr-clean-multi-surface-cleaner/1115193_1071966_7553837_8398643",
+          "name": "Mr. Clean cleaners",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/fabuloso/1115193_8250903_4920942",
+          "name": "Fabuloso cleaners",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/pine-sol/1115193_1071966_7408243_3119118",
+          "name": "Pine-Sol cleaners",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/mrs-meyers-cleaners/1115193_8250903_4950927_3877374",
+          "name": "Mrs. Meyer's cleaners",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/method-cleaning-products/1115193_8250903_2394791_6350166",
+          "name": "Method cleaners",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/all-purpose-cleaners/1115193_1071966_7408243",
+          "name": "Great Value cleaners",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/cleaning-supplies/1115193_1071966",
+          "name": "Cleaning supplies savings",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/cleaning-supplies/1115193_1071966",
+          "name": "Cleaning supplies",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/household-essentials/cleaning-supplies/1115193_1071966",
+          "name": "Cleaning supplies",
+          "action": "queued",
+          "reason": "category_link"
+        }
+      ]
+    },
+    {
+      "category": "Health & Wellness",
+      "url": "https://www.walmart.com/browse/first-aid/first-aid-kits/976760_2571007_9065854",
+      "status": "reviewed",
+      "listing_sequence": 35,
+      "response_category_id": "976760_2571007_9065854",
+      "breadcrumb": [
+        {
+          "id": "976760",
+          "name": "Health and Medicine",
+          "url": "/cp/976760"
+        },
+        {
+          "id": "976760_2571007",
+          "name": "First Aid",
+          "url": "/browse/health-and-medicine/first-aid/976760_2571007"
+        },
+        {
+          "id": "976760_2571007_9065854",
+          "name": "First Aid Kits",
+          "url": "/browse/first-aid/first-aid-kits/976760_2571007_9065854"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 1,
+      "listing_rejections": {
+        "sponsored": 1,
+        "marketplace": 2
+      },
+      "candidate_count": 18,
+      "next_page": null,
+      "snapshot_sha256": "c63c976e1fde4d5a7b335436fdea82e9d86c34c2ec136b8befcddbbe1a0845d7",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/976760",
+          "name": "Health and Medicine",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-and-medicine/first-aid/976760_2571007",
+          "name": "First Aid",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/first-aid/first-aid-kits/976760_2571007_9065854",
+          "name": "First Aid Kits",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/first-aid-kits/976760_2571007_9065854",
+          "name": "Equate first aid kits",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/first-aid-kits/976760_2571007_9065854",
+          "name": "Be Smart first aid kits",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/first-aid-kits/976760_2571007_9065854",
+          "name": "FSA/HSA eligible first aid kits",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/first-aid-kits/976760_2571007_9065854",
+          "name": "Get first aid kits fast",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/first-aid-kits/976760_2571007_9065854",
+          "name": "First aid kit savings",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/first-aid-kits/976760_2571007_9065854",
+          "name": "Top rated first aid kits",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/first-aid-kits/976760_2571007_9065854",
+          "name": "Shop all first aid kits",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/first-aid-kits/976760_2571007_9065854",
+          "name": "Equate first aid kits",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/first-aid-kits/976760_2571007_9065854",
+          "name": "Be Smart first aid kits",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/first-aid-kits/976760_2571007_9065854",
+          "name": "FSA/HSA eligible first aid kits",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/first-aid-kits/976760_2571007_9065854",
+          "name": "Get first aid kits fast",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/first-aid-kits/976760_2571007_9065854",
+          "name": "First aid kit savings",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/first-aid-kits/976760_2571007_9065854",
+          "name": "Top rated first aid kits",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health/first-aid-kits/976760_2571007_9065854",
+          "name": "Shop all first aid kits",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/health-medicine/advanced-wound-care/976760_2571007_2884773",
+          "name": "View details for Advanced wound care",
+          "action": "queued",
+          "reason": "category_link"
+        }
+      ]
+    },
+    {
+      "category": "Feeding",
+      "url": "https://www.walmart.com/browse/baby-food/baby-food-stages/5427_133283_1001448_1224824?page=7",
+      "status": "reviewed",
+      "listing_sequence": 36,
+      "response_category_id": "5427_133283_1001448_1224824",
+      "breadcrumb": [
+        {
+          "id": "5427",
+          "name": "Baby",
+          "url": "/cp/5427"
+        },
+        {
+          "id": "5427_133283",
+          "name": "Feeding",
+          "url": "/browse/baby/feeding/5427_133283"
+        },
+        {
+          "id": "5427_133283_1001448",
+          "name": "Baby Food",
+          "url": "/browse/feeding/baby-food/5427_133283_1001448"
+        },
+        {
+          "id": "5427_133283_1001448_1224824",
+          "name": "Baby Food Stages",
+          "url": "/browse/baby-food/baby-food-stages/5427_133283_1001448_1224824"
+        }
+      ],
+      "page": 7,
+      "reported_last_page": 10,
+      "listing_rejections": {
+        "sponsored": 4,
+        "outside_category": 5
+      },
+      "candidate_count": 35,
+      "next_page": "https://www.walmart.com/browse/baby-food/baby-food-stages/5427_133283_1001448_1224824?page=8",
+      "snapshot_sha256": "25bc1d88c87eb91c71e855fb82135a501065cac8a4f07fe8a763a7ac292348d8",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/browse/baby/feeding/5427_133283",
+          "name": "Feeding",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/feeding/baby-food/5427_133283_1001448",
+          "name": "Baby Food",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/baby-food/baby-food-stages/5427_133283_1001448_1224824",
+          "name": "Baby Food Stages",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/baby/baby-food/5427_133283_1001448",
+          "name": "Baby food jars & tubs",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/baby/baby-food/5427_133283_1001448",
+          "name": "Baby food - pouches",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/baby/once-upon-a-farm/5427_133283_1001448_9714419",
+          "name": "Fresh baby food",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/baby/baby-snack-foods/5427_133283_1001448_6373549",
+          "name": "Baby snacks",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/baby/organic-baby-food/5427_133283_1001448_3609934",
+          "name": "Organic baby food",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/baby/baby-food/5427_133283_1001448",
+          "name": "Baby food jars & tubs",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/baby/baby-food/5427_133283_1001448",
+          "name": "Baby food - pouches",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/baby/once-upon-a-farm/5427_133283_1001448_9714419",
+          "name": "Fresh baby food",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/baby/baby-snack-foods/5427_133283_1001448_6373549",
+          "name": "Baby snacks",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/baby/organic-baby-food/5427_133283_1001448_3609934",
+          "name": "Organic baby food",
+          "action": "queued",
+          "reason": "category_link"
+        }
+      ]
+    },
+    {
+      "category": "Beauty",
+      "url": "https://www.walmart.com/browse/beauty/wet-n-wild/1085666_3316357_1681180",
+      "status": "reviewed",
+      "listing_sequence": 37,
+      "response_category_id": "1085666_3316357_1681180",
+      "breadcrumb": [
+        {
+          "id": "1085666",
+          "name": "Beauty",
+          "url": "/cp/1085666"
+        },
+        {
+          "id": "1085666_3316357",
+          "name": "Beauty by Top Brands",
+          "url": "/browse/beauty/beauty-by-top-brands/1085666_3316357"
+        },
+        {
+          "id": "1085666_3316357_1681180",
+          "name": "wet n wild",
+          "url": "/browse/beauty-by-top-brands/wet-n-wild/1085666_3316357_1681180"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 4,
+      "listing_rejections": {
+        "outside_category": 4,
+        "marketplace": 2
+      },
+      "candidate_count": 44,
+      "next_page": "https://www.walmart.com/browse/beauty/wet-n-wild/1085666_3316357_1681180?page=2",
+      "snapshot_sha256": "8468c983a0e2362811b65b6071ab2393290e40552b695722f03f2eac635a5ac0",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/1085666",
+          "name": "Beauty",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/beauty/beauty-by-top-brands/1085666_3316357",
+          "name": "Beauty by Top Brands",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/beauty-by-top-brands/wet-n-wild/1085666_3316357_1681180",
+          "name": "wet n wild",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/beauty/wet-n-wild/1085666_3316357_1681180",
+          "name": "wet n wild Lipstick",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/beauty/wet-n-wild/1085666_3316357_1681180",
+          "name": "wet n wild Lip Gloss & Lip Plumper",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/beauty/wet-n-wild/1085666_3316357_1681180",
+          "name": "wet n wild Blush & Bronzer",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/beauty/wet-n-wild/1085666_3316357_1681180",
+          "name": "wet n wild Prime & Set",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/beauty/wet-n-wild/1085666_3316357_1681180",
+          "name": "wet n wild Highlight & Contour",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/beauty/wet-n-wild/1085666_3316357_1681180",
+          "name": "wet n wild Lip Liner",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/beauty/wet-n-wild/1085666_3316357_1681180",
+          "name": "wet n wild Eye Shadow",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/beauty/wet-n-wild/1085666_3316357_1681180",
+          "name": "wet n wild Lip Balm & Conditioner",
+          "action": "queued",
+          "reason": "category_link"
+        }
+      ]
+    },
+    {
+      "category": "Food",
+      "url": "https://www.walmart.com/browse/food/private-label-frozen-food/976759_7128585_8934463",
+      "status": "reviewed",
+      "listing_sequence": 38,
+      "response_category_id": "976759_7128585_8934463",
+      "breadcrumb": [
+        {
+          "id": "976759",
+          "name": "Food",
+          "url": "/cp/976759"
+        },
+        {
+          "id": "976759_7128585",
+          "name": "From Our Brands",
+          "url": "/browse/food/from-our-brands/976759_7128585"
+        },
+        {
+          "id": "976759_7128585_8934463",
+          "name": "Private Label Frozen Food",
+          "url": "/browse/from-our-brands/private-label-frozen-food/976759_7128585_8934463"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 13,
+      "listing_rejections": {},
+      "candidate_count": 40,
+      "next_page": "https://www.walmart.com/browse/food/private-label-frozen-food/976759_7128585_8934463?page=2",
+      "snapshot_sha256": "40205ca42bbafe28c0dad18be731abe71b5a5b80e76dddd3516c898802b93a75",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/976759",
+          "name": "Food",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/food/from-our-brands/976759_7128585",
+          "name": "From Our Brands",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/from-our-brands/private-label-frozen-food/976759_7128585_8934463",
+          "name": "Private Label Frozen Food",
+          "action": "queued",
+          "reason": "category_link"
+        }
+      ]
+    },
+    {
+      "category": "Office Supplies",
+      "url": "https://www.walmart.com/browse/office-supplies/laminating-pouches-sheets/1229749_4993133_6663392",
+      "status": "reviewed",
+      "listing_sequence": 39,
+      "response_category_id": "1229749_4993133_6663392",
+      "breadcrumb": [
+        {
+          "id": "1229749",
+          "name": "Office Supplies",
+          "url": "/cp/1229749"
+        },
+        {
+          "id": "1229749_4993133",
+          "name": "Laminators & Laminating Supplies",
+          "url": "/browse/office-supplies/laminators-laminating-supplies/1229749_4993133"
+        },
+        {
+          "id": "1229749_4993133_6663392",
+          "name": "Laminating Pouches & Sheets",
+          "url": "/browse/laminators-laminating-supplies/laminating-pouches-sheets/1229749_4993133_6663392"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 1,
+      "listing_rejections": {
+        "outside_category": 3,
+        "marketplace": 9
+      },
+      "candidate_count": 13,
+      "next_page": null,
+      "snapshot_sha256": "d1cc762a466cee2601bc4a9f99b718f3b3c33f8694aa2ed076b5d4b1fe968483",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/1229749",
+          "name": "Office Supplies",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/laminators-laminating-supplies/1229749_4993133",
+          "name": "Laminators & Laminating Supplies",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/laminators-laminating-supplies/laminating-pouches-sheets/1229749_4993133_6663392",
+          "name": "Laminating Pouches & Sheets",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/laminators/1229749_4993133_1085032",
+          "name": "Laminators",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/laminating-pouches-sheets/1229749_4993133_6663392",
+          "name": "Laminating Pouches",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/laminating-pouches-sheets/1229749_4993133_6663392",
+          "name": "Laminating Sheets",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/scotch-laminators/1229749_4993133_4501114",
+          "name": "Scotch Laminators",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/office-supplies/swingline-laminators/1229749_4993133_5904099",
+          "name": "Swingline Laminators",
+          "action": "queued",
+          "reason": "category_link"
+        }
+      ]
+    },
+    {
+      "category": "Personal Care",
+      "url": "https://www.walmart.com/browse/personal-care/face-towels/1005862_1071969_6606385_6456255",
+      "status": "reviewed",
+      "listing_sequence": 40,
+      "response_category_id": "1005862_1071969_6606385_6456255",
+      "breadcrumb": [
+        {
+          "id": "1005862",
+          "name": "Personal Care",
+          "url": "/cp/1005862"
+        },
+        {
+          "id": "1005862_1071969",
+          "name": "Bath & Body",
+          "url": "/browse/personal-care/bath-body/1005862_1071969"
+        },
+        {
+          "id": "1005862_1071969_6606385",
+          "name": "Cotton",
+          "url": "/browse/bath-body/cotton/1005862_1071969_6606385"
+        },
+        {
+          "id": "1005862_1071969_6606385_6456255",
+          "name": "Face Towels",
+          "url": "/browse/cotton/face-towels/1005862_1071969_6606385_6456255"
+        }
+      ],
+      "page": 1,
+      "reported_last_page": 1,
+      "listing_rejections": {
+        "sponsored": 1,
+        "outside_category": 11
+      },
+      "candidate_count": 0,
+      "next_page": null,
+      "snapshot_sha256": "f7cec11a956b81ceaf03125ede9170315cb4304ab418010ca09f6e1c36b9bef6",
+      "decisions": [
+        {
+          "url": "https://www.walmart.com/cp/1005862",
+          "name": "Personal Care",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/bath-body/1005862_1071969",
+          "name": "Bath & Body",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/bath-body/cotton/1005862_1071969_6606385",
+          "name": "Cotton",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/cotton/face-towels/1005862_1071969_6606385_6456255",
+          "name": "Face Towels",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/face-towels/1005862_1071969_6606385_6456255",
+          "name": "Face towels",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/bath-body/cotton/1005862_1071969_6606385",
+          "name": "All cosmetic cotton",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/personal-care/face-towels/1005862_1071969_6606385_6456255",
+          "name": "Face towels",
+          "action": "queued",
+          "reason": "category_link"
+        },
+        {
+          "url": "https://www.walmart.com/browse/bath-body/cotton/1005862_1071969_6606385",
+          "name": "All cosmetic cotton",
+          "action": "queued",
+          "reason": "category_link"
+        }
+      ]
+    }
+  ],
+  "offer_observations": [],
+  "limits": {
+    "product_requests": 10,
+    "listing_requests": 40,
+    "seconds": 2943,
+    "batch_bytes": 2147483648
+  },
+  "full_coverage_complete": false,
+  "queue_growth": {
+    "seed_already_known_page": 1304,
+    "discovery_already_known_page": 291,
+    "discovery_new_page": 43
+  },
+  "new_page_identities": 43,
+  "seconds": 826.66,
+  "counts": {
+    "product_requests": 0,
+    "listing_requests": 40,
+    "sequence": 40,
+    "body_bytes": 37399409
+  },
+  "queue_counts": {
+    "failed": 63,
+    "navigation_scope_unverified": 9,
+    "outside_scope": 1,
+    "pending": 2441,
+    "reviewed": 1264
+  },
+  "scope_counts": {
+    "brief_exclusion": 2,
+    "outside_required_ancestry": 2,
+    "parent_scope_unverified": 104,
+    "scope_confirmed_by_response": 9484,
+    "scope_unverified": 311,
+    "scoped_queue": 5860
+  }
+}
