@@ -6,7 +6,9 @@
     "Corrected retry must independently pass product, store, ZIP and PICKUP validation",
     "Isolated invalid product response is logged without replacing last good retention data",
     "Three consecutive unsafe product contexts stop collection",
-    "Page safety limit preserves checkpoint and reaches final incomplete validation"
+    "Page safety limit preserves checkpoint and reaches final incomplete validation",
+    "Isolated page-content failures are logged and skipped while remaining pages continue",
+    "Isolated transport failures are logged; repeated failures or access blocks stop collection"
   ],
   "checks": [
     "Category ID scope fixtures passed",
@@ -16,8 +18,6 @@
     "Unavailable historical product retained with original date and values"
   ],
   "open": [
-    "Page-level failure continuation",
-    "Repeated transport-failure threshold",
     "Bounded live acceptance test"
   ]
 }

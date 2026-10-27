@@ -121,6 +121,15 @@ def run(args):
         return any(text in str(error) for text in ['Location mismatch', 'Location ZIP mismatch',
                                                     'Product identity mismatch or missing response'])
 
+    def fatal_transport(error):
+        return any(text in str(error).lower() for text in ['challenge', 'access denied', 'access blocked',
+                                                            'captcha', 'disk reserve'])
+
+    def reject_page(category, url, reason):
+        with db:
+            db.execute("UPDATE pages SET status='failed' WHERE category=? AND url=?", (category, url))
+        log('page_rejected', category=category, url=url, reason=reason)
+
     def collect_products():
         nonlocal current_work
         for key, text in db.execute("SELECT id,data FROM candidates WHERE status='pending' ORDER BY rowid").fetchall():
@@ -132,8 +141,22 @@ def run(args):
             trace_context('before_product_' + key)
             row = None
             reason = 'validation_error'
+            source_data = {'candidate': candidate, 'reason': reason}
             for attempt in range(2):
-                soup = fetch_product(sb, candidate['url'], settings, log)
+                try:
+                    soup = fetch_product(sb, candidate['url'], settings, log)
+                    metadata(db, 'consecutive_transport_failures', 0)
+                except Exception as error:
+                    failures = (metadata(db, 'consecutive_transport_failures') or 0) + 1
+                    metadata(db, 'consecutive_transport_failures', failures)
+                    source_data.update(reason='transport_error', error=str(error), attempt=attempt + 1)
+                    retention.observe(catalog, key, None, 'transport_error', run_id, datetime.now(timezone.utc).isoformat(), False)
+                    save_product(db, candidate, None, 'transport_error')
+                    log('product_transport_error', id=key, failures=failures, error=str(error))
+                    if fatal_transport(error) or failures >= settings.get('max_consecutive_transport_failures', 3):
+                        raise RuntimeError('Repeated product transport failures; collection stopped') from error
+                    reason = 'transport_error'
+                    break
                 data = next_data(soup).get('data') or {}
                 source_data = {'candidate': candidate, 'product': data.get('product'),
                                'specifications': (data.get('idml') or {}).get('specifications'),
@@ -212,7 +235,16 @@ def run(args):
                     break
                 current_work = {'kind': 'page', 'category': category, 'url': url}
                 log('page_started', **current_work)
-                soup = navigate(sb, url, settings, log)
+                try:
+                    soup = navigate(sb, url, settings, log)
+                    metadata(db, 'consecutive_transport_failures', 0)
+                except Exception as error:
+                    failures = (metadata(db, 'consecutive_transport_failures') or 0) + 1
+                    metadata(db, 'consecutive_transport_failures', failures)
+                    reject_page(category, url, 'transport_error')
+                    if fatal_transport(error) or failures >= settings.get('max_consecutive_transport_failures', 3):
+                        raise RuntimeError('Repeated listing transport failures; collection stopped') from error
+                    continue
                 verify_banner(soup, store)
                 soup.clear(decompose=True)
                 soup.decompose()
@@ -232,7 +264,8 @@ def run(args):
                     if stable >= 4:
                         break
                 else:
-                    raise ValueError('Lazy loading did not settle; coverage incomplete')
+                    reject_page(category, url, 'lazy_loading_did_not_settle')
+                    continue
                 soup = BeautifulSoup(sb.get_page_source(), 'html.parser')
                 verify_banner(soup, store)
                 source = hashlib.sha256(url.encode()).hexdigest()[:20] + '.html'
@@ -246,7 +279,10 @@ def run(args):
                 if unresolved:
                     log('listing_review_required', category=category, url=url, rejected=unresolved)
                 if not args.sample and unresolved:
-                    raise ValueError('Local listing records need review; coverage incomplete')
+                    soup.clear(decompose=True)
+                    soup.decompose()
+                    reject_page(category, url, 'local_listing_records_need_review')
+                    continue
                 for candidate in candidates:
                     candidate['source'] = source
                 exclusions = ['recipes', r'shop[- ]all[- ]foods?$', 'farm[- ]animals']
@@ -261,20 +297,32 @@ def run(args):
                 atomic_json(output / 'sources' / (source + '.links.json'), decisions)
                 if has_next:
                     if next_url == url or db.execute("SELECT 1 FROM pages WHERE category=? AND url=? AND status='done'", (category, next_url)).fetchone():
-                        raise ValueError('Pagination loop; coverage incomplete')
+                        soup.clear(decompose=True)
+                        soup.decompose()
+                        reject_page(category, url, 'pagination_loop')
+                        continue
                     links[next_url] = 'Next Page'
                 if search:
                     raw = sum(i.get('__typename') == 'Product' for stack in search.get('itemStacks', []) for i in stack.get('items', []))
                     pagination = search.get('paginationV2') or {}
                     current_page = int((pagination.get('pageProperties') or {}).get('page') or 1)
                     if raw == 0:
-                        raise ValueError('Unexpected zero-product listing: ' + url)
+                        soup.clear(decompose=True)
+                        soup.decompose()
+                        reject_page(category, url, 'unexpected_zero_product_listing')
+                        continue
                     if current_page < int(pagination.get('maxPage') or 1) and not has_next:
-                        raise ValueError('Missing next-page control before reported final page')
+                        soup.clear(decompose=True)
+                        soup.decompose()
+                        reject_page(category, url, 'missing_next_page_control')
+                        continue
                 else:
                     raw = 0
                     if not links:
-                        raise ValueError('Category returned neither products nor child categories: ' + url)
+                        soup.clear(decompose=True)
+                        soup.decompose()
+                        reject_page(category, url, 'no_products_or_child_categories')
+                        continue
                 soup.clear(decompose=True)
                 soup.decompose()
                 save_page(db, category, url, links, candidates, rejected, raw)
