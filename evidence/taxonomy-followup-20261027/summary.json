@@ -1,0 +1,86 @@
+{
+  "started_utc": "2026-10-27T09:56:17.967311+00:00",
+  "finished_utc": "2026-10-27T10:35:21.282252+00:00",
+  "finished": true,
+  "limits": {
+    "batches": 5,
+    "pages_per_batch": 20,
+    "seconds_per_batch": 1800
+  },
+  "status_before": {
+    "cross_link_excluded": 137,
+    "failed": 72,
+    "navigation_scope_unverified": 9,
+    "outside_scope": 1,
+    "pending": 2284,
+    "reviewed": 1378
+  },
+  "status_after": {
+    "cross_link_excluded": 137,
+    "failed": 75,
+    "navigation_scope_unverified": 9,
+    "outside_scope": 1,
+    "pending": 2229,
+    "reviewed": 1475
+  },
+  "results": [
+    {
+      "number": 1,
+      "batch": "batch-01597-1793095002",
+      "pages": 20,
+      "new_pages": 20,
+      "pending_before": 2284,
+      "pending_after": 2284,
+      "failed_after": 73,
+      "stop_reason": null,
+      "offer_observations": 0
+    },
+    {
+      "number": 2,
+      "batch": "batch-01617-1793095446",
+      "pages": 20,
+      "new_pages": 7,
+      "pending_before": 2284,
+      "pending_after": 2271,
+      "failed_after": 74,
+      "stop_reason": null,
+      "offer_observations": 0
+    },
+    {
+      "number": 3,
+      "batch": "batch-01637-1793096001",
+      "pages": 20,
+      "new_pages": 7,
+      "pending_before": 2271,
+      "pending_after": 2258,
+      "failed_after": 74,
+      "stop_reason": null,
+      "offer_observations": 0
+    },
+    {
+      "number": 4,
+      "batch": "batch-01657-1793096562",
+      "pages": 20,
+      "new_pages": 7,
+      "pending_before": 2258,
+      "pending_after": 2245,
+      "failed_after": 74,
+      "stop_reason": null,
+      "offer_observations": 0
+    },
+    {
+      "number": 5,
+      "batch": "batch-01677-1793096961",
+      "pages": 20,
+      "new_pages": 4,
+      "pending_before": 2245,
+      "pending_after": 2229,
+      "failed_after": 75,
+      "stop_reason": null,
+      "offer_observations": 0
+    }
+  ],
+  "queue_shrank": true,
+  "growth_stop_triggered": false,
+  "live_scope": "User-authorized bounded taxonomy batches; no full-coverage claim"
+}
