@@ -1,0 +1,53 @@
+{
+  "started_utc": "2026-10-27T09:36:38.498875+00:00",
+  "finished_utc": "2026-10-27T09:51:12.178826+00:00",
+  "finished": true,
+  "limits": {
+    "batches": 2,
+    "pages_per_batch": 20,
+    "seconds_per_batch": 1800
+  },
+  "status_before": {
+    "cross_link_excluded": 137,
+    "failed": 69,
+    "navigation_scope_unverified": 9,
+    "outside_scope": 1,
+    "pending": 2306,
+    "reviewed": 1341
+  },
+  "status_after": {
+    "cross_link_excluded": 137,
+    "failed": 72,
+    "navigation_scope_unverified": 9,
+    "outside_scope": 1,
+    "pending": 2284,
+    "reviewed": 1378
+  },
+  "results": [
+    {
+      "number": 1,
+      "batch": "batch-01557-1793093810",
+      "pages": 20,
+      "new_pages": 3,
+      "pending_before": 2306,
+      "pending_after": 2289,
+      "failed_after": 71,
+      "stop_reason": null,
+      "offer_observations": 0
+    },
+    {
+      "number": 2,
+      "batch": "batch-01577-1793094238",
+      "pages": 20,
+      "new_pages": 15,
+      "pending_before": 2289,
+      "pending_after": 2284,
+      "failed_after": 72,
+      "stop_reason": null,
+      "offer_observations": 0
+    }
+  ],
+  "queue_shrank": true,
+  "growth_stop_triggered": false,
+  "live_scope": "Two user-authorized bounded taxonomy batches; no full-coverage claim"
+}
