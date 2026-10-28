@@ -4,7 +4,7 @@
 
 1. [Live progress while final coverage runs](CURRENT_PROGRESS.md)
 2. [Final client review status](FINAL_CLIENT_REVIEW_20261027.md)
-3. [Operations and running instructions](OPERATIONS.md)
+3. [Simple step-by-step run guide](RUN_GUIDE.md)
 4. [Acceptance rules](ACCEPTANCE.md)
 5. [Evidence index](../evidence/README.md)
 6. [Unsent client message](CLIENT_MESSAGE_DRAFT.txt)
@@ -19,5 +19,3 @@
 ## Historical review notes
 
 Files beginning with `STEP`, `CORRECTED`, and older status/checkpoint documents record earlier work. They remain available for audit history but do not replace the final client review status above.
-
-Azure material is handled separately and is not part of the final local execution claim.

@@ -4,7 +4,7 @@
 
 - [Live progress while final coverage runs](docs/CURRENT_PROGRESS.md)
 - [Final verified status](docs/FINAL_CLIENT_REVIEW_20261027.md)
-- [Running instructions](docs/OPERATIONS.md)
+- [Simple step-by-step run guide](docs/RUN_GUIDE.md)
 - [Evidence index](evidence/README.md)
 - [Documentation index](docs/README.md)
 - [Unsent client message](docs/CLIENT_MESSAGE_DRAFT.txt)
