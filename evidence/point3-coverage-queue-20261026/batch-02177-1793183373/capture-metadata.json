@@ -1,0 +1,1482 @@
+[
+  {
+    "id": "coverage-016",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 16,
+    "request": {
+      "url": "https://www.walmart.com/browse/personal-care/female-contraceptives/1005862_1414629_9244777_3184284",
+      "attempt": 1,
+      "started_utc": "2026-10-28T10:35:25.358351+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/personal-care/female-contraceptives/1005862_1414629_9244777_3184284",
+      "redirected": false,
+      "headers": {
+        "date": "Wed, 28 Oct 2026 10:35:25 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-28T10:35:26.058024+00:00",
+      "elapsed_seconds": 0.7
+    },
+    "body_sha256": "7a6fae67c9ccae6f304f94f268b7e00f6a0f4748e38385ad606e2c4f2f2319bc",
+    "body_bytes": 710053,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-036",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 36,
+    "request": {
+      "url": "https://www.walmart.com/browse/pets/dog-collars/5440_202072_2450672_9876503",
+      "attempt": 1,
+      "started_utc": "2026-10-28T10:42:37.236498+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/pets/dog-collars/5440_202072_2450672_9876503",
+      "redirected": false,
+      "headers": {
+        "date": "Wed, 28 Oct 2026 10:42:37 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-28T10:42:37.799540+00:00",
+      "elapsed_seconds": 0.563
+    },
+    "body_sha256": "5591bc19f053803d78a29413c352cef1d8d4ff92efeb35965c84cb93ea688504",
+    "body_bytes": 1091534,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-020",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 20,
+    "request": {
+      "url": "https://www.walmart.com/browse/office-supplies/the-happy-planner/1229749_1431586_9460855",
+      "attempt": 1,
+      "started_utc": "2026-10-28T10:36:50.840905+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/office-supplies/the-happy-planner/1229749_1431586_9460855",
+      "redirected": false,
+      "headers": {
+        "date": "Wed, 28 Oct 2026 10:36:51 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-28T10:36:51.140540+00:00",
+      "elapsed_seconds": 0.3
+    },
+    "body_sha256": "b89b64f68d09d74c52460a33e0644d8d645aa8d8879c72ea34e64c5c224f5aa5",
+    "body_bytes": 581129,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-021",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 21,
+    "request": {
+      "url": "https://www.walmart.com/browse/food/fall-candy/976759_1096070_6041305_7090493",
+      "attempt": 1,
+      "started_utc": "2026-10-28T10:37:10.343159+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/food/fall-candy/976759_1096070_7090493",
+      "redirected": true,
+      "headers": {
+        "date": "Wed, 28 Oct 2026 10:37:11 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-28T10:37:11.387054+00:00",
+      "elapsed_seconds": 1.044
+    },
+    "body_sha256": "95884473dc3800d83ba8804d6979bdec1052e9a0cf655ebfecc548c66a924de5",
+    "body_bytes": 771892,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-037",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 37,
+    "request": {
+      "url": "https://www.walmart.com/browse/personal-care/equate-body-hair-care/1005862_7343763_2689681",
+      "attempt": 1,
+      "started_utc": "2026-10-28T10:43:01.830424+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/personal-care/equate-body-hair-care/1005862_7343763_2689681",
+      "redirected": false,
+      "headers": {
+        "date": "Wed, 28 Oct 2026 10:43:02 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-28T10:43:02.476502+00:00",
+      "elapsed_seconds": 0.646
+    },
+    "body_sha256": "66ec3829af7a3744ad8f8e920ce9d70455d6611fca87da29156b7eaabffd46d4",
+    "body_bytes": 1109311,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-040",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 40,
+    "request": {
+      "url": "https://www.walmart.com/browse/braces-and-supports/arm-support/976760_1005860_4157476_6007498",
+      "attempt": 1,
+      "started_utc": "2026-10-28T10:44:11.680370+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/braces-and-supports/arm-support/976760_1005860_4157476_6007498",
+      "redirected": false,
+      "headers": {
+        "date": "Wed, 28 Oct 2026 10:44:11 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-28T10:44:11.950358+00:00",
+      "elapsed_seconds": 0.27
+    },
+    "body_sha256": "0876db5e3d71944ff6489626721a73b0d5be1e3ce185fee291c58845304e0866",
+    "body_bytes": 745991,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-017",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 17,
+    "request": {
+      "url": "https://www.walmart.com/browse/beauty/heat-protection/1085666_3147628_7768896_1275419",
+      "attempt": 1,
+      "started_utc": "2026-10-28T10:35:47.469193+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/beauty/heat-protection/1085666_3147628_7768896_1275419",
+      "redirected": false,
+      "headers": {
+        "date": "Wed, 28 Oct 2026 10:35:47 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-28T10:35:48.012722+00:00",
+      "elapsed_seconds": 0.544
+    },
+    "body_sha256": "a041686a483ee77d85851b4a92b0e337ac8fc75047afc57980ff4702aff848ae",
+    "body_bytes": 1046752,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-001",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 1,
+    "request": {
+      "url": "https://www.walmart.com/browse/pets/dog-raincoats/5440_202072_4039016_3646418",
+      "attempt": 1,
+      "started_utc": "2026-10-28T10:30:22.030981+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/pets/dog-raincoats/5440_202072_4039016_3646418",
+      "redirected": false,
+      "headers": {
+        "date": "Wed, 28 Oct 2026 10:30:22 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-28T10:30:22.601814+00:00",
+      "elapsed_seconds": 0.571
+    },
+    "body_sha256": "8bfac30b0d6ab4c7ef149bec8eb6507526e0ce1c5efd2c2329d968fb1e48d49c",
+    "body_bytes": 640194,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-030",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 30,
+    "request": {
+      "url": "https://www.walmart.com/browse/personal-care/spermicide/1005862_1414629_9244777_1459674",
+      "attempt": 1,
+      "started_utc": "2026-10-28T10:40:26.316220+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/personal-care/spermicide/1005862_1414629_9244777_1459674",
+      "redirected": false,
+      "headers": {
+        "date": "Wed, 28 Oct 2026 10:40:26 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-28T10:40:26.984362+00:00",
+      "elapsed_seconds": 0.668
+    },
+    "body_sha256": "417102a227d4ae735535fb08c7dc0ebd218b2aa6f920814cd43d4c8aa98ca0a6",
+    "body_bytes": 668124,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-026",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 26,
+    "request": {
+      "url": "https://www.walmart.com/browse/health-medicine/elbow-braces/976760_1005860_4157476_1494614_2111718",
+      "attempt": 1,
+      "started_utc": "2026-10-28T10:38:55.155729+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/health-medicine/elbow-braces/976760_1005860_4157476_1494614_2111718",
+      "redirected": false,
+      "headers": {
+        "date": "Wed, 28 Oct 2026 10:38:55 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-28T10:38:55.745862+00:00",
+      "elapsed_seconds": 0.59
+    },
+    "body_sha256": "68d7db18e3b5d721e4722d245e862453da23366453a862eae6dc6061721ceb22",
+    "body_bytes": 551145,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-006",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 6,
+    "request": {
+      "url": "https://www.walmart.com/browse/office-supplies/texas-instruments/1229749_1431586_4805488",
+      "attempt": 1,
+      "started_utc": "2026-10-28T10:31:55.932395+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/office-supplies/texas-instruments/1229749_1431586_4805488",
+      "redirected": false,
+      "headers": {
+        "date": "Wed, 28 Oct 2026 10:31:56 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-28T10:31:56.276385+00:00",
+      "elapsed_seconds": 0.344
+    },
+    "body_sha256": "d0cfc1f9f6bd16d8603a3694a05116fc58a154c9c26599ad699a60d6357e4dff",
+    "body_bytes": 674347,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-010",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 10,
+    "request": {
+      "url": "https://www.walmart.com/browse/beauty/hair-styling-creams/1085666_3147628_7768896_9388351",
+      "attempt": 1,
+      "started_utc": "2026-10-28T10:33:18.328075+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/beauty/hair-styling-creams/1085666_3147628_7768896_9388351",
+      "redirected": false,
+      "headers": {
+        "date": "Wed, 28 Oct 2026 10:33:18 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-28T10:33:18.854399+00:00",
+      "elapsed_seconds": 0.526
+    },
+    "body_sha256": "2b144b46677d47c2ebe72c6d87f2281f68441fa91aa7ad1ce5552cefe5605839",
+    "body_bytes": 1253770,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-011",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 11,
+    "request": {
+      "url": "https://www.walmart.com/browse/household-essentials/feather-dusters/1115193_1071966_1025741_9174086_2766175",
+      "attempt": 1,
+      "started_utc": "2026-10-28T10:33:38.747235+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/household-essentials/feather-dusters/1115193_1071966_1025741_9174086_2766175",
+      "redirected": false,
+      "headers": {
+        "date": "Wed, 28 Oct 2026 10:33:38 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-28T10:33:39.079479+00:00",
+      "elapsed_seconds": 0.332
+    },
+    "body_sha256": "e1a643f5e6ff5466ba350b8c96867fb594d4d67dfd3ec382d35d5508da207800",
+    "body_bytes": 652460,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-007",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 7,
+    "request": {
+      "url": "https://www.walmart.com/browse/food/halloween-bulk-bags-candy/976759_1096070_6041305_9655912",
+      "attempt": 1,
+      "started_utc": "2026-10-28T10:32:14.935238+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/food/halloween-bulk-bags-candy/976759_1096070_6041305_9655912",
+      "redirected": false,
+      "headers": {
+        "date": "Wed, 28 Oct 2026 10:32:15 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-28T10:32:15.522746+00:00",
+      "elapsed_seconds": 0.588
+    },
+    "body_sha256": "5a51ffaab9b62cd5c1937cddc72b2645b1f781ca503695ae0392c529b61d1f4a",
+    "body_bytes": 913252,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-027",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 27,
+    "request": {
+      "url": "https://www.walmart.com/browse/office-supplies/thermal-paper/1229749_2447475_6494636_3596974",
+      "attempt": 1,
+      "started_utc": "2026-10-28T10:39:17.281090+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/office-supplies/thermal-paper/1229749_2447475_6494636_3596974",
+      "redirected": false,
+      "headers": {
+        "date": "Wed, 28 Oct 2026 10:39:17 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-28T10:39:17.912066+00:00",
+      "elapsed_seconds": 0.631
+    },
+    "body_sha256": "4270cbbae693f0c0b74b0320b0a80dbf0752113fed5abff1f8dd9d56a981b7d7",
+    "body_bytes": 692273,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-031",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 31,
+    "request": {
+      "url": "https://www.walmart.com/browse/beauty/hair-styling-products/1085666_3147628_7768896?page=2",
+      "attempt": 1,
+      "started_utc": "2026-10-28T10:40:46.400549+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/beauty/hair-styling-products/1085666_3147628_7768896?page=2",
+      "redirected": false,
+      "headers": {
+        "date": "Wed, 28 Oct 2026 10:40:46 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-28T10:40:47.082776+00:00",
+      "elapsed_seconds": 0.682
+    },
+    "body_sha256": "2b57cb9534b3e535e374058859ab87eddd303ae53519538c0fc4b09a1f68ce5b",
+    "body_bytes": 1243006,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-024",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 24,
+    "request": {
+      "url": "https://www.walmart.com/browse/beauty/hair-texturizing-spray/1085666_3147628_7768896_6792280",
+      "attempt": 1,
+      "started_utc": "2026-10-28T10:38:13.564658+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/beauty/hair-texturizing-spray/1085666_3147628_7768896_6792280",
+      "redirected": false,
+      "headers": {
+        "date": "Wed, 28 Oct 2026 10:38:13 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-28T10:38:13.803928+00:00",
+      "elapsed_seconds": 0.239
+    },
+    "body_sha256": "30efc1d066ffae0f7d1bd420f09a217c78707733653966478359d74b2f035903",
+    "body_bytes": 545681,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-032",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 32,
+    "request": {
+      "url": "https://www.walmart.com/browse/household-essentials/gain-fabric-softener/1115193_8250903_1302612_8030109",
+      "attempt": 1,
+      "started_utc": "2026-10-28T10:41:07.340379+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/household-essentials/gain-fabric-softener/1115193_8250903_1302612_8030109",
+      "redirected": false,
+      "headers": {
+        "date": "Wed, 28 Oct 2026 10:41:07 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-28T10:41:07.929329+00:00",
+      "elapsed_seconds": 0.589
+    },
+    "body_sha256": "1b5dd9fd92c6b330776eb541dd8eb46e79329097cef8307c26c86515b2f8054b",
+    "body_bytes": 702482,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-008",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 8,
+    "request": {
+      "url": "https://www.walmart.com/browse/pets/dog-shoes/5440_202072_4039016_9391440",
+      "attempt": 1,
+      "started_utc": "2026-10-28T10:32:34.104776+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/pets/dog-shoes/5440_202072_4039016_9391440",
+      "redirected": false,
+      "headers": {
+        "date": "Wed, 28 Oct 2026 10:32:34 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-28T10:32:34.462039+00:00",
+      "elapsed_seconds": 0.357
+    },
+    "body_sha256": "2d6ef4204277a7ea6a5b5b59a41bd8db264abda4772a33d276141e1de769f783",
+    "body_bytes": 606383,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-028",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 28,
+    "request": {
+      "url": "https://www.walmart.com/browse/food/all-halloween-candy/976759_1096070_6041305_7424637?page=2",
+      "attempt": 1,
+      "started_utc": "2026-10-28T10:39:40.095622+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/food/all-halloween-candy/976759_1096070_6041305_7424637?page=2",
+      "redirected": false,
+      "headers": {
+        "date": "Wed, 28 Oct 2026 10:39:40 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-28T10:39:40.992454+00:00",
+      "elapsed_seconds": 0.897
+    },
+    "body_sha256": "c99e7e0c93f59229bd73a50ac2355e983dda7c6a9fc9677994ec98d08bdb5946",
+    "body_bytes": 1109810,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-012",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 12,
+    "request": {
+      "url": "https://www.walmart.com/browse/health-medicine/orthopedic-boots/976760_1005860_4157476_2001918_5376817",
+      "attempt": 1,
+      "started_utc": "2026-10-28T10:33:59.133519+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/health-medicine/orthopedic-boots/976760_1005860_4157476_2001918_5376817",
+      "redirected": false,
+      "headers": {
+        "date": "Wed, 28 Oct 2026 10:33:59 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-28T10:33:59.600381+00:00",
+      "elapsed_seconds": 0.467
+    },
+    "body_sha256": "69f37ff6695e580d4edbd81722b962a588826bac4f1a984c857d19ea2780896a",
+    "body_bytes": 547871,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-004",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 4,
+    "request": {
+      "url": "https://www.walmart.com/browse/beauty/hairspray/1085666_3147628_7768896_3335669",
+      "attempt": 1,
+      "started_utc": "2026-10-28T10:31:21.375292+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/beauty/hairspray/1085666_3147628_7768896_3335669",
+      "redirected": false,
+      "headers": {
+        "date": "Wed, 28 Oct 2026 10:31:21 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-28T10:31:21.979532+00:00",
+      "elapsed_seconds": 0.604
+    },
+    "body_sha256": "f469f5627ac52f21608e11d54a54d791c17ad135646de34b39a3588134435e15",
+    "body_bytes": 1326459,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-005",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 5,
+    "request": {
+      "url": "https://www.walmart.com/browse/health-medicine/foot-braces/976760_1005860_4157476_2001918_9142396",
+      "attempt": 1,
+      "started_utc": "2026-10-28T10:31:39.051806+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/health-medicine/foot-braces/976760_1005860_4157476_2001918_9142396",
+      "redirected": false,
+      "headers": {
+        "date": "Wed, 28 Oct 2026 10:31:39 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-28T10:31:39.789034+00:00",
+      "elapsed_seconds": 0.737
+    },
+    "body_sha256": "a07e8575af5583649dd5168496a92e74e2f837c1db02a7a4ce85d5689d1625d8",
+    "body_bytes": 580587,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-013",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 13,
+    "request": {
+      "url": "https://www.walmart.com/browse/office-supplies/textured-paper/1229749_6562796_3525468",
+      "attempt": 1,
+      "started_utc": "2026-10-28T10:34:21.690760+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/office-supplies/textured-paper/1229749_6562796_3525468",
+      "redirected": false,
+      "headers": {
+        "date": "Wed, 28 Oct 2026 10:34:22 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-28T10:34:22.511883+00:00",
+      "elapsed_seconds": 0.821
+    },
+    "body_sha256": "d4d7d9e62e8220aefe156b1f38e5f04a3f6e1441a7967752d7caa80439ac44f7",
+    "body_bytes": 542840,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-029",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 29,
+    "request": {
+      "url": "https://www.walmart.com/browse/pets/dog-clothes-and-costumes/5440_202072_4039016?page=2",
+      "attempt": 1,
+      "started_utc": "2026-10-28T10:40:04.679347+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/pets/dog-clothes-and-costumes/5440_202072_4039016?page=2",
+      "redirected": false,
+      "headers": {
+        "date": "Wed, 28 Oct 2026 10:40:05 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-28T10:40:05.268478+00:00",
+      "elapsed_seconds": 0.589
+    },
+    "body_sha256": "cf7d7a1754869520c40833e1e0d8d9772359fdfa19d862183974061509a7302d",
+    "body_bytes": 601622,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-009",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 9,
+    "request": {
+      "url": "https://www.walmart.com/browse/sexual-wellness/contraceptives/1005862_1414629_9244777",
+      "attempt": 1,
+      "started_utc": "2026-10-28T10:32:53.936103+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/sexual-wellness/contraceptives/1005862_1414629_9244777",
+      "redirected": false,
+      "headers": {
+        "date": "Wed, 28 Oct 2026 10:32:54 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-28T10:32:54.435790+00:00",
+      "elapsed_seconds": 0.5
+    },
+    "body_sha256": "f99423c2850c5ff0ef628aafc9dc70481b03b26d740e8d99914a1830a054f31f",
+    "body_bytes": 1072468,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-033",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 33,
+    "request": {
+      "url": "https://www.walmart.com/browse/health-medicine/elbow-sleeves/976760_1005860_4157476_1494614_7746640",
+      "attempt": 1,
+      "started_utc": "2026-10-28T10:41:29.144630+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/health-medicine/elbow-sleeves/976760_1005860_4157476_1494614_7746640",
+      "redirected": false,
+      "headers": {
+        "date": "Wed, 28 Oct 2026 10:41:29 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-28T10:41:29.640016+00:00",
+      "elapsed_seconds": 0.495
+    },
+    "body_sha256": "b0a4b7365a724d5c8dc5775e2b4352da26f47ec6a6b6207f12b7464bc5e7c2f2",
+    "body_bytes": 563416,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-025",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 25,
+    "request": {
+      "url": "https://www.walmart.com/browse/household-essentials/downy-fabric-softener/1115193_1071967_1630538_3142904",
+      "attempt": 1,
+      "started_utc": "2026-10-28T10:38:33.210148+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/household-essentials/downy-fabric-softener/1115193_1071967_1630538_3142904",
+      "redirected": false,
+      "headers": {
+        "date": "Wed, 28 Oct 2026 10:38:33 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-28T10:38:33.934472+00:00",
+      "elapsed_seconds": 0.724
+    },
+    "body_sha256": "8626f91f137a29604aac35cf223dbee4b10e51ad2e0566e2e3cacbaf5be9ffa5",
+    "body_bytes": 895734,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-038",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 38,
+    "request": {
+      "url": "https://www.walmart.com/browse/beauty/hair-dryers/1085666_3147628_3847754_4100466",
+      "attempt": 1,
+      "started_utc": "2026-10-28T10:43:27.239232+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/beauty/hair-dryers/1085666_3147628_3847754_4100466",
+      "redirected": false,
+      "headers": {
+        "date": "Wed, 28 Oct 2026 10:43:27 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-28T10:43:27.790365+00:00",
+      "elapsed_seconds": 0.551
+    },
+    "body_sha256": "2e14ab1b3d7cec3121d6c1f334200cbd82ecc3e9a72b1b7232f57021ec268594",
+    "body_bytes": 1130927,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-014",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 14,
+    "request": {
+      "url": "https://www.walmart.com/browse/food/halloween-sugar-chewy/976759_1096070_6041305_8199550",
+      "attempt": 1,
+      "started_utc": "2026-10-28T10:34:43.555923+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/food/halloween-sugar-chewy/976759_1096070_6041305_8199550",
+      "redirected": false,
+      "headers": {
+        "date": "Wed, 28 Oct 2026 10:34:44 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-28T10:34:44.381220+00:00",
+      "elapsed_seconds": 0.825
+    },
+    "body_sha256": "2bb8314b7ea4b130751a02222b3dd047f9986d26ee1988815740dafb9b0a4853",
+    "body_bytes": 1145262,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-002",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 2,
+    "request": {
+      "url": "https://www.walmart.com/browse/personal-care/electric-shavers/1005862_1007220_133146?page=2",
+      "attempt": 1,
+      "started_utc": "2026-10-28T10:30:41.263535+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/personal-care/electric-shavers/1005862_1007220_133146?page=2",
+      "redirected": false,
+      "headers": {
+        "date": "Wed, 28 Oct 2026 10:30:41 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-28T10:30:41.569954+00:00",
+      "elapsed_seconds": 0.306
+    },
+    "body_sha256": "d9d30abb4cb70dc68323548e9f6145f2592fdfdb520d3b738578d3d2cfc3e8b7",
+    "body_bytes": 813434,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-022",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 22,
+    "request": {
+      "url": "https://www.walmart.com/browse/pets/dog-life-jackets/5440_202072_4039016_9855993",
+      "attempt": 1,
+      "started_utc": "2026-10-28T10:37:32.034151+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/pets/dog-life-jackets/5440_202072_4039016_9855993",
+      "redirected": false,
+      "headers": {
+        "date": "Wed, 28 Oct 2026 10:37:32 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-28T10:37:32.743781+00:00",
+      "elapsed_seconds": 0.71
+    },
+    "body_sha256": "73ae4737da93f272f51500ba62e824fb74c06da2db6c4abcc1093a4d447983d9",
+    "body_bytes": 584400,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-034",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 34,
+    "request": {
+      "url": "https://www.walmart.com/browse/office-supplies/three-ring-binders/1229749_5093993_1769581",
+      "attempt": 1,
+      "started_utc": "2026-10-28T10:41:50.262130+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/office-supplies/three-ring-binders/1229749_5093993_1769581",
+      "redirected": false,
+      "headers": {
+        "date": "Wed, 28 Oct 2026 10:41:50 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-28T10:41:50.785724+00:00",
+      "elapsed_seconds": 0.524
+    },
+    "body_sha256": "bd8a2e3c8926155ec32ccc6e1c96480dd63b48ad9b79236a854dfa95691933ac",
+    "body_bytes": 578152,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-018",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 18,
+    "request": {
+      "url": "https://www.walmart.com/browse/household-essentials/swiffer-duster/1115193_8250903_3938858_6708635",
+      "attempt": 1,
+      "started_utc": "2026-10-28T10:36:09.404693+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/household-essentials/swiffer-duster/1115193_8250903_3938858_6708635",
+      "redirected": false,
+      "headers": {
+        "date": "Wed, 28 Oct 2026 10:36:09 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-28T10:36:09.947121+00:00",
+      "elapsed_seconds": 0.542
+    },
+    "body_sha256": "41f4032d3e85090043644580cf1e79dce04146097330b10ddda118d622bd599d",
+    "body_bytes": 913637,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-019",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 19,
+    "request": {
+      "url": "https://www.walmart.com/browse/health-and-medicine/plantar-fasciitis-supports/976760_976798_4157476_8398146_7384058",
+      "attempt": 1,
+      "started_utc": "2026-10-28T10:36:30.295652+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/health-and-medicine/plantar-fasciitis-supports/976760_976798_4157476_8398146_7384058",
+      "redirected": false,
+      "headers": {
+        "date": "Wed, 28 Oct 2026 10:36:30 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-28T10:36:31.050103+00:00",
+      "elapsed_seconds": 0.754
+    },
+    "body_sha256": "709d276700c7624a84cbe0898196f0c576b1514a2dcca43e546c4a678018c462",
+    "body_bytes": 520281,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-035",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 35,
+    "request": {
+      "url": "https://www.walmart.com/browse/food/bakery-bread/976759_976779",
+      "attempt": 1,
+      "started_utc": "2026-10-28T10:42:10.945868+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/food/bakery-bread/976759_976779",
+      "redirected": false,
+      "headers": {
+        "date": "Wed, 28 Oct 2026 10:42:11 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-28T10:42:11.768600+00:00",
+      "elapsed_seconds": 0.823
+    },
+    "body_sha256": "a694fa13a80f28372542dbd38e0f962c740d0ed0914cd0a26b93c2eb1fe666b6",
+    "body_bytes": 1349624,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-023",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 23,
+    "request": {
+      "url": "https://www.walmart.com/browse/personal-care/birth-control/1005862_1414629_4397298",
+      "attempt": 1,
+      "started_utc": "2026-10-28T10:37:52.501445+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/personal-care/birth-control/1005862_1414629_4397298",
+      "redirected": false,
+      "headers": {
+        "date": "Wed, 28 Oct 2026 10:37:53 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-28T10:37:53.256275+00:00",
+      "elapsed_seconds": 0.755
+    },
+    "body_sha256": "eff24de094ad76591a7f94712961bf34a9ec8a0aa47ad18c3edbbc1f365b7b05",
+    "body_bytes": 503096,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-003",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 3,
+    "request": {
+      "url": "https://www.walmart.com/browse/household-essentials/dryer-balls/1115193_1071967_9527386_6541219",
+      "attempt": 1,
+      "started_utc": "2026-10-28T10:30:57.682414+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/household-essentials/dryer-balls/1115193_1071967_9527386_6541219",
+      "redirected": false,
+      "headers": {
+        "date": "Wed, 28 Oct 2026 10:30:57 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-28T10:30:57.957083+00:00",
+      "elapsed_seconds": 0.275
+    },
+    "body_sha256": "7dcaf7b83437596be59e3498bdee71d9e2aad73cdec2f3d299f5ba8cc436b292",
+    "body_bytes": 678961,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-015",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 15,
+    "request": {
+      "url": "https://www.walmart.com/browse/pets/dog-costumes/5440_202072_4039016_2714524",
+      "attempt": 1,
+      "started_utc": "2026-10-28T10:35:03.838594+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/pets/dog-costumes/5440_202072_4039016_2714524",
+      "redirected": false,
+      "headers": {
+        "date": "Wed, 28 Oct 2026 10:35:04 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-28T10:35:04.419520+00:00",
+      "elapsed_seconds": 0.581
+    },
+    "body_sha256": "75d3ffff15bef0079938c976c9ab4a043ccc539b0ea2ac8f82ea36c500c596d4",
+    "body_bytes": 756855,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-039",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 39,
+    "request": {
+      "url": "https://www.walmart.com/browse/household-essentials/snuggle-fabric-softener/1115193_1071967_1630538_8226415",
+      "attempt": 1,
+      "started_utc": "2026-10-28T10:43:49.998309+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/household-essentials/snuggle-fabric-softener/1115193_1071967_1630538_8226415",
+      "redirected": false,
+      "headers": {
+        "date": "Wed, 28 Oct 2026 10:43:50 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-28T10:43:50.528122+00:00",
+      "elapsed_seconds": 0.53
+    },
+    "body_sha256": "a0ab70af7f60c1703c0110f8381ffe9a8bfa6e554a62927191c9f48946825052",
+    "body_bytes": 669143,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  }
+]
