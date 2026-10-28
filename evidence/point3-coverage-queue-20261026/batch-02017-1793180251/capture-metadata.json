@@ -1,0 +1,1482 @@
+[
+  {
+    "id": "coverage-016",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 16,
+    "request": {
+      "url": "https://www.walmart.com/browse/personal-care/denture-cleaner/1005862_1007221_5102904",
+      "attempt": 1,
+      "started_utc": "2026-10-28T09:43:25.435408+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/personal-care/denture-cleaner/1005862_1007221_3847068_5102904",
+      "redirected": true,
+      "headers": {
+        "date": "Wed, 28 Oct 2026 09:43:25 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-28T09:43:25.846078+00:00",
+      "elapsed_seconds": 0.411
+    },
+    "body_sha256": "265fe0dff14b68ddf643c63d726c018c6b4583fd0242aa2f876477aef40038e4",
+    "body_bytes": 902158,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-036",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 36,
+    "request": {
+      "url": "https://www.walmart.com/browse/personal-care/oral-care-accessories/1005862_1007221_1044029_1891099",
+      "attempt": 1,
+      "started_utc": "2026-10-28T09:49:35.107332+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/personal-care/oral-care-accessories/1005862_1007221_1044029_1891099",
+      "redirected": false,
+      "headers": {
+        "date": "Wed, 28 Oct 2026 09:49:38 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-28T09:49:38.616278+00:00",
+      "elapsed_seconds": 3.509
+    },
+    "body_sha256": "929c676504beb11206df43d214f13ac69e530c74ecfa1d4e44580dcb9751001d",
+    "body_bytes": 1255458,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-020",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 20,
+    "request": {
+      "url": "https://www.walmart.com/browse/office-supplies/scissors-sharpener/1229749_2752789_6833327",
+      "attempt": 1,
+      "started_utc": "2026-10-28T09:44:39.423937+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/office-supplies/scissors-sharpener/1229749_2752789_6833327",
+      "redirected": false,
+      "headers": {
+        "date": "Wed, 28 Oct 2026 09:44:39 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-28T09:44:39.966613+00:00",
+      "elapsed_seconds": 0.543
+    },
+    "body_sha256": "ea1e1fa2bb2ae58503fbb5f7db98ef7a817575c223e5c9d00bae5f6faa853d37",
+    "body_bytes": 664483,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-021",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 21,
+    "request": {
+      "url": "https://www.walmart.com/browse/pets/extra-large-dog-beds/5440_202072_7135140_5431577",
+      "attempt": 1,
+      "started_utc": "2026-10-28T09:44:58.226669+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/pets/extra-large-dog-beds/5440_202072_7135140_5431577",
+      "redirected": false,
+      "headers": {
+        "date": "Wed, 28 Oct 2026 09:44:58 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-28T09:44:58.511460+00:00",
+      "elapsed_seconds": 0.285
+    },
+    "body_sha256": "6ad1352b8abfca7461fa2e77e614a1082b33b4add9c07f2336f6d9430b232a6f",
+    "body_bytes": 723636,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-037",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 37,
+    "request": {
+      "url": "https://www.walmart.com/browse/beauty/face-makeup/1085666_1007040_4989345?page=2",
+      "attempt": 1,
+      "started_utc": "2026-10-28T09:50:00.866995+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/beauty/face-makeup/1085666_1007040_4989345?page=2",
+      "redirected": false,
+      "headers": {
+        "date": "Wed, 28 Oct 2026 09:50:01 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-28T09:50:01.361251+00:00",
+      "elapsed_seconds": 0.494
+    },
+    "body_sha256": "14a7b8b8fe498d6c57312379eb764f8881983653536a003a6a59f06d2706e2e2",
+    "body_bytes": 1782368,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-040",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 40,
+    "request": {
+      "url": "https://www.walmart.com/browse/food/tea-pods/976759_976782_1001320_4197195",
+      "attempt": 1,
+      "started_utc": "2026-10-28T09:50:58.583545+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/food/tea-k-cups/976759_976782_1001320_4197195",
+      "redirected": true,
+      "headers": {
+        "date": "Wed, 28 Oct 2026 09:50:58 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-28T09:50:58.910758+00:00",
+      "elapsed_seconds": 0.327
+    },
+    "body_sha256": "29670503c0927d6c766c92ff6448368ff37ef8ac05c2025a1d35fe945b795796",
+    "body_bytes": 799119,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-017",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 17,
+    "request": {
+      "url": "https://www.walmart.com/browse/household-essentials/paper-plates/1115193_1073264_1149388_3938005",
+      "attempt": 1,
+      "started_utc": "2026-10-28T09:43:42.172403+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/household-essentials/paper-plates/1115193_1073264_1149388_3938005",
+      "redirected": false,
+      "headers": {
+        "date": "Wed, 28 Oct 2026 09:43:42 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-28T09:43:42.493536+00:00",
+      "elapsed_seconds": 0.321
+    },
+    "body_sha256": "9dc52373037b40530d644353f3417ddd183f196710a100821ebe1f4fcb5ca404",
+    "body_bytes": 856571,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-001",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 1,
+    "request": {
+      "url": "https://www.walmart.com/browse/beauty/liquid-eye-shadow/1085666_1007040_6659232_6297527_8446431",
+      "attempt": 1,
+      "started_utc": "2026-10-28T09:38:47.072220+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/beauty/liquid-eye-shadow/1085666_1007040_6659232_6297527_8446431",
+      "redirected": false,
+      "headers": {
+        "date": "Wed, 28 Oct 2026 09:38:47 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-28T09:38:47.643489+00:00",
+      "elapsed_seconds": 0.571
+    },
+    "body_sha256": "14135df1c51e5e7651745467a4999eb2bb5c64081f0b905830130212a59745f2",
+    "body_bytes": 872725,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-030",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 30,
+    "request": {
+      "url": "https://www.walmart.com/browse/personal-care/night-guard/1005862_1007221_1044029_9888095",
+      "attempt": 1,
+      "started_utc": "2026-10-28T09:47:54.062603+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/personal-care/night-guard/1005862_1007221_1044029_9888095",
+      "redirected": false,
+      "headers": {
+        "date": "Wed, 28 Oct 2026 09:47:54 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-28T09:47:54.299037+00:00",
+      "elapsed_seconds": 0.236
+    },
+    "body_sha256": "dd167465c7dbc7d30bff0a93b6b9d46eb9276c10d17e4a8714002ea6a4cd9514",
+    "body_bytes": 707493,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-026",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 26,
+    "request": {
+      "url": "https://www.walmart.com/browse/food/tea-bags/976759_976782_1001320_4408773",
+      "attempt": 1,
+      "started_utc": "2026-10-28T09:46:33.812028+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/food/tea-bags/976759_976782_1001320_4408773",
+      "redirected": false,
+      "headers": {
+        "date": "Wed, 28 Oct 2026 09:46:34 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-28T09:46:34.256979+00:00",
+      "elapsed_seconds": 0.445
+    },
+    "body_sha256": "5793deb8f44084fc939ce48975b776da309500477ec26b598d363f5499d33185",
+    "body_bytes": 1284650,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-006",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 6,
+    "request": {
+      "url": "https://www.walmart.com/browse/office-supplies/safety-scissors/1229749_2752789_5477010",
+      "attempt": 1,
+      "started_utc": "2026-10-28T09:40:17.162563+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/office-supplies/safety-scissors/1229749_2752789_5477010",
+      "redirected": false,
+      "headers": {
+        "date": "Wed, 28 Oct 2026 09:40:17 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-28T09:40:17.397983+00:00",
+      "elapsed_seconds": 0.235
+    },
+    "body_sha256": "3930351334b34902dd1ecd66cdae5df531f9db71b1a80bae957cc72a72c17654",
+    "body_bytes": 631454,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-010",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 10,
+    "request": {
+      "url": "https://www.walmart.com/browse/household-essentials/disposable-cups/1115193_1073264_1149388_9920020_8484860?page=2",
+      "attempt": 1,
+      "started_utc": "2026-10-28T09:41:32.313226+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/household-essentials/disposable-cups/1115193_1073264_1149388_9920020_8484860?page=2",
+      "redirected": false,
+      "headers": {
+        "date": "Wed, 28 Oct 2026 09:41:32 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-28T09:41:32.531494+00:00",
+      "elapsed_seconds": 0.218
+    },
+    "body_sha256": "1f5be662b06baeb75d82161898eb6e80d4a42c24fec74c24e1f8aff38245987a",
+    "body_bytes": 664768,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-011",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 11,
+    "request": {
+      "url": "https://www.walmart.com/browse/health/children-s-pain-relievers/976760_7831163_5239837",
+      "attempt": 1,
+      "started_utc": "2026-10-28T09:41:51.383447+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/health/children-s-pain-relievers/976760_7831163_5239837",
+      "redirected": false,
+      "headers": {
+        "date": "Wed, 28 Oct 2026 09:41:51 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-28T09:41:51.653530+00:00",
+      "elapsed_seconds": 0.27
+    },
+    "body_sha256": "200ec1407cba740eb086995e668090ffe43ccb616d42760c62e0d3f8fa8c50d8",
+    "body_bytes": 1015835,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-007",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 7,
+    "request": {
+      "url": "https://www.walmart.com/browse/pets/medium-dog-beds/5440_202072_7135140_6989440",
+      "attempt": 1,
+      "started_utc": "2026-10-28T09:40:32.967462+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/pets/medium-dog-beds/5440_202072_7135140_6989440",
+      "redirected": false,
+      "headers": {
+        "date": "Wed, 28 Oct 2026 09:40:33 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-28T09:40:33.229850+00:00",
+      "elapsed_seconds": 0.262
+    },
+    "body_sha256": "1d44225c9744731e6fffbe4cb3f63f61f59663a30c4bda23ff974ad60456a318",
+    "body_bytes": 951551,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-027",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 27,
+    "request": {
+      "url": "https://www.walmart.com/browse/office-supplies/scotch/1229749_1431586_2481122",
+      "attempt": 1,
+      "started_utc": "2026-10-28T09:46:57.186692+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/office-supplies/scotch/1229749_1431586_2481122",
+      "redirected": false,
+      "headers": {
+        "date": "Wed, 28 Oct 2026 09:46:57 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-28T09:46:57.761408+00:00",
+      "elapsed_seconds": 0.575
+    },
+    "body_sha256": "219bcc74ce219d7649cb58e46c1cf81bb2486b79e846b51d689ed6ee2c3eb79a",
+    "body_bytes": 1025810,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-031",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 31,
+    "request": {
+      "url": "https://www.walmart.com/browse/household-essentials/plastic-plates/1115193_1073264_1149388_9610242",
+      "attempt": 1,
+      "started_utc": "2026-10-28T09:48:10.437322+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/household-essentials/plastic-plates/1115193_1073264_1149388_9610242",
+      "redirected": false,
+      "headers": {
+        "date": "Wed, 28 Oct 2026 09:48:10 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-28T09:48:10.964909+00:00",
+      "elapsed_seconds": 0.528
+    },
+    "body_sha256": "53f4c6856908906f9f73668ca846e1c4741e5b29a9d8680d4ecd92077586978f",
+    "body_bytes": 636595,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-024",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 24,
+    "request": {
+      "url": "https://www.walmart.com/browse/household-essentials/foam-plates/1115193_1073264_1149388_4768139",
+      "attempt": 1,
+      "started_utc": "2026-10-28T09:45:56.537671+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/household-essentials/foam-plates/1115193_1073264_1149388_4768139",
+      "redirected": false,
+      "headers": {
+        "date": "Wed, 28 Oct 2026 09:45:56 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-28T09:45:56.974468+00:00",
+      "elapsed_seconds": 0.437
+    },
+    "body_sha256": "83b240bb5f23d1f2142eaf0fd7b3a43c8b50d9a7bfe4bd3bea3258ff21d0169b",
+    "body_bytes": 576012,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-032",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 32,
+    "request": {
+      "url": "https://www.walmart.com/browse/health-medicine/plantar-fasciitis-insoles/976760_1588421_8915350_4802792",
+      "attempt": 1,
+      "started_utc": "2026-10-28T09:48:27.861184+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/health-medicine/plantar-fasciitis-insoles/976760_1588421_8915350_4802792",
+      "redirected": false,
+      "headers": {
+        "date": "Wed, 28 Oct 2026 09:48:27 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-28T09:48:28.007945+00:00",
+      "elapsed_seconds": 0.147
+    },
+    "body_sha256": "c3328a11265bcbcfa4eb19fe3fc68c09bd7bd5a353a0b80ec6a6a321ad48dc81",
+    "body_bytes": 864585,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-008",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 8,
+    "request": {
+      "url": "https://www.walmart.com/browse/beauty/eye-shadow/1085666_1007040_6659232_6297527?page=2",
+      "attempt": 1,
+      "started_utc": "2026-10-28T09:40:53.561489+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/beauty/eye-shadow/1085666_1007040_6659232_6297527?page=2",
+      "redirected": false,
+      "headers": {
+        "date": "Wed, 28 Oct 2026 09:40:53 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-28T09:40:53.781667+00:00",
+      "elapsed_seconds": 0.22
+    },
+    "body_sha256": "b171c90d242c9b39cd9191a96fd9686aa080f303690ee20adf408ac9248db4a3",
+    "body_bytes": 608744,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-028",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 28,
+    "request": {
+      "url": "https://www.walmart.com/browse/pets/elevated-dog-beds/5440_202072_7135140_5526038",
+      "attempt": 1,
+      "started_utc": "2026-10-28T09:47:15.534547+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/pets/elevated-dog-beds/5440_202072_7135140_5526038",
+      "redirected": false,
+      "headers": {
+        "date": "Wed, 28 Oct 2026 09:47:15 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-28T09:47:15.683441+00:00",
+      "elapsed_seconds": 0.149
+    },
+    "body_sha256": "b50c419d28571510eb566f43efcca09f83974ce28f2d756244bd7a0eb3e88bf6",
+    "body_bytes": 614107,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-012",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 12,
+    "request": {
+      "url": "https://www.walmart.com/browse/food/sweet-tea/976759_976782_1001320_4878945",
+      "attempt": 1,
+      "started_utc": "2026-10-28T09:42:09.046469+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/food/sweet-tea/976759_976782_1001320_4878945",
+      "redirected": false,
+      "headers": {
+        "date": "Wed, 28 Oct 2026 09:42:09 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-28T09:42:09.440876+00:00",
+      "elapsed_seconds": 0.394
+    },
+    "body_sha256": "5bcbd6bd380cf1e8dc881086814b2ccab1379f9182d854738476b38a1328b49b",
+    "body_bytes": 907921,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-004",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 4,
+    "request": {
+      "url": "https://www.walmart.com/browse/health-medicine/motrin/976760_6972993_8503071",
+      "attempt": 1,
+      "started_utc": "2026-10-28T09:39:42.043950+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/health-medicine/motrin/976760_6972993_8503071",
+      "redirected": false,
+      "headers": {
+        "date": "Wed, 28 Oct 2026 09:39:42 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-28T09:39:42.328814+00:00",
+      "elapsed_seconds": 0.285
+    },
+    "body_sha256": "fe47a7081835af0b93f76a75938e0c2c62e975469082b7a44aca856d428eb77c",
+    "body_bytes": 534309,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-005",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 5,
+    "request": {
+      "url": "https://www.walmart.com/browse/food/sugars-sweeteners/976759_976780_9959366_3087979",
+      "attempt": 1,
+      "started_utc": "2026-10-28T09:40:00.697150+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/food/sugars-sweeteners/976759_976780_9959366_3087979",
+      "redirected": false,
+      "headers": {
+        "date": "Wed, 28 Oct 2026 09:40:01 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-28T09:40:01.320733+00:00",
+      "elapsed_seconds": 0.624
+    },
+    "body_sha256": "d54443097c24908f00247ad6d78068323dba183cd841f17c69146cf0bd4b0e6e",
+    "body_bytes": 1290925,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-013",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 13,
+    "request": {
+      "url": "https://www.walmart.com/browse/office-supplies/school-arts-and-crafts/1229749_1086045_1718345",
+      "attempt": 1,
+      "started_utc": "2026-10-28T09:42:26.827434+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/office-supplies/school-arts-and-crafts/1229749_1086045_1718345",
+      "redirected": false,
+      "headers": {
+        "date": "Wed, 28 Oct 2026 09:42:26 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-28T09:42:27.080346+00:00",
+      "elapsed_seconds": 0.253
+    },
+    "body_sha256": "9d29a67484d43096d29fd0843f6636d13784d69f5817436fc3e26d4f877c641a",
+    "body_bytes": 1399151,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-029",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 29,
+    "request": {
+      "url": "https://www.walmart.com/browse/beauty/eyeliner/1085666_1007040_6659232_8903128?page=2",
+      "attempt": 1,
+      "started_utc": "2026-10-28T09:47:32.504092+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/beauty/eyeliner/1085666_1007040_6659232_8903128?page=2",
+      "redirected": false,
+      "headers": {
+        "date": "Wed, 28 Oct 2026 09:47:32 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-28T09:47:32.714964+00:00",
+      "elapsed_seconds": 0.211
+    },
+    "body_sha256": "dae0592a64076f45373b860700cca2448b8ae9b352315d43dca68e6ffc6bc96d",
+    "body_bytes": 1220745,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-009",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 9,
+    "request": {
+      "url": "https://www.walmart.com/browse/personal-care/all-denture-care/1005862_1007221_3847068_4491940",
+      "attempt": 1,
+      "started_utc": "2026-10-28T09:41:14.165492+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/personal-care/all-denture-care/1005862_1007221_3847068_4491940",
+      "redirected": false,
+      "headers": {
+        "date": "Wed, 28 Oct 2026 09:41:14 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-28T09:41:14.707681+00:00",
+      "elapsed_seconds": 0.542
+    },
+    "body_sha256": "344698b27fb336fdeeb4f9aae9b339c1397d43e87d10a8d9ee9084f03d7b135d",
+    "body_bytes": 1271028,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-033",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 33,
+    "request": {
+      "url": "https://www.walmart.com/browse/food/tea-concentrate/976759_976782_1001320_8101659",
+      "attempt": 1,
+      "started_utc": "2026-10-28T09:48:44.867157+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/food/tea-concentrate/976759_976782_1001320_8101659",
+      "redirected": false,
+      "headers": {
+        "date": "Wed, 28 Oct 2026 09:48:45 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-28T09:48:45.208523+00:00",
+      "elapsed_seconds": 0.341
+    },
+    "body_sha256": "288fb304db53e7d7d2b281a66b77ce7967811582b9b13eb2022609bc0ccc5d9d",
+    "body_bytes": 950487,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-025",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 25,
+    "request": {
+      "url": "https://www.walmart.com/browse/foot-care/insoles/976760_1588421_8915350",
+      "attempt": 1,
+      "started_utc": "2026-10-28T09:46:15.005477+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/foot-care/insoles/976760_1588421_8915350",
+      "redirected": false,
+      "headers": {
+        "date": "Wed, 28 Oct 2026 09:46:15 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-28T09:46:15.284613+00:00",
+      "elapsed_seconds": 0.279
+    },
+    "body_sha256": "58820a6f7b18d491465821d03b32e99d5cf8a08bb0f9b397c296ae24bfed016a",
+    "body_bytes": 1222233,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-038",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 38,
+    "request": {
+      "url": "https://www.walmart.com/browse/household-essentials/disposable-plates-great-value-brand/1115193_1073264_1149388_8777672",
+      "attempt": 1,
+      "started_utc": "2026-10-28T09:50:20.674962+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/household-essentials/great-value-disposable-plates/1115193_1073264_1149388_8777672",
+      "redirected": true,
+      "headers": {
+        "date": "Wed, 28 Oct 2026 09:50:21 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-28T09:50:21.363223+00:00",
+      "elapsed_seconds": 0.688
+    },
+    "body_sha256": "1ec2ab8098ac4743a7103f548204b213dfc4e75629c563a23c3b7c4793eceec6",
+    "body_bytes": 766385,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-014",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 14,
+    "request": {
+      "url": "https://www.walmart.com/browse/pets/large-dog-beds/5440_202072_7135140_1676507",
+      "attempt": 1,
+      "started_utc": "2026-10-28T09:42:46.496511+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/pets/large-dog-beds/5440_202072_7135140_1676507",
+      "redirected": false,
+      "headers": {
+        "date": "Wed, 28 Oct 2026 09:42:46 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-28T09:42:46.824851+00:00",
+      "elapsed_seconds": 0.328
+    },
+    "body_sha256": "677b42a36c873eb9acad348b06dea3c896d37ca0f04024236a2d6c3996b97e15",
+    "body_bytes": 859465,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-002",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 2,
+    "request": {
+      "url": "https://www.walmart.com/browse/oral-care/denture-care/1005862_1007221_3847068",
+      "attempt": 1,
+      "started_utc": "2026-10-28T09:39:08.297231+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/oral-care/denture-care/1005862_1007221_3847068",
+      "redirected": false,
+      "headers": {
+        "date": "Wed, 28 Oct 2026 09:39:08 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-28T09:39:08.781906+00:00",
+      "elapsed_seconds": 0.485
+    },
+    "body_sha256": "e9057b36d18baa8a70577bcd0737f210f0d59bc989cec0c978fbfc0832107924",
+    "body_bytes": 1325933,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-022",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 22,
+    "request": {
+      "url": "https://www.walmart.com/browse/beauty/eyebrow-makeup/1085666_1007040_6659232_1603278?page=2",
+      "attempt": 1,
+      "started_utc": "2026-10-28T09:45:17.643554+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/beauty/eyebrow-makeup/1085666_1007040_6659232_1603278?page=2",
+      "redirected": false,
+      "headers": {
+        "date": "Wed, 28 Oct 2026 09:45:17 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-28T09:45:17.952682+00:00",
+      "elapsed_seconds": 0.309
+    },
+    "body_sha256": "4c9e3830263a55141673003934b7bb127a6d333fb45109a40d5372b39a7ae49b",
+    "body_bytes": 1261454,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-034",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 34,
+    "request": {
+      "url": "https://www.walmart.com/browse/office-supplies/sharpie-pens/1229749_1431586_4638364_8964237",
+      "attempt": 1,
+      "started_utc": "2026-10-28T09:49:01.198026+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/office-supplies/sharpie-pens/1229749_1431586_4638364_8964237",
+      "redirected": false,
+      "headers": {
+        "date": "Wed, 28 Oct 2026 09:49:01 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-28T09:49:01.507789+00:00",
+      "elapsed_seconds": 0.31
+    },
+    "body_sha256": "6326453d731325112c665cb69597a5deb2dd0c8aeb5ce074d3fdf3ca270a8d80",
+    "body_bytes": 944363,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-018",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 18,
+    "request": {
+      "url": "https://www.walmart.com/browse/health/ibuprofen/976760_6972993_5651723?page=2",
+      "attempt": 1,
+      "started_utc": "2026-10-28T09:44:01.141043+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/health/ibuprofen/976760_6972993_5651723?page=2",
+      "redirected": false,
+      "headers": {
+        "date": "Wed, 28 Oct 2026 09:44:01 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-28T09:44:01.373051+00:00",
+      "elapsed_seconds": 0.232
+    },
+    "body_sha256": "af53a5f8bc5779a378593a426e1f1c79555f6f759bf6f83ab168c7c90fcb96a6",
+    "body_bytes": 1035465,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-019",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 19,
+    "request": {
+      "url": "https://www.walmart.com/browse/food/sweet-treats/976759_976779_9318357",
+      "attempt": 1,
+      "started_utc": "2026-10-28T09:44:19.916772+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/food/sweet-treats/976759_976779_9318357",
+      "redirected": false,
+      "headers": {
+        "date": "Wed, 28 Oct 2026 09:44:20 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-28T09:44:20.552130+00:00",
+      "elapsed_seconds": 0.635
+    },
+    "body_sha256": "3e6f32c62ae90dac6d743ad1cbb7f7603449ba3457f9724ed2b0ad6cba5cb486",
+    "body_bytes": 1197845,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-035",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 35,
+    "request": {
+      "url": "https://www.walmart.com/browse/pets/orthopedic-dog-beds/5440_202072_7135140_1750034",
+      "attempt": 1,
+      "started_utc": "2026-10-28T09:49:17.654843+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/pets/orthopedic-dog-beds/5440_202072_7135140_1750034",
+      "redirected": false,
+      "headers": {
+        "date": "Wed, 28 Oct 2026 09:49:17 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-28T09:49:18.024237+00:00",
+      "elapsed_seconds": 0.369
+    },
+    "body_sha256": "1604a33a86d422663d32cf23c1ffc48a40c9eb022823f8f51dded0074907ebc4",
+    "body_bytes": 820308,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-023",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 23,
+    "request": {
+      "url": "https://www.walmart.com/browse/personal-care/denture-repair-kit/1005862_1007221_3847068_8891924",
+      "attempt": 1,
+      "started_utc": "2026-10-28T09:45:33.985133+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/personal-care/denture-repair-kit/1005862_1007221_3847068_8891924",
+      "redirected": false,
+      "headers": {
+        "date": "Wed, 28 Oct 2026 09:45:34 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-28T09:45:34.581494+00:00",
+      "elapsed_seconds": 0.596
+    },
+    "body_sha256": "e78d100c2aeba54015a4aabaad5f21bea5d8c35b1617ab9dd8d01573e4da0552",
+    "body_bytes": 585610,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-003",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 3,
+    "request": {
+      "url": "https://www.walmart.com/browse/household-essentials/paper-cups/1115193_1073264_1149388_9920020_5129337",
+      "attempt": 1,
+      "started_utc": "2026-10-28T09:39:25.850218+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/household-essentials/paper-cups/1115193_1073264_1149388_9920020_5129337",
+      "redirected": false,
+      "headers": {
+        "date": "Wed, 28 Oct 2026 09:39:25 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-28T09:39:26.060750+00:00",
+      "elapsed_seconds": 0.211
+    },
+    "body_sha256": "5b8ae4fb9c938c46828833342ae2c6077e86a8b0fec17b367e995bdfc6b95987",
+    "body_bytes": 743830,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-015",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 15,
+    "request": {
+      "url": "https://www.walmart.com/browse/beauty/eyebrow-gel/1085666_1007040_6659232_1603278_8224544",
+      "attempt": 1,
+      "started_utc": "2026-10-28T09:43:04.280014+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/beauty/eyebrow-gel/1085666_1007040_6659232_1603278_8224544",
+      "redirected": false,
+      "headers": {
+        "date": "Wed, 28 Oct 2026 09:43:05 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-28T09:43:05.733110+00:00",
+      "elapsed_seconds": 1.453
+    },
+    "body_sha256": "f8a532125cdd3f9bf7151e4a7a7217c550f461bff0d2f7e5f90b2bf05cffa3f9",
+    "body_bytes": 1108424,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-039",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 39,
+    "request": {
+      "url": "https://www.walmart.com/browse/health-medicine/dr-scholls-inserts/976760_1588421_7987155_4492623",
+      "attempt": 1,
+      "started_utc": "2026-10-28T09:50:38.966312+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/health-medicine/dr-scholls-inserts/976760_1588421_7987155_4492623",
+      "redirected": false,
+      "headers": {
+        "date": "Wed, 28 Oct 2026 09:50:42 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-28T09:50:42.402860+00:00",
+      "elapsed_seconds": 3.437
+    },
+    "body_sha256": "c5da561f9c2a7597ee5086d48adb7c03c0a3644bb7c9b5001f95abe002a54373",
+    "body_bytes": 941401,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  }
+]
