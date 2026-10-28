@@ -1,0 +1,183 @@
+{
+  "mode": "bounded live offer inspection; not a catalog run",
+  "started_utc": "2026-10-28T08:09:03.294841+00:00",
+  "queries": [
+    {
+      "query": "must buy",
+      "url": "https://www.walmart.com/search?q=%5Bredacted%5D&stores=100&facet=%5Bredacted%5D",
+      "inspected": 6,
+      "listing_context": {
+        "stores": "100",
+        "facet": "fulfillment_method:Pickup",
+        "page": 1
+      },
+      "eligible_candidates": 21,
+      "listing_sequence": 2,
+      "selected_ids": [
+        "44391605",
+        "992524020",
+        "51259338",
+        "44391666",
+        "44390954",
+        "10308533"
+      ]
+    }
+  ],
+  "products": [
+    {
+      "sequence": 3,
+      "query": "must buy",
+      "candidate_id": "44391605",
+      "product_id": "44391605",
+      "store_id": "100",
+      "zip": "72712",
+      "intent": "PICKUP",
+      "store_matches": true,
+      "accepted": true,
+      "reason": "",
+      "fields": {
+        "volume_deals_description": "",
+        "volume_deals_price": "",
+        "digital_deals_description": "",
+        "digital_deals_price": ""
+      },
+      "unknown_offer_shapes": [],
+      "description_visible_in_response": false,
+      "explicit_offer_price": false,
+      "current_local_price": "2.64"
+    },
+    {
+      "sequence": 4,
+      "query": "must buy",
+      "candidate_id": "992524020",
+      "product_id": "992524020",
+      "store_id": "100",
+      "zip": "72712",
+      "intent": "PICKUP",
+      "store_matches": true,
+      "accepted": true,
+      "reason": "",
+      "fields": {
+        "volume_deals_description": "",
+        "volume_deals_price": "",
+        "digital_deals_description": "",
+        "digital_deals_price": ""
+      },
+      "unknown_offer_shapes": [],
+      "description_visible_in_response": false,
+      "explicit_offer_price": false,
+      "current_local_price": "5.97"
+    },
+    {
+      "sequence": 5,
+      "query": "must buy",
+      "candidate_id": "51259338",
+      "product_id": "51259338",
+      "store_id": "100",
+      "zip": "72712",
+      "intent": "PICKUP",
+      "store_matches": true,
+      "accepted": false,
+      "reason": "approximate_weight",
+      "fields": {
+        "volume_deals_description": "",
+        "volume_deals_price": "",
+        "digital_deals_description": "",
+        "digital_deals_price": ""
+      },
+      "unknown_offer_shapes": [],
+      "description_visible_in_response": false,
+      "explicit_offer_price": false,
+      "current_local_price": ""
+    },
+    {
+      "sequence": 6,
+      "query": "must buy",
+      "candidate_id": "44391666",
+      "product_id": "44391666",
+      "store_id": "100",
+      "zip": "72712",
+      "intent": "PICKUP",
+      "store_matches": true,
+      "accepted": true,
+      "reason": "",
+      "fields": {
+        "volume_deals_description": "",
+        "volume_deals_price": "",
+        "digital_deals_description": "",
+        "digital_deals_price": ""
+      },
+      "unknown_offer_shapes": [],
+      "description_visible_in_response": false,
+      "explicit_offer_price": false,
+      "current_local_price": "2.77"
+    },
+    {
+      "sequence": 7,
+      "query": "must buy",
+      "candidate_id": "44390954",
+      "product_id": "44390954",
+      "store_id": "100",
+      "zip": "72712",
+      "intent": "PICKUP",
+      "store_matches": true,
+      "accepted": true,
+      "reason": "",
+      "fields": {
+        "volume_deals_description": "",
+        "volume_deals_price": "",
+        "digital_deals_description": "",
+        "digital_deals_price": ""
+      },
+      "unknown_offer_shapes": [],
+      "description_visible_in_response": false,
+      "explicit_offer_price": false,
+      "current_local_price": "0.76"
+    },
+    {
+      "sequence": 8,
+      "query": "must buy",
+      "candidate_id": "10308533",
+      "product_id": "10308533",
+      "store_id": "100",
+      "zip": "72712",
+      "intent": "PICKUP",
+      "store_matches": true,
+      "accepted": true,
+      "reason": "",
+      "fields": {
+        "volume_deals_description": "",
+        "volume_deals_price": "",
+        "digital_deals_description": "",
+        "digital_deals_price": ""
+      },
+      "unknown_offer_shapes": [],
+      "description_visible_in_response": false,
+      "explicit_offer_price": false,
+      "current_local_price": "1.48"
+    }
+  ],
+  "verified_examples": [],
+  "completed": true,
+  "paid_services_used": false,
+  "expanded_rendered_search": true,
+  "limits": {
+    "product_requests": 8,
+    "listing_requests": 1,
+    "seconds": 600
+  },
+  "source_commit": "624ee6e89f4396fb406a48487e4f8a28e1a682a1",
+  "source_sha256": {
+    "tools/review_live_offers.py": "5aacf919c2c7627819199885c136aac2cf316462060b023ff11513dce9d5528a",
+    "extract.py": "d8f4907da13805a7470edbbaaafbe83e4915ed87b651aba12d239c06887af937",
+    "scrape.py": "69146e76ce7a1045ebc485992a6345c1b2e9d9ca59326387150b20c1d4bd8b2f",
+    "capture_store_drift.py": "9ce534bfb7b887af0776fa18843dc19e162c397e3a6e7f844ffb97f5aa5bf6f7"
+  },
+  "counts": {
+    "product_requests": 8,
+    "listing_requests": 1,
+    "sequence": 9,
+    "body_bytes": 6169514
+  },
+  "seconds": 141.567
+}

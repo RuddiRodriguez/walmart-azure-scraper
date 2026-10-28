@@ -1,0 +1,32 @@
+{
+  "mode": "combined bounded live offer review; no catalog publication",
+  "source_commit": "624ee6e89f4396fb406a48487e4f8a28e1a682a1",
+  "store": "100",
+  "zip": "72712",
+  "fulfillment": "PICKUP",
+  "unique_search_phrases": 11,
+  "distinct_products_across_initial_and_expanded_reviews": 55,
+  "expanded_review_rows": 53,
+  "expanded_distinct_products": 43,
+  "verified_examples": 0,
+  "all_expanded_searches_completed_at_least_once": true,
+  "partial_sessions": [
+    {
+      "file": "session-long-partial.json",
+      "reason": "wrong store context",
+      "invalid_response_excluded": true
+    },
+    {
+      "file": "session-render-partial.json",
+      "reason": "incomplete rendered page",
+      "invalid_response_excluded": true
+    }
+  ],
+  "completed_followups": [
+    "extra-savings.json",
+    "save-when-you-buy.json",
+    "must-buy.json",
+    "clip-coupon.json"
+  ],
+  "conclusion": "No qualifying genuine volume or digital discount offer found; no example fabricated"
+}

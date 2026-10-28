@@ -1,0 +1,183 @@
+{
+  "mode": "bounded live offer inspection; not a catalog run",
+  "started_utc": "2026-10-28T08:47:58.554761+00:00",
+  "queries": [
+    {
+      "query": "clip coupon",
+      "url": "https://www.walmart.com/search?q=%5Bredacted%5D&stores=100&facet=%5Bredacted%5D",
+      "inspected": 6,
+      "listing_context": {
+        "stores": "100",
+        "facet": "fulfillment_method:Pickup",
+        "page": 1
+      },
+      "eligible_candidates": 17,
+      "listing_sequence": 2,
+      "selected_ids": [
+        "18645624130",
+        "26557563",
+        "167822801",
+        "976588700",
+        "25596784",
+        "18461673859"
+      ]
+    }
+  ],
+  "products": [
+    {
+      "sequence": 3,
+      "query": "clip coupon",
+      "candidate_id": "18645624130",
+      "product_id": "18645624130",
+      "store_id": "100",
+      "zip": "72712",
+      "intent": "PICKUP",
+      "store_matches": true,
+      "accepted": true,
+      "reason": "",
+      "fields": {
+        "volume_deals_description": "",
+        "volume_deals_price": "",
+        "digital_deals_description": "",
+        "digital_deals_price": ""
+      },
+      "unknown_offer_shapes": [],
+      "description_visible_in_response": false,
+      "explicit_offer_price": false,
+      "current_local_price": "12.97"
+    },
+    {
+      "sequence": 4,
+      "query": "clip coupon",
+      "candidate_id": "26557563",
+      "product_id": "26557563",
+      "store_id": "100",
+      "zip": "72712",
+      "intent": "PICKUP",
+      "store_matches": true,
+      "accepted": true,
+      "reason": "",
+      "fields": {
+        "volume_deals_description": "",
+        "volume_deals_price": "",
+        "digital_deals_description": "",
+        "digital_deals_price": ""
+      },
+      "unknown_offer_shapes": [],
+      "description_visible_in_response": false,
+      "explicit_offer_price": false,
+      "current_local_price": "4.94"
+    },
+    {
+      "sequence": 5,
+      "query": "clip coupon",
+      "candidate_id": "167822801",
+      "product_id": "167822801",
+      "store_id": "100",
+      "zip": "72712",
+      "intent": "PICKUP",
+      "store_matches": true,
+      "accepted": true,
+      "reason": "",
+      "fields": {
+        "volume_deals_description": "",
+        "volume_deals_price": "",
+        "digital_deals_description": "",
+        "digital_deals_price": ""
+      },
+      "unknown_offer_shapes": [],
+      "description_visible_in_response": false,
+      "explicit_offer_price": false,
+      "current_local_price": "3.87"
+    },
+    {
+      "sequence": 6,
+      "query": "clip coupon",
+      "candidate_id": "976588700",
+      "product_id": "976588700",
+      "store_id": "100",
+      "zip": "72712",
+      "intent": "PICKUP",
+      "store_matches": true,
+      "accepted": true,
+      "reason": "",
+      "fields": {
+        "volume_deals_description": "",
+        "volume_deals_price": "",
+        "digital_deals_description": "",
+        "digital_deals_price": ""
+      },
+      "unknown_offer_shapes": [],
+      "description_visible_in_response": false,
+      "explicit_offer_price": false,
+      "current_local_price": "3.28"
+    },
+    {
+      "sequence": 7,
+      "query": "clip coupon",
+      "candidate_id": "25596784",
+      "product_id": "25596784",
+      "store_id": "100",
+      "zip": "72712",
+      "intent": "PICKUP",
+      "store_matches": true,
+      "accepted": true,
+      "reason": "",
+      "fields": {
+        "volume_deals_description": "",
+        "volume_deals_price": "",
+        "digital_deals_description": "",
+        "digital_deals_price": ""
+      },
+      "unknown_offer_shapes": [],
+      "description_visible_in_response": false,
+      "explicit_offer_price": false,
+      "current_local_price": "1.38"
+    },
+    {
+      "sequence": 8,
+      "query": "clip coupon",
+      "candidate_id": "18461673859",
+      "product_id": "18461673859",
+      "store_id": "100",
+      "zip": "72712",
+      "intent": "PICKUP",
+      "store_matches": true,
+      "accepted": true,
+      "reason": "",
+      "fields": {
+        "volume_deals_description": "",
+        "volume_deals_price": "",
+        "digital_deals_description": "",
+        "digital_deals_price": ""
+      },
+      "unknown_offer_shapes": [],
+      "description_visible_in_response": false,
+      "explicit_offer_price": false,
+      "current_local_price": "6.94"
+    }
+  ],
+  "verified_examples": [],
+  "completed": true,
+  "paid_services_used": false,
+  "expanded_rendered_search": true,
+  "limits": {
+    "product_requests": 8,
+    "listing_requests": 1,
+    "seconds": 600
+  },
+  "source_commit": "624ee6e89f4396fb406a48487e4f8a28e1a682a1",
+  "source_sha256": {
+    "tools/review_live_offers.py": "5aacf919c2c7627819199885c136aac2cf316462060b023ff11513dce9d5528a",
+    "extract.py": "d8f4907da13805a7470edbbaaafbe83e4915ed87b651aba12d239c06887af937",
+    "scrape.py": "69146e76ce7a1045ebc485992a6345c1b2e9d9ca59326387150b20c1d4bd8b2f",
+    "capture_store_drift.py": "9ce534bfb7b887af0776fa18843dc19e162c397e3a6e7f844ffb97f5aa5bf6f7"
+  },
+  "counts": {
+    "product_requests": 8,
+    "listing_requests": 1,
+    "sequence": 9,
+    "body_bytes": 5415748
+  },
+  "seconds": 75.198
+}
