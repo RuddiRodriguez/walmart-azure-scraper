@@ -23,6 +23,8 @@ Repository commit at update: `{commit}`
 
 This is a live progress snapshot. It is not the final package. A new final tag will be created after coverage finishes and final checks pass.
 
+Client run instructions: [simple step-by-step guide](RUN_GUIDE.md).
+
 ## Completed
 
 1. Privacy-reviewed wrong-store and corrected-response pairs: [evidence](../evidence/response-pairs-reviewed-20261026/).
