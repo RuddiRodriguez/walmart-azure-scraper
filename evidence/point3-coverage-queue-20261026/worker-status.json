@@ -7,11 +7,11 @@
   "max_pages": 2000,
   "queue_counts": {
     "cross_link_excluded": 137,
-    "failed": 98,
+    "failed": 100,
     "navigation_scope_unverified": 9,
     "outside_scope": 1,
-    "pending": 1932,
-    "reviewed": 2012
+    "pending": 1909,
+    "reviewed": 2050
   },
   "scope_counts": {
     "brief_exclusion": 2,
@@ -71,23 +71,15 @@
     "queue_sha256_after": "b373f7c13523f0d8a3c6f1696c873fab6dc066a505d11ba7f61fae38720f001a"
   },
   "taxonomy_trial": {
-    "started_utc": "2026-10-27T13:26:06.048719+00:00",
-    "finished_utc": "2026-10-27T14:36:28.681607+00:00",
+    "started_utc": "2026-10-28T09:08:10.299942+00:00",
+    "finished_utc": "2026-10-28T10:59:15.986035+00:00",
     "finished": true,
     "limits": {
-      "batches": 10,
-      "pages_per_batch": 20,
+      "batches": 60,
+      "pages_per_batch": 40,
       "seconds_per_batch": 1800
     },
     "status_before": {
-      "cross_link_excluded": 137,
-      "failed": 75,
-      "navigation_scope_unverified": 9,
-      "outside_scope": 1,
-      "pending": 2215,
-      "reviewed": 1515
-    },
-    "status_after": {
       "cross_link_excluded": 137,
       "failed": 89,
       "navigation_scope_unverified": 9,
@@ -95,129 +87,13 @@
       "pending": 2079,
       "reviewed": 1701
     },
-    "results": [
-      {
-        "number": 1,
-        "batch": "batch-01737-1793107584",
-        "pages": 20,
-        "new_pages": 5,
-        "pending_before": 2215,
-        "pending_after": 2200,
-        "failed_after": 76,
-        "stop_reason": null,
-        "offer_observations": 0
-      },
-      {
-        "number": 2,
-        "batch": "batch-01757-1793107996",
-        "pages": 20,
-        "new_pages": 3,
-        "pending_before": 2200,
-        "pending_after": 2183,
-        "failed_after": 76,
-        "stop_reason": null,
-        "offer_observations": 0
-      },
-      {
-        "number": 3,
-        "batch": "batch-01777-1793108390",
-        "pages": 20,
-        "new_pages": 15,
-        "pending_before": 2183,
-        "pending_after": 2178,
-        "failed_after": 77,
-        "stop_reason": null,
-        "offer_observations": 0
-      },
-      {
-        "number": 4,
-        "batch": "batch-01797-1793108832",
-        "pages": 20,
-        "new_pages": 9,
-        "pending_before": 2178,
-        "pending_after": 2167,
-        "failed_after": 81,
-        "stop_reason": null,
-        "offer_observations": 0
-      },
-      {
-        "number": 5,
-        "batch": "batch-01817-1793109229",
-        "pages": 20,
-        "new_pages": 5,
-        "pending_before": 2167,
-        "pending_after": 2152,
-        "failed_after": 83,
-        "stop_reason": null,
-        "offer_observations": 0
-      },
-      {
-        "number": 6,
-        "batch": "batch-01837-1793109680",
-        "pages": 20,
-        "new_pages": 3,
-        "pending_before": 2152,
-        "pending_after": 2135,
-        "failed_after": 83,
-        "stop_reason": null,
-        "offer_observations": 0
-      },
-      {
-        "number": 7,
-        "batch": "batch-01857-1793110085",
-        "pages": 20,
-        "new_pages": 5,
-        "pending_before": 2135,
-        "pending_after": 2120,
-        "failed_after": 88,
-        "stop_reason": null,
-        "offer_observations": 0
-      },
-      {
-        "number": 8,
-        "batch": "batch-01877-1793110493",
-        "pages": 20,
-        "new_pages": 5,
-        "pending_before": 2120,
-        "pending_after": 2105,
-        "failed_after": 89,
-        "stop_reason": null,
-        "offer_observations": 0
-      },
-      {
-        "number": 9,
-        "batch": "batch-01897-1793110903",
-        "pages": 20,
-        "new_pages": 9,
-        "pending_before": 2105,
-        "pending_after": 2094,
-        "failed_after": 89,
-        "stop_reason": null,
-        "offer_observations": 0
-      },
-      {
-        "number": 10,
-        "batch": "batch-01917-1793111362",
-        "pages": 20,
-        "new_pages": 5,
-        "pending_before": 2094,
-        "pending_after": 2079,
-        "failed_after": 89,
-        "stop_reason": null,
-        "offer_observations": 0
-      }
-    ],
-    "queue_shrank": true,
-    "growth_stop_triggered": false,
-    "live_scope": "User-authorized bounded taxonomy batches; no full-coverage claim"
-  },
-  "coverage_completion": {
-    "started_utc": "2026-10-28T09:08:10.299942+00:00",
-    "finished": false,
-    "limits": {
-      "batches": 60,
-      "pages_per_batch": 40,
-      "seconds_per_batch": 1800
+    "status_after": {
+      "cross_link_excluded": 137,
+      "failed": 98,
+      "navigation_scope_unverified": 9,
+      "outside_scope": 1,
+      "pending": 1932,
+      "reviewed": 2012
     },
     "results": [
       {
@@ -317,6 +193,31 @@
         "pending_after": 1932,
         "failed_after": 98,
         "stop_reason": "Location mismatch in store banner",
+        "offer_observations": 0
+      }
+    ],
+    "queue_shrank": true,
+    "growth_stop_triggered": false,
+    "live_scope": "User-authorized bounded taxonomy batches; no full-coverage claim"
+  },
+  "coverage_completion": {
+    "started_utc": "2026-10-28T11:11:50.090075+00:00",
+    "finished": false,
+    "limits": {
+      "batches": 60,
+      "pages_per_batch": 40,
+      "seconds_per_batch": 1800
+    },
+    "results": [
+      {
+        "number": 1,
+        "batch": "batch-02257-1793185934",
+        "pages": 40,
+        "new_pages": 17,
+        "pending_before": 1932,
+        "pending_after": 1909,
+        "failed_after": 100,
+        "stop_reason": null,
         "offer_observations": 0
       }
     ]
