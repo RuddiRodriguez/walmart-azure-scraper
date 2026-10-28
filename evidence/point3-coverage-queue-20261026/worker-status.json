@@ -7,11 +7,11 @@
   "max_pages": 2000,
   "queue_counts": {
     "cross_link_excluded": 137,
-    "failed": 115,
+    "failed": 116,
     "navigation_scope_unverified": 9,
     "outside_scope": 1,
-    "pending": 1715,
-    "reviewed": 2395
+    "pending": 1700,
+    "reviewed": 2434
   },
   "scope_counts": {
     "brief_exclusion": 2,
@@ -316,6 +316,17 @@
         "pending_before": 1724,
         "pending_after": 1715,
         "failed_after": 115,
+        "stop_reason": null,
+        "offer_observations": 0
+      },
+      {
+        "number": 11,
+        "batch": "batch-02657-1793194782",
+        "pages": 40,
+        "new_pages": 25,
+        "pending_before": 1715,
+        "pending_after": 1700,
+        "failed_after": 116,
         "stop_reason": null,
         "offer_observations": 0
       }
