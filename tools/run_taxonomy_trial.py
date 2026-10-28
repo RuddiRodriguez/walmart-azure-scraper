@@ -30,6 +30,7 @@ def run(batches,pages,output):
         atomic_json(output/'progress.json',progress)
         status=json.loads((ROOT/'worker-status.json').read_text());status.update(phase='client_full_coverage_continuation',finished=False,queue_counts=after,coverage_completion=progress)
         atomic_json(ROOT/'worker-status.json',status);export_batch(batch,report,status)
+        if not processed:break
         if process.returncode or report.get('stop_reason') or growth_streak>=2:break
     final=counts();summary=dict(started_utc=started,finished_utc=datetime.now(timezone.utc).isoformat(),finished=True,limits=dict(batches=batches,pages_per_batch=pages,seconds_per_batch=SECONDS),status_before=before,status_after=final,results=results,queue_shrank=final.get('pending',0)<before.get('pending',0),growth_stop_triggered=growth_streak>=2,live_scope='User-authorized bounded taxonomy batches; no full-coverage claim')
     atomic_json(output/'summary.json',summary)
