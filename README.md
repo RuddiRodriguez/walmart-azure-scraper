@@ -2,6 +2,7 @@
 
 ## Client review — start here
 
+- [Live progress while final coverage runs](docs/CURRENT_PROGRESS.md)
 - [Final verified status](docs/FINAL_CLIENT_REVIEW_20261027.md)
 - [Running instructions](docs/OPERATIONS.md)
 - [Evidence index](evidence/README.md)

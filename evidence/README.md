@@ -2,6 +2,8 @@
 
 ## Current client evidence
 
+Live summary: [`docs/CURRENT_PROGRESS.md`](../docs/CURRENT_PROGRESS.md).
+
 | Requirement | Evidence |
 |---|---|
 | Final status and package receipt | `docs/FINAL_CLIENT_REVIEW_20261027.md`, `client-ready-v2-20261027/receipt.json` |

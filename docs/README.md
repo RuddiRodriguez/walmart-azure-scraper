@@ -2,11 +2,12 @@
 
 ## Start here
 
-1. [Final client review status](FINAL_CLIENT_REVIEW_20261027.md)
-2. [Operations and running instructions](OPERATIONS.md)
-3. [Acceptance rules](ACCEPTANCE.md)
-4. [Evidence index](../evidence/README.md)
-5. [Unsent client message](CLIENT_MESSAGE_DRAFT.txt)
+1. [Live progress while final coverage runs](CURRENT_PROGRESS.md)
+2. [Final client review status](FINAL_CLIENT_REVIEW_20261027.md)
+3. [Operations and running instructions](OPERATIONS.md)
+4. [Acceptance rules](ACCEPTANCE.md)
+5. [Evidence index](../evidence/README.md)
+6. [Unsent client message](CLIENT_MESSAGE_DRAFT.txt)
 
 ## Current behavior
 
