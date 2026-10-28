@@ -2,7 +2,7 @@
 import argparse,fcntl,json,sqlite3,subprocess,sys
 from datetime import datetime,timezone
 from pathlib import Path
-from continue_coverage import ensure_storage
+from continue_coverage import ensure_storage,export_batch
 from storage import atomic_json
 
 ROOT=Path('data/full-coverage-20261026')
@@ -23,10 +23,13 @@ def run(batches,pages,output):
             process=subprocess.run([sys.executable,'coverage_queue.py','--pages',str(pages),'--seconds',str(SECONDS)],stdout=log,stderr=subprocess.STDOUT,timeout=SECONDS+60)
         created=set(ROOT.glob('batch-*'))-existing
         if len(created)!=1:raise RuntimeError('Unexpected taxonomy trial batch count')
-        batch=created.pop();report=json.loads((batch/'report.json').read_text());after=report['queue_counts'];pages=len(report['pages']);new=report.get('new_page_identities',0)
-        growth_streak=growth_streak+1 if pages and after.get('pending',0)>=pending else 0
-        results.append(dict(number=number,batch=batch.name,pages=pages,new_pages=new,pending_before=pending,pending_after=after.get('pending',0),failed_after=after.get('failed',0),stop_reason=report.get('stop_reason'),offer_observations=len(report.get('offer_observations',[]))))
-        atomic_json(output/'progress.json',dict(started_utc=started,finished=False,limits=dict(batches=batches,pages_per_batch=pages,seconds_per_batch=SECONDS),results=results))
+        batch=created.pop();report=json.loads((batch/'report.json').read_text());after=report['queue_counts'];processed=len(report['pages']);new=report.get('new_page_identities',0)
+        growth_streak=growth_streak+1 if processed and after.get('pending',0)>=pending else 0
+        results.append(dict(number=number,batch=batch.name,pages=processed,new_pages=new,pending_before=pending,pending_after=after.get('pending',0),failed_after=after.get('failed',0),stop_reason=report.get('stop_reason'),offer_observations=len(report.get('offer_observations',[]))))
+        progress=dict(started_utc=started,finished=False,limits=dict(batches=batches,pages_per_batch=pages,seconds_per_batch=SECONDS),results=results)
+        atomic_json(output/'progress.json',progress)
+        status=json.loads((ROOT/'worker-status.json').read_text());status.update(phase='client_full_coverage_continuation',finished=False,queue_counts=after,coverage_completion=progress)
+        atomic_json(ROOT/'worker-status.json',status);export_batch(batch,report,status)
         if process.returncode or report.get('stop_reason') or growth_streak>=2:break
     final=counts();summary=dict(started_utc=started,finished_utc=datetime.now(timezone.utc).isoformat(),finished=True,limits=dict(batches=batches,pages_per_batch=pages,seconds_per_batch=SECONDS),status_before=before,status_after=final,results=results,queue_shrank=final.get('pending',0)<before.get('pending',0),growth_stop_triggered=growth_streak>=2,live_scope='User-authorized bounded taxonomy batches; no full-coverage claim')
     atomic_json(output/'summary.json',summary)
