@@ -7,11 +7,11 @@
   "max_pages": 2000,
   "queue_counts": {
     "cross_link_excluded": 137,
-    "failed": 186,
+    "failed": 187,
     "navigation_scope_unverified": 9,
     "outside_scope": 1,
-    "pending": 992,
-    "reviewed": 3708
+    "pending": 975,
+    "reviewed": 3747
   },
   "scope_counts": {
     "brief_exclusion": 2,
@@ -71,23 +71,15 @@
     "queue_sha256_after": "b373f7c13523f0d8a3c6f1696c873fab6dc066a505d11ba7f61fae38720f001a"
   },
   "taxonomy_trial": {
-    "started_utc": "2026-10-29T06:20:08.228633+00:00",
-    "finished_utc": "2026-10-29T07:46:56.434152+00:00",
+    "started_utc": "2026-10-29T09:01:03.183734+00:00",
+    "finished_utc": "2026-10-29T09:03:47.432271+00:00",
     "finished": true,
     "limits": {
-      "batches": 60,
-      "pages_per_batch": 40,
+      "batches": 1,
+      "pages_per_batch": 5,
       "seconds_per_batch": 1800
     },
     "status_before": {
-      "cross_link_excluded": 137,
-      "failed": 166,
-      "navigation_scope_unverified": 9,
-      "outside_scope": 1,
-      "pending": 1092,
-      "reviewed": 3523
-    },
-    "status_after": {
       "cross_link_excluded": 137,
       "failed": 186,
       "navigation_scope_unverified": 9,
@@ -95,85 +87,13 @@
       "pending": 994,
       "reviewed": 3703
     },
-    "results": [
-      {
-        "number": 1,
-        "batch": "batch-03836-1793254809",
-        "pages": 40,
-        "new_pages": 18,
-        "pending_before": 1092,
-        "pending_after": 1070,
-        "failed_after": 168,
-        "stop_reason": null,
-        "offer_observations": 0
-      },
-      {
-        "number": 2,
-        "batch": "batch-03876-1793255836",
-        "pages": 40,
-        "new_pages": 17,
-        "pending_before": 1070,
-        "pending_after": 1047,
-        "failed_after": 174,
-        "stop_reason": null,
-        "offer_observations": 0
-      },
-      {
-        "number": 3,
-        "batch": "batch-03916-1793256721",
-        "pages": 40,
-        "new_pages": 21,
-        "pending_before": 1047,
-        "pending_after": 1028,
-        "failed_after": 179,
-        "stop_reason": null,
-        "offer_observations": 0
-      },
-      {
-        "number": 4,
-        "batch": "batch-03956-1793257688",
-        "pages": 40,
-        "new_pages": 29,
-        "pending_before": 1028,
-        "pending_after": 1017,
-        "failed_after": 181,
-        "stop_reason": null,
-        "offer_observations": 0
-      },
-      {
-        "number": 5,
-        "batch": "batch-03996-1793258721",
-        "pages": 40,
-        "new_pages": 17,
-        "pending_before": 1017,
-        "pending_after": 994,
-        "failed_after": 186,
-        "stop_reason": null,
-        "offer_observations": 0
-      },
-      {
-        "number": 6,
-        "batch": "batch-04036-1793259976",
-        "pages": 0,
-        "new_pages": 0,
-        "pending_before": 994,
-        "pending_after": 994,
-        "failed_after": 186,
-        "stop_reason": "Location mismatch in store banner",
-        "offer_observations": 0
-      }
-    ],
-    "queue_shrank": true,
-    "growth_stop_triggered": false,
-    "live_scope": "User-authorized bounded taxonomy batches; no full-coverage claim"
-  },
-  "coverage_completion": {
-    "started_utc": "2026-10-29T09:01:03.183734+00:00",
-    "finished": false,
-    "limits": {
-      "batches": 1,
-      "pages_per_batch": 5,
-      "seconds_per_batch": 1800
+    "status_after": {
+      "cross_link_excluded": 137,
+      "failed": 186,
+      "navigation_scope_unverified": 9,
+      "outside_scope": 1,
+      "pending": 992,
+      "reviewed": 3708
     },
     "results": [
       {
@@ -184,6 +104,31 @@
         "pending_before": 994,
         "pending_after": 992,
         "failed_after": 186,
+        "stop_reason": null,
+        "offer_observations": 0
+      }
+    ],
+    "queue_shrank": true,
+    "growth_stop_triggered": false,
+    "live_scope": "User-authorized bounded taxonomy batches; no full-coverage claim"
+  },
+  "coverage_completion": {
+    "started_utc": "2026-10-29T09:03:54.855742+00:00",
+    "finished": false,
+    "limits": {
+      "batches": 60,
+      "pages_per_batch": 40,
+      "seconds_per_batch": 1800
+    },
+    "results": [
+      {
+        "number": 1,
+        "batch": "batch-04041-1793264635",
+        "pages": 40,
+        "new_pages": 23,
+        "pending_before": 992,
+        "pending_after": 975,
+        "failed_after": 187,
         "stop_reason": null,
         "offer_observations": 0
       }
