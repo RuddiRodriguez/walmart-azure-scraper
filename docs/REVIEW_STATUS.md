@@ -1,13 +1,13 @@
 # Current review status
 
-Latest concise status: `docs/FINAL_CLIENT_REVIEW_20261027.md`. It supersedes package-status wording below where later evidence differs. Historical sections remain for audit history.
+Latest concise status: `docs/FINAL_CLIENT_REVIEW_20261029.md`. It supersedes package-status wording below where later evidence differs. Historical sections remain for audit history.
 
 ## Corrected evidence package
 
 Frozen version:`review-20261027-evidence-correction`. It adds the privacy-reviewed response-pair
 copies,the15-event retention trace and the bounded506-product interruption/resume plus matching
 506-product repeat. Direct links and verification instructions:docs/VERIFY_PACKAGE.md. Complete
-coverage,genuine offers,full-catalog recovery/repeat and Azure execution remain open.
+coverage,genuine offers and full-catalog recovery/repeat remain open. Later bounded Azure results are recorded in `evidence/azure-sequence-20261027/`.
 
 ## Latest client feedback: step2 retention addressed locally
 
@@ -139,7 +139,7 @@ One or two corrected re-fetches are not a demonstrated remedy.
 - Reviewed redacted pair copies are prepared; client delivery and acceptance remain pending.
   Corrected public package:`review-20261027-evidence-correction`; verification instructions in
   docs/VERIFY_PACKAGE.md.
-- Azure:no access granted, no deployment/test executed.
+- Azure:two bounded VM diagnostics completed in West US 2 and East US 2. The Store 100/PICKUP control passed in both; the next Art Sets listing was blocked in both. Both environments were deleted. Reliable Azure collection remains open.
 
 No production acceptance or full project completion claimed. Nothing sent/submitted to client.
 

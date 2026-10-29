@@ -21,7 +21,7 @@ Earlier reports retain their original dates, versions and scopes.
 | Current-wrapper live recovery | Source45ba7c4: three genuine records, SIGKILL/resume,11checks plus3source replays passed | Passed bounded one-category case; full-catalog recovery unproven |
 | Version/instructions/package | Current source/JSON/audits/plan/comparison in repo; older frozen ZIP historical | Repo evidence current; refreshed package pending |
 | Request/runtime/cost bounds | Both bounded runs within identical caps; no paid service, assets additional | Documented |
-| Azure | No approved access or execution | Open |
+| Azure | Store 100/PICKUP control passed in West US 2 and East US 2; Art Sets listing then blocked in both | Bounded diagnostic completed; reliable collection open |
 
 No full production acceptance claimed. Complete original bodies, native DOM and unreviewed redaction
 copies remain private. No client messages or submissions sent.

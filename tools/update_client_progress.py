@@ -52,7 +52,7 @@ Every completed batch is saved and pushed. Wrong-store or unsafe responses remai
 4. Freeze new tag and downloadable package.
 5. Update final client message with exact counts, commit and evidence paths.
 
-Azure work is separate. No Azure execution is claimed here. Nothing has been sent or submitted to the client by this repository.
+Two bounded Azure diagnostics are included. The Store 100/PICKUP control passed in West US 2 and East US 2, but the Art Sets listing was blocked in both regions. Reliable Azure collection remains unresolved. Nothing has been sent or submitted to the client by this repository.
 """
     OUTPUT.write_text(text)
     print(json.dumps({'output': str(OUTPUT), 'updated': updated, 'counts': counts}))

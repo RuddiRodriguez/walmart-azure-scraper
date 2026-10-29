@@ -1,0 +1,19 @@
+Hi Darren,
+
+I completed two small Azure tests, one in West US 2 and another in East US 2. Both used a fresh Ubuntu virtual machine with Chrome running under a virtual display, using Bentonville Store 100 with PICKUP.
+
+In both tests, the control product loaded correctly with the expected product ID, store, ZIP code, pickup context and $3.97 price. Immediately afterward, the Art Sets listing was redirected to Walmart's “Robot or human?” page.
+
+I also tried a second fresh session in West US 2. It loaded the normal Walmart homepage, but the store banner did not appear, so the test stopped safely before making any product requests.
+
+This shows that Azure access is not completely blocked because the control product worked correctly. However, changing the Azure region and IP address did not make the collection reliable. The candidate product page was never reached, so that part remains unverified. No invalid data was published.
+
+Both Azure environments were deleted after testing, and nothing remains running or generating costs.
+
+Based on these results, trying more Azure regions is unlikely to solve the problem by itself. I think we should agree on the next acceptable approach before running more Azure tests.
+
+The reviewed result is available here:
+https://github.com/RuddiRodriguez/walmart-azure-scraper/tree/review-20261029-final-azure/evidence/azure-sequence-20261027
+
+Thanks,
+Ruddi

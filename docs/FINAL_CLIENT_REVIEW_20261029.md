@@ -1,7 +1,6 @@
 # Final local client review status — 29 October 2026
 
-Authoritative package version: `review-20261029-final-local`.
-Frozen commit: `4bae4765159dd61e44bf324db4515dbec402ebc7`.
+Authoritative package version: `review-20261029-final-azure`.
 Package receipt: `evidence/client-final-20261029/receipt.json` on the repository's `main` branch.
 
 ## What works
@@ -26,6 +25,7 @@ Package receipt: `evidence/client-final-20261029/receipt.json` on the repository
 - 506-product recovery and repeat: `evidence/point3-20261026/`
 - Latest 132-product recovery and repeat: `evidence/latest-large-recovery-20261027/`, `evidence/latest-large-repeat-20261027/`
 - Offer search: `evidence/expanded-offers-20261028/`
+- Azure diagnostics: `evidence/azure-sequence-20261027/`
 - Coverage ledger and completed batches: `evidence/point3-coverage-queue-20261026/`
 
 ## Why there is no new final 500-product export
@@ -37,6 +37,6 @@ The two earlier controlled demonstrations already reached 506 validated products
 - Full category, subcategory and pagination coverage is incomplete.
 - The failed and unresolved pages require further review before a production-complete catalog can be claimed.
 - No qualifying genuine offer was observed in the reviewed scope.
-- Azure execution is not included in this package.
+- Two bounded Azure tests are included. The control product passed in both regions, but the Art Sets listing was blocked in both, so reliable Azure collection remains unresolved.
 
 Full HTML, browser profiles, cookies and session data remain private. Public evidence is sanitized and hash-checked. No client message or submission is performed by repository tooling.

@@ -1,0 +1,70 @@
+{
+  "reviewed_at_utc": "2026-10-27T10:28:43Z",
+  "scope": "Two small Azure VM diagnostics for Bentonville Store 100, ZIP 72712, PICKUP",
+  "source_commits": {
+    "west_us_2": "9101c818a5c6f1c498cea5574dd428787b8b4420",
+    "east_us_2": "8f9a5c6e4933afb9f5c6986e3f604fd12e73e855"
+  },
+  "west_us_2": {
+    "vm_size": "Standard_D2s_v5",
+    "operating_system": "Ubuntu 24.04",
+    "browser": "Google Chrome 156.0.8078.47 under Xvfb",
+    "control_product": {
+      "product_id": "47428850",
+      "store_id": "100",
+      "zip": "72712",
+      "fulfillment": "PICKUP",
+      "price": 3.97,
+      "passed": true
+    },
+    "art_sets_listing": {
+      "redirected_to_block_page": true,
+      "page_title": "Robot or human?",
+      "candidate_products_reached": 0
+    },
+    "fresh_session_check": {
+      "normal_homepage_loaded": true,
+      "explicit_block_page": false,
+      "store_banner_present": false,
+      "product_requests": 0,
+      "stopped_safely": true
+    }
+  },
+  "east_us_2": {
+    "vm_size": "Standard_D2als_v7",
+    "operating_system": "Ubuntu 24.04",
+    "browser": "Google Chrome 156.0.8078.47 under Xvfb",
+    "control_product": {
+      "product_id": "47428850",
+      "store_id": "100",
+      "zip": "72712",
+      "fulfillment": "PICKUP",
+      "price": 3.97,
+      "passed": true
+    },
+    "art_sets_listing": {
+      "redirected_to_block_page": true,
+      "page_title": "Robot or human?",
+      "candidate_products_reached": 0
+    }
+  },
+  "conclusions": [
+    "Azure was not completely blocked because the control product passed in both regions.",
+    "The immediately following Art Sets listing was blocked in both regions.",
+    "Changing the Azure region and IP did not make collection reliable.",
+    "The cleaned candidate product URL was not reached and remains unverified.",
+    "The tests do not prove that Azure IP reputation alone caused the block.",
+    "No invalid result was added to product output."
+  ],
+  "cleanup": {
+    "west_us_2_environment_deleted": true,
+    "east_us_2_environment_deleted": true,
+    "remaining_azure_resources": 0
+  },
+  "privacy": {
+    "raw_html_included": false,
+    "cookies_included": false,
+    "session_data_included": false,
+    "credentials_included": false
+  }
+}

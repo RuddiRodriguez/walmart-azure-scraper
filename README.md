@@ -50,17 +50,19 @@ JSON/audits are public. No upstream store-drift remedy claimed.
 This proves bounded-sample repetition, **not full uncapped category coverage/repeated full catalog**.
 Current-wrapper recovery passed a separate three-product live SIGKILL/resume test at 45ba7c4;
 see [step8 results](evidence/step8-controlled-recovery-20261026/RESULTS.md). Full-catalog recovery remains unproven.
-Offers and Azure remain open. Privacy-reviewed wrong/correct sharing copies are included under
+Offers remain open. Two bounded Azure diagnostics are documented under
+`evidence/azure-sequence-20261027/`. They reached a valid Store 100/PICKUP control product in
+West US 2 and East US 2, then hit Walmart's explicit block on the Art Sets listing. Privacy-reviewed wrong/correct sharing copies are included under
 `evidence/response-pairs-reviewed-20261026/`; complete originals remain private and hash-recorded. Earlier
 samples/failed runs stay separate; earlier frozen ZIPs are historical. Nothing sent/submitted to client.
 
 ## Latest client review package
 
-Version: `review-20261029-final-local`.
-[Download source and review evidence](https://github.com/RuddiRodriguez/walmart-azure-scraper/archive/refs/tags/review-20261029-final-local.zip).
+Version: `review-20261029-final-azure`.
+[Download source and review evidence](https://github.com/RuddiRodriguez/walmart-azure-scraper/archive/refs/tags/review-20261029-final-azure.zip).
 [Final status](docs/FINAL_CLIENT_REVIEW_20261029.md); [verification](docs/VERIFY_PACKAGE.md); [unsent client message](docs/CLIENT_MESSAGE_DRAFT.txt).
 
-Package includes reviewed response pairs, retention trace, two 506-product runs, 506-product interruption/resume proof, current-collector recovery and repeat proof, 4,166 reviewed coverage pages, and zero-result genuine-offer evidence. Full category coverage remains incomplete with 780 pending, 229 failed and 9 unresolved navigation pages. Azure remains separate.
+Package includes reviewed response pairs, retention trace, two 506-product runs, 506-product interruption/resume proof, current-collector recovery and repeat proof, 4,166 reviewed coverage pages, zero-result genuine-offer evidence and the two bounded Azure diagnostics. Full category coverage remains incomplete with 780 pending, 229 failed and 9 unresolved navigation pages.
 
 ## Retention update after client feedback
 

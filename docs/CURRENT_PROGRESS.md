@@ -1,8 +1,7 @@
 # Final local delivery checkpoint
 
 Updated: 29 October 2026, Amsterdam time
-Frozen version: `review-20261029-final-local`
-Frozen commit: `4bae4765159dd61e44bf324db4515dbec402ebc7`
+Frozen version: `review-20261029-final-azure`
 
 This is the final local review checkpoint prepared for the client. It does not claim complete production coverage.
 
@@ -35,4 +34,4 @@ The project did reach more than 500 products in two earlier controlled demonstra
 2. Review or document the 229 failed pages and 9 unresolved navigation pages.
 3. Produce a new full-catalog export only after those queues are exhausted.
 
-Azure work is separate. No Azure execution is claimed here. Nothing has been sent or submitted to the client by this repository.
+Two bounded Azure diagnostics are included. The Store 100/PICKUP control passed in West US 2 and East US 2, but the Art Sets listing was blocked in both regions. Reliable Azure collection remains unresolved. Nothing has been sent or submitted to the client by this repository.

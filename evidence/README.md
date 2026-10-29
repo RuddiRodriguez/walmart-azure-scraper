@@ -18,6 +18,7 @@ Final local summary: [`docs/CURRENT_PROGRESS.md`](../docs/CURRENT_PROGRESS.md).
 | Current collector interruption/resume | `phase-e-recovery-20261027/` |
 | Current collector repeat comparison | `phase-e-repeat-20261027/` |
 | Expanded genuine-offer review | `expanded-offers-20261028/` |
+| Two bounded Azure diagnostics and cleanup | `azure-sequence-20261027/` |
 | Latest coverage ledger and completed batches | `point3-coverage-queue-20261026/` |
 
 Evidence folders contain review-safe exports and their own hashes where applicable.
@@ -35,6 +36,6 @@ Full HTML responses, browser profiles, cookies, session state and unredacted cap
 - Full category and pagination coverage remains incomplete.
 - No qualifying genuine volume or digital discount offer was found in bounded live review.
 - Corrected re-fetch evidence does not prove one retry prevents future store drift.
-- Azure execution is not included.
+- Two bounded Azure diagnostics completed. The Store 100/PICKUP control passed in two regions, but the following Art Sets listing was blocked in both.
 
 No client message or contest submission is performed by repository tooling.

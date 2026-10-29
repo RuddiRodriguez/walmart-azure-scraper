@@ -1,5 +1,9 @@
 # Proposed Azure diagnostic — not yet approved or executed
 
+Historical plan note: this exact Central US proposal was not executed. Two later bounded diagnostics
+did run in West US 2 and East US 2. Their reviewed result is documented in
+`docs/AZURE_TEST_RESULT.md` and `evidence/azure-sequence-20261027/`.
+
 ## Purpose and fixed source
 
 This is one three-product Store 100 / ZIP 72712 / PICKUP interruption-and-resume diagnostic. It does not publish production output.

@@ -3,10 +3,10 @@ UNSENT DRAFT — 29 October 2026, Amsterdam time
 Hi,
 
 I have frozen the latest local review package here:
-https://github.com/RuddiRodriguez/walmart-azure-scraper/tree/review-20261029-final-local
+https://github.com/RuddiRodriguez/walmart-azure-scraper/tree/review-20261029-final-azure
 
-The authoritative tag resolves to commit 4bae4765159dd61e44bf324db4515dbec402ebc7. The downloadable ZIP is available here:
-https://github.com/RuddiRodriguez/walmart-azure-scraper/archive/refs/tags/review-20261029-final-local.zip
+The downloadable ZIP is available here:
+https://github.com/RuddiRodriguez/walmart-azure-scraper/archive/refs/tags/review-20261029-final-azure.zip
 
 The package receipt and ZIP checksum are here:
 https://github.com/RuddiRodriguez/walmart-azure-scraper/blob/main/evidence/client-final-20261029/receipt.json
@@ -19,7 +19,7 @@ I did not publish a new final 500-product file from the latest full-coverage wor
 
 The latest collector also passed a 132-product forced interruption/resume test and a separate 132-product repeat. The offer review checked 55 distinct products across 11 searches. It found no qualifying volume or digital offer, so I left those fields empty instead of using financing, cashback, Walmart Cash, Rollback or Clearance as substitutes.
 
-Azure is not included in this package. No Azure execution is claimed.
+The Azure results are included in the package but explained in a separate message so the local collection and Azure results remain clear.
 
 What is ready for review now is the source code, step-by-step running instructions, both 506-product datasets, recovery and repeat evidence, store and price checks, sanitized response pairs, coverage ledger and hashes. What remains open is complete reconciliation of the remaining coverage queue.
 
