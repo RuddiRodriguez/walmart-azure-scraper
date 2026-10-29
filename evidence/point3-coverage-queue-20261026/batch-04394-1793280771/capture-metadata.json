@@ -1,0 +1,742 @@
+[
+  {
+    "id": "coverage-016",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 16,
+    "request": {
+      "url": "https://www.walmart.com/browse/personal-care/cold-weather-skincare/1005862_8664755?page=6",
+      "attempt": 1,
+      "started_utc": "2026-10-29T13:45:00.214638+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/personal-care/cold-weather-skincare/1005862_8664755?page=6",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 13:45:00 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T13:45:00.459646+00:00",
+      "elapsed_seconds": 0.245
+    },
+    "body_sha256": "68c883836680bf30141383ff615fb87914c6453c0ed4965a2a154e6da9d51c02",
+    "body_bytes": 1220551,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-020",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 20,
+    "request": {
+      "url": "https://www.walmart.com/browse/dogs/dog-bowls-and-accessories/5440_202072_6366224?page=2",
+      "attempt": 1,
+      "started_utc": "2026-10-29T13:48:02.399157+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/dogs/dog-bowls-and-accessories/5440_202072_6366224?page=2",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 13:48:02 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T13:48:02.491107+00:00",
+      "elapsed_seconds": 0.092
+    },
+    "body_sha256": "ed2e5fe8800ebe18c970fe09f2b34cdb1b9501ea1afd972e349e2fdf2d61a5ef",
+    "body_bytes": 440497,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-017",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 17,
+    "request": {
+      "url": "https://www.walmart.com/browse/household-essentials/bathroom-air-fresheners/1115193_1025739_5929933?page=7",
+      "attempt": 1,
+      "started_utc": "2026-10-29T13:45:49.900705+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/household-essentials/bathroom-air-fresheners/1115193_1025739_5929933?page=7",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 13:45:49 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T13:45:50.102242+00:00",
+      "elapsed_seconds": 0.202
+    },
+    "body_sha256": "949dc37277861c7008ad745b1108d16491bdaafbfbff85e2e0b4c1dfa61ef654",
+    "body_bytes": 1138104,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-001",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 1,
+    "request": {
+      "url": "https://www.walmart.com/browse/food/frosting-toppings-decorations/976759_976780_9959366_7620641?page=2",
+      "attempt": 1,
+      "started_utc": "2026-10-29T13:33:47.035594+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/food/frosting-toppings-decorations/976759_976780_9959366_7620641?page=2",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 13:33:47 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T13:33:47.247498+00:00",
+      "elapsed_seconds": 0.212
+    },
+    "body_sha256": "4a1884c919ace927f94049f5efea270243076c70ae6aacee54759c3ba49c6fcd",
+    "body_bytes": 1201251,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-006",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 6,
+    "request": {
+      "url": "https://www.walmart.com/browse/health-and-medicine/foot-care/976760_1588421?page=9",
+      "attempt": 1,
+      "started_utc": "2026-10-29T13:37:18.177645+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/health-and-medicine/foot-care/976760_1588421?page=9",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 13:37:18 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T13:37:18.379023+00:00",
+      "elapsed_seconds": 0.201
+    },
+    "body_sha256": "b56430d0f750e689f3a4951994fccdd7cdf1f559dbee23fc29344d79de31ab70",
+    "body_bytes": 1186645,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-010",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 10,
+    "request": {
+      "url": "https://www.walmart.com/browse/personal-care/aluminum-free-deodorant/1005862_1071969_1001487_6285950?page=5",
+      "attempt": 1,
+      "started_utc": "2026-10-29T13:40:11.398068+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/personal-care/aluminum-free-deodorant/1005862_1071969_1001487_6285950?page=5",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 13:40:11 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T13:40:11.585907+00:00",
+      "elapsed_seconds": 0.188
+    },
+    "body_sha256": "93c9408b4af942198526b53e57eca537fae249865d2d230b3a3d1dd446e7e079",
+    "body_bytes": 1092527,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-011",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 11,
+    "request": {
+      "url": "https://www.walmart.com/browse/household-essentials/plug-in-air-fresheners/1115193_1025739_8403021?page=6",
+      "attempt": 1,
+      "started_utc": "2026-10-29T13:41:02.277899+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/household-essentials/plug-in-air-fresheners/1115193_1025739_8403021?page=6",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 13:41:02 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T13:41:02.450357+00:00",
+      "elapsed_seconds": 0.172
+    },
+    "body_sha256": "0e80ba2ff1eb0004083436e3f04389aa8083f2e70891dbfc441b9720c0966abb",
+    "body_bytes": 1067274,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-007",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 7,
+    "request": {
+      "url": "https://www.walmart.com/browse/frozen-appetizers-snacks/uncrustables/976759_976791_1272219_9707749",
+      "attempt": 1,
+      "started_utc": "2026-10-29T13:38:00.892191+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/frozen-appetizers-snacks/uncrustables/976759_976791_1272219_9707749",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 13:38:00 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T13:38:01.313029+00:00",
+      "elapsed_seconds": 0.421
+    },
+    "body_sha256": "c75bde402fdb2d9c87d320b9685d9e496979aa40652750d0f0ef0fc2647ed3b2",
+    "body_bytes": 806969,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-008",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 8,
+    "request": {
+      "url": "https://www.walmart.com/browse/pets/elevated-dog-bowls/5440_202072_6366224_4958712",
+      "attempt": 1,
+      "started_utc": "2026-10-29T13:38:44.746269+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/pets/elevated-dog-bowls/5440_202072_6366224_4958712",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 13:38:44 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T13:38:44.875809+00:00",
+      "elapsed_seconds": 0.13
+    },
+    "body_sha256": "fa529a369477b00f20af2bd56880b828565408ae942cd96c73215bb75152109c",
+    "body_bytes": 679750,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-012",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 12,
+    "request": {
+      "url": "https://www.walmart.com/browse/health-medicine/cough-cold/976760_4661388_6244277_8897916?page=9",
+      "attempt": 1,
+      "started_utc": "2026-10-29T13:41:47.277818+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/health-medicine/cough-cold/976760_4661388_6244277_8897916?page=9",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 13:41:47 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T13:41:47.455024+00:00",
+      "elapsed_seconds": 0.177
+    },
+    "body_sha256": "14288b661b9c9c2fa5e2d992282dff8c22642a6976beabcaaf158bd5cb0928d6",
+    "body_bytes": 1034290,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-004",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 4,
+    "request": {
+      "url": "https://www.walmart.com/browse/personal-care/clean-living-body-wash/1005862_1071969_2398684?page=6",
+      "attempt": 1,
+      "started_utc": "2026-10-29T13:35:54.032199+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/personal-care/clean-living-body-wash/1005862_1071969_2398684?page=6",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 13:35:54 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T13:35:54.250271+00:00",
+      "elapsed_seconds": 0.218
+    },
+    "body_sha256": "024cc6540ebc3585df398a7a9c2739f15bd90f80c5e7bfc1a212e067cfbfcb17",
+    "body_bytes": 1138208,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-005",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 5,
+    "request": {
+      "url": "https://www.walmart.com/browse/laundry/1115193_1071967?page=6",
+      "attempt": 1,
+      "started_utc": "2026-10-29T13:36:35.909103+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/laundry/1115193_1071967?page=6",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 13:36:35 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T13:36:36.104335+00:00",
+      "elapsed_seconds": 0.195
+    },
+    "body_sha256": "a9cd8e714a5bceff1bebaf965ff08578380a536cc0492ad2d7ab68306f7f9ad7",
+    "body_bytes": 1242888,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-013",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 13,
+    "request": {
+      "url": "https://www.walmart.com/browse/frozen-appetizers-snacks/pizza-rolls/976759_976791_1272219_7145241",
+      "attempt": 1,
+      "started_utc": "2026-10-29T13:42:33.715800+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/frozen-appetizers-snacks/pizza-rolls/976759_976791_1272219_7145241",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 13:42:33 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T13:42:33.869777+00:00",
+      "elapsed_seconds": 0.154
+    },
+    "body_sha256": "c054525e4355bbf0ac088d1e980e4f236b69a0b6fead1decc4439655cfad9b89",
+    "body_bytes": 652131,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-009",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 9,
+    "request": {
+      "url": "https://www.walmart.com/browse/beauty/beauty-solutions-haircare/1085666_1729914_6060229?page=5",
+      "attempt": 1,
+      "started_utc": "2026-10-29T13:39:27.235539+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/beauty/beauty-solutions-haircare/1085666_1729914_6060229?page=5",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 13:39:27 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T13:39:27.378918+00:00",
+      "elapsed_seconds": 0.143
+    },
+    "body_sha256": "28d61893f65b4da372bd15266b2f7f28a988344e4369f24aef4e988b1e5582dd",
+    "body_bytes": 838385,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-014",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 14,
+    "request": {
+      "url": "https://www.walmart.com/browse/pets/slow-dog-feeders/5440_202072_6366224_4849855",
+      "attempt": 1,
+      "started_utc": "2026-10-29T13:43:20.166705+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/pets/slow-dog-feeders/5440_202072_6366224_4849855",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 13:43:20 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T13:43:20.295189+00:00",
+      "elapsed_seconds": 0.128
+    },
+    "body_sha256": "0d90220baf95228f0b2a1f6eb7c7d8117678f8c94e042816a2434c8a108761b2",
+    "body_bytes": 670491,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-002",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 2,
+    "request": {
+      "url": "https://www.walmart.com/browse/pets/dog-food-storage-containers/5440_202072_6366224_9399392",
+      "attempt": 1,
+      "started_utc": "2026-10-29T13:34:29.989523+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/pets/dog-food-storage-containers/5440_202072_6366224_9399392",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 13:34:30 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T13:34:30.126590+00:00",
+      "elapsed_seconds": 0.137
+    },
+    "body_sha256": "dc10035cc1b967af8add94ded98d6b1287f8bde113fd48f692c2bd13ba3b32e1",
+    "body_bytes": 629553,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-018",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 18,
+    "request": {
+      "url": "https://www.walmart.com/browse/health-medicine/pain-relief/976760_6972993_9385426?page=8",
+      "attempt": 1,
+      "started_utc": "2026-10-29T13:46:37.332103+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/health-medicine/pain-relief/976760_6972993_9385426?page=8",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 13:46:37 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T13:46:37.531309+00:00",
+      "elapsed_seconds": 0.199
+    },
+    "body_sha256": "d7050c27d1a0942e9b44c879fa0a58102f9d8d3bc0b321d983d5b850673dc51b",
+    "body_bytes": 1214216,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-019",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 19,
+    "request": {
+      "url": "https://www.walmart.com/browse/frozen-appetizers-snacks/bagel-bites/976759_976791_1272219_2173559",
+      "attempt": 1,
+      "started_utc": "2026-10-29T13:47:18.330326+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/frozen-appetizers-snacks/bagel-bites/976759_976791_1272219_2173559",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 13:47:18 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T13:47:18.453225+00:00",
+      "elapsed_seconds": 0.123
+    },
+    "body_sha256": "605bb802261f3a5341ec1428652a67f8f0683837c821ec8673fe2025a5620495",
+    "body_bytes": 626529,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-003",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 3,
+    "request": {
+      "url": "https://www.walmart.com/browse/hair-care/hair-care-brands/1085666_3147628_8028415?page=4",
+      "attempt": 1,
+      "started_utc": "2026-10-29T13:35:13.429872+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/hair-care/hair-care-brands/1085666_3147628_8028415?page=4",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 13:35:13 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T13:35:13.655323+00:00",
+      "elapsed_seconds": 0.225
+    },
+    "body_sha256": "7a0148d7dc61be53cc1d325186a57ca05cd9c1452a2a0587ad1b2272a007b17b",
+    "body_bytes": 1333017,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-015",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 15,
+    "request": {
+      "url": "https://www.walmart.com/browse/beauty/hair-care-hair-tools/1085666_7192911_7737658?page=4",
+      "attempt": 1,
+      "started_utc": "2026-10-29T13:44:11.306592+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/beauty/hair-care-hair-tools/1085666_7192911_7737658?page=4",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 13:44:11 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T13:44:11.600924+00:00",
+      "elapsed_seconds": 0.294
+    },
+    "body_sha256": "763c43c2e7f8a5a4e4ecf48f761d8ff609c2291b08d69cbcf37bf9a459b76bc6",
+    "body_bytes": 1363772,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  }
+]
