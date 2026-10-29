@@ -10,8 +10,8 @@
     "failed": 186,
     "navigation_scope_unverified": 9,
     "outside_scope": 1,
-    "pending": 994,
-    "reviewed": 3703
+    "pending": 992,
+    "reviewed": 3708
   },
   "scope_counts": {
     "brief_exclusion": 2,
@@ -71,8 +71,8 @@
     "queue_sha256_after": "b373f7c13523f0d8a3c6f1696c873fab6dc066a505d11ba7f61fae38720f001a"
   },
   "taxonomy_trial": {
-    "started_utc": "2026-10-28T09:08:10.299942+00:00",
-    "finished_utc": "2026-10-28T10:59:15.986035+00:00",
+    "started_utc": "2026-10-29T06:20:08.228633+00:00",
+    "finished_utc": "2026-10-29T07:46:56.434152+00:00",
     "finished": true,
     "limits": {
       "batches": 60,
@@ -81,132 +81,19 @@
     },
     "status_before": {
       "cross_link_excluded": 137,
-      "failed": 89,
+      "failed": 166,
       "navigation_scope_unverified": 9,
       "outside_scope": 1,
-      "pending": 2079,
-      "reviewed": 1701
+      "pending": 1092,
+      "reviewed": 3523
     },
     "status_after": {
       "cross_link_excluded": 137,
-      "failed": 98,
+      "failed": 186,
       "navigation_scope_unverified": 9,
       "outside_scope": 1,
-      "pending": 1932,
-      "reviewed": 2012
-    },
-    "results": [
-      {
-        "number": 1,
-        "batch": "batch-01937-1793178506",
-        "pages": 40,
-        "new_pages": 20,
-        "pending_before": 2079,
-        "pending_after": 2059,
-        "failed_after": 92,
-        "stop_reason": null,
-        "offer_observations": 0
-      },
-      {
-        "number": 2,
-        "batch": "batch-01977-1793179404",
-        "pages": 40,
-        "new_pages": 19,
-        "pending_before": 2059,
-        "pending_after": 2038,
-        "failed_after": 92,
-        "stop_reason": null,
-        "offer_observations": 0
-      },
-      {
-        "number": 3,
-        "batch": "batch-02017-1793180251",
-        "pages": 40,
-        "new_pages": 16,
-        "pending_before": 2038,
-        "pending_after": 2014,
-        "failed_after": 92,
-        "stop_reason": null,
-        "offer_observations": 0
-      },
-      {
-        "number": 4,
-        "batch": "batch-02057-1793181074",
-        "pages": 40,
-        "new_pages": 21,
-        "pending_before": 2014,
-        "pending_after": 1995,
-        "failed_after": 92,
-        "stop_reason": null,
-        "offer_observations": 0
-      },
-      {
-        "number": 5,
-        "batch": "batch-02097-1793181786",
-        "pages": 40,
-        "new_pages": 26,
-        "pending_before": 1995,
-        "pending_after": 1981,
-        "failed_after": 92,
-        "stop_reason": null,
-        "offer_observations": 0
-      },
-      {
-        "number": 6,
-        "batch": "batch-02137-1793182549",
-        "pages": 40,
-        "new_pages": 13,
-        "pending_before": 1981,
-        "pending_after": 1954,
-        "failed_after": 96,
-        "stop_reason": null,
-        "offer_observations": 0
-      },
-      {
-        "number": 7,
-        "batch": "batch-02177-1793183373",
-        "pages": 40,
-        "new_pages": 7,
-        "pending_before": 1954,
-        "pending_after": 1921,
-        "failed_after": 96,
-        "stop_reason": null,
-        "offer_observations": 0
-      },
-      {
-        "number": 8,
-        "batch": "batch-02217-1793184296",
-        "pages": 40,
-        "new_pages": 51,
-        "pending_before": 1921,
-        "pending_after": 1932,
-        "failed_after": 98,
-        "stop_reason": null,
-        "offer_observations": 0
-      },
-      {
-        "number": 9,
-        "batch": "batch-02257-1793185122",
-        "pages": 0,
-        "new_pages": 0,
-        "pending_before": 1932,
-        "pending_after": 1932,
-        "failed_after": 98,
-        "stop_reason": "Location mismatch in store banner",
-        "offer_observations": 0
-      }
-    ],
-    "queue_shrank": true,
-    "growth_stop_triggered": false,
-    "live_scope": "User-authorized bounded taxonomy batches; no full-coverage claim"
-  },
-  "coverage_completion": {
-    "started_utc": "2026-10-29T06:20:08.228633+00:00",
-    "finished": false,
-    "limits": {
-      "batches": 60,
-      "pages_per_batch": 40,
-      "seconds_per_batch": 1800
+      "pending": 994,
+      "reviewed": 3703
     },
     "results": [
       {
@@ -273,6 +160,31 @@
         "pending_after": 994,
         "failed_after": 186,
         "stop_reason": "Location mismatch in store banner",
+        "offer_observations": 0
+      }
+    ],
+    "queue_shrank": true,
+    "growth_stop_triggered": false,
+    "live_scope": "User-authorized bounded taxonomy batches; no full-coverage claim"
+  },
+  "coverage_completion": {
+    "started_utc": "2026-10-29T09:01:03.183734+00:00",
+    "finished": false,
+    "limits": {
+      "batches": 1,
+      "pages_per_batch": 5,
+      "seconds_per_batch": 1800
+    },
+    "results": [
+      {
+        "number": 1,
+        "batch": "batch-04036-1793264464",
+        "pages": 5,
+        "new_pages": 3,
+        "pending_before": 994,
+        "pending_after": 992,
+        "failed_after": 186,
+        "stop_reason": null,
         "offer_observations": 0
       }
     ]
