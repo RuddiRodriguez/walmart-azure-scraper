@@ -17,7 +17,11 @@ git clone https://github.com/RuddiRodriguez/walmart-azure-scraper.git
 cd walmart-azure-scraper
 ```
 
-Use the final review tag named in `docs/CURRENT_PROGRESS.md` after coverage finishes. Until then, `main` contains the latest saved progress.
+Use the frozen review tag:
+
+```bash
+git checkout review-20261029-final-local
+```
 
 ## 3. Create the Python environment
 
@@ -111,6 +115,6 @@ Unavailable eligible products remain stored with unsupported current values left
 
 ## 10. Current proof and limitations
 
-- [Live progress](CURRENT_PROGRESS.md)
+- [Final delivery checkpoint](CURRENT_PROGRESS.md)
 - [Evidence index](../evidence/README.md)
-- [Final review status](FINAL_CLIENT_REVIEW_20261027.md)
+- [Final review status](FINAL_CLIENT_REVIEW_20261029.md)

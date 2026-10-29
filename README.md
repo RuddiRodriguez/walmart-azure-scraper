@@ -2,8 +2,8 @@
 
 ## Client review — start here
 
-- [Live progress while final coverage runs](docs/CURRENT_PROGRESS.md)
-- [Final verified status](docs/FINAL_CLIENT_REVIEW_20261027.md)
+- [Final delivery checkpoint](docs/CURRENT_PROGRESS.md)
+- [Final verified local status](docs/FINAL_CLIENT_REVIEW_20261029.md)
 - [Simple step-by-step run guide](docs/RUN_GUIDE.md)
 - [Evidence index](evidence/README.md)
 - [Documentation index](docs/README.md)
@@ -56,11 +56,11 @@ samples/failed runs stay separate; earlier frozen ZIPs are historical. Nothing s
 
 ## Latest client review package
 
-Version: `review-20261027-client-ready-v2`.
-[Download source and review evidence](https://github.com/RuddiRodriguez/walmart-azure-scraper/archive/refs/tags/review-20261027-client-ready-v2.zip).
-[Final status](docs/FINAL_CLIENT_REVIEW_20261027.md); [verification](docs/VERIFY_PACKAGE.md); [unsent client message](docs/CLIENT_MESSAGE_DRAFT.txt).
+Version: `review-20261029-final-local`.
+[Download source and review evidence](https://github.com/RuddiRodriguez/walmart-azure-scraper/archive/refs/tags/review-20261029-final-local.zip).
+[Final status](docs/FINAL_CLIENT_REVIEW_20261029.md); [verification](docs/VERIFY_PACKAGE.md); [unsent client message](docs/CLIENT_MESSAGE_DRAFT.txt).
 
-Package includes reviewed response pairs, retention trace, two 506-product runs, 506-product interruption/resume proof, current-collector recovery and repeat proof, bounded category reconciliation, and zero-result genuine-offer evidence. Full category coverage and qualifying offer examples remain unproven. Azure remains separate.
+Package includes reviewed response pairs, retention trace, two 506-product runs, 506-product interruption/resume proof, current-collector recovery and repeat proof, 4,166 reviewed coverage pages, and zero-result genuine-offer evidence. Full category coverage remains incomplete with 780 pending, 229 failed and 9 unresolved navigation pages. Azure remains separate.
 
 ## Retention update after client feedback
 

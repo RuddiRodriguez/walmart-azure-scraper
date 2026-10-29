@@ -2,8 +2,8 @@
 
 ## Start here
 
-1. [Live progress while final coverage runs](CURRENT_PROGRESS.md)
-2. [Final client review status](FINAL_CLIENT_REVIEW_20261027.md)
+1. [Final delivery checkpoint](CURRENT_PROGRESS.md)
+2. [Final client review status](FINAL_CLIENT_REVIEW_20261029.md)
 3. [Simple step-by-step run guide](RUN_GUIDE.md)
 4. [Acceptance rules](ACCEPTANCE.md)
 5. [Evidence index](../evidence/README.md)

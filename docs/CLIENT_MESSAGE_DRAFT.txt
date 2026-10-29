@@ -1,25 +1,21 @@
-UNSENT DRAFT — 27 October 2026, 18:17 Amsterdam time
+UNSENT DRAFT — 29 October 2026, Amsterdam time
 
 Hi,
 
-I finished the latest local review package:
-https://github.com/RuddiRodriguez/walmart-azure-scraper/tree/review-20261027-client-ready-v2
+I have frozen the latest local review package here:
+https://github.com/RuddiRodriguez/walmart-azure-scraper/tree/review-20261029-final-local
 
-The authoritative version is tag review-20261027-client-ready-v2, commit 950afe6ce6eacfc1af99d8945964506382630981. Its receipt is under evidence/client-ready-v2-20261027. The downloadable ZIP, source, instructions, hashes and evidence are all available from that tag.
+The README is the best place to start. From there, please open docs/RUN_GUIDE.md to run a small Store 100 sample, then docs/VERIFY_PACKAGE.md to check the package and evidence hashes. The evidence index links each client requirement to its supporting files. The package includes the privacy-reviewed wrong-store/corrected-response pairs, unavailable-product retention evidence, interruption/recovery tests, repeat comparisons and category coverage records.
 
-The privacy-reviewed wrong-store/corrected-response pairs are under evidence/response-pairs-reviewed-20261026. They preserve product identity, store, fulfillment, price, request settings and sequence without cookies or session secrets. Wrong-store data remains excluded. The corrected re-fetch is evidence of detection and recovery, not proof that one retry prevents future drift.
+To be clear about the 500-product requirement: two separate controlled live runs each produced 506 validated distinct products across all 11 required parent categories. One was stopped after 100 saved products and successfully resumed to 506, and a separate 506-product repeat also passed. These are genuine bounded demonstrations and are kept separate in the evidence.
 
-The retention trace is under evidence/retention-step2-20261026. Eligible products remain stored when pickup or price is unavailable, unsupported current values stay blank, and earlier supported observations keep their original dates. Missing evidence remains separate from confirmed unavailability.
+I did not publish a new final 500-product file from the latest full-coverage work. That work was checking every required category, subcategory and pagination path, not collecting another bounded sample. It reviewed 4,166 pages, but stopped at the deadline and storage safety limit with 780 pages still pending, 229 failed pages and 9 unresolved navigation pages. Because the queue was not complete, presenting it as a finished catalog would be misleading.
 
-For the larger test, one live run was force-stopped after 100 saved products and resumed to 506 without losing or duplicating committed records. A separate 506-product repeat also passed. Both cover all 11 required parent categories. The current production collector also passed a fresh smaller force-stop/resume test and an identical-settings repeat with the same products and prices. Evidence is under evidence/point3-20261026, evidence/phase-e-recovery-20261027 and evidence/phase-e-repeat-20261027.
+The latest collector also passed a 132-product forced interruption/resume test and a separate 132-product repeat. The offer review checked 55 distinct products across 11 searches. It found no qualifying volume or digital offer, so I left those fields empty instead of using financing, cashback, Walmart Cash, Rollback or Clearance as substitutes.
 
-Full category and pagination coverage is still not complete. The cleaned review currently records 1,701 reviewed pages, 89 failed pages, 9 unresolved navigation pages and 2,079 pending pages. The latest bounded continuation reduced the queue and did not recreate the earlier queue-growth problem.
+Azure is not included in this package. No Azure execution is claimed.
 
-I also completed a focused live search for genuine volume and digital discounts. It checked four searches and 13 distinct Store 100 products, but found no qualifying offer. I left the offer fields blank instead of treating financing, cashback, Walmart Cash, Rollback or Clearance as requested offers. Evidence is under evidence/phase-d-offers-20261027.
-
-Azure is being handled separately, so this package makes no Azure execution claim.
-
-This is the strongest verified local version. Remaining open work is full queue reconciliation and a genuine offer example if Walmart presents one in the required scope.
+What is ready for review now is the source code, step-by-step running instructions, both 506-product datasets, recovery and repeat evidence, store and price checks, sanitized response pairs, coverage ledger and hashes. What remains open is complete reconciliation of the remaining coverage queue.
 
 Thanks,
 Ruddi

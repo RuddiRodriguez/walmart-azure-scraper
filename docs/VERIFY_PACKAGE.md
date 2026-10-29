@@ -1,32 +1,32 @@
-# Verify corrected evidence package
+# Verify final local evidence package
 
-Frozen version: `review-20261027-evidence-correction`.
+Frozen version: `review-20261029-final-local`.
 
 Source and evidence:
-https://github.com/RuddiRodriguez/walmart-azure-scraper/tree/review-20261027-evidence-correction
+https://github.com/RuddiRodriguez/walmart-azure-scraper/tree/review-20261029-final-local
 
 Download:
-https://github.com/RuddiRodriguez/walmart-azure-scraper/archive/refs/tags/review-20261027-evidence-correction.zip
+https://github.com/RuddiRodriguez/walmart-azure-scraper/archive/refs/tags/review-20261029-final-local.zip
 
 Resolve the authoritative commit after cloning or fetching tags:
 
 ```sh
-git rev-parse review-20261027-evidence-correction^{commit}
+git rev-parse review-20261029-final-local^{commit}
 ```
 
 ## Evidence requested after the previous frozen package
 
 Reviewed wrong-store/corrected-response pairs:
-https://github.com/RuddiRodriguez/walmart-azure-scraper/tree/review-20261027-evidence-correction/evidence/response-pairs-reviewed-20261026
+https://github.com/RuddiRodriguez/walmart-azure-scraper/tree/review-20261029-final-local/evidence/response-pairs-reviewed-20261026
 
 Fifteen-event retention trace:
-https://github.com/RuddiRodriguez/walmart-azure-scraper/tree/review-20261027-evidence-correction/evidence/retention-step2-20261026
+https://github.com/RuddiRodriguez/walmart-azure-scraper/tree/review-20261029-final-local/evidence/retention-step2-20261026
 
 Bounded506-product interruption/resume:
-https://github.com/RuddiRodriguez/walmart-azure-scraper/tree/review-20261027-evidence-correction/evidence/point3-20261026/recovery-506
+https://github.com/RuddiRodriguez/walmart-azure-scraper/tree/review-20261029-final-local/evidence/point3-20261026/recovery-506
 
 Matching bounded506-product repeat:
-https://github.com/RuddiRodriguez/walmart-azure-scraper/tree/review-20261027-evidence-correction/evidence/point3-20261026/repeat-506
+https://github.com/RuddiRodriguez/walmart-azure-scraper/tree/review-20261029-final-local/evidence/point3-20261026/repeat-506
 
 The pair folder contains privacy-reviewed redacted response copies and exact preserved product,
 store,fulfillment and price fields. Complete original decoded bodies remain private with their hashes
@@ -59,13 +59,14 @@ Build and verify a local archive:
 
 ```sh
 python -m tools.freeze_review_package \
-  --version review-20261027-evidence-correction \
-  --output data/review-20261027-evidence-correction.zip
+  --version review-20261029-final-local \
+  --output data/review-20261029-final-local.zip
 ```
 
 The checker verifies ZIP integrity,full file inventory,global and evidence manifests,separate
 datasets,reviewed pair count,retention event count and both recovery samples. It performs no live
 collection,Azure execution,client message or submission.
 
-Still open:complete category/subcategory/pagination reconciliation,genuine volume/digital offers,
-full-catalog recovery/repetition and Azure execution.
+Still open: complete category/subcategory/pagination reconciliation. The final checkpoint records
+780 pending pages, 229 failed pages and 9 unresolved navigation pages. The offer review found no
+qualifying example in its recorded scope. Azure execution is not included.
