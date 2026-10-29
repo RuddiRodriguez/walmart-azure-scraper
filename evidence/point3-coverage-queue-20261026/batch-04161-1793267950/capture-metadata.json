@@ -1,0 +1,1482 @@
+[
+  {
+    "id": "coverage-016",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 16,
+    "request": {
+      "url": "https://www.walmart.com/browse/office-supplies/pen-gear/1229749_1431586_6267234?page=8",
+      "attempt": 1,
+      "started_utc": "2026-10-29T10:07:22.000254+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/office-supplies/pen-gear/1229749_1431586_6267234?page=8",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 10:07:22 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T10:07:22.185291+00:00",
+      "elapsed_seconds": 0.185
+    },
+    "body_sha256": "66616f2036b27f49884c7bf580fe775d71a1e3e22a02f7110522685a61d22ae1",
+    "body_bytes": 1062387,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-036",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 36,
+    "request": {
+      "url": "https://www.walmart.com/browse/health-and-medicine/foot-care/976760_1588421?page=7",
+      "attempt": 1,
+      "started_utc": "2026-10-29T10:18:56.192858+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/health-and-medicine/foot-care/976760_1588421?page=7",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 10:18:56 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T10:18:56.381024+00:00",
+      "elapsed_seconds": 0.188
+    },
+    "body_sha256": "227a94a3f179c8df5bbe1d4d30e1a3e3b5d00f158dd26e60fd6de7da7f55896d",
+    "body_bytes": 1173105,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-020",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 20,
+    "request": {
+      "url": "https://www.walmart.com/browse/personal-care/cold-weather-skincare/1005862_8664755?page=5",
+      "attempt": 1,
+      "started_utc": "2026-10-29T10:09:38.171720+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/personal-care/cold-weather-skincare/1005862_8664755?page=5",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 10:09:38 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T10:09:38.407793+00:00",
+      "elapsed_seconds": 0.236
+    },
+    "body_sha256": "53ac40b57b491fea6d50f82c2cef52ab36b4020538d34897ac84b143cd99a605",
+    "body_bytes": 1238867,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-021",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 21,
+    "request": {
+      "url": "https://www.walmart.com/browse/household-essentials/car-air-fresheners-by-brand/1115193_1025739_7032476_2346414?page=4",
+      "attempt": 1,
+      "started_utc": "2026-10-29T10:10:11.472169+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/household-essentials/car-air-fresheners-by-brand/1115193_1025739_7032476_2346414?page=4",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 10:10:11 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T10:10:11.717820+00:00",
+      "elapsed_seconds": 0.246
+    },
+    "body_sha256": "029b253a2ab258c2fb494e2c2d4093018040741d2c78fc2886ab976f8d534389",
+    "body_bytes": 1179941,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-037",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 37,
+    "request": {
+      "url": "https://www.walmart.com/browse/office-supplies/office-supplies-school-supplies-by-brand/1229749_1431586?page=9",
+      "attempt": 1,
+      "started_utc": "2026-10-29T10:19:28.475550+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/office-supplies/office-supplies-school-supplies-by-brand/1229749_1431586?page=9",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 10:19:28 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T10:19:28.775477+00:00",
+      "elapsed_seconds": 0.3
+    },
+    "body_sha256": "dd48440ee2380d86fe2580ef81e971d498f7ef0b0da52e38710cf10579fef86f",
+    "body_bytes": 1221999,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-040",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 40,
+    "request": {
+      "url": "https://www.walmart.com/browse/beauty/lip-makeup/1085666_1007040_2209773?page=4",
+      "attempt": 1,
+      "started_utc": "2026-10-29T10:21:19.950875+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/beauty/lip-makeup/1085666_1007040_2209773?page=4",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 10:21:19 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T10:21:20.170403+00:00",
+      "elapsed_seconds": 0.22
+    },
+    "body_sha256": "4bb6ca99f20136f633a93b3a266eccd783ee34d9dcc6247c0f644c776b65b48b",
+    "body_bytes": 1368010,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-017",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 17,
+    "request": {
+      "url": "https://www.walmart.com/browse/food/rosemary/976759_976794_3029941_5597656_6049263",
+      "attempt": 1,
+      "started_utc": "2026-10-29T10:07:54.034748+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/food/rosemary/976759_976794_3029941_5597656_6049263",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 10:07:54 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T10:07:54.238604+00:00",
+      "elapsed_seconds": 0.204
+    },
+    "body_sha256": "be3427244c63eeb9d43e04870df242dba8cc559d7dacf28253fbc831378280ce",
+    "body_bytes": 666890,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-001",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 1,
+    "request": {
+      "url": "https://www.walmart.com/browse/health-medicine/specialty-pain-relief/976760_6972993_6794970?page=5",
+      "attempt": 1,
+      "started_utc": "2026-10-29T10:00:01.719025+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/health-medicine/specialty-pain-relief/976760_6972993_6794970?page=5",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 10:00:01 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T10:00:01.965246+00:00",
+      "elapsed_seconds": 0.246
+    },
+    "body_sha256": "93a5f0163a054b56ba41143994af773e0ac3fdfa1e930f4330d6a7a88f68a811",
+    "body_bytes": 1194685,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-030",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 30,
+    "request": {
+      "url": "https://www.walmart.com/browse/office-supplies/office-basics/1229749_9234438?page=9",
+      "attempt": 1,
+      "started_utc": "2026-10-29T10:15:18.311993+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/office-supplies/office-basics/1229749_9234438?page=9",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 10:15:18 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T10:15:18.501152+00:00",
+      "elapsed_seconds": 0.189
+    },
+    "body_sha256": "19a0f1639c3c4b3f8e7ada61b9507078f0d548a7056b268f4d53402ca9e84e73",
+    "body_bytes": 957625,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-026",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 26,
+    "request": {
+      "url": "https://www.walmart.com/browse/beauty/lip-care/1085666_1007039_1001506?page=4",
+      "attempt": 1,
+      "started_utc": "2026-10-29T10:13:01.332580+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/beauty/lip-care/1085666_1007039_1001506?page=4",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 10:13:01 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T10:13:01.521324+00:00",
+      "elapsed_seconds": 0.189
+    },
+    "body_sha256": "329bbc8528b321396a036ab2e4e9f52b17549e70a4971705db3794ab1a205d86",
+    "body_bytes": 1114412,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-006",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 6,
+    "request": {
+      "url": "https://www.walmart.com/browse/personal-care/clean-living-body-wash/1005862_1071969_2398684?page=5",
+      "attempt": 1,
+      "started_utc": "2026-10-29T10:02:33.362365+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/personal-care/clean-living-body-wash/1005862_1071969_2398684?page=5",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 10:02:33 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T10:02:33.555560+00:00",
+      "elapsed_seconds": 0.193
+    },
+    "body_sha256": "c9c1139381d80e4603beed0e58464537bad56f23e2e464e92b0a5d4ac317f44c",
+    "body_bytes": 1181908,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-010",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 10,
+    "request": {
+      "url": "https://www.walmart.com/browse/food/parsley/976759_976794_3029941_5597656_7260268",
+      "attempt": 1,
+      "started_utc": "2026-10-29T10:04:26.981754+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/food/parsley/976759_976794_3029941_5597656_7260268",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 10:04:27 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T10:04:27.132632+00:00",
+      "elapsed_seconds": 0.151
+    },
+    "body_sha256": "bf128158d21e96e40b6f9e4b1ed618ac7658aef59db3ae8c5850185d32042e85",
+    "body_bytes": 745603,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-011",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 11,
+    "request": {
+      "url": "https://www.walmart.com/browse/pets/dog-multivitamins/5440_202072_9405258_6353871_1512914",
+      "attempt": 1,
+      "started_utc": "2026-10-29T10:04:55.624302+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/pets/dog-multivitamins/5440_202072_9405258_6353871_1512914",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 10:04:55 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T10:04:55.792317+00:00",
+      "elapsed_seconds": 0.168
+    },
+    "body_sha256": "a220893a6da88a1f7a85491d28dfa5207c5ff39b8825f462c2e73668e4d7b5f2",
+    "body_bytes": 1067659,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-007",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 7,
+    "request": {
+      "url": "https://www.walmart.com/browse/pest-control/indoor-pest-control/1115193_1025745_8151679?page=4",
+      "attempt": 1,
+      "started_utc": "2026-10-29T10:03:02.536089+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/pest-control/indoor-pest-control/1115193_1025745_8151679?page=4",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 10:03:02 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T10:03:02.711587+00:00",
+      "elapsed_seconds": 0.175
+    },
+    "body_sha256": "4165154d940ea1cf7d312830f71a883f459249cb8ddbca20c031f6630bcab98f",
+    "body_bytes": 1185911,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-027",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 27,
+    "request": {
+      "url": "https://www.walmart.com/browse/personal-care/personal-care-by-brand/1005862_9157053?page=4",
+      "attempt": 1,
+      "started_utc": "2026-10-29T10:13:36.236320+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/personal-care/personal-care-by-brand/1005862_9157053?page=4",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 10:13:36 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T10:13:36.465246+00:00",
+      "elapsed_seconds": 0.229
+    },
+    "body_sha256": "759273074b59e079c65e3b93c0d3c8ff8bf652daea67b6e888348a4694455e24",
+    "body_bytes": 1191748,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-031",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 31,
+    "request": {
+      "url": "https://www.walmart.com/browse/food/thyme/976759_976794_3029941_5597656_1476086",
+      "attempt": 1,
+      "started_utc": "2026-10-29T10:15:51.947314+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/food/thyme/976759_976794_3029941_5597656_1476086",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 10:15:51 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T10:15:52.086122+00:00",
+      "elapsed_seconds": 0.139
+    },
+    "body_sha256": "c207812f191575ce8d1b0f6eb151606e44caa7f6408929b489c5fe64cf9a847a",
+    "body_bytes": 778543,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-024",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 24,
+    "request": {
+      "url": "https://www.walmart.com/browse/food/sage/976759_976794_3029941_5597656_7474385",
+      "attempt": 1,
+      "started_utc": "2026-10-29T10:11:53.277098+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/food/sage/976759_976794_3029941_5597656_7474385",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 10:11:53 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T10:11:53.448119+00:00",
+      "elapsed_seconds": 0.171
+    },
+    "body_sha256": "259ef0765ad2834c3c4d9f2791e00887b1e433c90b5578269863f9b4fa0aba32",
+    "body_bytes": 791664,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-032",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 32,
+    "request": {
+      "url": "https://www.walmart.com/browse/dog-health-and-wellness/dog-vitamins-and-supplements/5440_202072_9405258_6353871?page=2",
+      "attempt": 1,
+      "started_utc": "2026-10-29T10:16:26.546420+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/dog-health-and-wellness/dog-vitamins-and-supplements/5440_202072_9405258_6353871?page=2",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 10:16:26 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T10:16:26.810533+00:00",
+      "elapsed_seconds": 0.264
+    },
+    "body_sha256": "01098cdaaf3726608274f4672d8c63672cf3304f11b39461925c6f48d8ffebb7",
+    "body_bytes": 1155639,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-008",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 8,
+    "request": {
+      "url": "https://www.walmart.com/browse/health-medicine/shop-all-reading-glasses/976760_1078944_8905402?page=6",
+      "attempt": 1,
+      "started_utc": "2026-10-29T10:03:31.296797+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/health-medicine/shop-all-reading-glasses/976760_1078944_8905402?page=6",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 10:03:31 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T10:03:31.466246+00:00",
+      "elapsed_seconds": 0.169
+    },
+    "body_sha256": "28d89fa21b32492aec0f94293d3e4c77fe2b01f6a428f47a7ef68bc5b94fbe1d",
+    "body_bytes": 969021,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-028",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 28,
+    "request": {
+      "url": "https://www.walmart.com/browse/household-essentials/car-air-fresheners/1115193_1025739_7032476?page=5",
+      "attempt": 1,
+      "started_utc": "2026-10-29T10:14:10.301139+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/household-essentials/car-air-fresheners/1115193_1025739_7032476?page=5",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 10:14:10 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T10:14:10.522509+00:00",
+      "elapsed_seconds": 0.221
+    },
+    "body_sha256": "025dfcf842c7d93ea6f0b72a4a4d959e95367bfe0f8b2726c83f9a1a4edbb8c5",
+    "body_bytes": 1170407,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-012",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 12,
+    "request": {
+      "url": "https://www.walmart.com/browse/beauty/all-halloween-beauty/1085666_5605928_9253377?page=3",
+      "attempt": 1,
+      "started_utc": "2026-10-29T10:05:25.466554+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/beauty/all-halloween-beauty/1085666_5605928_9253377?page=3",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 10:05:25 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T10:05:25.797557+00:00",
+      "elapsed_seconds": 0.331
+    },
+    "body_sha256": "4143c6dbd440fe3149a283a53c98d71d0e106dfa1f3bed0a796e096985714e31",
+    "body_bytes": 1435218,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-004",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 4,
+    "request": {
+      "url": "https://www.walmart.com/browse/dog-health-and-wellness/dog-dental-care/5440_202072_9405258_6936196?page=2",
+      "attempt": 1,
+      "started_utc": "2026-10-29T10:01:37.857491+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/dog-health-and-wellness/dog-dental-care/5440_202072_9405258_6936196?page=2",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 10:01:37 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T10:01:38.015222+00:00",
+      "elapsed_seconds": 0.158
+    },
+    "body_sha256": "ac7e2eecb96265c2d77a3812910d83c0004d83e31df08f8bd6b8c6d02aff4385",
+    "body_bytes": 793216,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-005",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 5,
+    "request": {
+      "url": "https://www.walmart.com/browse/beauty/halloween-nails-accessories/1085666_5605928_4414388?page=3",
+      "attempt": 1,
+      "started_utc": "2026-10-29T10:02:05.431027+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/beauty/halloween-nails-accessories/1085666_5605928_4414388?page=3",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 10:02:05 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T10:02:05.560467+00:00",
+      "elapsed_seconds": 0.129
+    },
+    "body_sha256": "8c6faa74f1270caac11a9c7d755504fe476bf837255780f30aa97d531628e5a9",
+    "body_bytes": 737166,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-013",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 13,
+    "request": {
+      "url": "https://www.walmart.com/browse/personal-care/aluminum-free-deodorant/1005862_1071969_1001487_6285950?page=4",
+      "attempt": 1,
+      "started_utc": "2026-10-29T10:05:53.888407+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/personal-care/aluminum-free-deodorant/1005862_1071969_1001487_6285950?page=4",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 10:05:53 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T10:05:54.054588+00:00",
+      "elapsed_seconds": 0.166
+    },
+    "body_sha256": "646f706eb1e157429c3321ea49ee0954d78293ae50607beb25456095a8173b90",
+    "body_bytes": 1039225,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-029",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 29,
+    "request": {
+      "url": "https://www.walmart.com/browse/cold-cough-and-flu/shop-all-cold-cough-flu-medicine/976760_4661388_6244277_7158394?page=7",
+      "attempt": 1,
+      "started_utc": "2026-10-29T10:14:44.455330+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/cold-cough-and-flu/shop-all-cold-cough-flu-medicine/976760_4661388_6244277_7158394?page=7",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 10:14:44 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T10:14:44.691702+00:00",
+      "elapsed_seconds": 0.236
+    },
+    "body_sha256": "eacc62de56ace2b95589ff52527cfd53b6ec71d929112683ad76b7a78516c806",
+    "body_bytes": 1116218,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-009",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 9,
+    "request": {
+      "url": "https://www.walmart.com/browse/office-supplies/paper/1229749_6562796?page=8",
+      "attempt": 1,
+      "started_utc": "2026-10-29T10:03:59.608047+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/office-supplies/paper/1229749_6562796?page=8",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 10:03:59 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T10:03:59.766424+00:00",
+      "elapsed_seconds": 0.158
+    },
+    "body_sha256": "aa6ffc03afbe7ceefa7fa595f8a66b72025516b11ab0aeb3a71aee5454086bbb",
+    "body_bytes": 1056871,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-033",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 33,
+    "request": {
+      "url": "https://www.walmart.com/browse/beauty/lip-gloss/1085666_1007040_2209773_7504576?page=4",
+      "attempt": 1,
+      "started_utc": "2026-10-29T10:17:00.161478+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/beauty/lip-gloss/1085666_1007040_2209773_7504576?page=4",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 10:17:00 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T10:17:00.474458+00:00",
+      "elapsed_seconds": 0.313
+    },
+    "body_sha256": "35ce47cbe25d53d4d4164f655057bc4780b4966199d8c7e122abf7f60887fc04",
+    "body_bytes": 1008329,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-025",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 25,
+    "request": {
+      "url": "https://www.walmart.com/browse/pets/dog-probiotics/5440_202072_9405258_6353871_9787405",
+      "attempt": 1,
+      "started_utc": "2026-10-29T10:12:27.097391+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/pets/dog-probiotics/5440_202072_9405258_6353871_9787405",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 10:12:27 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T10:12:27.346277+00:00",
+      "elapsed_seconds": 0.249
+    },
+    "body_sha256": "e858cd457994806a6dd2acfc59271d09deff42d45e1ffd1354a32b0e45814899",
+    "body_bytes": 1113964,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-038",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 38,
+    "request": {
+      "url": "https://www.walmart.com/browse/food/herbs/976759_976794_3029941_5597656",
+      "attempt": 1,
+      "started_utc": "2026-10-29T10:20:05.645467+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/food/herbs/976759_976794_3029941_5597656",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 10:20:05 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T10:20:05.918007+00:00",
+      "elapsed_seconds": 0.273
+    },
+    "body_sha256": "7a514f791d77aa09b0e8d40e346c0a910f80ac1051ceeb3ec6f83d03b092cd22",
+    "body_bytes": 1263375,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-014",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 14,
+    "request": {
+      "url": "https://www.walmart.com/browse/household-essentials/bathroom-air-fresheners/1115193_1025739_5929933?page=5",
+      "attempt": 1,
+      "started_utc": "2026-10-29T10:06:22.781345+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/household-essentials/bathroom-air-fresheners/1115193_1025739_5929933?page=5",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 10:06:22 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T10:06:22.987356+00:00",
+      "elapsed_seconds": 0.206
+    },
+    "body_sha256": "2c56a59766b65199bd7f00ec445e7c48290bc61ed23b6b12bc99e7444da54b1b",
+    "body_bytes": 1141132,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-002",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 2,
+    "request": {
+      "url": "https://www.walmart.com/browse/office-supplies/office-supplies-school-supplies-by-brand/1229749_1431586?page=8",
+      "attempt": 1,
+      "started_utc": "2026-10-29T10:00:34.472691+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/office-supplies/office-supplies-school-supplies-by-brand/1229749_1431586?page=8",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 10:00:34 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T10:00:34.755566+00:00",
+      "elapsed_seconds": 0.283
+    },
+    "body_sha256": "1fc2b3d74597474c05d7cd26bbafa006bc7d49af6be72ca37f3ff6daa431a64b",
+    "body_bytes": 1225733,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-022",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 22,
+    "request": {
+      "url": "https://www.walmart.com/browse/cough-cold-and-flu-medicine/cold-cough-and-flu/976760_4661388_6244277?page=6",
+      "attempt": 1,
+      "started_utc": "2026-10-29T10:10:45.934508+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/cough-cold-and-flu-medicine/cold-cough-and-flu/976760_4661388_6244277?page=6",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 10:10:45 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T10:10:46.163551+00:00",
+      "elapsed_seconds": 0.229
+    },
+    "body_sha256": "e04fdc08ec7860f463cfa1ba604ff6315b630be2c0b8099b0ff8f1f599d5ecca",
+    "body_bytes": 1196921,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-034",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 34,
+    "request": {
+      "url": "https://www.walmart.com/browse/personal-care/all-toothbrushes/1005862_1007221_2709578_7646613?page=4",
+      "attempt": 1,
+      "started_utc": "2026-10-29T10:17:31.278544+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/personal-care/all-toothbrushes/1005862_1007221_2709578_7646613?page=4",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 10:17:31 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T10:17:31.567471+00:00",
+      "elapsed_seconds": 0.289
+    },
+    "body_sha256": "f0c67270bed700b12b1828516b5f5528e337cb612814cdd90b5f5e8507526eff",
+    "body_bytes": 1158830,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-018",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 18,
+    "request": {
+      "url": "https://www.walmart.com/browse/pets/dog-hip-joint-supplements/5440_202072_9405258_6353871_3659089",
+      "attempt": 1,
+      "started_utc": "2026-10-29T10:08:30.066232+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/pets/dog-hip-joint-supplements/5440_202072_9405258_6353871_3659089",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 10:08:30 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T10:08:30.317873+00:00",
+      "elapsed_seconds": 0.252
+    },
+    "body_sha256": "14f473a9369c1e3ce1a1d2aa512af575d7fbd6d72aabd39ed2079c874772c48e",
+    "body_bytes": 1294609,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-019",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 19,
+    "request": {
+      "url": "https://www.walmart.com/browse/beauty/l-oreal/1085666_3316357_3625854?page=4",
+      "attempt": 1,
+      "started_utc": "2026-10-29T10:09:04.012046+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/beauty/l-oreal/1085666_3316357_3625854?page=4",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 10:09:04 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T10:09:04.230273+00:00",
+      "elapsed_seconds": 0.218
+    },
+    "body_sha256": "4f9a8f58124d22f927853e61d1e83c9c2e76759d2621d21eb669adc60d5a9634",
+    "body_bytes": 1135995,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-035",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 35,
+    "request": {
+      "url": "https://www.walmart.com/browse/household-essentials/cleaning-supplies/1115193_1071966?page=5",
+      "attempt": 1,
+      "started_utc": "2026-10-29T10:18:22.661320+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/household-essentials/cleaning-supplies/1115193_1071966?page=5",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 10:18:22 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T10:18:23.015056+00:00",
+      "elapsed_seconds": 0.354
+    },
+    "body_sha256": "d0c5e080764c1a5ad016319654b248a182822831a08cba6883a0ef3baa780238",
+    "body_bytes": 1353804,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-023",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 23,
+    "request": {
+      "url": "https://www.walmart.com/browse/office-supplies/writing-supplies/1229749_8843226?page=8",
+      "attempt": 1,
+      "started_utc": "2026-10-29T10:11:20.355778+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/office-supplies/writing-supplies/1229749_8843226?page=8",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 10:11:20 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T10:11:20.551662+00:00",
+      "elapsed_seconds": 0.196
+    },
+    "body_sha256": "e23b88e198c747e51be671c17c0d14df282a9d2c0c9053c0563ca08958368792",
+    "body_bytes": 957109,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-003",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 3,
+    "request": {
+      "url": "https://www.walmart.com/browse/food/oregano/976759_976794_3029941_5597656_1775981",
+      "attempt": 1,
+      "started_utc": "2026-10-29T10:01:06.877653+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/food/oregano/976759_976794_3029941_5597656_1775981",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 10:01:06 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T10:01:07.037153+00:00",
+      "elapsed_seconds": 0.16
+    },
+    "body_sha256": "0ad0792638529ee73cd93cf6ca3a64438e97b4c25aa8f4198567e1326a57c016",
+    "body_bytes": 800437,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-015",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 15,
+    "request": {
+      "url": "https://www.walmart.com/browse/976760_4661388?page=8",
+      "attempt": 1,
+      "started_utc": "2026-10-29T10:06:52.657807+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/976760_4661388?page=8",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 10:06:52 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T10:06:52.886462+00:00",
+      "elapsed_seconds": 0.229
+    },
+    "body_sha256": "6a127e6af316061681b592312748f2870ef5c082b3110711c71c08b58593ec34",
+    "body_bytes": 1176542,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-039",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 39,
+    "request": {
+      "url": "https://www.walmart.com/browse/dogs/dog-health-wellbeing/5440_202072_9405258?page=3",
+      "attempt": 1,
+      "started_utc": "2026-10-29T10:20:46.329203+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/dogs/dog-health-wellbeing/5440_202072_9405258?page=3",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 10:20:46 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T10:20:46.566825+00:00",
+      "elapsed_seconds": 0.238
+    },
+    "body_sha256": "d46ab404ed972713e072464c01e5daf75a338ac610606c9cb708ec3557cf110b",
+    "body_bytes": 1285142,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  }
+]

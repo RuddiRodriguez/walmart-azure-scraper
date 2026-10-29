@@ -10,8 +10,8 @@
     "failed": 190,
     "navigation_scope_unverified": 9,
     "outside_scope": 1,
-    "pending": 944,
-    "reviewed": 3824
+    "pending": 931,
+    "reviewed": 3864
   },
   "scope_counts": {
     "brief_exclusion": 2,
@@ -150,6 +150,17 @@
         "new_pages": 20,
         "pending_before": 964,
         "pending_after": 944,
+        "failed_after": 190,
+        "stop_reason": null,
+        "offer_observations": 0
+      },
+      {
+        "number": 4,
+        "batch": "batch-04161-1793267950",
+        "pages": 40,
+        "new_pages": 27,
+        "pending_before": 944,
+        "pending_after": 931,
         "failed_after": 190,
         "stop_reason": null,
         "offer_observations": 0
