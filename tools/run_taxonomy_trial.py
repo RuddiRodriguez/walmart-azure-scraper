@@ -18,10 +18,18 @@ def run(batches,pages,output):
     lock=(ROOT/'worker.lock').open('w');fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
     started=datetime.now(timezone.utc).isoformat();before=counts();results=[];growth_streak=0
     for number in range(1,batches+1):
-        ensure_storage();existing=set(ROOT.glob('batch-*'));pending=counts().get('pending',0)
+        ensure_storage();existing=set(ROOT.glob('batch-*'));before_batch=counts();pending=before_batch.get('pending',0);timed_out=False
         with (ROOT/'taxonomy-trial.log').open('a') as log:
-            process=subprocess.run([sys.executable,'coverage_queue.py','--pages',str(pages),'--seconds',str(SECONDS)],stdout=log,stderr=subprocess.STDOUT,timeout=SECONDS+60)
+            try:process=subprocess.run([sys.executable,'coverage_queue.py','--pages',str(pages),'--seconds',str(SECONDS)],stdout=log,stderr=subprocess.STDOUT,timeout=SECONDS+60)
+            except subprocess.TimeoutExpired:timed_out=True
         created=set(ROOT.glob('batch-*'))-existing
+        if timed_out:
+            after=counts();batch=created.pop().name if len(created)==1 else ''
+            results.append(dict(number=number,batch=batch,pages=max(0,after.get('reviewed',0)-before_batch.get('reviewed',0)),new_pages=max(0,after.get('pending',0)-pending+max(0,after.get('reviewed',0)-before_batch.get('reviewed',0))),pending_before=pending,pending_after=after.get('pending',0),failed_after=after.get('failed',0),stop_reason='Batch timeout; partial checkpoint retained',offer_observations=0))
+            progress=dict(started_utc=started,finished=False,limits=dict(batches=batches,pages_per_batch=pages,seconds_per_batch=SECONDS),results=results)
+            atomic_json(output/'progress.json',progress)
+            status=json.loads((ROOT/'worker-status.json').read_text());status.update(phase='taxonomy_batch_timeout',finished=False,queue_counts=after,coverage_completion=progress)
+            atomic_json(ROOT/'worker-status.json',status);break
         if len(created)!=1:raise RuntimeError('Unexpected taxonomy trial batch count')
         batch=created.pop();report=json.loads((batch/'report.json').read_text());after=report['queue_counts'];processed=len(report['pages']);new=report.get('new_page_identities',0)
         growth_streak=growth_streak+1 if processed and after.get('pending',0)>=pending else 0
