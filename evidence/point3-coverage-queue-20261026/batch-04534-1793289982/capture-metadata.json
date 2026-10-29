@@ -1,0 +1,298 @@
+[
+  {
+    "id": "coverage-001",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 1,
+    "request": {
+      "url": "https://www.walmart.com/browse/beauty/all-halloween-beauty/1085666_5605928_9253377?page=4",
+      "attempt": 1,
+      "started_utc": "2026-10-29T16:07:23.942007+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/beauty/all-halloween-beauty/1085666_5605928_9253377?page=4",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 16:07:23 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T16:07:24.285216+00:00",
+      "elapsed_seconds": 0.343
+    },
+    "body_sha256": "64a1ec83bf108940cecd07994201e0a648e3b4d6fecd0ab4c25c5b7e69ee3092",
+    "body_bytes": 1486656,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-006",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 6,
+    "request": {
+      "url": "https://www.walmart.com/browse/pets/dog-plush-toys/5440_202072_2243339_8633816?page=2",
+      "attempt": 1,
+      "started_utc": "2026-10-29T16:12:33.671834+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/pets/dog-plush-toys/5440_202072_2243339_8633816?page=2",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 16:12:33 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T16:12:33.825881+00:00",
+      "elapsed_seconds": 0.154
+    },
+    "body_sha256": "9ad7a04dac76c0a4019cfe9b4245736a22a0bef82f5f14477c6ec637b56b78b3",
+    "body_bytes": 743529,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-007",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 7,
+    "request": {
+      "url": "https://www.walmart.com/browse/beauty/l-oreal/1085666_3316357_3625854?page=5",
+      "attempt": 1,
+      "started_utc": "2026-10-29T16:13:39.598008+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/beauty/l-oreal/1085666_3316357_3625854?page=5",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 16:13:39 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T16:13:39.786526+00:00",
+      "elapsed_seconds": 0.189
+    },
+    "body_sha256": "d8bfbef7f04eebc914e2b48366165f82c9d66fac7bb511feccc81f2601ded26b",
+    "body_bytes": 956559,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-008",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 8,
+    "request": {
+      "url": "https://www.walmart.com/browse/personal-care/1005862_1071969?page=8",
+      "attempt": 1,
+      "started_utc": "2026-10-29T16:14:45.980070+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/personal-care/1005862_1071969?page=8",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 16:14:46 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T16:14:46.239617+00:00",
+      "elapsed_seconds": 0.26
+    },
+    "body_sha256": "af85d27bb9ec07575e6bed7c19edf057bcdbc621777554d3cb0ef48560df5002",
+    "body_bytes": 1336365,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-004",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 4,
+    "request": {
+      "url": "https://www.walmart.com/browse/household-essentials/household-essentials-by-brand/1115193_8250903?page=9",
+      "attempt": 1,
+      "started_utc": "2026-10-29T16:10:28.221585+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/household-essentials/household-essentials-by-brand/1115193_8250903?page=9",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 16:10:28 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T16:10:28.451915+00:00",
+      "elapsed_seconds": 0.23
+    },
+    "body_sha256": "5db83e9facdbef8e6afdb5d2f5a2426a67bf5c668b6f3734d09993766799ca87",
+    "body_bytes": 1299026,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-005",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 5,
+    "request": {
+      "url": "https://www.walmart.com/browse/food/frozen-single-serve-desserts/976759_976791_9551235_4535608",
+      "attempt": 1,
+      "started_utc": "2026-10-29T16:11:29.572275+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/food/frozen-single-serve-desserts/976759_976791_9551235_4535608",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 16:11:29 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T16:11:29.749412+00:00",
+      "elapsed_seconds": 0.177
+    },
+    "body_sha256": "bd2f7c9b1583d64cf5c8c4a8e57be6920b97abd42f185218df5411966d484317",
+    "body_bytes": 829900,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-002",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 2,
+    "request": {
+      "url": "https://www.walmart.com/browse/mens-grooming/1005862_1056884?page=7",
+      "attempt": 1,
+      "started_utc": "2026-10-29T16:08:27.626553+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/mens-grooming/1005862_1056884?page=7",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 16:08:27 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T16:08:27.895375+00:00",
+      "elapsed_seconds": 0.269
+    },
+    "body_sha256": "1f0cedfe48d34a340b074680e7835c6d97d7608bb984870928fb7df2e5350782",
+    "body_bytes": 1269158,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-003",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 3,
+    "request": {
+      "url": "https://www.walmart.com/browse/vitamins-supplements/spring-valley/976760_1005863_7121894?page=11",
+      "attempt": 1,
+      "started_utc": "2026-10-29T16:09:28.111274+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/vitamins-supplements/spring-valley/976760_1005863_7121894?page=11",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 16:09:28 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T16:09:28.281905+00:00",
+      "elapsed_seconds": 0.171
+    },
+    "body_sha256": "68938c57dc5126999832e27807565fc27ef830130de5ae62ffb5af11a0d4d607",
+    "body_bytes": 985729,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  }
+]

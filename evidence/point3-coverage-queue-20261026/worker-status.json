@@ -10,8 +10,8 @@
     "failed": 229,
     "navigation_scope_unverified": 9,
     "outside_scope": 1,
-    "pending": 783,
-    "reviewed": 4158
+    "pending": 780,
+    "reviewed": 4166
   },
   "scope_counts": {
     "brief_exclusion": 2,
@@ -284,6 +284,17 @@
         "pending_after": 783,
         "failed_after": 229,
         "stop_reason": null,
+        "offer_observations": 0
+      },
+      {
+        "number": 16,
+        "batch": "batch-04534-1793289982",
+        "pages": 8,
+        "new_pages": 5,
+        "pending_before": 783,
+        "pending_after": 780,
+        "failed_after": 229,
+        "stop_reason": "Evidence storage free space is below its safety limit",
         "offer_observations": 0
       }
     ]
