@@ -1,0 +1,742 @@
+[
+  {
+    "id": "coverage-016",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 16,
+    "request": {
+      "url": "https://www.walmart.com/browse/fsa-and-hsa-store/fsa-hsa-eligible-cold-and-sinus/976760_6120851_3250335?page=7",
+      "attempt": 1,
+      "started_utc": "2026-10-29T13:14:31.033983+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/fsa-and-hsa-store/fsa-hsa-eligible-cold-and-sinus/976760_6120851_3250335?page=7",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 13:14:31 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T13:14:31.236160+00:00",
+      "elapsed_seconds": 0.202
+    },
+    "body_sha256": "e509577d793a62b911ac9279a6da8b12c1a75ab4fc082ad31ff954e472d9f6e9",
+    "body_bytes": 1194034,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-020",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 20,
+    "request": {
+      "url": "https://www.walmart.com/browse/personal-care/regimens-and-routines/1005862_2522653?page=5",
+      "attempt": 1,
+      "started_utc": "2026-10-29T13:17:13.643945+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/personal-care/regimens-and-routines/1005862_2522653?page=5",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 13:17:13 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T13:17:13.841073+00:00",
+      "elapsed_seconds": 0.197
+    },
+    "body_sha256": "d016576c9a379eba28b81d2c05a2efb600806e8faa175ef4edd4933a22c8b3fc",
+    "body_bytes": 1247041,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-017",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 17,
+    "request": {
+      "url": "https://www.walmart.com/browse/food/buttercream-frosting/976759_976780_9959366_7620641_5205218",
+      "attempt": 1,
+      "started_utc": "2026-10-29T13:15:11.693037+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/food/buttercream-frosting/976759_976780_9959366_7620641_5205218",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 13:15:11 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T13:15:11.803732+00:00",
+      "elapsed_seconds": 0.111
+    },
+    "body_sha256": "15be1105314471f7888cc40a4c5dbab09cc4a8e895763eff371832015a064f59",
+    "body_bytes": 576657,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-001",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 1,
+    "request": {
+      "url": "https://www.walmart.com/browse/hair-care/shampoo/1085666_3147628_5752434?page=4",
+      "attempt": 1,
+      "started_utc": "2026-10-29T13:04:01.332518+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/hair-care/shampoo/1085666_3147628_5752434?page=4",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 13:04:01 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T13:04:01.571213+00:00",
+      "elapsed_seconds": 0.239
+    },
+    "body_sha256": "7c01c5149372c4853082aadbf3194532cda7bf9f932a8e72982eafc7e0d27839",
+    "body_bytes": 1206945,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-006",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 6,
+    "request": {
+      "url": "https://www.walmart.com/browse/pets/cat-litter-and-accessories/5440_202073_202098?page=3",
+      "attempt": 1,
+      "started_utc": "2026-10-29T13:07:19.825050+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/pets/cat-litter-and-accessories/5440_202073_202098?page=3",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 13:07:19 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T13:07:20.039863+00:00",
+      "elapsed_seconds": 0.215
+    },
+    "body_sha256": "172260b9e16bfc6c4598c11f6b50fba6fe7bfe3deb0acdf10a1b20fb143f689c",
+    "body_bytes": 817790,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-010",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 10,
+    "request": {
+      "url": "https://www.walmart.com/browse/health/fsa-hsa-eligible-personal-care/976760_6120851_6937361?page=7",
+      "attempt": 1,
+      "started_utc": "2026-10-29T13:10:09.319755+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/health/fsa-hsa-eligible-personal-care/976760_6120851_6937361?page=7",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 13:10:09 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T13:10:09.679855+00:00",
+      "elapsed_seconds": 0.36
+    },
+    "body_sha256": "530456032339ba4b892d853ecf20e12f1caea7c6479a2b3d0bb480444f33fa8d",
+    "body_bytes": 1259751,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-011",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 11,
+    "request": {
+      "url": "https://www.walmart.com/browse/food/cream-cheese-frosting/976759_976780_9959366_7620641_7722592",
+      "attempt": 1,
+      "started_utc": "2026-10-29T13:10:53.336482+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/food/cream-cheese-frosting/976759_976780_9959366_7620641_7722592",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 13:10:53 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T13:10:53.496840+00:00",
+      "elapsed_seconds": 0.16
+    },
+    "body_sha256": "7665d94fac1d604fe9aa205933cffd89cc89b18900a65c96b694b7d6e3178358",
+    "body_bytes": 401157,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-007",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 7,
+    "request": {
+      "url": "https://www.walmart.com/browse/beauty/all-loreal/1085666_3316357_3625854_4519303?page=3",
+      "attempt": 1,
+      "started_utc": "2026-10-29T13:08:02.852704+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/beauty/all-loreal/1085666_3316357_3625854_4519303?page=3",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 13:08:02 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T13:08:03.223054+00:00",
+      "elapsed_seconds": 0.37
+    },
+    "body_sha256": "facbe5a9336bc78dd922a6546d752dcc002210e79246b16727f4567597c673e5",
+    "body_bytes": 1347654,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-008",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 8,
+    "request": {
+      "url": "https://www.walmart.com/browse/mens-grooming/1005862_1056884?page=6",
+      "attempt": 1,
+      "started_utc": "2026-10-29T13:08:46.462307+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/mens-grooming/1005862_1056884?page=6",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 13:08:46 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T13:08:46.662758+00:00",
+      "elapsed_seconds": 0.2
+    },
+    "body_sha256": "c89595de61e4d9df7f816b1c4fd44e251555824a464cf1bd83a6570010cb4b5d",
+    "body_bytes": 1285785,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-012",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 12,
+    "request": {
+      "url": "https://www.walmart.com/browse/pets/new-pet-essentials/5440_8824262?page=2",
+      "attempt": 1,
+      "started_utc": "2026-10-29T13:11:37.053619+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/pets/new-pet-essentials/5440_8824262?page=2",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 13:11:37 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T13:11:37.280114+00:00",
+      "elapsed_seconds": 0.226
+    },
+    "body_sha256": "a6410d821d6536a10fe2c459e7b8ab270a6cd0321db10d6e571723faac1449fd",
+    "body_bytes": 1397696,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-004",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 4,
+    "request": {
+      "url": "https://www.walmart.com/browse/vitamins-and-supplements/letter-vitamins/976760_1005863_1001553?page=6",
+      "attempt": 1,
+      "started_utc": "2026-10-29T13:06:01.262400+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/vitamins-and-supplements/letter-vitamins/976760_1005863_1001553?page=6",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 13:06:01 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T13:06:01.429208+00:00",
+      "elapsed_seconds": 0.167
+    },
+    "body_sha256": "e8d5a123eb0047d50bcfda7cbaeb8816eeb37cf11e8e962717aa53837e427fab",
+    "body_bytes": 872781,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-005",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 5,
+    "request": {
+      "url": "https://www.walmart.com/browse/food/vanilla-frosting/976759_976780_9959366_7620641_2287762",
+      "attempt": 1,
+      "started_utc": "2026-10-29T13:06:41.390974+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/food/vanilla-frosting/976759_976780_9959366_7620641_2287762",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 13:06:41 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T13:06:41.580510+00:00",
+      "elapsed_seconds": 0.19
+    },
+    "body_sha256": "4e2ccf05220d10967e37f6f312b1e1006748f3bc8563efc4775fb76bd899bcb3",
+    "body_bytes": 1158456,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-013",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 13,
+    "request": {
+      "url": "https://www.walmart.com/browse/1085666_1056884?page=6",
+      "attempt": 1,
+      "started_utc": "2026-10-29T13:12:19.130235+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/1085666_1056884?page=6",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 13:12:19 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T13:12:19.357382+00:00",
+      "elapsed_seconds": 0.227
+    },
+    "body_sha256": "1df13614cd0e78f3a43fff0585ccce7e0fbd8e64875362111a7155247c3a26ba",
+    "body_bytes": 1270194,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-009",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 9,
+    "request": {
+      "url": "https://www.walmart.com/browse/household-essentials/household-party-essentials/1115193_9085299?page=6",
+      "attempt": 1,
+      "started_utc": "2026-10-29T13:09:27.412357+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/household-essentials/household-party-essentials/1115193_9085299?page=6",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 13:09:27 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T13:09:27.625030+00:00",
+      "elapsed_seconds": 0.213
+    },
+    "body_sha256": "28a9599b562a84b51838ab86890a3eb9c085c88730559ca7830e18d52ca201a5",
+    "body_bytes": 1214912,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-014",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 14,
+    "request": {
+      "url": "https://www.walmart.com/browse/personal-care/1005862_1071969?page=7",
+      "attempt": 1,
+      "started_utc": "2026-10-29T13:13:04.297530+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/personal-care/1005862_1071969?page=7",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 13:13:04 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T13:13:04.554969+00:00",
+      "elapsed_seconds": 0.257
+    },
+    "body_sha256": "4a64c2972c9a3012ec00df681db1ccbd3840158d5656d486df16464437aef35c",
+    "body_bytes": 1325023,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-002",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 2,
+    "request": {
+      "url": "https://www.walmart.com/browse/bath-body/body-wash-shower-gel/1005862_1071969_1074364?page=6",
+      "attempt": 1,
+      "started_utc": "2026-10-29T13:04:41.751691+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/bath-body/body-wash-shower-gel/1005862_1071969_1074364?page=6",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 13:04:41 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T13:04:41.968032+00:00",
+      "elapsed_seconds": 0.216
+    },
+    "body_sha256": "1e24a4e116257f1ccf040923f643c622258a228840c03fe767de02b7161f0d74",
+    "body_bytes": 1265587,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-018",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 18,
+    "request": {
+      "url": "https://www.walmart.com/browse/pets/small-chicken-coops/5440_7335155_3985092_8336326",
+      "attempt": 1,
+      "started_utc": "2026-10-29T13:15:52.748227+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/pets/small-chicken-coops/5440_7335155_3985092_8336326",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 13:15:52 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T13:15:52.877719+00:00",
+      "elapsed_seconds": 0.129
+    },
+    "body_sha256": "71098278394a8fcde89a56bca689b1231752ddfe8df1cf86b236230cec24d2ae",
+    "body_bytes": 577060,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-019",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 19,
+    "request": {
+      "url": "https://www.walmart.com/browse/1085666_3147628?page=5",
+      "attempt": 1,
+      "started_utc": "2026-10-29T13:16:33.661862+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/1085666_3147628?page=5",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 13:16:33 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T13:16:33.896231+00:00",
+      "elapsed_seconds": 0.234
+    },
+    "body_sha256": "8f1ca8d37205520635dc2984510c1b55917b75e3b36763ef32b64f523fe3e970",
+    "body_bytes": 1318238,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-003",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 3,
+    "request": {
+      "url": "https://www.walmart.com/browse/household-essentials/household-essentials-by-brand/1115193_8250903?page=6",
+      "attempt": 1,
+      "started_utc": "2026-10-29T13:05:23.467062+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/household-essentials/household-essentials-by-brand/1115193_8250903?page=6",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 13:05:23 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T13:05:23.687666+00:00",
+      "elapsed_seconds": 0.221
+    },
+    "body_sha256": "5fee22c69956bd689da305315e50022387a31fbe7654ad8fbca7a59ff0feffa0",
+    "body_bytes": 1317166,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-015",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 15,
+    "request": {
+      "url": "https://www.walmart.com/browse/household-essentials/laundry-detergents/1115193_1071967_1149379?page=6",
+      "attempt": 1,
+      "started_utc": "2026-10-29T13:13:48.796566+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/household-essentials/laundry-detergents/1115193_1071967_1149379?page=6",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 13:13:48 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T13:13:48.903483+00:00",
+      "elapsed_seconds": 0.107
+    },
+    "body_sha256": "396fc1fb523f5fb172759adbf673f8dc9ca1f67b52a211ea599d3cfb70c9d9bf",
+    "body_bytes": 448527,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  }
+]
