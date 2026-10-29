@@ -1,5 +1,5 @@
 """Finite persistent coverage continuations; original budget survives audit/restart."""
-import fcntl,hashlib,json,shutil,sqlite3,subprocess,sys,time
+import fcntl,hashlib,json,os,shutil,sqlite3,subprocess,sys,time
 from pathlib import Path
 import psutil
 from storage import atomic_json,git_index_sha256
@@ -7,16 +7,17 @@ from diagnostic_capture import safe_url
 
 ROOT=Path('data/full-coverage-20261026')
 PUBLIC=Path('evidence/point3-coverage-queue-20261026')
-CODEX=Path('/Volumes/CODEX')
-EXTERNAL_DATA=CODEX/'Walmart_Scraper_Private_Evidence'
+STORAGE_ROOT=Path(os.environ.get('WALMART_STORAGE_ROOT','/Volumes/CODEX'))
+EXTERNAL_DATA=Path(os.environ.get('WALMART_EVIDENCE_ROOT',str(STORAGE_ROOT/'Walmart_Scraper_Private_Evidence')))
+MIN_FREE_GIB=int(os.environ.get('WALMART_MIN_FREE_GIB','40'))
 GIB=2**30
 
 
 def ensure_storage():
- if not CODEX.is_mount():raise RuntimeError('CODEX evidence drive is not mounted')
- if not ROOT.resolve().is_relative_to(EXTERNAL_DATA.resolve()):raise RuntimeError('Private evidence has not been verified and relocated to CODEX')
+ if not STORAGE_ROOT.is_mount():raise RuntimeError('Evidence storage is not mounted')
+ if not ROOT.resolve().is_relative_to(EXTERNAL_DATA.resolve()):raise RuntimeError('Private evidence is outside the approved storage root')
  if shutil.disk_usage('/').free<60*GIB:raise RuntimeError('Mac free space is below 60 GiB')
- if shutil.disk_usage(CODEX).free<40*GIB:raise RuntimeError('CODEX free space is below 40 GiB')
+ if shutil.disk_usage(STORAGE_ROOT).free<MIN_FREE_GIB*GIB:raise RuntimeError('Evidence storage free space is below its safety limit')
 
 
 def next_growth_streak(previous,pages,new_pages):

@@ -19,3 +19,9 @@ Recovered queue state:
 - Outside scope: 1
 
 The recovered state includes committed page work completed after the last saved status snapshot and before the restart.
+
+## Storage recovery on 29 October
+
+Disk Utility First Aid was run only against the CODEX APFS volume. It reported an invalid object map and exit code 8, and stated that the volume could not be repaired. The BACKUP volume was not modified.
+
+The verified recovered queue was copied to internal Mac storage and passed SQLite integrity checking before collection resumed. The scraper keeps CODEX as its default storage; the internal continuation uses explicit environment variables.

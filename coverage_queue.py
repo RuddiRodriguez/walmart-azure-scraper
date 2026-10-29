@@ -12,17 +12,18 @@ from scrape import next_page_url,verify_listing_store
 from storage import atomic_json,page_url
 from audit_queue_growth import listing_ids
 
-CODEX=Path('/Volumes/CODEX')
-EXTERNAL_DATA=CODEX/'Walmart_Scraper_Private_Evidence'
+STORAGE_ROOT=Path(os.environ.get('WALMART_STORAGE_ROOT','/Volumes/CODEX'))
+EXTERNAL_DATA=Path(os.environ.get('WALMART_EVIDENCE_ROOT',str(STORAGE_ROOT/'Walmart_Scraper_Private_Evidence')))
+MIN_FREE_GIB=int(os.environ.get('WALMART_MIN_FREE_GIB','40'))
 GIB=2**30
 BATCH_LIMIT=2*GIB
 
 
 def ensure_storage(folder,state=None):
-    if not CODEX.is_mount():raise RuntimeError('CODEX evidence drive is not mounted')
-    if not Path(folder).resolve().is_relative_to(EXTERNAL_DATA.resolve()):raise RuntimeError('Private evidence is not on the approved CODEX drive')
+    if not STORAGE_ROOT.is_mount():raise RuntimeError('Evidence storage is not mounted')
+    if not Path(folder).resolve().is_relative_to(EXTERNAL_DATA.resolve()):raise RuntimeError('Private evidence is outside the approved storage root')
     if shutil.disk_usage('/').free<60*GIB:raise RuntimeError('Mac free space is below 60 GiB')
-    if shutil.disk_usage(CODEX).free<40*GIB:raise RuntimeError('CODEX free space is below 40 GiB')
+    if shutil.disk_usage(STORAGE_ROOT).free<MIN_FREE_GIB*GIB:raise RuntimeError('Evidence storage free space is below its safety limit')
     if state and state['body_bytes']+state['native_bytes']>BATCH_LIMIT:raise RuntimeError('Batch growth reached 2 GiB')
 
 
