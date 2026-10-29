@@ -1,0 +1,742 @@
+[
+  {
+    "id": "coverage-016",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 16,
+    "request": {
+      "url": "https://www.walmart.com/browse/pets/self-cleaning-litter-boxes/5440_202073_202098_5431375_3682419",
+      "attempt": 1,
+      "started_utc": "2026-10-29T12:44:57.771432+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/pets/self-cleaning-litter-boxes/5440_202073_202098_5431375_3682419",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 12:44:57 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T12:44:57.903378+00:00",
+      "elapsed_seconds": 0.132
+    },
+    "body_sha256": "a723f8d6681edc12c287e479315b5a15b8c3491139c036aec98fbc5bdd2306b5",
+    "body_bytes": 641755,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-020",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 20,
+    "request": {
+      "url": "https://www.walmart.com/browse/kids-health-shop/children-s-medicine-cabinet/976760_3460237_1691543?page=7",
+      "attempt": 1,
+      "started_utc": "2026-10-29T12:47:30.783297+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/kids-health-shop/children-s-medicine-cabinet/976760_3460237_1691543?page=7",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 12:47:30 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T12:47:30.956936+00:00",
+      "elapsed_seconds": 0.174
+    },
+    "body_sha256": "6eea67e8b221709cae3c1b061b9552b0c211bd41a77bb168edbc9859bf0df8b5",
+    "body_bytes": 951661,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-017",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 17,
+    "request": {
+      "url": "https://www.walmart.com/browse/beauty/dandruff-shampoo/1085666_3147628_5752434_2927912_4339403?page=2",
+      "attempt": 1,
+      "started_utc": "2026-10-29T12:45:37.325522+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/beauty/dandruff-shampoo/1085666_3147628_5752434_2927912_4339403?page=2",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 12:45:37 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T12:45:37.519291+00:00",
+      "elapsed_seconds": 0.194
+    },
+    "body_sha256": "a7c4e6c4feab9696d3cf0f3c033433dfe8473e243535e2ff7fc361bf4b68e160",
+    "body_bytes": 1144619,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-001",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 1,
+    "request": {
+      "url": "https://www.walmart.com/browse/household-essentials/bathroom-air-fresheners/1115193_1025739_5929933?page=6",
+      "attempt": 1,
+      "started_utc": "2026-10-29T12:35:13.355068+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/household-essentials/bathroom-air-fresheners/1115193_1025739_5929933?page=6",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 12:35:13 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T12:35:13.550713+00:00",
+      "elapsed_seconds": 0.196
+    },
+    "body_sha256": "913276c7362be7863210dba734c079aa4e5404d9fba4e4be618c167676f73167",
+    "body_bytes": 1155296,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-006",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 6,
+    "request": {
+      "url": "https://www.walmart.com/browse/personal-care/travel-size-toiletries/1005862_2934243?page=4",
+      "attempt": 1,
+      "started_utc": "2026-10-29T12:38:24.122440+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/personal-care/travel-size-toiletries/1005862_2934243?page=4",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 12:38:24 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T12:38:24.443330+00:00",
+      "elapsed_seconds": 0.321
+    },
+    "body_sha256": "0a5a7e5faf437e847e599b08e0a0ef500e4571ba567881a5c1e95989568179ab",
+    "body_bytes": 1288078,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-010",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 10,
+    "request": {
+      "url": "https://www.walmart.com/browse/pets/open-top-cat-litter-box/5440_202073_202098_5431375_1338157",
+      "attempt": 1,
+      "started_utc": "2026-10-29T12:40:58.416216+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/pets/open-top-cat-litter-box/5440_202073_202098_5431375_1338157",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 12:40:58 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T12:40:58.560014+00:00",
+      "elapsed_seconds": 0.144
+    },
+    "body_sha256": "140505df58e06c38b32879dd3c37f0326969dfcaebdb9cc3d6eba56c78bffa15",
+    "body_bytes": 600114,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-011",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 11,
+    "request": {
+      "url": "https://www.walmart.com/browse/hair-care/hair-accessories/1085666_3147628_9459711?page=4",
+      "attempt": 1,
+      "started_utc": "2026-10-29T12:41:38.616436+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/hair-care/hair-accessories/1085666_3147628_9459711?page=4",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 12:41:38 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T12:41:38.820255+00:00",
+      "elapsed_seconds": 0.204
+    },
+    "body_sha256": "c6b96732eebf10216ec32d39d1d80295ac3c1eb5846e8a24c958f74c8ef315bd",
+    "body_bytes": 1263509,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-007",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 7,
+    "request": {
+      "url": "https://www.walmart.com/browse/household-essentials/car-air-fresheners-by-brand/1115193_1025739_7032476_2346414?page=5",
+      "attempt": 1,
+      "started_utc": "2026-10-29T12:39:05.165388+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/household-essentials/car-air-fresheners-by-brand/1115193_1025739_7032476_2346414?page=5",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 12:39:05 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T12:39:05.319266+00:00",
+      "elapsed_seconds": 0.154
+    },
+    "body_sha256": "8ccbe14cc6683c57700e2b47c4e3b02169e3325bf2e3e5e53a573d0e296d46b8",
+    "body_bytes": 902762,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-008",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 8,
+    "request": {
+      "url": "https://www.walmart.com/browse/cold-cough-and-flu/shop-all-cold-cough-flu-medicine/976760_4661388_6244277_7158394?page=8",
+      "attempt": 1,
+      "started_utc": "2026-10-29T12:39:42.477095+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/cold-cough-and-flu/shop-all-cold-cough-flu-medicine/976760_4661388_6244277_7158394?page=8",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 12:39:42 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T12:39:42.617812+00:00",
+      "elapsed_seconds": 0.141
+    },
+    "body_sha256": "09439d885a4a64a1b07067d8071ba0b1590ce83ad94eeaf653dffda6428f298d",
+    "body_bytes": 797375,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-012",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 12,
+    "request": {
+      "url": "https://www.walmart.com/browse/personal-care/travel-size-toiletries/1005862_2934243_2802339?page=5",
+      "attempt": 1,
+      "started_utc": "2026-10-29T12:42:16.929867+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/personal-care/travel-size-toiletries/1005862_2934243_2802339?page=5",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 12:42:16 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T12:42:17.128996+00:00",
+      "elapsed_seconds": 0.199
+    },
+    "body_sha256": "6ccae92cd66cc8886d8e03af961df030785977fe6018205b7608c77191a7b15a",
+    "body_bytes": 1203926,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-004",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 4,
+    "request": {
+      "url": "https://www.walmart.com/browse/pets/litter-box-furniture/5440_202073_202098_5431375_7175460",
+      "attempt": 1,
+      "started_utc": "2026-10-29T12:37:03.999005+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/pets/litter-box-furniture/5440_202073_202098_5431375_7175460",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 12:37:04 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T12:37:04.129395+00:00",
+      "elapsed_seconds": 0.13
+    },
+    "body_sha256": "66d9f38ccd3f8c3e81d5d83f40c0673e438af9654e08894a1d6b0dfab71d98a1",
+    "body_bytes": 599450,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-005",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 5,
+    "request": {
+      "url": "https://www.walmart.com/browse/hair-care/conditioner/1085666_3147628_4555747?page=4",
+      "attempt": 1,
+      "started_utc": "2026-10-29T12:37:43.046759+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/hair-care/conditioner/1085666_3147628_4555747?page=4",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 12:37:43 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T12:37:43.252980+00:00",
+      "elapsed_seconds": 0.206
+    },
+    "body_sha256": "eec33fbce91bf76293ce92cfcd8d72165efbe19619062365487b47af7f93cc02",
+    "body_bytes": 1264831,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-013",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 13,
+    "request": {
+      "url": "https://www.walmart.com/browse/household-essentials/car-air-fresheners/1115193_1025739_7032476?page=6",
+      "attempt": 1,
+      "started_utc": "2026-10-29T12:42:56.016366+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/household-essentials/car-air-fresheners/1115193_1025739_7032476?page=6",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 12:42:56 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T12:42:56.233580+00:00",
+      "elapsed_seconds": 0.217
+    },
+    "body_sha256": "73fbb5644d9d22a3be5a92ec0c0840f2d45a8c2a5d5e3b23186f4491b938302b",
+    "body_bytes": 1186933,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-009",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 9,
+    "request": {
+      "url": "https://www.walmart.com/browse/food/onions-leeks/976759_976793_8910423_4455738",
+      "attempt": 1,
+      "started_utc": "2026-10-29T12:40:21.521902+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/food/onions-leeks/976759_976793_8910423_4455738",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 12:40:21 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T12:40:21.660376+00:00",
+      "elapsed_seconds": 0.138
+    },
+    "body_sha256": "98c16da15285fecad4d38c87e9b46ccdafd1d1373ef016dce6ea26322bc743f6",
+    "body_bytes": 720477,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-014",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 14,
+    "request": {
+      "url": "https://www.walmart.com/browse/health-and-medicine/foot-care/976760_1588421?page=8",
+      "attempt": 1,
+      "started_utc": "2026-10-29T12:43:38.396804+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/health-and-medicine/foot-care/976760_1588421?page=8",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 12:43:38 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T12:43:38.584716+00:00",
+      "elapsed_seconds": 0.188
+    },
+    "body_sha256": "721c5b4beef6a947978b94ecabb67e7a92c3f0b23f4e0e762e7bdf901a79b452",
+    "body_bytes": 1198433,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-002",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 2,
+    "request": {
+      "url": "https://www.walmart.com/browse/cough-cold-and-flu-medicine/cold-cough-and-flu/976760_4661388_6244277?page=7",
+      "attempt": 1,
+      "started_utc": "2026-10-29T12:35:51.072955+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/cough-cold-and-flu-medicine/cold-cough-and-flu/976760_4661388_6244277?page=7",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 12:35:51 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T12:35:51.300759+00:00",
+      "elapsed_seconds": 0.228
+    },
+    "body_sha256": "902c4a17c2fd05578715e3919efdca7747093a38a6bfd3e9da3b686d1aa52f62",
+    "body_bytes": 1215769,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-018",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 18,
+    "request": {
+      "url": "https://www.walmart.com/browse/personal-care/womens-body-wash/1005862_1071969_1074364_4894005?page=5",
+      "attempt": 1,
+      "started_utc": "2026-10-29T12:46:15.210662+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/personal-care/womens-body-wash/1005862_1071969_1074364_4894005?page=5",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 12:46:15 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T12:46:15.398529+00:00",
+      "elapsed_seconds": 0.188
+    },
+    "body_sha256": "dfbc5c2c8310b8f730a1a7cfece29ee6e0008896f5a180b259e9375b0d8d730b",
+    "body_bytes": 1139722,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-019",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 19,
+    "request": {
+      "url": "https://www.walmart.com/browse/household-essentials/cleaning-supplies/1115193_1071966?page=6",
+      "attempt": 1,
+      "started_utc": "2026-10-29T12:46:53.338922+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/household-essentials/cleaning-supplies/1115193_1071966?page=6",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 12:46:53 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T12:46:53.549994+00:00",
+      "elapsed_seconds": 0.211
+    },
+    "body_sha256": "6f9df6f7d31968056b46d7a95fbaaa62365f38d351b7716285cbda96bb41269d",
+    "body_bytes": 1385832,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-003",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 3,
+    "request": {
+      "url": "https://www.walmart.com/browse/food/root-vegetables/976759_976793_8910423_9050148",
+      "attempt": 1,
+      "started_utc": "2026-10-29T12:36:28.604680+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/food/root-vegetables/976759_976793_8910423_9050148",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 12:36:28 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Miss",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T12:36:28.757539+00:00",
+      "elapsed_seconds": 0.153
+    },
+    "body_sha256": "ac91e6dfc31c5ecc45d99244ced4a532f07cb142df5eddd3e78e71038a188e13",
+    "body_bytes": 768947,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-015",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 15,
+    "request": {
+      "url": "https://www.walmart.com/browse/food/organic-vegetables/976759_976793_1913529_5216450",
+      "attempt": 1,
+      "started_utc": "2026-10-29T12:44:18.714976+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/food/organic-vegetables/976759_976793_1913529_5216450",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 12:44:18 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T12:44:18.878515+00:00",
+      "elapsed_seconds": 0.164
+    },
+    "body_sha256": "0b872d177861f53efefa87098a9c5cc7d726bed8ddfacac98dffe8e304775e98",
+    "body_bytes": 982281,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  }
+]
