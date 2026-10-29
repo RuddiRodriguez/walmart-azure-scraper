@@ -5,6 +5,12 @@ Hi,
 I have frozen the latest local review package here:
 https://github.com/RuddiRodriguez/walmart-azure-scraper/tree/review-20261029-final-local
 
+The authoritative tag resolves to commit 4bae4765159dd61e44bf324db4515dbec402ebc7. The downloadable ZIP is available here:
+https://github.com/RuddiRodriguez/walmart-azure-scraper/archive/refs/tags/review-20261029-final-local.zip
+
+The package receipt and ZIP checksum are here:
+https://github.com/RuddiRodriguez/walmart-azure-scraper/blob/main/evidence/client-final-20261029/receipt.json
+
 The README is the best place to start. From there, please open docs/RUN_GUIDE.md to run a small Store 100 sample, then docs/VERIFY_PACKAGE.md to check the package and evidence hashes. The evidence index links each client requirement to its supporting files. The package includes the privacy-reviewed wrong-store/corrected-response pairs, unavailable-product retention evidence, interruption/recovery tests, repeat comparisons and category coverage records.
 
 To be clear about the 500-product requirement: two separate controlled live runs each produced 506 validated distinct products across all 11 required parent categories. One was stopped after 100 saved products and successfully resumed to 506, and a separate 506-product repeat also passed. These are genuine bounded demonstrations and are kept separate in the evidence.

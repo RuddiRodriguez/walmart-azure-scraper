@@ -2,6 +2,7 @@
 
 Updated: 29 October 2026, Amsterdam time
 Frozen version: `review-20261029-final-local`
+Frozen commit: `4bae4765159dd61e44bf324db4515dbec402ebc7`
 
 This is the final local review checkpoint prepared for the client. It does not claim complete production coverage.
 
