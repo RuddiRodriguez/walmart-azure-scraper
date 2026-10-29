@@ -1,7 +1,7 @@
 # Current client review progress
 
-Updated: 29 October 2026, 14:40 CET  
-Repository commit at update: `2aadb9173bbd2fcb4546f0add325f536c1e5add8`
+Updated: 29 October 2026, 15:44 CET  
+Repository commit at update: `b555b205beb44d2467eee0af490865b44f8d82ca`
 
 This is a live progress snapshot. It is not the final package. A new final tag will be created after coverage finishes and final checks pass.
 
@@ -17,9 +17,9 @@ Client run instructions: [simple step-by-step guide](RUN_GUIDE.md).
 
 ## Full coverage — running
 
-- Reviewed pages: **4,028**
-- Pending pages: **846**
-- Failed pages: **219**
+- Reviewed pages: **4,086**
+- Pending pages: **823**
+- Failed pages: **221**
 - Navigation scope unresolved: **9**
 - Cross-links excluded: **137**
 - Latest saved batch: `batch-01417-1793068523`
