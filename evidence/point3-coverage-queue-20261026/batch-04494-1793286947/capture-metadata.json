@@ -1,0 +1,742 @@
+[
+  {
+    "id": "coverage-016",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 16,
+    "request": {
+      "url": "https://www.walmart.com/browse/pets/male-dog-diapers/5440_202072_1416135_6746514_4823218",
+      "attempt": 1,
+      "started_utc": "2026-10-29T15:36:27.667206+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/pets/male-dog-diapers/5440_202072_1416135_6746514_4823218",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 15:36:27 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T15:36:27.943799+00:00",
+      "elapsed_seconds": 0.277
+    },
+    "body_sha256": "5913eb6337ec8f2275504cff73f24da1a36dfd241c50b76139612c9eccc7ab08",
+    "body_bytes": 795189,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-020",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 20,
+    "request": {
+      "url": "https://www.walmart.com/browse/health-medicine/pain-relief/976760_6972993_9385426?page=10",
+      "attempt": 1,
+      "started_utc": "2026-10-29T15:41:37.475707+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/health-medicine/pain-relief/976760_6972993_9385426?page=10",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 15:41:37 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T15:41:37.754138+00:00",
+      "elapsed_seconds": 0.278
+    },
+    "body_sha256": "2b198d9f5d46727617f6f6f222f5d64f6176d490fd39da4929da4a464866487d",
+    "body_bytes": 1159098,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-017",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 17,
+    "request": {
+      "url": "https://www.walmart.com/browse/beauty/fragrance/1085666_133225?page=5",
+      "attempt": 1,
+      "started_utc": "2026-10-29T15:37:51.591110+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/beauty/fragrance/1085666_133225?page=5",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 15:37:51 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T15:37:51.937882+00:00",
+      "elapsed_seconds": 0.347
+    },
+    "body_sha256": "9c471f7ec711b352941be0384dafd6e86499e92eba6c868e8661903650f8cca0",
+    "body_bytes": 1187138,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-001",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 1,
+    "request": {
+      "url": "https://www.walmart.com/browse/household-essentials/cleaning-tools/1115193_1071966_1025741?page=8",
+      "attempt": 1,
+      "started_utc": "2026-10-29T15:16:57.837413+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/household-essentials/cleaning-tools/1115193_1071966_1025741?page=8",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 15:16:57 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T15:16:58.074989+00:00",
+      "elapsed_seconds": 0.238
+    },
+    "body_sha256": "724773026b511437664c1186c86dbb99825b8770b1acb22944e1db22c9b5154d",
+    "body_bytes": 829764,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-006",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 6,
+    "request": {
+      "url": "https://www.walmart.com/browse/personal-care/travel-size-toiletries/1005862_2934243?page=5",
+      "attempt": 1,
+      "started_utc": "2026-10-29T15:22:36.027906+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/personal-care/travel-size-toiletries/1005862_2934243?page=5",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 15:22:36 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T15:22:36.333879+00:00",
+      "elapsed_seconds": 0.306
+    },
+    "body_sha256": "95d3a0593ff57f81ac05b9b28d95b11412fbd5ca0c831c33a9c1f2f3df8e6ff0",
+    "body_bytes": 1297413,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-010",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 10,
+    "request": {
+      "url": "https://www.walmart.com/browse/pets/female-dog-diapers/5440_202072_1416135_6746514_3449766",
+      "attempt": 1,
+      "started_utc": "2026-10-29T15:29:07.627651+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/pets/female-dog-diapers/5440_202072_1416135_6746514_3449766",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 15:29:07 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T15:29:07.835122+00:00",
+      "elapsed_seconds": 0.207
+    },
+    "body_sha256": "49c155f76eb870a786ec13e454055916b112d808bbf3a3c38303a3f5e312e801",
+    "body_bytes": 762891,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-011",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 11,
+    "request": {
+      "url": "https://www.walmart.com/browse/beauty/fake-nails/1085666_3592123_9776350?page=5",
+      "attempt": 1,
+      "started_utc": "2026-10-29T15:30:07.368888+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/beauty/fake-nails/1085666_3592123_9776350?page=5",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 15:30:07 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T15:30:07.606011+00:00",
+      "elapsed_seconds": 0.237
+    },
+    "body_sha256": "12cb36307b9d2b6790fd6ed4228d351527b5fd0aee6973265c4c6567adf3056b",
+    "body_bytes": 873677,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-007",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 7,
+    "request": {
+      "url": "https://www.walmart.com/browse/household-essentials/dishwashing/1115193_1071966_7583868?page=8",
+      "attempt": 1,
+      "started_utc": "2026-10-29T15:24:09.932757+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/household-essentials/dishwashing/1115193_1071966_7583868?page=8",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 15:24:10 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T15:24:10.081553+00:00",
+      "elapsed_seconds": 0.149
+    },
+    "body_sha256": "cc31118efa7cfd16a12bbaa130a2b8ff348c3e5c1d7fb5a44252f9cef1bede39",
+    "body_bytes": 474176,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-008",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 8,
+    "request": {
+      "url": "https://www.walmart.com/browse/health-and-medicine/foot-care/976760_1588421?page=11",
+      "attempt": 1,
+      "started_utc": "2026-10-29T15:26:19.036173+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/health-and-medicine/foot-care/976760_1588421?page=11",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 15:26:19 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T15:26:19.319942+00:00",
+      "elapsed_seconds": 0.284
+    },
+    "body_sha256": "f8a493356324d4d17ac971323ae819f1548a8225024fae53d30ff2ab3ad88f72",
+    "body_bytes": 503334,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-012",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 12,
+    "request": {
+      "url": "https://www.walmart.com/browse/personal-care/womens-body-wash/1005862_1071969_1074364_4894005?page=6",
+      "attempt": 1,
+      "started_utc": "2026-10-29T15:31:10.045580+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/personal-care/womens-body-wash/1005862_1071969_1074364_4894005?page=6",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 15:31:10 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T15:31:10.200022+00:00",
+      "elapsed_seconds": 0.154
+    },
+    "body_sha256": "eaa4fc13acc192200e7dba4f0259e1138b5bb39e4503ccb8cbe1f1ff1b632172",
+    "body_bytes": 449422,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-004",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 4,
+    "request": {
+      "url": "https://www.walmart.com/browse/pets/dog-grooming/5440_202072_1980811?page=3",
+      "attempt": 1,
+      "started_utc": "2026-10-29T15:20:15.590306+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/dogs/dog-grooming/5440_202072_1980811?page=3",
+      "redirected": true,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 15:20:15 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T15:20:15.975259+00:00",
+      "elapsed_seconds": 0.385
+    },
+    "body_sha256": "66eb71e400fa1a9eba6efe6e90902681b2656713be67212b8236f4c87a045380",
+    "body_bytes": 926620,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-005",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 5,
+    "request": {
+      "url": "https://www.walmart.com/browse/beauty/facial-serums/1085666_1007039_6013946?page=5",
+      "attempt": 1,
+      "started_utc": "2026-10-29T15:21:28.548119+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/beauty/facial-serums/1085666_1007039_6013946?page=5",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 15:21:28 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T15:21:28.821864+00:00",
+      "elapsed_seconds": 0.274
+    },
+    "body_sha256": "7c70b43e05896fe9e76fd78373e8499759be9b36f31ed91a6da685ebcb662092",
+    "body_bytes": 790104,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-013",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 13,
+    "request": {
+      "url": "https://www.walmart.com/browse/household-essentials/household-essentials-by-brand/1115193_8250903?page=8",
+      "attempt": 1,
+      "started_utc": "2026-10-29T15:32:20.177798+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/household-essentials/household-essentials-by-brand/1115193_8250903?page=8",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 15:32:20 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T15:32:20.608534+00:00",
+      "elapsed_seconds": 0.431
+    },
+    "body_sha256": "9b5cabc461233513459f36865fad54297f705e414f29942b53ce55be89bf2e38",
+    "body_bytes": 1287243,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-009",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 9,
+    "request": {
+      "url": "https://www.walmart.com/browse/frozen-breakfast-food/frozen-breakfast-burritos-wraps/976759_976791_1001417_9405068",
+      "attempt": 1,
+      "started_utc": "2026-10-29T15:27:53.988761+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/frozen-breakfast-food/frozen-breakfast-burritos-wraps/976759_976791_1001417_9405068",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 15:27:54 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T15:27:54.234859+00:00",
+      "elapsed_seconds": 0.246
+    },
+    "body_sha256": "b1b86cb4ac0e6698563de8f4245ce8d24b9a09a32b08a136d0ae03e40b3c773b",
+    "body_bytes": 672896,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-014",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 14,
+    "request": {
+      "url": "https://www.walmart.com/browse/health-medicine/cough-cold/976760_4661388_6244277_8897916?page=11",
+      "attempt": 1,
+      "started_utc": "2026-10-29T15:33:34.454797+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/health-medicine/cough-cold/976760_4661388_6244277_8897916?page=11",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 15:33:34 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T15:33:34.672991+00:00",
+      "elapsed_seconds": 0.218
+    },
+    "body_sha256": "7b6e04acba00c429833dcab270e88661426112f557e1c6bbc26349cea5465ccb",
+    "body_bytes": 695090,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-002",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 2,
+    "request": {
+      "url": "https://www.walmart.com/browse/cough-cold-and-flu-medicine/cold-cough-and-flu/976760_4661388_6244277?page=10",
+      "attempt": 1,
+      "started_utc": "2026-10-29T15:18:02.888259+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/cough-cold-and-flu-medicine/cold-cough-and-flu/976760_4661388_6244277?page=10",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 15:18:02 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T15:18:03.135351+00:00",
+      "elapsed_seconds": 0.247
+    },
+    "body_sha256": "234d2200d4187a4256e77049417267434e5a3c93b3c632eb22afa95bd690e0c1",
+    "body_bytes": 1217467,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-018",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 18,
+    "request": {
+      "url": "https://www.walmart.com/browse/bath-body/spa-massage/1005862_1071969_3179364?page=6",
+      "attempt": 1,
+      "started_utc": "2026-10-29T15:39:24.587326+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/bath-body/spa-massage/1005862_1071969_3179364?page=6",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 15:39:24 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T15:39:24.873972+00:00",
+      "elapsed_seconds": 0.287
+    },
+    "body_sha256": "89e36dee1329130d5248b1b0165cb5f3141bb68526f4c3014a36802e6f3d2076",
+    "body_bytes": 1169380,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-019",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 19,
+    "request": {
+      "url": "https://www.walmart.com/browse/household-essentials/paper-plastic/1115193_1073264?page=8",
+      "attempt": 1,
+      "started_utc": "2026-10-29T15:40:32.543723+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/household-essentials/paper-plastic/1115193_1073264?page=8",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 15:40:32 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T15:40:32.843853+00:00",
+      "elapsed_seconds": 0.3
+    },
+    "body_sha256": "db5ab8651fdcfdd95044ad1de4e1d7db368319b7ab056fb05d5f7e32072d13f8",
+    "body_bytes": 1280035,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-003",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 3,
+    "request": {
+      "url": "https://www.walmart.com/browse/frozen-breakfast-food/frozen-breakfast-bowls/976759_976791_1001417_1281036",
+      "attempt": 1,
+      "started_utc": "2026-10-29T15:19:14.524650+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/frozen-breakfast-food/frozen-breakfast-bowls/976759_976791_1001417_1281036",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 15:19:14 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T15:19:14.708839+00:00",
+      "elapsed_seconds": 0.184
+    },
+    "body_sha256": "d13115472782e96a6b2a7172daef1e139e6b71e899ab020020e56a47ef9e012c",
+    "body_bytes": 1020657,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  },
+  {
+    "id": "coverage-015",
+    "session": "coverage",
+    "kind": "listing",
+    "sequence": 15,
+    "request": {
+      "url": "https://www.walmart.com/browse/frozen-breakfast-food/frozen-breakfast-sausages/976759_976791_1001417_6347302",
+      "attempt": 1,
+      "started_utc": "2026-10-29T15:35:03.719177+00:00",
+      "settings": {
+        "method": "GET",
+        "cache": "no-store",
+        "credentials": "same-origin (browser default)",
+        "redirect": "follow (browser default)",
+        "timeout_seconds": 25,
+        "configured_attempts": 1,
+        "request_headers": "browser-managed; not captured"
+      }
+    },
+    "response": {
+      "status": 200,
+      "url": "https://www.walmart.com/browse/frozen-breakfast-food/frozen-breakfast-sausages/976759_976791_1001417_6347302",
+      "redirected": false,
+      "headers": {
+        "date": "Thu, 29 Oct 2026 15:35:03 GMT",
+        "cache-control": "max-age=0, no-cache, no-store",
+        "cache-status": "Hit",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "received_utc": "2026-10-29T15:35:04.039485+00:00",
+      "elapsed_seconds": 0.321
+    },
+    "body_sha256": "47a2c363f377808c8d49f67d9f1fcfd466733dbf61a120c6e92912d76517eedc",
+    "body_bytes": 922883,
+    "body_scope": "Complete bytes exposed by Fetch after content decoding; not compressed wire bytes"
+  }
+]
