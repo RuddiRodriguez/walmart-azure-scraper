@@ -1,0 +1,31 @@
+{
+  "test": "Bright Data Walmart Store 100 bounded transport test",
+  "time_amsterdam": "2026-10-30T10:49:51+01:00",
+  "input_limit": 1,
+  "inputs_submitted": 1,
+  "target": {
+    "store_id": "100",
+    "postal_code": "72712",
+    "fulfillment": "PICKUP",
+    "control_item_id": "47428850"
+  },
+  "provider": {
+    "dataset": "Walmart - products zipcodes - collect by URL",
+    "dataset_id": "gd_m693oc1r1gebnayxq",
+    "snapshot_id": "sd_mvusfwz5q7zjwupad"
+  },
+  "result": {
+    "status": "Ready",
+    "collection_time": "1min10s",
+    "success_rate_percent": 0.0,
+    "number_of_inputs": 1,
+    "number_of_successful_records": 0,
+    "accepted": false,
+    "error_code": "detect_block",
+    "error": "Walmart CAPTCHA detected before product collection",
+    "raw_result_sha256": "f2bb32e8704718e9661d9d388c7060f20566f064203d8f047e9993f6f0474228",
+    "raw_result_bytes": 308
+  },
+  "conclusion": "failed_control_test_not_step_1_completion",
+  "blocker": "The provider returned zero product records because Walmart presented a CAPTCHA. Store, ZIP, PICKUP, product identity, and local price were not jointly proven."
+}
