@@ -5,6 +5,7 @@ import os
 import re
 import time
 from datetime import datetime, timezone
+from pathlib import Path
 from urllib.parse import urlsplit
 
 from bs4 import BeautifulSoup
@@ -15,6 +16,9 @@ from extract import next_data, pickup
 
 def open_browser(headless=False):
     options = {'locale': 'en', 'guest': True, 'headless': headless}
+    profile = os.environ.get('WALMART_BROWSER_PROFILE')
+    if profile:
+        options.update(guest=False, user_data_dir=str(Path(profile).resolve()))
     proxy = os.environ.get('WALMART_PROXY_URL')
     if proxy:
         options['proxy'] = proxy
