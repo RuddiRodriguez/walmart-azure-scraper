@@ -1,0 +1,55 @@
+{
+  "date_utc": "2026-10-30",
+  "source_commit": "bd4b69f5edffec754b31edcf790cf9ea483809d0",
+  "transport": "Oxylabs Web Unblocker",
+  "account_controls": {
+    "price_per_gb_usd": 7.2,
+    "daily_spending_limit_usd": 1,
+    "disable_when_limit_exceeded": true,
+    "credentials_storage": "macOS Keychain; not committed or logged"
+  },
+  "request_scope": {
+    "total_client_requests": 3,
+    "location_checks": 1,
+    "walmart_pages": 2,
+    "rendering": "HTML",
+    "geo_target": "United States",
+    "publication": "none"
+  },
+  "results": {
+    "location": {
+      "country": "US",
+      "observed_city": "Chicago",
+      "observed_zip": "60608",
+      "expected_limitation": "Web Unblocker supports country-level targeting for this target, not Walmart ZIP targeting."
+    },
+    "control_product": {
+      "title": "Fresh Carving Pumpkin, Each - Walmart.com",
+      "expected_product_id": "47428850",
+      "observed_product_id": "47428850",
+      "observed_store_id": "1631",
+      "observed_zip": "23666",
+      "observed_intent": "SHIPPING",
+      "observed_price": 3.89,
+      "store_100_pickup_passed": false,
+      "decision": "rejected_wrong_store_context",
+      "private_body_bytes": 1074098,
+      "private_body_sha256": "548c58a35b14db29e1a3ac14ff6085ea14db6c2ace870aabd8c5cdd0cc714647"
+    },
+    "art_sets_listing": {
+      "title": "Art Sets in Art Supplies - Walmart.com",
+      "observed_store_id": "5867",
+      "pickup_facet_present": false,
+      "store_100_pickup_passed": false,
+      "decision": "rejected_wrong_store_context",
+      "private_body_bytes": 1730223,
+      "private_body_sha256": "b54e222496e2877f2e4468823eba6ca96227d6e71acc27cb56d7360885af2924"
+    }
+  },
+  "provider_usage_after_test": {
+    "traffic_mb": 20.47,
+    "spending_usd": 0.15,
+    "account_total_spending_usd_including_prior_residential_test": 0.23
+  },
+  "conclusion": "Web Unblocker loaded both Walmart pages without a challenge, but returned explicit wrong-store context. No response passed the Store 100, ZIP 72712 and PICKUP gate. No product was accepted and no full collection was started."
+}

@@ -21,6 +21,9 @@ coverage or a proven transport remedy.
 7. The bounded Oxylabs residential-proxy test is complete. The proxy reached Bentonville/ZIP
    72712, but Walmart's store banner did not load in either the initial session or one fresh-session
    retry. Both attempts stopped before any listing or product was accepted.
+8. The Web Unblocker follow-up loaded both Walmart pages, but returned wrong-store context. The
+   control product showed Store 1631, ZIP 23666 and SHIPPING. Art Sets showed Store 5867 without a
+   verified PICKUP facet. Both responses were rejected and no full collection was started.
 
 ## Still open
 
@@ -28,8 +31,9 @@ coverage or a proven transport remedy.
   navigation pages remain unresolved.
 - Genuine promotional examples: the expanded review found no qualifying example. This remains an
   honest zero-result, not a completed positive-example requirement.
-- A reliable transport for the final full collection is still open. The first paid residential-proxy
-  test did not pass, so starting an uncapped collection would not be responsible.
+- A reliable transport for the final full collection is still open. The residential proxy did not
+  load store context; Web Unblocker loaded pages but returned the wrong stores. Starting an uncapped
+  collection would not be responsible.
 
 ## Evidence
 
@@ -41,6 +45,7 @@ coverage or a proven transport remedy.
 - Smallest paid transport proposal: `docs/OXYLABS_BOUNDED_PROPOSAL.md`
 - Offline proxy wiring check: `evidence/transport-proposal-20261030/offline-check.json`
 - Bounded paid-transport result: `evidence/oxylabs-bounded-20261030/RESULT.json`
+- Web Unblocker result: `evidence/web-unblocker-bounded-20261030/RESULT.json`
 
 ## Timing and dependencies
 

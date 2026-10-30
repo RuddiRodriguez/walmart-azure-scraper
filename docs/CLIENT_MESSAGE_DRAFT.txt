@@ -19,6 +19,8 @@ The Azure folder now includes the sanitized event order, exact request counts an
 
 I also ran the smallest paid transport check with an Oxylabs residential proxy. The proxy location check reached Bentonville/ZIP 72712 and the account had a $1 daily limit. However, Walmart's store banner did not load in the first session or in one fresh-session retry. Both attempts stopped before any listing or product was accepted, and nothing was published. The dashboard reported 14.38 MB, 55 total proxy requests and $0.09 spent. This means the residential proxy did not pass the safety gate for a full collection.
 
+I then tested Web Unblocker as the closest small alternative. It loaded both Walmart pages without a challenge, but returned the wrong store context. The known control product showed Store 1631, ZIP 23666 and SHIPPING, while the Art Sets listing showed Store 5867 without verified PICKUP. Both were rejected. The test used 20.47 MB and cost $0.15. I stopped there and did not start a full paid collection.
+
 The safeguard, Azure and ledger evidence is linked from this checkpoint:
 https://github.com/RuddiRodriguez/walmart-azure-scraper/blob/3281e6a/docs/CLIENT_REVIEW_CHECKPOINT_20261030.md
 
