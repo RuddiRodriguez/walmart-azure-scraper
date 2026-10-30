@@ -1,6 +1,6 @@
 # Smallest paid transport proposal — 30 October 2026
 
-Status: proposal and offline wiring only. No Oxylabs credentials used. No paid request made.
+Status: executed on 30 October 2026. See `docs/OXYLABS_BOUNDED_RESULT.md`.
 
 ## Recommendation
 
@@ -77,6 +77,14 @@ minimum purchase or subscription. Confirm checkout price before purchase because
 - Stop and report failure if store proof is missing, drift repeats, or the listing remains blocked.
 - Do not move to Web Scraper API automatically. Assess that larger adapter only if the residential
   proxy check fails and the client still wants another paid method.
+
+## Result
+
+The proxy location check reached Bentonville/ZIP 72712, but Walmart's store banner did not load.
+The initial sticky session and one fresh-session retry both stopped before collection. No listing or
+product response was accepted, and no production output was published. The provider dashboard
+reported 14.38 MB, 55 total proxy requests and $0 displayed spending. This paid transport did not
+pass the gate for a full collection.
 
 ## Official sources checked
 

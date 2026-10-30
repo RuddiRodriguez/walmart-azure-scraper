@@ -1,0 +1,21 @@
+{
+  "target": 3,
+  "minimum_per_category": 1,
+  "limits": {
+    "product_requests": 8,
+    "listing_requests": 1,
+    "seconds": 900
+  },
+  "categories": [
+    {
+      "category": "Art Supplies",
+      "required_root": "https://www.walmart.com/cp/art-supplies/5899871",
+      "urls": [
+        "https://www.walmart.com/browse/arts-crafts-sewing/art-sets/1334134_5899871_7148292"
+      ]
+    }
+  ],
+  "maximum_ordinary_failures": 2,
+  "body_limit_bytes": 104857600,
+  "scope": "Paid residential transport diagnostic for Store 100, ZIP 72712, PICKUP. Review evidence only; never production publication."
+}

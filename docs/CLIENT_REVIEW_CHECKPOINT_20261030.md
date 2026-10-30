@@ -18,14 +18,18 @@ coverage or a proven transport remedy.
    evidence that they are outside the required category ancestry, and 9 remain unresolved page
    types. Blocked and loading pages are not treated as empty categories.
 
+7. The bounded Oxylabs residential-proxy test is complete. The proxy reached Bentonville/ZIP
+   72712, but Walmart's store banner did not load in either the initial session or one fresh-session
+   retry. Both attempts stopped before any listing or product was accepted.
+
 ## Still open
 
 - Full coverage: 780 pages are pending, 216 failed pages need retry, 9 failed page types and 9
   navigation pages remain unresolved.
 - Genuine promotional examples: the expanded review found no qualifying example. This remains an
   honest zero-result, not a completed positive-example requirement.
-- Paid transport validation: provider credentials and paid usage are not available in this package.
-  The smallest bounded proposal and offline proxy wiring are complete. No paid request has been made.
+- A reliable transport for the final full collection is still open. The first paid residential-proxy
+  test did not pass, so starting an uncapped collection would not be responsible.
 
 ## Evidence
 
@@ -36,11 +40,11 @@ coverage or a proven transport remedy.
 - Offer review: `evidence/expanded-offers-20261028/`
 - Smallest paid transport proposal: `docs/OXYLABS_BOUNDED_PROPOSAL.md`
 - Offline proxy wiring check: `evidence/transport-proposal-20261030/offline-check.json`
+- Bounded paid-transport result: `evidence/oxylabs-bounded-20261030/RESULT.json`
 
 ## Timing and dependencies
 
 - Local safeguard, evidence and ledger work: complete on 30 October.
-- Bounded paid transport check: about 15 minutes of requests plus one hour for evidence review after
-  working provider credentials exist.
-- Remaining coverage: estimated 18–30 collection hours plus 4–8 review hours if the bounded
-  transport check is stable. No responsible completion date can be given before that check.
+- Bounded paid transport check: complete on 30 October; it did not pass.
+- Remaining coverage: blocked on a reliable transport decision. The earlier 18–30 collection-hour
+  estimate does not apply until a transport passes the same store checks.
