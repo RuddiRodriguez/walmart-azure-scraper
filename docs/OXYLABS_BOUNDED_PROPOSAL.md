@@ -83,7 +83,7 @@ minimum purchase or subscription. Confirm checkout price before purchase because
 The proxy location check reached Bentonville/ZIP 72712, but Walmart's store banner did not load.
 The initial sticky session and one fresh-session retry both stopped before collection. No listing or
 product response was accepted, and no production output was published. The provider dashboard
-reported 14.38 MB, 55 total proxy requests and $0 displayed spending. This paid transport did not
+reported 14.38 MB, 55 total proxy requests and $0.09 displayed spending. This paid transport did not
 pass the gate for a full collection.
 
 ## Official sources checked

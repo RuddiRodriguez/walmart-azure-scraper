@@ -50,7 +50,7 @@
   "provider_usage_after_test": {
     "traffic_mb": 14.38,
     "requests": 55,
-    "dashboard_displayed_spending_usd": 0,
+    "dashboard_displayed_spending_usd": 0.09,
     "note": "Provider request count includes browser traffic and the location check; it is not the collector product-request count."
   },
   "conclusion": "The paid proxy reached the requested location, but it did not make Walmart collection usable. Both bounded sessions stopped before any listing or product was accepted. No production data was published and no full collection was started."

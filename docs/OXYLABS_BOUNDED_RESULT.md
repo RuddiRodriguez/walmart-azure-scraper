@@ -4,7 +4,7 @@ We tested the smallest paid transport change without changing the collector's st
 
 - Residential proxy targeted US ZIP 72712.
 - The provider location check reached Bentonville/72712.
-- Spending was limited to $1 per day and the dashboard displayed $0 spent after the test.
+- Spending was limited to $1 per day and the dashboard displayed $0.09 spent after the test.
 - The first Walmart session stopped because the store banner did not load.
 - One fresh proxy session retry stopped for the same reason.
 - No listing or product response was accepted, and no production output was published.
