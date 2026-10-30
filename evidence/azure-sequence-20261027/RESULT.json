@@ -61,6 +61,11 @@
     "east_us_2_environment_deleted": true,
     "remaining_azure_resources": 0
   },
+  "public_evidence": {
+    "events_and_counts": "evidence/azure-sequence-20261027/EVENTS.json",
+    "commands": "evidence/azure-sequence-20261027/COMMANDS.md",
+    "cleanup_receipt": "evidence/azure-sequence-20261027/CLEANUP_RECEIPT.json"
+  },
   "privacy": {
     "raw_html_included": false,
     "cookies_included": false,

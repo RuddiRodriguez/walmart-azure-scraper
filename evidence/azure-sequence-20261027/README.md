@@ -15,5 +15,6 @@ not make collection reliable. They do not prove that Azure IP reputation alone c
 No invalid data was published. Both Azure environments were deleted, and the cleanup check found
 zero remaining resources.
 
-The public [result](RESULT.json) contains reviewed metadata only. Raw pages, cookies, browser
-sessions and credentials are not included.
+The public package now contains the reviewed result, a privacy-safe event sequence and counts,
+the command form used for the diagnostic, and a sanitized cleanup receipt. Raw pages, cookies,
+browser sessions, account details and credentials are not included.

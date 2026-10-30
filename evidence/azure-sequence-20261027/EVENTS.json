@@ -1,0 +1,36 @@
+{
+  "scope": "Privacy-reviewed Azure browser events. No raw HTML, cookies, sessions, IP addresses or credentials.",
+  "west_us_2": {
+    "started_utc": "2026-10-27T10:25:03.290470+00:00",
+    "finished_utc": "2026-10-27T10:25:52.397259+00:00",
+    "runtime_seconds": 49.107,
+    "events": [
+      {"event": "homepage_loaded", "seconds": 7.63},
+      {"event": "store_selected", "store_id": "100", "zip": "72712", "fulfillment": "PICKUP"},
+      {"event": "control_product_loaded", "product_id": "47428850", "seconds": 6.44},
+      {"event": "art_sets_listing_loaded", "seconds": 15.92, "result": "walmart_block_page"}
+    ],
+    "counts": {"product_requests": 1, "listing_requests": 1, "candidate_products_reached": 0}
+  },
+  "east_us_2": {
+    "started_utc": "2026-10-27T10:38:34.551410+00:00",
+    "finished_utc": "2026-10-27T10:39:19.932929+00:00",
+    "runtime_seconds": 45.382,
+    "events": [
+      {"event": "homepage_loaded", "seconds": 5.49},
+      {"event": "store_selected", "store_id": "100", "zip": "72712", "fulfillment": "PICKUP"},
+      {"event": "control_product_loaded", "product_id": "47428850", "seconds": 5.5},
+      {"event": "art_sets_listing_loaded", "seconds": 15.76, "result": "walmart_block_page"}
+    ],
+    "counts": {"product_requests": 1, "listing_requests": 1, "candidate_products_reached": 0}
+  },
+  "total_counts": {
+    "browser_sessions": 3,
+    "product_requests": 2,
+    "listing_requests": 2,
+    "valid_control_products": 2,
+    "blocked_listings": 2,
+    "candidate_products_reached": 0,
+    "published_products": 0
+  }
+}

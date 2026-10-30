@@ -1,0 +1,39 @@
+{
+  "scope": "Sanitized local Azure CLI cleanup receipt from 27 October 2026",
+  "commands": [
+    {
+      "local_time": "2026-10-27T11:39:38+01:00",
+      "command": "az vm deallocate --resource-group <redacted> --name <redacted>",
+      "exit_code": 0,
+      "private_log_sha256": "aa6e454a60c82a6a7d1f04b8f6e8a74550fc236043e7b9130214df3c158d1180"
+    },
+    {
+      "local_time": "2026-10-27T11:40:11+01:00",
+      "command": "az group delete --name <redacted> --yes --no-wait",
+      "exit_code": 0,
+      "private_log_sha256": "16146044a66d7917486cd509a6a4736c7c47ab102e0f65e57986780a1b45df2c"
+    },
+    {
+      "local_time": "2026-10-27T11:40:26+01:00",
+      "command": "az group wait --name <redacted> --deleted --interval <redacted> --timeout <redacted>",
+      "exit_code": 0,
+      "private_log_sha256": "9b2e0e81c9d08d85875ef744a8f735b3078fe06f023e56ee1c3770eaed4da786"
+    },
+    {
+      "local_time": "2026-10-27T11:43:17+01:00",
+      "command": "az group exists --name <redacted>",
+      "exit_code": 0,
+      "private_log_sha256": "1cbc72bd198d08b4d7a5f51a6876f16a35b58c80a4db1df81c1c7d039c1c4ddd"
+    }
+  ],
+  "reviewed_result": {
+    "west_us_2_resource_group_deleted": true,
+    "east_us_2_resource_group_deleted": true,
+    "remaining_azure_resources": 0
+  },
+  "limits": [
+    "The private CLI logs are not published because they belong to the private Azure account context.",
+    "The command exit codes prove successful command execution; the recorded reviewed result supplies the final resource count.",
+    "A read-only refresh on 30 October was blocked by the account's current login security policy."
+  ]
+}

@@ -752,6 +752,13 @@ Listing/category review only. Pending/failed/scope-unverified remain open. Raw b
 - Offline runner-flow checks: 21 passed. Package-size checks: 8 passed. No retailer requests were made for this milestone.
 - Public evidence: `evidence/client-review-20261029-safeguards/RESULT.json`.
 
+## 2026-10-30 Azure evidence expansion
+
+- Added privacy-safe event sequences, request counts, command forms and the available Azure CLI cleanup receipt.
+- No raw HTML, cookies, browser sessions, account details, IP addresses or credentials were published.
+- The reviewed 27 October result remains unchanged: two valid control products, two blocked listings, zero candidate products reached and zero published products.
+- A new read-only cleanup refresh was attempted on 30 October but Azure rejected the existing login under the account's current security policy. No Azure resource was created or changed.
+
 ## Coverage continuation result
 {"phase": "walking", "batches": 12, "pages_attempted": 960, "finished": false, "max_seconds": 43200, "max_pages": 2000, "queue_counts": {"failed": 49, "navigation_scope_unverified": 9, "outside_scope": 1, "pending": 2275, "reviewed": 978}, "scope_counts": {"brief_exclusion": 2, "outside_required_ancestry": 2, "parent_scope_unverified": 104, "scope_confirmed_by_response": 7012, "scope_unverified": 296, "scoped_queue": 5282}, "latest_batch": "batch-00957-1793041686", "seconds": 17958.6, "deadline_unix": 1793068609.162635, "audit_started_unix": 1793039861.047031, "accounted_batches": ["batch-00797-1793037889", "batch-00877-1793039393", "batch-00957-1793041686"]}
 Listing/category review only. Pending/failed/scope-unverified remain open. Raw bodies/native pages private.
