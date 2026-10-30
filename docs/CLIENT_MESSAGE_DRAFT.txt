@@ -2,33 +2,27 @@ UNSENT DRAFT — 30 October 2026, Amsterdam time
 
 Hi Darren,
 
-Thank you for the detailed review. I worked through the new corrections in the order you suggested. The current review version is here:
-https://github.com/RuddiRodriguez/walmart-azure-scraper/tree/945a669
+I worked through the safeguards and evidence corrections from your 29 October review. Current reviewed source and evidence are at commit f1dd4174f038184d102405e6d21c56adf34e6b97:
+https://github.com/RuddiRodriguez/walmart-azure-scraper/tree/f1dd4174f038184d102405e6d21c56adf34e6b97
 
-The location safeguard is corrected. Once a run sees a location mismatch, that run cannot publish, even if a retry is correct or the run is resumed. The corrected response is kept only as diagnostic evidence. A clean new run is required before publication.
+The publication rule is now strict: any location mismatch blocks that entire run, including after resume. A corrected retry is kept only as diagnostic evidence, and publication requires a clean new run. Product timeouts, unsafe responses and validation failures now remain pending and block publication. Retained history keeps its original dates but no longer counts toward fresh product or category yield.
 
-Failed products now stay pending. Timeouts, unsafe store responses and validation failures block publication and are retried after resume. Retained historical products remain available with their original dates, but they no longer count toward the fresh-run product or category minimums.
+Package-size handling now keeps the complete source wording for counts, multipacks and forms such as “8 lb, 4 Pack,” “72 Count,” “(6 Pack) 1 Gallon” and “2 x 16 oz.” Approximate and variable-weight wording is rejected rather than converted into a made-up size.
 
-Package sizes now keep the complete source wording, including examples such as “8 lb, 4 Pack,” “72 Count,” “(6 Pack) 1 Gallon” and “2 x 16 oz.” Average, approximate and variable-weight wording is rejected.
+I also completed the failure ledger. Current state remains 4,166 reviewed pages, 780 pending, 229 failed and 9 unresolved navigation pages. Of the 229 failures, 216 are retryable, 4 have response evidence showing they are outside the required category ancestry, and 9 remain unresolved page types. Blocked or loading pages are not counted as empty categories. Full coverage is therefore still incomplete.
 
-I also completed the remaining failure ledger. The saved queue still has 4,166 reviewed pages, 780 pending, 229 failed and 9 navigation pages unresolved. Of the 229 failures, 216 are retryable, 4 have response evidence showing ancestry outside the required category, and 9 remain unresolved page types. Blocked or loading pages are not counted as empty categories. Full coverage is still open, so I am not presenting this as a completed catalog.
+The offer review remains an honest zero-result. The 55-product, 11-search check found no qualifying volume or digital offer, so I left the offer fields empty and did not replace them with financing, cashback, Walmart Cash, Rollback or Clearance.
 
-The genuine-offer result also remains open. The 55-product, 11-search review found no qualifying volume or digital offer, so I kept those fields empty and did not substitute financing, cashback, Walmart Cash, Rollback or Clearance.
+The Azure evidence now includes the sanitized event order, commands, request counts, runtime and cleanup result. Store 100/PICKUP control products passed, but the following Art Sets listing was blocked in both tested regions. This shows a sequence reliability problem, not proof that Azure IP reputation alone caused it.
 
-The Azure folder now includes the sanitized event order, exact request counts and runtime, command forms and the available cleanup receipt. The two control products passed for Store 100/PICKUP, while the following Art Sets listing was blocked in both regions. This shows a sequence-specific reliability problem, not proof that Azure IP reputation alone caused it.
+I then tested the smallest transport alternatives without weakening the store checks. Oxylabs residential proxy reached Bentonville but Walmart did not load the store banner. Oxylabs Web Unblocker loaded the pages but returned wrong stores. Scrape.do returned Store 100 and price without explicit PICKUP on one endpoint, while its PICKUP search silently changed to Store 3479; support is checking whether direct Store 100 targeting is available. Bright Data accepted one Store 100 control input but Walmart presented a CAPTCHA and it returned zero product records. Every invalid or incomplete response was rejected, and no uncapped run was started.
 
-I also ran the smallest paid transport check with an Oxylabs residential proxy. The proxy location check reached Bentonville/ZIP 72712 and the account had a $1 daily limit. However, Walmart's store banner did not load in the first session or in one fresh-session retry. Both attempts stopped before any listing or product was accepted, and nothing was published. The dashboard reported 14.38 MB, 55 total proxy requests and $0.09 spent. This means the residential proxy did not pass the safety gate for a full collection.
+Checkpoint and evidence links:
+https://github.com/RuddiRodriguez/walmart-azure-scraper/blob/f1dd4174f038184d102405e6d21c56adf34e6b97/docs/CLIENT_REVIEW_CHECKPOINT_20261030.md
 
-I then tested Web Unblocker as the closest small alternative. It loaded both Walmart pages without a challenge, but returned the wrong store context. The known control product showed Store 1631, ZIP 23666 and SHIPPING, while the Art Sets listing showed Store 5867 without verified PICKUP. Both were rejected. The test used 20.47 MB and cost $0.15. I stopped there and did not start a full paid collection.
+The local safeguard, package-size, Azure and failure-ledger corrections are complete. Still open: a reliable Store 100/PICKUP transport, 780 pending pages, 216 retryable failures, 18 unresolved paths, the final uncapped collection, and a real qualifying offer example if one becomes available.
 
-I also made one fresh direct-connection coverage check. It stopped before the first page because the Walmart store banner showed the wrong location. The saved queue remains unchanged at 4,166 reviewed, 780 pending, 229 failed and 9 navigation pages unresolved.
-
-I then tried restoring the earlier working setup with a private persistent browser profile. Walmart returned Store 100 in the store search, but did not activate the selection or create the location cookie. The banner remained on Sacramento, so I stopped before touching the coverage queue. The previous 4,166 reviewed-page evidence remains intact.
-
-The safeguard, Azure and ledger evidence is linked from this checkpoint:
-https://github.com/RuddiRodriguez/walmart-azure-scraper/blob/945a669/docs/CLIENT_REVIEW_CHECKPOINT_20261030.md
-
-Local safeguard, evidence and ledger work is complete, and the bounded paid test is now documented. Full coverage is still blocked because this transport did not provide reliable store context. I do not recommend starting an uncapped paid run until we agree on a different transport approach that first passes the same small safety check.
+The immediate dependency is a transport that passes the small Store 100/PICKUP gate. After that passes, my estimate is 18–30 collection hours plus 3–5 hours for failed-page reconciliation, final checks and packaging. Until that gate passes, giving a responsible completion date would be misleading.
 
 Thanks,
 Ruddi
