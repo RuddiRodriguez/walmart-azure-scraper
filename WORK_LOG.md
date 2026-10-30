@@ -759,6 +759,15 @@ Listing/category review only. Pending/failed/scope-unverified remain open. Raw b
 - The reviewed 27 October result remains unchanged: two valid control products, two blocked listings, zero candidate products reached and zero published products.
 - A new read-only cleanup refresh was attempted on 30 October but Azure rejected the existing login under the account's current security policy. No Azure resource was created or changed.
 
+## 2026-10-30 coverage failure ledger
+
+- Classified the saved queue offline with no retailer requests.
+- Current queue: 4,166 reviewed, 780 pending, 229 failed, 9 navigation-scope unresolved, 137 cross-link exclusions and 1 outside-scope page.
+- Failed pages: 216 retryable, 4 response-confirmed exclusions and 9 unresolved page types.
+- Empty-title, loading, store-mismatch and blocked pages remain retryable; none are counted as legitimate empty categories.
+- Full coverage and publication remain blocked while pending, retryable and unresolved work remains.
+- Public evidence: `evidence/coverage-failure-ledger-20261030/`.
+
 ## Coverage continuation result
 {"phase": "walking", "batches": 12, "pages_attempted": 960, "finished": false, "max_seconds": 43200, "max_pages": 2000, "queue_counts": {"failed": 49, "navigation_scope_unverified": 9, "outside_scope": 1, "pending": 2275, "reviewed": 978}, "scope_counts": {"brief_exclusion": 2, "outside_required_ancestry": 2, "parent_scope_unverified": 104, "scope_confirmed_by_response": 7012, "scope_unverified": 296, "scoped_queue": 5282}, "latest_batch": "batch-00957-1793041686", "seconds": 17958.6, "deadline_unix": 1793068609.162635, "audit_started_unix": 1793039861.047031, "accounted_batches": ["batch-00797-1793037889", "batch-00877-1793039393", "batch-00957-1793041686"]}
 Listing/category review only. Pending/failed/scope-unverified remain open. Raw bodies/native pages private.

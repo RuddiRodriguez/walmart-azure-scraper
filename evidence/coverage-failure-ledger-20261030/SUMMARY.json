@@ -1,0 +1,58 @@
+{
+  "mode": "Offline classification of the saved coverage queue; no retailer requests",
+  "queue_counts": {
+    "reviewed": 4166,
+    "failed": 229,
+    "navigation_scope_unverified": 9,
+    "pending": 780,
+    "cross_link_excluded": 137,
+    "outside_scope": 1
+  },
+  "failed_classification_counts": {
+    "retryable_failure": 216,
+    "unresolved_page_type": 9,
+    "response_confirmed_exclusion": 4
+  },
+  "failed_reason_counts": {
+    "retryable_failure": {
+      "category_identifier_missing_or_mismatched": 55,
+      "empty_title_or_loading": 131,
+      "store_banner_mismatch": 21,
+      "storage_guard": 2,
+      "browser_encoding_error": 1,
+      "browser_fetch_failure": 1,
+      "runtime_limit": 1,
+      "listing_store_pickup_missing": 1,
+      "evidence_capture_failed": 1,
+      "listing_store_mismatch": 1,
+      "page_latency_limit": 1
+    },
+    "unresolved_page_type": {
+      "page_type_unresolved": 9
+    },
+    "response_confirmed_exclusion": {
+      "outside_required_response_ancestry": 4
+    }
+  },
+  "pending_by_category": {
+    "Beauty": 41,
+    "Food": 559,
+    "Health & Wellness": 5,
+    "Household Essentials": 5,
+    "Personal Care": 23,
+    "Pets": 147
+  },
+  "navigation_scope_unverified": 9,
+  "full_coverage_complete": false,
+  "publication_allowed": false,
+  "rules": {
+    "retryable_failure": "The page remains required and must be tried again or resolved by approved transport evidence.",
+    "response_confirmed_exclusion": "The response identified category ancestry outside the requested required root.",
+    "unresolved_page_type": "The response did not prove a listing, child navigation, or a legitimate empty category."
+  },
+  "limits": [
+    "Blocked, loading or empty-title pages are not counted as empty categories.",
+    "Pending pages have not been reviewed and remain open.",
+    "This ledger classifies saved evidence; it does not complete coverage."
+  ]
+}
