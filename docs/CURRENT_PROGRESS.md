@@ -1,7 +1,7 @@
 # Final local delivery checkpoint
 
-Updated: 29 October 2026, Amsterdam time
-Frozen version: `review-20261029-final-azure`
+Updated: 30 October 2026, Amsterdam time
+Current review branch: `main`
 
 This is the final local review checkpoint prepared for the client. It does not claim complete production coverage.
 
@@ -14,6 +14,8 @@ Client run instructions: [simple step-by-step guide](RUN_GUIDE.md).
 3. Latest-version recovery test: 132 products, 12 per required category, forced stop after 30 products, successful resume, no duplicates: [evidence](../evidence/latest-large-recovery-20261027/).
 4. Separate latest-version repeat: 132 products, 125 common IDs, no price differences among common products: [evidence](../evidence/latest-large-repeat-20261027/).
 5. Expanded genuine-offer review: 55 distinct products across 11 searches. No qualifying offer found; no example fabricated: [evidence](../evidence/expanded-offers-20261028/).
+6. New publication, pending-product, fresh-yield and package-size safeguards passed offline checks: [evidence](../evidence/client-review-20261029-safeguards/RESULT.json).
+7. Azure evidence now includes sanitized events, request counts, commands and cleanup receipts: [evidence](../evidence/azure-sequence-20261027/).
 
 ## Full coverage — incomplete and frozen
 
@@ -31,7 +33,9 @@ The project did reach more than 500 products in two earlier controlled demonstra
 ## Remaining production gaps
 
 1. Reconcile the 780 pending pages.
-2. Review or document the 229 failed pages and 9 unresolved navigation pages.
+2. Retry 216 failed pages. Four failures have response-confirmed exclusion evidence. Nine failed page types and nine navigation pages remain unresolved: [ledger](../evidence/coverage-failure-ledger-20261030/SUMMARY.json).
 3. Produce a new full-catalog export only after those queues are exhausted.
 
 Two bounded Azure diagnostics are included. The Store 100/PICKUP control passed in West US 2 and East US 2, but the Art Sets listing was blocked in both regions. Reliable Azure collection remains unresolved. Nothing has been sent or submitted to the client by this repository.
+
+Current point-by-point client checkpoint: [30 October review](CLIENT_REVIEW_CHECKPOINT_20261030.md).
