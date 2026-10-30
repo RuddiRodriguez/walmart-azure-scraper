@@ -1,0 +1,52 @@
+{
+  "test": "Scrape.do Walmart Store 100 bounded transport test",
+  "time_amsterdam": "2026-10-30T10:04:14+01:00",
+  "request_limit": 3,
+  "requests_made": 3,
+  "target": {
+    "store_id": "100",
+    "postal_code": "72712",
+    "fulfillment": "PICKUP",
+    "control_item_id": "47428850"
+  },
+  "results": [
+    {
+      "request": "store-scoped control product",
+      "http_status": 502,
+      "result": "plugin_failure",
+      "accepted": false,
+      "body_sha256": "7298515b7011b12cd4cac68b06214a5402bb2db501ed9f94a4cb38192a2afda7",
+      "body_bytes": 167
+    },
+    {
+      "request": "structured product with explicit store 100",
+      "http_status": 400,
+      "result": "store_100_not_supported_by_provider",
+      "accepted": false,
+      "body_sha256": "c6c89e03117e23eacd2b79531f285cb959edb8b3197853ac03965e38c5f1b6eb",
+      "body_bytes": 116
+    },
+    {
+      "request": "structured product with ZIP 72712",
+      "http_status": 200,
+      "result": "correct_store_and_control_product_but_no_explicit_pickup_field",
+      "accepted": false,
+      "provider_store_header": "100",
+      "store_id": "100",
+      "postal_code": "72712",
+      "city": "Bentonville",
+      "state": "AR",
+      "item_id": "47428850",
+      "price": 3.97,
+      "currency": "USD",
+      "availability": "OUT_OF_STOCK",
+      "pickup_proof": "missing",
+      "body_sha256": "993522f165fece9d5625f084be55bd09a2d356277a8bf673f0af8f0d200db99b",
+      "body_bytes": 3244
+    }
+  ],
+  "credits_used": 10,
+  "credits_remaining": 990,
+  "conclusion": "partial_success_not_step_1_completion",
+  "blocker": "The successful response proved Store 100, ZIP 72712, item identity, and price, but did not expose an explicit PICKUP field. Full collection must not resume from this result."
+}
