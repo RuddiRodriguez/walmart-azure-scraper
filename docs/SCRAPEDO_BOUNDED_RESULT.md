@@ -16,10 +16,25 @@ The response did not contain an explicit PICKUP field. It therefore does not mee
 
 Ten of 1,000 free credits were used. No full collection ran. No returned product was published.
 
+## One-request Search follow-up
+
+The Search endpoint returned explicit pickup fulfillment, but silently changed the location:
+
+- Requested ZIP: `72712`
+- Returned store: `3479`
+- Returned ZIP: `72756`
+- Returned city: Rogers, Arkansas
+- Control item: `47428850`
+- Returned price: `$3.95`
+
+This response was rejected because it did not represent Store 100. This also proves that requesting ZIP 72712 alone does not reliably pin Scrape.do's Search endpoint to Store 100.
+
+The follow-up used another 10 credits. Total usage is 20 credits, with 980 remaining.
+
 Sanitized machine-readable evidence: `evidence/scrapedo-bounded-20261030/RESULT.json`.
 
 Raw responses remain private and are represented by SHA-256 hashes in the evidence file. API token remains in macOS Keychain and is not stored in Git.
 
 ## Status
 
-Step 1 remains in progress. Next test must obtain explicit PICKUP proof while retaining Store 100 and ZIP 72712.
+Step 1 remains in progress. Scrape.do cannot currently meet the acceptance rule: its Product endpoint identified Store 100 but omitted PICKUP, while its Search endpoint included PICKUP but returned Store 3479. Next supported route is provider support enabling direct Store 100 selection, or another transport that can prove Store 100 and PICKUP in the same response.

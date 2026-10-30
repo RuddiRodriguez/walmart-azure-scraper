@@ -45,8 +45,30 @@
       "body_bytes": 3244
     }
   ],
-  "credits_used": 10,
-  "credits_remaining": 990,
+  "follow_up_search_test": {
+    "request_limit": 1,
+    "requests_made": 1,
+    "http_status": 200,
+    "result": "explicit_pickup_but_wrong_store",
+    "accepted": false,
+    "requested_postal_code": "72712",
+    "returned_store_id": "3479",
+    "returned_postal_code": "72756",
+    "returned_city": "Rogers",
+    "returned_state": "AR",
+    "item_id": "47428850",
+    "price": 3.95,
+    "currency": "USD",
+    "availability": "IN_STOCK",
+    "fulfillment": [
+      "delivery",
+      "pickup"
+    ],
+    "body_sha256": "f41965cde50ea81e36e3ec9b6caf69ed9a5b2d50dfd3799a852290378cc08cf9",
+    "body_bytes": 707
+  },
+  "credits_used": 20,
+  "credits_remaining": 980,
   "conclusion": "partial_success_not_step_1_completion",
-  "blocker": "The successful response proved Store 100, ZIP 72712, item identity, and price, but did not expose an explicit PICKUP field. Full collection must not resume from this result."
+  "blocker": "The product response proved Store 100 and ZIP 72712 but omitted explicit PICKUP. The search response included PICKUP but silently changed the location to Store 3479 and ZIP 72756. Full collection must not resume from either result."
 }
