@@ -3,7 +3,7 @@ UNSENT DRAFT — 30 October 2026, Amsterdam time
 Hi Darren,
 
 Thank you for the detailed review. I worked through the new corrections in the order you suggested. The current review version is here:
-https://github.com/RuddiRodriguez/walmart-azure-scraper/tree/0dddef8
+https://github.com/RuddiRodriguez/walmart-azure-scraper/tree/945a669
 
 The location safeguard is corrected. Once a run sees a location mismatch, that run cannot publish, even if a retry is correct or the run is resumed. The corrected response is kept only as diagnostic evidence. A clean new run is required before publication.
 
@@ -26,7 +26,7 @@ I also made one fresh direct-connection coverage check. It stopped before the fi
 I then tried restoring the earlier working setup with a private persistent browser profile. Walmart returned Store 100 in the store search, but did not activate the selection or create the location cookie. The banner remained on Sacramento, so I stopped before touching the coverage queue. The previous 4,166 reviewed-page evidence remains intact.
 
 The safeguard, Azure and ledger evidence is linked from this checkpoint:
-https://github.com/RuddiRodriguez/walmart-azure-scraper/blob/0dddef8/docs/CLIENT_REVIEW_CHECKPOINT_20261030.md
+https://github.com/RuddiRodriguez/walmart-azure-scraper/blob/945a669/docs/CLIENT_REVIEW_CHECKPOINT_20261030.md
 
 Local safeguard, evidence and ledger work is complete, and the bounded paid test is now documented. Full coverage is still blocked because this transport did not provide reliable store context. I do not recommend starting an uncapped paid run until we agree on a different transport approach that first passes the same small safety check.
 
