@@ -87,7 +87,9 @@ def select_store(sb, store, settings, log, output):
     sb.type('#zip-code-or-city-state', store['zip'])
     sb.press_keys('#zip-code-or-city-state', '\n')
     sb.sleep(3)
-    sb.click('input[id^="' + str(store['id']) + '-"]')
+    store_label = 'label[for^="' + str(store['id']) + '-"]'
+    store_radio = 'input[id^="' + str(store['id']) + '-"]'
+    sb.click(store_label if sb.is_element_visible(store_label) else store_radio)
     sb.click('button:contains("Save")')
     sb.sleep(3)
     if not sb.is_element_visible('#intent-id1'):
