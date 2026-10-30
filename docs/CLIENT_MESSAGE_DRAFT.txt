@@ -23,6 +23,8 @@ I then tested Web Unblocker as the closest small alternative. It loaded both Wal
 
 I also made one fresh direct-connection coverage check. It stopped before the first page because the Walmart store banner showed the wrong location. The saved queue remains unchanged at 4,166 reviewed, 780 pending, 229 failed and 9 navigation pages unresolved.
 
+I then tried restoring the earlier working setup with a private persistent browser profile. Walmart returned Store 100 in the store search, but did not activate the selection or create the location cookie. The banner remained on Sacramento, so I stopped before touching the coverage queue. The previous 4,166 reviewed-page evidence remains intact.
+
 The safeguard, Azure and ledger evidence is linked from this checkpoint:
 https://github.com/RuddiRodriguez/walmart-azure-scraper/blob/0dddef8/docs/CLIENT_REVIEW_CHECKPOINT_20261030.md
 

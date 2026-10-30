@@ -1,0 +1,29 @@
+{
+  "date_utc": "2026-10-30",
+  "goal": "Restore the previous Store 100/PICKUP browser session and resume the saved coverage queue.",
+  "saved_queue": {
+    "reviewed": 4166,
+    "pending": 780,
+    "failed": 229,
+    "navigation_scope_unresolved": 9,
+    "changed_by_recovery_attempt": false
+  },
+  "confirmed_previous_state": {
+    "store_id": "100",
+    "store_name": "Bentonville S Walton Blvd Supercenter",
+    "address": "406 S WALTON BLVD, Bentonville, AR 72712",
+    "fulfillment": "PICKUP",
+    "evidence": "Prior completed batches contain selected-store.json with matching retailer banner."
+  },
+  "recovery_attempt": {
+    "persistent_private_browser_profile_added": true,
+    "store_search_found_store_100": true,
+    "store_100_radio_became_selected": false,
+    "location_cookie_names_after_save": [],
+    "observed_banner_after_save": "Pickup or delivery? 95829 Sacramento - Sacramento Supercenter",
+    "coverage_pages_attempted": 0,
+    "coverage_pages_changed": 0
+  },
+  "decision": "Stopped before coverage. Store 100/PICKUP was not established, so resuming the saved queue would be unsafe.",
+  "claim_boundary": "The previous queue and accepted evidence remain intact. Session restoration is not fixed."
+}
