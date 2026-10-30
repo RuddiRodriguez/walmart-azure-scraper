@@ -29,6 +29,14 @@ coverage or a proven transport remedy.
 10. The saved coverage queue was tested with a private persistent browser profile. Walmart returned
     Store 100 in the search results, but its selection control did not become active and no location
     cookie was created. The banner remained Sacramento, so the run stopped with zero queue changes.
+11. A bounded Scrape.do test found two incompatible partial results. Its Product endpoint returned
+    Store 100, ZIP 72712, the control product and local price but no explicit PICKUP field. Its Search
+    endpoint returned PICKUP but silently changed the location to Store 3479 and ZIP 72756. Both
+    responses were rejected. Scrape.do support has the redacted request configuration and is checking
+    whether direct Store 100 targeting is supported.
+12. One bounded Bright Data control input returned zero product records because Walmart presented a
+    CAPTCHA. It did not prove Store 100, ZIP 72712, PICKUP and price together. No further Bright Data
+    collection was started.
 
 ## Still open
 
@@ -37,8 +45,8 @@ coverage or a proven transport remedy.
 - Genuine promotional examples: the expanded review found no qualifying example. This remains an
   honest zero-result, not a completed positive-example requirement.
 - A reliable transport for the final full collection is still open. The residential proxy did not
-  load store context; Web Unblocker loaded pages but returned the wrong stores. Starting an uncapped
-  collection would not be responsible.
+  load store context; Web Unblocker and Scrape.do Search returned wrong stores; Bright Data was
+  blocked before product collection. Starting an uncapped collection would not be responsible.
 
 ## Evidence
 
@@ -53,10 +61,15 @@ coverage or a proven transport remedy.
 - Web Unblocker result: `evidence/web-unblocker-bounded-20261030/RESULT.json`
 - Direct coverage safety check: `evidence/point3-coverage-queue-20261026/batch-04542-1793345218/`
 - Store-session recovery: `evidence/store-session-recovery-20261030/RESULT.json`
+- Scrape.do bounded result: `evidence/scrapedo-bounded-20261030/RESULT.json`
+- Bright Data bounded result: `evidence/brightdata-bounded-20261030/RESULT.json`
 
 ## Timing and dependencies
 
 - Local safeguard, evidence and ledger work: complete on 30 October.
 - Bounded paid transport check: complete on 30 October; it did not pass.
-- Remaining coverage: blocked on a reliable transport decision. The earlier 18–30 collection-hour
-  estimate does not apply until a transport passes the same store checks.
+- Additional Scrape.do and Bright Data checks: complete on 30 October; neither passed the full
+  Store 100/PICKUP acceptance rule. Scrape.do support response is pending.
+- Remaining coverage: blocked on a reliable transport. After one transport passes the bounded
+  Store 100/PICKUP gate, allow 18–30 collection hours plus 3–5 hours for failed-page reconciliation,
+  final checks and packaging. This is conditional, not a completion date.

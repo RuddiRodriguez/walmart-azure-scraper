@@ -20,6 +20,13 @@ Final local summary: [`docs/CURRENT_PROGRESS.md`](../docs/CURRENT_PROGRESS.md).
 | Expanded genuine-offer review | `expanded-offers-20261028/` |
 | Two bounded Azure diagnostics and cleanup | `azure-sequence-20261027/` |
 | Latest coverage ledger and completed batches | `point3-coverage-queue-20261026/` |
+| Coverage failure classification | `coverage-failure-ledger-20261030/` |
+| Publication, retry and fresh-yield safeguards | `client-review-20261029-safeguards/` |
+| Package-size behavior | `package-size-checks-20261030.json` |
+| Oxylabs residential test | `oxylabs-bounded-20261030/` |
+| Oxylabs Web Unblocker test | `web-unblocker-bounded-20261030/` |
+| Scrape.do Store 100 test | `scrapedo-bounded-20261030/` |
+| Bright Data Store 100 test | `brightdata-bounded-20261030/` |
 
 Evidence folders contain review-safe exports and their own hashes where applicable.
 
@@ -37,5 +44,6 @@ Full HTML responses, browser profiles, cookies, session state and unredacted cap
 - No qualifying genuine volume or digital discount offer was found in bounded live review.
 - Corrected re-fetch evidence does not prove one retry prevents future store drift.
 - Two bounded Azure diagnostics completed. The Store 100/PICKUP control passed in two regions, but the following Art Sets listing was blocked in both.
+- No tested transport has yet proved Store 100, ZIP 72712, PICKUP, product identity and local price together reliably enough for the final uncapped run.
 
 No client message or contest submission is performed by repository tooling.
