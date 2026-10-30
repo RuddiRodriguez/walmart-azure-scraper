@@ -743,6 +743,15 @@ Existing preserved coveragebatch and audit/resume handoff confirmed alive; no du
 {"phase": "resuming", "batches": 11, "pages_attempted": 880, "finished": false, "max_seconds": 43200, "max_pages": 2000, "queue_counts": {"failed": 46, "navigation_scope_unverified": 9, "outside_scope": 1, "pending": 2202, "reviewed": 901}, "scope_counts": {"brief_exclusion": 2, "outside_required_ancestry": 2, "parent_scope_unverified": 105, "scope_confirmed_by_response": 6336, "scope_unverified": 295, "scoped_queue": 5204}, "latest_batch": "batch-00877-1793039393", "seconds": 16267.7, "deadline_unix": 1793068609.162635, "audit_started_unix": 1793039861.047031, "accounted_batches": ["batch-00797-1793037889", "batch-00877-1793039393"]}
 Listing/category review only. Pending/failed/scope-unverified remain open. Raw bodies/native pages private.
 
+## 2026-10-30 client-review safeguard milestone
+
+- Added a permanent publication block after any location mismatch. A corrected retry remains diagnostic; only a clean new run can publish.
+- Failed product requests remain pending and are retried after resume. A timeout or unsafe response cannot become complete.
+- Fresh-run yield is validated separately from retained history.
+- Package-size text is preserved as written, including count and multipack expressions. Approximate or variable-weight wording is rejected.
+- Offline runner-flow checks: 21 passed. Package-size checks: 8 passed. No retailer requests were made for this milestone.
+- Public evidence: `evidence/client-review-20261029-safeguards/RESULT.json`.
+
 ## Coverage continuation result
 {"phase": "walking", "batches": 12, "pages_attempted": 960, "finished": false, "max_seconds": 43200, "max_pages": 2000, "queue_counts": {"failed": 49, "navigation_scope_unverified": 9, "outside_scope": 1, "pending": 2275, "reviewed": 978}, "scope_counts": {"brief_exclusion": 2, "outside_required_ancestry": 2, "parent_scope_unverified": 104, "scope_confirmed_by_response": 7012, "scope_unverified": 296, "scoped_queue": 5282}, "latest_batch": "batch-00957-1793041686", "seconds": 17958.6, "deadline_unix": 1793068609.162635, "audit_started_unix": 1793039861.047031, "accounted_batches": ["batch-00797-1793037889", "batch-00877-1793039393", "batch-00957-1793041686"]}
 Listing/category review only. Pending/failed/scope-unverified remain open. Raw bodies/native pages private.

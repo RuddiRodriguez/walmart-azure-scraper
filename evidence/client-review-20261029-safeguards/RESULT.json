@@ -1,0 +1,29 @@
+{
+  "checked_utc": "2026-10-30T06:31:00Z",
+  "scope": "Offline safeguard and package-size checks only; no retailer requests were made.",
+  "results": {
+    "permanent_location_mismatch_gate": "passed",
+    "failed_products_remain_pending": "passed",
+    "resume_retries_pending_products": "passed",
+    "fresh_yield_excludes_retained_history": "passed",
+    "full_package_size_text_preserved": "passed",
+    "approximate_package_size_text_rejected": "passed"
+  },
+  "checks": {
+    "runner_flow": "evidence/runner-flow-check.json",
+    "package_sizes": "evidence/package-size-checks-20261030.json"
+  },
+  "source_sha256": {
+    "scrape.py": "5992a2e07b0f8d995a63d0b26efd332aca52893d5f0d3689cda0fbc14941e8cc",
+    "storage.py": "d744ca6f721dc0d18f610db93df29ca44c1abb76376b9a3b27dd36ee99367f75",
+    "validate.py": "164e2ba220938fce42a5d459289af54a554c6f9fe1f5229ebd3c5ee0f4c60ff6",
+    "extract.py": "1e42460729d02c480ce995d6ad1ef12da1f99289486397f52aa3dd27a600993c",
+    "tools/check_runner_flow.py": "9226cec138d25a6c5f08d76131af169c7db1e0fd7fd8584ac8eedcee44b2b040",
+    "tools/check_package_sizes.py": "4ee8804a29bc8e0400ed44e4ef51fb922adbfcfaba4f0a0e4155feb68b25771f"
+  },
+  "claim_limits": [
+    "These checks do not prove a live store-drift remedy.",
+    "These checks do not prove full category coverage.",
+    "These checks do not provide a genuine promotional-offer example."
+  ]
+}

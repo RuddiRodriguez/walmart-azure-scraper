@@ -9,8 +9,14 @@ from bs4 import BeautifulSoup
 
 FIELDS = 'zipcode store_name store_location store_logo store_brand category sub_category product_title weight regular_price sale_price volume_deals_description volume_deals_price digital_deals_description digital_deals_price image_url url upc gupc ppm unit_price crawl_date'.split()
 PPM = re.compile(r'(?:\$\d+(?:\.\d+)?|\d+(?:\.\d+)?\s*¢)\s*/\s*(?:\d+\s*)?(?:fl\s*oz|ounces?|oz|lbs?|count|ct|each|ea|qt|gal|sq\s*ft|ft|ml|kg|g|l)\b', re.I)
-WEIGHT = re.compile(r'\b\d+(?:\.\d+)?\s*(?:fl\.?\s*oz|oz|ounces?|lbs?|pounds?|kg|grams?|ml|liters?)\b', re.I)
-APPROX = re.compile(r'\b(?:approx\.?|approximately|about|estimated weight)\b', re.I)
+MEASURE_TEXT = r'\d+(?:\.\d+)?\s*(?:fl\.?\s*oz|oz|ounces?|lbs?|pounds?|kg|grams?|ml|liters?|gallons?|gal)\b'
+PACK_TEXT = r'(?:\(\s*\d+\s*(?:pack|count|ct)\s*\)|\b\d+\s*-?\s*(?:pack|count|ct)\b)'
+MEASURE = re.compile(r'\b' + MEASURE_TEXT, re.I)
+PACK = re.compile(PACK_TEXT, re.I)
+MULTIPACK_MEASURE = re.compile(r'\b\d+\s*[x×]\s*' + MEASURE_TEXT, re.I)
+APPROX = re.compile(
+    r'\b(?:approx\.?|approximately|about|estimated weight|average weight|avg\.?\s*(?:weight|wt)|'
+    r'variable weight|random weight|catch weight|weight\s+(?:may\s+)?vary|weight varies)\b', re.I)
 FINANCE = {'1PAYCC', 'AFFIRM', 'ONEPAY', 'CREDIT_CARD', 'ONE_PREQUAL'}
 ROOT_IDS = {
     'Food': '976759', 'Household Essentials': '1115193', 'Personal Care': '1005862',
@@ -19,6 +25,25 @@ ROOT_IDS = {
     'Balloons': '2637_1042319_1212898_3956207', 'Art Supplies': '5899871',
     'Office Supplies': '1229749',
 }
+
+
+def package_size(text):
+    """Return source package-size text without calculating or collapsing multipacks."""
+    text = text or ''
+    combined = MULTIPACK_MEASURE.search(text)
+    if combined:
+        return combined.group()
+    measures = list(MEASURE.finditer(text))
+    packs = list(PACK.finditer(text))
+    if not measures:
+        return packs[0].group() if packs else ''
+    if not packs:
+        return measures[0].group()
+    first, second = sorted([measures[0], packs[0]], key=lambda match: match.start())
+    between = text[first.end():second.start()]
+    if re.fullmatch(r'[\s,()\-]*(?:of|x|×)?[\s,()\-]*', between, re.I):
+        return text[first.start():second.end()].strip()
+    return first.group() + ' ' + second.group()
 
 
 def next_data(soup):
@@ -177,15 +202,14 @@ def product_record(candidate, soup, store, private_labels, logo, retain_missing=
     if unknown:
         return None, 'promotion_review_required', product
     was = None if local_price_unknown else re.search(r'Was \$(\d+(?:\.\d{1,2})?)', candidate['price_text'])
-    weight = WEIGHT.search(title)
-    weight_text = weight.group() if weight else ''
+    weight_text = package_size(title)
     specs = (next_data(soup).get('data', {}).get('idml') or {}).get('specifications') or []
     for spec in specs:
         if spec.get('name', '').lower() in ['net weight', 'net content', 'net content weight', 'weight'] and isinstance(spec.get('value'), str):
             if APPROX.search(spec['value']):
                 return None, 'approximate_weight', product
-            if not weight_text and WEIGHT.search(spec['value']):
-                weight_text = spec['value']
+            if not weight_text:
+                weight_text = package_size(spec['value'])
     ppm = None if local_price_unknown else PPM.search(candidate['price_text'])
     brand = product.get('brand') or ''
     row = dict.fromkeys(FIELDS, '')
@@ -234,13 +258,13 @@ def listing_record(candidate, cached, store, private_labels, logo):
     was = None if current is None else re.search(r'Was \$(\d+(?:\.\d{1,2})?)', candidate['price_text'])
     ppm = None if current is None else PPM.search(candidate['price_text'])
     title = item.get('name') or cached['product_title']
-    weight = WEIGHT.search(title)
+    weight = package_size(title)
     brand = item.get('brand') or ''
     row = dict.fromkeys(FIELDS, '')
     row.update(zipcode=store['zip'], store_name=store['name'], store_location=store['address'], store_logo=logo or cached['store_logo'],
                store_brand=brand if brand in private_labels else cached['store_brand'], category=candidate['category'],
                sub_category=(item.get('category') or {}).get('categoryPath', '').split('/')[-1],
-               product_title=title, weight=weight.group() if weight else cached['weight'],
+               product_title=title, weight=weight or cached['weight'],
                regular_price=money(was.group(1) if was else current), sale_price=money(current) if was else '',
                image_url=candidate['image_url'], url=candidate['url'], upc=cached['upc'],
                ppm=ppm.group() if ppm else '', crawl_date=datetime.now(timezone.utc).isoformat())

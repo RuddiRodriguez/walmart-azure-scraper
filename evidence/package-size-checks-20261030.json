@@ -1,0 +1,18 @@
+{
+  "mode": "Offline synthetic package-size and approximate-weight checks; no network",
+  "passed": true,
+  "package_size_cases": {
+    "Purina ONE Dry Dog Food 8 lb, 4 Pack": "8 lb, 4 Pack",
+    "Diapers Size 4, 72 Count": "72 Count",
+    "(6 Pack) Cleaning Refill 1 Gallon": "(6 Pack) 1 Gallon",
+    "Snack Bags 2 x 16 oz": "2 x 16 oz"
+  },
+  "approximate_weight_cases": [
+    "Average Weight 1 lb",
+    "Avg. Wt 2 lb",
+    "Approximately 3 lb",
+    "About 4 lb",
+    "Variable Weight",
+    "Weight May Vary"
+  ]
+}

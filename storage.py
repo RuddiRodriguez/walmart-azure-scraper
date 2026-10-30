@@ -90,11 +90,13 @@ def save_page(db, category, url, links, candidates, rejected, raw_count):
                    (raw_count, len(candidates), category, url))
 
 
-def save_product(db, candidate, record, reason):
+def save_product(db, candidate, record, reason, complete=True):
     with db:
         if record:
             db.execute('INSERT OR REPLACE INTO records VALUES (?,?)', (candidate['item_id'], json.dumps(record)))
-        db.execute("UPDATE candidates SET status='done',reason=? WHERE id=?", (reason, candidate['item_id']))
+        status = 'done' if complete else 'pending'
+        db.execute('UPDATE candidates SET status=?,reason=? WHERE id=?',
+                   (status, reason, candidate['item_id']))
 
 
 def records(db):

@@ -161,7 +161,7 @@ def run(args):
                     metadata(db, 'consecutive_transport_failures', failures)
                     source_data.update(reason='transport_error', error=str(error), attempt=attempt + 1)
                     retention.observe(catalog, key, None, 'transport_error', run_id, datetime.now(timezone.utc).isoformat(), False)
-                    save_product(db, candidate, None, 'transport_error')
+                    save_product(db, candidate, None, 'transport_error', complete=False)
                     log('product_transport_error', id=key, failures=failures, error=str(error))
                     if fatal_transport(error) or failures >= settings.get('max_consecutive_transport_failures', 3):
                         raise RuntimeError('Repeated product transport failures; collection stopped') from error
@@ -204,7 +204,8 @@ def run(args):
                         reason = 'unsafe_context'
                         if failures >= settings.get('max_consecutive_context_failures', 3):
                             raise RuntimeError('Repeated unsafe store context; collection stopped') from error
-                    save_product(db, candidate, None, reason)
+                    save_product(db, candidate, None, reason,
+                                 complete=reason not in {'transport_error', 'validation_error', 'unsafe_context'})
                     break
                 finally:
                     soup.clear(decompose=True)
@@ -212,7 +213,9 @@ def run(args):
             source_data['reason'] = reason
             atomic_json(output / 'sources' / (key + '.json'), source_data)
             eligible_row = row if reason != 'retained_assortment_unverified' else None
-            save_product(db, candidate, eligible_row, reason)
+            save_product(db, candidate, eligible_row, reason,
+                         complete=bool(eligible_row) or reason not in {
+                             'transport_error', 'validation_error', 'unsafe_context'})
             if eligible_row:
                 sample_counts[candidate['category']] += 1
             log('product', id=key, accepted=bool(row), reason=reason, category=candidate['category'])
@@ -349,7 +352,8 @@ def run(args):
             if not progressed:
                 break
         canary_check(sb, store, settings)
-        rows = records(db)
+        fresh_rows = records(db)
+        rows = fresh_rows
         report_retention = retention.export(catalog, output)
         catalog_rows = json.loads((output / 'retained-products.json').read_text())
         catalog_states = {v['product_id']:v for v in json.loads((output / 'retention-status.json').read_text())}
@@ -365,11 +369,17 @@ def run(args):
         if (base / 'latest.json').exists():
             pointer = json.loads((base / 'latest.json').read_text())
             previous = json.loads((base / pointer['report']).read_text())
-        report = validate(rows, list(categories), store, settings, pending_pages, pending_products, review, previous, unavailable_urls, unknown_price_urls)
+        location_mismatch_seen = bool(metadata(db, 'location_mismatch_seen'))
+        report = validate(rows, list(categories), store, settings, pending_pages, pending_products,
+                          review, previous, unavailable_urls, unknown_price_urls,
+                          location_mismatch_seen=location_mismatch_seen, fresh_rows=fresh_rows)
         if args.sample:
             sample_settings = {**settings, 'minimum_records': args.sample * len(categories), 'minimum_category_records': args.sample}
-            report['sample_validation'] = validate(rows, list(categories), store, sample_settings, 0, 0, review, unavailable_urls=unavailable_urls, unknown_price_urls=unknown_price_urls)
-        report.update(retention_catalog=report_retention, carried_observations=sum(v['source'] != run_id and v['assortment_confirmed'] for v in catalog_states.values()) if not args.sample else 0, location_mismatch_seen=bool(metadata(db, 'location_mismatch_seen')), mode='sample' if args.sample else 'full', store=store,
+            report['sample_validation'] = validate(
+                rows, list(categories), store, sample_settings, 0, 0, review,
+                unavailable_urls=unavailable_urls, unknown_price_urls=unknown_price_urls,
+                location_mismatch_seen=location_mismatch_seen, fresh_rows=fresh_rows)
+        report.update(retention_catalog=report_retention, carried_observations=sum(v['source'] != run_id and v['assortment_confirmed'] for v in catalog_states.values()) if not args.sample else 0, location_mismatch_seen=location_mismatch_seen, mode='sample' if args.sample else 'full', store=store,
                       context_failures=metadata(db, 'context_failures') or 0,
                       page_limit_reached=page_limit_reached,
                       active_seconds=round(metadata(db, 'active_seconds') + time.monotonic() - started, 2),
