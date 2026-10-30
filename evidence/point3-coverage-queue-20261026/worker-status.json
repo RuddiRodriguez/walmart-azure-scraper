@@ -71,54 +71,29 @@
     "queue_sha256_after": "b373f7c13523f0d8a3c6f1696c873fab6dc066a505d11ba7f61fae38720f001a"
   },
   "taxonomy_trial": {
-    "started_utc": "2026-10-29T09:01:03.183734+00:00",
-    "finished_utc": "2026-10-29T09:03:47.432271+00:00",
-    "finished": true,
-    "limits": {
-      "batches": 1,
-      "pages_per_batch": 5,
-      "seconds_per_batch": 1800
-    },
-    "status_before": {
-      "cross_link_excluded": 137,
-      "failed": 186,
-      "navigation_scope_unverified": 9,
-      "outside_scope": 1,
-      "pending": 994,
-      "reviewed": 3703
-    },
-    "status_after": {
-      "cross_link_excluded": 137,
-      "failed": 186,
-      "navigation_scope_unverified": 9,
-      "outside_scope": 1,
-      "pending": 992,
-      "reviewed": 3708
-    },
-    "results": [
-      {
-        "number": 1,
-        "batch": "batch-04036-1793264464",
-        "pages": 5,
-        "new_pages": 3,
-        "pending_before": 994,
-        "pending_after": 992,
-        "failed_after": 186,
-        "stop_reason": null,
-        "offer_observations": 0
-      }
-    ],
-    "queue_shrank": true,
-    "growth_stop_triggered": false,
-    "live_scope": "User-authorized bounded taxonomy batches; no full-coverage claim"
-  },
-  "coverage_completion": {
     "started_utc": "2026-10-29T11:40:57.582563+00:00",
-    "finished": false,
+    "finished_utc": "2026-10-29T16:15:46.727332+00:00",
+    "finished": true,
     "limits": {
       "batches": 60,
       "pages_per_batch": 20,
       "seconds_per_batch": 1800
+    },
+    "status_before": {
+      "cross_link_excluded": 137,
+      "failed": 192,
+      "navigation_scope_unverified": 9,
+      "outside_scope": 1,
+      "pending": 927,
+      "reviewed": 3895
+    },
+    "status_after": {
+      "cross_link_excluded": 137,
+      "failed": 229,
+      "navigation_scope_unverified": 9,
+      "outside_scope": 1,
+      "pending": 780,
+      "reviewed": 4166
     },
     "results": [
       {
@@ -295,6 +270,31 @@
         "pending_after": 780,
         "failed_after": 229,
         "stop_reason": "Evidence storage free space is below its safety limit",
+        "offer_observations": 0
+      }
+    ],
+    "queue_shrank": true,
+    "growth_stop_triggered": false,
+    "live_scope": "User-authorized bounded taxonomy batches; no full-coverage claim"
+  },
+  "coverage_completion": {
+    "started_utc": "2026-10-30T07:26:57.565012+00:00",
+    "finished": false,
+    "limits": {
+      "batches": 1,
+      "pages_per_batch": 20,
+      "seconds_per_batch": 1800
+    },
+    "results": [
+      {
+        "number": 1,
+        "batch": "batch-04542-1793345218",
+        "pages": 0,
+        "new_pages": 0,
+        "pending_before": 780,
+        "pending_after": 780,
+        "failed_after": 229,
+        "stop_reason": "Location mismatch in store banner",
         "offer_observations": 0
       }
     ]
