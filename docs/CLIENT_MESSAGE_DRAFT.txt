@@ -21,6 +21,8 @@ I also ran the smallest paid transport check with an Oxylabs residential proxy. 
 
 I then tested Web Unblocker as the closest small alternative. It loaded both Walmart pages without a challenge, but returned the wrong store context. The known control product showed Store 1631, ZIP 23666 and SHIPPING, while the Art Sets listing showed Store 5867 without verified PICKUP. Both were rejected. The test used 20.47 MB and cost $0.15. I stopped there and did not start a full paid collection.
 
+I also made one fresh direct-connection coverage check. It stopped before the first page because the Walmart store banner showed the wrong location. The saved queue remains unchanged at 4,166 reviewed, 780 pending, 229 failed and 9 navigation pages unresolved.
+
 The safeguard, Azure and ledger evidence is linked from this checkpoint:
 https://github.com/RuddiRodriguez/walmart-azure-scraper/blob/d7d87c5/docs/CLIENT_REVIEW_CHECKPOINT_20261030.md
 

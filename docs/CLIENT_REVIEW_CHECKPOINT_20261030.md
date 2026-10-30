@@ -24,6 +24,8 @@ coverage or a proven transport remedy.
 8. The Web Unblocker follow-up loaded both Walmart pages, but returned wrong-store context. The
    control product showed Store 1631, ZIP 23666 and SHIPPING. Art Sets showed Store 5867 without a
    verified PICKUP facet. Both responses were rejected and no full collection was started.
+9. A fresh direct-connection coverage check stopped before its first page because the Walmart store
+   banner showed the wrong location. No queue item changed and no full collection was started.
 
 ## Still open
 
@@ -46,6 +48,7 @@ coverage or a proven transport remedy.
 - Offline proxy wiring check: `evidence/transport-proposal-20261030/offline-check.json`
 - Bounded paid-transport result: `evidence/oxylabs-bounded-20261030/RESULT.json`
 - Web Unblocker result: `evidence/web-unblocker-bounded-20261030/RESULT.json`
+- Direct coverage safety check: `evidence/point3-coverage-queue-20261026/batch-04542-1793345218/`
 
 ## Timing and dependencies
 
