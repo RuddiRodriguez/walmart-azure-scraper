@@ -49,6 +49,16 @@ def check():
         source['candidate'], soup, store, settings['private_labels'], '')
     assert row is None and reason == 'approximate_weight'
 
+    product = copy.deepcopy(source['product'])
+    product['name'] = 'Fresh Product Average Weight 1 lb'
+    soup = BeautifulSoup('<script id="__NEXT_DATA__"></script>', 'html.parser')
+    payload = {'props': {'pageProps': {'initialData': {'data': {
+        'product': product, 'idml': {'specifications': []}}}}}}
+    soup.script.string = json.dumps(payload)
+    row, reason, _ = product_record(
+        source['candidate'], soup, store, settings['private_labels'], '')
+    assert row is None and reason == 'approximate_weight'
+
     result = {
         'mode': 'Offline synthetic package-size and approximate-weight checks; no network',
         'passed': True,

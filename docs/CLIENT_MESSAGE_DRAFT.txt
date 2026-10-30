@@ -1,27 +1,28 @@
-UNSENT DRAFT — 29 October 2026, Amsterdam time
+UNSENT DRAFT — 30 October 2026, Amsterdam time
 
-Hi,
+Hi Darren,
 
-I have frozen the latest local review package here:
-https://github.com/RuddiRodriguez/walmart-azure-scraper/tree/review-20261029-final-azure
+Thank you for the detailed review. I worked through the new corrections in the order you suggested. The current review version is here:
+https://github.com/RuddiRodriguez/walmart-azure-scraper/tree/ab121a7
 
-The downloadable ZIP is available here:
-https://github.com/RuddiRodriguez/walmart-azure-scraper/archive/refs/tags/review-20261029-final-azure.zip
+The location safeguard is corrected. Once a run sees a location mismatch, that run cannot publish, even if a retry is correct or the run is resumed. The corrected response is kept only as diagnostic evidence. A clean new run is required before publication.
 
-The package receipt and ZIP checksum are here:
-https://github.com/RuddiRodriguez/walmart-azure-scraper/blob/main/evidence/client-final-20261029/receipt.json
+Failed products now stay pending. Timeouts, unsafe store responses and validation failures block publication and are retried after resume. Retained historical products remain available with their original dates, but they no longer count toward the fresh-run product or category minimums.
 
-The README is the best place to start. From there, please open docs/RUN_GUIDE.md to run a small Store 100 sample, then docs/VERIFY_PACKAGE.md to check the package and evidence hashes. The evidence index links each client requirement to its supporting files. The package includes the privacy-reviewed wrong-store/corrected-response pairs, unavailable-product retention evidence, interruption/recovery tests, repeat comparisons and category coverage records.
+Package sizes now keep the complete source wording, including examples such as “8 lb, 4 Pack,” “72 Count,” “(6 Pack) 1 Gallon” and “2 x 16 oz.” Average, approximate and variable-weight wording is rejected.
 
-To be clear about the 500-product requirement: two separate controlled live runs each produced 506 validated distinct products across all 11 required parent categories. One was stopped after 100 saved products and successfully resumed to 506, and a separate 506-product repeat also passed. These are genuine bounded demonstrations and are kept separate in the evidence.
+I also completed the remaining failure ledger. The saved queue still has 4,166 reviewed pages, 780 pending, 229 failed and 9 navigation pages unresolved. Of the 229 failures, 216 are retryable, 4 have response evidence showing ancestry outside the required category, and 9 remain unresolved page types. Blocked or loading pages are not counted as empty categories. Full coverage is still open, so I am not presenting this as a completed catalog.
 
-I did not publish a new final 500-product file from the latest full-coverage work. That work was checking every required category, subcategory and pagination path, not collecting another bounded sample. It reviewed 4,166 pages, but stopped at the deadline and storage safety limit with 780 pages still pending, 229 failed pages and 9 unresolved navigation pages. Because the queue was not complete, presenting it as a finished catalog would be misleading.
+The genuine-offer result also remains open. The 55-product, 11-search review found no qualifying volume or digital offer, so I kept those fields empty and did not substitute financing, cashback, Walmart Cash, Rollback or Clearance.
 
-The latest collector also passed a 132-product forced interruption/resume test and a separate 132-product repeat. The offer review checked 55 distinct products across 11 searches. It found no qualifying volume or digital offer, so I left those fields empty instead of using financing, cashback, Walmart Cash, Rollback or Clearance as substitutes.
+The Azure folder now includes the sanitized event order, exact request counts and runtime, command forms and the available cleanup receipt. The two control products passed for Store 100/PICKUP, while the following Art Sets listing was blocked in both regions. This shows a sequence-specific reliability problem, not proof that Azure IP reputation alone caused it.
 
-The Azure results are included in the package but explained in a separate message so the local collection and Azure results remain clear.
+For the next transport check, I compared Oxylabs Web Scraper API with its residential proxy. The residential proxy is the smaller change because it keeps the existing Chrome session, store selection and response checks. I added environment-only proxy wiring and an offline check, but made no paid request. The proposed first test is limited to one ZIP-targeted sticky session, 15 minutes, 20 requests, 100 MiB and a $1 hard usage cap. It stops on any wrong or missing store, ZIP, PICKUP or product identity, any challenge page, two transport failures, evidence failure or limit breach.
 
-What is ready for review now is the source code, step-by-step running instructions, both 506-product datasets, recovery and repeat evidence, store and price checks, sanitized response pairs, coverage ledger and hashes. What remains open is complete reconciliation of the remaining coverage queue.
+The safeguard, Azure and ledger evidence is linked from this checkpoint:
+https://github.com/RuddiRodriguez/walmart-azure-scraper/blob/ab121a7/docs/CLIENT_REVIEW_CHECKPOINT_20261030.md
+
+Local safeguard, evidence and ledger work is complete. After working provider credentials and paid-test authorization exist, the bounded transport check needs about 15 minutes plus one hour for review. If it is stable, I estimate the remaining coverage at 18–30 collection hours plus 4–8 review hours. I cannot give a responsible full-completion date before that transport result.
 
 Thanks,
 Ruddi

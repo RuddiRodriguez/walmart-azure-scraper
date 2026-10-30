@@ -781,6 +781,12 @@ Listing/category review only. Pending/failed/scope-unverified remain open. Raw b
 - Proposed one 15-minute, 20-request, 100 MiB, $1-hard-cap diagnostic with Store 100/PICKUP proof on every response.
 - Credentials remain environment-only and are never written to evidence or logs.
 
+## 2026-10-30 unsent client draft
+
+- Replaced the older 29 October draft with a point-by-point response to the 29 October review.
+- Included exact review commit, completed corrections, honest open gaps, transport limits, timing and dependencies.
+- Draft remains unsent.
+
 ## Coverage continuation result
 {"phase": "walking", "batches": 12, "pages_attempted": 960, "finished": false, "max_seconds": 43200, "max_pages": 2000, "queue_counts": {"failed": 49, "navigation_scope_unverified": 9, "outside_scope": 1, "pending": 2275, "reviewed": 978}, "scope_counts": {"brief_exclusion": 2, "outside_required_ancestry": 2, "parent_scope_unverified": 104, "scope_confirmed_by_response": 7012, "scope_unverified": 296, "scoped_queue": 5282}, "latest_batch": "batch-00957-1793041686", "seconds": 17958.6, "deadline_unix": 1793068609.162635, "audit_started_unix": 1793039861.047031, "accounted_batches": ["batch-00797-1793037889", "batch-00877-1793039393", "batch-00957-1793041686"]}
 Listing/category review only. Pending/failed/scope-unverified remain open. Raw bodies/native pages private.

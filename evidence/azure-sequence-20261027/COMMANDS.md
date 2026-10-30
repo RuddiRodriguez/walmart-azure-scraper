@@ -1,9 +1,21 @@
 # Sanitized Azure test commands
 
-The reviewed output was created by the repository command below on each temporary Ubuntu VM:
+The temporary VM setup used these Azure CLI command forms. Account, resource, network and SSH
+values are redacted:
 
 ```text
+az group create --name <redacted> --location <westus2-or-eastus2>
+az vm create --resource-group <redacted> --name <redacted> --image Ubuntu2404 --size <reviewed-size> --admin-username <redacted> --ssh-key-values <redacted>
+az network nsg rule create --resource-group <redacted> --nsg-name <redacted> --name <redacted> --priority <redacted> --source-address-prefixes <redacted> --destination-port-ranges 22 --access Allow --protocol Tcp
+az vm auto-shutdown --resource-group <redacted> --name <redacted> --time <redacted>
+```
+
+The repository installer and reviewed diagnostic commands on each VM were:
+
+```text
+sudo bash deploy/install-ubuntu.sh
 .venv/bin/python -m tools.run_azure_sequence --output <private-output-directory>
+.venv/bin/python -m tools.run_azure_sequence --output <private-output-directory> --skip-listing
 ```
 
 The test code fixed the limits at four product requests, one listing request, 600 seconds and
