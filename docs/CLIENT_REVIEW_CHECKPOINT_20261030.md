@@ -25,7 +25,7 @@ coverage or a proven transport remedy.
 - Genuine promotional examples: the expanded review found no qualifying example. This remains an
   honest zero-result, not a completed positive-example requirement.
 - Paid transport validation: provider credentials and paid usage are not available in this package.
-  The smallest bounded proposal is documented separately. No paid request has been made.
+  The smallest bounded proposal and offline proxy wiring are complete. No paid request has been made.
 
 ## Evidence
 
@@ -34,6 +34,8 @@ coverage or a proven transport remedy.
 - Coverage classification: `evidence/coverage-failure-ledger-20261030/`
 - Azure sequence: `evidence/azure-sequence-20261027/`
 - Offer review: `evidence/expanded-offers-20261028/`
+- Smallest paid transport proposal: `docs/OXYLABS_BOUNDED_PROPOSAL.md`
+- Offline proxy wiring check: `evidence/transport-proposal-20261030/offline-check.json`
 
 ## Timing and dependencies
 

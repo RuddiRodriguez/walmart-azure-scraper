@@ -1,6 +1,7 @@
 """Local Chrome session. Challenges and location changes stop collection."""
 import asyncio
 import json
+import os
 import re
 import time
 from datetime import datetime, timezone
@@ -13,7 +14,11 @@ from extract import next_data, pickup
 
 
 def open_browser(headless=False):
-    return sb_cdp.Chrome(locale='en', guest=True, headless=headless)
+    options = {'locale': 'en', 'guest': True, 'headless': headless}
+    proxy = os.environ.get('WALMART_PROXY_URL')
+    if proxy:
+        options['proxy'] = proxy
+    return sb_cdp.Chrome(**options)
 
 
 def check_html(html):

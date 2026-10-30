@@ -9,6 +9,7 @@
 - [Documentation index](docs/README.md)
 - [Unsent client message](docs/CLIENT_MESSAGE_DRAFT.txt)
 - [30 October client review checkpoint](docs/CLIENT_REVIEW_CHECKPOINT_20261030.md)
+- [Smallest bounded paid transport proposal](docs/OXYLABS_BOUNDED_PROPOSAL.md)
 
 Production collector: `scrape.py`. Supporting production modules: `browser.py`, `extract.py`, `storage.py`, `retention.py`, and `validate.py`. Tests, diagnostics and evidence helpers live under `tools/`.
 

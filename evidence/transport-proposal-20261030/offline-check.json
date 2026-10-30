@@ -1,0 +1,10 @@
+{
+  "mode": "Offline proxy configuration check; no browser and no network",
+  "passed": true,
+  "checks": [
+    "Default browser path does not set a proxy",
+    "WALMART_PROXY_URL is passed to the existing Chrome session",
+    "Proxy value is not written to evidence or application logs"
+  ],
+  "credentials_included": false
+}
