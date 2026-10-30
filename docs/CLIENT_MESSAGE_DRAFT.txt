@@ -3,7 +3,7 @@ UNSENT DRAFT — 30 October 2026, Amsterdam time
 Hi Darren,
 
 Thank you for the detailed review. I worked through the new corrections in the order you suggested. The current review version is here:
-https://github.com/RuddiRodriguez/walmart-azure-scraper/tree/e25fc63
+https://github.com/RuddiRodriguez/walmart-azure-scraper/tree/3281e6a
 
 The location safeguard is corrected. Once a run sees a location mismatch, that run cannot publish, even if a retry is correct or the run is resumed. The corrected response is kept only as diagnostic evidence. A clean new run is required before publication.
 
@@ -20,7 +20,7 @@ The Azure folder now includes the sanitized event order, exact request counts an
 I also ran the smallest paid transport check with an Oxylabs residential proxy. The proxy location check reached Bentonville/ZIP 72712 and the account had a $1 daily limit. However, Walmart's store banner did not load in the first session or in one fresh-session retry. Both attempts stopped before any listing or product was accepted, and nothing was published. The dashboard reported 14.38 MB, 55 total proxy requests and $0.09 spent. This means the residential proxy did not pass the safety gate for a full collection.
 
 The safeguard, Azure and ledger evidence is linked from this checkpoint:
-https://github.com/RuddiRodriguez/walmart-azure-scraper/blob/e25fc63/docs/CLIENT_REVIEW_CHECKPOINT_20261030.md
+https://github.com/RuddiRodriguez/walmart-azure-scraper/blob/3281e6a/docs/CLIENT_REVIEW_CHECKPOINT_20261030.md
 
 Local safeguard, evidence and ledger work is complete, and the bounded paid test is now documented. Full coverage is still blocked because this transport did not provide reliable store context. I do not recommend starting an uncapped paid run until we agree on a different transport approach that first passes the same small safety check.
 
