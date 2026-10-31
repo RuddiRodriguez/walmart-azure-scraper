@@ -1,0 +1,15 @@
+{
+  "mode": "Offline client fixture; no browser, network, or live publication",
+  "passed": true,
+  "first_run": {
+    "valid_products": 1,
+    "unverified_products": 1,
+    "pending_products": 1,
+    "published": false
+  },
+  "resume": {
+    "unverified_candidate_retried": true,
+    "published_only_after_eligibility_proof": true,
+    "records": 2
+  }
+}

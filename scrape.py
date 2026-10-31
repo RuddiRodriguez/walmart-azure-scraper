@@ -215,10 +215,13 @@ def run(args):
             eligible_row = row if reason != 'retained_assortment_unverified' else None
             save_product(db, candidate, eligible_row, reason,
                          complete=bool(eligible_row) or reason not in {
-                             'transport_error', 'validation_error', 'unsafe_context'})
+                             'transport_error', 'validation_error', 'unsafe_context',
+                             'retained_assortment_unverified'})
             if eligible_row:
                 sample_counts[candidate['category']] += 1
-            log('product', id=key, accepted=bool(row), reason=reason, category=candidate['category'])
+            log('product', id=key, accepted=bool(eligible_row),
+                retained_for_review=bool(row and not eligible_row),
+                reason=reason, category=candidate['category'])
             time.sleep(settings['delay_seconds'])
         current_work = {}
 
