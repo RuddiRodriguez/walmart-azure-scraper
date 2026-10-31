@@ -17,7 +17,7 @@ def check():
     checks=[]
     with tempfile.TemporaryDirectory(dir='data') as name:
         root=Path(name)/'queue'
-        with patch.object(q,'open_browser',return_value=sb),patch.object(q,'select_store'),patch.object(q,'verify_banner'),patch.object(q,'navigate',side_effect=lambda *a:BeautifulSoup(html,'html.parser')),patch.object(q,'fetch_product',side_effect=fetch),patch.object(q,'listing_from_rendered',side_effect=lambda snapshot,page,category,store:([],[],q.next_data(page)['searchResult'])),patch.object(q,'next_page_url',return_value='https://www.walmart.com/cp/food/976759?page=2'),patch.object(q,'discover',return_value={}):
+        with patch.object(q,'ensure_storage'),patch.object(q,'open_browser',return_value=sb),patch.object(q,'select_store'),patch.object(q,'verify_banner'),patch.object(q,'navigate',side_effect=lambda *a:BeautifulSoup(html,'html.parser')),patch.object(q,'fetch_product',side_effect=fetch),patch.object(q,'listing_from_rendered',side_effect=lambda snapshot,page,category,store:([],[],q.next_data(page)['searchResult'])),patch.object(q,'next_page_url',return_value='https://www.walmart.com/cp/food/976759?page=2'),patch.object(q,'discover',return_value={}):
             q.run(root,2,30)
             db=sqlite3.connect(root/'queue.sqlite');assert db.execute("SELECT count(*) FROM pages WHERE status='reviewed'").fetchone()[0]==2
             assert db.execute("SELECT count(*) FROM pages WHERE category='Food' AND key='976759#2'").fetchone()[0]==1
@@ -28,7 +28,7 @@ def check():
     with tempfile.TemporaryDirectory(dir='data') as name:
         calls={'n':0}
         def navigation(*args):calls['n']+=1;raise ValueError('Empty page title; synthetic')
-        with patch.object(q,'open_browser',return_value=sb),patch.object(q,'select_store'),patch.object(q,'navigate',side_effect=navigation),patch.object(q,'fetch_product',side_effect=ValueError('Synthetic empty response')):q.run(Path(name),2,30)
+        with patch.object(q,'ensure_storage'),patch.object(q,'open_browser',return_value=sb),patch.object(q,'select_store'),patch.object(q,'navigate',side_effect=navigation),patch.object(q,'fetch_product',side_effect=ValueError('Synthetic empty response')):q.run(Path(name),2,30)
         db=sqlite3.connect(Path(name)/'queue.sqlite');assert db.execute("SELECT count(*) FROM pages WHERE status='failed'").fetchone()[0]==2;db.close();assert calls['n']==2
         checks+=['Bad pages logged once then next page attempted','Failed pages not counted as legitimate empty/reviewed']
     assert q.key('https://www.walmart.com/cp/x/123?page=01')==q.key('https://www.walmart.com/browse/y/4_123?page=1')
@@ -48,7 +48,7 @@ def check():
         data['props']['pageProps']['initialData']['searchResult']['itemStacks']=[{'items':[{'__typename':'Product','usItemId':'123'}]}]
         page.script.string=json.dumps(data);return page
     with tempfile.TemporaryDirectory(dir='data') as name:
-        with patch.object(Path,'read_text',read),patch.object(q,'open_browser',return_value=sb),patch.object(q,'select_store'),patch.object(q,'verify_banner'),patch.object(q,'navigate',side_effect=lambda *a:BeautifulSoup(html,'html.parser')),patch.object(q,'fetch_product',side_effect=fetch_same),patch.object(q,'listing_from_rendered',side_effect=lambda snapshot,page,category,store:([],[],q.next_data(page)['searchResult'])),patch.object(q,'next_page_url',return_value='https://www.walmart.com/cp/food/976759?page=2'),patch.object(q,'discover',return_value={}):
+        with patch.object(Path,'read_text',read),patch.object(q,'ensure_storage'),patch.object(q,'open_browser',return_value=sb),patch.object(q,'select_store'),patch.object(q,'verify_banner'),patch.object(q,'navigate',side_effect=lambda *a:BeautifulSoup(html,'html.parser')),patch.object(q,'fetch_product',side_effect=fetch_same),patch.object(q,'listing_from_rendered',side_effect=lambda snapshot,page,category,store:([],[],q.next_data(page)['searchResult'])),patch.object(q,'next_page_url',return_value='https://www.walmart.com/cp/food/976759?page=2'),patch.object(q,'discover',return_value={}):
             q.run(Path(name),12,30)
         db=sqlite3.connect(Path(name)/'queue.sqlite')
         assert db.execute("SELECT count(*) FROM pages WHERE reason LIKE 'Repeated product set%'").fetchone()[0]==1
