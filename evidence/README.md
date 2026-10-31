@@ -20,6 +20,7 @@ Final local summary: [`docs/CURRENT_PROGRESS.md`](../docs/CURRENT_PROGRESS.md).
 | Expanded genuine-offer review | `expanded-offers-20261028/` |
 | Two bounded Azure diagnostics and historical cleanup record | `azure-sequence-20261027/` |
 | Corrected provider usage and one future-test limit | `transport-correction-20261031/` |
+| Full offline regression | `full-offline-regression-20261031/` |
 | Latest coverage ledger and completed batches | `point3-coverage-queue-20261026/` |
 | Coverage failure classification | `coverage-failure-ledger-20261030/` |
 | Publication, retry and fresh-yield safeguards | `client-review-20261029-safeguards/` |

@@ -9,6 +9,7 @@
 5. [Evidence index](../evidence/README.md)
 6. [Unsent client message](CLIENT_MESSAGE_DRAFT.txt)
 7. [Azure and proxy evidence correction](STEP4_AZURE_PROXY_EVIDENCE.md)
+8. [Full offline regression](STEP5_FULL_OFFLINE_REGRESSION.md)
 
 ## Current behavior
 

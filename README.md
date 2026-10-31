@@ -11,6 +11,7 @@
 - [30 October client review checkpoint](docs/CLIENT_REVIEW_CHECKPOINT_20261030.md)
 - [Smallest bounded paid transport proposal](docs/OXYLABS_BOUNDED_PROPOSAL.md)
 - [Azure and proxy evidence correction](docs/STEP4_AZURE_PROXY_EVIDENCE.md)
+- [Full offline regression](docs/STEP5_FULL_OFFLINE_REGRESSION.md)
 
 Production collector: `scrape.py`. Supporting production modules: `browser.py`, `extract.py`, `storage.py`, `retention.py`, and `validate.py`. Tests, diagnostics and evidence helpers live under `tools/`.
 
