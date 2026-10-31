@@ -1,0 +1,74 @@
+{
+  "mode": "Offline reconciliation from saved response reports and queue; no retailer requests",
+  "passed": true,
+  "mappings": [
+    {
+      "source_category": "Beauty",
+      "source_url": "https://www.walmart.com/browse/beauty/kids-baby-sunscreen/1085666_1007039_1001508_1620920",
+      "decision": "equivalent_reviewed_leaf",
+      "response_root": "Personal Care (1005862)",
+      "reviewed_location": "https://www.walmart.com/browse/personal-care/kids-baby-sunscreen/1005862_1001508_1620920",
+      "evidence": "evidence/point3-coverage-queue-20261026/batch-00637-1793035060/report.json"
+    },
+    {
+      "source_category": "Beauty",
+      "source_url": "https://www.walmart.com/browse/beauty/tanning-lotions-oils/1085666_1007039_1001508_7306596",
+      "decision": "mapped_to_reviewed_parent",
+      "response_root": "Personal Care (1005862)",
+      "response_leaf": "Tanning Lotions & Oils (1005862_1001508_7306596)",
+      "reviewed_location": [
+        "https://www.walmart.com/browse/personal-care/sun-care/1005862_1001508",
+        "https://www.walmart.com/browse/personal-care/sun-care/1005862_1001508?page=2",
+        "https://www.walmart.com/browse/personal-care/sun-care/1005862_1001508?page=3",
+        "https://www.walmart.com/browse/personal-care/sun-care/1005862_1001508?page=4"
+      ],
+      "evidence": [
+        "evidence/point3-coverage-queue-20261026/batch-00957-1793041686/report.json",
+        "evidence/point3-coverage-queue-20261026/batch-02777-1793197785/report.json",
+        "evidence/point3-coverage-queue-20261026/batch-03577-1793216774/report.json",
+        "evidence/point3-coverage-queue-20261026/batch-03996-1793258721/report.json"
+      ]
+    },
+    {
+      "source_category": "Beauty",
+      "source_url": "https://www.walmart.com/browse/beauty/sunscreen/1085666_1007039_1001508_8279042",
+      "decision": "mapped_to_reviewed_parent",
+      "response_root": "Personal Care (1005862)",
+      "response_leaf": "Sunscreen (1005862_1001508_8279042)",
+      "reviewed_location": [
+        "https://www.walmart.com/browse/personal-care/sun-care/1005862_1001508",
+        "https://www.walmart.com/browse/personal-care/sun-care/1005862_1001508?page=2",
+        "https://www.walmart.com/browse/personal-care/sun-care/1005862_1001508?page=3",
+        "https://www.walmart.com/browse/personal-care/sun-care/1005862_1001508?page=4"
+      ],
+      "evidence": [
+        "evidence/point3-coverage-queue-20261026/batch-00957-1793041686/report.json",
+        "evidence/point3-coverage-queue-20261026/batch-02777-1793197785/report.json",
+        "evidence/point3-coverage-queue-20261026/batch-03577-1793216774/report.json",
+        "evidence/point3-coverage-queue-20261026/batch-03996-1793258721/report.json"
+      ]
+    },
+    {
+      "source_category": "Art Supplies",
+      "source_url": "https://www.walmart.com/browse/arts-crafts-sewing/transfer-papers/1334134_5899871_9677556_8181267",
+      "decision": "legitimate_exclusion_relative_to_required_root",
+      "required_root": "Art Supplies (1334134_5899871)",
+      "response_root": "Die Cutting (1334134_3123463)",
+      "response_leaf": "Transfer Papers (1334134_3123463_8181267)",
+      "evidence": "evidence/point3-coverage-queue-20261026/batch-00637-1793035060/report.json"
+    }
+  ],
+  "open_work_unchanged": {
+    "pending": 780,
+    "retryable_failures": 216,
+    "unresolved_failed_pages": 9,
+    "navigation_scope_unverified": 9,
+    "unresolved_total": 18,
+    "full_coverage_complete": false
+  },
+  "limits": [
+    "Mapping reconciles four response-ancestry exclusions only.",
+    "Reviewed parent mapping does not close pending, retryable or unresolved pages.",
+    "No new collection or full-coverage claim is made."
+  ]
+}
