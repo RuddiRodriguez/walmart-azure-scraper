@@ -1,13 +1,13 @@
 {
-  "audit_time_utc": "2026-10-29T18:01:40.543648+00:00",
+  "audit_time_utc": "2026-10-31T23:39:09.276597+00:00",
   "mode": "offline audit of historical live captures; not a fresh collection",
-  "audit_base_commit": "c09a8d24f3a6ab587b1b79b47a9cc6c0a9b341d9",
+  "audit_base_commit": "fb1f930b972df4ce041c411be87c44a9376f0909",
   "audited_code_sha256": {
-    "extract.py": "d8f4907da13805a7470edbbaaafbe83e4915ed87b651aba12d239c06887af937",
-    "scrape.py": "69146e76ce7a1045ebc485992a6345c1b2e9d9ca59326387150b20c1d4bd8b2f",
-    "storage.py": "79593a14c13913bef29b55d02c76edc9d3f6813e4c6336c036fc691154966a77",
-    "validate.py": "fef75a52c01bc2d56b99caab4dac2ac4d57e4c19396170d8975ffc8fdce5e02e",
-    "browser.py": "9dd3473ffb835741ca3b1d6b2c718164eefa4c18b7a9c5ed2b84a00e16bdcbaa"
+    "extract.py": "98c1d143064e077b92451300d874bf3d2c8b4b5c3dc87c221b57617abcb6fceb",
+    "scrape.py": "618e1db993a2aa44208b9d6d34ad808bdb1dc7607e566d8c2e9067581a99c4f8",
+    "storage.py": "d744ca6f721dc0d18f610db93df29ca44c1abb76376b9a3b27dd36ee99367f75",
+    "validate.py": "0c09cb017fb4f095228a65499cd7f8f93ae94f21ac48835c74cebebe66e887cb",
+    "browser.py": "6c3e2d430dffbf1accc7fb73489917eb42da2c0f9b23138ffe3152edef1570a1"
   },
   "passed": true,
   "records": 500,
@@ -560,6 +560,7 @@
     "Client accepts Store 100/PICKUP for bounded demonstrations; production assignment is not claimed.",
     "Parent representation is not full subcategory coverage.",
     "Historical multi-pass logs do not establish uninterrupted runtime.",
-    "Azure execution and genuine live volume/digital offers remain unproven."
+    "Bounded Azure diagnostics were executed but did not prove reliable collection.",
+    "No genuine live volume or digital offer was observed in the recorded scope."
   ]
 }
