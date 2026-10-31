@@ -12,9 +12,12 @@ the required store banner. It stopped before making product requests.
 
 These tests show that Azure access was not completely blocked, but changing region and IP did
 not make collection reliable. They do not prove that Azure IP reputation alone caused the block.
-No invalid data was published. Both Azure environments were deleted, and the cleanup check found
-zero remaining resources.
+No invalid data was published. The original cleanup commands completed successfully, including
+`group wait --deleted`. The original `group exists` stdout was not retained. A fresh read-only
+check on 31 October could not authenticate because Azure security defaults blocked the saved
+login. Therefore the requested redacted `false` output for both groups is still missing and is
+not claimed as proved by this public package.
 
 The public package now contains the reviewed result, a privacy-safe event sequence and counts,
-the command form used for the diagnostic, and a sanitized cleanup receipt. Raw pages, cookies,
-browser sessions, account details and credentials are not included.
+the exact diagnostic source snapshots, the commands used, and a sanitized cleanup receipt. Raw
+pages, cookies, browser sessions, account details and credentials are not included.

@@ -8,6 +8,7 @@
 4. [Acceptance rules](ACCEPTANCE.md)
 5. [Evidence index](../evidence/README.md)
 6. [Unsent client message](CLIENT_MESSAGE_DRAFT.txt)
+7. [Azure and proxy evidence correction](STEP4_AZURE_PROXY_EVIDENCE.md)
 
 ## Current behavior
 

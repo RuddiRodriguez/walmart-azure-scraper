@@ -26,14 +26,15 @@
       "private_log_sha256": "1cbc72bd198d08b4d7a5f51a6876f16a35b58c80a4db1df81c1c7d039c1c4ddd"
     }
   ],
-  "reviewed_result": {
+  "historical_reviewed_result": {
     "west_us_2_resource_group_deleted": true,
     "east_us_2_resource_group_deleted": true,
     "remaining_azure_resources": 0
   },
   "limits": [
     "The private CLI logs are not published because they belong to the private Azure account context.",
-    "The command exit codes prove successful command execution; the recorded reviewed result supplies the final resource count.",
-    "A read-only refresh on 30 October was blocked by the account's current login security policy."
+    "The command exit codes prove successful command execution, including group wait --deleted.",
+    "The original group exists stdout was not retained, so this file does not provide the requested redacted false output.",
+    "A read-only refresh on 31 October was blocked by the account's current login security policy."
   ]
 }

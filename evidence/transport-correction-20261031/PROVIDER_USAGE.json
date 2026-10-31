@@ -1,0 +1,53 @@
+{
+  "reviewed_at_utc": "2026-10-31T22:35:00Z",
+  "providers": [
+    {
+      "provider": "Oxylabs Residential Proxies",
+      "evidence": "evidence/oxylabs-bounded-20261030/RESULT.json",
+      "observed_usage": {
+        "provider_requests": 55,
+        "traffic_mb": 14.38,
+        "dashboard_spending_usd": 0.09,
+        "accepted_products": 0
+      },
+      "note": "The 55 provider requests include browser assets and the location check. They are not 55 product pages."
+    },
+    {
+      "provider": "Scrape.do Web Scraper API",
+      "evidence": "evidence/scrapedo-bounded-20261030/RESULT.json",
+      "observed_usage": {
+        "api_requests": 4,
+        "credits_used": 20,
+        "credits_remaining_after_test": 980,
+        "accepted_products": 0
+      },
+      "note": "Three initial requests and one follow-up search request were made."
+    },
+    {
+      "provider": "Oxylabs Web Unblocker",
+      "evidence": "evidence/web-unblocker-bounded-20261030/RESULT.json",
+      "observed_usage": {
+        "client_requests": 3,
+        "location_checks": 1,
+        "retailer_pages": 2,
+        "traffic_mb": 20.47,
+        "spending_usd": 0.15,
+        "accepted_products": 0
+      },
+      "note": "The two Walmart pages loaded but returned wrong-store context."
+    },
+    {
+      "provider": "Bright Data Web Scraper API",
+      "evidence": "evidence/brightdata-bounded-20261030/RESULT.json",
+      "observed_usage": {
+        "inputs_submitted": 1,
+        "successful_records": 0,
+        "collection_seconds": 70,
+        "accepted_products": 0
+      },
+      "note": "The single input ended at a Walmart CAPTCHA."
+    }
+  ],
+  "credentials_included": false,
+  "raw_provider_responses_included": false
+}

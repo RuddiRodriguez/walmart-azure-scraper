@@ -59,12 +59,16 @@
   "cleanup": {
     "west_us_2_environment_deleted": true,
     "east_us_2_environment_deleted": true,
-    "remaining_azure_resources": 0
+    "historical_reviewed_remaining_azure_resources": 0,
+    "redacted_group_exists_stdout_retained": false,
+    "fresh_read_only_verification": "blocked_by_azure_login_security_defaults"
   },
   "public_evidence": {
     "events_and_counts": "evidence/azure-sequence-20261027/EVENTS.json",
     "commands": "evidence/azure-sequence-20261027/COMMANDS.md",
-    "cleanup_receipt": "evidence/azure-sequence-20261027/CLEANUP_RECEIPT.json"
+    "cleanup_receipt": "evidence/azure-sequence-20261027/CLEANUP_RECEIPT.json",
+    "fresh_resource_group_check": "evidence/azure-sequence-20261027/RESOURCE_GROUP_CHECK.json",
+    "exact_source_snapshots": "evidence/azure-sequence-20261027/source/"
   },
   "privacy": {
     "raw_html_included": false,

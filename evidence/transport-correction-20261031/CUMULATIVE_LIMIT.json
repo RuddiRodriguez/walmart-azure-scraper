@@ -1,0 +1,31 @@
+{
+  "status": "proposal_not_executed",
+  "scope": "One future bounded paid transport diagnostic",
+  "cumulative_limits": {
+    "provider_requests_total": 75,
+    "retailer_page_navigations": 3,
+    "provider_location_checks": 1,
+    "fresh_session_retries": 1,
+    "traffic_mb": 25,
+    "runtime_seconds": 900,
+    "cost_usd": 0.25
+  },
+  "provider_requests_total_includes": [
+    "top-level retailer pages",
+    "browser assets",
+    "provider location checks",
+    "redirects",
+    "retries"
+  ],
+  "stop_conditions": [
+    "any cumulative limit is reached",
+    "wrong or missing Store 100",
+    "wrong or missing ZIP 72712",
+    "missing explicit PICKUP",
+    "CAPTCHA or block page",
+    "provider error prevents a valid control response"
+  ],
+  "collection_allowed_after_test": false,
+  "client_approved": false,
+  "executed": false
+}
