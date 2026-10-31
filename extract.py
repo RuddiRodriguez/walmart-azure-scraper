@@ -9,8 +9,8 @@ from bs4 import BeautifulSoup
 
 FIELDS = 'zipcode store_name store_location store_logo store_brand category sub_category product_title weight regular_price sale_price volume_deals_description volume_deals_price digital_deals_description digital_deals_price image_url url upc gupc ppm unit_price crawl_date'.split()
 PPM = re.compile(r'(?:\$\d+(?:\.\d+)?|\d+(?:\.\d+)?\s*¢)\s*/\s*(?:\d+\s*)?(?:fl\s*oz|ounces?|oz|lbs?|count|ct|each|ea|qt|gal|sq\s*ft|ft|ml|kg|g|l)\b', re.I)
-MEASURE_TEXT = r'\d+(?:\.\d+)?\s*(?:fl\.?\s*oz|oz|ounces?|lbs?|pounds?|kg|grams?|ml|liters?|gallons?|gal)\b'
-PACK_TEXT = r'(?:\(\s*\d+\s*(?:pack|count|ct)\s*\)|\b\d+\s*-?\s*(?:pack|count|ct)\b)'
+MEASURE_TEXT = r'\d+(?:\.\d+)?\s*(?:fl\.?\s*oz|oz|ounces?|lbs?|pounds?|kg|grams?|g|ml|liters?|l|gallons?|gal)\b'
+PACK_TEXT = r'(?:\(\s*(?:\d+\s*(?:packs?|count|ct|bottles?)|pack\s+of\s+\d+)\s*\)|\b(?:\d+\s*-?\s*(?:packs?|count|ct|bottles?)|pack\s+of\s+\d+)\b)'
 MEASURE = re.compile(r'\b' + MEASURE_TEXT, re.I)
 PACK = re.compile(PACK_TEXT, re.I)
 MULTIPACK_MEASURE = re.compile(r'\b\d+\s*[x×]\s*' + MEASURE_TEXT, re.I)

@@ -5,7 +5,8 @@ from pathlib import Path
 
 from bs4 import BeautifulSoup
 
-from extract import APPROX, package_size, product_record
+from extract import APPROX, FIELDS, package_size, product_record
+from validate import validate
 
 
 def check():
@@ -17,6 +18,11 @@ def check():
         'Diapers Size 4, 72 Count': '72 Count',
         '(6 Pack) Cleaning Refill 1 Gallon': '(6 Pack) 1 Gallon',
         'Snack Bags 2 x 16 oz': '2 x 16 oz',
+        'Soup 12 oz (Pack of 4)': '12 oz (Pack of 4)',
+        'Cleaner Pack of 6, 1 Gallon': 'Pack of 6, 1 Gallon',
+        'Chocolate 250 g': '250 g',
+        'Juice 1 L': '1 L',
+        'Water 12 oz, 6 Bottles': '12 oz, 6 Bottles',
     }
     for title, expected in cases.items():
         assert package_size(title) == expected, title
@@ -49,6 +55,19 @@ def check():
         source['candidate'], soup, store, settings['private_labels'], '')
     assert row is None and reason == 'approximate_weight'
 
+    historical = dict.fromkeys(FIELDS, '')
+    historical.update(
+        zipcode=store['zip'], store_name=store['name'], store_location=store['address'],
+        category='Food', product_title='Average Weight 1 lb', weight='1 lb',
+        regular_price='1.00', image_url='https://example.com/product.jpg',
+        url='https://www.walmart.com/ip/Historical-Product/123456',
+        crawl_date='2026-10-01T12:00:00+00:00')
+    checked = validate(
+        [historical], ['Food'], store,
+        {**settings, 'minimum_records': 1, 'minimum_category_records': 1}, 0, 0, 0)
+    assert not checked['passed']
+    assert 'Record 0: forbidden field value' in checked['errors']
+
     product = copy.deepcopy(source['product'])
     product['name'] = 'Fresh Product Average Weight 1 lb'
     soup = BeautifulSoup('<script id="__NEXT_DATA__"></script>', 'html.parser')
@@ -64,6 +83,7 @@ def check():
         'passed': True,
         'package_size_cases': cases,
         'approximate_weight_cases': approximate,
+        'historical_title_filter': 'Average Weight 1 lb blocks publication',
     }
     output = Path('evidence/package-size-checks-20261030.json')
     output.write_text(json.dumps(result, indent=2) + '\n')

@@ -1,0 +1,544 @@
+{
+  "mode": "Offline replay of two historical 132-product datasets; no network or new collection",
+  "passed": true,
+  "limits": [
+    "Historical products and source records are not rewritten.",
+    "This proves parser behavior only, not fresh collection or clean-run publication."
+  ],
+  "runs": {
+    "latest-large-recovery-20261027": {
+      "records_replayed": 132,
+      "changed_records": 43,
+      "changed_fields": [
+        "weight"
+      ],
+      "changes": [
+        {
+          "product_id": "10448985",
+          "title": "Purina ONE Lamb and Rice Formula Dry Dog Food, 8 lb, 4 Pack",
+          "previous_weight": "8 lb",
+          "replayed_weight": "8 lb, 4 Pack"
+        },
+        {
+          "product_id": "11452574423",
+          "title": "Pen+Gear Heavyweight Sheet Protectors, Letter Size, 8.5 in x 11 in, 50 Count",
+          "previous_weight": "",
+          "replayed_weight": "50 Count"
+        },
+        {
+          "product_id": "14172073374",
+          "title": "GuruNanda Spoon & U-Shaped Tongue Scraper with Travel Case, Stainless Steel, 2 Pack",
+          "previous_weight": "0.23 lb",
+          "replayed_weight": "2 Pack"
+        },
+        {
+          "product_id": "14894769569",
+          "title": "(2 pack) Royal & Langnickel Essentials 8.875 x 6.625 Plastic 10-Well Oval Art Palette",
+          "previous_weight": "",
+          "replayed_weight": "(2 pack)"
+        },
+        {
+          "product_id": "14898376",
+          "title": "Clorox ToiletWand Toilet Cleaning Refills, Disinfecting Scrubbing Pads, 10 Count",
+          "previous_weight": "",
+          "replayed_weight": "10 Count"
+        },
+        {
+          "product_id": "15154970737",
+          "title": "Rascals Premium Absorbent Baby Diapers Size 4, 72 Count",
+          "previous_weight": "",
+          "replayed_weight": "72 Count"
+        },
+        {
+          "product_id": "15460710604",
+          "title": "(6 pack) Parent's Choice Distilled Water, 1 Gallon",
+          "previous_weight": "",
+          "replayed_weight": "(6 pack) 1 Gallon"
+        },
+        {
+          "product_id": "15543972",
+          "title": "Clorox Disinfecting Wipes Bleach Free Fresh Scent And Crisp Lemon Scent 35 Count 3 Pack",
+          "previous_weight": "",
+          "replayed_weight": "35 Count"
+        },
+        {
+          "product_id": "15662806819",
+          "title": "Equate Manual Toothbrushes with Contoured Bristles and Ergonomic Grip, Soft, 6 Count",
+          "previous_weight": "",
+          "replayed_weight": "6 Count"
+        },
+        {
+          "product_id": "1599724784",
+          "title": "Pampers Baby Dry Baby Diapers Size 7, 54 Count (Select for More Options)",
+          "previous_weight": "",
+          "replayed_weight": "54 Count"
+        },
+        {
+          "product_id": "16401645",
+          "title": "\u200b\u200bEmergen-C 1000 Mg Vitamin C Powder for Immune Support, Super Orange Flavor - 10 Count\u200b",
+          "previous_weight": "",
+          "replayed_weight": "10 Count"
+        },
+        {
+          "product_id": "18722654384",
+          "title": "Huggies Little Movers, Little Monsters Edition Baby Diapers, Size 4, 58 Count",
+          "previous_weight": "",
+          "replayed_weight": "58 Count"
+        },
+        {
+          "product_id": "22210582",
+          "title": "Clorox Disinfecting Wipes To Go Pack Bleach Free Cleaner Fresh Scent 9 Count",
+          "previous_weight": "",
+          "replayed_weight": "9 Count"
+        },
+        {
+          "product_id": "232119780",
+          "title": "Similac 360 Total Care Ready-to-Feed Baby Formula, 2-fl-oz Bottle, Pack of 12",
+          "previous_weight": "",
+          "replayed_weight": "Pack of 12"
+        },
+        {
+          "product_id": "2362859722",
+          "title": "Crest 3DWhite Advanced Whitening Toothpaste, Radiant Mint, 3.3 oz, 3 Pack",
+          "previous_weight": "3.3 oz",
+          "replayed_weight": "3.3 oz, 3 Pack"
+        },
+        {
+          "product_id": "24681654",
+          "title": "Qunol Ultra CoQ10 Softgels, 100mg, Heart Health, Coenzyme Q10 Dietary Supplement, 60 Count",
+          "previous_weight": "",
+          "replayed_weight": "60 Count"
+        },
+        {
+          "product_id": "2645209765",
+          "title": "Hello Hobby White Craft Plastic Paint Palettes 3 Pack",
+          "previous_weight": "",
+          "replayed_weight": "3 Pack"
+        },
+        {
+          "product_id": "2790112831",
+          "title": "Millie Moon Sensitive Wipes, 648 Count (Select for More Options)",
+          "previous_weight": "11.46 lb",
+          "replayed_weight": "648 Count"
+        },
+        {
+          "product_id": "2906382718",
+          "title": "Equate Antiseptic Mouthwash, Blue Mint, 1.5 L",
+          "previous_weight": "",
+          "replayed_weight": "1.5 L"
+        },
+        {
+          "product_id": "347481115",
+          "title": "Pen+Gear Durable View Binder, 2 in Rings, White, 1 Count, 520-Sheet Capacity",
+          "previous_weight": "1.09 lb",
+          "replayed_weight": "1 Count"
+        },
+        {
+          "product_id": "362649628",
+          "title": "Pampers Swaddlers Fragrance Free Baby Diapers Size 4, 66 Count (Select for More Options)",
+          "previous_weight": "",
+          "replayed_weight": "66 Count"
+        },
+        {
+          "product_id": "378937848",
+          "title": "Huggies Little Snugglers, Fragrance Free Baby Diapers Size 1, 32 Count",
+          "previous_weight": "",
+          "replayed_weight": "32 Count"
+        },
+        {
+          "product_id": "38236207",
+          "title": "Huggies Natural Care Sensitive, Fragrance-Free Baby Wipes, Unscented Wipes, 3 Packs, 168 Wipes",
+          "previous_weight": "",
+          "replayed_weight": "3 Packs"
+        },
+        {
+          "product_id": "394522932",
+          "title": "Plackers Micro Mint Dental Floss Picks, Fresh Mint, 300 Count",
+          "previous_weight": "",
+          "replayed_weight": "300 Count"
+        },
+        {
+          "product_id": "394990711",
+          "title": "Emergen-C Immune+ Triple Action Immune Support Powder, Betavia (R), 1000Mg Vitamin C, B\n Vitamins, Vitamin D and Antioxidants, Super Orange, Back to School Essentials \u2013 30 Count",
+          "previous_weight": "",
+          "replayed_weight": "30 Count"
+        },
+        {
+          "product_id": "42522590",
+          "title": "Nature's Way Sambucus Elderberry Immune Gummies, with Vitamins C, D3, & Zinc, Unisex, 60 Count",
+          "previous_weight": "",
+          "replayed_weight": "60 Count"
+        },
+        {
+          "product_id": "46008414",
+          "title": "Nature's Bounty Zinc 50 mg Caplets, Immune Support Skin Health, Dietary Supplement, Non-GMO, 100 Count",
+          "previous_weight": "",
+          "replayed_weight": "100 Count"
+        },
+        {
+          "product_id": "46108807",
+          "title": "Nature's Bounty Vitamin C 1000mg Caplets, Immune Support Antioxidant Health Supplement, Non-GMO, Gluten-Free, 100 Count",
+          "previous_weight": "",
+          "replayed_weight": "100 Count"
+        },
+        {
+          "product_id": "5010208944",
+          "title": "Dr. Fresh Brand Kids Toothbrush  with Non-Slip Handle, Tongue Cleaner, Soft Bristles, 5 Count",
+          "previous_weight": "",
+          "replayed_weight": "5 Count"
+        },
+        {
+          "product_id": "5062245776",
+          "title": "Pen+Gear Index Tab Dividers, 8 Tabs, Letter Size, Multi-Color, 8 Count",
+          "previous_weight": "",
+          "replayed_weight": "8 Count"
+        },
+        {
+          "product_id": "5172610100",
+          "title": "Snickers, Twix, Milky Way & 3 Musketeers Minis Halloween Candy Assortment - 150 Ct Bulk Bag",
+          "previous_weight": "",
+          "replayed_weight": "150 Ct"
+        },
+        {
+          "product_id": "5175566490",
+          "title": "M&M's, Snickers, Twix & Milky Way Chocolate Halloween Candy Variety Pack - 200 Ct Bulk Bag",
+          "previous_weight": "",
+          "replayed_weight": "200 Ct"
+        },
+        {
+          "product_id": "5249321584",
+          "title": "M&M's, Snickers, Twix & Milky Way Chocolate Halloween Candy Variety Pack - 120 Ct Bulk Bag",
+          "previous_weight": "",
+          "replayed_weight": "120 Ct"
+        },
+        {
+          "product_id": "5412813805",
+          "title": "Boiron Oscillococcinum Homeopathic Medicine for Flu-like Symptoms, 30 Count",
+          "previous_weight": "",
+          "replayed_weight": "30 Count"
+        },
+        {
+          "product_id": "5445606208",
+          "title": "Luvs Platinum Protection Baby Diapers, Size 5, 72 Count ( Select for more options)",
+          "previous_weight": "",
+          "replayed_weight": "72 Count"
+        },
+        {
+          "product_id": "591453378",
+          "title": "Equate Vitamin C Immune Support Powder Packets, Orange Flavor, Ages 14+, 1000 mg, 30 Count",
+          "previous_weight": "",
+          "replayed_weight": "30 Count"
+        },
+        {
+          "product_id": "838361149",
+          "title": "Parent's Choice Cucumber Scent Baby Wipes, 900 Count (Select for More Options)",
+          "previous_weight": "16.1 lb",
+          "replayed_weight": "900 Count"
+        },
+        {
+          "product_id": "885509773",
+          "title": "Parent's Choice Dry & Gentle Diapers Size 5, 27 Count (Select for More Options)",
+          "previous_weight": "",
+          "replayed_weight": "27 Count"
+        },
+        {
+          "product_id": "903070318",
+          "title": "Equate Black Elderberry Dietary Supplement Gummies, 50 mg, 60 Count, Compare to Sambucol\u00ae Black Elderberry Gummies",
+          "previous_weight": "",
+          "replayed_weight": "60 Count"
+        },
+        {
+          "product_id": "912145446",
+          "title": "Reach Essentials Manual Toothbrush with Caps, 6 Count",
+          "previous_weight": "",
+          "replayed_weight": "6 Count"
+        },
+        {
+          "product_id": "924063500",
+          "title": "Equate 1000 mg Vitamin C Dietary Supplement Powder Packets, Orange Flavor, 10 Count, Compare to Emergen-C\u00ae Ingredients",
+          "previous_weight": "",
+          "replayed_weight": "10 Count"
+        },
+        {
+          "product_id": "966995460",
+          "title": "12\" Silver/Gold Foil Confetti Balloons, 5 Count, by Way To Celebrate",
+          "previous_weight": "",
+          "replayed_weight": "5 Count"
+        },
+        {
+          "product_id": "993589496",
+          "title": "Nature Made Vitamin D3 2000 IU (50 mcg) Softgels, Vitamin D Dietary Supplement, 100 Count",
+          "previous_weight": "",
+          "replayed_weight": "100 Count"
+        }
+      ]
+    },
+    "latest-large-repeat-20261027": {
+      "records_replayed": 132,
+      "changed_records": 43,
+      "changed_fields": [
+        "weight"
+      ],
+      "changes": [
+        {
+          "product_id": "10448985",
+          "title": "Purina ONE Lamb and Rice Formula Dry Dog Food, 8 lb, 4 Pack",
+          "previous_weight": "8 lb",
+          "replayed_weight": "8 lb, 4 Pack"
+        },
+        {
+          "product_id": "11452574423",
+          "title": "Pen+Gear Heavyweight Sheet Protectors, Letter Size, 8.5 in x 11 in, 50 Count",
+          "previous_weight": "",
+          "replayed_weight": "50 Count"
+        },
+        {
+          "product_id": "14172073374",
+          "title": "GuruNanda Spoon & U-Shaped Tongue Scraper with Travel Case, Stainless Steel, 2 Pack",
+          "previous_weight": "0.23 lb",
+          "replayed_weight": "2 Pack"
+        },
+        {
+          "product_id": "14894769569",
+          "title": "(2 pack) Royal & Langnickel Essentials 8.875 x 6.625 Plastic 10-Well Oval Art Palette",
+          "previous_weight": "",
+          "replayed_weight": "(2 pack)"
+        },
+        {
+          "product_id": "14898376",
+          "title": "Clorox ToiletWand Toilet Cleaning Refills, Disinfecting Scrubbing Pads, 10 Count",
+          "previous_weight": "",
+          "replayed_weight": "10 Count"
+        },
+        {
+          "product_id": "15154970737",
+          "title": "Rascals Premium Absorbent Baby Diapers Size 4, 72 Count",
+          "previous_weight": "",
+          "replayed_weight": "72 Count"
+        },
+        {
+          "product_id": "15460710604",
+          "title": "(6 pack) Parent's Choice Distilled Water, 1 Gallon",
+          "previous_weight": "",
+          "replayed_weight": "(6 pack) 1 Gallon"
+        },
+        {
+          "product_id": "15543972",
+          "title": "Clorox Disinfecting Wipes Bleach Free Fresh Scent And Crisp Lemon Scent 35 Count 3 Pack",
+          "previous_weight": "",
+          "replayed_weight": "35 Count"
+        },
+        {
+          "product_id": "15662806819",
+          "title": "Equate Manual Toothbrushes with Contoured Bristles and Ergonomic Grip, Soft, 6 Count",
+          "previous_weight": "",
+          "replayed_weight": "6 Count"
+        },
+        {
+          "product_id": "1599724784",
+          "title": "Pampers Baby Dry Baby Diapers Size 7, 54 Count (Select for More Options)",
+          "previous_weight": "",
+          "replayed_weight": "54 Count"
+        },
+        {
+          "product_id": "16401645",
+          "title": "\u200b\u200bEmergen-C 1000 Mg Vitamin C Powder for Immune Support, Super Orange Flavor - 10 Count\u200b",
+          "previous_weight": "",
+          "replayed_weight": "10 Count"
+        },
+        {
+          "product_id": "18714368611",
+          "title": "Huggies Overnites Nighttime Baby Diapers, Size 6 (35+ lbs), 70 Ct (Select for More)",
+          "previous_weight": "",
+          "replayed_weight": "70 Ct"
+        },
+        {
+          "product_id": "22210582",
+          "title": "Clorox Disinfecting Wipes To Go Pack Bleach Free Cleaner Fresh Scent 9 Count",
+          "previous_weight": "",
+          "replayed_weight": "9 Count"
+        },
+        {
+          "product_id": "232119780",
+          "title": "Similac 360 Total Care Ready-to-Feed Baby Formula, 2-fl-oz Bottle, Pack of 12",
+          "previous_weight": "",
+          "replayed_weight": "Pack of 12"
+        },
+        {
+          "product_id": "2362859722",
+          "title": "Crest 3DWhite Advanced Whitening Toothpaste, Radiant Mint, 3.3 oz, 3 Pack",
+          "previous_weight": "3.3 oz",
+          "replayed_weight": "3.3 oz, 3 Pack"
+        },
+        {
+          "product_id": "2645209765",
+          "title": "Hello Hobby White Craft Plastic Paint Palettes 3 Pack",
+          "previous_weight": "",
+          "replayed_weight": "3 Pack"
+        },
+        {
+          "product_id": "2790112831",
+          "title": "Millie Moon Sensitive Wipes, 648 Count (Select for More Options)",
+          "previous_weight": "11.46 lb",
+          "replayed_weight": "648 Count"
+        },
+        {
+          "product_id": "2906382718",
+          "title": "Equate Antiseptic Mouthwash, Blue Mint, 1.5 L",
+          "previous_weight": "",
+          "replayed_weight": "1.5 L"
+        },
+        {
+          "product_id": "343103083",
+          "title": "Equate Vitamin C Immune Support Chewable Tablets, Citrus Flavor, 32 Count, for Adults and Children 12+, Compare to Airborne Original Chewable Tablets Supplements",
+          "previous_weight": "",
+          "replayed_weight": "32 Count"
+        },
+        {
+          "product_id": "347481115",
+          "title": "Pen+Gear Durable View Binder, 2 in Rings, White, 1 Count, 520-Sheet Capacity",
+          "previous_weight": "1.09 lb",
+          "replayed_weight": "1 Count"
+        },
+        {
+          "product_id": "362649628",
+          "title": "Pampers Swaddlers Fragrance Free Baby Diapers Size 4, 66 Count (Select for More Options)",
+          "previous_weight": "",
+          "replayed_weight": "66 Count"
+        },
+        {
+          "product_id": "378937848",
+          "title": "Huggies Little Snugglers, Fragrance Free Baby Diapers Size 1, 32 Count",
+          "previous_weight": "",
+          "replayed_weight": "32 Count"
+        },
+        {
+          "product_id": "38236207",
+          "title": "Huggies Natural Care Sensitive, Fragrance-Free Baby Wipes, Unscented Wipes, 3 Packs, 168 Wipes",
+          "previous_weight": "",
+          "replayed_weight": "3 Packs"
+        },
+        {
+          "product_id": "394522932",
+          "title": "Plackers Micro Mint Dental Floss Picks, Fresh Mint, 300 Count",
+          "previous_weight": "",
+          "replayed_weight": "300 Count"
+        },
+        {
+          "product_id": "394990711",
+          "title": "Emergen-C Immune+ Triple Action Immune Support Powder, Betavia (R), 1000Mg Vitamin C, B\n Vitamins, Vitamin D and Antioxidants, Super Orange, Back to School Essentials \u2013 30 Count",
+          "previous_weight": "",
+          "replayed_weight": "30 Count"
+        },
+        {
+          "product_id": "42522590",
+          "title": "Nature's Way Sambucus Elderberry Immune Gummies, with Vitamins C, D3, & Zinc, Unisex, 60 Count",
+          "previous_weight": "",
+          "replayed_weight": "60 Count"
+        },
+        {
+          "product_id": "46008414",
+          "title": "Nature's Bounty Zinc 50 mg Caplets, Immune Support Skin Health, Dietary Supplement, Non-GMO, 100 Count",
+          "previous_weight": "",
+          "replayed_weight": "100 Count"
+        },
+        {
+          "product_id": "46108807",
+          "title": "Nature's Bounty Vitamin C 1000mg Caplets, Immune Support Antioxidant Health Supplement, Non-GMO, Gluten-Free, 100 Count",
+          "previous_weight": "",
+          "replayed_weight": "100 Count"
+        },
+        {
+          "product_id": "5010208944",
+          "title": "Dr. Fresh Brand Kids Toothbrush  with Non-Slip Handle, Tongue Cleaner, Soft Bristles, 5 Count",
+          "previous_weight": "",
+          "replayed_weight": "5 Count"
+        },
+        {
+          "product_id": "5062245776",
+          "title": "Pen+Gear Index Tab Dividers, 8 Tabs, Letter Size, Multi-Color, 8 Count",
+          "previous_weight": "",
+          "replayed_weight": "8 Count"
+        },
+        {
+          "product_id": "5172610100",
+          "title": "Snickers, Twix, Milky Way & 3 Musketeers Minis Halloween Candy Assortment - 150 Ct Bulk Bag",
+          "previous_weight": "",
+          "replayed_weight": "150 Ct"
+        },
+        {
+          "product_id": "5175566490",
+          "title": "M&M's, Snickers, Twix & Milky Way Chocolate Halloween Candy Variety Pack - 200 Ct Bulk Bag",
+          "previous_weight": "",
+          "replayed_weight": "200 Ct"
+        },
+        {
+          "product_id": "5249321584",
+          "title": "M&M's, Snickers, Twix & Milky Way Chocolate Halloween Candy Variety Pack - 120 Ct Bulk Bag",
+          "previous_weight": "",
+          "replayed_weight": "120 Ct"
+        },
+        {
+          "product_id": "5412813805",
+          "title": "Boiron Oscillococcinum Homeopathic Medicine for Flu-like Symptoms, 30 Count",
+          "previous_weight": "",
+          "replayed_weight": "30 Count"
+        },
+        {
+          "product_id": "5445606208",
+          "title": "Luvs Platinum Protection Baby Diapers, Size 5, 72 Count ( Select for more options)",
+          "previous_weight": "",
+          "replayed_weight": "72 Count"
+        },
+        {
+          "product_id": "591453378",
+          "title": "Equate Vitamin C Immune Support Powder Packets, Orange Flavor, Ages 14+, 1000 mg, 30 Count",
+          "previous_weight": "",
+          "replayed_weight": "30 Count"
+        },
+        {
+          "product_id": "838361149",
+          "title": "Parent's Choice Cucumber Scent Baby Wipes, 900 Count (Select for More Options)",
+          "previous_weight": "16.1 lb",
+          "replayed_weight": "900 Count"
+        },
+        {
+          "product_id": "885509773",
+          "title": "Parent's Choice Dry & Gentle Diapers Size 5, 27 Count (Select for More Options)",
+          "previous_weight": "",
+          "replayed_weight": "27 Count"
+        },
+        {
+          "product_id": "903070318",
+          "title": "Equate Black Elderberry Dietary Supplement Gummies, 50 mg, 60 Count, Compare to Sambucol\u00ae Black Elderberry Gummies",
+          "previous_weight": "",
+          "replayed_weight": "60 Count"
+        },
+        {
+          "product_id": "912145446",
+          "title": "Reach Essentials Manual Toothbrush with Caps, 6 Count",
+          "previous_weight": "",
+          "replayed_weight": "6 Count"
+        },
+        {
+          "product_id": "924063500",
+          "title": "Equate 1000 mg Vitamin C Dietary Supplement Powder Packets, Orange Flavor, 10 Count, Compare to Emergen-C\u00ae Ingredients",
+          "previous_weight": "",
+          "replayed_weight": "10 Count"
+        },
+        {
+          "product_id": "966995460",
+          "title": "12\" Silver/Gold Foil Confetti Balloons, 5 Count, by Way To Celebrate",
+          "previous_weight": "",
+          "replayed_weight": "5 Count"
+        },
+        {
+          "product_id": "993589496",
+          "title": "Nature Made Vitamin D3 2000 IU (50 mcg) Softgels, Vitamin D Dietary Supplement, 100 Count",
+          "previous_weight": "",
+          "replayed_weight": "100 Count"
+        }
+      ]
+    }
+  }
+}

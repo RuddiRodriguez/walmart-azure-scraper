@@ -35,7 +35,7 @@ def validate(rows, categories, store, settings, pending_pages, pending_products,
         if not isinstance(row, dict) or list(row) != FIELDS or not all(isinstance(v, str) for v in row.values()):
             errors.append(f'Record {index}: schema')
             continue
-        if row['gupc'] or row['unit_price'] or APPROX.search(row['weight']):
+        if row['gupc'] or row['unit_price'] or APPROX.search(row['weight']) or APPROX.search(row['product_title']):
             errors.append(f'Record {index}: forbidden field value')
         if row['zipcode'] != store['zip'] or row['store_name'] != store['name'] or row['store_location'] != store['address']:
             errors.append(f'Record {index}: store')
