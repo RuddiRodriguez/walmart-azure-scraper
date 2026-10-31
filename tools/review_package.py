@@ -64,7 +64,8 @@ def build():
         'limits': ['Client accepts Store 100/PICKUP for bounded demonstrations; production assignment is not claimed.',
                    'Parent representation is not full subcategory coverage.',
                    'Historical multi-pass logs do not establish uninterrupted runtime.',
-                   'Azure execution and genuine live volume/digital offers remain unproven.'],
+                   'Bounded Azure diagnostics were executed but did not prove reliable collection.',
+                   'No genuine live volume or digital offer was observed in the recorded scope.'],
     }
     (evidence / 'review-audit.json').write_text(json.dumps(report, indent=2) + '\n')
     files = (subprocess.check_output(['git', 'ls-files'], cwd=root, text=True).splitlines() if checkout

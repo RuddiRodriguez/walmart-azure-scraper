@@ -2,14 +2,15 @@
 
 ## Start here
 
-1. [Final delivery checkpoint](CURRENT_PROGRESS.md)
-2. [Final client review status](FINAL_CLIENT_REVIEW_20261029.md)
+1. [Current delivery checkpoint](CURRENT_PROGRESS.md)
+2. [1 November client review checkpoint](CLIENT_REVIEW_CHECKPOINT_20261101.md)
 3. [Simple step-by-step run guide](RUN_GUIDE.md)
 4. [Acceptance rules](ACCEPTANCE.md)
 5. [Evidence index](../evidence/README.md)
 6. [Unsent client message](CLIENT_MESSAGE_DRAFT.txt)
 7. [Azure and proxy evidence correction](STEP4_AZURE_PROXY_EVIDENCE.md)
 8. [Full offline regression](STEP5_FULL_OFFLINE_REGRESSION.md)
+9. [Package verification](VERIFY_PACKAGE.md)
 
 ## Current behavior
 

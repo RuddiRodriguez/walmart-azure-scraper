@@ -1,28 +1,23 @@
-UNSENT DRAFT — 30 October 2026, Amsterdam time
+UNSENT DRAFT — 1 November 2026, Amsterdam time
 
 Hi Darren,
 
-I worked through the safeguards and evidence corrections from your 29 October review. Current reviewed source and evidence are at commit f1dd4174f038184d102405e6d21c56adf34e6b97:
-https://github.com/RuddiRodriguez/walmart-azure-scraper/tree/f1dd4174f038184d102405e6d21c56adf34e6b97
+I completed the remaining offline corrections and rebuilt the review package:
+https://github.com/RuddiRodriguez/walmart-azure-scraper/tree/review-20261101-offline-corrections
 
-The publication rule is now strict: any location mismatch blocks that entire run, including after resume. A corrected retry is kept only as diagnostic evidence, and publication requires a clean new run. Product timeouts, unsafe responses and validation failures now remain pending and block publication. Retained history keeps its original dates but no longer counts toward fresh product or category yield.
+Package-size handling now keeps the full source wording for the extra pack, bottle, metric and gallon cases. Historical titles with approximate-weight wording are also rejected. The two saved 132-product datasets replayed successfully, with only the expected weight-field corrections. They remain historical bounded evidence, not clean current-version runs.
 
-Package-size handling now keeps the complete source wording for counts, multipacks and forms such as “8 lb, 4 Pack,” “72 Count,” “(6 Pack) 1 Gallon” and “2 x 16 oz.” Approximate and variable-weight wording is rejected rather than converted into a made-up size.
+Unverified assortment now stays pending, blocks publication and is retried after resume. I also mapped the remaining category exclusions without reducing the open coverage work. The Azure folder now includes the exact diagnostic source, corrected commands, limits and a fresh signed-in Portal check confirming both temporary resource groups are absent. No new Azure test was run.
 
-I also completed the failure ledger. Current state remains 4,166 reviewed pages, 780 pending, 229 failed and 9 unresolved navigation pages. Of the 229 failures, 216 are retryable, 4 have response evidence showing they are outside the required category ancestry, and 9 remain unresolved page types. Blocked or loading pages are not counted as empty categories. Full coverage is therefore still incomplete.
+The full offline regression passed, and the final manifest now includes the previously missing store-session result. The package also has one source/configuration index for every client-cited run and every exported coverage batch.
 
-The offer review remains an honest zero-result. The 55-product, 11-search check found no qualifying volume or digital offer, so I left the offer fields empty and did not replace them with financing, cashback, Walmart Cash, Rollback or Clearance.
+What remains open is unchanged: 780 pending pages, 216 retryable failures and 18 unresolved paths. A clean current-version collection, larger recovery/repeat and final coverage still depend on a transport that proves Store 100, ZIP 72712 and PICKUP together. The offer review found no qualifying real example, so those fields remain blank.
 
-The Azure evidence now includes the sanitized event order, commands, request counts, runtime and cleanup result. Store 100/PICKUP control products passed, but the following Art Sets listing was blocked in both tested regions. This shows a sequence reliability problem, not proof that Azure IP reputation alone caused it.
+The detailed checkpoint is here:
+https://github.com/RuddiRodriguez/walmart-azure-scraper/blob/review-20261101-offline-corrections/docs/CLIENT_REVIEW_CHECKPOINT_20261101.md
 
-I then tested the smallest transport alternatives without weakening the store checks. Oxylabs residential proxy reached Bentonville but Walmart did not load the store banner. Oxylabs Web Unblocker loaded the pages but returned wrong stores. Scrape.do returned Store 100 and price without explicit PICKUP on one endpoint, while its PICKUP search silently changed to Store 3479; support is checking whether direct Store 100 targeting is available. Bright Data accepted one Store 100 control input but Walmart presented a CAPTCHA and it returned zero product records. Every invalid or incomplete response was rejected, and no uncapped run was started.
-
-Checkpoint and evidence links:
-https://github.com/RuddiRodriguez/walmart-azure-scraper/blob/f1dd4174f038184d102405e6d21c56adf34e6b97/docs/CLIENT_REVIEW_CHECKPOINT_20261030.md
-
-The local safeguard, package-size, Azure and failure-ledger corrections are complete. Still open: a reliable Store 100/PICKUP transport, 780 pending pages, 216 retryable failures, 18 unresolved paths, the final uncapped collection, and a real qualifying offer example if one becomes available.
-
-The immediate dependency is a transport that passes the small Store 100/PICKUP gate. After that passes, my estimate is 18–30 collection hours plus 3–5 hours for failed-page reconciliation, final checks and packaging. Until that gate passes, giving a responsible completion date would be misleading.
+Thanks,
+Ruddi
 
 Thanks,
 Ruddi

@@ -12,6 +12,8 @@
 - [Smallest bounded paid transport proposal](docs/OXYLABS_BOUNDED_PROPOSAL.md)
 - [Azure and proxy evidence correction](docs/STEP4_AZURE_PROXY_EVIDENCE.md)
 - [Full offline regression](docs/STEP5_FULL_OFFLINE_REGRESSION.md)
+- [1 November offline correction checkpoint](docs/CLIENT_REVIEW_CHECKPOINT_20261101.md)
+- [Run source and configuration index](evidence/final-package-20261101/RUN_PROVENANCE.json)
 
 Production collector: `scrape.py`. Supporting production modules: `browser.py`, `extract.py`, `storage.py`, `retention.py`, and `validate.py`. Tests, diagnostics and evidence helpers live under `tools/`.
 
@@ -62,11 +64,14 @@ samples/failed runs stay separate; earlier frozen ZIPs are historical. Nothing s
 
 ## Latest client review package
 
-Version: `review-20261029-final-azure`.
-[Download source and review evidence](https://github.com/RuddiRodriguez/walmart-azure-scraper/archive/refs/tags/review-20261029-final-azure.zip).
-[Final status](docs/FINAL_CLIENT_REVIEW_20261029.md); [verification](docs/VERIFY_PACKAGE.md); [unsent client message](docs/CLIENT_MESSAGE_DRAFT.txt).
+Version: `review-20261101-offline-corrections`.
+[Download source and review evidence](https://github.com/RuddiRodriguez/walmart-azure-scraper/archive/refs/tags/review-20261101-offline-corrections.zip).
+[Current checkpoint](docs/CLIENT_REVIEW_CHECKPOINT_20261101.md); [verification](docs/VERIFY_PACKAGE.md); [unsent client message](docs/CLIENT_MESSAGE_DRAFT.txt).
 
-Package includes reviewed response pairs, retention trace, two 506-product runs, 506-product interruption/resume proof, current-collector recovery and repeat proof, 4,166 reviewed coverage pages, zero-result genuine-offer evidence and the two bounded Azure diagnostics. Full category coverage remains incomplete with 780 pending, 229 failed and 9 unresolved navigation pages.
+Package includes reviewed response pairs, retention trace, historical bounded recovery/repeat proof,
+4,166 reviewed coverage pages, zero-result genuine-offer evidence, bounded Azure diagnostics, the
+store-session recovery result, the full offline regression and run provenance. Full category
+coverage remains incomplete with 780 pending, 216 retryable failures and 18 unresolved paths.
 
 ## Retention update after client feedback
 

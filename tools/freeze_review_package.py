@@ -69,7 +69,8 @@ def build(version, output):
                   reviewed_response_pairs=len(pairs['pairs']), retention_events=retention['traced_rejection_events'],
                   larger_recovery_checks=len(larger_recovery['checks']),
                   scope='Offline archive/manifest/export verification; no new live collection or raw-body replay',
-                  client_message_sent=False, contest_submitted=False, azure_executed=False)
+                  client_message_sent=False, contest_submitted=False,
+                  historical_azure_diagnostics_included=True, new_azure_execution=False)
     output.with_suffix('.receipt.json').write_text(json.dumps(result, indent=2) + '\n')
     print(json.dumps(result))
 

@@ -1,0 +1,2016 @@
+{
+  "scope": "Every client-cited run plus every exported coverage batch with a report file.",
+  "claim_boundary": "A missing recorded source commit is shown as missing; it is not inferred from a later evidence commit.",
+  "named_runs": [
+    {
+      "name": "506-product interruption and recovery demonstration",
+      "kind": "historical bounded live demonstration",
+      "source_commit": "deaec35c4b5d58e3a3374bdb89ddb3330f97eb76",
+      "configuration": "evidence/point3-20261026/collection-plan.json",
+      "result": "evidence/point3-20261026/recovery-506/summary.json",
+      "clean_current_version_run": false
+    },
+    {
+      "name": "506-product repeat demonstration",
+      "kind": "historical bounded live demonstration",
+      "source_commit": "1a3bf4f0dceda9bc4a48c02fafa082b49d76911c",
+      "configuration": "evidence/point3-20261026/collection-plan.json",
+      "result": "evidence/point3-20261026/repeat-506/summary.json",
+      "clean_current_version_run": false
+    },
+    {
+      "name": "132-product interruption and recovery",
+      "kind": "historical bounded live recovery",
+      "source_commit": "e6306ff54a2c234d98b20abe50b15e68dc728fec",
+      "configuration": {
+        "mode": "one live recovery attempt, sample=12, all_categories=True",
+        "limits": {
+          "seconds": 10800,
+          "product_attempts": 200,
+          "kill_after_products": 30
+        },
+        "category_source": "config/categories.csv"
+      },
+      "result": "evidence/latest-large-recovery-20261027/review.json",
+      "clean_current_version_run": false
+    },
+    {
+      "name": "132-product repeat",
+      "kind": "historical bounded live repeat",
+      "source_commit": "e6306ff54a2c234d98b20abe50b15e68dc728fec",
+      "source_commit_basis": "The comparison and README record the same code, configuration signature and category file as the recovery run.",
+      "configuration": {
+        "sample_per_category": 12,
+        "all_required_categories": true,
+        "category_source": "config/categories.csv"
+      },
+      "result": "evidence/latest-large-repeat-20261027/comparison.json",
+      "clean_current_version_run": false
+    },
+    {
+      "name": "Azure West US 2 diagnostic",
+      "kind": "bounded Azure live diagnostic",
+      "source_commit": "9101c818a5c6f1c498cea5574dd428787b8b4420",
+      "configuration": "evidence/azure-sequence-20261027/COMMANDS.md",
+      "exact_source": "evidence/azure-sequence-20261027/source/run_azure_sequence-westus2-9101c81.py",
+      "result": "evidence/azure-sequence-20261027/RESULT.json"
+    },
+    {
+      "name": "Azure East US 2 diagnostic",
+      "kind": "bounded Azure live diagnostic",
+      "source_commit": "8f9a5c6e4933afb9f5c6986e3f604fd12e73e855",
+      "configuration": "evidence/azure-sequence-20261027/COMMANDS.md",
+      "exact_source": "evidence/azure-sequence-20261027/source/run_azure_sequence-eastus2-8f9a5c6.py",
+      "result": "evidence/azure-sequence-20261027/RESULT.json"
+    },
+    {
+      "name": "Oxylabs residential initial and fresh-session retry",
+      "kind": "bounded paid transport diagnostic",
+      "source_commit": "c8bf2d5073225624a1c2739fc7bc524306e66ece",
+      "configuration": {
+        "transport": "Oxylabs Residential Proxies, US ZIP 72712 sticky session",
+        "limits": {
+          "runtime_seconds": 900,
+          "listing_requests": 1,
+          "product_and_control_requests": 8,
+          "saved_body_bytes": 104857600
+        },
+        "account_controls": {
+          "price_per_gb_usd": 6,
+          "daily_spending_limit_usd": 1,
+          "disable_when_limit_exceeded": true,
+          "credentials_storage": "macOS Keychain; not committed or logged"
+        }
+      },
+      "result": "evidence/oxylabs-bounded-20261030/RESULT.json"
+    },
+    {
+      "name": "Oxylabs Web Unblocker diagnostic",
+      "kind": "bounded paid transport diagnostic",
+      "source_commit": "bd4b69f5edffec754b31edcf790cf9ea483809d0",
+      "configuration": {
+        "total_client_requests": 3,
+        "location_checks": 1,
+        "walmart_pages": 2,
+        "rendering": "HTML",
+        "geo_target": "United States",
+        "publication": "none"
+      },
+      "result": "evidence/web-unblocker-bounded-20261030/RESULT.json"
+    },
+    {
+      "name": "Direct persistent store-session recovery",
+      "kind": "bounded live browser diagnostic",
+      "source_commit": null,
+      "source_commit_recorded": false,
+      "evidence_commit": "945a66981bcf8c1c75060ec749b1c2f2d419185d",
+      "configuration": {
+        "target": "Store 100, ZIP 72712, PICKUP",
+        "coverage_pages_attempted": 0,
+        "private_persistent_profile": true
+      },
+      "result": "evidence/store-session-recovery-20261030/RESULT.json"
+    },
+    {
+      "name": "Scrape.do bounded product and search diagnostics",
+      "kind": "bounded provider API diagnostic",
+      "source_commit": null,
+      "source_commit_recorded": false,
+      "evidence_commit": "10192e2660d9f7e97ff9c7a34002faf7549312d7",
+      "configuration": "evidence/scrapedo-bounded-20261030/RESULT.json",
+      "result": "evidence/scrapedo-bounded-20261030/RESULT.json",
+      "note": "Manual provider requests; no repository diagnostic module was recorded."
+    },
+    {
+      "name": "Bright Data bounded control input",
+      "kind": "bounded provider dataset diagnostic",
+      "source_commit": null,
+      "source_commit_recorded": false,
+      "evidence_commit": "4bd4560637d510443ecdb37783074688a3f4541e",
+      "configuration": "evidence/brightdata-bounded-20261030/RESULT.json",
+      "result": "evidence/brightdata-bounded-20261030/RESULT.json",
+      "note": "Provider dashboard input; no repository diagnostic module was recorded."
+    },
+    {
+      "name": "Full offline regression",
+      "kind": "offline regression",
+      "source_commit": "b956307028bd5c0e9653678a94f608c3b7f1fc05",
+      "configuration": "Commands and evidence paths are recorded in the result file.",
+      "result": "evidence/full-offline-regression-20261031/RESULT.json"
+    }
+  ],
+  "coverage_batches": [
+    {
+      "batch": "batch-00000-1793022207",
+      "source_commit": "2b684e844f2def40c1eb98c4e453c3f8521ffa09",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 1,
+          "listing_requests": 80,
+          "seconds": 5400
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-00000-1793022207/report.json"
+    },
+    {
+      "batch": "batch-00077-1793025412",
+      "source_commit": "90103162f9aca6245af35d6d3b24225a990892d0",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 80,
+          "seconds": 5400
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-00077-1793025412/report.json"
+    },
+    {
+      "batch": "batch-00157-1793026838",
+      "source_commit": "5198b659bb9d360695a8654e1a1a772514698421",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 80,
+          "seconds": 5400
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-00157-1793026838/report.json"
+    },
+    {
+      "batch": "batch-00237-1793028144",
+      "source_commit": "1a220a992347d98ae1d04a40cc6370931ea44476",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 80,
+          "seconds": 5400
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-00237-1793028144/report.json"
+    },
+    {
+      "batch": "batch-00317-1793029509",
+      "source_commit": "ed8648d8e1fbb400ffcf1ad649118cdb86cc4995",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 80,
+          "seconds": 5400
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-00317-1793029509/report.json"
+    },
+    {
+      "batch": "batch-00397-1793030827",
+      "source_commit": "6d08d07cf8ab480b060b36f3c8cb3d320aa39141",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 80,
+          "seconds": 5400
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-00397-1793030827/report.json"
+    },
+    {
+      "batch": "batch-00477-1793032152",
+      "source_commit": "393cf1dee77ba36bc2caa1101f801504225af66b",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 80,
+          "seconds": 5400
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-00477-1793032152/report.json"
+    },
+    {
+      "batch": "batch-00557-1793033638",
+      "source_commit": "e3e4003afa5a4a6b5ae7d5129f69f3f70f5add7d",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 80,
+          "seconds": 5400
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-00557-1793033638/report.json"
+    },
+    {
+      "batch": "batch-00637-1793035060",
+      "source_commit": "20b4f8836cf2a5d938b599d4081f64b9e9e4c702",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 80,
+          "seconds": 5400
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-00637-1793035060/report.json"
+    },
+    {
+      "batch": "batch-00717-1793036448",
+      "source_commit": "69c7c3462692bb8d46dc8be5fbd51eafae5aae02",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 80,
+          "seconds": 5400
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-00717-1793036448/report.json"
+    },
+    {
+      "batch": "batch-00797-1793037889",
+      "source_commit": "9536f9a4f93269cca7b695aa381804827600f1c7",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 80,
+          "seconds": 5400
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-00797-1793037889/report.json"
+    },
+    {
+      "batch": "batch-00877-1793039393",
+      "source_commit": "8255c0efa8064e7287dbe7b97a1e1410e30ae39f",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 80,
+          "seconds": 5400
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-00877-1793039393/report.json"
+    },
+    {
+      "batch": "batch-00957-1793041686",
+      "source_commit": "c0ca0e4a243845f3c75d8abd1c77a93d89bf4761",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 80,
+          "seconds": 5400
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-00957-1793041686/report.json"
+    },
+    {
+      "batch": "batch-01037-1793043375",
+      "source_commit": "fb4a35f95173919f2b966539e5f84e7d2aaffac4",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 80,
+          "seconds": 5400
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-01037-1793043375/report.json"
+    },
+    {
+      "batch": "batch-01117-1793044878",
+      "source_commit": "fffdf161656d434581ac757540dc1491f03472d2",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 80,
+          "seconds": 5400
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-01117-1793044878/report.json"
+    },
+    {
+      "batch": "batch-01174-1793048707",
+      "source_commit": "db7e67767a495f4f6143966ce921091bb03f8d86",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 80,
+          "seconds": 5400
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-01174-1793048707/report.json"
+    },
+    {
+      "batch": "batch-01217-1793063813",
+      "source_commit": "7e5c74830679f47d7f71339f9097d58995dfd2fe",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 40,
+          "seconds": 4813,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-01217-1793063813/report.json"
+    },
+    {
+      "batch": "batch-01257-1793064710",
+      "source_commit": "878139fc9c6ac0ff2a8e4090298f1d528105241b",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 40,
+          "seconds": 3899,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-01257-1793064710/report.json"
+    },
+    {
+      "batch": "batch-01297-1793065695",
+      "source_commit": "49ea53c30eabef8ca290eddc8bc3ddf6a58de11e",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 40,
+          "seconds": 2943,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-01297-1793065695/report.json"
+    },
+    {
+      "batch": "batch-01337-1793066618",
+      "source_commit": "c9c9273bc0bdb63d1aa45ee37aeaf2c96fe9ffa6",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 40,
+          "seconds": 2020,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-01337-1793066618/report.json"
+    },
+    {
+      "batch": "batch-01377-1793067590",
+      "source_commit": "305688e7d3fb7b40c7a3c9dc86514bd2c6edba89",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 40,
+          "seconds": 1048,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-01377-1793067590/report.json"
+    },
+    {
+      "batch": "batch-01417-1793068523",
+      "source_commit": "995516ac160af13a52dc5c19714adfe1718b204a",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 40,
+          "seconds": 86,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-01417-1793068523/report.json"
+    },
+    {
+      "batch": "batch-01557-1793093810",
+      "source_commit": "67400808939a89ec17068f06cc7b5ce6a06cdf0a",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 20,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-01557-1793093810/report.json"
+    },
+    {
+      "batch": "batch-01577-1793094238",
+      "source_commit": "67400808939a89ec17068f06cc7b5ce6a06cdf0a",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 20,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-01577-1793094238/report.json"
+    },
+    {
+      "batch": "batch-01597-1793095002",
+      "source_commit": "ad816550ea60fa0a7c48b32c8e8cfcf7274fe5e2",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 20,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-01597-1793095002/report.json"
+    },
+    {
+      "batch": "batch-01617-1793095446",
+      "source_commit": "ad816550ea60fa0a7c48b32c8e8cfcf7274fe5e2",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 20,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-01617-1793095446/report.json"
+    },
+    {
+      "batch": "batch-01637-1793096001",
+      "source_commit": "ad816550ea60fa0a7c48b32c8e8cfcf7274fe5e2",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 20,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-01637-1793096001/report.json"
+    },
+    {
+      "batch": "batch-01657-1793096562",
+      "source_commit": "ad816550ea60fa0a7c48b32c8e8cfcf7274fe5e2",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 20,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-01657-1793096562/report.json"
+    },
+    {
+      "batch": "batch-01677-1793096961",
+      "source_commit": "ad816550ea60fa0a7c48b32c8e8cfcf7274fe5e2",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 20,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-01677-1793096961/report.json"
+    },
+    {
+      "batch": "batch-01697-1793104001",
+      "source_commit": "47a37bf9199c7b8d12783cae405cc33797d232b3",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 20,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-01697-1793104001/report.json"
+    },
+    {
+      "batch": "batch-01717-1793105790",
+      "source_commit": "fa1ec582c9954d22629cadd24c129954905615b2",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 20,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-01717-1793105790/report.json"
+    },
+    {
+      "batch": "batch-01737-1793107584",
+      "source_commit": "67c7653af2be6d02f86aa33776d14d38c361818a",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 20,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-01737-1793107584/report.json"
+    },
+    {
+      "batch": "batch-01757-1793107996",
+      "source_commit": "67c7653af2be6d02f86aa33776d14d38c361818a",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 20,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-01757-1793107996/report.json"
+    },
+    {
+      "batch": "batch-01777-1793108390",
+      "source_commit": "67c7653af2be6d02f86aa33776d14d38c361818a",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 20,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-01777-1793108390/report.json"
+    },
+    {
+      "batch": "batch-01797-1793108832",
+      "source_commit": "67c7653af2be6d02f86aa33776d14d38c361818a",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 20,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-01797-1793108832/report.json"
+    },
+    {
+      "batch": "batch-01817-1793109229",
+      "source_commit": "67c7653af2be6d02f86aa33776d14d38c361818a",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 20,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-01817-1793109229/report.json"
+    },
+    {
+      "batch": "batch-01837-1793109680",
+      "source_commit": "67c7653af2be6d02f86aa33776d14d38c361818a",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 20,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-01837-1793109680/report.json"
+    },
+    {
+      "batch": "batch-01857-1793110085",
+      "source_commit": "67c7653af2be6d02f86aa33776d14d38c361818a",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 20,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-01857-1793110085/report.json"
+    },
+    {
+      "batch": "batch-01877-1793110493",
+      "source_commit": "67c7653af2be6d02f86aa33776d14d38c361818a",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 20,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-01877-1793110493/report.json"
+    },
+    {
+      "batch": "batch-01897-1793110903",
+      "source_commit": "67c7653af2be6d02f86aa33776d14d38c361818a",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 20,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-01897-1793110903/report.json"
+    },
+    {
+      "batch": "batch-01917-1793111362",
+      "source_commit": "67c7653af2be6d02f86aa33776d14d38c361818a",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 20,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-01917-1793111362/report.json"
+    },
+    {
+      "batch": "batch-01937-1793178506",
+      "source_commit": "adafa4d09fa20c7b926ff4e0041eafec1dee8d26",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 40,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-01937-1793178506/report.json"
+    },
+    {
+      "batch": "batch-01977-1793179404",
+      "source_commit": "e5672091f840cf447a209d5e1c9e6f12b9a259fd",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 40,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-01977-1793179404/report.json"
+    },
+    {
+      "batch": "batch-02017-1793180251",
+      "source_commit": "64afe60a997cbd9ccdf039a7ccc905394652fec5",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 40,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-02017-1793180251/report.json"
+    },
+    {
+      "batch": "batch-02057-1793181074",
+      "source_commit": "db5ed173797c135e0d66a73ea94052c7bdc6fe9a",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 40,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-02057-1793181074/report.json"
+    },
+    {
+      "batch": "batch-02097-1793181786",
+      "source_commit": "bcc76bb58d29d248524516da4346053ac84c3307",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 40,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-02097-1793181786/report.json"
+    },
+    {
+      "batch": "batch-02137-1793182549",
+      "source_commit": "2bb5d00c5d54b75d7af5936da4eeec75da880595",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 40,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-02137-1793182549/report.json"
+    },
+    {
+      "batch": "batch-02177-1793183373",
+      "source_commit": "a1acdece13dd85c788ef31f435f0e132838471e3",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 40,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-02177-1793183373/report.json"
+    },
+    {
+      "batch": "batch-02217-1793184296",
+      "source_commit": "7754f8275456909a6b3bba4329550f27a406b2cb",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 40,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-02217-1793184296/report.json"
+    },
+    {
+      "batch": "batch-02257-1793185122",
+      "source_commit": "da2f8300287ed2891c57de8b380afcb77b12e5a3",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 40,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-02257-1793185122/report.json"
+    },
+    {
+      "batch": "batch-02257-1793185934",
+      "source_commit": "bb77ab349d4d29798384252770b5d5576e9b6d45",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 40,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-02257-1793185934/report.json"
+    },
+    {
+      "batch": "batch-02297-1793186779",
+      "source_commit": "9b76d19ec4e5b980957bcfb98941798760e1b1c1",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 40,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-02297-1793186779/report.json"
+    },
+    {
+      "batch": "batch-02337-1793187562",
+      "source_commit": "3e0e5c8c908de62430e6404540cc48a8d86b8381",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 40,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-02337-1793187562/report.json"
+    },
+    {
+      "batch": "batch-02377-1793188344",
+      "source_commit": "41b6383cb0156dfc77f5edb0fdf039afeab44312",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 40,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-02377-1793188344/report.json"
+    },
+    {
+      "batch": "batch-02417-1793189188",
+      "source_commit": "2b049ccc2e0eba56d9a6ab11e3a9d7a3d5443847",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 40,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-02417-1793189188/report.json"
+    },
+    {
+      "batch": "batch-02457-1793190035",
+      "source_commit": "71f970c5deb6fa3209b0e8ed01f7ab737b12838e",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 40,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-02457-1793190035/report.json"
+    },
+    {
+      "batch": "batch-02497-1793190894",
+      "source_commit": "e3287aa4600af00c92611b7d342df72437b52ad9",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 40,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-02497-1793190894/report.json"
+    },
+    {
+      "batch": "batch-02537-1793191703",
+      "source_commit": "1e561fce9e54f1feef6687fc73212a810a5b0ad9",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 40,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-02537-1793191703/report.json"
+    },
+    {
+      "batch": "batch-02577-1793192523",
+      "source_commit": "9640ef703e0d522ec34220818b91fc496adc3a23",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 40,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-02577-1793192523/report.json"
+    },
+    {
+      "batch": "batch-02617-1793193605",
+      "source_commit": "917a851660ffcff048dd154823366d9ffd80e189",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 40,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-02617-1793193605/report.json"
+    },
+    {
+      "batch": "batch-02657-1793194782",
+      "source_commit": "84401d999226e74c2868595690c1e136c6dd890d",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 40,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-02657-1793194782/report.json"
+    },
+    {
+      "batch": "batch-02697-1793195662",
+      "source_commit": "d7583ab25b625ef44971f0928e342715d4a05d9e",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 40,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-02697-1793195662/report.json"
+    },
+    {
+      "batch": "batch-02737-1793196734",
+      "source_commit": "542a1877b598a2a0e2cbf2504506ceb9357c8707",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 40,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-02737-1793196734/report.json"
+    },
+    {
+      "batch": "batch-02777-1793197785",
+      "source_commit": "afdd2f87ab659953ba05d46ce6ef942277384d71",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 40,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-02777-1793197785/report.json"
+    },
+    {
+      "batch": "batch-02817-1793198838",
+      "source_commit": "75278b96af27b8a2e275c96fca4a0faa715c72d4",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 40,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-02817-1793198838/report.json"
+    },
+    {
+      "batch": "batch-02857-1793200020",
+      "source_commit": "ea19bef304154e3972513270527d7f17882c3c18",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 40,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-02857-1793200020/report.json"
+    },
+    {
+      "batch": "batch-02897-1793201368",
+      "source_commit": "4af705c7f4327af44ff49f61e1ad87802c1eb858",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 40,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-02897-1793201368/report.json"
+    },
+    {
+      "batch": "batch-02937-1793202237",
+      "source_commit": "28513ecdd238dd9c69efcd20db8c51a3bb248e2d",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 40,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-02937-1793202237/report.json"
+    },
+    {
+      "batch": "batch-02977-1793203099",
+      "source_commit": "a6413d9f9e2a6bd60d829d4b430af026f854dc14",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 40,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-02977-1793203099/report.json"
+    },
+    {
+      "batch": "batch-03017-1793203965",
+      "source_commit": "a8dc84aea072424c2525df7011631d203299921f",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 40,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-03017-1793203965/report.json"
+    },
+    {
+      "batch": "batch-03057-1793205025",
+      "source_commit": "9543f232b6e2acf7f390a1cc076909525755f238",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 40,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-03057-1793205025/report.json"
+    },
+    {
+      "batch": "batch-03097-1793205985",
+      "source_commit": "5970aac6d31244fd54aa73dce1c3dc091c57fb75",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 40,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-03097-1793205985/report.json"
+    },
+    {
+      "batch": "batch-03137-1793206883",
+      "source_commit": "1b8e508bc93c9c1f4944eab71bbcc16571e0925d",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 40,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-03137-1793206883/report.json"
+    },
+    {
+      "batch": "batch-03177-1793207785",
+      "source_commit": "593761fbe9ad02c90bb8a83cca7496c218434cb8",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 40,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-03177-1793207785/report.json"
+    },
+    {
+      "batch": "batch-03217-1793208613",
+      "source_commit": "244a1a5e166480c23961c67a9bf3f66015218000",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 40,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-03217-1793208613/report.json"
+    },
+    {
+      "batch": "batch-03257-1793209518",
+      "source_commit": "8bee1e31dc0519e5710a1a3b5f4a0f1fd76e71e2",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 40,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-03257-1793209518/report.json"
+    },
+    {
+      "batch": "batch-03297-1793210459",
+      "source_commit": "934d70d1205064658202b8f31ec653561368f27f",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 40,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-03297-1793210459/report.json"
+    },
+    {
+      "batch": "batch-03337-1793211387",
+      "source_commit": "4a3127ffe141b52507b68a4a84dfb7aedc9f786f",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 40,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-03337-1793211387/report.json"
+    },
+    {
+      "batch": "batch-03377-1793212198",
+      "source_commit": "1d2dc08fe005ccd6ea6208bb64a24d98b15c13e1",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 40,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-03377-1793212198/report.json"
+    },
+    {
+      "batch": "batch-03417-1793212998",
+      "source_commit": "1d675fda79a9fa8aabc0fc6da0d4af0a19d2b6e1",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 40,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-03417-1793212998/report.json"
+    },
+    {
+      "batch": "batch-03457-1793213803",
+      "source_commit": "5eeeb3e9dec15a85b24ddd7327c45f664ac84235",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 40,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-03457-1793213803/report.json"
+    },
+    {
+      "batch": "batch-03497-1793214644",
+      "source_commit": "d4296d6847e4b224256049cdac61b4ab05993b48",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 40,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-03497-1793214644/report.json"
+    },
+    {
+      "batch": "batch-03537-1793215641",
+      "source_commit": "43c11d4b2f5c6bd06e28da675f4b68962301baf8",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 40,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-03537-1793215641/report.json"
+    },
+    {
+      "batch": "batch-03577-1793216774",
+      "source_commit": "f517065b2819829bc14c0a9f3aedf4b234c8f9d7",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 40,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-03577-1793216774/report.json"
+    },
+    {
+      "batch": "batch-03617-1793217781",
+      "source_commit": "c5512b972d320055996db180d34730c198c9c326",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 40,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-03617-1793217781/report.json"
+    },
+    {
+      "batch": "batch-03657-1793218856",
+      "source_commit": "75e4a9ad60388452f813bcad2df4b7d8c84e9c6d",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 40,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-03657-1793218856/report.json"
+    },
+    {
+      "batch": "batch-03697-1793219890",
+      "source_commit": "b1ed2fea889e55c16a67bccbca91f9a6050b2328",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 40,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-03697-1793219890/report.json"
+    },
+    {
+      "batch": "batch-03737-1793220879",
+      "source_commit": "977efe037ed0fdb54ecc3474d4dcfa4f636860ce",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 40,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-03737-1793220879/report.json"
+    },
+    {
+      "batch": "batch-03777-1793222122",
+      "source_commit": "25c0fd5e17e694edbaf92cceff867c0ba4e704a7",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 40,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-03777-1793222122/report.json"
+    },
+    {
+      "batch": "batch-03836-1793254809",
+      "source_commit": "7d41d9da539e942fe5d1610ecd229d230690db44",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 40,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-03836-1793254809/report.json"
+    },
+    {
+      "batch": "batch-03876-1793255836",
+      "source_commit": "65186a69480a4463255deebbc980bac637db1f08",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 40,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-03876-1793255836/report.json"
+    },
+    {
+      "batch": "batch-03916-1793256721",
+      "source_commit": "2ad431b4c533721409d067cd744e6ded2c4059c3",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 40,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-03916-1793256721/report.json"
+    },
+    {
+      "batch": "batch-03956-1793257688",
+      "source_commit": "b54b39aa74927e208f516db98633e44e7bf9d208",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 40,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-03956-1793257688/report.json"
+    },
+    {
+      "batch": "batch-03996-1793258721",
+      "source_commit": "e174fae64dbce5d97aca5066845818e711f8e95e",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 40,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-03996-1793258721/report.json"
+    },
+    {
+      "batch": "batch-04036-1793259976",
+      "source_commit": "96198fe133f14831258fb3142aa814e523ee7c8e",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 40,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-04036-1793259976/report.json"
+    },
+    {
+      "batch": "batch-04036-1793264464",
+      "source_commit": "8f75b13540c0182a7f13210fc45bd7b396dab913",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 5,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-04036-1793264464/report.json"
+    },
+    {
+      "batch": "batch-04041-1793264635",
+      "source_commit": "000ddd7d666d6de4921031116171eb55b0b644ed",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 40,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-04041-1793264635/report.json"
+    },
+    {
+      "batch": "batch-04081-1793265647",
+      "source_commit": "75b022c258a283797af476e49456280dda6ea3de",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 40,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-04081-1793265647/report.json"
+    },
+    {
+      "batch": "batch-04121-1793266735",
+      "source_commit": "9bf9fac21a4058303d9ded34105dde3db3232cc3",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 40,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-04121-1793266735/report.json"
+    },
+    {
+      "batch": "batch-04161-1793267950",
+      "source_commit": "afa3c82e3cb9ec61739e0d5dd7c815149475f9ab",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 40,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-04161-1793267950/report.json"
+    },
+    {
+      "batch": "batch-04234-1793274059",
+      "source_commit": "b19496b31db966ee41c85b960cbfd9377878766d",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 20,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-04234-1793274059/report.json"
+    },
+    {
+      "batch": "batch-04254-1793274909",
+      "source_commit": "2c8d8c46b94e802b12a0d6425c2103e05a01ee3c",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 20,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-04254-1793274909/report.json"
+    },
+    {
+      "batch": "batch-04274-1793275796",
+      "source_commit": "30f2f4c08ea7c004b54e8d6c10997a9e96346b6c",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 20,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-04274-1793275796/report.json"
+    },
+    {
+      "batch": "batch-04294-1793276592",
+      "source_commit": "4ab0b745df0aabafe7f745c9f4205b1f23d91f7a",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 20,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-04294-1793276592/report.json"
+    },
+    {
+      "batch": "batch-04314-1793277259",
+      "source_commit": "53df2dd31245a9fc2427c3b4dd477ff13c1931d5",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 20,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-04314-1793277259/report.json"
+    },
+    {
+      "batch": "batch-04334-1793278081",
+      "source_commit": "70b805bf2ae3d1f369b9a7488e621c3d9a0c0a0b",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 20,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-04334-1793278081/report.json"
+    },
+    {
+      "batch": "batch-04354-1793278984",
+      "source_commit": "d501fb4447426bda80d0b7e9e17d9bd8bdaa1b01",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 20,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-04354-1793278984/report.json"
+    },
+    {
+      "batch": "batch-04374-1793279864",
+      "source_commit": "2417b3490e14d7b981e0441f78ac208174fee74d",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 20,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-04374-1793279864/report.json"
+    },
+    {
+      "batch": "batch-04394-1793280771",
+      "source_commit": "2aadb9173bbd2fcb4546f0add325f536c1e5add8",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 20,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-04394-1793280771/report.json"
+    },
+    {
+      "batch": "batch-04414-1793281715",
+      "source_commit": "44f24e48fc634c77fe2e9056d6538ad0a939500d",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 20,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-04414-1793281715/report.json"
+    },
+    {
+      "batch": "batch-04434-1793282869",
+      "source_commit": "78907517229e7bcc81c99d464e93233815d0c96c",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 20,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-04434-1793282869/report.json"
+    },
+    {
+      "batch": "batch-04454-1793284048",
+      "source_commit": "b555b205beb44d2467eee0af490865b44f8d82ca",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 20,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-04454-1793284048/report.json"
+    },
+    {
+      "batch": "batch-04474-1793285370",
+      "source_commit": "a54e3acda4806f7563ca93c30cc13b5fb47eb24a",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 20,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-04474-1793285370/report.json"
+    },
+    {
+      "batch": "batch-04494-1793286947",
+      "source_commit": "529169820d3ca1f9456d0f8600165c03cee16abc",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 20,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-04494-1793286947/report.json"
+    },
+    {
+      "batch": "batch-04514-1793288584",
+      "source_commit": "aee60710969b0b62b42d22c8ca1350f0ba1607c0",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 20,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-04514-1793288584/report.json"
+    },
+    {
+      "batch": "batch-04534-1793289982",
+      "source_commit": "fc9af722b232c81b93ece19cd25ccf0fa613a5c6",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 20,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-04534-1793289982/report.json"
+    },
+    {
+      "batch": "batch-04542-1793345218",
+      "source_commit": "d9b7ff567cc85a5bbf7bbb65fea462b4406f5a2f",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 20,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-04542-1793345218/report.json"
+    },
+    {
+      "batch": "batch-04542-1793345610",
+      "source_commit": "34309840f5ce19dea32dad9048aab39dc37d042e",
+      "source_commit_recorded": true,
+      "configuration": {
+        "limits": {
+          "product_requests": 10,
+          "listing_requests": 1,
+          "seconds": 1800,
+          "batch_bytes": 2147483648
+        },
+        "category": null,
+        "start_url": null
+      },
+      "result": "evidence/point3-coverage-queue-20261026/batch-04542-1793345610/report.json"
+    }
+  ]
+}

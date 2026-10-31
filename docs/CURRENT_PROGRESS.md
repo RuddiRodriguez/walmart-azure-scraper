@@ -1,6 +1,6 @@
 # Final local delivery checkpoint
 
-Updated: 30 October 2026, Amsterdam time
+Updated: 1 November 2026, Amsterdam time
 Current review branch: `main`
 
 This is the final local review checkpoint prepared for the client. It does not claim complete production coverage.
@@ -16,6 +16,8 @@ Client run instructions: [simple step-by-step guide](RUN_GUIDE.md).
 5. Expanded genuine-offer review: 55 distinct products across 11 searches. No qualifying offer found; no example fabricated: [evidence](../evidence/expanded-offers-20261028/).
 6. New publication, pending-product, fresh-yield and package-size safeguards passed offline checks: [evidence](../evidence/client-review-20261029-safeguards/RESULT.json).
 7. Azure evidence now includes sanitized events, request counts, commands and cleanup receipts: [evidence](../evidence/azure-sequence-20261027/).
+8. Package-size, assortment-gate, coverage-mapping and full offline regression corrections are recorded in the [1 November checkpoint](CLIENT_REVIEW_CHECKPOINT_20261101.md).
+9. The final package has a full file manifest and a [run source/configuration index](../evidence/final-package-20261101/RUN_PROVENANCE.json).
 
 ## Full coverage — incomplete and frozen
 
@@ -38,4 +40,4 @@ The project did reach more than 500 products in two earlier controlled demonstra
 
 Two bounded Azure diagnostics are included. The Store 100/PICKUP control passed in West US 2 and East US 2, but the Art Sets listing was blocked in both regions. Reliable Azure collection remains unresolved. Nothing has been sent or submitted to the client by this repository.
 
-Current point-by-point client checkpoint: [30 October review](CLIENT_REVIEW_CHECKPOINT_20261030.md).
+Current point-by-point client checkpoint: [1 November review](CLIENT_REVIEW_CHECKPOINT_20261101.md).
