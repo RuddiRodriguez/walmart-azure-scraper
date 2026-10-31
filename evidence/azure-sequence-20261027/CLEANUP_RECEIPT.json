@@ -35,6 +35,6 @@
     "The private CLI logs are not published because they belong to the private Azure account context.",
     "The command exit codes prove successful command execution, including group wait --deleted.",
     "The original group exists stdout was not retained, so this file does not provide the requested redacted false output.",
-    "A read-only refresh on 31 October was blocked by the account's current login security policy."
+    "A CLI refresh on 31 October was blocked by the saved login security policy; the already signed-in Azure Portal then verified both exact resource-group filters returned zero matches."
   ]
 }

@@ -53,6 +53,6 @@ az group exists --name <redacted>
 The local Azure CLI logs recorded exit code 0 for all four commands. Resource names, account
 details, IP addresses, SSH settings and credentials are intentionally omitted.
 
-On 31 October, fresh read-only checks for both groups could not run because the existing login
-was blocked by the account's current security policy. The redacted result is in
-`RESOURCE_GROUP_CHECK.json`. It does not prove either group is absent.
+On 31 October, fresh CLI checks could not run because the saved login was blocked by the account's
+current security policy. The already signed-in Azure Portal was then checked directly. Both exact
+resource-group filters returned no matches. Redacted output is in `RESOURCE_GROUP_CHECK.json`.

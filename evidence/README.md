@@ -44,7 +44,7 @@ Full HTML responses, browser profiles, cookies, session state and unredacted cap
 - Full category and pagination coverage remains incomplete.
 - No qualifying genuine volume or digital discount offer was found in bounded live review.
 - Corrected re-fetch evidence does not prove one retry prevents future store drift.
-- Two bounded Azure diagnostics completed. The Store 100/PICKUP control passed in two regions, but the following Art Sets listing was blocked in both. The original cleanup commands succeeded, but the requested redacted `false` output for both resource groups remains missing because the fresh read-only check could not authenticate.
+- Two bounded Azure diagnostics completed. The Store 100/PICKUP control passed in two regions, but the following Art Sets listing was blocked in both. Signed-in Azure Portal filters verified both temporary resource groups are absent.
 - No tested transport has yet proved Store 100, ZIP 72712, PICKUP, product identity and local price together reliably enough for the final uncapped run.
 
 No client message or contest submission is performed by repository tooling.

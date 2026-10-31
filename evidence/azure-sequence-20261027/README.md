@@ -15,8 +15,9 @@ not make collection reliable. They do not prove that Azure IP reputation alone c
 No invalid data was published. The original cleanup commands completed successfully, including
 `group wait --deleted`. The original `group exists` stdout was not retained. A fresh read-only
 check on 31 October could not authenticate because Azure security defaults blocked the saved
-login. Therefore the requested redacted `false` output for both groups is still missing and is
-not claimed as proved by this public package.
+login. The already signed-in Azure Portal was then checked directly. Exact-name filters for both
+temporary groups returned `No resource groups match your filters` and `Showing 0 of 0`.
+The privacy-safe output is recorded in `RESOURCE_GROUP_CHECK.json`.
 
 The public package now contains the reviewed result, a privacy-safe event sequence and counts,
 the exact diagnostic source snapshots, the commands used, and a sanitized cleanup receipt. Raw

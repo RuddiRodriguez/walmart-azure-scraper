@@ -1,33 +1,49 @@
 {
-  "checked_at_utc": "2026-10-31T22:29:50Z",
+  "checked_at_utc": "2026-10-31T22:50:24Z",
   "purpose": "Read-only verification that both temporary Azure resource groups no longer exist",
+  "method": "Signed-in Azure Portal resource-group list with exact-name filters",
   "groups": [
     {
       "alias": "west-us-2-diagnostic-group",
-      "command": "az group exists --name <redacted> --output tsv",
-      "output": "not_available",
-      "exit_code": 1,
-      "result": "not_verified",
-      "reason": "Azure CLI login blocked by account security defaults"
+      "filter": "<redacted-exact-resource-group-name>",
+      "redacted_output": [
+        "No resource groups match your filters",
+        "Showing 0 of 0"
+      ],
+      "result": "verified_absent"
     },
     {
       "alias": "east-us-2-diagnostic-group",
-      "command": "az group exists --name <redacted> --output tsv",
-      "output": "not_available",
-      "exit_code": 1,
-      "result": "not_verified",
-      "reason": "Azure CLI login blocked by account security defaults"
+      "filter": "<redacted-exact-resource-group-name>",
+      "redacted_output": [
+        "No resource groups match your filters",
+        "Showing 0 of 0"
+      ],
+      "result": "verified_absent"
     }
   ],
+  "portal_context": {
+    "directory": "<redacted>",
+    "subscription": "<redacted>",
+    "account": "<redacted>",
+    "unfiltered_resource_groups_visible": 1,
+    "unfiltered_group_is_unrelated_to_walmart_diagnostics": true
+  },
   "historical_cleanup_evidence": {
     "group_delete_exit_code": 0,
     "group_wait_deleted_exit_code": 0,
     "group_exists_exit_code": 0,
     "group_exists_stdout_retained": false
   },
-  "status": "blocked",
-  "missing_proof": "A successful authenticated read-only check returning false for each group",
+  "earlier_cli_refresh": {
+    "time_utc": "2026-10-31T22:29:50Z",
+    "result": "blocked_before_resource_state_returned",
+    "reason": "Saved Azure CLI login was blocked by account security defaults"
+  },
+  "status": "verified",
+  "conclusion": "Both temporary Walmart diagnostic resource groups are absent from the signed-in Azure subscription",
   "privacy": "Resource names, account identifiers, tenant identifiers, trace identifiers and correlation identifiers are redacted",
   "new_resources_created": false,
-  "paid_execution_started": false
+  "paid_execution_started": false,
+  "azure_resources_changed": false
 }
