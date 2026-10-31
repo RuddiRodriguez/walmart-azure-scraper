@@ -70,8 +70,15 @@ def build():
     (evidence / 'review-audit.json').write_text(json.dumps(report, indent=2) + '\n')
     files = (subprocess.check_output(['git', 'ls-files'], cwd=root, text=True).splitlines() if checkout
              else list(json.loads((evidence / 'SHA256SUMS.json').read_text())))
-    manifest = {name: hashlib.sha256((root / name).read_bytes()).hexdigest() for name in files
-                if (root / name).is_file() and name != 'evidence/SHA256SUMS.json'}
+    manifest = {}
+    for name in files:
+        if name == 'evidence/SHA256SUMS.json' or not (root / name).is_file():
+            continue
+        if checkout and name != 'evidence/review-audit.json':
+            content = subprocess.check_output(['git', 'show', 'HEAD:' + name], cwd=root)
+        else:
+            content = (root / name).read_bytes()
+        manifest[name] = hashlib.sha256(content).hexdigest()
     (evidence / 'SHA256SUMS.json').write_text(json.dumps(manifest, indent=2) + '\n')
     print(json.dumps({'passed': report['passed'], 'records': len(rows), 'duplicates': duplicates, 'errors': errors}))
     if errors:
