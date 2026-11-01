@@ -1,0 +1,24 @@
+{
+  "time_amsterdam": "2026-11-01T10:24:40+01:00",
+  "channel": "Authenticated Scrape.do dashboard support chat",
+  "purpose": "Ask for one supported Walmart endpoint that preserves the complete required store and fulfillment context.",
+  "observed_result_reported_to_support": {
+    "store_drift_improved": true,
+    "direct_store_100_supported": false,
+    "explicit_pickup_present": false
+  },
+  "message": "Hi, I tested the update. Store drift improved, but the acceptance requirement is still not met. Direct Store 100 targeting is still unsupported, and the Store 100 / ZIP 72712 result still does not include explicit PICKUP proof. Please provide the exact supported endpoint and parameters that return these fields together in one response: Store 100, ZIP 72712, PICKUP, product ID, and local price. Please do not substitute a nearby store. If you provide a supported configuration, I will verify it with no more than three control requests before any larger collection.",
+  "requested_fields": [
+    "Store 100",
+    "ZIP 72712",
+    "PICKUP",
+    "product ID",
+    "local price"
+  ],
+  "provider_response": null,
+  "status": "sent_awaiting_support_response",
+  "control_request_limit_after_supported_configuration": 3,
+  "control_requests_made_in_this_step": 0,
+  "large_collection_started": false,
+  "credentials_included": false
+}

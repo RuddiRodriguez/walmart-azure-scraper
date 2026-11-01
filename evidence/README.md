@@ -30,6 +30,7 @@ Current local summary: [`docs/CLIENT_REVIEW_CHECKPOINT_20261101.md`](../docs/CLI
 | Oxylabs residential test | `oxylabs-bounded-20261030/` |
 | Oxylabs Web Unblocker test | `web-unblocker-bounded-20261030/` |
 | Scrape.do Store 100 test | `scrapedo-bounded-20261030/` |
+| Scrape.do exact-endpoint support request | `scrapedo-support-20261101/RESULT.json` |
 | Bright Data Store 100 test | `brightdata-bounded-20261030/` |
 | Store-session recovery result | `store-session-recovery-20261030/RESULT.json` |
 

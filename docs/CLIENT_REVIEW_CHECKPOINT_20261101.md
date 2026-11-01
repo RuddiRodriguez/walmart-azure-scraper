@@ -43,6 +43,8 @@ dated 26 October and are not fresh runs of this revision.
   Clearance as substitutes.
 - Azure: the bounded diagnostics are documented and the temporary groups are absent. A new Azure
   milestone needs client approval and a transport that first passes the small store-context gate.
+- Transport next step: Scrape.do support received the updated result and the exact five-field
+  endpoint request. Response pending. No control requests or larger collection started.
 
 ## Main evidence
 
@@ -53,6 +55,7 @@ dated 26 October and are not fresh runs of this revision.
 - Offline regression: `evidence/full-offline-regression-20261031/RESULT.json`
 - Store-session result: `evidence/store-session-recovery-20261030/RESULT.json`
 - Run source/configuration index: `evidence/final-package-20261101/RUN_PROVENANCE.json`
+- Scrape.do support request: `evidence/scrapedo-support-20261101/RESULT.json`
 - Full file manifest: `evidence/SHA256SUMS.json`
 
 Nothing was sent to the client.

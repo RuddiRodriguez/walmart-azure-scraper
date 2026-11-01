@@ -13,6 +13,8 @@ The full offline regression passed, and the final manifest now includes the prev
 
 What remains open is unchanged: 780 pending pages, 216 retryable failures and 18 unresolved paths. A clean current-version collection, larger recovery/repeat and final coverage still depend on a transport that proves Store 100, ZIP 72712 and PICKUP together. The offer review found no qualifying real example, so those fields remain blank.
 
+I sent Scrape.do support the updated result and asked for the exact supported endpoint returning Store 100, ZIP 72712, PICKUP, product ID and local price together. I am waiting for their response. No additional control requests or larger collection were started.
+
 The detailed checkpoint is here:
 https://github.com/RuddiRodriguez/walmart-azure-scraper/blob/review-20261101-offline-corrections/docs/CLIENT_REVIEW_CHECKPOINT_20261101.md
 
