@@ -1,0 +1,146 @@
+{
+  "mode": "Full offline regression; no browser, network, Azure, proxy or live collection",
+  "source_commit": "58851a9a792e7fd9a3d9bd67f3203b61236d451e",
+  "passed": true,
+  "checks": [
+    {
+      "name": "safeguards",
+      "command": "/Users/ruddigarcia/Documents/ChatGPT/Free_l/walmart-scraper/.venv/bin/python -m tools.check_review_changes",
+      "exit_code": 0,
+      "passed": true,
+      "evidence": "evidence/review-regression.json"
+    },
+    {
+      "name": "assortment",
+      "command": "/Users/ruddigarcia/Documents/ChatGPT/Free_l/walmart-scraper/.venv/bin/python -m tools.check_unverified_assortment_gate",
+      "exit_code": 0,
+      "passed": true,
+      "evidence": "evidence/unverified-assortment-gate-20261031.json"
+    },
+    {
+      "name": "package_sizes",
+      "command": "/Users/ruddigarcia/Documents/ChatGPT/Free_l/walmart-scraper/.venv/bin/python -m tools.check_package_sizes",
+      "exit_code": 0,
+      "passed": true,
+      "evidence": "evidence/package-size-checks-20261030.json"
+    },
+    {
+      "name": "package_size_replay",
+      "command": "/Users/ruddigarcia/Documents/ChatGPT/Free_l/walmart-scraper/.venv/bin/python -m tools.replay_package_size_changes",
+      "exit_code": 0,
+      "passed": true,
+      "evidence": "evidence/package-size-replay-20261031.json"
+    },
+    {
+      "name": "historical_retention",
+      "command": "/Users/ruddigarcia/Documents/ChatGPT/Free_l/walmart-scraper/.venv/bin/python -m tools.check_retention",
+      "exit_code": 0,
+      "passed": true,
+      "evidence": "evidence/retention-step2-20261026/retention-checks.json"
+    },
+    {
+      "name": "runner_flow",
+      "command": "/Users/ruddigarcia/Documents/ChatGPT/Free_l/walmart-scraper/.venv/bin/python -m tools.check_runner_flow",
+      "exit_code": 0,
+      "passed": true,
+      "evidence": "evidence/runner-flow-check.json"
+    },
+    {
+      "name": "saved_source_replay",
+      "command": "/Users/ruddigarcia/Documents/ChatGPT/Free_l/walmart-scraper/.venv/bin/python -m tools.replay_evidence",
+      "exit_code": 0,
+      "passed": true,
+      "evidence": "evidence/replay-report.json"
+    },
+    {
+      "name": "taxonomy_scope",
+      "command": "/Users/ruddigarcia/Documents/ChatGPT/Free_l/walmart-scraper/.venv/bin/python -m tools.check_taxonomy_queue",
+      "exit_code": 0,
+      "passed": true,
+      "evidence": ""
+    },
+    {
+      "name": "coverage_queue",
+      "command": "/Users/ruddigarcia/Documents/ChatGPT/Free_l/walmart-scraper/.venv/bin/python -m tools.check_coverage_queue",
+      "exit_code": 0,
+      "passed": true,
+      "evidence": "evidence/point3-coverage-queue-20261026/offline-checks.json"
+    },
+    {
+      "name": "coverage_ledger",
+      "command": "/Users/ruddigarcia/Documents/ChatGPT/Free_l/walmart-scraper/.venv/bin/python -m tools.reconcile_coverage_exclusions",
+      "exit_code": 0,
+      "passed": true,
+      "evidence": "evidence/coverage-exclusion-mapping-20261031.json"
+    }
+  ],
+  "historical_datasets": [
+    {
+      "name": "latest-large-recovery-20261027",
+      "records": 132,
+      "label": "historical bounded recovery",
+      "historical": true,
+      "clean_current_version_run": false,
+      "products_sha256": "cea1375843dada4f80964c54cdf66f47bfea27c110fdbf7a43f209afa719c309"
+    },
+    {
+      "name": "latest-large-repeat-20261027",
+      "records": 132,
+      "label": "historical bounded repeat",
+      "historical": true,
+      "clean_current_version_run": false,
+      "products_sha256": "a33e4b7b693ff6d4a589dce1da8ef30fce07514052f0aeb3d232b631518ebac8"
+    },
+    {
+      "name": "controlled-skip-invalid-20261025",
+      "records": 506,
+      "label": "historical controlled demonstration",
+      "historical": true,
+      "clean_current_version_run": false,
+      "products_sha256": "eb54f4bd0e123b88f9fe6a6442b10cc67a917d9df390304116d6cf9a933b8268"
+    },
+    {
+      "name": "controlled-skip-invalid-repeat-20261025",
+      "records": 506,
+      "label": "historical controlled repeat",
+      "historical": true,
+      "clean_current_version_run": false,
+      "products_sha256": "2c5b51df299bfdac87a015d7b8d3e286acf483a1ac3cf72777d60ba813df80d1"
+    }
+  ],
+  "historical_products_unchanged": {
+    "evidence/latest-large-recovery-20261027/products.json": true,
+    "evidence/latest-large-repeat-20261027/products.json": true,
+    "evidence/controlled-skip-invalid-20261025/products.json": true,
+    "evidence/controlled-skip-invalid-repeat-20261025/products.json": true
+  },
+  "historical_132_replay": {
+    "latest-large-recovery-20261027": {
+      "records_replayed": 132,
+      "changed_records": 43,
+      "changed_fields": [
+        "weight"
+      ]
+    },
+    "latest-large-repeat-20261027": {
+      "records_replayed": 132,
+      "changed_records": 43,
+      "changed_fields": [
+        "weight"
+      ]
+    }
+  },
+  "coverage_work_remains_open": {
+    "pending": 780,
+    "retryable_failures": 216,
+    "unresolved_failed_pages": 9,
+    "navigation_scope_unverified": 9,
+    "unresolved_total": 18,
+    "full_coverage_complete": false
+  },
+  "limits": [
+    "Historical 132-product and 506-product datasets are not clean current-version runs.",
+    "Historical product files were hash-checked and not rewritten.",
+    "Offline regression does not prove fresh retailer access or full category coverage."
+  ]
+}

@@ -173,7 +173,8 @@ def main():
                 if result['provider_usage_headers'].get('scrape.do-remaining-credits')
             ), None),
             'credit_limit_exceeded': credits_used > CREDIT_LIMIT,
-            'paid_cost_usd': 0,
+            'paid_cost_usd': None,
+            'paid_cost_note': 'No monetary charge was reported by the response; account credits are recorded separately.',
         },
         'required_context': {
             'store_id': STORE_ID,

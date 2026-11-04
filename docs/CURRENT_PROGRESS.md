@@ -1,6 +1,6 @@
 # Final local delivery checkpoint
 
-Updated: 1 November 2026, Amsterdam time
+Updated: 4 November 2026, Amsterdam time
 Current review branch: `main`
 
 This is the final local review checkpoint prepared for the client. It does not claim complete production coverage.
@@ -18,6 +18,8 @@ Client run instructions: [simple step-by-step guide](RUN_GUIDE.md).
 7. Azure evidence now includes sanitized events, request counts, commands and cleanup receipts: [evidence](../evidence/azure-sequence-20261027/).
 8. Package-size, assortment-gate, coverage-mapping and full offline regression corrections are recorded in the [1 November checkpoint](CLIENT_REVIEW_CHECKPOINT_20261101.md).
 9. The final package has a full file manifest and a [run source/configuration index](../evidence/final-package-20261101/RUN_PROVENANCE.json).
+10. Scrape.do's store-scoped product endpoint passed three bounded Store 100 controls: [result](../evidence/scrapedo-store-controls-20261104/RESULT.json).
+11. Walmart volume/digital fields are now always empty. Rollback stays in regular/sale price fields. The updated ten-module offline regression passed: [result](../evidence/full-offline-regression-20261104/RESULT.json).
 
 ## Full coverage — incomplete and frozen
 
@@ -37,6 +39,10 @@ The project did reach more than 500 products in two earlier controlled demonstra
 1. Reconcile the 780 pending pages.
 2. Retry 216 failed pages. Four failures have response-confirmed exclusion evidence. Nine failed page types and nine navigation pages remain unresolved: [ledger](../evidence/coverage-failure-ledger-20261030/SUMMARY.json).
 3. Produce a new full-catalog export only after those queues are exhausted.
+
+The product-page transport gate now passes. Full work is still paused because category/listing
+pages are not proven through the same endpoint, the client has not approved a paid full run, and
+Mac free space is below the collection safety threshold.
 
 Two bounded Azure diagnostics are included. The Store 100/PICKUP control passed in West US 2 and East US 2, but the Art Sets listing was blocked in both regions. Reliable Azure collection remains unresolved. Nothing has been sent or submitted to the client by this repository.
 

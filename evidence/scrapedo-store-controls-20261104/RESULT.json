@@ -22,9 +22,10 @@
     "runtime_seconds": 45.233,
     "credits_used": 30,
     "remaining_credits_after_test": 930,
-    "paid_cost_usd": 0,
+    "paid_cost_usd": null,
+    "paid_cost_note": "No monetary charge was reported by the response; account credits are recorded separately.",
     "planned_credit_limit_exceeded": true,
-    "limit_deviation": "The store endpoint reported 10 credits per successful request. The planned limit was 15 credits, based on the earlier endpoint tests. Three successful controls therefore used 30 existing account credits. No paid balance was used and no further request was made."
+    "limit_deviation": "The store endpoint reported 10 credits per successful request. The planned limit was 15 credits, based on the earlier endpoint tests. Three successful controls therefore used 30 existing account credits. No monetary charge was reported and no further request was made."
   },
   "required_context": {
     "store_id": "100",

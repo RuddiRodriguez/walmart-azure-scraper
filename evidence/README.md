@@ -2,11 +2,11 @@
 
 ## Current client evidence
 
-Current local summary: [`docs/CLIENT_REVIEW_CHECKPOINT_20261101.md`](../docs/CLIENT_REVIEW_CHECKPOINT_20261101.md).
+Current local summary: [`docs/CLIENT_STATUS_20261104.md`](../docs/CLIENT_STATUS_20261104.md).
 
 | Requirement | Evidence |
 |---|---|
-| Current checkpoint and verification | `docs/CLIENT_REVIEW_CHECKPOINT_20261101.md`, `docs/VERIFY_PACKAGE.md` |
+| Current checkpoint and verification | `docs/CLIENT_STATUS_20261104.md`, `docs/VERIFY_PACKAGE.md` |
 | Run source and configuration | `final-package-20261101/RUN_PROVENANCE.json` |
 | Full file manifest | `SHA256SUMS.json` |
 | Wrong-store and corrected-response pairs | `response-pairs-reviewed-20261026/` |
@@ -31,6 +31,8 @@ Current local summary: [`docs/CLIENT_REVIEW_CHECKPOINT_20261101.md`](../docs/CLI
 | Oxylabs Web Unblocker test | `web-unblocker-bounded-20261030/` |
 | Scrape.do Store 100 test | `scrapedo-bounded-20261030/` |
 | Scrape.do exact-endpoint support request | `scrapedo-support-20261101/RESULT.json` |
+| Scrape.do three-request Store 100 result | `scrapedo-store-controls-20261104/RESULT.json` |
+| Updated full offline regression | `full-offline-regression-20261104/RESULT.json` |
 | Bright Data Store 100 test | `brightdata-bounded-20261030/` |
 | Store-session recovery result | `store-session-recovery-20261030/RESULT.json` |
 
@@ -47,9 +49,9 @@ Full HTML responses, browser profiles, cookies, session state and unredacted cap
 ## Open limits
 
 - Full category and pagination coverage remains incomplete.
-- No qualifying genuine volume or digital discount offer was found in bounded live review.
+- The four Walmart volume/digital fields must remain empty by client instruction. No further offer search is required.
 - Corrected re-fetch evidence does not prove one retry prevents future store drift.
 - Two bounded Azure diagnostics completed. The Store 100/PICKUP control passed in two regions, but the following Art Sets listing was blocked in both. Signed-in Azure Portal filters verified both temporary resource groups are absent.
-- No tested transport has yet proved Store 100, ZIP 72712, PICKUP, product identity and local price together reliably enough for the final uncapped run.
+- Scrape.do's store-scoped product endpoint proved Store 100, ZIP 72712, PICKUP, product identity and local price in three bounded controls. Category/listing transport and the full paid run remain unapproved and incomplete.
 
 No client message or contest submission is performed by repository tooling.
