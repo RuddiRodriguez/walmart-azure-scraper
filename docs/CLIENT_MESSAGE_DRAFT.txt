@@ -1,25 +1,19 @@
-UNSENT DRAFT — 1 November 2026, Amsterdam time
+UNSENT DRAFT — 4 November 2026, Amsterdam time
 
 Hi Darren,
 
-I completed the remaining offline corrections and rebuilt the review package:
-https://github.com/RuddiRodriguez/walmart-azure-scraper/tree/review-20261101-offline-corrections
+Here is the current status against the November 2 checkpoint.
 
-Package-size handling now keeps the full source wording for the extra pack, bottle, metric and gallon cases. Historical titles with approximate-weight wording are also rejected. The two saved 132-product datasets replayed successfully, with only the expected weight-field corrections. They remain historical bounded evidence, not clean current-version runs.
+Scrape.do support provided a store-scoped product endpoint. I ran the agreed three controls with no retries. All three responses tied together the product ID, Store 100, ZIP 72712, explicit PICKUP and the local price. The pumpkin control returned PICKUP out of stock at $2.97. The milk control returned PICKUP in stock at $2.88 twice.
 
-Unverified assortment now stays pending, blocks publication and is retried after resume. I also mapped the remaining category exclusions without reducing the open coverage work. The Azure folder now includes the exact diagnostic source, corrected commands, limits and a fresh signed-in Portal check confirming both temporary resource groups are absent. No new Azure test was run.
+The test completed in 45.233 seconds and used 30 existing Scrape.do credits. No paid collection or Azure work was started. The planned 15-credit limit was exceeded because this endpoint charged 10 credits per successful request, rather than the earlier observed 5. I stopped after the three controls. Any future three-request test will use a 30-credit limit.
 
-The full offline regression passed, and the final manifest now includes the previously missing store-session result. The package also has one source/configuration index for every client-cited run and every exported coverage batch.
+I also applied your schema clarification. The four volume/digital fields now always remain empty, Rollback stays in the regular/sale price fields, and the updated ten-module offline regression passes.
 
-What remains open is unchanged: 780 pending pages, 216 retryable failures and 18 unresolved paths. A clean current-version collection, larger recovery/repeat and final coverage still depend on a transport that proves Store 100, ZIP 72712 and PICKUP together. The offer review found no qualifying real example, so those fields remain blank.
+Full coverage is still incomplete: 780 pending pages, 216 retryable failures and 18 unresolved paths remain open. The product-page transport gate passed, but category/listing access through the same endpoint is not yet proven. A clean fresh collection and larger recovery/repeat also remain open. I have not started paid collection work.
 
-I sent Scrape.do support the updated result and asked for the exact supported endpoint returning Store 100, ZIP 72712, PICKUP, product ID and local price together. I am waiting for their response. No additional control requests or larger collection were started.
-
-The detailed checkpoint is here:
-https://github.com/RuddiRodriguez/walmart-azure-scraper/blob/review-20261101-offline-corrections/docs/CLIENT_REVIEW_CHECKPOINT_20261101.md
-
-Thanks,
-Ruddi
+Updated package commit:
+https://github.com/RuddiRodriguez/walmart-azure-scraper/tree/e8bb2885509daf4aa217f73c338dd6eaceab4241
 
 Thanks,
 Ruddi
