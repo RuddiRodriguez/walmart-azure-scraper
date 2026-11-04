@@ -5,8 +5,15 @@ from datetime import datetime
 from pathlib import Path
 from storage import atomic_json
 
-PRICE_FIELDS = ['regular_price', 'sale_price', 'volume_deals_description', 'volume_deals_price',
-                'digital_deals_description', 'digital_deals_price', 'ppm']
+DEAL_FIELDS = ['volume_deals_description', 'volume_deals_price',
+               'digital_deals_description', 'digital_deals_price']
+PRICE_FIELDS = ['regular_price', 'sale_price', *DEAL_FIELDS, 'ppm']
+
+
+def clear_deal_fields(row):
+    if row is not None:
+        row = {**row, **dict.fromkeys(DEAL_FIELDS, '')}
+    return row
 
 
 def product_state(candidate, product, store, known=False, reason=''):
@@ -56,14 +63,14 @@ def known_assortment(db, key):
 
 def current_record(db, key):
     row = db.execute('SELECT record FROM current_products WHERE product_id=?', (key,)).fetchone()
-    return json.loads(row[0]) if row and row[0] else None
+    return clear_deal_fields(json.loads(row[0])) if row and row[0] else None
 
 
 def observe(db, key, row, state, source, observed_utc, eligible):
     if datetime.fromisoformat(observed_utc).tzinfo is None:
         raise ValueError('Observation date requires timezone')
     if row is not None:
-        row = {**row, 'crawl_date':observed_utc}
+        row = {**clear_deal_fields(row), 'crawl_date':observed_utc}
     values = (key, observed_utc, source, state, int(eligible), json.dumps(row))
     with db:
         db.execute('INSERT OR IGNORE INTO observations VALUES (?,?,?,?,?,?)', values)
@@ -95,10 +102,10 @@ def export(db, folder):
     folder = Path(folder)
     rows, pending, states = [], [], []
     for key, date, source, state, eligible, record in db.execute('SELECT * FROM current_products ORDER BY product_id'):
-        row = json.loads(record)
+        row = clear_deal_fields(json.loads(record))
         (rows if eligible else pending).append(row)
         states.append(dict(product_id=key, observed_utc=date, source=source, state=state, assortment_confirmed=bool(eligible)))
-    history = [dict(product_id=key, observed_utc=date, source=source, state=state, assortment_confirmed=bool(eligible), record=json.loads(record))
+    history = [dict(product_id=key, observed_utc=date, source=source, state=state, assortment_confirmed=bool(eligible), record=clear_deal_fields(json.loads(record)))
                for key,date,source,state,eligible,record in db.execute('SELECT * FROM observations ORDER BY observed_utc,product_id,source')]
     atomic_json(folder/'retained-products.json', rows)
     atomic_json(folder/'assortment-review.json', pending)

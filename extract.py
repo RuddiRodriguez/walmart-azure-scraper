@@ -17,7 +17,8 @@ MULTIPACK_MEASURE = re.compile(r'\b\d+\s*[x×]\s*' + MEASURE_TEXT, re.I)
 APPROX = re.compile(
     r'\b(?:approx\.?|approximately|about|estimated weight|average weight|avg\.?\s*(?:weight|wt)|'
     r'variable weight|random weight|catch weight|weight\s+(?:may\s+)?vary|weight varies)\b', re.I)
-FINANCE = {'1PAYCC', 'AFFIRM', 'ONEPAY', 'CREDIT_CARD', 'ONE_PREQUAL'}
+DEAL_FIELDS = ['volume_deals_description', 'volume_deals_price',
+               'digital_deals_description', 'digital_deals_price']
 ROOT_IDS = {
     'Food': '976759', 'Household Essentials': '1115193', 'Personal Care': '1005862',
     'Beauty': '1085666', 'Diapering': '5427_486190', 'Feeding': '133283',
@@ -118,43 +119,8 @@ def listing_candidates(soup, category, store):
 
 
 def promotion_fields(product):
-    """Recognized source terms only; unknown offer shapes fail publication review."""
-    fields = dict.fromkeys(['volume_deals_description', 'volume_deals_price', 'digital_deals_description', 'digital_deals_price'], '')
-    unknown = []
-    for promo in product.get('promoData') or []:
-        if promo.get('type') in FINANCE:
-            continue
-        text = promo.get('description') or promo.get('text') or promo.get('message') or ''
-        if not isinstance(text, str):
-            text = ''
-        text = BeautifulSoup(text, 'html.parser').get_text(' ', strip=True)
-        terms = promo.get('terms') or ''
-        if terms and isinstance(terms, str):
-            if terms.startswith(('http://', 'https://')):
-                unknown.append({'reason': 'offer_terms_require_review', 'terms': terms})
-            elif terms not in text:
-                text += ' ' + BeautifulSoup(terms, 'html.parser').get_text(' ', strip=True)
-        if re.search(r'walmart cash|cashback|cash back|manufacturer offer', text, re.I):
-            continue  # Reward, not an immediate reduction in the checkout price.
-        if re.search(r'clip|activate|digital coupon|add.*offer|save.*offer', text, re.I):
-            kind = 'digital'
-        elif re.search(r'\b\d+\s+for\s+\$|buy\s+\d|mix\s+or\s+match|must buy|when you buy', text, re.I):
-            kind = 'volume'
-        else:
-            unknown.append(promo)
-            continue
-        fields[kind + '_deals_description'] += (' | ' if fields[kind + '_deals_description'] else '') + text
-        # Only a final amount explicitly written in the offer, never a savings amount.
-        match = re.search(r'(?:\b\d+\s+for\s+|\bat\s+|:\s*(?=\$\d+(?:\.\d{1,2})?\s+each))(\$\d+(?:\.\d{1,2})?)|^(\$\d+(?:\.\d{1,2})?)\s+each\b', text, re.I)
-        if match:
-            amount = money((match.group(1) or match.group(2))[1:])
-            if fields[kind + '_deals_price'] and fields[kind + '_deals_price'] != amount:
-                unknown.append({'reason': 'multiple_distinct_deal_prices', 'text': text})
-            else:
-                fields[kind + '_deals_price'] = amount
-    if product.get('promoDiscount') or (product.get('priceInfo') or {}).get('volumePriceTiers'):
-        unknown.append({'reason': 'structured_discount_requires_adapter_review'})
-    return fields, unknown
+    """Walmart delivery requires all four deal fields to remain empty."""
+    return dict.fromkeys(DEAL_FIELDS, ''), []
 
 
 def product_record(candidate, soup, store, private_labels, logo, retain_missing=False, known_store_assortment=False):

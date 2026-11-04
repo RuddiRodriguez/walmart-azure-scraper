@@ -1,0 +1,145 @@
+{
+  "time_amsterdam": "2026-11-04T06:53:25.281941+01:00",
+  "provider_configuration": {
+    "endpoint": "https://api.scrape.do/plugin/walmart/store",
+    "parameters": {
+      "url": "https://www.walmart.com/ip/{item_id}",
+      "zipcode": "72712",
+      "storeid": "100"
+    },
+    "credential": "macOS Keychain; not stored in evidence"
+  },
+  "limits": {
+    "total_requests_including_retries": 3,
+    "retries": 1,
+    "runtime_seconds": 300,
+    "credits": 15,
+    "paid_cost_usd": 0
+  },
+  "actual": {
+    "requests_including_retries": 3,
+    "retries": 0,
+    "runtime_seconds": 45.233,
+    "credits_used": 30,
+    "remaining_credits_after_test": 930,
+    "paid_cost_usd": 0,
+    "planned_credit_limit_exceeded": true,
+    "limit_deviation": "The store endpoint reported 10 credits per successful request. The planned limit was 15 credits, based on the earlier endpoint tests. Three successful controls therefore used 30 existing account credits. No paid balance was used and no further request was made."
+  },
+  "required_context": {
+    "store_id": "100",
+    "postal_code": "72712",
+    "fulfillment": "PICKUP",
+    "product_identity": true,
+    "local_price": true
+  },
+  "results": [
+    {
+      "request_number": 1,
+      "item_id_requested": "47428850",
+      "http_status": 200,
+      "seconds": 36.583,
+      "body_bytes": 648444,
+      "body_sha256": "f241effa099ff919f912d2875d814cdcbf4466be6425b296885c4196dbb0811b",
+      "fields": {
+        "product_id": "47428850",
+        "store_id": "100",
+        "pickup_store": "100",
+        "postal_code": "72712",
+        "city": "Bentonville",
+        "state": "AR",
+        "intent": "PICKUP",
+        "pickup_options": [
+          {
+            "type": "PICKUP",
+            "locationText": "Bentonville S Walton Blvd Supercenter",
+            "availabilityStatus": "OUT_OF_STOCK"
+          }
+        ],
+        "price": 2.97,
+        "currency": "USD"
+      },
+      "accepted": true,
+      "parse_error": null,
+      "provider_usage_headers": {
+        "scrape.do-remaining-credits": "950",
+        "scrape.do-request-cost": "10",
+        "scrape.do-request-id": "127681a0-8c57-4201-af08-748ca7cacfab"
+      }
+    },
+    {
+      "request_number": 2,
+      "item_id_requested": "10450114",
+      "http_status": 200,
+      "seconds": 4.474,
+      "body_bytes": 523554,
+      "body_sha256": "74d04e56e579ccbe59b10a1d58cae87bdc2013f2321c495721d6819c7be9da2c",
+      "fields": {
+        "product_id": "10450114",
+        "store_id": "100",
+        "pickup_store": "100",
+        "postal_code": "72712",
+        "city": "Bentonville",
+        "state": "AR",
+        "intent": "PICKUP",
+        "pickup_options": [
+          {
+            "type": "PICKUP",
+            "locationText": "Bentonville S Walton Blvd Supercenter",
+            "availabilityStatus": "IN_STOCK"
+          }
+        ],
+        "price": 2.88,
+        "currency": "USD"
+      },
+      "accepted": true,
+      "parse_error": null,
+      "provider_usage_headers": {
+        "scrape.do-remaining-credits": "940",
+        "scrape.do-request-cost": "10",
+        "scrape.do-request-id": "5185ea3a-7e3f-47cd-abb6-089221aa3975"
+      }
+    },
+    {
+      "request_number": 3,
+      "item_id_requested": "10450114",
+      "http_status": 200,
+      "seconds": 4.136,
+      "body_bytes": 523562,
+      "body_sha256": "65254896fcec35c920757d1efd5d5977c8ea9c4ac332980bf7190357ffa0114e",
+      "fields": {
+        "product_id": "10450114",
+        "store_id": "100",
+        "pickup_store": "100",
+        "postal_code": "72712",
+        "city": "Bentonville",
+        "state": "AR",
+        "intent": "PICKUP",
+        "pickup_options": [
+          {
+            "type": "PICKUP",
+            "locationText": "Bentonville S Walton Blvd Supercenter",
+            "availabilityStatus": "IN_STOCK"
+          }
+        ],
+        "price": 2.88,
+        "currency": "USD"
+      },
+      "accepted": true,
+      "parse_error": null,
+      "provider_usage_headers": {
+        "scrape.do-remaining-credits": "930",
+        "scrape.do-request-cost": "10",
+        "scrape.do-request-id": "79775b2e-da6f-4c30-b164-fd953877f279"
+      }
+    }
+  ],
+  "all_responses_accepted": true,
+  "large_collection_started": false,
+  "source": {
+    "base_commit": "8b7e03ab9fa272dafcb05fa91eb0a65ac65eb419",
+    "runner_sha256": "abbc6bb59c266ca8e5a885e55c256a9dc22a1f19f9ee8fe80633402fbb95bd93",
+    "runner_was_uncommitted_during_test": true
+  },
+  "raw_responses": "Private ignored data directory only; public evidence contains hashes and selected fields."
+}

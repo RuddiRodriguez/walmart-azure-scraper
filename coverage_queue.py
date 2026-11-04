@@ -6,7 +6,7 @@ from urllib.parse import urlsplit,parse_qs
 from bs4 import BeautifulSoup
 from browser import open_browser,select_store,navigate,verify_banner,fetch_product
 from diagnostic_capture import make_capture,safe_url
-from extract import category_id,discover,next_data,product_record,promotion_fields,FINANCE
+from extract import category_id,discover,next_data
 from capture_store_drift import listing_from_rendered
 from scrape import next_page_url,verify_listing_store
 from storage import atomic_json,page_url
@@ -138,22 +138,6 @@ def run(folder,maximum,seconds):
                             raise ValueError('Response category ancestry differs from required root')
                         verify_listing_store(search,store)
                         candidates,rejections,search=listing_from_rendered(snapshot,fetched,category,store);candidate_count=len(candidates)
-                        for candidate in candidates:
-                            text=candidate.get('text','')+' '+json.dumps(candidate['item'].get('promoData') or [])
-                            signal_found=bool(re.search(r'buy\s+\d|\b\d+\s+for\s+\$|clip\s+(?:coupon|offer)|digital coupon|mix.{0,12}match',text,re.I))
-                            if not signal_found or state['product_requests']>=10:continue
-                            detail=fetch_product(sb,candidate['url'],settings,capture=make_capture(output/'captures','coverage',state,'product'))
-                            try:
-                                row,reason,product=product_record(candidate,detail,store,settings['private_labels'],'',retain_missing=True)
-                                fields,unknown=promotion_fields(product)
-                                visible=' '.join(detail.get_text(' ',strip=True).split())
-                                descriptions=[fields[k] for k in ['volume_deals_description','digital_deals_description'] if fields[k]]
-                                qualified=bool(row and not reason and not unknown and descriptions and all(' '.join(d.split()) in visible for d in descriptions))
-                                result['offer_observations'].append(dict(product_id=candidate['item_id'],sequence=state['sequence'],qualified_candidate=qualified,fields=fields,reason=reason,unknown_count=len(unknown)))
-                            except Exception as offer_error:
-                                result['offer_observations'].append(dict(product_id=candidate['item_id'],sequence=state['sequence'],qualified_candidate=False,error_type=type(offer_error).__name__))
-                                if any(w in str(offer_error).lower() for w in ['challenge','access blocked','disk reserve']):raise
-                            finally:detail.decompose()
                         following=next_page_url(fetched,url,search) or following_native
                         pagination=search.get('paginationV2') or {};page=int((pagination.get('pageProperties') or {}).get('page') or 1);last=int(pagination.get('maxPage') or 1)
                         if page!=int((parse_qs(urlsplit(url).query).get('page') or ['1'])[0]):raise ValueError('Pagination response page mismatch')

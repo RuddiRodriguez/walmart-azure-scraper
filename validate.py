@@ -3,7 +3,7 @@ from collections import Counter
 from datetime import datetime
 from decimal import Decimal
 from urllib.parse import urlsplit
-from extract import FIELDS, APPROX
+from extract import FIELDS, APPROX, DEAL_FIELDS
 
 
 def validate(rows, categories, store, settings, pending_pages, pending_products, review_count,
@@ -37,6 +37,8 @@ def validate(rows, categories, store, settings, pending_pages, pending_products,
             continue
         if row['gupc'] or row['unit_price'] or APPROX.search(row['weight']) or APPROX.search(row['product_title']):
             errors.append(f'Record {index}: forbidden field value')
+        if any(row[field] for field in DEAL_FIELDS):
+            errors.append(f'Record {index}: Walmart deal fields must be empty')
         if row['zipcode'] != store['zip'] or row['store_name'] != store['name'] or row['store_location'] != store['address']:
             errors.append(f'Record {index}: store')
         if row['category'] not in categories:

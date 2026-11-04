@@ -35,6 +35,7 @@ def run():
         ('invalid date', {'crawl_date': 'today'}), ('missing title', {'product_title': ''}),
         ('sale above regular price', {'regular_price': '1.00', 'sale_price': '2.00'}),
         ('sale without regular price', {'regular_price': '', 'sale_price': '1.00'}),
+        ('nonempty Walmart deal field', {'volume_deals_description': '2 for $5'}),
         ('non-retailer URL', {'url': 'https://example.com/ip/123'})]:
         check('Rejects ' + name, not valid([{**row, **change}]))
     check('Sale without regular price rejected even for unavailable item',
@@ -62,8 +63,7 @@ def run():
         ('Marketplace product', lambda p: p.update(sellerName='Other seller'), 'marketplace'),
         ('Unknown availability', lambda p: p.update(availabilityStatus='MYSTERY'), 'unknown_availability'),
         ('Changed price', lambda p: p['priceInfo']['currentPrice'].update(price=99999), 'price_changed'),
-        ('Approximate weight', lambda p: p.update(name='Approximately 2 lb'), 'approximate_weight'),
-        ('Unknown promotion', lambda p: p.update(promoData=[{'text': 'Mystery special'}]), 'promotion_review_required')]:
+        ('Approximate weight', lambda p: p.update(name='Approximately 2 lb'), 'approximate_weight')]:
         product = copy.deepcopy(source['product']); mutate(product)
         record, reason, _ = parse(product)
         check(name + ' excluded with explicit reason', record is None and reason == expected)
@@ -75,18 +75,18 @@ def run():
     else:
         raise AssertionError('Wrong ZIP accepted')
 
-    for text, kind, amount in [
-        ('2 for $5. Limit 4.', 'volume', '5.00'), ('Buy 1, Get 1 Free', 'volume', ''),
-        ('Save $5 when you buy 5', 'volume', ''), ('Mix or Match 5 for $10', 'volume', '10.00'),
-        ('Must buy 4: $1.99 each', 'volume', '1.99'), ('Clip Coupon: Save $2', 'digital', ''),
-        ('$3.99 each with Digital Coupon', 'digital', '3.99'), ('20% off with clipped coupon', 'digital', ''),
-        ('Save $5 when you buy 5 with Digital Coupon', 'digital', '')]:
-        fields, unknown = promotion_fields({'promoData': [{'text': text}]})
-        check('Promotion wording and explicit price: ' + text, not unknown and fields[kind + '_deals_description'] == text and fields[kind + '_deals_price'] == amount)
-    fields, unknown = promotion_fields({'promoData': [{'text': 'Earn $3 Walmart Cash'}]})
-    check('Walmart Cash not turned into a discount', not unknown and not any(fields.values()))
-    _, unknown = promotion_fields({'promoData': [{'text': '2 for $5', 'terms': 'https://example.com/terms'}]})
-    check('Unread linked offer terms require review', bool(unknown))
+    fields, unknown = promotion_fields({'promoData': [{'text': '2 for $5'}, {'text': 'Digital Coupon'}]})
+    check('Walmart deal fields remain empty', not unknown and not any(fields.values()))
+    rollback_product = copy.deepcopy(source['product'])
+    rollback_product['priceInfo']['currentPrice']['price'] = 5
+    rollback_candidate = copy.deepcopy(source['candidate'])
+    rollback_candidate['price_text'] = 'Price Now $5.00 Was $7.00 Rollback'
+    soup = BeautifulSoup('<script id="__NEXT_DATA__"></script>', 'html.parser')
+    soup.script.string = json.dumps({'props': {'pageProps': {'initialData': {'data': {'product': rollback_product}}}}})
+    rollback, reason, _ = product_record(rollback_candidate, soup, store, settings['private_labels'], '')
+    check('Rollback uses regular and sale prices with empty deal fields',
+          not reason and rollback['regular_price'] == '7.00' and rollback['sale_price'] == '5.00'
+          and not any(rollback[field] for field in fields))
 
     item = copy.deepcopy(source['candidate']['item'])
     def listing(value):
