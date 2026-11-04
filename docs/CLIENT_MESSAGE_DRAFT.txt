@@ -6,7 +6,12 @@ Here is the current status against the November 2 checkpoint.
 
 Scrape.do support provided a store-scoped product endpoint. I ran the agreed three controls with no retries. All three responses tied together the product ID, Store 100, ZIP 72712, explicit PICKUP and the local price. The pumpkin control returned PICKUP out of stock at $2.97. The milk control returned PICKUP in stock at $2.88 twice.
 
-The test completed in 45.233 seconds and used 30 existing Scrape.do credits. No paid collection or Azure work was started. The planned 15-credit limit was exceeded because this endpoint charged 10 credits per successful request, rather than the earlier observed 5. I stopped after the three controls. Any future three-request test will use a 30-credit limit.
+The exact provider configuration was GET https://api.scrape.do/plugin/walmart/store with the Walmart product URL, zipcode=72712 and storeid=100. The limits were three total requests including retries, one retry only for HTTP 502, five minutes total runtime and $0 paid cost.
+
+The test completed in 45.233 seconds with three requests and no retries. It used 30 existing Scrape.do credits. No paid collection or Azure work was started. The planned 15-credit allowance was exceeded because this endpoint charged 10 credits per successful request, rather than the earlier observed 5. I stopped after the three controls. Any future three-request test will use a 30-credit limit.
+
+The sanitized response fields, hashes and provider usage headers are here:
+https://github.com/RuddiRodriguez/walmart-azure-scraper/blob/e8bb2885509daf4aa217f73c338dd6eaceab4241/evidence/scrapedo-store-controls-20261104/RESULT.json
 
 I also applied your schema clarification. The four volume/digital fields now always remain empty, Rollback stays in the regular/sale price fields, and the updated ten-module offline regression passes.
 
