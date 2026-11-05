@@ -1,24 +1,22 @@
-UNSENT DRAFT — 4 November 2026, Amsterdam time
+UNSENT DRAFT — 5 November 2026, Amsterdam time
 
 Hi Darren,
 
-Here is the current status against the November 2 checkpoint.
+Here is the dated status checkpoint you requested.
 
-Scrape.do support provided a store-scoped product endpoint. I ran the agreed three controls with no retries. All three responses tied together the product ID, Store 100, ZIP 72712, explicit PICKUP and the local price. The pumpkin control returned PICKUP out of stock at $2.97. The milk control returned PICKUP in stock at $2.88 twice.
+I preserved all three original Scrape.do responses and their usage records. I verified that each private response still matches the SHA-256 hash in the published sanitized result. No Scrape.do request, collection run or Azure work has run since your review.
 
-The exact provider configuration was GET https://api.scrape.do/plugin/walmart/store with the Walmart product URL, zipcode=72712 and storeid=100. The limits were three total requests including retries, one retry only for HTTP 502, five minutes total runtime and $0 paid cost.
+The open coverage numbers are unchanged: 780 pending pages, 216 retryable failures and 18 unresolved paths. Full coverage, a clean fresh collection, larger recovery/resume, repeat collection and Azure completion remain separate and open.
 
-The test completed in 45.233 seconds with three requests and no retries. It used 30 existing Scrape.do credits. No paid collection or Azure work was started. The planned 15-credit allowance was exceeded because this endpoint charged 10 credits per successful request, rather than the earlier observed 5. I stopped after the three controls. Any future three-request test will use a 30-credit limit.
+I also prepared a separate listing-route proposal. It uses the Scrape.do store endpoint with one Walmart listing URL, zipcode=72712 and storeid=100. The maximum is three total requests including one possible HTTP 502 retry, 30 existing credits, five minutes and $0 monetary spend. It will stop on unsupported listing access, wrong or missing Store 100/ZIP 72712/PICKUP context, more than 10 credits for one request, or any missing product identity/local price/PICKUP evidence. It will not change the saved coverage queue or publish data.
 
-The sanitized response fields, hashes and provider usage headers are here:
-https://github.com/RuddiRodriguez/walmart-azure-scraper/blob/e8bb2885509daf4aa217f73c338dd6eaceab4241/evidence/scrapedo-store-controls-20261104/RESULT.json
+Scrape.do support confirmed this endpoint for product pages, but has not confirmed category/listing URL support. I have therefore not run this proposal. Existing credits still have usage cost, and the proposal is not treated as authorization.
 
-I also applied your schema clarification. The four volume/digital fields now always remain empty, Rollback stays in the regular/sale price fields, and the updated ten-module offline regression passes.
+Status checkpoint:
+https://github.com/RuddiRodriguez/walmart-azure-scraper/blob/COMMIT/docs/CLIENT_STATUS_20261105.md
 
-Full coverage is still incomplete: 780 pending pages, 216 retryable failures and 18 unresolved paths remain open. The product-page transport gate passed, but category/listing access through the same endpoint is not yet proven. A clean fresh collection and larger recovery/repeat also remain open. I have not started paid collection work.
-
-Updated package commit:
-https://github.com/RuddiRodriguez/walmart-azure-scraper/tree/e8bb2885509daf4aa217f73c338dd6eaceab4241
+Listing-route proposal:
+https://github.com/RuddiRodriguez/walmart-azure-scraper/blob/COMMIT/docs/SCRAPEDO_LISTING_ROUTE_PROPOSAL_20261105.md
 
 Thanks,
 Ruddi
