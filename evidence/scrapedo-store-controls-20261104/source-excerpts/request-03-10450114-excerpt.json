@@ -1,0 +1,41 @@
+{
+  "source_file": "request-03-10450114.html",
+  "source_paths": {
+    "location": "props.pageProps.initialData.data.contentLayout.pageMetadata.location",
+    "product": "props.pageProps.initialData.data.product",
+    "price": "product.priceInfo.currentPrice",
+    "pickup": "product.fulfillmentOptions[type=PICKUP]"
+  },
+  "location": {
+    "storeId": "100",
+    "pickupStore": "100",
+    "postalCode": "72712",
+    "city": "Bentonville",
+    "stateOrProvinceCode": "AR",
+    "intent": "PICKUP"
+  },
+  "product": {
+    "usItemId": "10450114",
+    "name": "Great Value Whole Vitamin D Milk, Gallon"
+  },
+  "displayed_price": {
+    "price": 2.88,
+    "priceString": "$2.88",
+    "priceDisplay": "$2.88",
+    "currencyUnit": "USD"
+  },
+  "pickup": {
+    "type": "PICKUP",
+    "selected": true,
+    "intent": true,
+    "locationText": "Bentonville S Walton Blvd Supercenter",
+    "availabilityStatus": "IN_STOCK"
+  },
+  "review": {
+    "pickup_currently_available": true,
+    "price_claim": "displayed product price with currently available PICKUP context",
+    "price_binding": "The displayed price and PICKUP option belong to the same product object under the Store 100 page context. The PICKUP option does not contain its own price.",
+    "fulfillment_specific_price": null,
+    "limitation": "This excerpt does not claim a fulfillment-specific price when the source field is empty."
+  }
+}

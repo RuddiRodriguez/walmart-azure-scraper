@@ -4,7 +4,7 @@
 
 1. [Current delivery checkpoint](CURRENT_PROGRESS.md)
 2. [4 November client status](CLIENT_STATUS_20261104.md)
-3. [1 November client review checkpoint](CLIENT_REVIEW_CHECKPOINT_20261101.md)
+3. [6 November client review checkpoint](CLIENT_REVIEW_CHECKPOINT_20261106.md)
 4. [Simple step-by-step run guide](RUN_GUIDE.md)
 5. [Acceptance rules](ACCEPTANCE.md)
 6. [Evidence index](../evidence/README.md)

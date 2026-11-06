@@ -1,22 +1,26 @@
-UNSENT DRAFT — 5 November 2026, Amsterdam time
+UNSENT DRAFT — 6 November 2026, Amsterdam time
 
 Hi Darren,
 
-Here is the dated status checkpoint you requested.
+Thank you for the detailed review. I completed the requested offline evidence and safeguard corrections.
 
-I preserved all three original Scrape.do responses and their usage records. I verified that each private response still matches the SHA-256 hash in the published sanitized result. No Scrape.do request, collection run or Azure work has run since your review.
+I added privacy-reviewed excerpts for all three original Scrape.do responses. The package now includes each original hash, each excerpt hash, the redaction method and the exact source paths for product, Store 100, ZIP 72712, PICKUP availability and displayed price. The pumpkin is clearly labeled OUT_OF_STOCK, so its $2.97 value is not presented as a currently available pickup offer. The two milk responses show IN_STOCK PICKUP and a displayed price of $2.88, but I also state that the PICKUP option has no separate fulfillment-specific price field.
 
-The open coverage numbers are unchanged: 780 pending pages, 216 retryable failures and 18 unresolved paths. Full coverage, a clean fresh collection, larger recovery/resume, repeat collection and Azure completion remain separate and open.
+I also recovered the exact script used for the November 4 controls and verified it against the SHA-256 recorded at run time.
 
-I also prepared a separate listing-route proposal. It uses the Scrape.do store endpoint with one Walmart listing URL, zipcode=72712 and storeid=100. The maximum is three total requests including one possible HTTP 502 retry, 30 existing credits, five minutes and $0 monetary spend. It will stop on unsupported listing access, wrong or missing Store 100/ZIP 72712/PICKUP context, more than 10 credits for one request, or any missing product identity/local price/PICKUP evidence. It will not change the saved coverage queue or publish data.
+The listing proposal now has a separate executable runner. Before each request it reserves the request and credit allowance and saves persistent counters. It stops on the first wrong context or unexpected usage, keeps uncertain attempts across restart, enforces the remaining absolute deadline and response-size limits, disables redirects and fallbacks, and cannot pass unless the full intended control sequence finishes. Missing or invalid credit headers are treated as unsafe, not as zero. The acceptance rule now requires a currently available PICKUP state and price/PICKUP evidence linked inside the same product object.
 
-Scrape.do support confirmed this endpoint for product pages, but has not confirmed category/listing URL support. I have therefore not run this proposal. Existing credits still have usage cost, and the proposal is not treated as authorization.
+Fourteen focused safeguard checks passed offline, and the ten-module offline regression also passed. No Scrape.do request, provider credit, Walmart collection or Azure operation was used for these corrections.
 
-Status checkpoint:
-https://github.com/RuddiRodriguez/walmart-azure-scraper/blob/df3354bf4d1a31a5ca148437505b93e2231bdf50/docs/CLIENT_STATUS_20261105.md
+The proposed listing limits are three attempts including one HTTP 502 retry, 60 existing credits reserved at 20 per attempt, five minutes, 8 MiB per response, 20 MiB total response data and $0 monetary spend. These are proposed limits only, not authorization. Provider charging uncertainty remains explicit.
 
-Listing-route proposal:
-https://github.com/RuddiRodriguez/walmart-azure-scraper/blob/df3354bf4d1a31a5ca148437505b93e2231bdf50/docs/SCRAPEDO_LISTING_ROUTE_PROPOSAL_20261105.md
+The open coverage numbers are unchanged: 780 pending pages, 216 retryable failures and 18 unresolved paths. Full coverage, a clean fresh collection, larger recovery/repeat and Azure completion remain separate and open. I have not run the listing proposal while your hold is active.
+
+Review checkpoint:
+https://github.com/RuddiRodriguez/walmart-azure-scraper/blob/client-checkpoint-20261106/docs/CLIENT_REVIEW_CHECKPOINT_20261106.md
+
+Listing proposal:
+https://github.com/RuddiRodriguez/walmart-azure-scraper/blob/client-checkpoint-20261106/docs/SCRAPEDO_LISTING_ROUTE_PROPOSAL_20261105.md
 
 Thanks,
 Ruddi

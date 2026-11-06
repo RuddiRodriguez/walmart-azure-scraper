@@ -1,6 +1,7 @@
 # Scrape.do listing-route proposal — 5 November 2026
 
-Status: proposed only. Not executed. No client authorization yet.
+Status: proposed only. Executable safeguards added and tested offline on 6 November 2026.
+No provider request has run and no client authorization has been given.
 
 ## Goal
 
@@ -43,11 +44,13 @@ evidence.
 - Intended sequence: one listing request, one exact repeat only if the first response passes,
   and one retry only for HTTP 502.
 - Maximum retries: 1.
-- Maximum provider usage: 30 existing credits total.
-- Maximum accepted per-request usage: 10 credits.
+- Maximum provider usage: 60 existing credits total.
+- Reserve 20 credits before every request, based on the client's observed 20-credit case.
+- Maximum accepted reported usage per request: 20 credits.
 - Maximum runtime: 5 minutes total.
-- Maximum monetary spend: $0.
+- Maximum monetary spend: $0. Existing provider credits still have usage value.
 - Maximum raw evidence: 20 MiB.
+- Maximum response body: 8 MiB.
 - No queue changes, publication, full collection, product-page expansion or Azure work.
 
 Existing credits still carry usage cost. These limits are not authorization.
@@ -62,7 +65,8 @@ An accepted response must independently prove all of the following from the same
 4. Explicit `PICKUP` intent or fulfillment.
 5. At least one product ID.
 6. That product's local price.
-7. That product's explicit PICKUP availability state.
+7. That product's explicit currently available PICKUP state.
+8. The price and PICKUP evidence are linked inside that same product object.
 
 Missing fields, a nearby store, SHIPPING-only context, challenge page, wrong category, inferred
 values or mixed responses fail the control.
@@ -73,16 +77,38 @@ Stop immediately when any condition occurs:
 
 - First response shows the endpoint does not support a listing URL.
 - Wrong or missing store, ZIP or PICKUP context.
-- Provider reports more than 10 credits for one request.
-- Cumulative use reaches 30 credits.
+- Provider reports more than the reserved 20 credits for one request.
+- Cumulative use reaches 60 credits.
+- A usage header is missing, invalid or cannot be reconciled.
 - One HTTP 502 retry fails.
 - Runtime reaches 5 minutes.
+- The remaining absolute deadline cannot safely contain the next request.
+- One response exceeds 8 MiB or cumulative bodies reach 20 MiB.
 - Response cannot prove listing identity and at least one product/local-price/PICKUP record
   together.
 - Any unexpected charge, unsafe response or credential exposure.
 
 No alternate endpoint, extra product request or easier substitute may be used without a new
 proposal and approval.
+
+## Implemented safeguards
+
+The proposed runner is `tools/run_scrapedo_listing_controls.py`. It is separate from the old
+product-only runner and refuses execution unless the explicit `--approved` flag is present.
+
+Before each request it saves the attempt and reserves its request and credit allowance. The
+same saved state holds the absolute deadline, request count, retry count, body bytes and
+accounted credits across restarts. An uncertain in-flight attempt blocks restart until it is
+manually reconciled. Redirects and alternate fallbacks are disabled. The response read is
+bounded. A wrong store, missing PICKUP state, unlinked price, unexpected provider usage or
+incomplete two-control sequence cannot pass.
+
+Offline safeguard result: `evidence/scrapedo-listing-runner-20261106/OFFLINE_TESTS.json`.
+These synthetic tests made zero provider requests and do not prove listing support.
+
+Provider charging remains uncertain: reserving 20 credits cannot prevent a provider from
+reporting or charging more after a request. Such a result is preserved as unsafe and stops the
+run; it is never converted to zero usage.
 
 ## Evidence to preserve
 

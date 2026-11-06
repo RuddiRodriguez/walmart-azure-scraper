@@ -142,5 +142,15 @@
     "runner_sha256": "abbc6bb59c266ca8e5a885e55c256a9dc22a1f19f9ee8fe80633402fbb95bd93",
     "runner_was_uncommitted_during_test": true
   },
+  "post_review": {
+    "original_responses_preserved_privately": true,
+    "original_hashes_reverified": true,
+    "privacy_reviewed_excerpts": "source-excerpts/MANIFEST.json",
+    "exact_run_producer": "run-producer.py",
+    "producer_provenance": "PRODUCER_PROVENANCE.json",
+    "historical_acceptance_warning": "all_responses_accepted used the original weak predicate and must not be treated as approval for a listing run.",
+    "request_01_price_status": "The pumpkin showed $2.97 but PICKUP was OUT_OF_STOCK. This is a displayed price, not a currently available pickup offer.",
+    "requests_02_03_price_status": "The milk showed $2.88 with IN_STOCK PICKUP. The price and pickup option are in the same product object, but the pickup option has no fulfillment-specific price field."
+  },
   "raw_responses": "Private ignored data directory only; public evidence contains hashes and selected fields."
 }

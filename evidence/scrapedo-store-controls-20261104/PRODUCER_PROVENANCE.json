@@ -1,0 +1,15 @@
+{
+  "run_producer": "run-producer.py",
+  "run_producer_sha256": "abbc6bb59c266ca8e5a885e55c256a9dc22a1f19f9ee8fe80633402fbb95bd93",
+  "reported_base_commit": "8b7e03ab9fa272dafcb05fa91eb0a65ac65eb419",
+  "producer_was_untracked_at_run_time": true,
+  "recovery_method": "Recovered from the recorded file-creation patch and verified against the SHA-256 saved at run time.",
+  "current_product_runner": "tools/run_scrapedo_store_controls.py",
+  "current_product_runner_sha256": "b35c0d021b1ab0a71b5b610e92626c72ad8844ee17d0397244d33220a5db7e4e",
+  "differences_from_current_product_runner": [
+    "The run producer used CREDIT_LIMIT = 15; the later file uses 30.",
+    "The run producer did not calculate provider credits in its generated report.",
+    "The later file added provider credit and remaining-credit reporting.",
+    "Neither product runner contains the new listing-runner safeguards."
+  ]
+}

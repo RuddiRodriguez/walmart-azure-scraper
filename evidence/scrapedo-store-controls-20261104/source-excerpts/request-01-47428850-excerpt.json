@@ -1,0 +1,41 @@
+{
+  "source_file": "request-01-47428850.html",
+  "source_paths": {
+    "location": "props.pageProps.initialData.data.contentLayout.pageMetadata.location",
+    "product": "props.pageProps.initialData.data.product",
+    "price": "product.priceInfo.currentPrice",
+    "pickup": "product.fulfillmentOptions[type=PICKUP]"
+  },
+  "location": {
+    "storeId": "100",
+    "pickupStore": "100",
+    "postalCode": "72712",
+    "city": "Bentonville",
+    "stateOrProvinceCode": "AR",
+    "intent": "PICKUP"
+  },
+  "product": {
+    "usItemId": "47428850",
+    "name": "Fresh Carving Pumpkin, Each"
+  },
+  "displayed_price": {
+    "price": 2.97,
+    "priceString": "$2.97",
+    "priceDisplay": "Now $2.97",
+    "currencyUnit": "USD"
+  },
+  "pickup": {
+    "type": "PICKUP",
+    "selected": true,
+    "intent": true,
+    "locationText": "Bentonville S Walton Blvd Supercenter",
+    "availabilityStatus": "OUT_OF_STOCK"
+  },
+  "review": {
+    "pickup_currently_available": false,
+    "price_claim": "displayed product price only; not a currently available PICKUP offer",
+    "price_binding": "The displayed price and PICKUP option belong to the same product object under the Store 100 page context. The PICKUP option does not contain its own price.",
+    "fulfillment_specific_price": null,
+    "limitation": "This excerpt does not claim a fulfillment-specific price when the source field is empty."
+  }
+}
