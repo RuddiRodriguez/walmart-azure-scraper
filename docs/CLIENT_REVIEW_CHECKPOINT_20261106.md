@@ -21,7 +21,7 @@ recovery/repeat completion or Azure completion.
 | Require allowed PICKUP availability and linked product price | Complete offline | Focused safeguard checks |
 | Intended control sequence must finish before passing | Complete offline | Focused safeguard checks |
 | Full ten-module offline regression | Complete locally | Ten of ten modules passed; no network used |
-| Regenerated final manifest | In progress | Generated only after all reviewed files stop changing |
+| Regenerated final manifest | Complete | 1,752 listed files verified in `evidence/SHA256SUMS.json` |
 | Provider listing-route proof | Not started; client hold remains | No provider request or credit used |
 | 780 pending, 216 retryable and 18 unresolved | Open | Coverage ledger remains unchanged |
 
@@ -46,6 +46,13 @@ five minutes, 8 MiB per response, 20 MiB total response data and $0 monetary spe
 These limits are a proposal, not authorization. Provider charging cannot be guaranteed before
 a response arrives. Missing, invalid or excessive usage is preserved as unsafe and stops the
 runner; it is never counted as zero.
+
+## Package verification
+
+The final manifest lists and verifies 1,752 files. It now includes the 5 November status and
+listing proposal, the current client-message draft, the exact November 4 producer, the bounded
+source excerpts and the new listing-runner checks. The frozen archive passed its file inventory,
+SHA-256 and ZIP integrity checks. Private raw responses remain outside the public package.
 
 ## Remaining work
 

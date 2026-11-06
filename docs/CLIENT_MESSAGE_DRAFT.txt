@@ -12,6 +12,8 @@ The listing proposal now has a separate executable runner. Before each request i
 
 Fourteen focused safeguard checks passed offline, and the ten-module offline regression also passed. No Scrape.do request, provider credit, Walmart collection or Azure operation was used for these corrections.
 
+I regenerated the full package manifest and verified all 1,752 listed files. The previously missing November 5 documents are now listed, the client-message hash is current, and the exact November 4 run producer is included. The frozen archive also passed its inventory, SHA-256 and ZIP integrity checks. Private raw responses remain outside the public package.
+
 The proposed listing limits are three attempts including one HTTP 502 retry, 60 existing credits reserved at 20 per attempt, five minutes, 8 MiB per response, 20 MiB total response data and $0 monetary spend. These are proposed limits only, not authorization. Provider charging uncertainty remains explicit.
 
 The open coverage numbers are unchanged: 780 pending pages, 216 retryable failures and 18 unresolved paths. Full coverage, a clean fresh collection, larger recovery/repeat and Azure completion remain separate and open. I have not run the listing proposal while your hold is active.
