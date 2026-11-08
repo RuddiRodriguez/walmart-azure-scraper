@@ -12,7 +12,7 @@
 - [Smallest bounded paid transport proposal](docs/OXYLABS_BOUNDED_PROPOSAL.md)
 - [Azure and proxy evidence correction](docs/STEP4_AZURE_PROXY_EVIDENCE.md)
 - [Full offline regression](docs/STEP5_FULL_OFFLINE_REGRESSION.md)
-- [6 November client review checkpoint](docs/CLIENT_REVIEW_CHECKPOINT_20261106.md)
+- [8 November client review checkpoint](docs/CLIENT_REVIEW_CHECKPOINT_20261108.md)
 - [Run source and configuration index](evidence/final-package-20261101/RUN_PROVENANCE.json)
 
 Production collector: `scrape.py`. Supporting production modules: `browser.py`, `extract.py`, `storage.py`, `retention.py`, and `validate.py`. Tests, diagnostics and evidence helpers live under `tools/`.
@@ -66,7 +66,7 @@ samples/failed runs stay separate; earlier frozen ZIPs are historical. Nothing s
 
 Version: `review-20261101-offline-corrections`.
 [Download source and review evidence](https://github.com/RuddiRodriguez/walmart-azure-scraper/archive/refs/tags/review-20261101-offline-corrections.zip).
-[Current checkpoint](docs/CLIENT_REVIEW_CHECKPOINT_20261106.md); [verification](docs/VERIFY_PACKAGE.md); [unsent client message](docs/CLIENT_MESSAGE_DRAFT.txt).
+[Current checkpoint](docs/CLIENT_REVIEW_CHECKPOINT_20261108.md); [verification](docs/VERIFY_PACKAGE.md); [unsent client message](docs/CLIENT_MESSAGE_DRAFT.txt).
 
 Package includes reviewed response pairs, retention trace, historical bounded recovery/repeat proof,
 4,166 reviewed coverage pages, zero-result genuine-offer evidence, bounded Azure diagnostics, the

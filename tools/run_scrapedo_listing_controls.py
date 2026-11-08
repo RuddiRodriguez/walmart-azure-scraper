@@ -3,13 +3,18 @@
 This file is executable, but it must not be run without separate client approval.
 """
 import argparse
+import fcntl
 import hashlib
 import json
+import multiprocessing
+import os
 import subprocess
+import tempfile
 import time
 import urllib.error
 import urllib.parse
 import urllib.request
+from contextlib import contextmanager
 from datetime import datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -19,24 +24,32 @@ from bs4 import BeautifulSoup
 
 STORE_ID = '100'
 POSTAL_CODE = '72712'
-LISTING_URL = ('https://www.walmart.com/browse/personal-care/toothpaste/'
-               '1005862_1007221_1023020?page=1')
-EXPECTED_CATEGORY_ID = '1005862_1007221_1023020'
+LISTING_URL = ('https://www.walmart.com/browse/food/milk/'
+               '976759_9176907_4405816')
+EXPECTED_CATEGORY_ID = '976759_9176907_4405816'
 CONTROL_SEQUENCE = [LISTING_URL, LISTING_URL]
 REQUEST_LIMIT = 3
 RETRY_LIMIT = 1
 RUNTIME_LIMIT_SECONDS = 300
 REQUEST_TIMEOUT_SECONDS = 90
+TOKEN_TIMEOUT_SECONDS = 10
 DEADLINE_BUFFER_SECONDS = 5
 CREDIT_LIMIT = 60
 CREDIT_RESERVATION_PER_REQUEST = 20
 RESPONSE_LIMIT_BYTES = 8 * 1024 * 1024
 TOTAL_BODY_LIMIT_BYTES = 20 * 1024 * 1024
 ALLOWED_PICKUP_STATES = {'IN_STOCK', 'AVAILABLE'}
+STATE_VERSION = 2
 
 
 class ResponseTooLarge(ValueError):
     pass
+
+
+class DeadlineExceeded(TimeoutError):
+    def __init__(self, message, cleanup_confirmed):
+        super().__init__(message)
+        self.cleanup_confirmed = cleanup_confirmed
 
 
 class NoRedirectHandler(urllib.request.HTTPRedirectHandler):
@@ -44,12 +57,18 @@ class NoRedirectHandler(urllib.request.HTTPRedirectHandler):
         return None
 
 
-def token():
+def command_output(command, timeout):
     return subprocess.run(
+        command, check=True, capture_output=True, text=True, timeout=timeout,
+    ).stdout.strip()
+
+
+def token(timeout):
+    return command_output(
         ['security', 'find-generic-password', '-s', 'walmart-scrapedo',
          '-a', 'ruddigarcia', '-w'],
-        check=True, capture_output=True, text=True,
-    ).stdout.strip()
+        timeout,
+    )
 
 
 def field(data, *path):
@@ -152,15 +171,9 @@ def read_bounded(response, byte_limit):
     return body
 
 
-def fetch(api_token, target, timeout, byte_limit):
-    query = urllib.parse.urlencode({
-        'token': api_token,
-        'url': target,
-        'zipcode': POSTAL_CODE,
-        'storeid': STORE_ID,
-    })
+def fetch_direct(url, timeout, byte_limit):
     request = urllib.request.Request(
-        'https://api.scrape.do/plugin/walmart/store?' + query,
+        url,
         headers={'User-Agent': 'walmart-scraper-bounded-listing-control/1.0'},
     )
     opener = urllib.request.build_opener(NoRedirectHandler())
@@ -171,16 +184,108 @@ def fetch(api_token, target, timeout, byte_limit):
         return error.code, read_bounded(error, byte_limit), dict(error.headers)
 
 
+def fetch(api_token, target, timeout, byte_limit):
+    query = urllib.parse.urlencode({
+        'token': api_token,
+        'url': target,
+        'zipcode': POSTAL_CODE,
+        'storeid': STORE_ID,
+    })
+    return fetch_direct('https://api.scrape.do/plugin/walmart/store?' + query,
+                        timeout, byte_limit)
+
+
+def transport_worker(result_path, body_path, operation, arguments):
+    try:
+        status, body, headers = operation(*arguments)
+        Path(body_path).write_bytes(body)
+        Path(result_path).write_text(json.dumps({
+            'status': status,
+            'headers': headers,
+            'error': None,
+            'error_type': None,
+        }))
+    except Exception as error:
+        Path(result_path).write_text(json.dumps({
+            'status': None,
+            'headers': {},
+            'error': True,
+            'error_type': type(error).__name__,
+        }))
+
+
+def terminate_process(process):
+    process.terminate()
+    process.join(2)
+    if process.is_alive():
+        process.kill()
+        process.join(2)
+    return not process.is_alive() and process.exitcode is not None
+
+
+def run_operation_until_deadline(operation, arguments, deadline, output, clock=time.time):
+    output.mkdir(parents=True, exist_ok=True)
+    result_path = output / 'transport-result.json'
+    body_path = output / 'transport-body.bin'
+    context = multiprocessing.get_context('spawn')
+    process = context.Process(
+        target=transport_worker,
+        args=(str(result_path), str(body_path), operation, arguments),
+    )
+    process.start()
+    remaining = max(0, deadline - clock())
+    process.join(remaining)
+    if process.is_alive():
+        cleaned = terminate_process(process)
+        raise DeadlineExceeded('absolute deadline reached during request or body read', cleaned)
+    if process.exitcode != 0:
+        raise RuntimeError(f'transport child exited with code {process.exitcode}')
+    if not result_path.exists():
+        raise RuntimeError('transport child returned no result')
+    result = json.loads(result_path.read_text())
+    if result['error']:
+        raise RuntimeError(f'transport child reported {result["error_type"]}')
+    if not body_path.exists():
+        raise RuntimeError('transport child returned no body')
+    return result['status'], body_path.read_bytes(), result['headers']
+
+
+def fetch_until_deadline(api_token, target, deadline, byte_limit, output, clock=time.time):
+    remaining = deadline - clock()
+    if remaining <= DEADLINE_BUFFER_SECONDS:
+        raise DeadlineExceeded('insufficient time before request dispatch', True)
+    socket_timeout = min(REQUEST_TIMEOUT_SECONDS,
+                         max(1, int(remaining - DEADLINE_BUFFER_SECONDS)))
+    return run_operation_until_deadline(
+        fetch,
+        (api_token, target, socket_timeout, byte_limit),
+        deadline,
+        output,
+        clock,
+    )
+
+
 def save_json(path, value):
     path.parent.mkdir(parents=True, exist_ok=True)
-    temporary = path.with_suffix(path.suffix + '.tmp')
-    temporary.write_text(json.dumps(value, indent=2) + '\n')
-    temporary.replace(path)
+    descriptor, temporary_name = tempfile.mkstemp(
+        dir=path.parent,
+        prefix=f'.{path.name}.',
+        suffix='.tmp',
+    )
+    temporary = Path(temporary_name)
+    try:
+        with os.fdopen(descriptor, 'w') as handle:
+            handle.write(json.dumps(value, indent=2) + '\n')
+            handle.flush()
+            os.fsync(handle.fileno())
+        temporary.replace(path)
+    finally:
+        temporary.unlink(missing_ok=True)
 
 
 def initial_state(now):
     return {
-        'version': 1,
+        'version': STATE_VERSION,
         'started_unix': now,
         'deadline_unix': now + RUNTIME_LIMIT_SECONDS,
         'attempts_dispatched': 0,
@@ -193,6 +298,69 @@ def initial_state(now):
         'stop_reason': None,
         'completed': False,
     }
+
+
+def validate_state(state):
+    if not isinstance(state, dict) or state.get('version') != STATE_VERSION:
+        raise ValueError('saved state version is missing or unsupported')
+    integers = {
+        'attempts_dispatched': (0, REQUEST_LIMIT),
+        'retries_used': (0, RETRY_LIMIT),
+        'credits_accounted': (0, None),
+        'body_bytes': (0, TOTAL_BODY_LIMIT_BYTES),
+        'next_control': (0, len(CONTROL_SEQUENCE)),
+    }
+    for key, (minimum, maximum) in integers.items():
+        value = state.get(key)
+        invalid = (not isinstance(value, int) or isinstance(value, bool)
+                   or value < minimum
+                   or (maximum is not None and value > maximum))
+        if invalid:
+            raise ValueError(f'saved state has invalid {key}')
+    for key in ['started_unix', 'deadline_unix']:
+        value = state.get(key)
+        if not isinstance(value, (int, float)) or isinstance(value, bool):
+            raise ValueError(f'saved state has invalid {key}')
+    if state['deadline_unix'] <= state['started_unix']:
+        raise ValueError('saved state has invalid absolute deadline')
+    if not isinstance(state.get('results'), list):
+        raise ValueError('saved state results must be a list')
+    if state.get('stop_reason') is not None and not isinstance(state['stop_reason'], str):
+        raise ValueError('saved state stop reason must be text or null')
+    if state.get('in_flight') is not None and not isinstance(state['in_flight'], dict):
+        raise ValueError('saved state in-flight attempt must be an object or null')
+    if state.get('in_flight') is not None:
+        required = {'attempt', 'control', 'reserved_credits', 'started_unix'}
+        if not required <= set(state['in_flight']):
+            raise ValueError('saved in-flight attempt is incomplete')
+        if state['in_flight']['attempt'] != state['attempts_dispatched']:
+            raise ValueError('saved in-flight attempt number is inconsistent')
+        if state['in_flight']['control'] != state['next_control'] + 1:
+            raise ValueError('saved in-flight control number is inconsistent')
+        if state['in_flight']['reserved_credits'] != CREDIT_RESERVATION_PER_REQUEST:
+            raise ValueError('saved in-flight credit reservation is inconsistent')
+    if not isinstance(state.get('completed'), bool):
+        raise ValueError('saved state completed flag must be boolean')
+    if state['completed'] and (state['next_control'] != len(CONTROL_SEQUENCE)
+                               or state['in_flight'] is not None
+                               or state['stop_reason'] is not None):
+        raise ValueError('saved completed state is inconsistent')
+    if state['attempts_dispatched'] < len(state['results']):
+        raise ValueError('saved state contains more results than attempts')
+    if state['credits_accounted'] > CREDIT_LIMIT and not state['stop_reason']:
+        raise ValueError('saved credit overrun has no stop reason')
+    return state
+
+
+@contextmanager
+def exclusive_state_lock(path):
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open('a+') as handle:
+        fcntl.flock(handle.fileno(), fcntl.LOCK_EX)
+        try:
+            yield
+        finally:
+            fcntl.flock(handle.fileno(), fcntl.LOCK_UN)
 
 
 def usage_cost(headers):
@@ -254,11 +422,10 @@ def public_report(state):
     }
 
 
-def run(private_output, public_result, fetcher=fetch, clock=time.time, get_token=token):
-    private_output.mkdir(parents=True, exist_ok=True)
-    public_result.parent.mkdir(parents=True, exist_ok=True)
+def run_locked(private_output, public_result, transport, clock, get_token):
     state_path = private_output / 'state.json'
-    state = json.loads(state_path.read_text()) if state_path.exists() else initial_state(clock())
+    state = (validate_state(json.loads(state_path.read_text()))
+             if state_path.exists() else initial_state(clock()))
     if state['completed']:
         save_json(public_result, public_report(state))
         return state
@@ -287,7 +454,18 @@ def run(private_output, public_result, fetcher=fetch, clock=time.time, get_token
             state['stop_reason'] = 'total response-byte limit reached'
             break
         if api_token is None:
-            api_token = get_token()
+            token_timeout = min(TOKEN_TIMEOUT_SECONDS,
+                                max(0.1, remaining - DEADLINE_BUFFER_SECONDS))
+            try:
+                api_token = get_token(token_timeout)
+            except subprocess.TimeoutExpired:
+                state['stop_reason'] = 'token acquisition exceeded its bounded timeout'
+                save_json(state_path, state)
+                break
+            except Exception as error:
+                state['stop_reason'] = f'token acquisition failed: {type(error).__name__}: {error}'
+                save_json(state_path, state)
+                break
         remaining = state['deadline_unix'] - clock()
         if remaining <= DEADLINE_BUFFER_SECONDS:
             state['stop_reason'] = 'insufficient time before the persisted absolute deadline'
@@ -302,15 +480,29 @@ def run(private_output, public_result, fetcher=fetch, clock=time.time, get_token
             'started_unix': clock(),
         }
         save_json(state_path, state)
-        timeout = min(REQUEST_TIMEOUT_SECONDS, max(1, int(remaining - DEADLINE_BUFFER_SECONDS)))
         started = clock()
+        transport_output = private_output / f'attempt-{attempt:02d}-control-{control:02d}-transport'
         try:
-            status, body, headers = fetcher(api_token, CONTROL_SEQUENCE[state['next_control']],
-                                            timeout, body_limit)
+            status, body, headers = transport(
+                api_token,
+                CONTROL_SEQUENCE[state['next_control']],
+                state['deadline_unix'],
+                body_limit,
+                transport_output,
+                clock,
+            )
+        except DeadlineExceeded as error:
+            state['in_flight']['transport_cleanup_confirmed'] = error.cleanup_confirmed
+            state['stop_reason'] = f'uncertain request outcome: {error}'
+            save_json(state_path, state)
+            break
         except Exception as error:
+            state['in_flight']['transport_cleanup_confirmed'] = False
             state['stop_reason'] = f'uncertain request outcome: {type(error).__name__}: {error}'
             save_json(state_path, state)
             break
+        completed_at = clock()
+        late_response = completed_at >= state['deadline_unix']
         raw_path = private_output / f'attempt-{attempt:02d}-control-{control:02d}.html'
         raw_path.write_bytes(body)
         state['body_bytes'] += len(body)
@@ -342,9 +534,15 @@ def run(private_output, public_result, fetcher=fetch, clock=time.time, get_token
             },
             'fields': {},
             'accepted': False,
+            'late_response': late_response,
             'parse_error': None,
             'raw_path': str(raw_path),
         }
+        if late_response:
+            state['stop_reason'] = 'response completed after the persisted absolute deadline'
+            state['results'].append(result)
+            save_json(state_path, state)
+            break
         if cost > CREDIT_RESERVATION_PER_REQUEST or state['credits_accounted'] > CREDIT_LIMIT:
             state['stop_reason'] = 'provider usage exceeded the reserved or cumulative limit'
             state['results'].append(result)
@@ -378,6 +576,14 @@ def run(private_output, public_result, fetcher=fetch, clock=time.time, get_token
     save_json(state_path, state)
     save_json(public_result, public_report(state))
     return state
+
+
+def run(private_output, public_result, transport=fetch_until_deadline,
+        clock=time.time, get_token=token):
+    private_output.mkdir(parents=True, exist_ok=True)
+    public_result.parent.mkdir(parents=True, exist_ok=True)
+    with exclusive_state_lock(private_output / 'runner.lock'):
+        return run_locked(private_output, public_result, transport, clock, get_token)
 
 
 def main():

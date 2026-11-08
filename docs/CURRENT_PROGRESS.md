@@ -1,6 +1,6 @@
 # Final local delivery checkpoint
 
-Updated: 6 November 2026, Amsterdam time
+Updated: 8 November 2026, Amsterdam time
 Current review branch: `main`
 
 This is the final local review checkpoint prepared for the client. It does not claim complete production coverage.
@@ -43,10 +43,11 @@ The project did reach more than 500 products in two earlier controlled demonstra
 3. Produce a new full-catalog export only after those queues are exhausted.
 
 The product controls do not prove the category/listing transport gate. A listing-specific
-runner now has offline-tested safeguards, but no provider request has run because the client
-hold remains. Full work is still paused. Current local free space is above the storage guard;
-storage availability is not execution approval.
+runner now has offline-tested hard deadline, child cleanup, late-response rejection and
+exclusive state locking. Scrape.do supplied an exact supported Milk category configuration,
+but no provider request has run because the client hold remains. Full work is still paused.
+Available trial credits and storage are not execution approval.
 
 Two bounded Azure diagnostics are included. The Store 100/PICKUP control passed in West US 2 and East US 2, but the Art Sets listing was blocked in both regions. Reliable Azure collection remains unresolved. Nothing has been sent or submitted to the client by this repository.
 
-Current point-by-point client checkpoint: [6 November review](CLIENT_REVIEW_CHECKPOINT_20261106.md).
+Current point-by-point client checkpoint: [8 November review](CLIENT_REVIEW_CHECKPOINT_20261108.md).

@@ -1,6 +1,6 @@
 # Scrape.do listing-route proposal — 5 November 2026
 
-Status: proposed only. Executable safeguards added and tested offline on 6 November 2026.
+Status: proposed only. Executable safeguards revised and tested offline on 8 November 2026.
 No provider request has run and no client authorization has been given.
 
 ## Goal
@@ -18,8 +18,8 @@ The product-page controls do not prove this listing requirement.
 
 ## Candidate configuration
 
-Scrape.do support recommended the store endpoint for product pages. Support has not confirmed
-that it supports category/listing URLs. The proposed candidate request is:
+Scrape.do support confirmed on 7 November 2026 that the store endpoint supports category URLs
+and supplied this request format:
 
 ```text
 GET https://api.scrape.do/plugin/walmart/store
@@ -32,7 +32,7 @@ GET https://api.scrape.do/plugin/walmart/store
 Proposed Walmart listing control:
 
 ```text
-https://www.walmart.com/browse/personal-care/toothpaste/1005862_1007221_1023020?page=1
+https://www.walmart.com/browse/food/milk/976759_9176907_4405816
 ```
 
 The token stays in macOS Keychain. It must not appear in Git, logs, reports or commands saved as
@@ -82,6 +82,9 @@ Stop immediately when any condition occurs:
 - A usage header is missing, invalid or cannot be reconciled.
 - One HTTP 502 retry fails.
 - Runtime reaches 5 minutes.
+- Token acquisition exceeds 10 seconds.
+- Request or body-read child process reaches the persisted absolute deadline.
+- A returned response completes at or after the absolute deadline.
 - The remaining absolute deadline cannot safely contain the next request.
 - One response exceeds 8 MiB or cumulative bodies reach 20 MiB.
 - Response cannot prove listing identity and at least one product/local-price/PICKUP record
@@ -99,12 +102,22 @@ product-only runner and refuses execution unless the explicit `--approved` flag 
 Before each request it saves the attempt and reserves its request and credit allowance. The
 same saved state holds the absolute deadline, request count, retry count, body bytes and
 accounted credits across restarts. An uncertain in-flight attempt blocks restart until it is
-manually reconciled. Redirects and alternate fallbacks are disabled. The response read is
-bounded. A wrong store, missing PICKUP state, unlinked price, unexpected provider usage or
-incomplete two-control sequence cannot pass.
+manually reconciled. One exclusive process lock covers state loading, admission, reservation,
+request and result update. Saved state is validated before resume, and every atomic write uses
+a unique temporary file. Redirects and alternate fallbacks are disabled.
+
+Token lookup has a bounded subprocess timeout. The complete request and response-body read run
+in a separate process under the persisted absolute deadline. At the deadline the child is
+terminated, killed if needed, joined and checked as stopped. A response returned after the
+deadline is rejected after any reported usage is accounted. A wrong store, missing PICKUP
+state, unlinked price, unexpected provider usage or incomplete two-control sequence cannot
+pass.
 
 Offline safeguard result: `evidence/scrapedo-listing-runner-20261106/OFFLINE_TESTS.json`.
-These synthetic tests made zero provider requests and do not prove listing support.
+Twenty focused checks passed. They include a real token-style subprocess timeout, a real
+localhost trickle-body cancellation and two simultaneous processes sharing one allowance.
+They made zero provider or retailer
+requests and do not prove live listing support.
 
 Provider charging remains uncertain: reserving 20 credits cannot prevent a provider from
 reporting or charging more after a request. Such a result is preserved as unsafe and stops the

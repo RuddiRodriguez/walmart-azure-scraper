@@ -35,6 +35,7 @@ Current local summary: [`docs/CLIENT_STATUS_20261104.md`](../docs/CLIENT_STATUS_
 | Scrape.do privacy-reviewed source excerpts | `scrapedo-store-controls-20261104/source-excerpts/MANIFEST.json` |
 | Scrape.do exact November 4 run producer | `scrapedo-store-controls-20261104/PRODUCER_PROVENANCE.json` |
 | Listing-runner offline safeguards | `scrapedo-listing-runner-20261106/OFFLINE_TESTS.json` |
+| Scrape.do category support reply | `scrapedo-support-20261107/RESULT.json` |
 | Updated full offline regression | `full-offline-regression-20261104/RESULT.json` |
 | Bright Data Store 100 test | `brightdata-bounded-20261030/` |
 | Store-session recovery result | `store-session-recovery-20261030/RESULT.json` |

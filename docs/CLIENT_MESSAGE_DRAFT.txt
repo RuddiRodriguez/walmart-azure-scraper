@@ -1,28 +1,21 @@
-UNSENT DRAFT — 6 November 2026, Amsterdam time
+UNSENT DRAFT — 8 November 2026, Amsterdam time
 
 Hi Darren,
 
-Thank you for the detailed review. I completed the requested offline evidence and safeguard corrections.
+I completed the two focused offline execution-control corrections from your latest review.
 
-I added privacy-reviewed excerpts for all three original Scrape.do responses. The package now includes each original hash, each excerpt hash, the redaction method and the exact source paths for product, Store 100, ZIP 72712, PICKUP availability and displayed price. The pumpkin is clearly labeled OUT_OF_STOCK, so its $2.97 value is not presented as a currently available pickup offer. The two milk responses show IN_STOCK PICKUP and a displayed price of $2.88, but I also state that the PICKUP option has no separate fulfillment-specific price field.
+The runner now bounds Keychain token acquisition and runs the complete request and response-body read in a cancellable child process under the persisted five-minute deadline. At the deadline it terminates the child, kills it if needed, joins it and confirms cleanup. A response returned at or after the deadline is rejected after any reported usage is accounted.
 
-I also recovered the exact script used for the November 4 controls and verified it against the SHA-256 recorded at run time.
+State handling now has one exclusive process lock covering load, admission, reservation, request and final update. Saved state is validated before resume. Atomic writes use unique temporary files, so two processes cannot share the previous temporary filename.
 
-The listing proposal now has a separate executable runner. Before each request it reserves the request and credit allowance and saves persistent counters. It stops on the first wrong context or unexpected usage, keeps uncertain attempts across restart, enforces the remaining absolute deadline and response-size limits, disables redirects and fallbacks, and cannot pass unless the full intended control sequence finishes. Missing or invalid credit headers are treated as unsafe, not as zero. The acceptance rule now requires a currently available PICKUP state and price/PICKUP evidence linked inside the same product object.
+Twenty focused checks passed. These include a real token-style subprocess timeout, the requested real localhost trickle-body regression, a late-return reproduction and two simultaneous processes using one shared allowance. No provider or retailer request was made, and no provider credit was used.
 
-Fourteen focused safeguard checks passed offline, and the ten-module offline regression also passed. No Scrape.do request, provider credit, Walmart collection or Azure operation was used for these corrections.
+Scrape.do also confirmed that its Walmart store endpoint supports category URLs and supplied the exact Milk category configuration. The proposal and runner now use that configuration. This confirms the supported request format only; it does not prove the live Store 100, ZIP 72712, PICKUP, product and linked-price result.
 
-I regenerated the full package manifest and verified all 1,752 listed files. The previously missing November 5 documents are now listed, the client-message hash is current, and the exact November 4 run producer is included. The frozen archive also passed its inventory, SHA-256 and ZIP integrity checks. Private raw responses remain outside the public package.
+Checkpoint:
+https://github.com/RuddiRodriguez/walmart-azure-scraper/blob/client-checkpoint-20261108/docs/CLIENT_REVIEW_CHECKPOINT_20261108.md
 
-The proposed listing limits are three attempts including one HTTP 502 retry, 60 existing credits reserved at 20 per attempt, five minutes, 8 MiB per response, 20 MiB total response data and $0 monetary spend. These are proposed limits only, not authorization. Provider charging uncertainty remains explicit.
-
-The open coverage numbers are unchanged: 780 pending pages, 216 retryable failures and 18 unresolved paths. Full coverage, a clean fresh collection, larger recovery/repeat and Azure completion remain separate and open. I have not run the listing proposal while your hold is active.
-
-Review checkpoint:
-https://github.com/RuddiRodriguez/walmart-azure-scraper/blob/client-checkpoint-20261106/docs/CLIENT_REVIEW_CHECKPOINT_20261106.md
-
-Listing proposal:
-https://github.com/RuddiRodriguez/walmart-azure-scraper/blob/client-checkpoint-20261106/docs/SCRAPEDO_LISTING_ROUTE_PROPOSAL_20261105.md
+The proposed maximum three-attempt/60-credit listing test remains on hold. The 780 pending pages, 216 retryable failures and 18 unresolved paths also remain open. Fresh collection, recovery/repeat and Azure work remain separate. I have not used the available trial credits as authorization.
 
 Thanks,
 Ruddi

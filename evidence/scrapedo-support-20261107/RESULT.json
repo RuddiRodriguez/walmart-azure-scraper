@@ -1,0 +1,28 @@
+{
+  "date_amsterdam": "2026-11-07",
+  "source": "Scrape.do support reply supplied by the user",
+  "privacy_reviewed": true,
+  "provider_statement": "The Walmart store endpoint supports category URLs. Set the Walmart URL, zipcode and storeid.",
+  "recommended_configuration": {
+    "endpoint": "https://api.scrape.do/plugin/walmart/store",
+    "parameters": {
+      "url": "https://www.walmart.com/browse/food/milk/976759_9176907_4405816",
+      "zipcode": "72712",
+      "storeid": "100"
+    },
+    "token": "Private credential; omitted"
+  },
+  "proves": [
+    "Provider states that category URLs are supported by this endpoint.",
+    "Provider supplied the exact Milk category example and Store 100 parameters."
+  ],
+  "does_not_prove": [
+    "A live response preserves Store 100 and ZIP 72712.",
+    "A live response contains explicit PICKUP availability.",
+    "Product identity, PICKUP state and local price are linked in one returned record.",
+    "Provider usage cost for the proposed category request."
+  ],
+  "live_test_executed": false,
+  "provider_credits_used": 0,
+  "client_hold_remains": true
+}
