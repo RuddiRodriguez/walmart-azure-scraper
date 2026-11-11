@@ -51,3 +51,4 @@ Available trial credits and storage are not execution approval.
 Two bounded Azure diagnostics are included. The Store 100/PICKUP control passed in West US 2 and East US 2, but the Art Sets listing was blocked in both regions. Reliable Azure collection remains unresolved. Nothing has been sent or submitted to the client by this repository.
 
 Current point-by-point client checkpoint: [8 November review](CLIENT_REVIEW_CHECKPOINT_20261108.md).
+Latest timing clarification: [11 November note](CLIENT_TIMING_CLARIFICATION_20261111.md).

@@ -134,6 +134,9 @@ def check():
     folder, _, state, report, fetcher = run_case([response(), response()])
     assert state['completed'] and report['completed_intended_sequence']
     assert len(fetcher.calls) == 2 and state['credits_accounted'] == 40
+    assert report['limits']['request_deadline_seconds'] == 300
+    assert report['limits']['termination_join_grace_seconds'] == 4
+    assert len(report['limits']['outside_request_deadline']) == 3
     checks.append('complete_sequence_required')
     folder.cleanup()
 

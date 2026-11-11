@@ -5,13 +5,14 @@
 1. [Current delivery checkpoint](CURRENT_PROGRESS.md)
 2. [4 November client status](CLIENT_STATUS_20261104.md)
 3. [8 November client review checkpoint](CLIENT_REVIEW_CHECKPOINT_20261108.md)
-4. [Simple step-by-step run guide](RUN_GUIDE.md)
-5. [Acceptance rules](ACCEPTANCE.md)
-6. [Evidence index](../evidence/README.md)
-7. [Unsent client message](CLIENT_MESSAGE_DRAFT.txt)
-8. [Azure and proxy evidence correction](STEP4_AZURE_PROXY_EVIDENCE.md)
-9. [Full offline regression](STEP5_FULL_OFFLINE_REGRESSION.md)
-10. [Package verification](VERIFY_PACKAGE.md)
+4. [11 November timing clarification](CLIENT_TIMING_CLARIFICATION_20261111.md)
+5. [Simple step-by-step run guide](RUN_GUIDE.md)
+6. [Acceptance rules](ACCEPTANCE.md)
+7. [Evidence index](../evidence/README.md)
+8. [Unsent client message](CLIENT_MESSAGE_DRAFT.txt)
+9. [Azure and proxy evidence correction](STEP4_AZURE_PROXY_EVIDENCE.md)
+10. [Full offline regression](STEP5_FULL_OFFLINE_REGRESSION.md)
+11. [Package verification](VERIFY_PACKAGE.md)
 
 ## Current behavior
 

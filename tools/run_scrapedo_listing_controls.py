@@ -397,7 +397,13 @@ def public_report(state):
         'limits': {
             'requests_including_retry': REQUEST_LIMIT,
             'retries': RETRY_LIMIT,
-            'runtime_seconds': RUNTIME_LIMIT_SECONDS,
+            'request_deadline_seconds': RUNTIME_LIMIT_SECONDS,
+            'termination_join_grace_seconds': 4,
+            'outside_request_deadline': [
+                'waiting to acquire the exclusive process lock',
+                'post-response parsing and validation',
+                'evidence and report writes',
+            ],
             'credits': CREDIT_LIMIT,
             'credit_reservation_per_request': CREDIT_RESERVATION_PER_REQUEST,
             'response_bytes': RESPONSE_LIMIT_BYTES,

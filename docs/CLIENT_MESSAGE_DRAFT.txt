@@ -1,21 +1,18 @@
-UNSENT DRAFT — 8 November 2026, Amsterdam time
+UNSENT DRAFT — 11 November 2026, Amsterdam time
 
 Hi Darren,
 
-I completed the two focused offline execution-control corrections from your latest review.
+Thank you for confirming that the two execution-control findings are addressed at source-review level.
 
-The runner now bounds Keychain token acquisition and runs the complete request and response-body read in a cancellable child process under the persisted five-minute deadline. At the deadline it terminates the child, kills it if needed, joins it and confirms cleanup. A response returned at or after the deadline is rejected after any reported usage is accounted.
+I corrected the timing language without rewriting the working paths. The five-minute value is now described as the persisted request deadline, starting after the exclusive process lock is acquired. If cancellation is needed, the terminate/kill cleanup can add up to four seconds through two two-second joins. Lock waiting, post-response parsing, validation, evidence writes and report writes are explicitly outside that request deadline. I am not describing it as a strict whole-process five-minute limit.
 
-State handling now has one exclusive process lock covering load, admission, reservation, request and final update. Saved state is validated before resume. Atomic writes use unique temporary files, so two processes cannot share the previous temporary filename.
+The November 8 checkpoint remains pinned and unchanged. The timing clarification is here:
 
-Twenty focused checks passed. These include a real token-style subprocess timeout, the requested real localhost trickle-body regression, a late-return reproduction and two simultaneous processes using one shared allowance. No provider or retailer request was made, and no provider credit was used.
+https://github.com/RuddiRodriguez/walmart-azure-scraper/blob/client-checkpoint-20261111/docs/CLIENT_TIMING_CLARIFICATION_20261111.md
 
-Scrape.do also confirmed that its Walmart store endpoint supports category URLs and supplied the exact Milk category configuration. The proposal and runner now use that configuration. This confirms the supported request format only; it does not prove the live Store 100, ZIP 72712, PICKUP, product and linked-price result.
+The listing diagnostic remains paused pending your separate decision. No provider request, credit use or Azure run has occurred. The 780 pending pages, 216 retryable failures and 18 unresolved paths remain open.
 
-Checkpoint:
-https://github.com/RuddiRodriguez/walmart-azure-scraper/blob/client-checkpoint-20261108/docs/CLIENT_REVIEW_CHECKPOINT_20261108.md
-
-The proposed maximum three-attempt/60-credit listing test remains on hold. The 780 pending pages, 216 retryable failures and 18 unresolved paths also remain open. Fresh collection, recovery/repeat and Azure work remain separate. I have not used the available trial credits as authorization.
+Although the full project is not finished, I would also appreciate feedback on the work completed so far, particularly the evidence quality, safeguards and communication. If Freelancer allows an interim review, I would be grateful for one. If a formal review is only available after completion, a short feedback note would still be very helpful. This is not a request to mark the project complete or close the remaining work.
 
 Thanks,
 Ruddi

@@ -47,7 +47,10 @@ evidence.
 - Maximum provider usage: 60 existing credits total.
 - Reserve 20 credits before every request, based on the client's observed 20-credit case.
 - Maximum accepted reported usage per request: 20 credits.
-- Maximum runtime: 5 minutes total.
+- Persisted request deadline: 5 minutes after the process lock is acquired and state starts.
+- Deadline cancellation may use up to 4 additional seconds for two termination joins.
+- Process-lock waiting, post-response parsing, validation, evidence writes and report writes are
+  outside the 5-minute request deadline.
 - Maximum monetary spend: $0. Existing provider credits still have usage value.
 - Maximum raw evidence: 20 MiB.
 - Maximum response body: 8 MiB.
@@ -81,7 +84,7 @@ Stop immediately when any condition occurs:
 - Cumulative use reaches 60 credits.
 - A usage header is missing, invalid or cannot be reconciled.
 - One HTTP 502 retry fails.
-- Runtime reaches 5 minutes.
+- Persisted 5-minute request deadline is reached.
 - Token acquisition exceeds 10 seconds.
 - Request or body-read child process reaches the persisted absolute deadline.
 - A returned response completes at or after the absolute deadline.
@@ -108,8 +111,10 @@ a unique temporary file. Redirects and alternate fallbacks are disabled.
 
 Token lookup has a bounded subprocess timeout. The complete request and response-body read run
 in a separate process under the persisted absolute deadline. At the deadline the child is
-terminated, killed if needed, joined and checked as stopped. A response returned after the
-deadline is rejected after any reported usage is accounted. A wrong store, missing PICKUP
+terminated, killed if needed, joined and checked as stopped. The two cleanup joins may add up
+to four seconds after the deadline. Waiting for the exclusive lock, post-response parsing,
+validation, evidence writes and report writes are outside that request deadline. A response
+returned after the deadline is rejected after any reported usage is accounted. A wrong store, missing PICKUP
 state, unlinked price, unexpected provider usage or incomplete two-control sequence cannot
 pass.
 
